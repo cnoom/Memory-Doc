@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>记忆勇者 - 战斗界面原型</title>
+<link rel="stylesheet" href="common.css">
+<style>
+/* ===== 战斗界面布局 ===== */
+.battle-screen {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 48px 1fr 72px;
+    grid-template-columns: 72px 1fr 220px;
+    grid-template-areas:
+        "topbar topbar topbar"
+        "leftbar center rightbar"
+        "bottombar bottombar bottombar";
+    background: radial-gradient(ellipse at 50% 30%, #2A2A3E 0%, #1A1B2E 60%, #0F1020 100%);
+}
+
+/* ===== 顶栏 ===== */
+.topbar {
+    grid-area: topbar;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid var(--border-gold);
+}
+
+.topbar-left, .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.topbar-center {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.icon-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: var(--bg-panel-light);
+    border: 1px solid var(--border-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.15s;
+}
+.icon-btn:hover { background: #4A4030; }
+
+.gold-display {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: bold;
+    color: var(--gold);
+    font-size: 16px;
+}
+
+/* ===== 左侧遗物栏 ===== */
+.leftbar {
+    grid-area: leftbar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(74, 64, 48, 0.5);
+}
+
+.leftbar-label {
+    font-size: 9px;
+    color: var(--text-dim);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 2px;
+}
+
+/* ===== 中央区域 ===== */
+.center {
+    grid-area: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    overflow: hidden;
+}
+
+/* ===== 敌人区域 ===== */
+.enemy-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 24px;
+    position: relative;
+}
+
+.enemy-portrait {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background: radial-gradient(ellipse at 50% 40%, #4A3030 0%, #2A1818 100%);
+    border: 3px solid var(--danger);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    box-shadow: 0 0 20px rgba(199, 62, 62, 0.3), inset 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.enemy-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-main);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.enemy-hp-bar {
+    width: 180px;
+}
+
+.enemy-status-row {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.phase-indicator {
+    display: flex;
+    gap: 4px;
+    margin-top: 2px;
+}
+
+.phase-dot {
+    width: 24px;
+    height: 4px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.15);
+}
+.phase-dot.active { background: var(--danger); box-shadow: 0 0 6px var(--danger); }
+
+/* ===== 卡牌网格 ===== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 108px);
+    grid-template-rows: repeat(4, 144px);
+    gap: 10px;
+    padding: 8px;
+}
+
+.grid-card {
+    width: 108px;
+    height: 144px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease-out;
+    perspective: 600px;
+}
+
+.grid-card:hover {
+    transform: translateY(-6px);
+}
+
+.grid-card.flipped {
+    transform: translateY(-6px);
+    filter: drop-shadow(0 0 8px rgba(212, 168, 87, 0.3));
+}
+
+/* 翻转容器 */
+.flip-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease-out;
+}
+
+.grid-card.flipped .flip-container {
+    transform: rotateY(180deg);
+}
+
+.flip-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+}
+
+/* ===== 右侧信息栏 ===== */
+.rightbar {
+    grid-area: rightbar;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(74, 64, 48, 0.5);
+    overflow-y: auto;
+}
+
+.info-section {
+    background: rgba(42, 37, 32, 0.6);
+    border: 1px solid var(--border-gold);
+    border-radius: 6px;
+    padding: 8px 10px;
+}
+
+.info-section-title {
+    font-size: 11px;
+    color: var(--gold);
+    font-weight: bold;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.action-bar-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+
+.action-bar-number {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 4px;
+    color: var(--text-main);
+}
+
+.action-bar-number .threshold { color: var(--gold); }
+
+.intent-display {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.intent-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.intent-text {
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.intent-text .value {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--danger);
+}
+
+.enemy-ability-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    background: rgba(155, 69, 212, 0.15);
+    border: 1px solid rgba(155, 69, 212, 0.3);
+    color: var(--type-ability-light);
+    margin: 2px 0;
+}
+
+/* ===== 底栏 ===== */
+.bottombar {
+    grid-area: bottombar;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid var(--border-gold);
+}
+
+.bottombar-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.pile-counter {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+
+.pile-counter:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.pile-icon {
+    font-size: 20px;
+}
+
+.pile-count {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bottombar-center {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bottombar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.potion-bar {
+    display: flex;
+    gap: 6px;
+}
+
+.player-stats {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.player-hp {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.player-hp .hp-bar {
+    width: 160px;
+}
+
+.player-block {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    background: rgba(122, 143, 168, 0.15);
+    border: 1px solid var(--block-color);
+    border-radius: 6px;
+    font-weight: bold;
+    color: var(--block-color);
+}
+
+/* ===== 卡牌悬浮预览 ===== */
+.card-preview {
+    position: fixed;
+    width: 220px;
+    height: 300px;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.card-preview.visible {
+    opacity: 1;
+}
+
+.preview-card {
+    width: 220px;
+    height: 300px;
+    padding: 10px 12px;
+}
+
+.preview-card .card-name {
+    font-size: 16px;
+}
+
+.preview-card .card-effect {
+    font-size: 13px;
+}
+
+.preview-card .card-tags {
+    font-size: 12px;
+}
+
+/* ===== 揭示效果遮罩 ===== */
+.reveal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(58, 196, 232, 0.15);
+    border: 2px solid var(--freeze);
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.reveal-content {
+    position: absolute;
+    inset: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    font-size: 9px;
+    color: var(--text-main);
+    text-align: center;
+}
+
+/* ===== 标记效果 ===== */
+.mark-overlay {
+    position: absolute;
+    inset: 0;
+    border: 2px dashed var(--gold);
+    border-radius: 6px;
+    pointer-events: none;
+    box-shadow: 0 0 8px rgba(212, 168, 87, 0.2);
+}
+
+/* ===== 换位动画 ===== */
+@keyframes swap-arc {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(var(--swap-x), -40px); }
+    100% { transform: translate(var(--swap-x), 0); }
+}
+
+/* ===== 匹配成功光效 ===== */
+@keyframes match-flash {
+    0% { box-shadow: 0 0 0 rgba(255, 255, 255, 0); }
+    30% { box-shadow: 0 0 24px rgba(255, 255, 255, 0.8); }
+    100% { box-shadow: 0 0 0 rgba(255, 255, 255, 0); }
+}
+
+.grid-card.matched {
+    animation: match-flash 0.6s ease-out;
+}
+
+/* ===== 翻牌光效 ===== */
+.grid-card.flipped .flip-back {
+    box-shadow: 0 0 12px rgba(212, 168, 87, 0.3);
+}
+</style>
+</head>
+<body>
+
+<div class="battle-screen">
+    <!-- ===== 顶栏 ===== -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <div class="icon-btn" title="菜单">☰</div>
+            <div class="gold-display">💰 150</div>
+        </div>
+        <div class="topbar-center">
+            <div class="relic-slot rarity-rare" title="稳定锚 - 免疫位置干扰">⚓</div>
+            <div class="relic-slot" title="记忆水晶 - 开局2秒可见">🔮</div>
+            <div class="relic-slot rarity-uncommon" title="蓄能水晶 - 连击+5伤害">⚡</div>
+            <div class="relic-slot" title="急救包 - 每场回5血">💊</div>
+            <div class="relic-slot rarity-boss" title="全知之眼 - 可翻开牌+1">👁</div>
+        </div>
+        <div class="topbar-right">
+            <div class="icon-btn" title="查看牌组" onclick="alert('牌组查看')">📦</div>
+            <div class="icon-btn" title="设置">⚙</div>
+        </div>
+    </div>
+
+    <!-- ===== 左侧遗物栏 ===== -->
+    <div class="leftbar">
+        <div class="leftbar-label">遗物</div>
+        <div class="relic-slot rarity-rare" title="稳定锚">⚓</div>
+        <div class="relic-slot" title="记忆水晶">🔮</div>
+        <div class="relic-slot rarity-uncommon" title="蓄能水晶">⚡</div>
+        <div class="relic-slot" title="急救包">💊</div>
+        <div class="relic-slot" title="共鸣石">🔊</div>
+        <div class="relic-slot rarity-boss" title="全知之眼">👁</div>
+    </div>
+
+    <!-- ===== 中央区域 ===== -->
+    <div class="center">
+        <!-- 敌人区域 -->
+        <div class="enemy-area">
+            <div class="enemy-portrait">🟣</div>
+            <div class="enemy-name">混乱史莱姆</div>
+            <div class="bar-container enemy-hp-bar">
+                <div class="bar-track">
+                    <div class="bar-fill bar-fill-hp-enemy" style="width: 87.5%"></div>
+                </div>
+                <span class="bar-label">35/40</span>
+            </div>
+            <div class="enemy-status-row">
+                <span class="status-icon status-burn">🔥 灼烧 ×2</span>
+            </div>
+        </div>
+
+        <!-- 4×4 卡牌网格 -->
+        <div class="card-grid" id="cardGrid">
+            <!-- 第1行 -->
+            <div class="grid-card" data-type="attack" data-name="笔记" data-rarity="common" data-effect="造成 6 点伤害" data-tags="[笔记]">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-attack">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-attack">
+                        <div class="card-name common">笔记</div>
+                        <div class="card-type-row"><span>⚔ 攻击</span><span>普通</span></div>
+                        <div class="card-effect">造成 <span style="color:var(--danger);font-weight:bold">6</span> 点伤害</div>
+                        <div class="card-tags">[笔记]</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card flipped" data-type="skill" data-name="速读" data-rarity="common" data-effect="获得 4 点格挡" data-tags="[翻开] 揭示周围1张">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-skill">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-skill">
+                        <div class="card-name common">速读</div>
+                        <div class="card-type-row"><span>📜 技能</span><span>普通</span></div>
+                        <div class="card-effect">获得 <span style="color:var(--block-color);font-weight:bold">4</span> 点格挡</div>
+                        <div class="card-tags">[翻开] 揭示周围1张</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card" data-type="attack" data-name="笔记" data-rarity="common" data-effect="造成 6 点伤害" data-tags="[笔记]">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-attack">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-attack">
+                        <div class="card-name common">笔记</div>
+                        <div class="card-type-row"><span>⚔ 攻击</span><span>普通</span></div>
+                        <div class="card-effect">造成 <span style="color:var(--danger);font-weight:bold">6</span> 点伤害</div>
+                        <div class="card-tags">[笔记]</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card" data-type="ability" data-name="全神贯注" data-rarity="common" data-effect="持续：每翻牌获1专注" data-tags="[翻开] 获得2格挡">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-ability">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-ability">
+                        <div class="card-name common">全神贯注</div>
+                        <div class="card-type-row"><span>💎 能力</span><span>普通</span></div>
+                        <div class="card-effect" style="font-size:10px">♦ 每翻牌获1层专注<br>◆ [翻开] 获得2点格挡</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第2行 -->
+            <div class="grid-card" data-type="skill" data-name="速读" data-rarity="common" data-effect="获得 4 点格挡" data-tags="[翻开] 揭示周围1张">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-skill">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-skill">
+                        <div class="card-name common">速读</div>
+                        <div class="card-type-row"><span>📜 技能</span><span>普通</span></div>
+                        <div class="card-effect">获得 <span style="color:var(--block-color);font-weight:bold">4</span> 点格挡</div>
+                        <div class="card-tags">[翻开] 揭示周围1张</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 标记的卡牌（学者标记效果演示） -->
+            <div class="grid-card" data-type="attack" data-name="读书笔记" data-rarity="common" data-effect="造成 8 点伤害" data-tags="[翻开] 标记邻牌 [笔记]" data-marked="true">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-attack">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-attack">
+                        <div class="card-name common">读书笔记</div>
+                        <div class="card-type-row"><span>⚔ 攻击</span><span>普通</span></div>
+                        <div class="card-effect">造成 <span style="color:var(--danger);font-weight:bold">8</span> 点伤害</div>
+                        <div class="card-tags">[翻开] 标记邻牌<br>[笔记]</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+                <div class="mark-overlay">
+                    <div class="reveal-content">读书笔记<br>⚔ 8伤害</div>
+                </div>
+            </div>
+
+            <div class="grid-card" data-type="skill" data-name="笔记本格挡" data-rarity="common" data-effect="获得 6 点格挡" data-tags="无">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-skill">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-skill">
+                        <div class="card-name common">笔记本格挡</div>
+                        <div class="card-type-row"><span>📜 技能</span><span>普通</span></div>
+                        <div class="card-effect">获得 <span style="color:var(--block-color);font-weight:bold">6</span> 点格挡</div>
+                        <div class="card-tags">无</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card" data-type="attack" data-name="笔记" data-rarity="common" data-effect="造成 6 点伤害" data-tags="[笔记]">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-attack">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-attack">
+                        <div class="card-name common">笔记</div>
+                        <div class="card-type-row"><span>⚔ 攻击</span><span>普通</span></div>
+                        <div class="card-effect">造成 <span style="color:var(--danger);font-weight:bold">6</span> 点伤害</div>
+                        <div class="card-tags">[笔记]</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第3行 -->
+            <div class="grid-card" data-type="skill" data-name="笔记本格挡" data-rarity="common" data-effect="获得 6 点格挡" data-tags="无">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-skill">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-skill">
+                        <div class="card-name common">笔记本格挡</div>
+                        <div class="card-type-row"><span>📜 技能</span><span>普通</span></div>
+                        <div class="card-effect">获得 <span style="color:var(--block-color);font-weight:bold">6</span> 点格挡</div>
+                        <div class="card-tags">无</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 封锁的卡牌 -->
+            <div class="grid-card card-sealed" data-type="attack" data-name="笔记" data-rarity="common" data-effect="造成 6 点伤害" data-tags="[笔记]" data-sealed="true">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-attack">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-attack">
+                        <div class="card-name common">笔记</div>
+                        <div class="card-type-row"><span>⚔ 攻击</span><span>普通</span></div>
+                        <div class="card-effect">造成 <span style="color:var(--danger);font-weight:bold">6</span> 点伤害</div>
+                        <div class="card-tags">[笔记]</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card" data-type="attack" data-name="笔记" data-rarity="common" data-effect="造成 6 点伤害" data-tags="[笔记]">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-attack">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-attack">
+                        <div class="card-name common">笔记</div>
+                        <div class="card-type-row"><span>⚔ 攻击</span><span>普通</span></div>
+                        <div class="card-effect">造成 <span style="color:var(--danger);font-weight:bold">6</span> 点伤害</div>
+                        <div class="card-tags">[笔记]</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 病毒牌（诅咒） -->
+            <div class="grid-card" data-type="curse" data-name="腐化种子" data-rarity="common" data-effect="受到3点伤害" data-tags="[翻开] 受3伤; 移除自身">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-curse">
+                        <div class="card-back-pattern" style="color:rgba(255,255,255,0.08)">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-curse">
+                        <div class="card-name" style="color:#666">腐化种子</div>
+                        <div class="card-type-row"><span>💀 诅咒</span><span>—</span></div>
+                        <div class="card-effect" style="color:var(--danger)">受到 <span style="font-weight:bold">3</span> 点伤害</div>
+                        <div class="card-tags">[翻开] 受3伤<br>[翻开] 移除自身</div>
+                        <div class="card-rarity-bar" style="background:#333"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第4行 -->
+            <div class="grid-card" data-type="skill" data-name="速读" data-rarity="common" data-effect="获得 4 点格挡" data-tags="[翻开] 揭示周围1张">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-skill">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-skill">
+                        <div class="card-name common">速读</div>
+                        <div class="card-type-row"><span>📜 技能</span><span>普通</span></div>
+                        <div class="card-effect">获得 <span style="color:var(--block-color);font-weight:bold">4</span> 点格挡</div>
+                        <div class="card-tags">[翻开] 揭示周围1张</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card" data-type="attack" data-name="笔记" data-rarity="common" data-effect="造成 6 点伤害" data-tags="[笔记]">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-attack">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-attack">
+                        <div class="card-name common">笔记</div>
+                        <div class="card-type-row"><span>⚔ 攻击</span><span>普通</span></div>
+                        <div class="card-effect">造成 <span style="color:var(--danger);font-weight:bold">6</span> 点伤害</div>
+                        <div class="card-tags">[笔记]</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card" data-type="skill" data-name="速读" data-rarity="common" data-effect="获得 4 点格挡" data-tags="[翻开] 揭示周围1张">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-skill">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-skill">
+                        <div class="card-name common">速读</div>
+                        <div class="card-type-row"><span>📜 技能</span><span>普通</span></div>
+                        <div class="card-effect">获得 <span style="color:var(--block-color);font-weight:bold">4</span> 点格挡</div>
+                        <div class="card-tags">[翻开] 揭示周围1张</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card" data-type="attack" data-name="笔记" data-rarity="common" data-effect="造成 6 点伤害" data-tags="[笔记]">
+                <div class="flip-container">
+                    <div class="flip-face card-back card-back-attack">
+                        <div class="card-back-pattern">✦<br>✦ ✦<br>✦</div>
+                    </div>
+                    <div class="flip-face flip-back card-front card-front-attack">
+                        <div class="card-name common">笔记</div>
+                        <div class="card-type-row"><span>⚔ 攻击</span><span>普通</span></div>
+                        <div class="card-effect">造成 <span style="color:var(--danger);font-weight:bold">6</span> 点伤害</div>
+                        <div class="card-tags">[笔记]</div>
+                        <div class="card-rarity-bar common"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 右侧信息栏 ===== -->
+    <div class="rightbar">
+        <!-- 行动条 -->
+        <div class="info-section">
+            <div class="info-section-title">⚡ 行动条</div>
+            <div class="action-bar-display">
+                <div class="action-segment filled"></div>
+                <div class="action-segment filled"></div>
+                <div class="action-segment filled"></div>
+                <div class="action-segment filled"></div>
+                <div class="action-segment filled"></div>
+                <div class="action-segment filled"></div>
+                <div class="action-segment filled"></div>
+                <div class="action-segment"></div>
+                <div class="action-segment"></div>
+                <div class="action-segment threshold"></div>
+            </div>
+            <div class="action-bar-number">7 / <span class="threshold">10</span></div>
+        </div>
+
+        <!-- 意图 -->
+        <div class="info-section">
+            <div class="info-section-title">🎯 意图</div>
+            <div class="intent-card intent-attack" style="margin-top:4px">
+                <div class="intent-icon" style="background:rgba(199,62,62,0.2)">⚔️</div>
+                <div class="intent-text">攻击<br><span class="value">6 点</span>伤害</div>
+            </div>
+        </div>
+
+        <!-- 敌人状态 -->
+        <div class="info-section">
+            <div class="info-section-title">🛡 敌人状态</div>
+            <div style="display:flex;flex-direction:column;gap:4px;margin-top:4px">
+                <span class="status-icon status-burn">🔥 灼烧 ×2</span>
+            </div>
+        </div>
+
+        <!-- 敌人能力 -->
+        <div class="info-section">
+            <div class="info-section-title">⚙ 敌人能力</div>
+            <div style="margin-top:4px">
+                <div class="enemy-ability-tag">[混乱] 随机交换2张牌</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 底栏 ===== -->
+    <div class="bottombar">
+        <div class="bottombar-left">
+            <div class="pile-counter" title="牌组（剩余）">
+                <span class="pile-icon">📦</span>
+                <span class="pile-count">15</span>
+            </div>
+            <div class="pile-counter" title="弃牌堆">
+                <span class="pile-icon">🗑</span>
+                <span class="pile-count">3</span>
+            </div>
+            <div class="pile-counter" title="消耗堆">
+                <span class="pile-icon" style="color:var(--text-dim)">💀</span>
+                <span class="pile-count" style="color:var(--text-dim)">1</span>
+            </div>
+        </div>
+
+        <div class="bottombar-center">
+            <button class="btn btn-primary" onclick="confirmReshuffle()">
+                🔄 重新铺满 <span style="font-size:12px;opacity:0.7">+2</span>
+            </button>
+        </div>
+
+        <div class="bottombar-right">
+            <div class="potion-bar">
+                <div class="potion-slot filled" title="时间药水 - 行动条-3">⏳</div>
+                <div class="potion-slot filled" title="透视药水 - 全揭示3秒">👁</div>
+                <div class="potion-slot empty">—</div>
+            </div>
+            <div class="player-stats">
+                <div class="player-hp">
+                    <span style="font-size:18px">❤️</span>
+                    <div class="bar-track hp-bar">
+                        <div class="bar-fill bar-fill-hp-player" style="width: 80%"></div>
+                    </div>
+                    <span class="bar-label" style="color:var(--text-main)">48/60</span>
+                </div>
+                <div class="player-block">
+                    🛡 <span style="font-size:16px">5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== 卡牌悬浮预览 ===== -->
+<div class="card-preview" id="cardPreview">
+    <div class="card-front preview-card" id="previewContent">
+    </div>
+</div>
+
+<script>
+// 翻牌交互
+document.querySelectorAll('.grid-card').forEach(card => {
+    card.addEventListener('click', function(e) {
+        if (this.classList.contains('card-sealed')) {
+            // 封锁的牌不能翻
+            return;
+        }
+        // 先把其他已翻开的牌翻回
+        document.querySelectorAll('.grid-card.flipped').forEach(c => {
+            if (c !== this) c.classList.remove('flipped');
+        });
+        this.classList.toggle('flipped');
+
+        // 模拟行动条+1
+        if (this.classList.contains('flipped')) {
+            incrementActionBar();
+        }
+    });
+
+    // 悬浮预览（仅在正面时）
+    card.addEventListener('mouseenter', function(e) {
+        if (this.classList.contains('flipped')) {
+            showPreview(this, e);
+        }
+    });
+    card.addEventListener('mouseleave', function() {
+        hidePreview();
+    });
+    card.addEventListener('mousemove', function(e) {
+        if (this.classList.contains('flipped')) {
+            movePreview(e);
+        }
+    });
+});
+
+// 行动条模拟
+function incrementActionBar() {
+    const segments = document.querySelectorAll('.action-segment');
+    const filled = document.querySelectorAll('.action-segment.filled');
+    if (filled.length < segments.length) {
+        segments[filled.length].classList.add('filled');
+        const num = document.querySelector('.action-bar-number');
+        num.innerHTML = (filled.length + 1) + ' / <span class="threshold">10</span>';
+    }
+}
+
+// 卡牌预览
+function showPreview(card, e) {
+    const preview = document.getElementById('cardPreview');
+    const content = document.getElementById('previewContent');
+    const type = card.dataset.type;
+    const name = card.dataset.name;
+    const rarity = card.dataset.rarity;
+    const effect = card.dataset.effect;
+    const tags = card.dataset.tags;
+
+    content.className = 'card-front preview-card card-front-' + type;
+    content.innerHTML = `
+        <div class="card-name ${rarity}">${name}</div>
+        <div class="card-type-row">
+            <span>${getTypeIcon(type)} ${getTypeName(type)}</span>
+            <span>${getRarityName(rarity)}</span>
+        </div>
+        <div class="card-effect">${effect}</div>
+        <div class="card-tags">${tags}</div>
+        <div class="card-rarity-bar ${rarity}"></div>
+    `;
+    preview.classList.add('visible');
+    movePreview(e);
+}
+
+function hidePreview() {
+    document.getElementById('cardPreview').classList.remove('visible');
+}
+
+function movePreview(e) {
+    const preview = document.getElementById('cardPreview');
+    let x = e.clientX + 16;
+    let y = e.clientY - 150;
+    if (x + 220 > window.innerWidth) x = e.clientX - 236;
+    if (y < 0) y = 0;
+    preview.style.left = x + 'px';
+    preview.style.top = y + 'px';
+}
+
+function getTypeIcon(type) {
+    return {attack:'⚔',skill:'📜',ability:'💎',curse:'💀'}[type] || '？';
+}
+function getTypeName(type) {
+    return {attack:'攻击',skill:'技能',ability:'能力',curse:'诅咒'}[type] || '未知';
+}
+function getRarityName(rarity) {
+    return {common:'普通',uncommon:'罕见',rare:'稀有'}[rarity] || '普通';
+}
+
+// 重新铺满确认
+function confirmReshuffle() {
+    if (confirm('重新铺满桌面？\n行动条 +2')) {
+        // 翻回所有牌
+        document.querySelectorAll('.grid-card.flipped').forEach(c => c.classList.remove('flipped'));
+        alert('桌面已重新铺满！');
+    }
+}
+</script>
+
+</body>
+</html>
