@@ -1,0 +1,168 @@
+# 《记忆勇者》美术资产名录与规格
+
+SKILL.md 规格表的展开版。名录与命名提取自 `docs/design/` 各设计文档（2026-08-25 核对），若设计文档变更需同步更新本文与 SKILL.md。
+
+## 1. 资产类型 ↔ 设计文档对应
+
+全部类型统一发布到 `docs/design/assets/`（**扁平无子目录**，文件名前缀区分类别）。
+
+| 类型 | 数量 | 内容来源 |
+| --- | --- | --- |
+| 卡面插画 card | 35 种（见 §2） | [06-学者角色卡牌设计](../../../docs/design/06-学者角色卡牌设计.md) |
+| 卡背 cardback | 4 | [10-UI美术资源规格 §2.3](../../../docs/design/10-UI美术资源规格.md) |
+| 图标 icon | 33（见 §4） | [10-UI美术资源规格 §3.1–3.4/3.7](../../../docs/design/10-UI美术资源规格.md) |
+| 遗物图标 relic | 20 | [07-遗物与道具设计](../../../docs/design/07-遗物与道具设计.md) + 10§3.5 |
+| 道具图标 potion | 8 | [07-遗物与道具设计](../../../docs/design/07-遗物与道具设计.md) + 10§3.6 |
+| 地图节点 node | 6 | [10-UI美术资源规格 §3.8](../../../docs/design/10-UI美术资源规格.md) |
+| 敌人立绘 enemy | 9 | [08-原型敌人设计](../../../docs/design/08-原型敌人设计.md) |
+| 角色立绘 portrait | 3 | [05-Meta系统 §3](../../../docs/design/05-Meta系统.md) |
+| 背景 background | 5（暂定） | [09-UI设计规范 §5 界面清单](../../../docs/design/09-UI设计规范.md) |
+| 纹理 texture | 3 | [10-UI美术资源规格 §4.2](../../../docs/design/10-UI美术资源规格.md) |
+
+## 2. 卡面插画名录（35 种）
+
+命名规则（10§9.3）：`card_<类型英文>_<拼音>.png`，拼音无分隔无声调。同一张卡只生成一份插画（配对双方共用）。
+
+> ⚠️ 与文档口径的差异：06 文档标注"10 初始 + 28 奖励 + 4 诅咒 = 42 张"是**按张数**计（初始牌组有 ×2/×3 重复）；按**卡种**是 35。奖励区实际条目 26 种（普通 11 + 罕见 9 + 稀有 6），与标注的 28 差 2——生成时以本文名录为准，后续若 06 文档补卡需回填。
+
+### 初始牌组（5 种）
+
+| 卡名 | 类型 | 文件名 |
+| --- | --- | --- |
+| 笔记 | 攻击 | `card_attack_biji.png` |
+| 读书笔记 | 攻击 | `card_attack_dushubiji.png` |
+| 速读 | 技能 | `card_skill_sudu.png` |
+| 笔记本格挡 | 技能 | `card_skill_bijibengedang.png` |
+| 全神贯注 | 能力 | `card_ability_quanshenguanzhu.png` |
+
+### 奖励卡池（26 种）
+
+| 卡名 | 稀有度·类型 | 文件名 |
+| --- | --- | --- |
+| 旁征博引 | 普通·攻击 | `card_attack_pangzhengboyin.png` |
+| 引经据典 | 普通·攻击 | `card_attack_yinjingjudian.png` |
+| 考据 | 普通·攻击 | `card_attack_kaoju.png` |
+| 批注 | 普通·攻击 | `card_attack_pizhu.png` |
+| 目录 | 普通·技能 | `card_skill_mulu.png` |
+| 索引 | 普通·技能 | `card_skill_suoyin.png` |
+| 摘要 | 普通·技能 | `card_skill_zhaiyao.png` |
+| 速记 | 普通·技能 | `card_skill_suji.png` |
+| 博闻强识 | 普通·能力 | `card_ability_bowenqiangshi.png` |
+| 过目不忘 | 普通·能力 | `card_ability_guomubuwang.png` |
+| 学术直觉 | 普通·能力 | `card_ability_xueshuzhijue.png` |
+| 论文 | 罕见·攻击 | `card_attack_lunwen.png` |
+| 精准打击 | 罕见·攻击 | `card_attack_jingzhundaji.png` |
+| 交叉引用 | 罕见·攻击 | `card_attack_jiaochayinyong.png` |
+| 破绽分析 | 罕见·攻击 | `card_attack_pozhanfenxi.png` |
+| 图书馆 | 罕见·技能 | `card_skill_tushuguan.png` |
+| 书签 | 罕见·技能 | `card_skill_shuqian.png` |
+| 温习 | 罕见·技能 | `card_skill_wenxi.png` |
+| 知识渊博 | 罕见·能力 | `card_ability_zhishiyuanbo.png` |
+| 举一反三 | 罕见·能力 | `card_ability_juyifansan.png` |
+| 百科全书 | 稀有·能力 | `card_ability_baikequanshu.png` |
+| 万有文库 | 稀有·技能 | `card_skill_wanyouwenku.png` |
+| 真理之眼 | 稀有·攻击 | `card_attack_zhenlizhiyan.png` |
+| 时空回溯 | 稀有·技能 | `card_skill_shikonghuisu.png` |
+| 全知全能 | 稀有·能力 | `card_ability_quanzhiquanneng.png` |
+| 融会贯通 | 稀有·技能 | `card_skill_ronghuiguantong.png` |
+
+### 诅咒牌（4 种）
+
+| 卡名 | 文件名 |
+| --- | --- |
+| 遗忘 | `card_curse_yiwang.png` |
+| 混乱笔记 | `card_curse_hunluanbiji.png` |
+| 拖沓 | `card_curse_tuota.png` |
+| 误解 | `card_curse_wujie.png` |
+
+## 3. 卡背色板（4 种，desc 必须拼入）
+
+来自 [10-UI美术资源规格 §2.3](../../../docs/design/10-UI美术资源规格.md)。卡背是核心记忆信息分层，颜色必须严格遵守。
+
+| 类型 | 文件名 | 边框色 | 底色径向渐变 | 中心符号 | 气质 |
+| --- | --- | --- | --- | --- | --- |
+| 攻击 | `cardback_attack.png` | `#D44545` | `#4A2020`→`#2A1010` | 交叉剑/火焰 | 战斗、灼热 |
+| 技能 | `cardback_skill.png` | `#4577D4` | `#1A2A4A`→`#101830` | 卷轴/书本 | 冷静、学术 |
+| 能力 | `cardback_ability.png` | `#9B45D4` | `#3A1A5A`→`#1A0A30` | 菱形宝石/奥术符 | 奥秘、持续 |
+| 诅咒 | `cardback_curse.png` | `#3A2A3A` | `#2A1A2A`→`#0A0A0A` | 骷髅/裂痕 | 阴暗、不祥 |
+
+prompt 组装示例（攻击）：`ornate border in crimson red #D44545, radial gradient field from dark red #4A2020 to near-black #2A1010, crossed swords emblem, dim crimson rune filigree`
+
+## 4. 图标名录（33 个，含状态/意图/词条/类型/功能）
+
+状态/意图/类型/词条图标的色彩语言见 [10-UI美术资源规格 §1.4/§1.5](../../../docs/design/10-UI美术资源规格.md)，desc 中拼入对应 hex。
+
+### 状态效果（5）
+
+`icon_status_burn`(灼烧`#E84A20`) / `icon_status_freeze`(冰冻`#3AC4E8`) / `icon_status_armor`(护甲`#A8A8B8`) / `icon_status_vulnerable`(易伤`#B83A8B`) / `icon_status_weak`(虚弱`#8B9B3A`)
+
+### 意图（5）
+
+`icon_intent_attack`(攻击`#C73E3E`) / `icon_intent_charge`(蓄力`#E87B35`) / `icon_intent_defend`(防御`#4A7AD4`) / `icon_intent_special`(特殊`#9B45D4`) / `icon_intent_berserk`(狂暴`#A82020`)
+
+### 卡牌类型（4）
+
+`icon_type_attack`(攻击,红) / `icon_type_skill`(技能,蓝) / `icon_type_ability`(能力,紫) / `icon_type_curse`(诅咒,灰)
+
+### 词条（8）
+
+`icon_tag_flip`(翻开`#D4A857`) / `icon_tag_exhaust_trigger`(消除`#D4A857`) / `icon_tag_enter`(入场`#D4A857`) / `icon_tag_consume`(消耗`#E84A20`) / `icon_tag_remove`(移除`#888888`) / `icon_tag_resonance`(共鸣`#5BA85B`) / `icon_tag_note`(笔记`#5BA85B`) / `icon_tag_sword_shield`(剑盾`#5BA85B`)
+
+### UI 功能（11）
+
+`icon_menu` / `icon_settings` / `icon_back` / `icon_gold` / `icon_deck` / `icon_discard` / `icon_exhaust` / `icon_reshuffle` / `icon_hp` / `icon_block` / `icon_focus`(专注`#D4A857`)
+
+## 5. 遗物名录（20 个）
+
+来自 [10-UI美术资源规格 §3.5](../../../docs/design/10-UI美术资源规格.md)。边框色随稀有度：普通银 `#B0B0B0` / 罕见蓝 `#4A9CD4` / 稀有金 `#D4A857` / Boss 橙 `#E87B35`。
+
+| 稀有度 | 文件名（图标意象） |
+| --- | --- |
+| 普通 | `relic_memory_crystal`(水晶球) / `relic_notebook`(笔记本) / `relic_resonance_stone`(音波石) / `relic_twin_dice`(骰子) / `relic_first_aid`(医药包) / `relic_wood_shield`(木盾) / `relic_slow_seal`(减速符文) |
+| 罕见 | `relic_mind_map`(脑/网状图) / `relic_eternal_candle`(蜡烛) / `relic_chain_core`(链条核心) / `relic_charge_crystal`(闪电水晶) / `relic_vampire_fang`(獠牙) / `relic_energy_shield`(能量盾) |
+| 稀有 | `relic_stable_anchor`(锚) / `relic_twin_charm`(双生符) / `relic_mirror_echo`(镜子) / `relic_scholar_badge`(徽章) |
+| Boss | `relic_omniscient_eye`(眼睛) / `relic_chaos_core`(漩涡) / `relic_memory_crown`(王冠) |
+
+## 6. 道具名录（8 个）
+
+`potion_time`(时间,沙漏,金) / `potion_insight`(透视,眼球,青) / `potion_rearrange`(重排,棋盘网格,紫) / `potion_divination`(占卜,水晶球,蓝) / `potion_block`(格挡,盾牌,银) / `potion_power`(力量,拳头,红) / `potion_purify`(净化,圣光十字,白) / `potion_recall`(回忆,书签,金)
+
+## 7. 地图节点名录（6 个）
+
+`node_battle`(战斗`#C73E3E`圆形) / `node_elite`(精英`#9B45D4`菱形) / `node_shop`(商店`#D4A857`圆形) / `node_campfire`(篝火`#E87B35`圆形) / `node_event`(事件`#4A9CD4`圆形) / `node_boss`(Boss`#E84A20`星形)
+
+## 8. 敌人立绘名录（9 个）
+
+来自 [08-原型敌人设计](../../../docs/design/08-原型敌人设计.md)。
+
+| 敌人 | 定位 | 文件名 |
+| --- | --- | --- |
+| 训练假人 | 教学敌人 | `enemy_training_dummy.png` |
+| 哥林布 | 基础攻击型 | `enemy_goblin.png` |
+| 混乱史莱姆 | 位置干扰型 | `enemy_chaos_slime.png` |
+| 蛮族战士 | 节奏施压型 | `enemy_barbarian.png` |
+| 腐化花蕾 | 桌面污染型 | `enemy_corrupted_bud.png` |
+| 幻影 | 可用性干扰型 | `enemy_phantom.png` |
+| 双刃执行者 | 精英·连击高压 | `enemy_twinblade_executor.png` |
+| 记忆窃贼 | 精英·复合干扰 | `enemy_memory_thief.png` |
+| 记忆吞噬者 | 第一章 Boss | `enemy_memory_devourer.png` |
+
+## 9. 角色立绘名录（3 个）
+
+`portrait_scholar`(学者,情报型,袍服+眼镜+书卷) / `portrait_berserker`(狂战士,暴力输出,待设计——生成前与用户确认形象) / `portrait_warlock`(术士,高风险解锁角色,待设计——同上)
+
+## 10. 背景名录（5 个，暂定名）
+
+文件名与场景对应关系未在文档定稿，首次生成前与用户确认：
+
+`bg_menu`(主菜单,记忆殿堂图书馆大厅) / `bg_battle`(战斗,殿堂石厅烛光) / `bg_event`(事件) / `bg_shop`(商店) / `bg_campfire`(篝火)
+
+## 11. 纹理名录（3 个）
+
+`texture_parchment`(羊皮纸,可平铺) / `texture_dark`(暗色,可平铺) / `texture_noise`(噪声遮罩——文档规格 512×512,如需精确对齐用 `--no-resize` 后手动缩放)
+
+## 12. 尺寸与透明底备忘
+
+- 发布规格：图标/遗物/道具/节点/纹理 256×256；背景 1920×1080；卡面/卡背/立绘保留 API 原尺寸（插画源图，显示缩放交给文档嵌入与 Unity 导入）。
+- 文档里的 32–56px 图标尺寸是 UI 显示尺寸，非源图尺寸（详见 SKILL.md 规格表附注）。
+- 透明底：仅 icon/relic/potion/node/enemy/portrait；网关不支持 `background: transparent` 参数但响应 prompt 关键词，脚本自动校验 alpha 并对实心底打 WARNING。
