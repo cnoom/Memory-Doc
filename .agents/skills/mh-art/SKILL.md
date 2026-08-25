@@ -48,18 +48,18 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 
 ## 风格基线
 
-源自 [09-UI设计规范 §1](../../../docs/design/09-UI设计规范.md)「记忆殿堂」视觉定位：记忆殿堂主题 + 学术羊皮纸 + 古金点缀。所有 prompt 以此为底，保证新旧资产同风格。
+源自 [09-UI设计规范 §1](../../../docs/design/09-UI设计规范.md)「记忆殿堂」视觉定位：记忆殿堂主题 + 古金点缀。所有 prompt 以此为底，保证新旧资产同风格。
 
-> **风格 v2.1（2026-08-25）**：v1 暗黑厚涂（dark fantasy painterly）被用户否决——"过于硬核"。v2 软化后视觉自检发现卡面/卡背/立绘仍偏硬朗（金属高光、硬边、高对比），v2.1 追加**哑光、软边、禁金属高光、禁颗粒质感**负面词，并把这些类型的片段改为"绘本化"措辞（calm friendly / rounded soft / hand-painted border）。主题与色板不变，只换渲染语言。09 §1 文档待样张定稿后同步改写。
+> **风格 v3（2026-08-25）**：v1 暗黑厚涂（"过于硬核"）与 v2/v2.1 温暖绘本水彩（"还是不太行"）相继被否决。用户给出参照：Unity Asset Store「2D Characters - Casual Monsters」(LAYERLAB)。v3 定调**扁平休闲卡通**——干净矢量感圆胖轮廓、无描边、双色阶阴影（底色+一层软暗部）、Q 版大头比例、中饱和青绿/奶油/暖棕系、无纹理无笔触。主题与卡牌类型/状态/意图/稀有度等功能色板不变，只换渲染语言。样张已拍板（2026-08-25），09 §1 视觉定位与 10 §1.1 基础 UI 色已同步改写为明快奶油纸/暖金木底（新增辅助强调静谧青 #7FB5AC）。
 
-- **全局基线（EN，拼在最前）**：`cozy fantasy storybook game art, soft watercolor and gouache hand-painting, ancient memory-palace library aesthetic, aged parchment and antique gold palette, warm gentle candlelight glow, soft rounded shapes, low contrast matte finish, gentle blurred edges like a children's picture book, no metallic specular highlights, no gritty texture, whimsical friendly storybook mood`
-- **卡面**：`vertical storybook illustration, single clear focal subject, calm friendly composition, dreamy soft watercolor-wash background, no text, no watermark`
-- **卡背**：`full playing-card back design filling the whole canvas, soft rounded hand-painted symmetrical border, gentle watercolor wash field, softly glowing central emblem, delicate hand-drawn flourishes, no text, no watermark`（desc 里必须给类型色 hex，见 asset-specs 色板）
-- **图标（icon/relic/potion/node）**：`flat fantasy storybook game icon, centered composition, bold readable silhouette, glowing accent color, plain transparent background, no text, no watermark`
-- **敌人**：`single friendly picture-book fantasy monster, full body, centered, facing viewer, rounded soft cartoonish design, mischievous but not scary, transparent background, no text, no watermark`
-- **角色**：`full body friendly storybook character, centered, facing viewer, gentle confident pose, rounded soft design, transparent background, no text, no watermark`
-- **背景**：`wide scene illustration, soft depth, empty center area for UI, no characters, no text, no watermark`
-- **纹理**：`seamless tileable texture, evenly lit, no vignette, no text`
+- **全局基线（EN，拼在最前）**：`flat cartoon casual mobile-game art, clean rounded vector-style shapes, cute chibi proportions, flat color fills with simple two-tone shading (one soft darker shade under each shape), no outlines, smooth clean matte finish, moderately saturated cozy palette of teal, cream and warm brown with antique-gold accents, memory-palace scholar library fantasy theme, friendly playful casual mood, no painterly brushwork, no watercolor, no storybook wash, no texture noise, no realistic rendering, no dark hardcore mood`
+- **卡面**：`vertical card illustration for a casual mobile game, one cute clear focal subject drawn large, simple flat background shapes, soft round shadow under the subject, no text, no watermark`
+- **卡背**：`full playing-card back design filling the whole canvas, symmetric cute flat-cartoon emblem at center, chunky rounded border with simple geometric ornaments, flat color field with a very subtle radial glow behind the emblem, clean casual style, no text, no watermark`（desc 里必须给类型色 hex，见 asset-specs 色板）
+- **图标（icon/relic/potion/node）**：`flat casual game icon, centered composition, thick rounded chunky silhouette, instantly readable at small size, one accent color with a single soft darker shade, plain transparent background, no text, no watermark`
+- **敌人**：`single cute casual-cartoon fantasy monster, full body, centered, facing viewer, big-head chibi proportions, chunky rounded silhouette, friendly mischievous expression, flat two-tone shading, soft round shadow under feet, transparent background, no text, no watermark`
+- **角色**：`full body cute casual-cartoon character, centered, facing viewer, big-head chibi proportions, friendly confident pose, chunky rounded silhouette, flat two-tone shading, transparent background, no text, no watermark`
+- **背景**：`wide flat cartoon scene for a casual game, simple stylized environment built from rounded shapes, layered flat colors for gentle depth, empty center area for UI, no characters, no text, no watermark`
+- **纹理**：`seamless tileable flat cartoon texture, evenly lit flat colors, no vignette, no shadows at edges, no text`
 
 中文 prompt 同样可用，但保持上述关键词的英文版拼入更稳。
 
