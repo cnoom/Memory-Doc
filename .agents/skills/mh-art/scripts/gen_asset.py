@@ -37,21 +37,18 @@ ARCHIVE_ROOT = os.path.join(REVIEW_ROOT, "_archived")
 ASSETS_ROOT = os.path.join("docs", "design", "assets")
 
 # ---- 项目规格表（与 SKILL.md 保持同步）----
-# 风格 v3.1（2026-08-25，已拍板）：v1 暗黑厚涂、v2/v2.1 温暖绘本水彩相继被否决；
-# v3 扁平卡通首批样张被指"人物和卡牌不像"（参照 Unity Asset Store「2D Characters -
-# Casual Monsters」LAYERLAB）。与参考图逐项对比后修正三处病根：①v3 生成带粗深描边
-# →参考无描边，靠柔和暗部分界；②v3 硬边两色阶赛璐璐→参考是柔和渐变+浅椭圆投影
-# （软笔刷体积感，2-3 个明度）；③v3 饱和度高明度低→参考中饱和、高明度、清新淡彩。
-# 造型基准：2-2.5 头身、豆形身体、短粗四肢、极简面部。功能色板保留。
-STYLE_BASE = ("smooth soft-shaded 2D cartoon game art like premium casual mobile-game asset packs, "
-              "clean rounded shapes with NO outline strokes (edges separated by soft shading only), "
-              "soft airbrushed gradients giving gentle rounded volume, subtle ambient occlusion, "
-              "2-3 soft value steps per shape, soft elliptical drop shadow under objects, "
-              "fresh airy palette: pastel mint-teal, cream and light warm brown with muted gold accents, "
-              "medium saturation and light values, low contrast, memory-palace scholar fantasy theme, "
-              "cute friendly casual mood, "
-              "no outlines, no cel-shaded hard shadow edges, no watercolor, no painterly texture, "
-              "no gritty texture, no realistic rendering, no dark heavy colors, no hardcore mood")
+# 风格 v3.2（2026-08-25，用户直接反馈修正）：v3.1 三版哥布林被用户点评
+# "不够简约，角色需要描边"——推翻此前视觉模型"参考无描边"的读图结论（模型读图
+# 只作参考，用户的眼是标准）。v3.2 两处修正：①角色/图标/卡面主体要有干净、
+# 粗细一致的深色细描边；②整体更简约——细节再砍、每形状少量平色。
+# 保留：软渐变阴影、清新中饱和高明度、2-2.5 头身豆形身体、点眼单小方牙 DNA。
+STYLE_BASE = ("clean simple 2D cartoon game art for casual mobile games, big rounded shapes, cute "
+              "stylized proportions, very minimal design with only a few details, fresh airy "
+              "palette: pastel mint-teal, cream and light warm brown with muted gold accents, "
+              "medium saturation and light values, soft simple shading, memory-palace scholar "
+              "fantasy theme, friendly casual mood, "
+              "no watercolor, no painterly texture, no realistic rendering, no dark heavy "
+              "colors, no complex details, no busy props")
 
 # 发布目录（实际应用区）：扁平无子目录——文件名自带类别前缀（prefix 字段），
 # 发布时按前缀校验命名规范；仅 docs 文档仓库适用，勿再按类型嵌套。
@@ -61,56 +58,61 @@ SPECS = {
                  style="vertical card illustration presented like a game-asset showcase: one cute "
                        "clear focal subject standing centered on a simple soft ground, plain "
                        "pastel mint-cream backdrop with a soft elliptical shadow under the subject, "
-                       "minimal simple props, lots of clean empty space, no text, no watermark"),
+                       "subject drawn with a clean thin dark outline and very few details, minimal "
+                       "simple props, lots of clean empty space, no text, no watermark"),
     "cardback": dict(size="1024x1536", transparent=False, resize=None,
                      review="cardbacks", prefix="cardback_",
                      style="full playing-card back design filling the whole canvas, symmetric cute "
-                           "emblem at center drawn with smooth soft shading and no outlines, chunky "
-                           "rounded border with simple rounded ornaments, soft gradient color field, "
-                           "clean smooth finish, no text, no watermark"),
+                           "emblem at center with a clean thin dark outline, chunky rounded border "
+                           "with simple rounded ornaments, soft gradient color field, very minimal "
+                           "detail, clean smooth finish, no text, no watermark"),
     "icon": dict(size="1024x1024", transparent=True, resize="256x256",
                  review="icons", prefix="icon_",
-                 style="smooth soft-shaded casual game icon, single object only, centered, bold rounded "
-                       "silhouette instantly readable at small size, soft gradient shading, plain "
-                       "transparent background, no text, no watermark"),
+                 style="simple casual game icon, single object only, centered, bold rounded "
+                       "silhouette instantly readable at small size, clean thin dark outline, "
+                       "few flat colors with soft simple shading, plain transparent background, "
+                       "no text, no watermark"),
     "relic": dict(size="1024x1024", transparent=True, resize="256x256",
                   review="relics", prefix="relic_",
-                  style="smooth soft-shaded casual game icon of a single small magical artifact, "
-                        "centered, cute stylized prop with bold rounded silhouette, soft gradient "
-                        "shading, no outlines, plain transparent background, no text, no watermark"),
+                  style="simple casual game icon of a single small magical artifact, centered, "
+                        "cute stylized prop with bold rounded silhouette, clean thin dark outline, "
+                        "few flat colors with soft simple shading, plain transparent background, "
+                        "no text, no watermark"),
     "potion": dict(size="1024x1024", transparent=True, resize="256x256",
                    review="potions", prefix="potion_",
-                   style="smooth soft-shaded casual game icon of a single cute alchemy potion bottle, "
-                         "centered, bold rounded silhouette, soft glossy gradient shading, no "
-                         "outlines, plain transparent background, no text, no watermark"),
+                   style="simple casual game icon of a single cute alchemy potion bottle, centered, "
+                         "bold rounded silhouette, clean thin dark outline, few flat colors with "
+                         "soft simple shading, plain transparent background, no text, no watermark"),
     "node": dict(size="1024x1024", transparent=True, resize="256x256",
                  review="map-nodes", prefix="node_",
-                    style="smooth soft-shaded casual map node emblem, single centered object, bold "
-                          "rounded shape, soft gradient shading, no outlines, plain transparent "
+                    style="simple casual map node emblem, single centered object, bold rounded "
+                          "shape, clean thin dark outline, few flat colors, plain transparent "
                           "background, no text, no watermark"),
     "enemy": dict(size="1024x1024", transparent=True, resize=None,
                   review="enemies", prefix="enemy_",
-                  style="single cute casual-cartoon fantasy monster like a premium asset-pack "
-                        "showcase render, full body, centered, facing viewer, 2 to 2.5 head-heights "
-                        "tall, bean-shaped rounded body, short stubby limbs, very simple face, "
-                        "smooth soft-shaded volume with NO outlines, soft elliptical shadow under "
-                        "feet, plain transparent background, no text, no watermark"),
+                  style="single cute simple cartoon fantasy monster, full body, centered, facing "
+                        "viewer, 2 to 2.5 head-heights tall, bean-shaped rounded body, stubby "
+                        "limbs, very simple dot eyes, extremely minimal design with only a few "
+                        "flat colors, clean thin dark outline around the whole character with "
+                        "consistent line weight, soft simple shading, soft elliptical ground "
+                        "shadow, plain transparent background, no text, no watermark"),
     "portrait": dict(size="1024x1536", transparent=True, resize=None,
                      review="portraits", prefix="portrait_",
-                     style="full body cute casual-cartoon character like a premium asset-pack "
-                           "showcase render, centered, facing viewer, 2 to 2.5 head-heights tall, "
-                           "bean-shaped rounded body, short stubby limbs, very simple face, smooth "
-                           "soft-shaded volume with NO outlines, transparent background, "
+                     style="full body cute simple cartoon character, centered, facing viewer, "
+                           "2 to 2.5 head-heights tall, bean-shaped rounded body, stubby limbs, "
+                           "very simple dot eyes, extremely minimal design with only a few flat "
+                           "colors, clean thin dark outline around the whole character with "
+                           "consistent line weight, soft simple shading, transparent background, "
                            "no text, no watermark"),
     "background": dict(size="2048x1152", transparent=False, resize="1920x1080",
                        review="backgrounds", prefix="bg_",
-                       style="wide soft-shaded cartoon scene for a casual game, simple stylized "
-                             "environment built from big rounded shapes with smooth soft gradients, "
-                             "fresh airy palette, gentle depth, empty center area for UI, "
-                             "no characters, no text, no watermark"),
+                       style="wide simple cartoon scene for a casual game, very minimal, big "
+                             "rounded shapes in few flat colors with soft gradients, fresh airy "
+                             "palette, gentle depth, large empty areas, empty center for UI, "
+                             "no outlines on scenery, no characters, no text, no watermark"),
     "texture": dict(size="1024x1024", transparent=False, resize="256x256",
                     review="textures", prefix="texture_",
-                    style="seamless tileable soft cartoon texture, evenly lit, no vignette, "
+                    style="seamless tileable simple cartoon texture, evenly lit, no vignette, "
                           "no shadows at edges, no text, no watermark"),
 }
 
