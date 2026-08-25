@@ -33,7 +33,7 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 
 | 类型 | API size | 透明底 | 发布规格 | 预览区目录 | 命名示例 |
 | --- | --- | --- | --- | --- | --- |
-| 卡面插画 card | 1024x1536 | 否 | 竖构图源图（保持生成比例，Unity 制作整卡时裁切缩放到 300×400） | `ImageReview/cards/` | `card_attack_biji.png` |
+| 卡面插画 card | 1024x1536 | 否 | 竖构图源图（保持生成比例，Unity 制作整卡时裁切缩放到 480×640） | `ImageReview/cards/` | `card_attack_biji.png` |
 | 卡背 cardback | 1024x1536 | 否 | 整幅卡背设计 | `ImageReview/cardbacks/` | `cardback_attack.png` |
 | 图标 icon（类型/词条/状态/意图/功能） | 1024x1024 | 是 | 256x256 RGBA（脚本自动缩） | `ImageReview/icons/` | `icon_status_burn.png` |
 | 遗物图标 relic | 1024x1024 | 是 | 256x256 RGBA | `ImageReview/relics/` | `relic_memory_crystal.png` |
@@ -44,7 +44,7 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 | 背景 background | 2048x1152 | 否 | 1920x1080 RGB（脚本自动缩） | `ImageReview/backgrounds/` | `bg_battle.png` |
 | 纹理 texture | 1024x1024 | 否 | 256x256 可平铺 | `ImageReview/textures/` | `texture_parchment.png` |
 
-> 尺寸说明：文档规格（图标 32–56px 等）是 UI **显示尺寸**；卡牌整卡资产定稿 **300×400**（AI 源图 1024×1536，制作时裁切缩放）。本技能发布 4x 源图（图标 256、插画保持 API 原尺寸），显示缩放交给文档嵌入（`<img width>`）与未来 Unity 导入。
+> 尺寸说明：文档规格（图标 32–56px 等）是 UI **显示尺寸**；卡牌整卡资产定稿 **480×640**（AI 源图 1024×1536，制作时裁切缩放）。本技能发布 4x 源图（图标 256、插画保持 API 原尺寸），显示缩放交给文档嵌入（`<img width>`）与未来 Unity 导入。
 
 ## 风格基线
 
