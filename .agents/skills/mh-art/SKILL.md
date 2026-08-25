@@ -48,13 +48,16 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 
 ## 风格基线
 
-源自 [09-UI设计规范 §1](../../../docs/design/09-UI设计规范.md)「记忆殿堂」视觉定位：暗色奇幻 + 学术羊皮纸 + 古金点缀。所有 prompt 以此为底，保证新旧资产同风格：
+源自 [09-UI设计规范 §1](../../../docs/design/09-UI设计规范.md)「记忆殿堂」视觉定位：记忆殿堂主题 + 学术羊皮纸 + 古金点缀。所有 prompt 以此为底，保证新旧资产同风格。
 
-- **全局基线（EN，拼在最前）**：`dark fantasy storybook game art, ancient memory-palace library aesthetic, aged parchment and antique gold palette, warm candlelight atmosphere, painterly hand-drawn texture`
-- **卡面**：`single focal subject, dynamic pose, rich atmospheric background, no text, no watermark`
-- **卡背**：`full playing-card back design, ornate symmetrical border, radial gradient field, glowing central emblem, subtle arcane rune pattern, no text`（desc 里必须给类型色 hex，见 asset-specs 色板）
-- **图标（icon/relic/potion/node）**：`flat dark-fantasy game icon, centered composition, bold readable silhouette, glowing accent color, plain transparent background, no text, no watermark`
-- **立绘（enemy/portrait）**：`full body, centered, facing viewer, transparent background, no text, no watermark`
+> **风格 v2.1（2026-08-25）**：v1 暗黑厚涂（dark fantasy painterly）被用户否决——"过于硬核"。v2 软化后视觉自检发现卡面/卡背/立绘仍偏硬朗（金属高光、硬边、高对比），v2.1 追加**哑光、软边、禁金属高光、禁颗粒质感**负面词，并把这些类型的片段改为"绘本化"措辞（calm friendly / rounded soft / hand-painted border）。主题与色板不变，只换渲染语言。09 §1 文档待样张定稿后同步改写。
+
+- **全局基线（EN，拼在最前）**：`cozy fantasy storybook game art, soft watercolor and gouache hand-painting, ancient memory-palace library aesthetic, aged parchment and antique gold palette, warm gentle candlelight glow, soft rounded shapes, low contrast matte finish, gentle blurred edges like a children's picture book, no metallic specular highlights, no gritty texture, whimsical friendly storybook mood`
+- **卡面**：`vertical storybook illustration, single clear focal subject, calm friendly composition, dreamy soft watercolor-wash background, no text, no watermark`
+- **卡背**：`full playing-card back design filling the whole canvas, soft rounded hand-painted symmetrical border, gentle watercolor wash field, softly glowing central emblem, delicate hand-drawn flourishes, no text, no watermark`（desc 里必须给类型色 hex，见 asset-specs 色板）
+- **图标（icon/relic/potion/node）**：`flat fantasy storybook game icon, centered composition, bold readable silhouette, glowing accent color, plain transparent background, no text, no watermark`
+- **敌人**：`single friendly picture-book fantasy monster, full body, centered, facing viewer, rounded soft cartoonish design, mischievous but not scary, transparent background, no text, no watermark`
+- **角色**：`full body friendly storybook character, centered, facing viewer, gentle confident pose, rounded soft design, transparent background, no text, no watermark`
 - **背景**：`wide scene illustration, soft depth, empty center area for UI, no characters, no text, no watermark`
 - **纹理**：`seamless tileable texture, evenly lit, no vignette, no text`
 

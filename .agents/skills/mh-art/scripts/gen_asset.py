@@ -37,48 +37,56 @@ ARCHIVE_ROOT = os.path.join(REVIEW_ROOT, "_archived")
 ASSETS_ROOT = os.path.join("docs", "design", "assets")
 
 # ---- 项目规格表（与 SKILL.md 保持同步）----
-STYLE_BASE = ("dark fantasy storybook game art, ancient memory-palace library aesthetic, "
-              "aged parchment and antique gold palette, warm candlelight atmosphere, "
-              "painterly hand-drawn texture")
+# 风格 v2.1（2026-08-25）：v1 暗黑厚涂被否决（"过于硬核"）；v2 基线对卡面/卡背/敌人
+# 软化不足（视觉自检仍判"金属高光、硬边、高对比厚涂"），故追加哑光/软边/禁金属高光
+# 禁颗粒质感等负面词；记忆殿堂主题与羊皮纸+古金色板保留。
+STYLE_BASE = ("cozy fantasy storybook game art, soft watercolor and gouache hand-painting, "
+              "ancient memory-palace library aesthetic, aged parchment and antique gold palette, "
+              "warm gentle candlelight glow, soft rounded shapes, low contrast matte finish, "
+              "gentle blurred edges like a children's picture book, no metallic specular "
+              "highlights, no gritty texture, whimsical friendly storybook mood")
 
 # 发布目录（实际应用区）：扁平无子目录——文件名自带类别前缀（prefix 字段），
 # 发布时按前缀校验命名规范；仅 docs 文档仓库适用，勿再按类型嵌套。
 SPECS = {
     "card": dict(size="1024x1536", transparent=False, resize=None,
                  review="cards", prefix="card_",
-                 style="vertical trading-card illustration, single focal subject, dynamic pose, "
-                       "rich atmospheric background, no text, no watermark"),
+                 style="vertical storybook illustration, single clear focal subject, calm friendly "
+                       "composition, dreamy soft watercolor-wash background, no text, no watermark"),
     "cardback": dict(size="1024x1536", transparent=False, resize=None,
                      review="cardbacks", prefix="cardback_",
-                     style="full playing-card back design filling the whole canvas, ornate symmetrical "
-                           "border, radial gradient field, glowing central emblem, subtle arcane rune "
-                           "pattern, no text, no watermark"),
+                     style="full playing-card back design filling the whole canvas, soft rounded "
+                           "hand-painted symmetrical border, gentle watercolor wash field, softly "
+                           "glowing central emblem, delicate hand-drawn flourishes, "
+                           "no text, no watermark"),
     "icon": dict(size="1024x1024", transparent=True, resize="256x256",
                  review="icons", prefix="icon_",
-                 style="flat dark-fantasy game icon, centered composition, bold readable silhouette, "
+                 style="flat fantasy storybook game icon, centered composition, bold readable silhouette, "
                        "glowing accent color, plain transparent background, no text, no watermark"),
     "relic": dict(size="1024x1024", transparent=True, resize="256x256",
                   review="relics", prefix="relic_",
-                  style="flat dark-fantasy game icon of a small magical artifact, centered, bold "
+                  style="flat fantasy storybook game icon of a small magical artifact, centered, bold "
                         "readable silhouette, soft glow, plain transparent background, "
                         "no text, no watermark"),
     "potion": dict(size="1024x1024", transparent=True, resize="256x256",
                    review="potions", prefix="potion_",
-                   style="flat dark-fantasy game icon of an alchemy potion bottle, centered, bold "
+                   style="flat fantasy storybook game icon of an alchemy potion bottle, centered, bold "
                          "readable silhouette, glass and liquid glow, plain transparent background, "
                          "no text, no watermark"),
     "node": dict(size="1024x1024", transparent=True, resize="256x256",
                  review="map-nodes", prefix="node_",
-                 style="flat dark-fantasy map node emblem, centered, bold readable silhouette, "
-                       "plain transparent background, no text, no watermark"),
+                    style="flat fantasy storybook map node emblem, centered, bold readable silhouette, "
+                          "plain transparent background, no text, no watermark"),
     "enemy": dict(size="1024x1024", transparent=True, resize=None,
                   review="enemies", prefix="enemy_",
-                  style="single fantasy monster, full body, centered, facing viewer, menacing pose, "
+                  style="single friendly picture-book fantasy monster, full body, centered, facing "
+                        "viewer, rounded soft cartoonish design, mischievous but not scary, "
                         "transparent background, no text, no watermark"),
     "portrait": dict(size="1024x1536", transparent=True, resize=None,
                      review="portraits", prefix="portrait_",
-                     style="full body character, centered, facing viewer, hero pose, "
-                           "transparent background, no text, no watermark"),
+                     style="full body friendly storybook character, centered, facing viewer, gentle "
+                           "confident pose, rounded soft design, transparent background, "
+                           "no text, no watermark"),
     "background": dict(size="2048x1152", transparent=False, resize="1920x1080",
                        review="backgrounds", prefix="bg_",
                        style="wide scene illustration, soft depth, empty center area for UI, "
