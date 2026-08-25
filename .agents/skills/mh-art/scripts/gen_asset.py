@@ -61,11 +61,12 @@ SPECS = {
                        "subject drawn with a clean thin dark outline and very few details, minimal "
                        "simple props, lots of clean empty space, no text, no watermark"),
     "cardback": dict(size="1024x1536", transparent=False, resize=None,
-                     review="cardbacks", prefix="cardback_",
-                     style="full playing-card back design filling the whole canvas, symmetric cute "
-                           "emblem at center with a clean thin dark outline, chunky rounded border "
-                           "with simple rounded ornaments, soft gradient color field, very minimal "
-                           "detail, clean smooth finish, no text, no watermark"),
+                     review="cardbacks", prefix="card_",
+                     style="vertical card back design filling the whole canvas, symmetrical: deep "
+                           "warm cocoa brown field like an old book cover, centered cute emblem "
+                           "of one glowing golden memory orb floating above a small open cream "
+                           "book, a few tiny gold stars, soft candlelight glow, rounded border "
+                           "band with muted gold trim, no text, no watermark"),
     "icon": dict(size="1024x1024", transparent=True, resize="256x256",
                  review="icons", prefix="icon_",
                  style="simple casual game icon, single object only, centered, bold rounded "

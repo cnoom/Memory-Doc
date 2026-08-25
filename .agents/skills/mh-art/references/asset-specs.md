@@ -9,7 +9,7 @@ SKILL.md 规格表的展开版。名录与命名提取自 `docs/design/` 各设�
 | 类型 | 数量 | 内容来源 |
 | --- | --- | --- |
 | 卡面插画 card | 35 种（见 §2） | [06-学者角色卡牌设计](../../../docs/design/06-学者角色卡牌设计.md) |
-| 卡背 cardback | 4 | [10-UI美术资源规格 §2.3](../../../docs/design/10-UI美术资源规格.md) |
+| 卡背 cardback | 1（通用，v1.4） | [10-UI美术资源规格 §2.3](../../../docs/design/10-UI美术资源规格.md) |
 | 图标 icon | 33（见 §4） | [10-UI美术资源规格 §3.1–3.4/3.7](../../../docs/design/10-UI美术资源规格.md) |
 | 遗物图标 relic | 20 | [07-遗物与道具设计](../../../docs/design/07-遗物与道具设计.md) + 10§3.5 |
 | 道具图标 potion | 8 | [07-遗物与道具设计](../../../docs/design/07-遗物与道具设计.md) + 10§3.6 |
@@ -75,18 +75,19 @@ SKILL.md 规格表的展开版。名录与命名提取自 `docs/design/` 各设�
 | 拖沓 | `card_curse_tuota.png` |
 | 误解 | `card_curse_wujie.png` |
 
-## 3. 卡背色板（4 种，desc 必须拼入）
+## 3. 卡背（1 种：通用卡背）
 
-来自 [10-UI美术资源规格 §2.3](../../../docs/design/10-UI美术资源规格.md)。卡背是核心记忆信息分层，颜色必须严格遵守。
+2026-08-25 定稿（10 §2.3 v1.4）：全类型共用**通用卡背**，四类型色卡背作废——背面不泄露类型（玩法影响见 02 §2）。已生成并发布 `cardback_universal.png`。
 
-| 类型 | 文件名 | 边框色 | 底色径向渐变 | 中心符号 | 气质 |
-| --- | --- | --- | --- | --- | --- |
-| 攻击 | `cardback_attack.png` | `#D44545` | `#4A2020`→`#2A1010` | 交叉剑/火焰 | 战斗、灼热 |
-| 技能 | `cardback_skill.png` | `#4577D4` | `#1A2A4A`→`#101830` | 卷轴/书本 | 冷静、学术 |
-| 能力 | `cardback_ability.png` | `#9B45D4` | `#3A1A5A`→`#1A0A30` | 菱形宝石/奥术符 | 奥秘、持续 |
-| 诅咒 | `cardback_curse.png` | `#3A2A3A` | `#2A1A2A`→`#0A0A0A` | 骷髅/裂痕 | 阴暗、不祥 |
+prompt 基调（再生时用）：
 
-prompt 组装示例（攻击）：`ornate border in crimson red #D44545, radial gradient field from dark red #4A2020 to near-black #2A1010, crossed swords emblem, dim crimson rune filigree`
+```
+clean simple 2D cartoon game art for casual mobile games, ... vertical card back design
+filling the whole canvas, symmetrical: deep warm cocoa brown field like an old book cover,
+centered cute emblem of one glowing golden memory orb floating above a small open cream
+book, a few tiny gold stars, soft candlelight glow, rounded border band with muted gold
+trim, no text, no watermark
+```
 
 ## 4. 图标名录（33 个，含状态/意图/词条/类型/功能）
 
