@@ -276,17 +276,20 @@ def main():
         "quality": args.quality,
         "n": args.n,
     }
+    # 网关实测（2026-08-25）：n>1 会被网关转成 tools[0].n 并返回 400
+    # "Unknown parameter: 'tools[0].n'"，故多候选拆成 n 次 n=1 请求。
+    payload["n"] = 1
     if transparent:
         payload["background"] = "transparent"
 
-    data = request_with_retry(mod, payload)
-    result = json.loads(data)
-    if "data" not in result or not result["data"]:
-        sys.exit(f"Unexpected API response: {json.dumps(result)[:300]}")
-
     os.makedirs(review_dir, exist_ok=True)
     saved = []
-    for i, item in enumerate(result["data"]):
+    for i in range(args.n):
+        data = request_with_retry(mod, payload)
+        result = json.loads(data)
+        if "data" not in result or not result["data"]:
+            sys.exit(f"Unexpected API response: {json.dumps(result)[:300]}")
+        item = result["data"][0]
         try:
             img_bytes = base64.b64decode(item["b64_json"])
         except (KeyError, TypeError):

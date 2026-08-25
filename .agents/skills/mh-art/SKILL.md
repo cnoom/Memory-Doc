@@ -82,6 +82,7 @@ python .agents/skills/mh-art/scripts/gen_asset.py --publish ImageReview/relics/r
 
 ## 已知坑
 
+- 网关不支持单请求多图：`n>1` 会被网关转成 `tools[0].n` 返回 400——`gen_asset.py` 已把 `--n N` 自动拆成 N 次 n=1 请求，调用方无感。
 - `gen_asset.py` 依赖 base 脚本绝对路径（默认 `C:/Users/Administrator/.zcode/skills/germmc-image2/`），换机器需设 `IMAGE2_SKILL_DIR` 环境变量。
 - 生成尺寸档位：网关仅支持 1024x1024 / 1024x1536 / 1536x1024 / 2048x1152 等固定档位，项目规格靠脚本 PIL 后缩放。
 - 上游生成慢（可达数分钟），base 脚本 600s 超时 + 3 次重试，502 等一会再试。
