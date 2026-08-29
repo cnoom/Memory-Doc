@@ -5,9 +5,9 @@
 按 --type 套用规格表的尺寸、风格片段、透明底、缩放、命名。
 
 三目录工作流（详见 SKILL.md 与 ImageReview/README.md）:
-    生成  -> 默认落 ImageReview/<类型>/ 预览区，供人工校验（不进 git）
+    生成  -> 默认落 ImageReview/<类型>/ 预览区，供人工校验（进 git，便于远端查看拍板）
     归档  -> --archive 把被取代的候选移入 ImageReview/_archived/<日期>/<类型>/（只进不出）
-    发布  -> --publish 把校验通过的文件移动到 docs/design/assets/（扁平无子目录，
+    发布  -> --publish 把校验通过的文件移动到项目根 Assets/UI/（扁平无子目录，
              文件名自带类别前缀；进 git，供文档嵌入）
 
 用法（仓库根目录下运行）:
@@ -34,7 +34,7 @@ import time
 
 REVIEW_ROOT = "ImageReview"
 ARCHIVE_ROOT = os.path.join(REVIEW_ROOT, "_archived")
-ASSETS_ROOT = os.path.join("docs", "design", "assets")
+ASSETS_ROOT = os.path.join("Assets", "UI")
 
 # ---- 项目规格表（与 SKILL.md 保持同步）----
 # 风格 v3.2（2026-08-25，用户直接反馈修正）：v3.1 三版哥布林被用户点评
@@ -62,11 +62,13 @@ SPECS = {
                        "simple props, lots of clean empty space, no text, no watermark"),
     "cardback": dict(size="1024x1536", transparent=False, resize=None,
                      review="cardbacks", prefix="card_",
-                     style="vertical card back design filling the whole canvas, symmetrical: deep "
-                           "warm cocoa brown field like an old book cover, centered cute emblem "
-                           "of one glowing golden memory orb floating above a small open cream "
-                           "book, a few tiny gold stars, soft candlelight glow, rounded border "
-                           "band with muted gold trim, no text, no watermark"),
+                     style="vertical card back design filling the whole canvas, perfectly "
+                           "symmetrical: muted medium-depth teal field like a calm scholar "
+                           "study at dusk, centered cute golden emblem of one glowing memory "
+                           "orb floating above a small open cream book, enclosed in a thin "
+                           "gold circular ring, elegant thin gold line border with tiny gold "
+                           "dots at the four corners, a few tiny gold stars, soft warm glow, "
+                           "very minimal, no text, no watermark"),
     "icon": dict(size="1024x1024", transparent=True, resize="256x256",
                  review="icons", prefix="icon_",
                  style="simple casual game icon, single object only, centered, bold rounded "
@@ -239,7 +241,7 @@ def publish(spec_key, src):
         dst = os.path.join(ASSETS_ROOT, f"{name}.png")
         shutil.move(f, dst)
         print(f"Published: {f} -> {dst}")
-    print("Next: 在对应设计文档里嵌入相对引用，如 ![名称](./assets/<文件>.png)；"
+    print("Next: 在对应设计文档里嵌入相对引用，如 ![名称](../../Assets/UI/<文件>.png)；"
           "发布目录进 git，记得提交。")
 
 
@@ -260,7 +262,7 @@ def main():
                         help="force opaque even if the type defaults to transparent")
     parser.add_argument("--no-resize", action="store_true", help="skip preset downscale")
     parser.add_argument("--publish", nargs="?", const="", metavar="FILE",
-                        help="publish mode: move reviewed ImageReview file (or whole folder) to docs/design/assets/")
+                        help="publish mode: move reviewed ImageReview file (or whole folder) to Assets/UI/")
     parser.add_argument("--archive", nargs="?", const="", metavar="FILE",
                         help="archive mode: move superseded ImageReview file (or whole folder) to _archived/<date>/")
     args = parser.parse_args()

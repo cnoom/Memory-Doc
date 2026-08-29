@@ -4,12 +4,12 @@ SKILL.md 规格表的展开版。名录与命名提取自 `docs/design/` 各设�
 
 ## 1. 资产类型 ↔ 设计文档对应
 
-全部类型统一发布到 `docs/design/assets/`（**扁平无子目录**，文件名前缀区分类别）。
+全部类型统一发布到项目根目录 `Assets/UI/`（**扁平无子目录**，文件名前缀区分类别）。
 
 | 类型 | 数量 | 内容来源 |
 | --- | --- | --- |
 | 卡面插画 card | 35 种（见 §2） | [06-学者角色卡牌设计](../../../docs/design/06-学者角色卡牌设计.md) |
-| 卡背 cardback | 1（通用，v1.4） | [10-UI美术资源规格 §2.3](../../../docs/design/10-UI美术资源规格.md) |
+| 卡背 cardback | 1（通用·静谧青纹章，v1.5） | [10-UI美术资源规格 §2.3](../../../docs/design/10-UI美术资源规格.md) |
 | 图标 icon | 33（见 §4） | [10-UI美术资源规格 §3.1–3.4/3.7](../../../docs/design/10-UI美术资源规格.md) |
 | 遗物图标 relic | 20 | [07-遗物与道具设计](../../../docs/design/07-遗物与道具设计.md) + 10§3.5 |
 | 道具图标 potion | 8 | [07-遗物与道具设计](../../../docs/design/07-遗物与道具设计.md) + 10§3.6 |
@@ -77,17 +77,20 @@ SKILL.md 规格表的展开版。名录与命名提取自 `docs/design/` 各设�
 
 ## 3. 卡背（1 种：通用卡背）
 
-2026-08-25 定稿（10 §2.3 v1.4）：全类型共用**通用卡背**，四类型色卡背作废——背面不泄露类型（玩法影响见 02 §2）。已生成并发布 `cardback_universal.png`。
+2026-08-29 定稿（10 §2.3 v1.5）：全类型共用**通用卡背·静谧青纹章版**——静谧青"学者书斋"底、金色细线框+四角金点、中央金环徽记（金色发光记忆宝珠悬浮于奶油色摊开的书本上方）、星点点缀、背景殿堂尖拱暗纹；背面不泄露类型（玩法影响见 02 §2）。已生成并发布 `cardback_universal.png`。v1.4 深可可旧书封版归档 `ImageReview/_archived/2026-08-29/cardbacks/`。
 
 prompt 基调（再生时用）：
 
 ```
 clean simple 2D cartoon game art for casual mobile games, ... vertical card back design
-filling the whole canvas, symmetrical: deep warm cocoa brown field like an old book cover,
-centered cute emblem of one glowing golden memory orb floating above a small open cream
-book, a few tiny gold stars, soft candlelight glow, rounded border band with muted gold
-trim, no text, no watermark
+filling the whole canvas, perfectly symmetrical: muted medium-depth teal field like a calm
+scholar study at dusk, centered cute golden emblem of one glowing memory orb floating above
+a small open cream book, enclosed in a thin gold circular ring, elegant thin gold line
+border with tiny gold dots at the four corners, a few tiny gold stars, soft warm glow,
+very minimal, no text, no watermark
 ```
+
+卡框（`border_card_*`，10 §2.2/§4.3 v1.5）：记忆殿堂拱窗版——暗类型色边带（attack 暗红 / skill 暗藏青 / ability 暗紫 / curse 炭黑）+ 金拱饰石柱 + 拱形插画窗（attack/skill/ability 窗内薄荷净底、curse 淡紫灰）+ 下部奶油效果区；发布为分层合成定稿（`roundify_card.py --compose-type`）：程序描边环（26px 等粗、类型色板锚定）+ 内容层 + 拱形插画窗镂空（alpha=0，插画引擎动态垫层）。prompt 片段见 SKILL.md 风格基线。
 
 ## 4. 图标名录（33 个，含状态/意图/词条/类型/功能）
 
@@ -164,6 +167,6 @@ trim, no text, no watermark
 
 ## 12. 尺寸与透明底备忘
 
-- 发布规格：图标/遗物/道具/节点/纹理 256×256；背景 1920×1080；卡面/卡背/立绘保留 API 原尺寸（插画源图，显示缩放交给文档嵌入与 Unity 导入）。
+- 发布规格：图标/遗物/道具/节点/纹理 256×256；背景 1920×1080；卡面插画/立绘保留 API 原尺寸；**卡背与四类型卡框发布为 3:4 圆角定稿版**（1024×1365 居中裁切 + 60px 圆角透明角，`roundify_card.py` 后处理，2026-08-29）。
 - 文档里的 32–56px 图标尺寸是 UI 显示尺寸，非源图尺寸（详见 SKILL.md 规格表附注）。
-- 透明底：仅 icon/relic/potion/node/enemy/portrait；网关不支持 `background: transparent` 参数但响应 prompt 关键词，脚本自动校验 alpha 并对实心底打 WARNING。
+- 透明底：仅 icon/relic/potion/node/enemy/portrait；网关不支持 `background: transparent` 参数但响应 prompt 关键词，脚本自动校验 alpha 并对实心底打 WARNING。卡背/卡框的圆角透明角由 roundify 后处理产生，不依赖网关。

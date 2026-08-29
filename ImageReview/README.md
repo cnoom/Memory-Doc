@@ -1,6 +1,6 @@
 # ImageReview — AI 生图预览/归档区
 
-mh-art 技能（`.agents/skills/mh-art/`）生成的图片**先落在本目录**（含 `_archived/` 归档区，整体随仓库进 git——便于在远端直接查看候选与旧方案），供人工校验风格/构图/透明底。校验通过的发布到 `docs/design/assets/`（实际应用区）。
+mh-art 技能（`.agents/skills/mh-art/`）生成的图片**先落在本目录**（含 `_archived/` 归档区，整体随仓库进 git——便于在远端直接查看候选与旧方案），供人工校验风格/构图/透明底。校验通过的发布到项目根目录 `Assets/UI/`（实际应用区）。
 
 ## 目录角色
 
@@ -8,7 +8,7 @@ mh-art 技能（`.agents/skills/mh-art/`）生成的图片**先落在本目录**
 | --- | --- | --- |
 | `<类型>/`（cards/ cardbacks/ icons/ relics/ potions/ map-nodes/ enemies/ portraits/ backgrounds/ textures/） | **预览**：当前待看的候选 | 只允许存在"当前待审批"与"明确挂起"的活候选 |
 | `_archived/<日期>/<类型>/` | **归档**：被取代/落选的历史方案 | 只进不出，永不发布；回看旧方案按日期目录翻 |
-| `docs/design/assets/`（不在本目录下） | **实际应用**：正式资产 | 进 git，**扁平无子目录**（文件名前缀区分类别），被设计文档以相对路径嵌入 |
+| `Assets/UI/`（项目根目录，不在本目录下） | **实际应用**：正式资产 | 进 git，**扁平无子目录**（文件名前缀区分类别），被设计文档以相对路径嵌入 |
 
 ## 工作流
 

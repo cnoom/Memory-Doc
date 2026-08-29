@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""卡框设计稿合成器 v3——《记忆勇者》整卡 480×640 视觉方案 mockup。
+"""卡框设计稿合成器 v4——《记忆勇者》整卡 480×640 视觉方案 mockup。
 
-v3 修订（用户反馈：布局 OK，但 PIL 手绘框体"简陋、不简约"）：
-  - 框体与卡背改由 AI 绘制（与插画同风格体系），存 ImageReview/cards/frame_*.png
-    与 cardback_universal.png；本脚本只负责把插画窗 + 文字元素按定稿布局合成上去
-  - 布局沿用 v2（插画主导 432×320、铭牌压插画、配对大数字徽章、词条胶囊）
-  - AI 源图 1024×1536（2:3）居中裁到 3:4 后缩放 480×640
+v4 修订（2026-08-29，卡面卡框定稿为"记忆殿堂拱窗"方向）：
+  - 框体换为四类型拱窗框 border_card_{attack,skill,ability,curse}.png：
+    AI 绘制金拱饰 + 石柱 + 暗类型色边带，拱窗内为净色底
+  - 本脚本自动从框图提取拱窗净底区域（颜色采样 + 逐行 span 填充 + 收缩），
+    生成像素级拱形 mask，把插画裁贴进拱窗——不盖金拱线，适配 ogee 尖拱
+  - 布局按拱窗底沿重排：铭牌压拱底、配对/翻开/词条/稀有度条下移进效果区
+  - v3 及之前：矩形插画窗布局（git 历史可查）；框体与卡背仍由 AI 绘制
 
-用法（仓库根目录，先生成 frame_*.png / cardback_universal.png）：
+用法（仓库根目录）：
     python .agents/skills/mh-art/scripts/card_frame_mockup.py
 输出：ImageReview/cards/cardframe_{attack,skill,ability,curse,back}.png
 """
@@ -15,7 +17,9 @@ v3 修订（用户反馈：布局 OK，但 PIL 手绘框体"简陋、不简约"�
 import os
 import sys
 
-from PIL import Image, ImageDraw, ImageFont
+import numpy as np
+
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 W, H = 480, 640
 INK = (59, 50, 38, 255)            # #3B3226 深可可
@@ -33,6 +37,23 @@ TYPES = {
     "curse":   dict(dark=(26, 26, 26),   light=(58, 42, 58),   label="诅咒"),
 }
 RARITY = {"普通": (176, 176, 176), "罕见": (74, 156, 212), "稀有": (212, 168, 87)}
+
+# 拱窗净底采样点（480×640 拱窗中心）与 mask 容差/收缩
+ARCH_SAMPLE = (W // 2, 270)
+ARCH_TOL = 46
+ARCH_SHRINK = 3
+# 拱窗版效果区布局（y 坐标，480×640）——按 v1.5 拱窗框实测：
+# 拱底沿/金线效果框顶 y≈465，金线效果框底 y≈617（attack 框实测，四框同款）
+NAMEPLATE_Y = 443          # 卡名铭牌压拱底沿
+PAIR_Y = 478               # 配对效果行（金框内）
+FLIP_GAP = 6               # 翻开行与上一行间距
+TAG_Y_FALLBACK = 568       # 词条行（金框内）
+RARITY_Y = 602             # 稀有度条（金框内底部）
+# 能力牌（元素多，整组上收）
+ABILITY_NAMEPLATE_Y = 436
+ABILITY_SUSTAIN_Y = 480
+ABILITY_FLIP_Y = 542
+ABILITY_TAG_Y = 574
 
 FONTS_DIR = os.path.join(os.environ.get("WINDIR", r"C:\Windows"), "Fonts")
 
@@ -59,7 +80,7 @@ def wrap(d, text, fnt, max_w):
 
 
 def load_base(raw_path):
-    """AI 框体源图（1024×1536，2:3）→ 居中裁 3:4 → 480×640。"""
+    """AI 框体/卡背源图（1024×1536，2:3）→ 居中裁 3:4 → 480×640。"""
     art = Image.open(raw_path).convert("RGBA")
     src_w, src_h = art.size
     target_h = int(src_w * 4 / 3)
@@ -69,34 +90,40 @@ def load_base(raw_path):
     return art.resize((W, H), Image.LANCZOS)
 
 
-def paste_art(card, art_path, box):
-    """插画居中偏上裁切铺满插画窗；无插画时绘制诅咒占位骷髅。"""
-    x0, y0, x1, y1 = box
-    win_w, win_h = x1 - x0, y1 - y0
+
+def window_mask(card):
+    """镂空框的插画窗 mask：compose 挖洞区（alpha<200），即精确窗形。"""
+    a = np.asarray(card.getchannel("A"))
+    return Image.fromarray(((a < 200) * 255).astype("uint8"), "L")
+
+
+def paste_arch_art(card, mask, art_path, curse=False, base_color=None):
+    """插画按拱形 mask 贴入拱窗；诅咒牌无插画时画深底占位骷髅。"""
+    bb = mask.getbbox()
+    win_w, win_h = bb[2] - bb[0], bb[3] - bb[1]
     if art_path and os.path.isfile(art_path):
         art = Image.open(art_path).convert("RGBA")
         src_w, src_h = art.size
         crop_h = int(src_w * win_h / win_w)
         top = int((src_h - crop_h) * 0.45)
         art = art.crop((0, top, src_w, top + crop_h)).resize((win_w, win_h), Image.LANCZOS)
-    else:
-        art = Image.new("RGBA", (win_w, win_h))
+    elif curse:
+        # 诅咒占位：不贴深色底（框图拱窗内缘有暗角，像素 mask 边界不规则会
+        # 显锯齿）——底色用框图窗中心采样色原样平铺（与窗底无缝），仅画深
+        # 可可骷髅剪影
+        art = Image.new("RGBA", (win_w, win_h), tuple(base_color) + (255,))
         d = ImageDraw.Draw(art)
-        for y in range(win_h):
-            t = y / win_h
-            color = tuple(int(a + (b - a) * t) for a, b in zip((42, 26, 42), (10, 10, 10)))
-            d.line([(0, y), (win_w, y)], fill=color + (255,))
         cx, cy = win_w // 2, win_h // 2 - 10
-        d.ellipse([cx - 46, cy - 50, cx + 46, cy + 42], fill=(232, 224, 232, 255), outline=INK, width=3)
-        d.rectangle([cx - 26, cy - 22, cx - 8, cy - 2], fill=(42, 26, 42, 255))
-        d.rectangle([cx + 8, cy - 22, cx + 26, cy - 2], fill=(42, 26, 42, 255))
-        d.polygon([(cx, cy + 4), (cx - 7, cy + 20), (cx + 7, cy + 20)], fill=(42, 26, 42, 255))
+        d.ellipse([cx - 46, cy - 50, cx + 46, cy + 42], fill=INK)
+        d.rectangle([cx - 26, cy - 22, cx - 8, cy - 2], fill=(226, 218, 228, 255))
+        d.rectangle([cx + 8, cy - 22, cx + 26, cy - 2], fill=(226, 218, 228, 255))
+        d.polygon([(cx, cy + 4), (cx - 7, cy + 20), (cx + 7, cy + 20)], fill=(226, 218, 228, 255))
         for i in range(4):
             tx = cx - 24 + i * 16
-            d.rectangle([tx, cy + 34, tx + 10, cy + 52], fill=(232, 224, 232, 255), outline=INK, width=2)
-    mask = Image.new("L", (win_w, win_h), 0)
-    ImageDraw.Draw(mask).rounded_rectangle([0, 0, win_w - 1, win_h - 1], 14, fill=255)
-    card.paste(art, (x0, y0), mask)
+            d.rectangle([tx, cy + 34, tx + 10, cy + 52], fill=INK)
+    else:
+        art = Image.new("RGBA", (win_w, win_h))
+    card.paste(art, (bb[0], bb[1]), mask.crop(bb))
 
 
 def chip(d, x, y, text, bg, fg=WHITE, fnt=None, pad_x=12, h=28):
@@ -108,7 +135,7 @@ def chip(d, x, y, text, bg, fg=WHITE, fnt=None, pad_x=12, h=28):
     return x + tw + pad_x * 2
 
 
-def nameplate(d, name, rarity_color, y=330):
+def nameplate(d, name, rarity_color, y=NAMEPLATE_Y):
     fnt = font(24, bold=True)
     tw = d.textlength(name, font=fnt)
     x0 = (W - tw) // 2 - 20
@@ -157,42 +184,62 @@ def effect_rows(d, t, y, pair, flip):
         lines = wrap(d, flip, text_fnt, 456 - (x + 12))
         for i, ln in enumerate(lines[:2]):
             d.text((x + 12, y + 5 + i * 24), ln, font=text_fnt, fill=INK)
-        y += 32 + (len(lines[:2]) - 1) * 24 + 14
+        y += 32 + (len(lines[:2]) - 1) * 24 + FLIP_GAP
     return y
 
 
 def make_standard(type_key, frame_path, name, rarity, art_path, pair, flip, tags):
     t, rc = TYPES[type_key], RARITY[rarity]
     card = load_base(frame_path)
+    mask = window_mask(card)
     d = ImageDraw.Draw(card)
-    paste_art(card, art_path, (24, 30, 456, 350))
-    d.rounded_rectangle([24, 30, 456, 350], 14, outline=INK, width=2)
+    paste_arch_art(card, mask, art_path, curse=(type_key == "curse"),
+                   base_color=(223, 215, 223) if type_key == "curse" else None)
     type_badge(d, t)
-    nameplate(d, name, rc, y=330)
-    y = effect_rows(d, t, 398, pair, flip)
-    tag_chips(d, tags, max(y, 520))
-    d.rounded_rectangle([40, 606, 440, 612], 3, fill=rc)
-    return card
+    nameplate(d, name, rc)
+    y = effect_rows(d, t, PAIR_Y, pair, flip)
+    tag_chips(d, tags, max(y, TAG_Y_FALLBACK))
+    d.rounded_rectangle([40, RARITY_Y, 440, RARITY_Y + 6], 3, fill=rc)
+    return round_corners(card)
 
 
 def make_ability(frame_path, name, rarity, art_path, sustain_lines, flip, tags):
+    """能力牌：拱窗框下半排持续段+翻开段；持续文字压成 1 行保空间。"""
     t, rc = TYPES["ability"], RARITY[rarity]
     card = load_base(frame_path)
+    mask = window_mask(card)
     d = ImageDraw.Draw(card)
-    paste_art(card, art_path, (24, 30, 456, 300))
-    d.rounded_rectangle([24, 30, 456, 300], 14, outline=INK, width=2)
+    paste_arch_art(card, mask, art_path)
     type_badge(d, t)
-    nameplate(d, name, rc, y=280)
+    nameplate(d, name, rc, y=ABILITY_NAMEPLATE_Y)
     text_fnt = font(15)
-    chip(d, 24, 342, "◆ 持续（背面在桌面时）", t["light"], h=30)
-    y = 380
-    for ln in sustain_lines[:2]:
-        d.text((24, y), ln, font=text_fnt, fill=INK)
-        y += 24
-    x = chip(d, 24, y + 12, "↻ 翻开", GOLD, h=30)
-    d.text((x + 12, y + 16), flip, font=text_fnt, fill=INK)
-    tag_chips(d, tags, 548)
-    d.rounded_rectangle([40, 606, 440, 612], 3, fill=rc)
+    y = ABILITY_SUSTAIN_Y
+    chip(d, 24, y, "◆ 持续（背面在桌面时）", t["light"], h=28)
+    y += 32
+    ln = sustain_lines[0]
+    d.text((24, y), ln, font=text_fnt, fill=INK)
+    y += 26
+    x = chip(d, 24, y, "↻ 翻开", GOLD, h=30)
+    d.text((x + 12, y + 4), flip, font=text_fnt, fill=INK)
+    tag_chips(d, tags, ABILITY_TAG_Y)
+    d.rounded_rectangle([40, RARITY_Y, 440, RARITY_Y + 6], 3, fill=rc)
+    return round_corners(card)
+
+
+def frame_src(out, name):
+    """框体源图定位：正式资产 Assets/UI 优先（已发布），预览区 ImageReview 兜底。"""
+    for p in (os.path.join("Assets", "UI", name), os.path.join(out, name)):
+        if os.path.isfile(p):
+            return p
+    sys.exit(f"frame not found in Assets/UI or {out}: {name}")
+
+
+def round_corners(card, radius=28):
+    """480×640 产物加圆角透明角（与发布资产 60px@1024 口径一致，≈28px@480）。"""
+    mask = Image.new("L", card.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle(
+        [0, 0, card.width - 1, card.height - 1], radius, fill=255)
+    card.putalpha(mask)
     return card
 
 
@@ -200,21 +247,21 @@ def main():
     out = os.path.join("ImageReview", "cards")
 
     make_standard(
-        "attack", os.path.join(out, "frame_attack.png"),
+        "attack", frame_src(out, "border_card_attack.png"),
         "笔记", "普通", os.path.join(out, "card_attack_biji_1.png"),
         pair=("atk", 6, "伤害"), flip=None,
         tags=[("[笔记]", GREEN)],
     ).save(os.path.join(out, "cardframe_attack.png"))
 
     make_standard(
-        "skill", os.path.join(out, "frame_skill.png"),
+        "skill", frame_src(out, "border_card_skill.png"),
         "速读", "普通", os.path.join(out, "card_skill_sudu_1.png"),
         pair=("block", 4, "格挡"), flip="随机揭示周围 1 张背面牌",
         tags=[("[翻开]", GOLD)],
     ).save(os.path.join(out, "cardframe_skill.png"))
 
     make_ability(
-        os.path.join(out, "frame_ability.png"),
+        frame_src(out, "border_card_ability.png"),
         "全神贯注", "普通", os.path.join(out, "card_ability_quanshenguanzhu_1.png"),
         ["每翻开一张牌，获得 1 点「专注」", "专注：下次配对伤害 +1，触发后消耗"],
         flip="获得 2 点格挡",
@@ -222,14 +269,17 @@ def main():
     ).save(os.path.join(out, "cardframe_ability.png"))
 
     make_standard(
-        "curse", os.path.join(out, "frame_curse.png"),
+        "curse", frame_src(out, "border_card_curse.png"),
         "遗忘", "普通", None,
         pair=None, flip="失去 2 点血量；移除自身",
         tags=[("[翻开]", GOLD), ("[移除]", GREY)],
     ).save(os.path.join(out, "cardframe_curse.png"))
 
-    load_base(os.path.join(out, "cardback_universal.png")).save(
-        os.path.join(out, "cardframe_back.png"))
+    # 卡背效果图：优先预览区新卡背（本轮定稿 v2 静谧青纹章），发布后退化到正式资产
+    back_src = os.path.join(out, "..", "cardbacks", "cardback_universal_v2b.png")
+    if not os.path.isfile(back_src):
+        back_src = os.path.join("Assets", "UI", "cardback_universal.png")
+    load_base(back_src).save(os.path.join(out, "cardframe_back.png"))
 
     print("Saved: cardframe_attack / skill / ability / curse / back ->", out)
 
