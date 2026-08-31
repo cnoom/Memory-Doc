@@ -223,21 +223,48 @@ RING_RADIUS = 60
 CREAM = (249, 234, 206)
 
 
-def punch_arch_window(card, band_px=26, tol_ch=14, dilate=3):
-    """拱形插画窗镂空：窗内净底区 alpha=0，动态插画由引擎在窗下垫层。
+# ---- 拱窗分层正本：拓扑暖环取洞（主）+ 净底检测/参数拱兜底（辅） ----
+# 窗形正本=框体贴图 alpha 洞（引擎按 alpha<200 读窗形）；ARCH_WIN 参数拱
+# 仅作环检测失败时的兜底下限 + 文档名义正本，不再参与正常洞形计算。
+ARCH_WIN = dict(w=0.55, top=0.15, bottom=0.68)  # 洞宽占比 / 洞顶·洞底 y 占比
 
-    窗区提取：拱窗中心采样净底色 → 逐通道容差二值 → **种子区域生长**
-    （与已区域邻接差判定，容忍窗底渐变暗角；PIL floodfill 的"与种子点
-    比色"会被渐变截断，故自写迭代膨胀）→ 逐行 span 填充（拱形凸体，
-    连窗内云/塔影等装饰一并纳入）→ 膨胀 dilate px 覆盖暗角边。
-    容差取紧值 14：窗台附近薄荷→奶油渐变桥会在宽松容差下把窗区泄漏到卡底（已踩坑）；
-    洞略小于真窗、边缘留渐变环，插画垫层下不可见。
+
+def _arch_geo_mask(h, w, win=None):
+    """参数拱洞（半圆拱顶 + 矩形身，拱高=半宽）→ bool mask。"""
+    win = win or ARCH_WIN
+    yy, xx = np.mgrid[0:h, 0:w].astype(float)
+    hw = win["w"] * w / 2
+    cy = win["top"] * h + hw
+    ell = (((xx - w / 2) / hw) ** 2 + ((yy - cy) / hw) ** 2) <= 1
+    body = (yy > cy) & (yy <= win["bottom"] * h) & (np.abs(xx - w / 2) <= hw)
+    return (yy <= cy) & ell | body
+
+
+# 暖移阈值（入环线）：默认 50——高于窗内柱身暖移（28–44）即可把柱身
+# 挡在环外；curse 窗内无柱身且 pale 金饰带暖移仅 40–61，降到 35 才闭环。
+WARM_DELTA = {"attack": 50, "skill": 50, "ability": 50, "curse": 35}
+
+
+def punch_arch_window(card, type_key=None):
+    """拱形插画窗镂空（分层处理）：框体层与插画层共用同一洞形正本。
+
+    拓扑取洞：窗框深描边 + 金饰带构成**闭合暖环**（暖移 = (r−b)−(ref_r−ref_b)
+    > WARM_DELTA[type]；深描边 72–116、金饰 53–106 均入环，窗内石柱/
+    内阴影等冷调不入）——对暖环做形态闭运算桥接 pale 断口后，从画面四角
+    洪水填充环外区域，**包含窗中心的被围连通域即窗内区**。无射线/凸形
+    假设，窗内贴边石柱、拱顶饰件全部天然落在洞内（插画垫层盖住）；洞边
+    =描边内沿，描边本体留在框体层。历史失败对照：参数拟合洞<真窗留色环、
+    边缘洪水越狱啃框体、射线法被贴边柱/暖判据过冲反复打穿。
+
+    ∪ 净底检测区（紧容差区域生长，防渐变桥泄漏：不越金框顶线）与参数拱
+    ARCH_WIN（环检测失败时的兜底 + 文档名义正本）→ 孔洞填充（星子等
+    暖色岛斑）→ 6% 边缘保险带 → 1.2px 羽化置 alpha=0。
     """
     rgb = np.asarray(card.convert("RGB")).astype(int)
     h, w = rgb.shape[:2]
     sx, sy = w // 2, int(h * 0.42)
     ref = rgb[sy, sx]
-    base = (np.abs(rgb - ref) < tol_ch).all(axis=2)
+    base = (np.abs(rgb - ref) < 14).all(axis=2)
     m = np.zeros_like(base)
     m[sy - 2:sy + 3, sx - 2:sx + 3] = base[sy - 2:sy + 3, sx - 2:sx + 3]
     for _ in range(400):                      # 区域生长（邻接扩张，容忍渐变）
@@ -252,31 +279,46 @@ def punch_arch_window(card, band_px=26, tol_ch=14, dilate=3):
         if (grown == m).all():
             break
         m = grown
-    # 洞形用参数化拱形（bbox 内缩 4px：半椭圆拱顶+矩形身），而非生长结果
-    # 本身——窗底渐变的等色线会把逐容差区域限制成菱形（已踩坑）。
-    ys, xs = np.nonzero(m)
-    if not ys.size:
-        return card
-    bx0, by0 = int(xs.min()) + 4, int(ys.min()) + 4
-    bx1 = int(xs.max()) + 1 - 4
-    # 下缘不依赖色连通（窗台下薄荷→奶油渐变桥在任意容差内连通、本质无界），
-    # 锚定结构线：窗台=效果区金框顶线（金色横行检测，源图实测 y≈460@480）
+    # 防窗台渐变桥泄漏：检测区不越过效果区金框顶线（金色横行检测）
     gold = ((np.abs(rgb[..., 0] - 212) < 45) & (np.abs(rgb[..., 1] - 168) < 45)
             & (np.abs(rgb[..., 2] - 87) < 55))
     rowgold = gold[:, w // 4: 3 * w // 4].mean(axis=1)
     cand = [y for y in range(h // 2, h) if rowgold[y] > 0.5]
-    by1 = min(int(ys.max()) + 1 - 4, (cand[0] - 4) if cand else h - 4)
-    arc_h = max((bx1 - bx0) // 2, 8)
-    cy = by0 + arc_h
-    hole = np.zeros((h, w), bool)
-    yy, xx = np.mgrid[0:h, 0:w]
-    ell = (((xx - (bx0 + bx1) / 2) / ((bx1 - bx0) / 2)) ** 2
-           + ((yy - cy) / arc_h) ** 2) <= 1
-    hole |= (yy <= cy) & ell
-    hole |= (yy > cy) & (yy <= by1) & (xx >= bx0) & (xx <= bx1)
+    sill = cand[0] if cand else int(h * 0.72)
+    m[sill:] = False
+
+    warm = (rgb[..., 0] - rgb[..., 2]) - int(ref[0] - ref[2]) > WARM_DELTA.get(type_key, 50)
+    hole = m | _arch_geo_mask(h, w)           # 兜底下限
+    try:
+        from scipy.ndimage import binary_closing, binary_fill_holes, label
+        ring = binary_closing(warm, structure=np.ones((13, 13)))
+        lab, _ = label(~ring)
+        border = np.unique(np.concatenate([lab[0, :], lab[-1, :],
+                                           lab[:, 0], lab[:, -1]]))
+        center = lab[sy, sx]
+        if center > 0 and not np.isin(center, border).any():
+            hole |= (lab == center)           # 环闭合成功：拓扑窗内区
+    except ImportError:
+        pass
+    for y in range(h):                        # 行 span 填充（凸体）
+        nz = np.flatnonzero(hole[y])
+        if nz.size:
+            hole[y, nz[0]:nz[-1] + 1] = True
+    hole[:int(h * 0.06)] = hole[int(h * 0.94):] = False   # 兜底：绝不动卡缘
+    hole[:, :int(w * 0.06)] = hole[:, int(w * 0.94):] = False
+    try:                                      # 吞掉暖色岛斑（星子等）
+        from scipy.ndimage import binary_fill_holes
+        hole = binary_fill_holes(hole)
+    except ImportError:
+        pass
+    try:                                      # 开运算：削掉环缺口的细条泄漏
+        from scipy.ndimage import binary_opening
+        hole = binary_opening(hole, structure=np.ones((9, 9)))
+    except ImportError:
+        pass
     alpha = np.asarray(card.getchannel("A")).copy()
     fade = Image.fromarray(((~hole) * 255).astype("uint8"), "L")
-    fade = fade.filter(ImageFilter.GaussianBlur(1.0))
+    fade = fade.filter(ImageFilter.GaussianBlur(1.2))
     alpha = np.minimum(alpha, np.asarray(fade))
     card.putalpha(Image.fromarray(alpha, "L"))
     return card
@@ -339,7 +381,7 @@ def compose_card(im, type_key):
     am = Image.new("L", (W2, H2), 0)
     ImageDraw.Draw(am).rounded_rectangle([0, 0, W2 - 1, H2 - 1], RING_RADIUS, fill=255)
     card.putalpha(am)
-    punch_arch_window(card)
+    punch_arch_window(card, type_key)
     return card
 
 

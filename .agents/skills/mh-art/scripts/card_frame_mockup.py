@@ -4,10 +4,14 @@
 v4 修订（2026-08-29，卡面卡框定稿为"记忆殿堂拱窗"方向）：
   - 框体换为四类型拱窗框 border_card_{attack,skill,ability,curse}.png：
     AI 绘制金拱饰 + 石柱 + 暗类型色边带，拱窗内为净色底
-  - 本脚本自动从框图提取拱窗净底区域（颜色采样 + 逐行 span 填充 + 收缩），
-    生成像素级拱形 mask，把插画裁贴进拱窗——不盖金拱线，适配 ogee 尖拱
+  - 拱窗=框体资产 alpha 洞（v1.16 拓扑暖环镂空），直接读 alpha<200 生成
+    像素级拱形 mask，把插画 cover 等比裁贴进拱窗——与引擎同源同形
   - 布局按拱窗底沿重排：铭牌压拱底、配对/翻开/词条/稀有度条下移进效果区
   - v3 及之前：矩形插画窗布局（git 历史可查）；框体与卡背仍由 AI 绘制
+
+v1.17（2026-08-30）起卡牌正/能力框改程序化生成（frame_b_pipeline.py，
+生成+整卡效果图一体），本脚本**仅保留卡背效果图**用途；历史四类型
+框 mockup 逻辑留档（git 历史可查）。
 
 用法（仓库根目录）：
     python .agents/skills/mh-art/scripts/card_frame_mockup.py
@@ -98,15 +102,25 @@ def window_mask(card):
 
 
 def paste_arch_art(card, mask, art_path, curse=False, base_color=None):
-    """插画按拱形 mask 贴入拱窗；诅咒牌无插画时画深底占位骷髅。"""
+    """插画按拱形 mask 贴入拱窗；诅咒牌无插画时画深底占位骷髅。
+
+    cover 等比裁贴（分层同源）：短边贴窗、长边居中裁——旧 resize-to-bbox
+    会拉变形且插画自带底色的矩形边在异色窗底上穿帮。
+    """
     bb = mask.getbbox()
     win_w, win_h = bb[2] - bb[0], bb[3] - bb[1]
     if art_path and os.path.isfile(art_path):
         art = Image.open(art_path).convert("RGBA")
         src_w, src_h = art.size
-        crop_h = int(src_w * win_h / win_w)
-        top = int((src_h - crop_h) * 0.45)
-        art = art.crop((0, top, src_w, top + crop_h)).resize((win_w, win_h), Image.LANCZOS)
+        if src_w * win_h > src_h * win_w:      # 图偏宽 → 裁宽居中
+            cw = int(src_h * win_w / win_h)
+            left = (src_w - cw) // 2
+            art = art.crop((left, 0, left + cw, src_h))
+        else:                                   # 图偏高 → 裁高，上部权重 0.45 保主体
+            ch = int(src_w * win_h / win_w)
+            top = int((src_h - ch) * 0.45)
+            art = art.crop((0, top, src_w, top + ch))
+        art = art.resize((win_w, win_h), Image.LANCZOS)
     elif curse:
         # 诅咒占位：不贴深色底（框图拱窗内缘有暗角，像素 mask 边界不规则会
         # 显锯齿）——底色用框图窗中心采样色原样平铺（与窗底无缝），仅画深

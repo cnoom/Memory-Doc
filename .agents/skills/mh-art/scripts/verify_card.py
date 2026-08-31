@@ -22,6 +22,7 @@
 """
 
 import argparse
+import math
 import os
 import sys
 
@@ -68,11 +69,14 @@ def check(path, type_key, expect_window, no_band=False):
 
     # 4 程序环完整性：0–26px 环带区不应出现卡面奶油（程序描边环 26px，
     #   环外内容层装饰（底座/金线）不参与判定——"到首奶油距离"会把贴边
-    #   装饰误报为边带宽，已踩坑）
+    #   装饰误报为边带宽，已踩坑）。只统计不透明像素：圆角外透明区的
+    #   RGB 底色（程序生成资产常为奶油画布）不参与判定。
     if not no_band:
-        for name, band in (("左", rgb[:, 0:26]), ("右", rgb[:, -26:]),
-                           ("上", rgb[0:26]), ("下", rgb[-26:])):
-            cream_ratio = float(creamish(band).mean())
+        for name, band, aband in (("左", rgb[:, 0:26], alpha[:, 0:26]),
+                                   ("右", rgb[:, -26:], alpha[:, -26:]),
+                                   ("上", rgb[0:26], alpha[0:26]),
+                                   ("下", rgb[-26:], alpha[-26:])):
+            cream_ratio = float((creamish(band) & (aband == 255)).mean())
             if cream_ratio > 0.05:
                 issues.append(f"边带{name}环带区含卡面奶油 {cream_ratio:.0%}")
 
@@ -96,6 +100,26 @@ def check(path, type_key, expect_window, no_band=False):
         win_px = int((alpha < 128).sum())
         if win_px < h * w * 0.03:
             issues.append(f"镂空区过小 {win_px}px")
+
+        # 6b 洞边残留（分层镂空验收）：从窗中心向 24 向发射线，首个不透明
+        # 像素若仍是窗底色（与窗中心 RGB 差和 <48）→ 洞外残留窗底色环
+        # （旧版"洞<真窗、插画漂在异色环里"的根因量化）
+        cy0, cx0 = int(h * 0.42), w // 2
+        ref = rgb[cy0, cx0]
+        bad = []
+        for k in range(24):
+            ang = k * math.pi / 12
+            dx, dy = math.cos(ang), math.sin(ang)
+            for r in range(4, int(min(h, w) * 0.45)):
+                x, y = int(cx0 + dx * r), int(cy0 + dy * r)
+                if not (0 <= x < w and 0 <= y < h):
+                    break
+                if alpha[y, x] >= 200:
+                    if int(np.abs(rgb[y, x].astype(int) - ref).sum()) < 48:
+                        bad.append((k, r, tuple(rgb[y, x])))
+                    break
+        if bad:
+            issues.append(f"洞边残留窗底色 {len(bad)}/24 向（如向{bad[0][0]} r={bad[0][1]} 色{bad[0][2]}）——洞应贴到金饰内沿")
 
     # 7 沿边波动
     strip = (rgb if no_band else rgb[:, w - 18:w - 8]).astype(float).mean(axis=1)
