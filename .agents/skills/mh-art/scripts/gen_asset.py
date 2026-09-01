@@ -107,6 +107,12 @@ SPECS = {
                            "colors, clean thin dark outline around the whole character with "
                            "consistent line weight, soft simple shading, transparent background, "
                            "no text, no watermark"),
+    "logo": dict(size="1024x1024", transparent=True, resize=None,
+                 review="logos", prefix="logo_",
+                 style="game logo emblem mark: one single centered crest badge, bold rounded "
+                       "shapes, clean thin dark outline on the emblem with consistent line "
+                       "weight, few flat colors with soft simple shading, perfectly symmetrical, "
+                       "plain transparent background, no text, no letters, no watermark"),
     "background": dict(size="2048x1152", transparent=False, resize="1920x1080",
                        review="backgrounds", prefix="bg_",
                        style="wide simple cartoon scene for a casual game, very minimal, big "

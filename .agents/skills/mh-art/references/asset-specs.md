@@ -16,6 +16,7 @@ SKILL.md 规格表的展开版。名录与命名提取自 `docs/design/` 各设�
 | 地图节点 node | 6 | [10-UI美术资源规格 §3.8](../../../docs/design/10-UI美术资源规格.md) |
 | 敌人立绘 enemy | 9 | [08-原型敌人设计](../../../docs/design/08-原型敌人设计.md) |
 | 角色立绘 portrait | 3 | [05-Meta系统 §3](../../../docs/design/05-Meta系统.md) |
+| 徽标 logo | 1（`logo_main`） | 见本文 §13（规格定稿后回填 10 §9） |
 | 背景 background | 5（暂定） | [09-UI设计规范 §5 界面清单](../../../docs/design/09-UI设计规范.md) |
 | 纹理 texture | 3 | [10-UI美术资源规格 §4.2](../../../docs/design/10-UI美术资源规格.md) |
 
@@ -169,4 +170,10 @@ very minimal, no text, no watermark
 
 - 发布规格：图标/遗物/道具/节点/纹理 256×256；背景 1920×1080；卡面插画/立绘保留 API 原尺寸；**卡背与四类型卡框发布为 3:4 圆角定稿版**（1024×1365 居中裁切 + 60px 圆角透明角，`roundify_card.py` 后处理，2026-08-29）。
 - 文档里的 32–56px 图标尺寸是 UI 显示尺寸，非源图尺寸（详见 SKILL.md 规格表附注）。
-- 透明底：仅 icon/relic/potion/node/enemy/portrait；网关不支持 `background: transparent` 参数但响应 prompt 关键词，脚本自动校验 alpha 并对实心底打 WARNING。卡背/卡框的圆角透明角由 roundify 后处理产生，不依赖网关。
+- 透明底：仅 icon/relic/potion/node/enemy/portrait/logo；网关不支持 `background: transparent` 参数但响应 prompt 关键词，脚本自动校验 alpha 并对实心底打 WARNING。卡背/卡框的圆角透明角由 roundify 后处理产生，不依赖网关。
+
+## 13. 徽标（1 个，2026-09-01 新增）
+
+`logo_main`（游戏徽标）——只出**徽记图形**，家族意象为发光记忆宝珠 + 摊开书本 + 小金冠（与通用卡背徽记同 DNA）；透明底方构图源图（API 1024×1024，网关实际返回约 1254×1254，原尺寸保留）。**《记忆勇者》中文标题字标由 UI 层（TMP）排版合成，不烘焙进徽记资产**（AI 不画文字原则）。
+
+首版三方向候选（1 圆环徽记 / 2 盾形纹章 / 3 宝珠主体）在 `ImageReview/logos/` 拍板中；定稿后把规格（命名 `logo_main.png`、用途：S01 主菜单标题与图标）回填 10 §9 前缀表与 §10 清单。

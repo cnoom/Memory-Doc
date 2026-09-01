@@ -38,7 +38,7 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 
 ## 资产规格表
 
-命名规范遵循 [10-UI美术资源规格 §9](../../../docs/design/10-UI美术资源规格.md)：全小写 snake_case + 类别前缀（`card_` / `cardback_` / `icon_` / `relic_` / `potion_` / `node_` / `enemy_` / `portrait_` / `bg_` / `texture_`）。全部类型统一发布到项目根 `Assets/UI/`（扁平，靠前缀区分类别）。
+命名规范遵循 [10-UI美术资源规格 §9](../../../docs/design/10-UI美术资源规格.md)：全小写 snake_case + 类别前缀（`card_` / `cardback_` / `icon_` / `relic_` / `potion_` / `node_` / `enemy_` / `portrait_` / `logo_` / `bg_` / `texture_`）。全部类型统一发布到项目根 `Assets/UI/`（扁平，靠前缀区分类别）。
 
 | 类型 | API size | 透明底 | 发布规格 | 预览区目录 | 命名示例 |
 | --- | --- | --- | --- | --- | --- |
@@ -50,6 +50,7 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 | 地图节点 node | 1024x1024 | 是 | 256x256 RGBA | `ImageReview/map-nodes/` | `node_battle.png` |
 | 敌人立绘 enemy | 1024x1024 | 是 | 方构图全身源图 | `ImageReview/enemies/` | `enemy_goblin.png` |
 | 角色立绘 portrait | 1024x1536 | 是 | 竖构图全身源图 | `ImageReview/portraits/` | `portrait_scholar.png` |
+| 徽标 logo | 1024x1024 | 是 | 方构图徽记源图（保持生成比例；只出徽记图形，中文《记忆勇者》字标由 UI 层排版，AI 不画文字） | `ImageReview/logos/` | `logo_main.png` |
 | 背景 background | 2048x1152 | 否 | 1920x1080 RGB（脚本自动缩） | `ImageReview/backgrounds/` | `bg_battle.png` |
 | 纹理 texture | 1024x1024 | 否 | 256x256 可平铺 | `ImageReview/textures/` | `texture_parchment.png` |
 
@@ -72,6 +73,7 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 - **图标（icon/relic/potion/node）**：`simple casual game icon, single object only, centered, bold rounded silhouette instantly readable at small size, clean thin dark outline, few flat colors with soft simple shading, plain transparent background, no text, no watermark`
 - **敌人**：`single cute simple cartoon fantasy monster, full body, centered, facing viewer, 2 to 2.5 head-heights tall, bean-shaped rounded body, stubby limbs, very simple dot eyes, extremely minimal design with only a few flat colors, clean thin dark outline around the whole character with consistent line weight, soft simple shading, soft elliptical ground shadow, plain transparent background, no text, no watermark`
 - **角色**：`full body cute simple cartoon character, centered, facing viewer, 2 to 2.5 head-heights tall, bean-shaped rounded body, stubby limbs, very simple dot eyes, extremely minimal design with only a few flat colors, clean thin dark outline around the whole character with consistent line weight, soft simple shading, transparent background, no text, no watermark`
+- **徽标（logo）**：`game logo emblem mark: one single centered crest badge, bold rounded shapes, clean thin dark outline on the emblem with consistent line weight, few flat colors with soft simple shading, perfectly symmetrical, plain transparent background, no text, no letters, no watermark`（只出徽记图形，禁外发光光晕/漩涡丝带等易出杂边元素；《记忆勇者》中文字标由 UI 层 TMP 排版）
 - **背景**：`wide simple cartoon scene for a casual game, very minimal, big rounded shapes in few flat colors with soft gradients, fresh airy palette, gentle depth, large empty areas, empty center for UI, no outlines on scenery, no characters, no text, no watermark`
 - **纹理**：`seamless tileable simple cartoon texture, evenly lit, no vignette, no shadows at edges, no text`
 
