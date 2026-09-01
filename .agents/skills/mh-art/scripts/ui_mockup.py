@@ -491,28 +491,30 @@ def inner_vignette(img, box, r=12, width=52, alpha=26):
 
 
 def s04_map():
-    """S04 Meta地图（09 §7.1）：奶油纸底 + 自下而上节点树（点线路径、node_* 图标、
-    当前位置金圈、可选节点金环）+ 底部状态栏；标注文字不入画。"""
-    img = Image.new("RGBA", (W, H), CREAM)
+    """S04 Meta地图（09 §7.1）：bg_map 回廊场景 + 居中悬浮羊皮纸地图页（自下而上
+    节点树：点线路径、node_* 徽章、当前位置金圈、可选节点金环）+ 全宽悬浮底栏；画布零文字。"""
+    base = asset("bg_map.png") or Image.new("RGBA", (W, H), CREAM)
+    img = base.copy()
     topbar(img, "第 1 章 · 记忆回廊")
-    mbox = [70, 70, W - 70, H - 150]
-    panel(img, mbox, 12, fill=PANEL)
+    mbox = [W // 2 - 420, 200, W // 2 + 420, 940]     # 地图页（羊皮纸），背景在四周可见
+    drop_shadow(img, mbox, r=18, alpha=125, blur=16)
+    panel(img, mbox, 18, fill=PANEL, shadow=False)
     paper_grain(img, mbox)
-    inner_vignette(img, mbox)
+    inner_vignette(img, mbox, r=18, width=40)
     d = ImageDraw.Draw(img)
 
-    # 层（自下而上；列距 160 → 相邻层同列/邻列可连，Boss 顶点与第 4 层全连）
+    # 层（自下而上，行距 140 保证同列边点数充足；列距 160 → 邻列可连，Boss 顶点全连）
     cx0 = W // 2
     cols = (-240, -80, 80, 240)
     rows = [
-        (862, [("start", 0)]),                                   # 起点
-        (745, [("battle", cols[0]), ("battle", cols[1]),
+        (884, [("start", 0)]),                                   # 起点
+        (744, [("battle", cols[0]), ("battle", cols[1]),
                ("event", cols[2]), ("elite", cols[3])]),
-        (628, [("battle", cols[0]), ("shop", cols[1]),
+        (604, [("battle", cols[0]), ("shop", cols[1]),
                ("battle", cols[2]), ("battle", cols[3])]),
-        (511, [("event", cols[0]), ("battle", cols[1]),
+        (464, [("event", cols[0]), ("battle", cols[1]),
                ("campfire", cols[2]), ("battle", cols[3])]),
-        (366, [("boss", 0)]),                                    # 章节 Boss
+        (344, [("boss", 0)]),                                    # 章节 Boss
     ]
     # 叙事：已走 = 起点→一层左→二层左；当前 = 二层左战斗节点；可选 = 三层左/中左
     chosen_edges = {(0, 0, 0), (1, 0, 0)}
@@ -533,7 +535,7 @@ def s04_map():
                 chosen = (ri, ci, cj) in chosen_edges
                 dotted_edge(d, node_xy(ri, ci), node_xy(ri + 1, cj),
                             GOLD if chosen else SUB,
-                            trim0=34, trim1=36 if top_is_boss else 32)
+                            trim0=34, trim1=36 if top_is_boss else 30)
     for ri, (_, nodes) in enumerate(rows):
         for ci, (kind, dx) in enumerate(nodes):
             map_node(img, cx0 + dx, rows[ri][0], kind, dim=(ri, ci) in dimmed)
@@ -545,17 +547,23 @@ def s04_map():
     cur_x, cur_y = node_xy(2, 0)
     current_marker(img, cur_x, cur_y)
 
-    # 底部状态栏
-    panel(img, [70, H - 130, W - 70, H - 40], 10, fill=BRIGHT)
+    # 全宽悬浮底栏：遗物空槽（双环细化）+ 角色信息
+    bbar = [110, 964, W - 110, 1044]
+    drop_shadow(img, bbar, r=12, alpha=105, blur=10)
+    panel(img, bbar, 12, fill=BRIGHT, shadow=False)
+    cy = (bbar[1] + bbar[3]) // 2
     for i in range(5):
-        d.ellipse([100 + i * 46, H - 114, 132 + i * 46, H - 82],
+        sx = 140 + i * 44 + 14
+        d.ellipse([sx - 14, cy - 14, sx + 14, cy + 14],
                   fill=(255, 255, 255, 90), outline=BORDER, width=2)
-    text(d, (356, H - 98), "遗物栏", size=13, fill=SUB, bold=False, anchor="lm")
+        d.ellipse([sx - 9, cy - 9, sx + 9, cy + 9],
+                  outline=BORDER[:3] + (90,), width=1)
+    text(d, (376, cy), "遗物栏", size=13, fill=SUB, bold=False, anchor="lm")
     scholar = asset("portrait_scholar.png")
     if scholar:
         head = scholar.crop((0, 0, scholar.width, int(scholar.width * 1.1)))
-        paste_fit(img, head, W - 300, H - 85, 60)
-    text(d, (W - 262, H - 98), "角色：学者（情报型）", size=15, anchor="lm")
+        paste_fit(img, head, W - 270, cy, 52)
+    text(d, (W - 238, cy), "角色：学者（情报型）", size=15, anchor="lm")
     return img, "mockup_s04_map.png"
 
 
