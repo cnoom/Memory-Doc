@@ -21,7 +21,7 @@ import os
 import shutil
 import sys
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
 W, H = 1920, 1080
 
@@ -374,7 +374,8 @@ def s01_menu():
 
 
 def _map_node(d, cx, cy, kind, dim=False):
-    """已通过节点变暗：PIL ImageDraw 不做 alpha 混合，直接与面板色掺混成浅色。"""
+    """简笔占位节点（node_* 资产缺省时的回退）：PIL ImageDraw 不做 alpha 混合，
+    已通过变暗直接与面板色掺混成浅色。"""
     def c(rgb):
         if dim:
             return tuple(int(v * 0.45 + PANEL[i] * 0.55) for i, v in enumerate(rgb)) + (255,)
@@ -407,38 +408,138 @@ def _map_node(d, cx, cy, kind, dim=False):
         d.ellipse([cx - 20, cy - 20, cx + 20, cy + 20], outline=GOLD, width=4)
 
 
+# 地图节点显示尺寸（10 §3.7；示意图 1:1 实机分辨率直接取表值）
+NODE_SIZES = {"battle": 44, "elite": 40, "shop": 44, "campfire": 44,
+              "event": 44, "boss": 56}
+
+
+def map_node(img, cx, cy, kind, dim=False):
+    """地图节点：优先贴 node_<kind>.png 已发布资产；缺资产回退 _map_node 简笔。
+    已通过（dim）：降饱和 + 提亮 + 沿自身 alpha 掺面板色——只洗图标本体，不糊透明底。"""
+    im = asset(f"node_{kind}.png")
+    if im is None:
+        _map_node(ImageDraw.Draw(img), cx, cy, kind, dim=dim)
+        return
+    size = NODE_SIZES.get(kind, 44)
+    s = size / max(im.size)
+    im = im.resize((max(1, round(im.width * s)), max(1, round(im.height * s))),
+                   Image.LANCZOS)
+    if dim:
+        im = ImageEnhance.Color(im).enhance(0.2)
+        im = ImageEnhance.Brightness(im).enhance(1.06)
+        veil = Image.new("RGBA", im.size, PANEL + (0,))
+        veil.putalpha(ImageChops.multiply(
+            im.getchannel("A"), Image.new("L", im.size, 140)))
+        im.alpha_composite(veil)
+    img.alpha_composite(im, (round(cx - im.width / 2), round(cy - im.height / 2)))
+
+
+def dotted_edge(d, p0, p1, r, fill, trim0=30, trim1=30):
+    """点线路径（StS 风格）：两端各留 trim 让位节点，圆点等距铺满。"""
+    (x0, y0), (x1, y1) = p0, p1
+    length = math.hypot(x1 - x0, y1 - y0)
+    if length <= trim0 + trim1 + r * 2:
+        return
+    ux, uy = (x1 - x0) / length, (y1 - y0) / length
+    sx, sy = x0 + ux * trim0, y0 + uy * trim0
+    ex, ey = x1 - ux * trim1, y1 - uy * trim1
+    n = max(2, round((length - trim0 - trim1) / (r * 2.7)))
+    for i in range(n + 1):
+        t = i / n
+        px, py = sx + (ex - sx) * t, sy + (ey - sy) * t
+        d.ellipse([px - r, py - r, px + r, py + r], fill=fill)
+
+
+def current_marker(img, cx, cy, r=36):
+    """当前位置：金色同心光圈（纯图形表达，不用文字标注）。"""
+    for rad, col, w, blur in ((r + 14, (255, 190, 70, 80), 10, 6),
+                              (r + 6, (255, 210, 110, 150), 6, 3),
+                              (r, GOLD, 4, 0)):
+        ov = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        ImageDraw.Draw(ov).ellipse([cx - rad, cy - rad, cx + rad, cy + rad],
+                                   outline=col, width=w)
+        if blur:
+            ov = ov.filter(ImageFilter.GaussianBlur(blur))
+        img.alpha_composite(ov)
+
+
+def paper_grain(img, box, alpha=13, sigma=18):
+    """羊皮纸颗粒（texture_parchment 资产未生成前的程序近似）：低频噪声薄纱。"""
+    x0, y0, x1, y1 = [int(v) for v in box]
+    w, h = x1 - x0, y1 - y0
+    noise = Image.effect_noise((max(2, w // 2), max(2, h // 2)), sigma)
+    noise = noise.filter(ImageFilter.GaussianBlur(2)).resize((w, h))
+    noise = noise.point(lambda v: 128 + (v - 128) * 2).convert("RGBA")
+    noise.putalpha(alpha)
+    img.alpha_composite(noise, (x0, y0))
+
+
+def inner_vignette(img, box, r=12, width=52, alpha=26):
+    """面板内侧暗角：四边渐隐的可可色薄晕，破大面积平涂。"""
+    m = Image.new("L", img.size, 0)
+    ImageDraw.Draw(m).rounded_rectangle(box, r, fill=255)
+    ImageDraw.Draw(m).rounded_rectangle(
+        [box[0] + width, box[1] + width, box[2] - width, box[3] - width],
+        max(2, r - width // 3), fill=0)
+    ov = Image.new("RGBA", img.size, (74, 58, 32, 0))
+    ov.putalpha(m.point(lambda v: v * alpha // 255))
+    img.alpha_composite(ov.filter(ImageFilter.GaussianBlur(width // 3)))
+
+
 def s04_map():
-    """S04 Meta地图（09 §7.1）：奶油纸底 + 自下而上节点树 + 底部状态栏。"""
+    """S04 Meta地图（09 §7.1）：奶油纸底 + 自下而上节点树（点线路径、node_* 图标、
+    当前位置金圈、可选节点金环）+ 底部状态栏；标注文字不入画。"""
     img = Image.new("RGBA", (W, H), CREAM)
     topbar(img, "第 1 章 · 记忆回廊")
-    panel(img, [70, 70, W - 70, H - 150], 12, fill=PANEL)
+    mbox = [70, 70, W - 70, H - 150]
+    panel(img, mbox, 12, fill=PANEL)
+    paper_grain(img, mbox)
+    inner_vignette(img, mbox)
     d = ImageDraw.Draw(img)
-    text(d, (110, 108), "● 当前位置 · 金线 = 已走路径 · 自下而上推进，顶端为章节 Boss",
-         size=14, fill=SUB, bold=False, anchor="lm")
 
-    # 层（自下而上，取 09 §5.3 章节1 示例布局）；节点加大、横向拉开占满面板
+    # 层（自下而上；列距 160 → 相邻层同列/邻列可连，Boss 顶点与第 4 层全连）
     cx0 = W // 2
+    cols = (-240, -80, 80, 240)
     rows = [
-        (860, [("start", 0)]),
-        (740, [("battle", -360), ("battle", -120), ("event", 120), ("elite", 360)]),
-        (620, [("battle", -360), ("shop", -120), ("battle", 120), ("battle", 360)]),
-        (500, [("event", -360), ("battle", -120), ("campfire", 120), ("battle", 360)]),
-        (360, [("boss", 0)]),
+        (862, [("start", 0)]),                                   # 起点
+        (745, [("battle", cols[0]), ("battle", cols[1]),
+               ("event", cols[2]), ("elite", cols[3])]),
+        (628, [("battle", cols[0]), ("shop", cols[1]),
+               ("battle", cols[2]), ("battle", cols[3])]),
+        (511, [("event", cols[0]), ("battle", cols[1]),
+               ("campfire", cols[2]), ("battle", cols[3])]),
+        (366, [("boss", 0)]),                                    # 章节 Boss
     ]
-    chosen_edges = {(0, 0, 0), (1, 0, 0), (2, 0, 0), (3, 0, 0)}  # 已走路径（左侧）
+    # 叙事：已走 = 起点→一层左→二层左；当前 = 二层左战斗节点；可选 = 三层左/中左
+    chosen_edges = {(0, 0, 0), (1, 0, 0)}
+    dimmed = {(1, 0)}
+    available = {(3, 0), (3, 1)}
+
+    def node_xy(ri, ci):
+        return cx0 + rows[ri][1][ci][1], rows[ri][0]
+
     for ri in range(len(rows) - 1):
-        y0, upper_y = rows[ri][0], rows[ri + 1][0]
-        for ci, (_, dx) in enumerate(rows[ri][1]):
-            for cj, (_, dx2) in enumerate(rows[ri + 1][1]):
-                if abs(dx - dx2) <= 260:
-                    chosen = (ri, ci, cj) in chosen_edges
-                    d.line([cx0 + dx, y0 - 34, cx0 + dx2, upper_y + 40],
-                           fill=GOLD if chosen else BORDER,
-                           width=6 if chosen else 2)
-    dimmed = {(740, -360), (620, -360), (500, -360)}
-    for y0, nodes in rows:
-        for kind, dx in nodes:
-            _map_node(d, cx0 + dx, y0, kind, dim=(y0, dx) in dimmed)
+        top_is_boss = ri + 2 == len(rows)
+        for ci in range(len(rows[ri][1])):
+            for cj in range(len(rows[ri + 1][1])):
+                dx0, dx1 = rows[ri][1][ci][1], rows[ri + 1][1][cj][1]
+                if not top_is_boss and abs(dx0 - dx1) > 160:
+                    continue
+                chosen = (ri, ci, cj) in chosen_edges
+                dotted_edge(d, node_xy(ri, ci), node_xy(ri + 1, cj),
+                            5 if chosen else 3,
+                            GOLD if chosen else BORDER,
+                            trim0=34, trim1=36 if top_is_boss else 32)
+    for ri, (_, nodes) in enumerate(rows):
+        for ci, (kind, dx) in enumerate(nodes):
+            map_node(img, cx0 + dx, rows[ri][0], kind, dim=(ri, ci) in dimmed)
+    # 可选下一节点：细金环
+    for ri, ci in available:
+        x, y = node_xy(ri, ci)
+        d.ellipse([x - 32, y - 32, x + 32, y + 32],
+                  outline=GOLD[:3] + (170,), width=3)
+    cur_x, cur_y = node_xy(2, 0)
+    current_marker(img, cur_x, cur_y)
     text(d, (cx0, 424), "记忆吞噬者", size=16, fill=INK, anchor="mm")
 
     # 底部状态栏
