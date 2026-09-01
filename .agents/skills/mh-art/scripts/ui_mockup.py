@@ -21,7 +21,7 @@ import os
 import shutil
 import sys
 
-from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageStat
 
 W, H = 1920, 1080
 
@@ -490,6 +490,61 @@ def inner_vignette(img, box, r=12, width=52, alpha=26):
     img.alpha_composite(ov.filter(ImageFilter.GaussianBlur(width // 3)))
 
 
+def _paper_material(w, h):
+    """羊皮纸材质层（PANEL 基调）：多倍频程序噪声——低频斑驳（大块陈年不均）+
+    细颗粒（纸面牙纹），带符号亮度偏置直调（暗斑偏暖），净底 std 目标 ≈5（第一眼
+    可感知、不显脏）；再薄叠 AI 有机斑（texture_parchment 偏差放大，缺资产跳过）。
+    整幅生成天然无缝。"""
+    import numpy as np
+    mottle = Image.effect_noise((max(2, w // 4), max(2, h // 4)), 30)
+    mottle = mottle.filter(ImageFilter.GaussianBlur(3)).resize((w, h), Image.BILINEAR)
+    speckle = Image.effect_noise((w, h), 16).filter(ImageFilter.GaussianBlur(0.7))
+    m = np.asarray(mottle, dtype=np.float32) - 128.0
+    s = np.asarray(speckle, dtype=np.float32) - 128.0
+    base = np.asarray(Image.new("RGBA", (w, h), PANEL), dtype=np.float32)
+    dev = m * 1.0 + s * 0.22                     # 斑驳 ±5 / 颗粒 ±2 量级
+    base[..., 0] += dev                            # R
+    base[..., 1] += dev
+    base[..., 2] += dev * 1.25                     # B 随偏置放大 → 暗斑偏暖
+    tex = Image.fromarray(np.clip(base, 0, 255).astype(np.uint8))
+    ai = asset("texture_parchment.png")
+    if ai is not None:
+        a = np.asarray(ai.convert("RGBA"), dtype=np.float32)
+        signed = a[..., :3] - a[..., :3].mean(axis=(0, 1), keepdims=True)
+        tile = np.asarray(Image.new("RGBA", (w, h), PANEL), dtype=np.float32)
+        tw, th = ai.size
+        for yy in range(0, h, th):
+            for xx in range(0, w, tw):
+                cw, ch = min(tw, w - xx), min(th, h - yy)
+                tile[yy:yy + ch, xx:xx + cw, :3] += signed[:ch, :cw] * 1.8
+        tex = Image.blend(tex, Image.fromarray(np.clip(tile, 0, 255).astype(np.uint8)), 0.35)
+    return tex
+
+
+def parchment_panel(img, box, r=18, inset=16):
+    """羊皮纸面板（10 §4.2 texture_parchment 面板底纹的接入实现）：纹理平铺并与
+    面板色掺混稳色板 + 内暗角 + 双线金内框 + 四角金珠（btn/卡框家族装饰语言）；
+    纹理缺省回退程序纸纹。不含投影，调用方自行 drop_shadow。"""
+    x0, y0, x1, y1 = box
+    d = ImageDraw.Draw(img)
+    rrect(d, box, r, fill=PANEL, outline=BORDER, width=2)
+    tex = _paper_material(x1 - x0, y1 - y0)
+    mask = Image.new("L", tex.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle(
+        [0, 0, tex.width - 1, tex.height - 1], r, fill=255)
+    img.paste(tex, (x0, y0), mask)
+    rrect(d, box, r, outline=BORDER, width=2)          # 材质贴过后补回外描边
+    inner_vignette(img, box, r=r, width=40)
+    # 双线金内框 + 四角金珠
+    rrect(d, [x0 + inset, y0 + inset, x1 - inset, y1 - inset], max(4, r - inset),
+          outline=GOLD, width=2)
+    rrect(d, [x0 + inset + 5, y0 + inset + 5, x1 - inset - 5, y1 - inset - 5],
+          max(4, r - inset - 4), outline=GOLD[:3] + (110,), width=1)
+    for cx, cy in ((x0 + inset, y0 + inset), (x1 - inset, y0 + inset),
+                   (x0 + inset, y1 - inset), (x1 - inset, y1 - inset)):
+        d.ellipse([cx - 6, cy - 6, cx + 6, cy + 6], fill=GOLD, outline=INK, width=2)
+
+
 def s04_map():
     """S04 Meta地图（09 §7.1）：bg_map 回廊场景 + 居中悬浮羊皮纸地图页（自下而上
     节点树：点线路径、node_* 徽章、当前位置金圈、可选节点金环）+ 全宽悬浮底栏；画布零文字。"""
@@ -498,9 +553,7 @@ def s04_map():
     topbar(img, "第 1 章 · 记忆回廊")
     mbox = [W // 2 - 420, 200, W // 2 + 420, 940]     # 地图页（羊皮纸），背景在四周可见
     drop_shadow(img, mbox, r=18, alpha=125, blur=16)
-    panel(img, mbox, 18, fill=PANEL, shadow=False)
-    paper_grain(img, mbox)
-    inner_vignette(img, mbox, r=18, width=40)
+    parchment_panel(img, mbox, r=18)
     d = ImageDraw.Draw(img)
 
     # 层（自下而上，行距 140 保证同列边点数充足；列距 160 → 邻列可连，Boss 顶点全连）
