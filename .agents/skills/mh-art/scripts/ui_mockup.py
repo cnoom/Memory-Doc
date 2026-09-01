@@ -36,6 +36,7 @@ BORDER = (201, 161, 99, 255)     # #C9A163 暖金木
 TEAL = (127, 181, 172, 255)      # #7FB5AC 静谧青
 GOLD = (212, 168, 87, 255)       # #D4A857 古金
 RED = (199, 62, 62, 255)         # #C73E3E 危险红
+GREEN = (91, 168, 91, 255)       # #5BA85B 成功绿
 BLOCKBLUE = (122, 143, 168, 255) # #7A8FA8 格挡蓝
 DARKRED = (139, 44, 44, 255)     # #8B2C2C 敌人血条
 BURN = (232, 74, 32, 255)        # #E84A20 灼烧
@@ -423,7 +424,414 @@ def s05_reward():
     return img, "mockup_s05_reward.png"
 
 
-SCREENS = {"s01": s01_menu, "s03": s03_battle, "s04": s04_map, "s05": s05_reward}
+def relic_glyph(d, cx, cy, r, kind, ring=(232, 123, 53, 255)):
+    """遗物占位徽记（Boss 橙环 + 简笔符号）——真遗物图标批量后替换。"""
+    d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=BRIGHT, outline=ring, width=4)
+    ink = INK
+    if kind == "eye":
+        d.ellipse([cx - r * 0.55, cy - r * 0.3, cx + r * 0.55, cy + r * 0.3],
+                  fill=WHITE, outline=ink, width=2)
+        d.ellipse([cx - r * 0.16, cy - r * 0.16, cx + r * 0.16, cy + r * 0.16],
+                  fill=(74, 122, 212, 255), outline=ink, width=2)
+    elif kind == "swirl":
+        for i, rr in enumerate((0.62, 0.42, 0.22)):
+            d.arc([cx - r * rr, cy - r * rr, cx + r * rr, cy + r * rr],
+                  90 + i * 60, 360 + i * 60, fill=ink if i % 2 else (155, 69, 212, 255), width=4)
+        d.ellipse([cx - 3, cy - 3, cx + 3, cy + 3], fill=ink)
+    elif kind == "crown":
+        d.polygon([(cx - r * 0.5, cy + r * 0.3), (cx - r * 0.5, cy - r * 0.2),
+                   (cx - r * 0.25, cy + r * 0.02), (cx, cy - r * 0.42),
+                   (cx + r * 0.25, cy + r * 0.02), (cx + r * 0.5, cy - r * 0.2),
+                   (cx + r * 0.5, cy + r * 0.3)], fill=GOLD, outline=ink)
+    elif kind == "brain":
+        # 大脑徽记：双圆叶主体 + 中缝 + 三条青色脑回弧线
+        d.ellipse([cx - r * 0.52, cy - r * 0.34, cx + r * 0.52, cy + r * 0.34],
+                  fill=(242, 235, 217, 255), outline=ink, width=3)
+        d.line([cx, cy - r * 0.32, cx, cy + r * 0.32], fill=ink, width=3)
+        d.arc([cx - r * 0.44, cy - r * 0.22, cx - r * 0.04, cy + r * 0.26],
+              200, 340, fill=TEAL, width=3)
+        d.arc([cx - r * 0.2, cy - r * 0.26, cx + r * 0.2, cy + r * 0.22],
+              200, 340, fill=TEAL, width=3)
+        d.arc([cx + r * 0.04, cy - r * 0.22, cx + r * 0.44, cy + r * 0.26],
+              200, 340, fill=TEAL, width=3)
+    elif kind == "bolt":
+        d.polygon([(cx - r * 0.15, cy - r * 0.55), (cx + r * 0.35, cy - r * 0.55),
+                   (cx + r * 0.02, cy - r * 0.05), (cx + r * 0.3, cy - r * 0.05),
+                   (cx - r * 0.3, cy + r * 0.55), (cx - r * 0.02, cy),
+                   (cx - r * 0.3, cy)], fill=(232, 194, 58, 255), outline=ink)
+
+
+def slider(d, x, y, w, ratio, label=None, value=None):
+    """设置行滑条：暖沙轨道 + 古金圆钮。"""
+    if label:
+        text(d, (x, y - 14), label, size=15, bold=False, anchor="lm")
+    d.rounded_rectangle([x, y - 3, x + w, y + 3], 3, fill=TRACK, outline=BORDER, width=1)
+    d.rounded_rectangle([x, y - 3, x + int(w * ratio), y + 3], 3, fill=TEAL)
+    d.ellipse([x + int(w * ratio) - 9, y - 9, x + int(w * ratio) + 9, y + 9],
+              fill=GOLD, outline=INK, width=2)
+    if value:
+        text(d, (x + w + 16, y), value, size=14, bold=False, anchor="lm")
+
+
+def s02_select():
+    """S02 角色选择（09 §5.1）：学者可选、狂战士/术士锁定，附被动与初始牌库预览。"""
+    img = Image.new("RGBA", (W, H), CREAM)
+    d = ImageDraw.Draw(img)
+    icon(img, "icon_back.png", 96, 60, 30)
+    text(d, (120, 60), "返回", size=15, bold=False, anchor="lm")
+    text(d, (W // 2, 60), "角色选择", size=24, anchor="mm")
+    icon(img, "icon_settings.png", W - 44, 60, 26)
+
+    def char_slot(cx, name, sub, active):
+        box = [cx - 185, 110, cx + 185, 900]
+        panel(img, box, 14, fill=BRIGHT if active else SAND,
+              outline=GOLD if active else BORDER, width=4 if active else 2)
+        if active:
+            glow_rect(img, [box[0] - 8, box[1] - 8, box[2] + 8, box[3] + 8], 18, width=6)
+        if name == "学者":
+            scholar = asset("portrait_scholar.png")
+            if scholar:
+                paste_fit(img, scholar, cx, 350, 340)
+            text(d, (cx, 566), name, size=26, anchor="mm")
+            chip(d, cx - 172, 596, "被动", TEAL, size=12, pad=8, h=22)
+            text(d, (cx - 100, 607), "触类旁通", size=14, bold=False, anchor="lm")
+            text(d, (cx, 640), "[共鸣]配对时附加额外效果", size=13, fill=SUB,
+                 bold=False, anchor="mm")
+            text(d, (cx, 700), "初始牌库 · 10 张（战斗中 20 张）", size=13, fill=SUB,
+                 bold=False, anchor="mm")
+            text(d, (cx, 726), "缩略为 5 张代表卡", size=11, fill=SUB, bold=False, anchor="mm")
+            for i, f in enumerate(("cardframe_attack.png", "cardframe_skill.png",
+                                   "cardframe_ability.png", "cardframe_attack.png",
+                                   "cardframe_skill.png")):
+                c = asset(f)
+                if c:
+                    thumb = c.resize((56, 75), Image.LANCZOS)
+                    img.alpha_composite(thumb, (cx - 158 + i * 66, 756))
+        else:
+            lock = (232, 123, 53, 255)
+            d.rounded_rectangle([cx - 26, 324, cx + 26, 376], 10,
+                                fill=(217, 205, 176, 255), outline=lock, width=4)
+            d.arc([cx - 18, 292, cx + 18, 328], 180, 360, fill=lock, width=5)
+            d.ellipse([cx - 70, 420, cx + 70, 560], outline=BORDER, width=3)
+            text(d, (cx, 490), "?", size=64, fill=BORDER, anchor="mm")
+            text(d, (cx, 566), name, size=26, fill=SUB, anchor="mm")
+            text(d, (cx, 607), sub, size=13, fill=SUB, bold=False, anchor="mm")
+            text(d, (cx, 700), "待解锁 · 形象设计中", size=13, fill=SUB, bold=False, anchor="mm")
+        return box
+
+    char_slot(500, "学者", "情报型 · 已可选", True)
+    char_slot(960, "狂战士", "暴力输出型", False)
+    char_slot(1420, "术士", "高风险解锁型", False)
+    panel(img, [W // 2 - 130, 946, W // 2 + 130, 1002], 10, fill=GOLD,
+          outline=(140, 105, 50, 255), width=3)
+    text(d, (W // 2, 974), "选择并开始", size=20, anchor="mm")
+    return img, "mockup_s02_select.png"
+
+
+def s06_deck():
+    """S06 牌库查看（09 §8.2/§8.2.1）：左侧按类型分组缩略，右侧预览+统计。"""
+    img = Image.new("RGBA", (W, H), CREAM)
+    topbar(img, "牌库查看")
+    d = ImageDraw.Draw(img)
+    icon(img, "icon_deck.png", 1560, 24, 24)
+    text(d, (1580, 24), "共 15 张 · 战斗中 30 张", size=14, bold=False, anchor="lm")
+
+    groups = [
+        ("攻击牌（7 张）", RED, [("cardframe_attack.png", "笔记", 3),
+                                ("cardframe_attack.png", "读书笔记", 2)]),
+        ("技能牌（6 张）", (69, 119, 212, 255), [("cardframe_skill.png", "速读", 3),
+                                                ("cardframe_skill.png", "笔记本格挡", 2)]),
+        ("能力牌（1 张）", PURPLE, [("cardframe_ability.png", "全神贯注", 1)]),
+        ("诅咒牌（1 张）", (58, 42, 58, 255), [("cardframe_curse.png", "遗忘", 1)]),
+    ]
+    y = 84
+    for title, color, cards in groups:
+        panel(img, [80, y, 1160, y + 224], 10, fill=PANEL)
+        d = ImageDraw.Draw(img)
+        d.ellipse([108, y + 18, 124, y + 34], fill=color)
+        text(d, (136, y + 26), title, size=17, anchor="lm")
+        x = 120
+        for f, name, n in cards:
+            c = asset(f)
+            if c:
+                thumb = c.resize((78, 104), Image.LANCZOS)
+                drop_shadow(img, [x, y + 56, x + 78, y + 160], r=8, alpha=60, blur=4)
+                img.alpha_composite(thumb, (x, y + 56))
+            text(d, (x + 39, y + 178), name, size=13, bold=False, anchor="mm")
+            chip(d, x + 44, y + 48, f"×{n}", color, size=11, pad=6, h=18)
+            x += 130
+        y += 246
+
+    # 右列：悬浮预览 + 统计
+    panel(img, [1210, 84, 1840, 480], 10, fill=BRIGHT)
+    text(d, (1525, 116), "悬浮预览（点击卡牌展示）", size=13, fill=SUB, bold=False, anchor="mm")
+    pv = asset("cardframe_attack.png")
+    if pv:
+        drop_shadow(img, [1405, 150, 1645, 470], r=14)
+        img.alpha_composite(pv.resize((240, 320), Image.LANCZOS), (1405, 150))
+    panel(img, [1210, 510, 1840, 1010], 10, fill=PANEL)
+    text(d, (1240, 544), "统计", size=17)
+    for i, (label, num, col) in enumerate((("攻击", 7, RED), ("技能", 6, (69, 119, 212, 255)),
+                                           ("能力", 1, PURPLE), ("诅咒", 1, (58, 42, 58, 255)))):
+        yy = 584 + i * 44
+        d.ellipse([1244, yy - 9, 1260, yy + 7], fill=col)
+        text(d, (1276, yy), label, size=15, bold=False, anchor="lm")
+        text(d, (1800, yy), str(num), size=16, anchor="rm")
+    d.line([1240, 776, 1810, 776], fill=BORDER, width=1)
+    text(d, (1240, 802), "同名分组", size=17)
+    for i, (name, n) in enumerate((("笔记", 3), ("速读", 3), ("读书笔记", 2),
+                                   ("笔记本格挡", 2), ("全神贯注", 1), ("遗忘", 1))):
+        yy = 842 + i * 30
+        text(d, (1244, yy), f"{name} ×{n}", size=14, bold=False, anchor="lm")
+    return img, "mockup_s06_deck.png"
+
+
+def s07_shop():
+    """S07 商店（09 §7.2）：卡牌出售 + 遗物出售 + 移除服务。"""
+    base = asset("bg_shop.png") or Image.new("RGBA", (W, H), CREAM)
+    img = base.copy()
+    topbar(img, "商店")
+    d = ImageDraw.Draw(img)
+    icon(img, "icon_back.png", 96, 120, 30)
+    text(d, (120, 120), "返回", size=15, bold=False, anchor="lm")
+    icon(img, "icon_gold.png", 1770, 120, 30)
+    text(d, (1794, 120), "150 G", size=18, anchor="lm")
+
+    panel(img, [110, 170, 1130, 990], 12)
+    text(d, (140, 210), "卡牌出售（3 张）", size=20)
+    for i, (f, price) in enumerate((("cardframe_attack.png", "45G"),
+                                    ("cardframe_skill.png", "60G"),
+                                    ("cardframe_ability.png", "75G"))):
+        c = asset(f)
+        cx = 260 + i * 380
+        if c:
+            card = c.resize((180, 240), Image.LANCZOS)
+            drop_shadow(img, [cx - 90, 280, cx + 90, 520], r=14)
+            img.alpha_composite(card, (cx - 90, 280))
+        chip(d, cx - 34, 548, price, GOLD, fg=INK, size=15, h=30, outline=INK, ow=2)
+    text(d, (140, 640), "购买后加入牌库（战斗中以 2 份出现）", size=13, fill=SUB,
+         bold=False, anchor="lm")
+    d = ImageDraw.Draw(img)
+    d.line([140, 700, 1100, 700], fill=BORDER, width=1)
+    text(d, (140, 740), "刷新商品（下次到访）", size=14, bold=False, anchor="lm")
+
+    panel(img, [1190, 170, 1830, 620], 12)
+    text(d, (1220, 210), "遗物出售（2 件）", size=20)
+    for i, (glyph, name, price, desc) in enumerate((
+            ("brain", "思维导图", "75G", "翻开时概率额外触发"),
+            ("bolt", "蓄能水晶", "120G", "每回合首张牌效果+1"))):
+        cx = 1360 + i * 320
+        relic_glyph(d, cx, 340, 64, glyph)
+        text(d, (cx, 436), name, size=17, anchor="mm")
+        text(d, (cx, 470), desc, size=12, fill=SUB, bold=False, anchor="mm")
+        chip(d, cx - 30, 496, price, GOLD, fg=INK, size=14, h=28, outline=INK, ow=2)
+    panel(img, [1190, 660, 1830, 990], 12, fill=BRIGHT)
+    text(d, (1220, 700), "移除卡牌服务", size=20)
+    text(d, (1220, 748), "选择牌库中的一张牌永久移除", size=14, bold=False, anchor="lm")
+    text(d, (1220, 780), "（战斗同名恒偶数张，移除也不落单）", size=12, fill=SUB,
+         bold=False, anchor="lm")
+    panel(img, [1520, 860, 1800, 916], 8, fill=GOLD, outline=(140, 105, 50, 255), width=2)
+    text(d, (1660, 888), "选择牌牌 · 75G", size=16, anchor="mm")
+    return img, "mockup_s07_shop.png"
+
+
+def s08_campfire():
+    """S08 篝火（09 §7.3）：篝火 + 休息/升级二选一。"""
+    base = asset("bg_campfire.png") or Image.new("RGBA", (W, H), CREAM)
+    img = base.copy()
+    d = ImageDraw.Draw(img)
+    text(d, (W // 2, 90), "篝火", size=34, anchor="mm")
+    # 篝火：圆木 + 大火焰 + 暖光（动画的静态表达）
+    for ang, x0 in ((24, 820), (-24, 1060)):
+        d.rounded_rectangle([x0 - 90, 316, x0 + 90, 348], 16, fill=(160, 112, 62, 255),
+                            outline=INK, width=2)
+    glow = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    ImageDraw.Draw(glow).ellipse([W // 2 - 170, 190, W // 2 + 170, 380],
+                                 fill=(255, 190, 90, 110))
+    img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(40)))
+    icon(img, "icon_status_burn.png", W // 2, 240, 210)
+    panel(img, [560, 470, 1360, 890], 14)
+    text(d, (960, 516), "你要做什么？", size=22, anchor="mm")
+    for i, (title, desc, glyph) in enumerate((
+            ("休息", "回复 30% 最大生命（18/60）", "heart"),
+            ("升级", "强化牌库中的一张卡牌", "arrow"))):
+        x = 640 + i * 360
+        panel(img, [x, 570, x + 320, 820], 12, fill=BRIGHT, outline=GOLD, width=3)
+        d = ImageDraw.Draw(img)
+        cx, cy = x + 160, 650
+        if glyph == "heart":
+            icon(img, "icon_hp.png", cx, cy, 64)
+        else:
+            d.polygon([(cx, cy - 36), (cx + 30, cy), (cx + 10, cy), (cx + 10, cy + 34),
+                       (cx - 10, cy + 34), (cx - 10, cy), (cx - 30, cy)],
+                      fill=GREEN, outline=INK)
+        text(d, (cx, 726), title, size=22, anchor="mm")
+        text(d, (cx, 768), desc, size=13, fill=SUB, bold=False, anchor="mm")
+    return img, "mockup_s08_campfire.png"
+
+
+def s09_event():
+    """S09 事件（09 §7.4）：事件插图区 + 叙事面板 + 三选项。"""
+    base = asset("bg_event.png") or Image.new("RGBA", (W, H), CREAM)
+    img = base.copy()
+    d = ImageDraw.Draw(img)
+    text(d, (W // 2, 76), "神秘事件", size=32, anchor="mm")
+    # 事件插图区（400×200，按 09 §7.4；插画待补，拱形底纹占位）
+    panel(img, [W // 2 - 200, 120, W // 2 + 200, 320], 12, fill=BRIGHT)
+    d = ImageDraw.Draw(img)
+    d.arc([W // 2 - 130, 140, W // 2 + 130, 300], 180, 360, fill=TEAL, width=4)
+    d.arc([W // 2 - 70, 170, W // 2 + 70, 300], 180, 360, fill=BORDER, width=3)
+    text(d, (W // 2, 286), "事件插图", size=12, fill=SUB, bold=False, anchor="mm")
+    panel(img, [620, 360, 1300, 560], 12)
+    d = ImageDraw.Draw(img)
+    for i, ln in enumerate(("「你在记忆回廊中发现一本古老的日记。",
+                            "　 翻开它，一股力量涌入脑海……」")):
+        text(d, (W // 2, 424 + i * 40), ln, size=18, bold=False, anchor="mm")
+    options = (("仔细阅读", "获得 1 张随机卡牌，失去 3 点生命", "book"),
+               ("快速翻阅", "获得 15 金币", "coin"),
+               ("离开", "无事发生", "door"))
+    for i, (title, desc, glyph) in enumerate(options):
+        y = 604 + i * 128
+        panel(img, [620, y, 1300, y + 104], 12, fill=BRIGHT, outline=BORDER, width=2)
+        d = ImageDraw.Draw(img)
+        cx, cy = 700, y + 52
+        if glyph == "coin":
+            icon(img, "icon_gold.png", cx, cy, 44)
+        elif glyph == "book":
+            d.rounded_rectangle([cx - 26, cy - 20, cx + 26, cy + 22], 6,
+                                fill=(248, 242, 227, 255), outline=INK, width=2)
+            d.line([cx, cy - 20, cx, cy + 22], fill=INK, width=2)
+        else:
+            d.rounded_rectangle([cx - 18, cy - 24, cx + 18, cy + 24], 8,
+                                fill=(181, 132, 84, 255), outline=INK, width=2)
+            d.ellipse([cx + 4, cy - 4, cx + 10, cy + 2], fill=GOLD)
+        text(d, (760, y + 38), title, size=19)
+        text(d, (760, y + 72), desc, size=13, fill=SUB, bold=False)
+    return img, "mockup_s09_event.png"
+
+
+def s10_bossrelic():
+    """S10 Boss遗物奖励（09 §8.3）：三选一 Boss 遗物。"""
+    base = asset("bg_battle.png") or Image.new("RGBA", (W, H), CREAM)
+    img = base.copy()
+    ov = Image.new("RGBA", img.size, (0, 0, 0, 115))
+    img.alpha_composite(ov)
+    d = ImageDraw.Draw(img)
+    text(d, (W // 2, 150), "Boss 已击败！", size=42, fill=GOLD, anchor="mm")
+    text(d, (W // 2, 212), "选择一件 Boss 遗物", size=20, fill=CREAM, bold=False, anchor="mm")
+    relics = (("eye", "全知之眼", ("场上可同时翻开的", "牌数量 +1")),
+              ("swirl", "混沌核心", ("每回合开始时随机", "交换 2 张牌位置")),
+              ("crown", "记忆王冠", ("所有能力牌的", "持续效果翻倍")))
+    for i, (glyph, name, lines) in enumerate(relics):
+        x = W // 2 + (i - 1) * 460
+        panel(img, [x - 200, 300, x + 200, 720], 14)
+        d = ImageDraw.Draw(img)
+        relic_glyph(d, x, 440, 78, glyph)
+        text(d, (x, 560), name, size=22, anchor="mm")
+        chip(d, x - 34, 590, "Boss", (232, 123, 53, 255), size=12, h=24)
+        for j, ln in enumerate(lines):
+            text(d, (x, 650 + j * 30), ln, size=14, bold=False, anchor="mm")
+    text(d, (W // 2, 800), "Boss 遗物全场唯一，选定后立即生效", size=13, fill=CREAM,
+         bold=False, anchor="mm")
+    return img, "mockup_s10_bossrelic.png"
+
+
+def s11_victory():
+    """S11 胜利结算（09 §5.1）：第三章 Boss 后的 Run 结算。"""
+    base = asset("bg_menu.png") or Image.new("RGBA", (W, H), CREAM)
+    img = base.copy()
+    ov = Image.new("RGBA", img.size, (255, 244, 214, 90))
+    img.alpha_composite(ov)
+    d = ImageDraw.Draw(img)
+    logo = asset("logo_main.png")
+    if logo:
+        paste_fit(img, logo, W // 2, 210, 240)
+    d.text((W // 2, 430), "胜  利", font=font(88), fill=INK, anchor="mm",
+           stroke_width=3, stroke_fill=GOLD)
+    text(d, (W // 2, 512), "记忆殿堂恢复了宁静，你找回了全部记忆", size=20,
+         fill=(96, 84, 62, 255), bold=False, anchor="mm")
+    panel(img, [660, 580, 1260, 830], 14)
+    for i, (label, val) in enumerate((("到达章节", "第 3 章 · 通关"),
+                                      ("击败敌人", "18"), ("获得金币", "320"),
+                                      ("剩余生命", "42 / 60"))):
+        text(d, (760, 620 + i * 46), label, size=16, bold=False, anchor="lm")
+        text(d, (1160, 620 + i * 46), val, size=16, anchor="rm")
+    panel(img, [W // 2 - 260, 880, W // 2 - 10, 944], 10, fill=GOLD,
+          outline=(140, 105, 50, 255), width=3)
+    text(d, (W // 2 - 135, 912), "再来一局", size=19, anchor="mm")
+    panel(img, [W // 2 + 10, 880, W // 2 + 260, 944], 10, fill=BRIGHT, outline=BORDER, width=2)
+    text(d, (W // 2 + 135, 912), "返回主菜单", size=19, anchor="mm")
+    return img, "mockup_s11_victory.png"
+
+
+def s12_pause():
+    """S12 暂停菜单（09 §9.4）：模态面板四按钮。"""
+    base = asset("bg_battle.png") or Image.new("RGBA", (W, H), CREAM)
+    img = base.copy()
+    ov = Image.new("RGBA", img.size, (0, 0, 0, 140))
+    img.alpha_composite(ov)
+    d = ImageDraw.Draw(img)
+    panel(img, [W // 2 - 240, 300, W // 2 + 240, 820], 14)
+    text(d, (W // 2, 356), "暂停", size=30, anchor="mm")
+    panel(img, [W // 2 - 180, 410, W // 2 + 180, 466], 10, fill=GOLD,
+          outline=(140, 105, 50, 255), width=3)
+    text(d, (W // 2, 438), "继续", size=19, anchor="mm")
+    for i, label in enumerate(("查看牌库", "设置")):
+        y = 496 + i * 76
+        panel(img, [W // 2 - 180, y, W // 2 + 180, y + 56], 10, fill=BRIGHT,
+              outline=BORDER, width=2)
+        text(d, (W // 2, y + 28), label, size=18, anchor="mm")
+    panel(img, [W // 2 - 180, 648, W // 2 + 180, 704], 10, fill=RED,
+          outline=(120, 30, 30, 255), width=2)
+    text(d, (W // 2, 676), "放弃当前 Run", size=18, fill=WHITE, anchor="mm")
+    text(d, (W // 2, 764), "时间已暂停（timeScale = 0）", size=13, fill=SUB,
+         bold=False, anchor="mm")
+    return img, "mockup_s12_pause.png"
+
+
+def s13_settings():
+    """S13 设置（09 §5.1）：音量/画质/按键模态。"""
+    base = asset("bg_menu.png") or Image.new("RGBA", (W, H), CREAM)
+    img = base.copy()
+    ov = Image.new("RGBA", img.size, (0, 0, 0, 120))
+    img.alpha_composite(ov)
+    d = ImageDraw.Draw(img)
+    panel(img, [W // 2 - 330, 180, W // 2 + 330, 950], 14)
+    text(d, (W // 2, 236), "设置", size=30, anchor="mm")
+    text(d, (W // 2 - 270, 300), "音频", size=17)
+    slider(d, W // 2 - 270, 372, 420, 0.7, "主音量", "70%")
+    slider(d, W // 2 - 270, 452, 420, 0.8, "音效", "80%")
+    d = ImageDraw.Draw(img)
+    d.line([W // 2 - 270, 512, W // 2 + 270, 512], fill=BORDER, width=1)
+    text(d, (W // 2 - 270, 546), "画质", size=17)
+    for i, lv in enumerate(("低", "中", "高")):
+        x = W // 2 - 270 + i * 150
+        active = lv == "中"
+        panel(img, [x, 580, x + 130, 630], 10,
+              fill=GOLD if active else BRIGHT,
+              outline=(140, 105, 50, 255) if active else BORDER, width=2)
+        text(d, (x + 65, 605), lv, size=16, anchor="mm")
+    d = ImageDraw.Draw(img)
+    d.line([W // 2 - 270, 676, W // 2 + 270, 676], fill=BORDER, width=1)
+    text(d, (W // 2 - 270, 710), "按键", size=17)
+    for i, (act, key) in enumerate((("翻牌", "鼠标左键"), ("暂停", "Esc"), ("牌库", "D"))):
+        yy = 752 + i * 40
+        text(d, (W // 2 - 270, yy), act, size=15, bold=False, anchor="lm")
+        panel(img, [W // 2 + 60, yy - 18, W // 2 + 270, yy + 18], 8, fill=SAND,
+              outline=BORDER, width=1, shadow=False)
+        text(d, (W // 2 + 165, yy), key, size=14, bold=False, anchor="mm")
+    panel(img, [W // 2 - 110, 880, W // 2 + 110, 932], 10, fill=BRIGHT,
+          outline=BORDER, width=2)
+    text(d, (W // 2, 906), "关闭", size=17, anchor="mm")
+    return img, "mockup_s13_settings.png"
+
+
+SCREENS = {
+    "s01": s01_menu, "s02": s02_select, "s03": s03_battle, "s04": s04_map,
+    "s05": s05_reward, "s06": s06_deck, "s07": s07_shop, "s08": s08_campfire,
+    "s09": s09_event, "s10": s10_bossrelic, "s11": s11_victory, "s12": s12_pause,
+    "s13": s13_settings,
+}
 
 
 def main():

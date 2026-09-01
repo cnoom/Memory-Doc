@@ -158,13 +158,11 @@ very minimal, no text, no watermark
 
 `portrait_scholar`(学者,情报型,袍服+眼镜+书卷) / `portrait_berserker`(狂战士,暴力输出,待设计——生成前与用户确认形象) / `portrait_warlock`(术士,高风险解锁角色,待设计——同上)
 
-## 10. 背景名录（5 个，暂定名）
+## 10. 背景名录（5 个，2026-09-01 全部发布）
 
-文件名与场景对应关系未在文档定稿，首次生成前与用户确认：
+`bg_menu`(主菜单,图书馆大厅) / `bg_battle`(战斗,殿堂石厅烛光) / `bg_event`(事件,神秘壁龛) / `bg_shop`(商店,书房小店) / `bg_campfire`(篝火,休息壁龛)
 
-`bg_menu`(主菜单,记忆殿堂图书馆大厅,已发布 2026-09-01) / `bg_battle`(战斗,殿堂石厅烛光,已发布 2026-09-01) / `bg_event`(事件) / `bg_shop`(商店) / `bg_campfire`(篝火)
-
-> bg_menu/bg_battle 各出 2 候选、vision 判读"UI 留空区干净"者定稿（menu_1 / battle_2）；落选件在 `_archived/2026-09-01/backgrounds/`。剩余 3 张待后续批次（要求同：留空区干净、无角色、无文字）。
+> 每张 2 候选、vision 判读"中央 UI 留空区干净（stddev 采样）"者定稿；落选件在 `_archived/2026-09-01/backgrounds/`。命名与场景对应已随发布定稿（10 §9.2 `bg_` 前缀）。
 
 ## 11. 纹理名录（3 个）
 
@@ -182,4 +180,4 @@ very minimal, no text, no watermark
 
 ## 14. 界面示意图（程序合成，非 AI 生图）
 
-`ui_mockup.py`（mh-art scripts）按 09 布局/色板把已发布资产合成 1920×1080 示意图，落 `ImageReview/mockups/` 校验后 `--publish` 发布（`mockup_` 前缀）。已发布：`mockup_s01_menu` / `mockup_s03_battle` / `mockup_s04_map` / `mockup_s05_reward`；S06~S13 按同管线补。字体为系统雅黑近似（正式实现 Noto Serif/Sans SC + TMP）；正面小卡文字按整卡缩放仅示意。
+`ui_mockup.py`（mh-art scripts）按 09 布局/色板把已发布资产合成 1920×1080 示意图，落 `ImageReview/mockups/` 校验后 `--publish` 发布（`mockup_` 前缀）。**2026-09-01 S01~S13 共 13 屏全量发布**（09 §5.1/§5.4/§6/§7.1~§7.4/§8.1~§8.3 嵌入）。字体为系统雅黑近似（正式实现 Noto Serif/Sans SC + TMP）；正面小卡文字按整卡缩放仅示意；商店/Boss遗物屏的遗物徽记为程序简笔占位（`relic_glyph`），真遗物图标发布后重渲替换。
