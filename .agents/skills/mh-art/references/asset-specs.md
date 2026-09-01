@@ -117,6 +117,8 @@ very minimal, no text, no watermark
 
 `icon_menu` / `icon_settings` / `icon_back` / `icon_gold` / `icon_deck` / `icon_discard` / `icon_exhaust` / `icon_reshuffle` / `icon_hp` / `icon_block` / `icon_focus`(专注`#D4A857`)
 
+> 2026-09-01：功能图标 ×12（§3.6 全部，含 `icon_memory`）已生成发布；`icon_intent_attack`、`icon_status_burn` 为意图/状态两组的首批样张（同风格，其余待批量）。图标风格关键词：居中单一物体、粗圆润剪影、深色细描边、平色软高光；易加戏的题材（火焰/骷髅等）desc 需显式否定（no lantern/no face/no books…）。
+
 ## 5. 遗物名录（20 个）
 
 来自 [10-UI美术资源规格 §3.5](../../../docs/design/10-UI美术资源规格.md)。边框色随稀有度：普通银 `#B0B0B0` / 罕见蓝 `#4A9CD4` / 稀有金 `#D4A857` / Boss 橙 `#E87B35`。
@@ -160,7 +162,9 @@ very minimal, no text, no watermark
 
 文件名与场景对应关系未在文档定稿，首次生成前与用户确认：
 
-`bg_menu`(主菜单,记忆殿堂图书馆大厅) / `bg_battle`(战斗,殿堂石厅烛光) / `bg_event`(事件) / `bg_shop`(商店) / `bg_campfire`(篝火)
+`bg_menu`(主菜单,记忆殿堂图书馆大厅,已发布 2026-09-01) / `bg_battle`(战斗,殿堂石厅烛光,已发布 2026-09-01) / `bg_event`(事件) / `bg_shop`(商店) / `bg_campfire`(篝火)
+
+> bg_menu/bg_battle 各出 2 候选、vision 判读"UI 留空区干净"者定稿（menu_1 / battle_2）；落选件在 `_archived/2026-09-01/backgrounds/`。剩余 3 张待后续批次（要求同：留空区干净、无角色、无文字）。
 
 ## 11. 纹理名录（3 个）
 
@@ -172,8 +176,10 @@ very minimal, no text, no watermark
 - 文档里的 32–56px 图标尺寸是 UI 显示尺寸，非源图尺寸（详见 SKILL.md 规格表附注）。
 - 透明底：仅 icon/relic/potion/node/enemy/portrait/logo；网关不支持 `background: transparent` 参数但响应 prompt 关键词，脚本自动校验 alpha 并对实心底打 WARNING。卡背/卡框的圆角透明角由 roundify 后处理产生，不依赖网关。
 
-## 13. 徽标（1 个，2026-09-01 新增）
+## 13. 徽标（1 个，2026-09-01 定稿）
 
-`logo_main`（游戏徽标）——只出**徽记图形**，家族意象为发光记忆宝珠 + 摊开书本 + 小金冠（与通用卡背徽记同 DNA）；透明底方构图源图（API 1024×1024，网关实际返回约 1254×1254，原尺寸保留）。**《记忆勇者》中文标题字标由 UI 层（TMP）排版合成，不烘焙进徽记资产**（AI 不画文字原则）。
+`logo_main`（游戏徽记，已发布 `Assets/UI/logo_main.png`）——**宝珠主体版**：大颗薄荷青发光记忆宝珠（内含书本剪影+星点）坐在摊开奶油书本上、顶悬小金冠（三方向候选中 vision 七项全过者：描边干净、4 元素、严格对称、透明底无残迹；圆环/盾形两方向落选件在 `_archived/2026-09-01/logos/`）。透明底方构图源图 1254×1254。**《记忆勇者》中文标题字标由 UI 层（TMP 思源宋体）排版合成，不烘焙进徽记资产**（AI 不画文字原则）；徽记+雅黑近似字标的主菜单效果见 `mockup_s01_menu.png`。
 
-首版三方向候选（1 圆环徽记 / 2 盾形纹章 / 3 宝珠主体）在 `ImageReview/logos/` 拍板中；定稿后把规格（命名 `logo_main.png`、用途：S01 主菜单标题与图标）回填 10 §9 前缀表与 §10 清单。
+## 14. 界面示意图（程序合成，非 AI 生图）
+
+`ui_mockup.py`（mh-art scripts）按 09 布局/色板把已发布资产合成 1920×1080 示意图，落 `ImageReview/mockups/` 校验后 `--publish` 发布（`mockup_` 前缀）。已发布：`mockup_s01_menu` / `mockup_s03_battle` / `mockup_s04_map` / `mockup_s05_reward`；S06~S13 按同管线补。字体为系统雅黑近似（正式实现 Noto Serif/Sans SC + TMP）；正面小卡文字按整卡缩放仅示意。
