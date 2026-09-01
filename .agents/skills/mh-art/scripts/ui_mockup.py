@@ -264,43 +264,40 @@ def s03_battle():
     # 牌桌托盘：四堆计数 + 重新铺满（原全局底栏职能并入牌桌下方，与网格同宽对齐）
     deck_tray(img, [443, 884, 1029, 948])
 
-    # ---- 右列·敌人展示（上）与行动/玩家状态（下）----
+    # ---- 右列·敌人展示（上）与玩家状态（下）----
     ex = 1658
     goblin = asset("enemy_goblin.png")
     if goblin:
-        paste_fit(img, goblin, ex, 285, 420)
+        paste_fit(img, goblin, ex, 268, 400)
     d = ImageDraw.Draw(img)
-    text(d, (ex, 522), "哥林布", size=20, anchor="mm")
-    bar(d, ex - 140, 544, 280, 20, 35 / 40, fill=DARKRED)
-    text(d, (ex + 150, 554), "35/40", size=15, anchor="lm")
-    panel(img, [ex - 160, 592, ex + 160, 658], 8, fill=BRIGHT, width=2)
-    icon(img, "icon_intent_attack.png", ex - 118, 625, 38, fallback_fill=RED)
-    text(d, (ex - 88, 610), "意图 · 攻击", size=16)
-    text(d, (ex - 88, 634), "造成 8 点伤害", size=13, bold=False)
-    icon(img, "icon_status_burn.png", ex - 148, 696, 24, fallback_fill=BURN)
-    text(d, (ex - 130, 696), "灼烧 ×2", size=14, bold=False, anchor="lm")
-    x2 = chip(d, ex - 160, 728, "混乱", PURPLE)
-    text(d, (x2 + 8, 741), "随机交换 2 张", size=13, bold=False, anchor="lm")
-
-    panel(img, [1448, 784, 1868, 1044], 12)
-    actionbar(img, 1520, 806)
+    text(d, (ex, 496), "哥林布", size=20, anchor="mm")
+    bar(d, ex - 140, 518, 280, 20, 35 / 40, fill=DARKRED)
+    text(d, (ex + 150, 528), "35/40", size=15, anchor="lm")
+    # 行动条（01 §6：敌人蓄力计量，翻牌+1、满则敌人出手——归属敌人信息块）
+    actionbar(img, 1520, 566)
     d = ImageDraw.Draw(img)
-    d.line([1472, 948, 1844, 948], fill=BORDER, width=1)
-    icon(img, "icon_hp.png", 1516, 990, 26)
-    bar(d, 1536, 980, 180, 20, 48 / 60, fill=RED)
-    text(d, (1724, 990), "48/60", size=17, anchor="lm")
-    icon(img, "icon_block.png", 1808, 990, 26)
-    text(d, (1834, 990), "5", size=17, fill=BLOCKBLUE, anchor="lm")
+    panel(img, [ex - 160, 712, ex + 160, 778], 8, fill=BRIGHT, width=2)
+    icon(img, "icon_intent_attack.png", ex - 118, 745, 38, fallback_fill=RED)
+    text(d, (ex - 88, 730), "意图 · 攻击", size=16)
+    text(d, (ex - 88, 754), "造成 8 点伤害", size=13, bold=False)
+    icon(img, "icon_status_burn.png", ex - 148, 819, 24, fallback_fill=BURN)
+    text(d, (ex - 130, 819), "灼烧 ×2", size=14, bold=False, anchor="lm")
+    x2 = chip(d, ex - 160, 838, "混乱", PURPLE)
+    text(d, (x2 + 8, 851), "随机交换 2 张", size=13, bold=False, anchor="lm")
 
-    # 悬浮预览卡（09 §6.7：240×320，跟随鼠标——示意表达为悬停卡左缘弹出+金线引导）
+    # 玩家状态横条（右列底部）
+    panel(img, [1448, 916, 1868, 996], 12)
+    icon(img, "icon_hp.png", 1520, 956, 26)
+    bar(d, 1540, 946, 180, 20, 48 / 60, fill=RED)
+    text(d, (1728, 956), "48/60", size=17, anchor="lm")
+    icon(img, "icon_block.png", 1810, 956, 26)
+    text(d, (1836, 956), "5", size=17, fill=BLOCKBLUE, anchor="lm")
+
+    # 悬浮预览卡（09 §6.7：240×320，跟随鼠标——示意表达为悬停卡左缘贴身弹出）
     pv = asset("cardframe_skill.png")
     if pv:
         cy = fy + ch // 2
-        pxv, pyv = fx - 320, cy - 160
-        lc = (255, 186, 69, 255)   # 饱和橙金：米色浅底上保持对比
-        d.line([pxv + 252, cy, fx - 10, cy], fill=lc, width=7)
-        for exx in (pxv + 252, fx - 10):
-            d.ellipse([exx - 6, cy - 6, exx + 6, cy + 6], fill=lc, outline=INK, width=1)
+        pxv, pyv = fx - 20 - 240, cy - 160
         text(d, (pxv + 120, pyv - 14), "悬浮预览（跟随鼠标）", size=13,
              fill=(96, 84, 62, 255), bold=False, anchor="mm")
         drop_shadow(img, [pxv, pyv, pxv + 240, pyv + 320], r=14)
