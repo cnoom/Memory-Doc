@@ -434,20 +434,24 @@ def map_node(img, cx, cy, kind, dim=False):
     img.alpha_composite(im, (round(cx - im.width / 2), round(cy - im.height / 2)))
 
 
-def dotted_edge(d, p0, p1, r, fill, trim0=30, trim1=30):
-    """点线路径（StS 风格）：两端各留 trim 让位节点，圆点等距铺满。"""
+# 地图点线路径全局节奏：所有边同点径同点距、相位锚定下端节点——任意角度/长度/
+# 无限拓展下节奏一致；已走/未走仅以颜色区分（金 #D4A857 / 暖灰褐 #8A7A60）
+DOT_STEP = 14
+DOT_R = 4
+
+
+def dotted_edge(d, p0, p1, fill, trim0=34, trim1=34):
+    """点线路径：自下端节点 trim0 处起、每 DOT_STEP 一点，至 trim1 让位上端节点。"""
     (x0, y0), (x1, y1) = p0, p1
     length = math.hypot(x1 - x0, y1 - y0)
-    if length <= trim0 + trim1 + r * 2:
+    if length <= trim0 + trim1 + DOT_STEP:
         return
     ux, uy = (x1 - x0) / length, (y1 - y0) / length
-    sx, sy = x0 + ux * trim0, y0 + uy * trim0
-    ex, ey = x1 - ux * trim1, y1 - uy * trim1
-    n = max(2, round((length - trim0 - trim1) / (r * 2.7)))
-    for i in range(n + 1):
-        t = i / n
-        px, py = sx + (ex - sx) * t, sy + (ey - sy) * t
-        d.ellipse([px - r, py - r, px + r, py + r], fill=fill)
+    dist = trim0
+    while dist <= length - trim1:
+        px, py = x0 + ux * dist, y0 + uy * dist
+        d.ellipse([px - DOT_R, py - DOT_R, px + DOT_R, py + DOT_R], fill=fill)
+        dist += DOT_STEP
 
 
 def current_marker(img, cx, cy, r=36):
@@ -528,8 +532,7 @@ def s04_map():
                     continue
                 chosen = (ri, ci, cj) in chosen_edges
                 dotted_edge(d, node_xy(ri, ci), node_xy(ri + 1, cj),
-                            5 if chosen else 3,
-                            GOLD if chosen else BORDER,
+                            GOLD if chosen else SUB,
                             trim0=34, trim1=36 if top_is_boss else 32)
     for ri, (_, nodes) in enumerate(rows):
         for ci, (kind, dx) in enumerate(nodes):
@@ -541,8 +544,6 @@ def s04_map():
                   outline=GOLD[:3] + (170,), width=3)
     cur_x, cur_y = node_xy(2, 0)
     current_marker(img, cur_x, cur_y)
-    # Boss 名下移避开汇聚点线（y≈444-460 带内两侧点线 x≈±47，标签宽 ±40 不相碰）
-    text(d, (cx0, 452), "记忆吞噬者", size=16, fill=INK, anchor="mm")
 
     # 底部状态栏
     panel(img, [70, H - 130, W - 70, H - 40], 10, fill=BRIGHT)
