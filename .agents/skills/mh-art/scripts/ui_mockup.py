@@ -427,7 +427,7 @@ def map_node(img, cx, cy, kind, dim=False):
     if dim:
         im = ImageEnhance.Color(im).enhance(0.2)
         im = ImageEnhance.Brightness(im).enhance(1.06)
-        veil = Image.new("RGBA", im.size, PANEL + (0,))
+        veil = Image.new("RGBA", im.size, PANEL[:3] + (0,))
         veil.putalpha(ImageChops.multiply(
             im.getchannel("A"), Image.new("L", im.size, 140)))
         im.alpha_composite(veil)
@@ -520,10 +520,11 @@ def s04_map():
 
     for ri in range(len(rows) - 1):
         top_is_boss = ri + 2 == len(rows)
+        bot_is_start = ri == 0   # 起点扇形连满第一层（StS 惯例）：保证任何已走路径与全部底层节点可达
         for ci in range(len(rows[ri][1])):
             for cj in range(len(rows[ri + 1][1])):
                 dx0, dx1 = rows[ri][1][ci][1], rows[ri + 1][1][cj][1]
-                if not top_is_boss and abs(dx0 - dx1) > 160:
+                if not (top_is_boss or bot_is_start) and abs(dx0 - dx1) > 160:
                     continue
                 chosen = (ri, ci, cj) in chosen_edges
                 dotted_edge(d, node_xy(ri, ci), node_xy(ri + 1, cj),
@@ -540,7 +541,8 @@ def s04_map():
                   outline=GOLD[:3] + (170,), width=3)
     cur_x, cur_y = node_xy(2, 0)
     current_marker(img, cur_x, cur_y)
-    text(d, (cx0, 424), "记忆吞噬者", size=16, fill=INK, anchor="mm")
+    # Boss 名下移避开汇聚点线（y≈444-460 带内两侧点线 x≈±47，标签宽 ±40 不相碰）
+    text(d, (cx0, 452), "记忆吞噬者", size=16, fill=INK, anchor="mm")
 
     # 底部状态栏
     panel(img, [70, H - 130, W - 70, H - 40], 10, fill=BRIGHT)
