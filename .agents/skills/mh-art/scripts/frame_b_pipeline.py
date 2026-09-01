@@ -13,7 +13,7 @@
 窗区镂空：洞=拱窗净底区（程序几何直接定义，无需检测），alpha=0 + 1.2px
 羽化；引擎/效果图按 alpha<200 读窗形，插画 cover 等比裁贴。
 
-输出（预览区，拍板后 --publish 进 Assets/UI）：
+输出（预览区，用户拍板后 --publish 进 Assets/UI/cardframes/）：
   ImageReview/cardframes/border_card_{type}_b.png   960×1280 发布资产
   ImageReview/cards/cardframe_b_{type}.png          480×640 整卡效果图
 

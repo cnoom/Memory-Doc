@@ -15,7 +15,7 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 | --- | --- | --- |
 | `ImageReview/<类型>/` | **预览**：新生成的候选落这里，供人工/agent 校验，未定稿 | 是（便于远端查看拍板） |
 | `ImageReview/_archived/<日期>/<类型>/` | **归档**：被新候选取代的旧图、落选方案，只进不出、永不发布 | 是 |
-| `Assets/UI/`（项目根目录） | **实际应用**：校验通过后发布的正式资产，随仓库进 git，被 md 嵌入。**扁平无子目录**——文件名自带类别前缀，不再按类型嵌套 | **是** |
+| `Assets/UI/<类型>/`（项目根目录） | **实际应用**：**经用户拍板确认后**发布的正式资产，随仓库进 git，被 md 嵌入。**按类型分子目录**（目录名与 ImageReview 类型目录同名），文件名前缀仍保留 | **是** |
 
 ## 工作流（三段式：生成 → 校验 → 发布嵌入）
 
@@ -24,8 +24,8 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 3. 用 `scripts/gen_asset.py` 生成——**默认落 `ImageReview/<类型>/` 预览区**；要挑方案就 `--n 2` / `--n 3` 出多候选（`名称_1.png`…）。
 4. **归档**：生成新一轮候选时，同任务被取代的旧图立即用 `--archive` 移入 `ImageReview/_archived/<日期>/<类型>/`——预览区各类型目录里只允许"当前待看"与"明确挂起"的候选（规则详见 `ImageReview/README.md`）。
 5. 校验：**卡背/卡框类资产先跑 `scripts/verify_card.py`（量化验收：3:4/黑像素/四角透明/环完整性/色板偏差/窗镂空/沿边波动，全 PASS 才算过）**；再按「视觉校验通道」一节委派 `vision` 子代理自检（风格一致性 / 透明底 / 水印 / 图标剪影可读性），结论随图交用户在 `ImageReview/` 里拍板；不合格就调 prompt 重生成（旧图按上一步归档）。
-6. 发布：`--publish ImageReview/<类型>/<文件>` 把通过校验的文件移动到项目根 `Assets/UI/`（扁平目录；自动剥离 `_N` 候选后缀、统一小写、校验类别前缀）。
-7. **嵌入文档**（实际应用的最后一环）：在对应设计文档（06/07/08 等）的相关条目处插入相对路径引用，例如 `![记忆水晶](../../Assets/UI/relic_memory_crystal.png)`；一张图只嵌一次，在首次定义它的文档里嵌。
+6. 发布：**必须等用户明确拍板确认**（校验/vision 通过 ≠ 发布许可，示意图等一切生成资源同理）——`--publish ImageReview/<类型>/<文件>` 把确认的文件移动到 `Assets/UI/<类型>/`（自动剥离 `_N` 候选后缀、统一小写、校验类别前缀）。
+7. **嵌入文档**（实际应用的最后一环）：在对应设计文档（06/07/08 等）的相关条目处插入相对路径引用，例如 `![记忆水晶](../../Assets/UI/relics/relic_memory_crystal.png)`；一张图只嵌一次，在首次定义它的文档里嵌。
 
 ## 视觉校验通道（2026-08-27 起）
 
@@ -38,7 +38,7 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 
 ## 资产规格表
 
-命名规范遵循 [10-UI美术资源规格 §9](../../../docs/design/10-UI美术资源规格.md)：全小写 snake_case + 类别前缀（`card_` / `cardback_` / `icon_` / `relic_` / `potion_` / `node_` / `enemy_` / `portrait_` / `logo_` / `bg_` / `texture_`）。全部类型统一发布到项目根 `Assets/UI/`（扁平，靠前缀区分类别）。
+命名规范遵循 [10-UI美术资源规格 §9](../../../docs/design/10-UI美术资源规格.md)：全小写 snake_case + 类别前缀（`card_` / `cardback_` / `icon_` / `relic_` / `potion_` / `node_` / `enemy_` / `portrait_` / `logo_` / `bg_` / `texture_`）。发布到项目根 `Assets/UI/<类型>/`（按类型分子目录，目录名与预览区一致；程序合成的 `cardframe_`/`border_` 落 `cardframes/`、`mockup_` 落 `mockups/`，前缀仍保留）。
 
 | 类型 | API size | 透明底 | 发布规格 | 预览区目录 | 命名示例 |
 | --- | --- | --- | --- | --- | --- |
@@ -89,7 +89,7 @@ python .agents/skills/mh-art/scripts/gen_asset.py --type relic --name relic_memo
 python .agents/skills/mh-art/scripts/gen_asset.py --type cardback --name cardback_attack --desc "..." --n 2
 # 归档：被取代的旧候选移入 _archived/<今日>/<类型>/（可传单文件或整目录）
 python .agents/skills/mh-art/scripts/gen_asset.py --archive ImageReview/cards/card_attack_biji.png
-# 发布：校验通过后移动到 Assets/UI/（扁平）；类型可从路径推断，_N 后缀自动剥离
+# 发布：用户拍板确认后移动到 Assets/UI/<类型>/（类型可从路径推断，_N 后缀自动剥离）
 python .agents/skills/mh-art/scripts/gen_asset.py --publish ImageReview/relics/relic_memory_crystal_1.png
 ```
 
@@ -107,7 +107,7 @@ python .agents/skills/mh-art/scripts/gen_asset.py --publish ImageReview/relics/r
 - 上游生成慢（可达数分钟），base 脚本 600s 超时 + 3 次重试，502 等一会再试。
 - 卡面是**插画**不是整卡：卡框/文字/词条区由 UI 层实现（见 10-UI美术资源规格 §2.2），AI 不画文字，desc 里明确 "no text"。
 - 覆层（overlay_*）类资产是编辑器合成效果（虚线框/遮罩/锁链），不适合 AI 生成，不在本技能类型表内。
-- **`--publish` 整目录前先清点目录内容**：publish 会把目录里所有 png 按规范名落 Assets/UI，同名候选（`名称_1/_2`）剥离后缀后**相互覆盖**——2026-09-01 曾因目录混入 vision 判读临时文件导致 icon_status_burn 被连覆盖两次；发布前 `ls` 确认只有本批候选，临时/对比图（`_` 开头）先删或移走。
+- **`--publish` 整目录前先清点目录内容**：publish 会把目录里所有 png 按规范名落 `Assets/UI/<类型>/`，同名候选（`名称_1/_2`）剥离后缀后**相互覆盖**——2026-09-01 曾因目录混入 vision 判读临时文件导致 icon_status_burn 被连覆盖两次；发布前 `ls` 确认只有本批候选，临时/对比图（`_` 开头）先删或移走。
 - **给 vision 子代理的判读指令必须注明"临时文件只写系统 %TEMP%，不写仓库目录"**：否则裁切放大图会落进 ImageReview/ 混入提交（同日 `_chk_*.png` 事故）。
 - **易"加戏"题材的 desc 要显式否定**：gpt-image-2 对孤立小物（火焰/骷髅/大脑）爱加容器、表情、帽子等（火焰连出两版提灯、消耗画成书堆、大脑戴学士帽）——desc 加 "no lantern/lamp/candle/holder, no face, no books, no hat" 类否定词，一次过的概率大幅提高。
 

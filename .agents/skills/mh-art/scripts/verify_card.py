@@ -16,9 +16,9 @@
   7. 描边沿边波动：边带区相邻行均差 < 8（生长/重绘条纹与断层检测）
 
 用法：
-    python .agents/skills/mh-art/scripts/verify_card.py Assets/UI/border_card_attack.png --type attack
-    python .agents/skills/mh-art/scripts/verify_card.py Assets/UI/cardback_universal.png --no-window
-    python .agents/skills/mh-art/scripts/verify_card.py Assets/UI/border_card_*.png --type attack  # 逐个
+    python .agents/skills/mh-art/scripts/verify_card.py Assets/UI/cardframes/border_card_attack.png --type attack
+    python .agents/skills/mh-art/scripts/verify_card.py Assets/UI/cardbacks/cardback_universal.png --no-window
+    python .agents/skills/mh-art/scripts/verify_card.py Assets/UI/cardframes/border_card_*.png --type attack  # 逐个
 """
 
 import argparse

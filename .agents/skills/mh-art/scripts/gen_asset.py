@@ -7,8 +7,9 @@
 三目录工作流（详见 SKILL.md 与 ImageReview/README.md）:
     生成  -> 默认落 ImageReview/<类型>/ 预览区，供人工校验（进 git，便于远端查看拍板）
     归档  -> --archive 把被取代的候选移入 ImageReview/_archived/<日期>/<类型>/（只进不出）
-    发布  -> --publish 把校验通过的文件移动到项目根 Assets/UI/（扁平无子目录，
-             文件名自带类别前缀；进 git，供文档嵌入）
+    发布  -> --publish 把用户拍板确认的文件移动到项目根 Assets/UI/<类型>/（按类型分子
+             目录，与 ImageReview 类型目录同名；进 git，供文档嵌入）。校验/vision 通过
+             ≠ 发布许可——必须等用户明确确认后才能执行 --publish。
 
 用法（仓库根目录下运行）:
     python .agents/skills/mh-art/scripts/gen_asset.py --type relic --name relic_memory_crystal --desc "..."
@@ -50,8 +51,8 @@ STYLE_BASE = ("clean simple 2D cartoon game art for casual mobile games, big rou
               "no watercolor, no painterly texture, no realistic rendering, no dark heavy "
               "colors, no complex details, no busy props")
 
-# 发布目录（实际应用区）：扁平无子目录——文件名自带类别前缀（prefix 字段），
-# 发布时按前缀校验命名规范；仅 docs 文档仓库适用，勿再按类型嵌套。
+# 发布目录（实际应用区）：按类型分子目录 Assets/UI/<review>/（与 ImageReview/<类型>/
+# 同名，单一映射不重复维护）；prefix 字段同时用于发布时的命名规范校验。
 SPECS = {
     "card": dict(size="1024x1536", transparent=False, resize=None,
                  review="cards", prefix="card_",
@@ -125,6 +126,13 @@ SPECS = {
                           "no shadows at edges, no text, no watermark"),
 }
 
+# 程序合成资产类型：不走 AI 生成（size/style 为占位），条目仅让 --publish/--archive
+# 能按 review 目录名推断类型、把文件落进 Assets/UI/<类型>/。
+NON_AI_TYPES = {
+    "cardframe": dict(review="cardframes", prefix="border_"),   # frame_b_pipeline.py 产物
+    "mockup": dict(review="mockups", prefix="mockup_"),         # ui_mockup.py 产物
+}
+
 
 def load_base_module():
     skill_dir = os.environ.get("IMAGE2_SKILL_DIR") or os.path.join(
@@ -177,7 +185,7 @@ def _review_subdir(path):
 
 def infer_type(path):
     """从 ImageReview 路径段推断资产类型（发布/归档模式免 --type）。"""
-    review_to_type = {v["review"]: k for k, v in SPECS.items()}
+    review_to_type = {v["review"]: k for k, v in {**SPECS, **NON_AI_TYPES}.items()}
     sub = _review_subdir(path)
     return review_to_type.get(sub) if sub else None
 
@@ -236,24 +244,25 @@ def archive(src):
 
 
 def publish(spec_key, src):
-    spec = SPECS[spec_key]
+    spec = {**SPECS, **NON_AI_TYPES}[spec_key]
     files = collect_pngs(src)
-    os.makedirs(ASSETS_ROOT, exist_ok=True)
+    dst_dir = os.path.join(ASSETS_ROOT, spec["review"])
+    os.makedirs(dst_dir, exist_ok=True)
     for f in files:
         name = canonical_name(os.path.splitext(os.path.basename(f))[0])
         if not name.startswith(spec["prefix"]):
             print(f"WARN [{name}.png]: name does not start with '{spec['prefix']}' "
                   f"(naming rule: docs/design/10-UI美术资源规格.md §9)", file=sys.stderr)
-        dst = os.path.join(ASSETS_ROOT, f"{name}.png")
+        dst = os.path.join(dst_dir, f"{name}.png")
         shutil.move(f, dst)
         print(f"Published: {f} -> {dst}")
-    print("Next: 在对应设计文档里嵌入相对引用，如 ![名称](../../Assets/UI/<文件>.png)；"
+    print(f"Next: 在对应设计文档里嵌入相对引用，如 ![名称](../../Assets/UI/{spec['review']}/<文件>.png)；"
           "发布目录进 git，记得提交。")
 
 
 def main():
     parser = argparse.ArgumentParser(description="Memory Hero (记忆勇者) doc asset image generator")
-    parser.add_argument("--type", choices=sorted(SPECS),
+    parser.add_argument("--type", choices=sorted({**SPECS, **NON_AI_TYPES}),
                         help="asset type preset (publish/archive mode can infer it from the ImageReview path)")
     parser.add_argument("--name", help="asset file name (without extension, snake_case)")
     parser.add_argument("--desc", help="content description (style auto-prepended)")
@@ -268,7 +277,8 @@ def main():
                         help="force opaque even if the type defaults to transparent")
     parser.add_argument("--no-resize", action="store_true", help="skip preset downscale")
     parser.add_argument("--publish", nargs="?", const="", metavar="FILE",
-                        help="publish mode: move reviewed ImageReview file (or whole folder) to Assets/UI/")
+                        help="publish mode: move USER-CONFIRMED ImageReview file (or whole folder) "
+                             "to Assets/UI/<type dir>/ (vision pass alone is NOT publish consent)")
     parser.add_argument("--archive", nargs="?", const="", metavar="FILE",
                         help="archive mode: move superseded ImageReview file (or whole folder) to _archived/<date>/")
     args = parser.parse_args()
@@ -290,6 +300,9 @@ def main():
 
     if not args.type:
         sys.exit("Error: --type is required in generate mode")
+    if args.type in NON_AI_TYPES:
+        sys.exit(f"Error: '{args.type}' 是程序合成资产类型（frame_b_pipeline.py / ui_mockup.py 产出），"
+                 "不走 AI 生成；本条目仅供 --publish/--archive 定位目录")
     spec = SPECS[args.type]
 
     if not (args.name and args.desc):
@@ -358,7 +371,7 @@ def main():
           f"{' -> ' + spec['resize'] if resize and not args.no_resize else ''} Candidates={args.n}")
     print(f"Review: 人工在 {REVIEW_ROOT}/ 校验（或让 agent 用 Read 回看）; "
           f"被取代的旧候选: python {sys.argv[0]} --archive {review_dir}/<file>; "
-          f"通过后发布: python {sys.argv[0]} --publish {review_dir}/<file>")
+          f"用户拍板确认后发布: python {sys.argv[0]} --publish {review_dir}/<file>")
 
 
 if __name__ == "__main__":

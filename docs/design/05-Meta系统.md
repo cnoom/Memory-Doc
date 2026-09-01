@@ -120,7 +120,7 @@
 | **狂战士** | 暴力输出型 | **狂怒**：每成功配对一次，本场战斗攻击牌配对伤害+1 | 待设计 |
 | **术士** | 高风险高回报型（解锁角色） | **双面**：场上可同时翻开的牌数+1（正面牌上限提升至2） | 待设计 |
 
-<img src="../../Assets/UI/portrait_scholar.png" width="200" alt="学者立绘" />
+<img src="../../Assets/UI/portraits/portrait_scholar.png" width="200" alt="学者立绘" />
 
 ### 通用基底牌库
 

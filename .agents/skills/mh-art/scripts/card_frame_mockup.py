@@ -241,11 +241,11 @@ def make_ability(frame_path, name, rarity, art_path, sustain_lines, flip, tags):
 
 
 def frame_src(out, name):
-    """框体源图定位：正式资产 Assets/UI 优先（已发布），预览区 ImageReview 兜底。"""
-    for p in (os.path.join("Assets", "UI", name), os.path.join(out, name)):
+    """框体源图定位：正式资产 Assets/UI/cardframes/ 优先（已发布），预览区 ImageReview 兜底。"""
+    for p in (os.path.join("Assets", "UI", "cardframes", name), os.path.join(out, name)):
         if os.path.isfile(p):
             return p
-    sys.exit(f"frame not found in Assets/UI or {out}: {name}")
+    sys.exit(f"frame not found in Assets/UI/cardframes or {out}: {name}")
 
 
 def round_corners(card, radius=28):

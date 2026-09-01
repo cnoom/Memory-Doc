@@ -48,6 +48,11 @@ FONTS_DIR = os.path.join(os.environ.get("WINDIR", r"C:\Windows"), "Fonts")
 REVIEW_DIR = os.path.join("ImageReview", "mockups")
 ASSETS = os.path.join("Assets", "UI")
 
+# Assets/UI 按类型分子目录（与 ImageReview/<类型>/ 同名），asset() 依次查找
+ASSET_SUBDIRS = ("cards", "cardbacks", "cardframes", "icons", "relics", "potions",
+                 "map-nodes", "enemies", "portraits", "backgrounds", "textures",
+                 "logos", "mockups")
+
 
 def font(size, bold=True):
     for name in (["msyhbd.ttc", "msyh.ttc"] if bold else ["msyh.ttc", "simhei.ttf"]):
@@ -58,10 +63,12 @@ def font(size, bold=True):
 
 
 def asset(name):
-    """已发布资产优先，预览区兜底，无则 None（调用方画占位）。"""
-    for d in (ASSETS, os.path.join("ImageReview", "icons"),
-              os.path.join("ImageReview", "backgrounds"),
-              os.path.join("ImageReview", "logos")):
+    """已发布资产优先（Assets/UI/<类型>/ 分目录），预览区兜底，无则 None（调用方画占位）。"""
+    dirs = ([os.path.join(ASSETS, d) for d in ASSET_SUBDIRS]
+            + [os.path.join("ImageReview", "icons"),
+               os.path.join("ImageReview", "backgrounds"),
+               os.path.join("ImageReview", "logos")])
+    for d in dirs:
         p = os.path.join(d, name)
         if os.path.isfile(p):
             return Image.open(p).convert("RGBA")
@@ -838,7 +845,8 @@ def main():
     ap = argparse.ArgumentParser(description="Memory Hero UI mockup compositor")
     ap.add_argument("screens", nargs="*", help="s01 s03 s04 s05（默认全部）")
     ap.add_argument("--publish", action="store_true",
-                    help="把 ImageReview/mockups/ 全部发布到 Assets/UI/")
+                    help="把 ImageReview/mockups/ 全部发布到 Assets/UI/mockups/"
+                         "（仅在用户拍板确认后执行）")
     args = ap.parse_args()
     keys = args.screens or list(SCREENS)
     for k in keys:
@@ -851,11 +859,12 @@ def main():
         img.convert("RGB").save(out)
         print(f"Saved: {out}")
     if args.publish:
-        os.makedirs(ASSETS, exist_ok=True)
+        dst_dir = os.path.join(ASSETS, "mockups")
+        os.makedirs(dst_dir, exist_ok=True)
         for f in sorted(os.listdir(REVIEW_DIR)):
             if f.startswith("mockup_") and f.endswith(".png"):
-                shutil.move(os.path.join(REVIEW_DIR, f), os.path.join(ASSETS, f))
-                print(f"Published: {f} -> {ASSETS}")
+                shutil.move(os.path.join(REVIEW_DIR, f), os.path.join(dst_dir, f))
+                print(f"Published: {f} -> {dst_dir}")
 
 
 if __name__ == "__main__":
