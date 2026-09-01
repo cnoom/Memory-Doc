@@ -176,35 +176,25 @@ def topbar(img, title=None):
         text(d, (W // 2, 24), title, size=18, fill=INK, anchor="mm")
 
 
-def bottombar(img):
-    """战斗底栏 64px（09 §6.6）：四堆计数 | 重新铺满 | 血量/格挡。"""
-    ov = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    d = ImageDraw.Draw(ov)
-    d.rectangle([0, H - 64, W, H], fill=BRIGHT[:3] + (232,))
-    d.line([0, H - 64, W, H - 64], fill=BORDER, width=2)
-    img.alpha_composite(ov)
+def deck_tray(img, box):
+    """牌桌托盘（09 §6.6 左右结构版）：四堆计数 + 重新铺满主按钮，托在网格下方。"""
+    x0, y0, x1, y1 = box
+    panel(img, box, 10, fill=BRIGHT)
     d = ImageDraw.Draw(img)
-    x = 28
+    x = x0 + 26
     for name, num, cap in (("icon_deck.png", "15", "抽牌"),
                            ("icon_discard.png", "3", "弃牌"),
                            ("icon_exhaust.png", "1", "消耗"),
                            ("icon_memory.png", "2", "记忆")):
-        icon(img, name, x, H - 40, 26)
-        text(d, (x + 20, H - 44), num, size=18, anchor="lm")
-        text(d, (x + 20, H - 22), cap, size=12, fill=SUB, bold=False, anchor="lm")
-        x += 88
-    # 重新铺满（主按钮，居中；金光外晕提层级）
-    bw, bh = 200, 40
-    bb = [W // 2 - bw // 2, H - 54, W // 2 + bw // 2, H - 54 + bh]
-    glow_rect(img, bb, 8, color=GOLD, width=3)
+        icon(img, name, x, (y0 + y1) // 2, 28)
+        text(d, (x + 22, y0 + 19), num, size=17, anchor="lm")
+        text(d, (x + 22, y0 + 41), cap, size=12, fill=SUB, bold=False, anchor="lm")
+        x += 84
+    bw, bh = 190, 40
+    bb = [x1 - 22 - bw, (y0 + y1) // 2 - bh // 2, x1 - 22, (y0 + y1) // 2 + bh // 2]
+    glow_rect(img, bb, 8, width=3)
     panel(img, bb, 8, fill=GOLD, outline=(160, 120, 55, 255))
-    text(d, (W // 2, H - 34), "重新铺满 +2", size=17, anchor="mm")
-    # 玩家血量 + 格挡（右）
-    icon(img, "icon_hp.png", W - 330, H - 32, 26)
-    bar(d, W - 310, H - 42, 170, 20, 48 / 60, fill=RED)
-    text(d, (W - 132, H - 32), "48/60", size=18, anchor="lm")
-    icon(img, "icon_block.png", W - 62, H - 32, 26)
-    text(d, (W - 42, H - 32), "5", size=18, fill=BLOCKBLUE, anchor="lm")
+    text(d, (x1 - 22 - bw // 2, (y0 + y1) // 2), "重新铺满 +2", size=17, anchor="mm")
 
 
 def actionbar(img, x, y):
@@ -227,58 +217,28 @@ def actionbar(img, x, y):
 
 
 def s03_battle():
-    """S03 战斗界面（09 §6）：顶栏/敌人/4×4 网格/右侧面板/底栏 + 悬浮预览。"""
+    """S03 战斗界面（09 §6，左右结构）：左=牌桌（4×4 网格放大 136×181 + 堆计数
+    托盘），右=敌人展示（大立绘/血条/意图/状态）+ 行动条 + 玩家状态；无全局底栏。"""
     base = asset("bg_battle.png") or Image.new("RGBA", (W, H), CREAM)
     img = base.copy()
     topbar(img)
-    bottombar(img)
 
-    # 左侧遗物竖排（64px 宽）
+    # 左侧遗物竖排（64px 宽，通高）
     ov = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    ImageDraw.Draw(ov).rectangle([0, 48, 64, H - 64], fill=BRIGHT[:3] + (210,))
+    ImageDraw.Draw(ov).rectangle([0, 48, 64, H], fill=BRIGHT[:3] + (210,))
     img.alpha_composite(ov)
     d = ImageDraw.Draw(img)
-    d.line([64, 48, 64, H - 64], fill=BORDER, width=2)
+    d.line([64, 48, 64, H], fill=BORDER, width=2)
     text(d, (32, 76), "遗物", size=13, fill=SUB, anchor="mm")
     for i in range(3):
         d.ellipse([14, 110 + i * 64, 50, 146 + i * 64],
                   fill=(255, 255, 255, 90), outline=BORDER, width=2)
 
-    # 敌人区（顶部中央）：整体上收，血量数字移条侧，为下方网格留呼吸间距
-    goblin = asset("enemy_goblin.png")
-    if goblin:
-        paste_fit(img, goblin, W // 2, 142, 168)
-    d = ImageDraw.Draw(img)
-    bar(d, W // 2 - 90, 232, 180, 18, 35 / 40, fill=DARKRED)
-    text(d, (W // 2 + 100, 241), "35/40", size=14, anchor="lm")
-    text(d, (W // 2, 268), "哥林布", size=16, anchor="mm")
-
-    # 右侧信息面板（09 §6.5）
-    px, py, pw = W - 216, 64, 200
-    panel(img, [px, py, px + pw, py + 500])
-    actionbar(img, px + 16, py + 14)
-    d = ImageDraw.Draw(img)
-    d.line([px + 12, py + 150, px + pw - 12, py + 150], fill=BORDER, width=1)
-    text(d, (px + 16, py + 160), "意图", size=17)
-    panel(img, [px + 14, py + 188, px + pw - 14, py + 264], 6,
-          fill=BRIGHT, outline=BORDER, width=1, shadow=False)
-    icon(img, "icon_intent_attack.png", px + 42, py + 212, 36, fallback_fill=RED)
-    text(d, (px + 68, py + 210), "攻击", size=16)
-    text(d, (px + 68, py + 234), "造成 8 点伤害", size=13, bold=False)
-    d.line([px + 12, py + 284, px + pw - 12, py + 284], fill=BORDER, width=1)
-    text(d, (px + 16, py + 294), "敌人状态", size=17)
-    icon(img, "icon_status_burn.png", px + 32, py + 332, 26, fallback_fill=BURN)
-    text(d, (px + 52, py + 332), "灼烧 ×2", size=14, bold=False, anchor="lm")
-    d.line([px + 12, py + 362, px + pw - 12, py + 362], fill=BORDER, width=1)
-    text(d, (px + 16, py + 372), "敌人能力", size=17)
-    x2 = chip(d, px + 14, py + 404, "混乱", PURPLE)
-    text(d, (x2 + 8, py + 417), "随机交换 2 张", size=13, bold=False, anchor="lm")
-
-    # 4×4 卡牌网格（09 §6.3）：516×676 居中；gy 上收使底边与底栏留 22px 间距
-    gx, gy, cw, ch, gap = 702, 318, 120, 160, 12
-    faceup = {(1, 1): "cardframe_attack.png", (1, 3): "cardframe_skill.png"}
-    pv_src = (1, 3)          # 正面牌悬停：发光 + 右缘弹出预览（09 §6.7）
-    hover = (3, 0)          # 网格左下角背面牌悬停上浮（09 §9.1：上浮4px+边框发光）
+    # ---- 左区·牌桌：4×4 网格（136×181，卡面放大提升记牌可读性）----
+    gx, gy, cw, ch, gap = 443, 84, 136, 181, 14
+    faceup = {(1, 0): "cardframe_skill.png", (1, 3): "cardframe_attack.png"}
+    pv_src = (1, 0)          # 正面牌悬停：发光 + 左侧弹出预览（09 §6.7 跟随鼠标）
+    hover = (3, 3)           # 右下角背面牌悬停上浮（09 §9.1：上浮+边框发光）
     back = asset("cardback_universal.png")
     for row in range(4):
         for col in range(4):
@@ -289,9 +249,9 @@ def s03_battle():
             elif back is not None:
                 dy = -8 if (row, col) == hover else 0
                 img.alpha_composite(back.resize((cw, ch), Image.LANCZOS), (x, y + dy))
-    hx, hy = gx, gy + 3 * (ch + gap) - 8
+    hx, hy = gx + 3 * (cw + gap), gy + 3 * (ch + gap) - 8
     hover_glow(img, [hx - 4, hy - 4, hx + cw + 4, hy + ch + 4])
-    # 正面悬停卡发光（与悬浮预览卡配对表达；亮金宽晕，压过卡框自身蓝描边）
+    # 正面悬停卡发光（与悬浮预览卡配对表达）
     fx, fy = gx + pv_src[1] * (cw + gap), gy + pv_src[0] * (ch + gap)
     hover_glow(img, [fx - 4, fy - 4, fx + cw + 4, fy + ch + 4])
     # 标记角标：右上角金色 ✦×2（v1.20 增益化标记，仅层数不泄内容）
@@ -301,17 +261,48 @@ def s03_battle():
                (mx + cw - 32, my + 20), (mx + cw - 41, my + 17)], fill=GOLD, outline=INK)
     text(d, (mx + cw - 26, my + 20), "×2", size=13, anchor="mm")
 
-    # 悬浮预览卡（09 §6.7：240×320，跟随鼠标——示意表达为悬停卡右缘弹出+金线引导）
+    # 牌桌托盘：四堆计数 + 重新铺满（原全局底栏职能并入牌桌下方，与网格同宽对齐）
+    deck_tray(img, [443, 884, 1029, 948])
+
+    # ---- 右列·敌人展示（上）与行动/玩家状态（下）----
+    ex = 1658
+    goblin = asset("enemy_goblin.png")
+    if goblin:
+        paste_fit(img, goblin, ex, 285, 420)
+    d = ImageDraw.Draw(img)
+    text(d, (ex, 522), "哥林布", size=20, anchor="mm")
+    bar(d, ex - 140, 544, 280, 20, 35 / 40, fill=DARKRED)
+    text(d, (ex + 150, 554), "35/40", size=15, anchor="lm")
+    panel(img, [ex - 160, 592, ex + 160, 658], 8, fill=BRIGHT, width=2)
+    icon(img, "icon_intent_attack.png", ex - 118, 625, 38, fallback_fill=RED)
+    text(d, (ex - 88, 610), "意图 · 攻击", size=16)
+    text(d, (ex - 88, 634), "造成 8 点伤害", size=13, bold=False)
+    icon(img, "icon_status_burn.png", ex - 148, 696, 24, fallback_fill=BURN)
+    text(d, (ex - 130, 696), "灼烧 ×2", size=14, bold=False, anchor="lm")
+    x2 = chip(d, ex - 160, 728, "混乱", PURPLE)
+    text(d, (x2 + 8, 741), "随机交换 2 张", size=13, bold=False, anchor="lm")
+
+    panel(img, [1448, 784, 1868, 1044], 12)
+    actionbar(img, 1520, 806)
+    d = ImageDraw.Draw(img)
+    d.line([1472, 948, 1844, 948], fill=BORDER, width=1)
+    icon(img, "icon_hp.png", 1516, 990, 26)
+    bar(d, 1536, 980, 180, 20, 48 / 60, fill=RED)
+    text(d, (1724, 990), "48/60", size=17, anchor="lm")
+    icon(img, "icon_block.png", 1808, 990, 26)
+    text(d, (1834, 990), "5", size=17, fill=BLOCKBLUE, anchor="lm")
+
+    # 悬浮预览卡（09 §6.7：240×320，跟随鼠标——示意表达为悬停卡左缘弹出+金线引导）
     pv = asset("cardframe_skill.png")
     if pv:
         cy = fy + ch // 2
-        pxv, pyv = 1300, cy - 160
+        pxv, pyv = fx - 320, cy - 160
         lc = (255, 186, 69, 255)   # 饱和橙金：米色浅底上保持对比
-        d.line([fx + cw + 12, cy, pxv - 12, cy], fill=lc, width=7)
-        for ex in (fx + cw + 12, pxv - 12):
-            d.ellipse([ex - 6, cy - 6, ex + 6, cy + 6], fill=lc, outline=INK, width=1)
-        text(d, (pxv + 120, pyv - 14), "悬浮预览（跟随鼠标）", size=13, fill=(96, 84, 62, 255),
-             bold=False, anchor="mm")
+        d.line([pxv + 252, cy, fx - 10, cy], fill=lc, width=7)
+        for exx in (pxv + 252, fx - 10):
+            d.ellipse([exx - 6, cy - 6, exx + 6, cy + 6], fill=lc, outline=INK, width=1)
+        text(d, (pxv + 120, pyv - 14), "悬浮预览（跟随鼠标）", size=13,
+             fill=(96, 84, 62, 255), bold=False, anchor="mm")
         drop_shadow(img, [pxv, pyv, pxv + 240, pyv + 320], r=14)
         img.alpha_composite(pv.resize((240, 320), Image.LANCZOS), (pxv, pyv))
 
