@@ -107,6 +107,9 @@ python .agents/skills/mh-art/scripts/gen_asset.py --publish ImageReview/relics/r
 - 上游生成慢（可达数分钟），base 脚本 600s 超时 + 3 次重试，502 等一会再试。
 - 卡面是**插画**不是整卡：卡框/文字/词条区由 UI 层实现（见 10-UI美术资源规格 §2.2），AI 不画文字，desc 里明确 "no text"。
 - 覆层（overlay_*）类资产是编辑器合成效果（虚线框/遮罩/锁链），不适合 AI 生成，不在本技能类型表内。
+- **`--publish` 整目录前先清点目录内容**：publish 会把目录里所有 png 按规范名落 Assets/UI，同名候选（`名称_1/_2`）剥离后缀后**相互覆盖**——2026-09-01 曾因目录混入 vision 判读临时文件导致 icon_status_burn 被连覆盖两次；发布前 `ls` 确认只有本批候选，临时/对比图（`_` 开头）先删或移走。
+- **给 vision 子代理的判读指令必须注明"临时文件只写系统 %TEMP%，不写仓库目录"**：否则裁切放大图会落进 ImageReview/ 混入提交（同日 `_chk_*.png` 事故）。
+- **易"加戏"题材的 desc 要显式否定**：gpt-image-2 对孤立小物（火焰/骷髅/大脑）爱加容器、表情、帽子等（火焰连出两版提灯、消耗画成书堆、大脑戴学士帽）——desc 加 "no lantern/lamp/candle/holder, no face, no books, no hat" 类否定词，一次过的概率大幅提高。
 
 ## 批量节奏
 
