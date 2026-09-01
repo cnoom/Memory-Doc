@@ -124,6 +124,16 @@ SPECS = {
                     review="textures", prefix="texture_",
                     style="seamless tileable simple cartoon texture, evenly lit, no vignette, "
                           "no shadows at edges, no text, no watermark"),
+    # 按钮九宫格底图（09 §4.2 三态：btn_primary/btn_secondary/btn_danger；
+    # 10 §8.3 九宫格切片。所有装饰只允许落在四角与边框环，中央留净供文字）
+    "button": dict(size="1536x1024", transparent=True, resize=None,
+                   review="buttons", prefix="btn_",
+                   style="horizontal game UI button base plate for nine-slice stretching: one "
+                         "single wide rounded-rectangle button drawn flat, centered and fully "
+                         "inside the canvas on plain transparent background, wide clean empty "
+                         "center completely clear and plain reserved for text, all decoration "
+                         "confined to the outer frame only, clean thin dark outline, few flat "
+                         "colors with soft simple shading, no text, no letters, no watermark"),
 }
 
 # 程序合成资产类型：不走 AI 生成（size/style 为占位），条目仅让 --publish/--archive
