@@ -136,7 +136,8 @@ def button(img, d, box, label, variant="primary", tsize=24):
         BTN_CACHE[variant] = asset(f"btn_{variant}.png")
     src = BTN_CACHE[variant]
     if src is not None:
-        img.paste(nineslice(src, w, h, round(h * 0.25)), (x0, y0))
+        b = nineslice(src, w, h, round(h * 0.25))
+        img.paste(b, (x0, y0), b)   # 必须带 mask：否则圆角外透明区整块覆写、RGB 落盘为黑角块
     elif variant == "danger":
         panel(img, box, 10, fill=RED, outline=INK, width=2)
     elif variant == "secondary":
