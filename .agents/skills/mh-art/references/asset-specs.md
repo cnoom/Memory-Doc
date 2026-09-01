@@ -135,9 +135,13 @@ very minimal, no text, no watermark
 
 `potion_time`(时间,沙漏,金) / `potion_insight`(透视,眼球,青) / `potion_rearrange`(重排,棋盘网格,紫) / `potion_divination`(占卜,水晶球,蓝) / `potion_block`(格挡,盾牌,银) / `potion_power`(力量,拳头,红) / `potion_purify`(净化,圣光十字,白) / `potion_recall`(回忆,书签,金)
 
-## 7. 地图节点名录（6 个）
+## 7. 地图节点名录（6 个，2026-09-01 全部发布）
 
-`node_battle`(战斗`#C73E3E`圆形) / `node_elite`(精英`#9B45D4`菱形) / `node_shop`(商店`#D4A857`圆形) / `node_campfire`(篝火`#E87B35`圆形) / `node_event`(事件`#4A9CD4`圆形) / `node_boss`(Boss`#E84A20`星形)
+A 方向"圆形金环徽章"家族（彩色圆底+哑金环+奶油符号浮雕+深可可细描边，256×256 透明底；类型区分=底色+符号，形状编码作废）：
+
+`node_battle`(战斗,红底,交叉双剑) / `node_elite`(精英,紫底,切面宝石) / `node_shop`(商店,金底,双硬币) / `node_campfire`(篝火,橙底,火焰+木柴) / `node_event`(事件,蓝底,粗问号) / `node_boss`(Boss,红橙底,王冠+双层金环)
+
+> 家族尺寸基线：内容宽约 207px/不透明占比约 0.51（battle 实测）；同族候选占比跑偏时优先按基准程序规范化归一，不靠重掷生成。
 
 ## 8. 敌人立绘名录（9 个）
 
