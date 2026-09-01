@@ -4,6 +4,6 @@
 
 - 生成与发布流程见 [.agents/skills/mh-art/SKILL.md](../../.agents/skills/mh-art/SKILL.md)，候选/归档在仓库根 `ImageReview/`（同样进 git，便于远端查看）。
 - 命名与规格遵循 [10-UI美术资源规格 §9](../../docs/design/10-UI美术资源规格.md)（全小写 snake_case + 类别前缀），完整名录见 [.agents/skills/mh-art/references/asset-specs.md](../../.agents/skills/mh-art/references/asset-specs.md)。
-- 子目录：**按类型分目录**，目录名与 `ImageReview/<类型>/` 一致——`cards/` `cardbacks/` `cardframes/` `icons/` `relics/` `potions/` `map-nodes/` `enemies/` `portraits/` `backgrounds/` `textures/` `logos/` `mockups/`；文件名前缀仍保留（双重可辨识）。
+- 子目录：**按类型分目录**，目录名与 `ImageReview/<类型>/` 一致——`cards/` `cardbacks/` `cardframes/` `icons/` `relics/` `potions/` `map-nodes/` `enemies/` `portraits/` `backgrounds/` `textures/` `logos/` `mockups/` `buttons/`；文件名前缀仍保留（双重可辨识）。
 - **发布门槛**：任何资产（含 `ui_mockup.py` 合成的界面示意图）必须先落 `ImageReview/<类型>/` 待用户确认，用户拍板后才可 `--publish` 进本目录；校验/vision 通过不等于发布许可。
 - 只放发布成品，不放候选与草稿；修改已发布资产 = 重新生成候选走 ImageReview 流程、再次经用户确认后覆盖发布，并在嵌入它的文档处检查引用是否仍成立。

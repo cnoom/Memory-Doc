@@ -2,7 +2,7 @@
 """ui_mockup.py — 《记忆勇者》界面示意图合成器 v1（2026-09-01）
 
 按 09-UI设计规范 §6/§7/§8 的布局与色板，把已发布美术资产（背景/logo/卡框/
-卡背/敌人/图标）程序化合成为 1920×1080 界面示意图，供设计文档嵌入——
+卡背/敌人/图标/按钮）程序化合成为 1920×1080 界面示意图，供设计文档嵌入——
 延续 v1.17 卡框"程序生成定稿"口径：布局/文字由程序精确排版，AI 不画 UI 文字。
 
 输出：ImageReview/mockups/mockup_<界面>.png（预览区，校验后 --publish 发布）
@@ -51,7 +51,7 @@ ASSETS = os.path.join("Assets", "UI")
 # Assets/UI 按类型分子目录（与 ImageReview/<类型>/ 同名），asset() 依次查找
 ASSET_SUBDIRS = ("cards", "cardbacks", "cardframes", "icons", "relics", "potions",
                  "map-nodes", "enemies", "portraits", "backgrounds", "textures",
-                 "logos", "mockups")
+                 "logos", "mockups", "buttons")
 
 
 def font(size, bold=True):
@@ -100,6 +100,51 @@ def paste_fit(img, im, cx, cy, size):
     w, h = int(im.width * s), int(im.height * s)
     im2 = im.resize((w, h), Image.LANCZOS)
     img.alpha_composite(im2, (int(cx - w / 2), int(cy - h / 2)))
+
+
+BTN_CACHE = {}
+
+
+def nineslice(src, w, h, border):
+    """九宫格拉伸：9 块各自缩放到目标块尺寸（角块 border×border 不变形）。"""
+    sw, sh = src.size
+    bx = max(1, round(border * sw / w))
+    by = max(1, round(border * sh / h))
+    out = Image.new("RGBA", (w, h))
+    regions = [
+        ((0, 0, bx, by), (0, 0), (border, border)),
+        ((sw - bx, 0, sw, by), (w - border, 0), (border, border)),
+        ((0, sh - by, bx, sh), (0, h - border), (border, border)),
+        ((sw - bx, sh - by, sw, sh), (w - border, h - border), (border, border)),
+        ((bx, 0, sw - bx, by), (border, 0), (w - 2 * border, border)),
+        ((bx, sh - by, sw - bx, sh), (border, h - border), (w - 2 * border, border)),
+        ((0, by, bx, sh - by), (0, border), (border, h - 2 * border)),
+        ((sw - bx, by, sw, sh - by), (w - border, border), (border, h - 2 * border)),
+        ((bx, by, sw - bx, sh - by), (border, border), (w - 2 * border, h - 2 * border)),
+    ]
+    for box, pos, size in regions:
+        out.paste(src.crop(box).resize(size), pos)
+    return out
+
+
+def button(img, d, box, label, variant="primary", tsize=24):
+    """按钮（09 §4.2）：btn_* 九宫格底图 + 中央文字，底图缺失回退纯色 panel。
+    底图规范化源 960×208、九宫格边 52（= 高度 25%），切片按目标高度 25% 取。"""
+    x0, y0, x1, y1 = box
+    w, h = x1 - x0, y1 - y0
+    if variant not in BTN_CACHE:
+        BTN_CACHE[variant] = asset(f"btn_{variant}.png")
+    src = BTN_CACHE[variant]
+    if src is not None:
+        img.paste(nineslice(src, w, h, round(h * 0.25)), (x0, y0))
+    elif variant == "danger":
+        panel(img, box, 10, fill=RED, outline=INK, width=2)
+    elif variant == "secondary":
+        panel(img, box, 10, fill=BRIGHT, outline=BORDER, width=2)
+    else:
+        panel(img, box, 12, fill=GOLD, outline=(140, 105, 50, 255), width=3)
+    fill = WHITE if variant == "danger" else INK
+    text(d, ((x0 + x1) // 2, (y0 + y1) // 2), label, size=tsize, anchor="mm", fill=fill)
 
 
 def icon(img, name, cx, cy, size, fallback_fill=BORDER):
@@ -319,15 +364,11 @@ def s01_menu():
            stroke_width=3, stroke_fill=GOLD)
     text(d, (W // 2, 600), "记 忆 配 对  ·  卡 牌 肉 鸽", size=22, fill=(96, 84, 62, 255),
          bold=False, anchor="mm")
-    # 按钮组（09 §4.2）
-    panel(img, [W // 2 - 150, 668, W // 2 + 150, 736], 12, fill=GOLD,
-          outline=(140, 105, 50, 255), width=3)
-    text(d, (W // 2, 702), "开始游戏", size=24, anchor="mm")
+    # 按钮组（09 §4.2；btn_* 九宫格底图，缺失回退纯色 panel）
+    button(img, d, [W // 2 - 150, 668, W // 2 + 150, 736], "开始游戏", "primary", 24)
     for i, label in enumerate(("角色选择", "设置", "退出")):
         y = 766 + i * 70
-        panel(img, [W // 2 - 120, y, W // 2 + 120, y + 54], 10, fill=BRIGHT,
-              outline=BORDER, width=2)
-        text(d, (W // 2, y + 27), label, size=19, anchor="mm")
+        button(img, d, [W // 2 - 120, y, W // 2 + 120, y + 54], label, "secondary", 19)
     return img, "mockup_s01_menu.png"
 
 
