@@ -125,6 +125,16 @@ def glow_rect(img, box, r, color=GOLD, width=5):
     img.alpha_composite(gl.filter(ImageFilter.GaussianBlur(4)))
 
 
+def hover_glow(img, box, r=10):
+    """悬停高亮加强版：亮芯线 + 饱和橙金双层晕——米色浅底上比 glow_rect 醒目。"""
+    for w, col, blur in ((3, (255, 236, 170, 255), 0),
+                         (6, (255, 190, 70, 230), 3),
+                         (11, (255, 168, 40, 140), 6)):
+        ov = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        ImageDraw.Draw(ov).rounded_rectangle(box, r, outline=col, width=w)
+        img.alpha_composite(ov.filter(ImageFilter.GaussianBlur(blur)))
+
+
 def bar(d, x, y, w, h, ratio, fill, track=TRACK, outline=BORDER):
     rrect(d, [x, y, x + w, y + h], h // 2, fill=track, outline=outline, width=1)
     if ratio > 0:
@@ -159,8 +169,8 @@ def topbar(img, title=None):
     icon(img, "icon_gold.png", 96, 24, 26)
     text(d, (116, 24), "150", size=18, anchor="lm")
     # 遗物栏在战斗界面由左侧竖排面板承担（09 §6.2 区域定义表），顶栏不再重复
-    icon(img, "icon_deck.png", W - 140, 24, 26)
-    text(d, (W - 122, 24), "牌库", size=15, anchor="lm")
+    icon(img, "icon_deck.png", W - 152, 24, 26)
+    text(d, (W - 134, 24), "牌库", size=15, anchor="lm")
     icon(img, "icon_settings.png", W - 44, 24, 26)
     if title:
         text(d, (W // 2, 24), title, size=18, fill=INK, anchor="mm")
@@ -183,10 +193,11 @@ def bottombar(img):
         text(d, (x + 20, H - 44), num, size=18, anchor="lm")
         text(d, (x + 20, H - 22), cap, size=12, fill=SUB, bold=False, anchor="lm")
         x += 88
-    # 重新铺满（主按钮，居中）
-    bw, bh = 190, 38
-    panel(img, [W // 2 - bw // 2, H - 53, W // 2 + bw // 2, H - 53 + bh], 8,
-          fill=GOLD, outline=(160, 120, 55, 255))
+    # 重新铺满（主按钮，居中；金光外晕提层级）
+    bw, bh = 200, 40
+    bb = [W // 2 - bw // 2, H - 54, W // 2 + bw // 2, H - 54 + bh]
+    glow_rect(img, bb, 8, color=GOLD, width=3)
+    panel(img, bb, 8, fill=GOLD, outline=(160, 120, 55, 255))
     text(d, (W // 2, H - 34), "重新铺满 +2", size=17, anchor="mm")
     # 玩家血量 + 格挡（右）
     icon(img, "icon_hp.png", W - 330, H - 32, 26)
@@ -233,13 +244,14 @@ def s03_battle():
         d.ellipse([14, 110 + i * 64, 50, 146 + i * 64],
                   fill=(255, 255, 255, 90), outline=BORDER, width=2)
 
-    # 敌人区（顶部中央）
+    # 敌人区（顶部中央）：整体上收，血量数字移条侧，为下方网格留呼吸间距
     goblin = asset("enemy_goblin.png")
     if goblin:
-        paste_fit(img, goblin, W // 2, 168, 200)
+        paste_fit(img, goblin, W // 2, 142, 168)
     d = ImageDraw.Draw(img)
-    bar(d, W // 2 - 90, 288, 180, 20, 35 / 40, fill=DARKRED)
-    text(d, (W // 2, 322), "哥林布", size=18, anchor="mm")
+    bar(d, W // 2 - 90, 232, 180, 18, 35 / 40, fill=DARKRED)
+    text(d, (W // 2 + 100, 241), "35/40", size=14, anchor="lm")
+    text(d, (W // 2, 268), "哥林布", size=16, anchor="mm")
 
     # 右侧信息面板（09 §6.5）
     px, py, pw = W - 216, 64, 200
@@ -262,9 +274,10 @@ def s03_battle():
     x2 = chip(d, px + 14, py + 404, "混乱", PURPLE)
     text(d, (x2 + 8, py + 417), "随机交换 2 张", size=13, bold=False, anchor="lm")
 
-    # 4×4 卡牌网格（09 §6.3）：516×676 居中
-    gx, gy, cw, ch, gap = 702, 335, 120, 160, 12
-    faceup = {(1, 1): "cardframe_attack.png", (1, 2): "cardframe_skill.png"}
+    # 4×4 卡牌网格（09 §6.3）：516×676 居中；gy 上收使底边与底栏留 22px 间距
+    gx, gy, cw, ch, gap = 702, 318, 120, 160, 12
+    faceup = {(1, 1): "cardframe_attack.png", (1, 3): "cardframe_skill.png"}
+    pv_src = (1, 3)          # 正面牌悬停：发光 + 右缘弹出预览（09 §6.7）
     hover = (3, 0)          # 网格左下角背面牌悬停上浮（09 §9.1：上浮4px+边框发光）
     back = asset("cardback_universal.png")
     for row in range(4):
@@ -277,7 +290,10 @@ def s03_battle():
                 dy = -8 if (row, col) == hover else 0
                 img.alpha_composite(back.resize((cw, ch), Image.LANCZOS), (x, y + dy))
     hx, hy = gx, gy + 3 * (ch + gap) - 8
-    glow_rect(img, [hx - 4, hy - 4, hx + cw + 4, hy + ch + 4], 10, width=6)
+    hover_glow(img, [hx - 4, hy - 4, hx + cw + 4, hy + ch + 4])
+    # 正面悬停卡发光（与悬浮预览卡配对表达；亮金宽晕，压过卡框自身蓝描边）
+    fx, fy = gx + pv_src[1] * (cw + gap), gy + pv_src[0] * (ch + gap)
+    hover_glow(img, [fx - 4, fy - 4, fx + cw + 4, fy + ch + 4])
     # 标记角标：右上角金色 ✦×2（v1.20 增益化标记，仅层数不泄内容）
     mx, my = gx + 3 * (cw + gap), gy
     d.polygon([(mx + cw - 44, my + 8), (mx + cw - 47, my + 17), (mx + cw - 56, my + 20),
@@ -285,10 +301,17 @@ def s03_battle():
                (mx + cw - 32, my + 20), (mx + cw - 41, my + 17)], fill=GOLD, outline=INK)
     text(d, (mx + cw - 26, my + 20), "×2", size=13, anchor="mm")
 
-    # 悬浮预览卡（09 §6.7：240×320，正面牌悬停时弹出）
+    # 悬浮预览卡（09 §6.7：240×320，跟随鼠标——示意表达为悬停卡右缘弹出+金线引导）
     pv = asset("cardframe_skill.png")
     if pv:
-        pxv, pyv = 1330, 520
+        cy = fy + ch // 2
+        pxv, pyv = 1300, cy - 160
+        lc = (255, 186, 69, 255)   # 饱和橙金：米色浅底上保持对比
+        d.line([fx + cw + 12, cy, pxv - 12, cy], fill=lc, width=7)
+        for ex in (fx + cw + 12, pxv - 12):
+            d.ellipse([ex - 6, cy - 6, ex + 6, cy + 6], fill=lc, outline=INK, width=1)
+        text(d, (pxv + 120, pyv - 14), "悬浮预览（跟随鼠标）", size=13, fill=(96, 84, 62, 255),
+             bold=False, anchor="mm")
         drop_shadow(img, [pxv, pyv, pxv + 240, pyv + 320], r=14)
         img.alpha_composite(pv.resize((240, 320), Image.LANCZOS), (pxv, pyv))
 
