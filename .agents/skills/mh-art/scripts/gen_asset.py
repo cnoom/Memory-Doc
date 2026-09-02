@@ -134,6 +134,17 @@ SPECS = {
                          "center completely clear and plain reserved for text, all decoration "
                          "confined to the outer frame only, clean thin dark outline, few flat "
                          "colors with soft simple shading, no text, no letters, no watermark"),
+    # 装饰面板底图（九宫格拉伸用整版：地图页等大面积 UI 面板；装饰只落边缘与四角，
+    # 中央大片留净供内容；按钮类小底图见上方 button 类型）
+    "panel": dict(size="1024x1024", transparent=True, resize=None,
+                  review="panels", prefix="panel_",
+                  style="ornate game UI panel base plate for nine-slice stretching: one "
+                        "single square panel sheet drawn flat, centered and fully inside "
+                        "the canvas on plain transparent background, all decoration "
+                        "strictly confined to the outer border band and the four corners, "
+                        "large clean quiet center completely clear for content, clean thin "
+                        "dark outline, few flat colors with soft simple shading, no text, "
+                        "no letters, no watermark"),
 }
 
 # 程序合成资产类型：不走 AI 生成（size/style 为占位），条目仅让 --publish/--archive

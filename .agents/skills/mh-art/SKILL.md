@@ -54,6 +54,7 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 | 背景 background | 2048x1152 | 否 | 1920x1080 RGB（脚本自动缩） | `ImageReview/backgrounds/` | `bg_battle.png` |
 | 纹理 texture | 1024x1024 | 否 | 256x256 可平铺 | `ImageReview/textures/` | `texture_parchment.png` |
 | 按钮底图 button | 1536x1024 | 是 | 960×208 RGBA 九宫格底图（发布前规范化：紧贴裁切+alpha阈值清理；切片边 52；装饰只落边框环、中央留净供叠字） | `ImageReview/buttons/` | `btn_primary.png` |
+| 装饰面板底图 panel | 1024x1024 | 是 | 方形整版九宫格底图（装饰只落边缘与四角，中央大片留净供内容；切片边按版面装饰带宽取） | `ImageReview/panels/` | `panel_map_sheet.png` |
 
 > 尺寸说明：文档规格（图标 32–56px 等）是 UI **显示尺寸**；卡牌整卡资产定稿 **480×640**（AI 源图 1024×1536，制作时裁切缩放）。本技能发布 4x 源图（图标 256、插画保持 API 原尺寸），显示缩放交给文档嵌入（`<img width>`）与未来 Unity 导入。
 

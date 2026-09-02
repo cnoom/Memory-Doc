@@ -51,7 +51,7 @@ ASSETS = os.path.join("Assets", "UI")
 # Assets/UI 按类型分子目录（与 ImageReview/<类型>/ 同名），asset() 依次查找
 ASSET_SUBDIRS = ("cards", "cardbacks", "cardframes", "icons", "relics", "potions",
                  "map-nodes", "enemies", "portraits", "backgrounds", "textures",
-                 "logos", "mockups", "buttons")
+                 "logos", "mockups", "buttons", "panels")
 
 
 def font(size, bold=True):
@@ -553,7 +553,18 @@ def s04_map():
     topbar(img, "第 1 章 · 记忆回廊")
     mbox = [W // 2 - 420, 200, W // 2 + 420, 940]     # 地图页（羊皮纸），背景在四周可见
     drop_shadow(img, mbox, r=18, alpha=125, blur=16)
-    parchment_panel(img, mbox, r=18)
+    plate = asset("panel_map_sheet.png")
+    if plate is not None:
+        # AI 整版底图直接等比缩放贴入（目标≈0.6×源，无九宫格接缝与角块变形）；
+        # 轻叠程序材质统一纸感（保留底图自身 alpha 的磨损边）
+        pw, ph = mbox[2] - mbox[0], mbox[3] - mbox[1]
+        sheet = plate.resize((pw, ph), Image.LANCZOS)
+        blended = Image.blend(sheet, _paper_material(pw, ph), 0.2)
+        blended.putalpha(sheet.getchannel("A"))
+        img.paste(blended, (mbox[0], mbox[1]), blended)
+        inner_vignette(img, mbox, r=18, width=40)
+    else:
+        parchment_panel(img, mbox, r=18)
     d = ImageDraw.Draw(img)
 
     # 层（自下而上，行距 140 保证同列边点数充足；列距 160 → 邻列可连，Boss 顶点全连）
