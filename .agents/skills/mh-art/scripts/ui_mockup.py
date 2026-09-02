@@ -653,31 +653,64 @@ def s04_map():
 
 
 def s05_reward():
-    """S05 卡牌奖励（09 §8.1）：暗幕 + 三选一大卡（中卡悬浮发光）+ 跳过。"""
+    """S05 卡牌奖励（09 §8.1）：bg_battle 暗幕模态 + 顶部胜利牌匾（S09 同款实体）
+    + 悬浮羊皮纸奖励页（panel_map_sheet，S04/S07/S09 家族）——三张 3:4 等比大卡
+    （中卡悬浮态：上浮 + 双层暖金晕）+ 卡下卡名/稀有度信息层（补小尺寸卡面文字
+    不可读）+ 跳过 btn_secondary 实体。r1 升级修四处：裸金字标题、平色跳过键、
+    卡浮空无承载、200×280(5:7) 对 480×640(3:4) 卡框的横向压缩变形。"""
     base = asset("bg_battle.png") or Image.new("RGBA", (W, H), CREAM)
     img = base.copy()
-    ov = Image.new("RGBA", img.size, (0, 0, 0, 115))
+    ov = Image.new("RGBA", img.size, (0, 0, 0, 140))   # 原 115 偏弱，背景亮斑透出抢标题
     img.alpha_composite(ov)
+    # 顶部胜利牌匾（S09 同款：亮纸胶囊 + 金边 + 投影，替换原裸金文字）
+    plate = [W // 2 - 200, 52, W // 2 + 200, 120]
+    drop_shadow(img, plate, r=14, alpha=90, blur=8)
+    panel(img, plate, 14, fill=BRIGHT, shadow=False)
     d = ImageDraw.Draw(img)
-    text(d, (W // 2, 170), "战斗胜利！", size=44, fill=GOLD, anchor="mm")
-    text(d, (W // 2, 232), "选择一张卡牌加入牌库", size=20, fill=CREAM,
+    text(d, (W // 2, 86), "战斗胜利！", size=36, anchor="mm")
+    # 悬浮羊皮纸奖励页（家族：AI 整版底图缩放 + 轻叠程序纸材质）。bg_battle
+    # 烛光大厅中间调偏暗，投影 110/20（介于 bg_map 125 与 bg_event 70 之间近 S04）。
+    # 页高 766：sheet 装饰带（磨边+双金框）顶占 8.5%/底 9.1%，内容块 574px 需
+    # 两侧各 ≥25px 净空（S09 r2 拍板标准）→ 766×82.4% ≈ 631px 内腔
+    page = [400, 196, 1520, 962]
+    drop_shadow(img, page, r=18, alpha=110, blur=20)
+    sheet = asset("panel_map_sheet.png")
+    pw, ph = page[2] - page[0], page[3] - page[1]
+    if sheet is not None:
+        sh = sheet.resize((pw, ph), Image.LANCZOS)
+        blended = Image.blend(sh, _paper_material(pw, ph), 0.2)
+        blended.putalpha(sh.getchannel("A"))
+        img.paste(blended, (page[0], page[1]), blended)
+        inner_vignette(img, page, r=18, width=40)
+    else:
+        parchment_panel(img, page, r=18)
+    d = ImageDraw.Draw(img)
+    text(d, (W // 2, 296), "选择一张卡牌加入牌库", size=19, fill=SUB,
          bold=False, anchor="mm")
-    cards = ("cardframe_attack.png", "cardframe_skill.png", "cardframe_ability.png")
-    for i, name in enumerate(cards):
-        card = asset(name)
-        if card is None:
+
+    # 三张奖励卡 210×280（=480×640 卡框 3:4 等比）：攻/技/能三类型各一
+    cards = (("cardframe_attack.png", "笔记", RED),
+             ("cardframe_skill.png", "速读", (69, 119, 212, 255)),
+             ("cardframe_ability.png", "全神贯注", PURPLE))
+    for i, (f, name, tcol) in enumerate(cards):
+        c = asset(f)
+        if c is None:
             continue
-        c = card.resize((200, 280), Image.LANCZOS)
-        cx = W // 2 + (i - 1) * 320
-        top = 430 if i == 1 else 470   # 中间卡上浮 + 发光（悬浮态示意，09 §8.1）
+        cx = W // 2 + (i - 1) * 300          # 卡心间距 300，卡缘间隙 90
+        top = 340 if i == 1 else 364         # 中卡悬浮上浮 24（09 §8.1 悬浮态示意）
+        drop_shadow(img, [cx - 105, top, cx + 105, top + 280], r=14)
         if i == 1:
-            glow_rect(img, [cx - 108, top - 8, cx + 108, top + 288], 14, width=9)
-        drop_shadow(img, [cx - 100, top, cx + 100, top + 280], r=14)
-        img.alpha_composite(c, (cx - 100, top))
-    bw = 220
-    panel(img, [W // 2 - bw // 2, 940, W // 2 + bw // 2, 992], 10, fill=BRIGHT,
-          outline=BORDER, width=2)
-    text(d, (W // 2, 966), "跳过（不选）", size=18, anchor="mm")
+            hover_glow(img, [cx - 109, top - 4, cx + 109, top + 284])
+        img.alpha_composite(c.resize((210, 280), Image.LANCZOS), (cx - 105, top))
+        d = ImageDraw.Draw(img)
+        # 卡下信息层：卡名 chip（类型色与 S06 统计色一致）+ 稀有度（02 §2 普通/罕见/稀有）
+        tw = d.textlength(name, font=font(16))
+        chip(d, cx - (tw + 20) / 2, 664, name, tcol, size=16, h=32)
+        text(d, (cx, 722), "普通", size=13, fill=SUB, bold=False, anchor="mm")
+    d.line([520, 748, 1400, 748], fill=BORDER[:3] + (150,), width=1)
+    # 跳过：btn_secondary 九宫格实体（高 80 与 S07 底部通知条/按钮统一），替换平色 panel
+    button(img, d, [W // 2 - 180, 782, W // 2 + 180, 862], "跳过（不选）",
+           "secondary", 18)
     return img, "mockup_s05_reward.png"
 
 
