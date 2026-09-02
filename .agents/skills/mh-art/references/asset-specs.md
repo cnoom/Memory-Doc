@@ -10,12 +10,12 @@ SKILL.md 规格表的展开版。名录与命名提取自 `docs/design/` 各设�
 | --- | --- | --- |
 | 卡面插画 card | 35 种（见 §2） | [06-学者角色卡牌设计](../../../docs/design/06-学者角色卡牌设计.md) |
 | 卡背 cardback | 1（通用·静谧青纹章，v1.5） | [10-UI美术资源规格 §2.3](../../../docs/design/10-UI美术资源规格.md) |
-| 图标 icon | 33（见 §4） | [10-UI美术资源规格 §3.1–3.4/3.7](../../../docs/design/10-UI美术资源规格.md) |
+| 图标 icon | 35（见 §4） | [10-UI美术资源规格 §3.1–3.4/3.7](../../../docs/design/10-UI美术资源规格.md) |
 | 遗物图标 relic | 20 | [07-遗物与道具设计](../../../docs/design/07-遗物与道具设计.md) + 10§3.5 |
 | 道具图标 potion | 8 | [07-遗物与道具设计](../../../docs/design/07-遗物与道具设计.md) + 10§3.6 |
 | 地图节点 node | 6 | [10-UI美术资源规格 §3.8](../../../docs/design/10-UI美术资源规格.md) |
 | 装饰面板底图 panel | 1+ | 整版底图（装饰落边缘四角、中央留净；磨损边版仅整版等比缩放，2026-09-01 起新类别） |
-| 事件插画 illustration | 1+（见 §10.6） | 横版叙事小场景（S09 事件屏插图窗），2026-09-02 起新类别 |
+| 事件插画 illustration | 1（见 §10.6） | 横版叙事小场景（S09 事件屏插图窗），2026-09-02 起新类别 |
 | 敌人立绘 enemy | 9 | [08-原型敌人设计](../../../docs/design/08-原型敌人设计.md) |
 | 角色立绘 portrait | 3 | [05-Meta系统 §3](../../../docs/design/05-Meta系统.md) |
 | 徽标 logo | 1（`logo_main`） | 见本文 §13（规格定稿后回填 10 §9） |
@@ -116,11 +116,12 @@ very minimal, no text, no watermark
 
 `icon_tag_flip`(翻开`#D4A857`) / `icon_tag_exhaust_trigger`(消除`#D4A857`) / `icon_tag_enter`(入场`#D4A857`) / `icon_tag_consume`(消耗`#E84A20`) / `icon_tag_remove`(移除`#888888`) / `icon_tag_resonance`(共鸣`#5BA85B`) / `icon_tag_note`(笔记`#5BA85B`) / `icon_tag_sword_shield`(剑盾`#5BA85B`)
 
-### UI 功能（11）
+### UI 功能（13）
 
-`icon_menu` / `icon_settings` / `icon_back` / `icon_gold` / `icon_deck` / `icon_discard` / `icon_exhaust` / `icon_reshuffle` / `icon_hp` / `icon_block` / `icon_focus`(专注`#D4A857`)
+`icon_menu` / `icon_settings` / `icon_back` / `icon_gold` / `icon_deck` / `icon_discard` / `icon_exhaust` / `icon_reshuffle` / `icon_hp` / `icon_block` / `icon_focus`(专注`#D4A857`) / `icon_book`(古书,S09) / `icon_door`(拱门,S09)
 
 > 2026-09-01：功能图标 ×12（§3.6 全部，含 `icon_memory`）已生成发布；`icon_intent_attack`、`icon_status_burn` 为意图/状态两组的首批样张（同风格，其余待批量）。图标风格关键词：居中单一物体、粗圆润剪影、深色细描边、平色软高光；易加戏的题材（火焰/骷髅等）desc 需显式否定（no lantern/no face/no books…）。
+> 2026-09-02：`icon_book`/`icon_door` 发布（S09 事件选项图标，均拍板 1 号候选；door 石柱青灰+藤蔓绿与纯暖色系轻微偏移属已知可接受项）。
 
 ## 5. 遗物名录（20 个）
 
@@ -177,7 +178,7 @@ A 方向"圆形金环徽章"家族（彩色圆底+哑金环+奶油符号浮雕+�
 
 ## 10.6 事件插画名录（ill_，新类别 2026-09-02）
 
-`ill_event_diary`(S09 示例事件「古老日记」插图：石桌摊开的古旧日记+金色记忆光缕升起；候选待拍板) —— 首个 `ill_` 类资产，API 1536×1024 横版全幅、不透明；贴入 S09 插图窗时程序裁切到窗比并加金框，区别于 `bg_` 的"空景大场面"，插图须有聚焦叙事主体。
+`ill_event_diary`(S09 示例事件「古老日记」插图：石桌摊开的古旧日记+金色记忆光缕升起；**已发布 2026-09-02**，用户拍板 2 号候选——1 号宝珠恰在窗裁切线上必被切断落选归档) —— 首个 `ill_` 类资产，API 1536×1024 横版全幅、不透明；贴入 S09 插图窗时程序 cover 裁切（上偏取景 v_anchor≈0.38 保宝珠）并加双线金框，区别于 `bg_` 的"空景大场面"，插图须有聚焦叙事主体。
 
 ## 11. 纹理名录（3 个）
 
