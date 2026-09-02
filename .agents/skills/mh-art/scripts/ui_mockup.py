@@ -929,9 +929,11 @@ def s09_event():
     panel(img, plate, 14, fill=BRIGHT, shadow=False)
     d = ImageDraw.Draw(img)
     text(d, (W // 2, 70), "神秘事件", size=32, anchor="mm")
-    # 悬浮羊皮纸事件页（S04 同款：AI 整版底图等比缩放 + 轻叠程序纸材统一质感）
+    # 悬浮羊皮纸事件页（S04 同款：AI 整版底图等比缩放 + 轻叠程序纸材统一质感）。
+    # 投影 r3 调淡：bg_event 偏亮，alpha125 在亮底上呈 50% 暗化的深晕环（S04 的
+    # bg_map 烛光回廊偏暗故 125 合适，此处降为 70/blur22 摊薄）
     page = [W // 2 - 430, 150, W // 2 + 430, 1000]
-    drop_shadow(img, page, r=18, alpha=125, blur=16)
+    drop_shadow(img, page, r=18, alpha=70, blur=22)
     sheet_plate = asset("panel_map_sheet.png")
     pw, ph = page[2] - page[0], page[3] - page[1]
     if sheet_plate is not None:
@@ -977,8 +979,9 @@ def s09_event():
         box = [W // 2 - 300, y0, W // 2 + 300, y0 + 88]
         button(img, d, box, "", "secondary", 20)   # 只取九宫格底图，文字自排两行
         icon(img, ic, box[0] + 52, y0 + 44, 48)
-        text(d, (box[0] + 96, y0 + 25), title, size=19)
-        text(d, (box[0] + 96, y0 + 58), desc, size=14, fill=SUB, bold=False)
+        # 文字块（标题19+间隙13+描述22≈54px）垂直居中于条内：块顶 y0+17、上下各留 17
+        text(d, (box[0] + 96, y0 + 14), title, size=19)
+        text(d, (box[0] + 96, y0 + 46), desc, size=14, fill=SUB, bold=False)
     return img, "mockup_s09_event.png"
 
 
