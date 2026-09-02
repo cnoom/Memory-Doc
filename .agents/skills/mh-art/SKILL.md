@@ -55,7 +55,7 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 | 纹理 texture | 1024x1024 | 否 | 256x256 可平铺 | `ImageReview/textures/` | `texture_parchment.png` |
 | 事件插画 illustration | 1536x1024 | 否 | 横版叙事源图（保持生成比例；贴入 S09 插图窗时程序裁切加框，区别于 bg_ 空景——插画须有聚焦叙事主体） | `ImageReview/illustrations/` | `ill_event_diary.png` |
 | 按钮底图 button | 1536x1024 | 是 | 960×208 RGBA 九宫格底图（发布前规范化：紧贴裁切+alpha阈值清理；切片边 52；装饰只落边框环、中央留净供叠字） | `ImageReview/buttons/` | `btn_primary.png` |
-| 装饰面板底图 panel | 1024x1024 | 是 | 方形整版九宫格底图（装饰只落边缘与四角，中央大片留净供内容；切片边按版面装饰带宽取） | `ImageReview/panels/` | `panel_map_sheet.png` |
+| 装饰面板底图 panel | 1024x1024 | 是 | 方形整版底图（装饰只落边缘与四角，中央大片留净供内容；**整版等比缩放用**——磨损毛边版不适九宫格：边带单轴拉伸会扭变形毛边，异形面板需九宫格时另出规则圆角边版本） | `ImageReview/panels/` | `panel_map_sheet.png` |
 
 > 尺寸说明：文档规格（图标 32–56px 等）是 UI **显示尺寸**；卡牌整卡资产定稿 **480×640**（AI 源图 1024×1536，制作时裁切缩放）。本技能发布 4x 源图（图标 256、插画保持 API 原尺寸），显示缩放交给文档嵌入（`<img width>`）与未来 Unity 导入。
 

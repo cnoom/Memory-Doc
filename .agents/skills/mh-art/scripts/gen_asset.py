@@ -146,8 +146,9 @@ SPECS = {
                                "flat colors with soft simple shading, simple airy "
                                "composition, no characters, no text, no letters, "
                                "no watermark"),
-    # 装饰面板底图（九宫格拉伸用整版：地图页等大面积 UI 面板；装饰只落边缘与四角，
-    # 中央大片留净供内容；按钮类小底图见上方 button 类型）
+    # 装饰面板底图（整版等比缩放用：地图页等大面积 UI 面板；装饰只落边缘与四角，
+    # 中央大片留净供内容。注意：磨损毛边版不适九宫格——边带单轴拉伸会扭变形毛边，
+    # 异形面板需九宫格时另出规则圆角边版本；按钮类小底图见上方 button 类型）
     "panel": dict(size="1024x1024", transparent=True, resize=None,
                   review="panels", prefix="panel_",
                   style="ornate game UI panel base plate for nine-slice stretching: one "
