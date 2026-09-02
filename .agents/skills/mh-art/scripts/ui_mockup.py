@@ -916,18 +916,26 @@ def s08_campfire():
 
 
 def s09_event():
-    """S09 事件（09 §7.4）：bg_event 场景 + 居中悬浮羊皮纸事件页（事件名 +
-    插图窗 ill_event_diary + 叙事文本 + 三选项 btn 九宫格条），四周背景可见。"""
+    """S09 事件（09 §7.4）：bg_event 场景 + 背景顶部标题牌匾 + 居中悬浮羊皮纸
+    事件页（插图窗 ill_event_diary + 叙事文本 + 三选项 btn 九宫格条），四周背景
+    可见。r2：内容距页边≥60px 避开磨损边/金框/四角叶饰（r1 内容贴边压饰带）、
+    标题移页外（r1 压页内金框线）、去 hover 环（沿方角外框画、露胶囊外成"旧框"）。"""
     base = asset("bg_event.png") or Image.new("RGBA", (W, H), CREAM)
     img = base.copy()
     d = ImageDraw.Draw(img)
+    # 标题牌匾：背景顶部（页外，09 §7.4 原口径；神殿拱顶下该区域干净）
+    plate = [W // 2 - 170, 40, W // 2 + 170, 100]
+    drop_shadow(img, plate, r=14, alpha=90, blur=8)
+    panel(img, plate, 14, fill=BRIGHT, shadow=False)
+    d = ImageDraw.Draw(img)
+    text(d, (W // 2, 70), "神秘事件", size=32, anchor="mm")
     # 悬浮羊皮纸事件页（S04 同款：AI 整版底图等比缩放 + 轻叠程序纸材统一质感）
-    page = [W // 2 - 430, 100, W // 2 + 430, 1000]
+    page = [W // 2 - 430, 150, W // 2 + 430, 1000]
     drop_shadow(img, page, r=18, alpha=125, blur=16)
-    plate = asset("panel_map_sheet.png")
+    sheet_plate = asset("panel_map_sheet.png")
     pw, ph = page[2] - page[0], page[3] - page[1]
-    if plate is not None:
-        sheet = plate.resize((pw, ph), Image.LANCZOS)
+    if sheet_plate is not None:
+        sheet = sheet_plate.resize((pw, ph), Image.LANCZOS)
         blended = Image.blend(sheet, _paper_material(pw, ph), 0.2)
         blended.putalpha(sheet.getchannel("A"))
         img.paste(blended, (page[0], page[1]), blended)
@@ -935,9 +943,8 @@ def s09_event():
     else:
         parchment_panel(img, page, r=18)
     d = ImageDraw.Draw(img)
-    text(d, (W // 2, 165), "神秘事件", size=34, anchor="mm")
-    # 插图窗（640×280）：ill_event_diary cover 裁切 + 圆角贴入 + 双线金框
-    wbox = [W // 2 - 320, 212, W // 2 + 320, 492]
+    # 插图窗（600×260，页顶边距 64）：ill_event_diary cover 裁切 + 圆角贴入 + 双线金框
+    wbox = [W // 2 - 300, 214, W // 2 + 300, 474]
     ill = asset("ill_event_diary.png")
     if ill is not None:
         # v_anchor≈0.38 取景上移：源图主体（光缕+记忆宝珠）偏上，正中裁切切宝珠顶
@@ -949,8 +956,8 @@ def s09_event():
     else:   # 插画缺资产回退：亮纸底 + 拱形底纹占位
         panel(img, wbox, 16, fill=BRIGHT, shadow=False)
         d = ImageDraw.Draw(img)
-        d.arc([W // 2 - 130, 232, W // 2 + 130, 392], 180, 360, fill=TEAL, width=4)
-        d.arc([W // 2 - 70, 262, W // 2 + 70, 392], 180, 360, fill=BORDER, width=3)
+        d.arc([W // 2 - 130, 232, W // 2 + 130, 380], 180, 360, fill=TEAL, width=4)
+        d.arc([W // 2 - 70, 260, W // 2 + 70, 380], 180, 360, fill=BORDER, width=3)
         text(d, (W // 2, wbox[3] - 30), "事件插图", size=12, fill=SUB,
              bold=False, anchor="mm")
     rrect(d, wbox, 16, outline=GOLD, width=3)
@@ -959,19 +966,19 @@ def s09_event():
     # 叙事文本
     for i, ln in enumerate(("「你在记忆回廊中发现一本古老的日记。",
                             "　 翻开它，一股力量涌入脑海……」")):
-        text(d, (W // 2, 548 + i * 42), ln, size=19, bold=False, anchor="mm")
-    # 三选项：btn_secondary 九宫格条底 + 真图标 + 标题/描述两行
+        text(d, (W // 2, 526 + i * 40), ln, size=19, bold=False, anchor="mm")
+    # 三选项（600×88，条端距页边 120 避开四角叶饰，末条底距页底 70）：
+    # btn_secondary 九宫格条底 + 真图标 + 标题/描述两行
     options = (("仔细阅读", "获得 1 张随机卡牌，失去 3 点生命", "icon_book.png"),
                ("快速翻阅", "获得 15 金币", "icon_gold.png"),
                ("离开", "无事发生", "icon_door.png"))
     for i, (title, desc, ic) in enumerate(options):
-        y0 = 660 + i * 110
-        box = [W // 2 - 350, y0, W // 2 + 350, y0 + 92]
+        y0 = 630 + i * 106
+        box = [W // 2 - 300, y0, W // 2 + 300, y0 + 88]
         button(img, d, box, "", "secondary", 20)   # 只取九宫格底图，文字自排两行
-        icon(img, ic, box[0] + 54, y0 + 46, 52)
-        text(d, (box[0] + 100, y0 + 26), title, size=20)
-        text(d, (box[0] + 100, y0 + 60), desc, size=14, fill=SUB, bold=False)
-    hover_glow(img, [W // 2 - 350, 660, W // 2 + 350, 752], r=12)   # 首选项悬停态示意
+        icon(img, ic, box[0] + 52, y0 + 44, 48)
+        text(d, (box[0] + 96, y0 + 25), title, size=19)
+        text(d, (box[0] + 96, y0 + 58), desc, size=14, fill=SUB, bold=False)
     return img, "mockup_s09_event.png"
 
 
