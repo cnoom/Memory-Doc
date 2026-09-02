@@ -476,11 +476,23 @@ def current_marker(img, cx, cy, r=36):
         img.alpha_composite(ov)
 
 
+def _seeded_noise(w, h, sigma, salt=0):
+    """确定性程序噪声（L 模式、均值 128）——替代 Image.effect_noise：后者吃
+    进程内共享的 C rand 序列，同一屏的输出随本进程此前已渲屏数漂移（全量渲
+    与单渲不可比；2026-09-02 S09"±1 灰度假回归"即 S07 新增材质调用推移噪声
+    序列所致），换显式种子 numpy 后任意渲染顺序逐字节可复现。"""
+    import numpy as np
+    seed = ((salt << 24) ^ (w * 7919) ^ (h * 104729) ^ (sigma << 8)) & 0xFFFFFFFFFFFFFFFF
+    arr = np.clip(np.random.default_rng(seed).normal(128.0, sigma, (h, w)),
+                  0, 255).astype(np.uint8)
+    return Image.fromarray(arr, "L")
+
+
 def paper_grain(img, box, alpha=13, sigma=18):
     """羊皮纸颗粒（texture_parchment 资产未生成前的程序近似）：低频噪声薄纱。"""
     x0, y0, x1, y1 = [int(v) for v in box]
     w, h = x1 - x0, y1 - y0
-    noise = Image.effect_noise((max(2, w // 2), max(2, h // 2)), sigma)
+    noise = _seeded_noise(max(2, w // 2), max(2, h // 2), sigma, salt=1)
     noise = noise.filter(ImageFilter.GaussianBlur(2)).resize((w, h))
     noise = noise.point(lambda v: 128 + (v - 128) * 2).convert("RGBA")
     noise.putalpha(alpha)
@@ -505,9 +517,9 @@ def _paper_material(w, h):
     可感知、不显脏）；再薄叠 AI 有机斑（texture_parchment 偏差放大，缺资产跳过）。
     整幅生成天然无缝。"""
     import numpy as np
-    mottle = Image.effect_noise((max(2, w // 4), max(2, h // 4)), 30)
+    mottle = _seeded_noise(max(2, w // 4), max(2, h // 4), 30, salt=2)
     mottle = mottle.filter(ImageFilter.GaussianBlur(3)).resize((w, h), Image.BILINEAR)
-    speckle = Image.effect_noise((w, h), 16).filter(ImageFilter.GaussianBlur(0.7))
+    speckle = _seeded_noise(w, h, 16, salt=3).filter(ImageFilter.GaussianBlur(0.7))
     m = np.asarray(mottle, dtype=np.float32) - 128.0
     s = np.asarray(speckle, dtype=np.float32) - 128.0
     base = np.asarray(Image.new("RGBA", (w, h), PANEL), dtype=np.float32)
@@ -832,7 +844,11 @@ def s06_deck():
 
 
 def s07_shop():
-    """S07 商店（09 §7.2）：卡牌出售 + 遗物出售 + 移除服务。"""
+    """S07 商店（09 §7.2）：bg_shop 场景 + 悬浮羊皮纸商店大页（panel_map_sheet
+    整版缩放，S04/S09 家族）——左：卡牌出售×3；右：遗物出售×2（真图标，效果
+    文案对齐 07 词条）+ 移除卡牌服务（btn_secondary 按钮实体）；刷新商品改
+    亮纸通知条。r1 升级：三平色面板→单页羊皮纸、relic_glyph 占位→真遗物图标、
+    "选择牌牌"笔误与遗物效果文案错位一并修正。"""
     base = asset("bg_shop.png") or Image.new("RGBA", (W, H), CREAM)
     img = base.copy()
     topbar(img, "商店")
@@ -842,41 +858,85 @@ def s07_shop():
     icon(img, "icon_gold.png", 1770, 120, 30)
     text(d, (1794, 120), "150 G", size=18, anchor="lm")
 
-    panel(img, [110, 170, 1130, 990], 12)
-    text(d, (140, 210), "卡牌出售（3 张）", size=20)
-    for i, (f, price) in enumerate((("cardframe_attack.png", "45G"),
-                                    ("cardframe_skill.png", "60G"),
-                                    ("cardframe_ability.png", "75G"))):
-        c = asset(f)
-        cx = 260 + i * 380
-        if c:
-            card = c.resize((180, 240), Image.LANCZOS)
-            drop_shadow(img, [cx - 90, 280, cx + 90, 520], r=14)
-            img.alpha_composite(card, (cx - 90, 280))
-        chip(d, cx - 34, 548, price, GOLD, fg=INK, size=15, h=30, outline=INK, ow=2)
-    text(d, (140, 640), "购买后加入牌库（战斗中以 2 份出现）", size=13, fill=SUB,
-         bold=False, anchor="lm")
+    # 悬浮羊皮纸商店页（S04/S09 家族：AI 整版底图等比缩放 + 轻叠程序纸材质）。
+    # 投影 90/20：bg_shop 书架暖光为中间调，取 bg_map(暗,125) 与 bg_event(亮,70) 之间
+    page = [190, 170, 1730, 1005]
+    drop_shadow(img, page, r=18, alpha=90, blur=20)
+    sheet = asset("panel_map_sheet.png")
+    pw, ph = page[2] - page[0], page[3] - page[1]
+    if sheet is not None:
+        sh = sheet.resize((pw, ph), Image.LANCZOS)
+        blended = Image.blend(sh, _paper_material(pw, ph), 0.2)
+        blended.putalpha(sh.getchannel("A"))
+        img.paste(blended, (page[0], page[1]), blended)
+        inner_vignette(img, page, r=18, width=40)
+    else:
+        parchment_panel(img, page, r=18)
     d = ImageDraw.Draw(img)
-    d.line([140, 700, 1100, 700], fill=BORDER, width=1)
-    text(d, (140, 740), "刷新商品（下次到访）", size=14, bold=False, anchor="lm")
 
-    panel(img, [1190, 170, 1830, 620], 12)
-    text(d, (1220, 210), "遗物出售（2 件）", size=20)
-    for i, (glyph, name, price, desc) in enumerate((
-            ("brain", "思维导图", "75G", "翻开时概率额外触发"),
-            ("bolt", "蓄能水晶", "120G", "每回合首张牌效果+1"))):
-        cx = 1360 + i * 320
-        relic_glyph(d, cx, 340, 64, glyph)
-        text(d, (cx, 436), name, size=17, anchor="mm")
-        text(d, (cx, 470), desc, size=12, fill=SUB, bold=False, anchor="mm")
-        chip(d, cx - 30, 496, price, GOLD, fg=INK, size=14, h=28, outline=INK, ow=2)
-    panel(img, [1190, 660, 1830, 990], 12, fill=BRIGHT)
-    text(d, (1220, 700), "移除卡牌服务", size=20)
-    text(d, (1220, 748), "选择牌库中的一张牌永久移除", size=14, bold=False, anchor="lm")
-    text(d, (1220, 780), "（战斗同名恒偶数张，移除也不落单）", size=12, fill=SUB,
-         bold=False, anchor="lm")
-    panel(img, [1520, 860, 1800, 916], 8, fill=GOLD, outline=(140, 105, 50, 255), width=2)
-    text(d, (1660, 888), "选择牌牌 · 75G", size=16, anchor="mm")
+    def sep_h(y, x0, x1):
+        d.line([x0, y, x1, y], fill=BORDER[:3] + (150,), width=1)
+
+    def chip_c(cx, y, s):
+        tw = d.textlength(s, font=font(15))
+        chip(d, cx - (tw + 20) / 2, y, s, GOLD, fg=INK, size=15, h=32,
+             outline=(140, 105, 50, 255), ow=2)
+
+    # 竖向细分隔（左卡牌区 / 右遗物区），半透明金线避开页顶/底装饰带
+    d.line([1115, 255, 1115, 925], fill=BORDER[:3] + (150,), width=1)
+
+    # ---- 左：卡牌出售（3 张 210×280，卡心 x 400/675/950）----
+    text(d, (260, 248), "卡牌出售（3 张）", size=22)
+    for i, (f, price) in enumerate((("cardframe_attack.png", "45 G"),
+                                    ("cardframe_skill.png", "60 G"),
+                                    ("cardframe_ability.png", "75 G"))):
+        c = asset(f)
+        cx = 400 + i * 275
+        if c:
+            card = c.resize((210, 280), Image.LANCZOS)
+            drop_shadow(img, [cx - 105, 300, cx + 105, 580], r=14)
+            img.alpha_composite(card, (cx - 105, 300))
+            d = ImageDraw.Draw(img)
+        chip_c(cx, 615, price)
+    text(d, (675, 690), "购买后加入牌库（战斗中每张以 2 份出现）", size=14, fill=SUB,
+         bold=False, anchor="mm")
+    sep_h(728, 260, 1090)
+    # 刷新商品：亮纸通知条实体（icon_reshuffle + 一行说明），替代旧裸文字
+    notice = [260, 762, 1090, 838]
+    panel(img, notice, 10, fill=BRIGHT, outline=BORDER, width=2, shadow=False)
+    d = ImageDraw.Draw(img)
+    icon(img, "icon_reshuffle.png", 308, 800, 34)
+    text(d, (338, 800), "离开商店时自动刷新全部商品", size=15, bold=False, anchor="lm")
+
+    # ---- 右：遗物出售（2 件，行结构：图标+落点影 | 名称/两行效果/价格）----
+    text(d, (1150, 248), "遗物出售（2 件）", size=22)
+    relics = (("relic_mind_map.png", "思维导图",
+               ("翻过的牌位置保留", "淡淡的轮廓标记"), "75 G"),
+              ("relic_charge_crystal.png", "蓄能水晶",
+               ("连续配对成功 3 次", "下次配对伤害 +5"), "120 G"))
+    for i, (ic, name, lines, price) in enumerate(relics):
+        ry = 345 + i * 170
+        sh = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        ImageDraw.Draw(sh).ellipse([1208 - 44, ry + 30, 1208 + 44, ry + 44],
+                                   fill=(0, 0, 0, 45))
+        img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(3)))
+        icon(img, ic, 1208, ry, 88)
+        d = ImageDraw.Draw(img)
+        text(d, (1280, ry - 48), name, size=18)
+        for j, ln in enumerate(lines):
+            text(d, (1280, ry - 14 + j * 24), ln, size=13, fill=SUB, bold=False)
+        chip(d, 1280, ry + 46, price, GOLD, fg=INK, size=15, h=32,
+             outline=(140, 105, 50, 255), ow=2)
+    sep_h(640, 1150, 1660)
+    # ---- 右下：移除卡牌服务（btn_secondary 九宫格条 + icon_exhaust 两行排）----
+    text(d, (1150, 672), "移除卡牌服务", size=20)
+    bb = [1150, 708, 1660, 792]
+    button(img, d, bb, "", "secondary", 20)   # 只取九宫格底图，文字自排两行
+    icon(img, "icon_exhaust.png", 1205, 750, 44)
+    text(d, (1250, 721), "选择卡牌移除", size=18)
+    text(d, (1250, 753), "75 G · 永久移除牌库中的一张牌", size=13, fill=SUB, bold=False)
+    text(d, (1150, 838), "（战斗同名恒偶数张，移除也不落单）", size=12, fill=SUB,
+         bold=False, anchor="la")
     return img, "mockup_s07_shop.png"
 
 
