@@ -51,7 +51,7 @@ ASSETS = os.path.join("Assets", "UI")
 # Assets/UI 按类型分子目录（与 ImageReview/<类型>/ 同名），asset() 依次查找
 ASSET_SUBDIRS = ("cards", "cardbacks", "cardframes", "icons", "relics", "potions",
                  "map-nodes", "enemies", "portraits", "backgrounds", "textures",
-                 "logos", "mockups", "buttons", "panels")
+                 "logos", "mockups", "buttons", "panels", "illustrations")
 
 
 def font(size, bold=True):
@@ -63,11 +63,10 @@ def font(size, bold=True):
 
 
 def asset(name):
-    """已发布资产优先（Assets/UI/<类型>/ 分目录），预览区兜底，无则 None（调用方画占位）。"""
+    """已发布资产优先（Assets/UI/<类型>/ 分目录），预览区兜底（待拍板资产供
+    mockup 试排——目录名与 ASSET_SUBDIRS 一致），无则 None（调用方画占位）。"""
     dirs = ([os.path.join(ASSETS, d) for d in ASSET_SUBDIRS]
-            + [os.path.join("ImageReview", "icons"),
-               os.path.join("ImageReview", "backgrounds"),
-               os.path.join("ImageReview", "logos")])
+            + [os.path.join("ImageReview", d) for d in ASSET_SUBDIRS])
     for d in dirs:
         p = os.path.join(d, name)
         if os.path.isfile(p):
@@ -100,6 +99,16 @@ def paste_fit(img, im, cx, cy, size):
     w, h = int(im.width * s), int(im.height * s)
     im2 = im.resize((w, h), Image.LANCZOS)
     img.alpha_composite(im2, (int(cx - w / 2), int(cy - h / 2)))
+
+
+def cover_fit(im, w, h, v_anchor=0.5):
+    """等比缩放至覆盖 w×h 后裁切（cover，插图窗贴图用）。v_anchor 为取景窗
+    垂直中心在源高中的比例（<0.5 上移——插画主体偏上如光缕/浮珠时用）。"""
+    s = max(w / im.width, h / im.height)
+    nw, nh = max(w, round(im.width * s)), max(h, round(im.height * s))
+    im2 = im.resize((nw, nh), Image.LANCZOS)
+    cy = min(max(round(nh * v_anchor), h // 2), nh - h // 2)
+    return im2.crop(((nw - w) // 2, cy - h // 2, (nw - w) // 2 + w, cy + h // 2))
 
 
 BTN_CACHE = {}
@@ -907,42 +916,62 @@ def s08_campfire():
 
 
 def s09_event():
-    """S09 事件（09 §7.4）：事件插图区 + 叙事面板 + 三选项。"""
+    """S09 事件（09 §7.4）：bg_event 场景 + 居中悬浮羊皮纸事件页（事件名 +
+    插图窗 ill_event_diary + 叙事文本 + 三选项 btn 九宫格条），四周背景可见。"""
     base = asset("bg_event.png") or Image.new("RGBA", (W, H), CREAM)
     img = base.copy()
     d = ImageDraw.Draw(img)
-    text(d, (W // 2, 76), "神秘事件", size=32, anchor="mm")
-    # 事件插图区（400×200，按 09 §7.4；插画待补，拱形底纹占位）
-    panel(img, [W // 2 - 200, 120, W // 2 + 200, 320], 12, fill=BRIGHT)
+    # 悬浮羊皮纸事件页（S04 同款：AI 整版底图等比缩放 + 轻叠程序纸材统一质感）
+    page = [W // 2 - 430, 100, W // 2 + 430, 1000]
+    drop_shadow(img, page, r=18, alpha=125, blur=16)
+    plate = asset("panel_map_sheet.png")
+    pw, ph = page[2] - page[0], page[3] - page[1]
+    if plate is not None:
+        sheet = plate.resize((pw, ph), Image.LANCZOS)
+        blended = Image.blend(sheet, _paper_material(pw, ph), 0.2)
+        blended.putalpha(sheet.getchannel("A"))
+        img.paste(blended, (page[0], page[1]), blended)
+        inner_vignette(img, page, r=18, width=40)
+    else:
+        parchment_panel(img, page, r=18)
     d = ImageDraw.Draw(img)
-    d.arc([W // 2 - 130, 140, W // 2 + 130, 300], 180, 360, fill=TEAL, width=4)
-    d.arc([W // 2 - 70, 170, W // 2 + 70, 300], 180, 360, fill=BORDER, width=3)
-    text(d, (W // 2, 286), "事件插图", size=12, fill=SUB, bold=False, anchor="mm")
-    panel(img, [620, 360, 1300, 560], 12)
-    d = ImageDraw.Draw(img)
+    text(d, (W // 2, 165), "神秘事件", size=34, anchor="mm")
+    # 插图窗（640×280）：ill_event_diary cover 裁切 + 圆角贴入 + 双线金框
+    wbox = [W // 2 - 320, 212, W // 2 + 320, 492]
+    ill = asset("ill_event_diary.png")
+    if ill is not None:
+        # v_anchor≈0.38 取景上移：源图主体（光缕+记忆宝珠）偏上，正中裁切切宝珠顶
+        crop = cover_fit(ill, wbox[2] - wbox[0], wbox[3] - wbox[1], v_anchor=0.38)
+        mask = Image.new("L", crop.size, 0)
+        ImageDraw.Draw(mask).rounded_rectangle(
+            [0, 0, crop.width - 1, crop.height - 1], 16, fill=255)
+        img.paste(crop, (wbox[0], wbox[1]), mask)
+    else:   # 插画缺资产回退：亮纸底 + 拱形底纹占位
+        panel(img, wbox, 16, fill=BRIGHT, shadow=False)
+        d = ImageDraw.Draw(img)
+        d.arc([W // 2 - 130, 232, W // 2 + 130, 392], 180, 360, fill=TEAL, width=4)
+        d.arc([W // 2 - 70, 262, W // 2 + 70, 392], 180, 360, fill=BORDER, width=3)
+        text(d, (W // 2, wbox[3] - 30), "事件插图", size=12, fill=SUB,
+             bold=False, anchor="mm")
+    rrect(d, wbox, 16, outline=GOLD, width=3)
+    rrect(d, [wbox[0] + 5, wbox[1] + 5, wbox[2] - 5, wbox[3] - 5], 11,
+          outline=GOLD[:3] + (110,), width=1)
+    # 叙事文本
     for i, ln in enumerate(("「你在记忆回廊中发现一本古老的日记。",
                             "　 翻开它，一股力量涌入脑海……」")):
-        text(d, (W // 2, 424 + i * 40), ln, size=18, bold=False, anchor="mm")
-    options = (("仔细阅读", "获得 1 张随机卡牌，失去 3 点生命", "book"),
-               ("快速翻阅", "获得 15 金币", "coin"),
-               ("离开", "无事发生", "door"))
-    for i, (title, desc, glyph) in enumerate(options):
-        y = 604 + i * 128
-        panel(img, [620, y, 1300, y + 104], 12, fill=BRIGHT, outline=BORDER, width=2)
-        d = ImageDraw.Draw(img)
-        cx, cy = 700, y + 52
-        if glyph == "coin":
-            icon(img, "icon_gold.png", cx, cy, 44)
-        elif glyph == "book":
-            d.rounded_rectangle([cx - 26, cy - 20, cx + 26, cy + 22], 6,
-                                fill=(248, 242, 227, 255), outline=INK, width=2)
-            d.line([cx, cy - 20, cx, cy + 22], fill=INK, width=2)
-        else:
-            d.rounded_rectangle([cx - 18, cy - 24, cx + 18, cy + 24], 8,
-                                fill=(181, 132, 84, 255), outline=INK, width=2)
-            d.ellipse([cx + 4, cy - 4, cx + 10, cy + 2], fill=GOLD)
-        text(d, (760, y + 38), title, size=19)
-        text(d, (760, y + 72), desc, size=13, fill=SUB, bold=False)
+        text(d, (W // 2, 548 + i * 42), ln, size=19, bold=False, anchor="mm")
+    # 三选项：btn_secondary 九宫格条底 + 真图标 + 标题/描述两行
+    options = (("仔细阅读", "获得 1 张随机卡牌，失去 3 点生命", "icon_book.png"),
+               ("快速翻阅", "获得 15 金币", "icon_gold.png"),
+               ("离开", "无事发生", "icon_door.png"))
+    for i, (title, desc, ic) in enumerate(options):
+        y0 = 660 + i * 110
+        box = [W // 2 - 350, y0, W // 2 + 350, y0 + 92]
+        button(img, d, box, "", "secondary", 20)   # 只取九宫格底图，文字自排两行
+        icon(img, ic, box[0] + 54, y0 + 46, 52)
+        text(d, (box[0] + 100, y0 + 26), title, size=20)
+        text(d, (box[0] + 100, y0 + 60), desc, size=14, fill=SUB, bold=False)
+    hover_glow(img, [W // 2 - 350, 660, W // 2 + 350, 752], r=12)   # 首选项悬停态示意
     return img, "mockup_s09_event.png"
 
 

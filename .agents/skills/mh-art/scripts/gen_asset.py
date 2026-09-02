@@ -134,6 +134,18 @@ SPECS = {
                          "center completely clear and plain reserved for text, all decoration "
                          "confined to the outer frame only, clean thin dark outline, few flat "
                          "colors with soft simple shading, no text, no letters, no watermark"),
+    # 事件插画（S09 事件屏插图窗：横版叙事小场景，有明确主体；区别于 bg_ 的
+    # "空景大场面"，插图要有聚焦叙事主体；贴入 UI 时由程序裁切加框）
+    "illustration": dict(size="1536x1024", transparent=False, resize=None,
+                         review="illustrations", prefix="ill_",
+                         style="wide narrative still-scene illustration for a story event "
+                               "card in a casual game: one clear cute focal object in the "
+                               "center telling a small quiet story, a few minimal props "
+                               "around it, soft pastel backdrop with gentle warm glow "
+                               "accents, clean thin dark outline on the focal object, few "
+                               "flat colors with soft simple shading, simple airy "
+                               "composition, no characters, no text, no letters, "
+                               "no watermark"),
     # 装饰面板底图（九宫格拉伸用整版：地图页等大面积 UI 面板；装饰只落边缘与四角，
     # 中央大片留净供内容；按钮类小底图见上方 button 类型）
     "panel": dict(size="1024x1024", transparent=True, resize=None,

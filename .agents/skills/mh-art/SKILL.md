@@ -38,7 +38,7 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 
 ## 资产规格表
 
-命名规范遵循 [10-UI美术资源规格 §9](../../../docs/design/10-UI美术资源规格.md)：全小写 snake_case + 类别前缀（`card_` / `cardback_` / `icon_` / `relic_` / `potion_` / `node_` / `enemy_` / `portrait_` / `logo_` / `bg_` / `texture_`）。发布到项目根 `Assets/UI/<类型>/`（按类型分子目录，目录名与预览区一致；程序合成的 `cardframe_`/`border_` 落 `cardframes/`、`mockup_` 落 `mockups/`，前缀仍保留）。
+命名规范遵循 [10-UI美术资源规格 §9](../../../docs/design/10-UI美术资源规格.md)：全小写 snake_case + 类别前缀（`card_` / `cardback_` / `icon_` / `relic_` / `potion_` / `node_` / `enemy_` / `portrait_` / `logo_` / `bg_` / `texture_` / `btn_` / `panel_` / `ill_`）。发布到项目根 `Assets/UI/<类型>/`（按类型分子目录，目录名与预览区一致；程序合成的 `cardframe_`/`border_` 落 `cardframes/`、`mockup_` 落 `mockups/`，前缀仍保留）。
 
 | 类型 | API size | 透明底 | 发布规格 | 预览区目录 | 命名示例 |
 | --- | --- | --- | --- | --- | --- |
@@ -53,6 +53,7 @@ description: 《记忆勇者》设计文档仓库专属 AI 生图——按 docs/
 | 徽标 logo | 1024x1024 | 是 | 方构图徽记源图（保持生成比例；只出徽记图形，中文《记忆勇者》字标由 UI 层排版，AI 不画文字） | `ImageReview/logos/` | `logo_main.png` |
 | 背景 background | 2048x1152 | 否 | 1920x1080 RGB（脚本自动缩） | `ImageReview/backgrounds/` | `bg_battle.png` |
 | 纹理 texture | 1024x1024 | 否 | 256x256 可平铺 | `ImageReview/textures/` | `texture_parchment.png` |
+| 事件插画 illustration | 1536x1024 | 否 | 横版叙事源图（保持生成比例；贴入 S09 插图窗时程序裁切加框，区别于 bg_ 空景——插画须有聚焦叙事主体） | `ImageReview/illustrations/` | `ill_event_diary.png` |
 | 按钮底图 button | 1536x1024 | 是 | 960×208 RGBA 九宫格底图（发布前规范化：紧贴裁切+alpha阈值清理；切片边 52；装饰只落边框环、中央留净供叠字） | `ImageReview/buttons/` | `btn_primary.png` |
 | 装饰面板底图 panel | 1024x1024 | 是 | 方形整版九宫格底图（装饰只落边缘与四角，中央大片留净供内容；切片边按版面装饰带宽取） | `ImageReview/panels/` | `panel_map_sheet.png` |
 

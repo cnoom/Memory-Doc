@@ -6,7 +6,7 @@ mh-art 技能（`.agents/skills/mh-art/`）生成的图片**先落在本目录**
 
 | 路径 | 角色 | 规则 |
 | --- | --- | --- |
-| `<类型>/`（cards/ cardbacks/ cardframes/ icons/ relics/ potions/ map-nodes/ enemies/ portraits/ backgrounds/ textures/ logos/ mockups/ buttons/ panels/） | **预览**：当前待看的候选 | 只允许存在"当前待审批"与"明确挂起"的活候选 |
+| `<类型>/`（cards/ cardbacks/ cardframes/ icons/ relics/ potions/ map-nodes/ enemies/ portraits/ backgrounds/ textures/ logos/ mockups/ buttons/ panels/ illustrations/） | **预览**：当前待看的候选 | 只允许存在"当前待审批"与"明确挂起"的活候选 |
 | `_archived/<日期>/<类型>/` | **归档**：被取代/落选的历史方案 | 只进不出，永不发布；回看旧方案按日期目录翻 |
 | `Assets/UI/<类型>/`（项目根目录，不在本目录下） | **实际应用**：正式资产 | 进 git，**按类型分子目录**（目录名与本表 `<类型>` 一致，文件名前缀仍保留），被设计文档以相对路径嵌入 |
 
