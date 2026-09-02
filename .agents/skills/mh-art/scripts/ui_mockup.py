@@ -859,8 +859,10 @@ def s07_shop():
     text(d, (1794, 120), "150 G", size=18, anchor="lm")
 
     # 悬浮羊皮纸商店页（S04/S09 家族：AI 整版底图等比缩放 + 轻叠程序纸材质）。
-    # 投影 90/20：bg_shop 书架暖光为中间调，取 bg_map(暗,125) 与 bg_event(亮,70) 之间
-    page = [190, 170, 1730, 1005]
+    # 投影 90/20：bg_shop 书架暖光为中间调，取 bg_map(暗,125) 与 bg_event(亮,70) 之间。
+    # r2：页收窄收短 1540×835→1420×800（r1 横幅化 1.85:1 且底距 75px 贴地），
+    # 下留白 120 与上 112/左右 250 均衡；内容整体下移补 r1 页下 145-167px 死空间
+    page = [250, 160, 1670, 960]
     drop_shadow(img, page, r=18, alpha=90, blur=20)
     sheet = asset("panel_map_sheet.png")
     pw, ph = page[2] - page[0], page[3] - page[1]
@@ -882,60 +884,63 @@ def s07_shop():
         chip(d, cx - (tw + 20) / 2, y, s, GOLD, fg=INK, size=15, h=32,
              outline=(140, 105, 50, 255), ow=2)
 
-    # 竖向细分隔（左卡牌区 / 右遗物区），半透明金线避开页顶/底装饰带
-    d.line([1115, 255, 1115, 925], fill=BORDER[:3] + (150,), width=1)
+    # 竖向细分隔（左卡牌区 [320,1080] / 右遗物区 [1140,1600]），两侧对称各 30px、
+    # 线端与两栏内容起止对齐（r1 两侧 25/35 不对称且通天不到地）
+    d.line([1110, 262, 1110, 866], fill=BORDER[:3] + (150,), width=1)
 
-    # ---- 左：卡牌出售（3 张 210×280，卡心 x 400/675/950）----
-    text(d, (260, 248), "卡牌出售（3 张）", size=22)
+    # ---- 左：卡牌出售（3 张 220×293、卡心 x 430/700/970，r1 210×280 放大 5%）----
+    text(d, (320, 255), "卡牌出售（3 张）", size=22)
     for i, (f, price) in enumerate((("cardframe_attack.png", "45 G"),
                                     ("cardframe_skill.png", "60 G"),
                                     ("cardframe_ability.png", "75 G"))):
         c = asset(f)
-        cx = 400 + i * 275
+        cx = 430 + i * 270
         if c:
-            card = c.resize((210, 280), Image.LANCZOS)
-            drop_shadow(img, [cx - 105, 300, cx + 105, 580], r=14)
-            img.alpha_composite(card, (cx - 105, 300))
+            card = c.resize((220, 293), Image.LANCZOS)
+            drop_shadow(img, [cx - 110, 310, cx + 110, 603], r=14)
+            img.alpha_composite(card, (cx - 110, 310))
             d = ImageDraw.Draw(img)
-        chip_c(cx, 615, price)
-    text(d, (675, 690), "购买后加入牌库（战斗中每张以 2 份出现）", size=14, fill=SUB,
+        chip_c(cx, 633, price)
+    text(d, (700, 692), "购买后加入牌库（战斗中每张以 2 份出现）", size=14, fill=SUB,
          bold=False, anchor="mm")
-    sep_h(728, 260, 1090)
-    # 刷新商品：亮纸通知条实体（icon_reshuffle + 一行说明），替代旧裸文字
-    notice = [260, 762, 1090, 838]
+    sep_h(732, 320, 1080)
+    # 刷新商品：亮纸通知条实体（icon_reshuffle + 一行说明），替代旧裸文字；
+    # 高度与右侧移除按钮统一为 80（r1 76 vs 84 不齐）
+    notice = [320, 772, 1080, 852]
     panel(img, notice, 10, fill=BRIGHT, outline=BORDER, width=2, shadow=False)
     d = ImageDraw.Draw(img)
-    icon(img, "icon_reshuffle.png", 308, 800, 34)
-    text(d, (338, 800), "离开商店时自动刷新全部商品", size=15, bold=False, anchor="lm")
+    icon(img, "icon_reshuffle.png", 365, 812, 34)
+    text(d, (392, 812), "离开商店时自动刷新全部商品", size=15, bold=False, anchor="lm")
 
-    # ---- 右：遗物出售（2 件，行结构：图标+落点影 | 名称/两行效果/价格）----
-    text(d, (1150, 248), "遗物出售（2 件）", size=22)
+    # ---- 右：遗物出售（2 件，行结构：图标+落点影 | 名称/两行效果/价格）——
+    # 图标中心对齐文字块中心（r1 图标比文字块高 15px 偏上），描述 13→15 提可读性 ----
+    text(d, (1140, 255), "遗物出售（2 件）", size=22)
     relics = (("relic_mind_map.png", "思维导图",
                ("翻过的牌位置保留", "淡淡的轮廓标记"), "75 G"),
               ("relic_charge_crystal.png", "蓄能水晶",
                ("连续配对成功 3 次", "下次配对伤害 +5"), "120 G"))
     for i, (ic, name, lines, price) in enumerate(relics):
-        ry = 345 + i * 170
+        ry = 380 + i * 184          # 文字块中心（名称顶 322/506，chip 底 438/622）
         sh = Image.new("RGBA", img.size, (0, 0, 0, 0))
-        ImageDraw.Draw(sh).ellipse([1208 - 44, ry + 30, 1208 + 44, ry + 44],
+        ImageDraw.Draw(sh).ellipse([1196 - 44, ry + 30, 1196 + 44, ry + 44],
                                    fill=(0, 0, 0, 45))
         img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(3)))
-        icon(img, ic, 1208, ry, 88)
+        icon(img, ic, 1196, ry, 88)
         d = ImageDraw.Draw(img)
-        text(d, (1280, ry - 48), name, size=18)
+        text(d, (1256, ry - 58), name, size=18)
         for j, ln in enumerate(lines):
-            text(d, (1280, ry - 14 + j * 24), ln, size=13, fill=SUB, bold=False)
-        chip(d, 1280, ry + 46, price, GOLD, fg=INK, size=15, h=32,
+            text(d, (1256, ry - 22 + j * 24), ln, size=15, fill=SUB, bold=False)
+        chip(d, 1256, ry + 26, price, GOLD, fg=INK, size=15, h=32,
              outline=(140, 105, 50, 255), ow=2)
-    sep_h(640, 1150, 1660)
+    sep_h(660, 1140, 1600)
     # ---- 右下：移除卡牌服务（btn_secondary 九宫格条 + icon_exhaust 两行排）----
-    text(d, (1150, 672), "移除卡牌服务", size=20)
-    bb = [1150, 708, 1660, 792]
+    text(d, (1140, 695), "移除卡牌服务", size=20)
+    bb = [1140, 735, 1600, 815]
     button(img, d, bb, "", "secondary", 20)   # 只取九宫格底图，文字自排两行
-    icon(img, "icon_exhaust.png", 1205, 750, 44)
-    text(d, (1250, 721), "选择卡牌移除", size=18)
-    text(d, (1250, 753), "75 G · 永久移除牌库中的一张牌", size=13, fill=SUB, bold=False)
-    text(d, (1150, 838), "（战斗同名恒偶数张，移除也不落单）", size=12, fill=SUB,
+    icon(img, "icon_exhaust.png", 1190, 775, 44)
+    text(d, (1232, 746), "选择卡牌移除", size=18)
+    text(d, (1232, 778), "75 G · 永久移除牌库中的一张牌", size=13, fill=SUB, bold=False)
+    text(d, (1140, 850), "（战斗同名恒偶数张，移除也不落单）", size=12, fill=SUB,
          bold=False, anchor="la")
     return img, "mockup_s07_shop.png"
 
