@@ -11,7 +11,7 @@ SKILL.md 规格表的展开版。名录与命名提取自 `docs/design/` 各设�
 | 卡面插画 card | 35 种（见 §2） | [06-学者角色卡牌设计](../../../docs/design/06-学者角色卡牌设计.md) |
 | 卡背 cardback | 1（通用·静谧青纹章，v1.5） | [10-UI美术资源规格 §2.3](../../../docs/design/10-UI美术资源规格.md) |
 | 图标 icon | 35（见 §4） | [10-UI美术资源规格 §3.1–3.4/3.7](../../../docs/design/10-UI美术资源规格.md) |
-| 遗物图标 relic | 20 | [07-遗物与道具设计](../../../docs/design/07-遗物与道具设计.md) + 10§3.5 |
+| 遗物图标 relic | 20（2 已发布，v1.14 起） | [07-遗物与道具设计](../../../docs/design/07-遗物与道具设计.md) + 10§3.5 |
 | 道具图标 potion | 8 | [07-遗物与道具设计](../../../docs/design/07-遗物与道具设计.md) + 10§3.6 |
 | 地图节点 node | 6 | [10-UI美术资源规格 §3.8](../../../docs/design/10-UI美术资源规格.md) |
 | 装饰面板底图 panel | 1+ | 整版底图（装饰落边缘四角、中央留净；磨损边版仅整版等比缩放，2026-09-01 起新类别） |
@@ -127,6 +127,8 @@ very minimal, no text, no watermark
 
 来自 [10-UI美术资源规格 §3.5](../../../docs/design/10-UI美术资源规格.md)。边框色随稀有度：普通银 `#B0B0B0` / 罕见蓝 `#4A9CD4` / 稀有金 `#D4A857` / Boss 橙 `#E87B35`。
 
+> 已发布（`Assets/UI/relics/`，2026-09-02 v1.14 起，均用户拍板 1 号候选）：`relic_mind_map`（粉脑+金色放射节点导图）、`relic_charge_crystal`（薄荷绿圆润水晶内含金闪电）；其余 18 个待批量批次。
+
 | 稀有度 | 文件名（图标意象） |
 | --- | --- |
 | 普通 | `relic_memory_crystal`(水晶球) / `relic_notebook`(笔记本) / `relic_resonance_stone`(音波石) / `relic_twin_dice`(骰子) / `relic_first_aid`(医药包) / `relic_wood_shield`(木盾) / `relic_slow_seal`(减速符文) |
@@ -204,4 +206,4 @@ A 方向"圆形金环徽章"家族（彩色圆底+哑金环+奶油符号浮雕+�
 
 ## 15. 界面示意图（程序合成，非 AI 生图）
 
-`ui_mockup.py`（mh-art scripts）按 09 布局/色板把已发布资产合成 1920×1080 示意图，落 `ImageReview/mockups/` 校验后 `--publish` 发布（`mockup_` 前缀）。**2026-09-01 S01~S13 共 13 屏全量发布**（09 §5.1/§5.4/§6/§7.1~§7.4/§8.1~§8.3 嵌入）。字体为系统雅黑近似（正式实现 Noto Serif/Sans SC + TMP）；正面小卡文字按整卡缩放仅示意；商店/Boss遗物屏的遗物徽记为程序简笔占位（`relic_glyph`），真遗物图标发布后重渲替换。
+`ui_mockup.py`（mh-art scripts）按 09 布局/色板把已发布资产合成 1920×1080 示意图，落 `ImageReview/mockups/` 校验后 `--publish` 发布（`mockup_` 前缀）。**2026-09-01 S01~S13 共 13 屏全量发布**（09 §5.1/§5.4/§6/§7.1~§7.4/§8.1~§8.3 嵌入）。字体为系统雅黑近似（正式实现 Noto Serif/Sans SC + TMP）；正面小卡文字按整卡缩放仅示意；商店屏遗物已换真图标（2026-09-02 v1.14，relic_mind_map/relic_charge_crystal）；Boss 遗物屏（S10）仍为 `relic_glyph` 程序简笔占位，真遗物图标发布后重渲替换。材质噪声（`_paper_material`/`paper_grain`）已去随机化——`Image.effect_noise` 吃进程内共享随机序列、同屏输出随已渲屏数漂移，已换 `_seeded_noise` 显式种子 numpy 噪声，全量渲=单渲逐字节可复现（2026-09-02）。
