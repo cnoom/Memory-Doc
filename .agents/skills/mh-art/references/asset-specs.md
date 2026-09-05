@@ -123,16 +123,16 @@ very minimal, no text, no watermark
 > 2026-09-01：功能图标 ×12（§3.6 全部，含 `icon_memory`）已生成发布；`icon_intent_attack`、`icon_status_burn` 为意图/状态两组的首批样张（同风格，其余待批量）。图标风格关键词：居中单一物体、粗圆润剪影、深色细描边、平色软高光；易加戏的题材（火焰/骷髅等）desc 需显式否定（no lantern/no face/no books…）。
 > 2026-09-02：`icon_book`/`icon_door` 发布（S09 事件选项图标，均拍板 1 号候选；door 石柱青灰+藤蔓绿与纯暖色系轻微偏移属已知可接受项）。
 
-## 5. 遗物名录（20 个）
+## 5. 遗物名录（19 个；另 `relic_eternal_candle` 暂移）
 
-来自 [10-UI美术资源规格 §3.5](../../../docs/design/10-UI美术资源规格.md)。边框色随稀有度：普通银 `#B0B0B0` / 罕见蓝 `#4A9CD4` / 稀有金 `#D4A857` / Boss 橙 `#E87B35`。
+来自 [10-UI美术资源规格 §3.5](../../../docs/design/10-UI美术资源规格.md)。边框色随稀有度：普通银 `#B0B0B0` / 罕见蓝 `#4A9CD4` / 稀有金 `#D4A857` / Boss 橙 `#E87B35`。「永恒之烛」2026-08-27 起暂移待重设计（07 §3），`relic_eternal_candle` 暂不生成（本表 2026-09-05 同步：slow_seal 归罕见、eternal_candle 挂起，与 10 §3.5/07 §6 对齐）。
 
-> 已发布 5 件（`Assets/UI/relics/`）：v1.14（2026-09-02）`relic_mind_map`（粉脑+金色放射节点导图）/`relic_charge_crystal`（薄荷绿圆润水晶内含金闪电），均拍板 1 号候选；v1.16（2026-09-05）Boss 三件 `relic_omniscient_eye`（白涡轮环带大眼+瞳中金宝珠）/`relic_chaos_core`（金绿环带缠绕螺旋球+垂坠）/`relic_memory_crown`（圆头三尖金冠+冠面双珠），均拍板 **2 号候选**（vision 择优 1 号仅参考——用户的眼是标准，v3.1 描边教训同款流程）；其余 15 个待批量批次。
+> 已发布 5 件（`Assets/UI/relics/`）：v1.14（2026-09-02）`relic_mind_map`（粉脑+金色放射节点导图）/`relic_charge_crystal`（薄荷绿圆润水晶内含金闪电），均拍板 1 号候选；v1.16（2026-09-05）Boss 三件 `relic_omniscient_eye`（白涡轮环带大眼+瞳中金宝珠）/`relic_chaos_core`（金绿环带缠绕螺旋球+垂坠）/`relic_memory_crown`（圆头三尖金冠+冠面双珠），均拍板 **2 号候选**（vision 择优 1 号仅参考——用户的眼是标准，v3.1 描边教训同款流程）；其余 14 个 2026-09-05 批量批次生成中。
 
 | 稀有度 | 文件名（图标意象） |
 | --- | --- |
-| 普通 | `relic_memory_crystal`(水晶球) / `relic_notebook`(笔记本) / `relic_resonance_stone`(音波石) / `relic_twin_dice`(骰子) / `relic_first_aid`(医药包) / `relic_wood_shield`(木盾) / `relic_slow_seal`(减速符文) |
-| 罕见 | `relic_mind_map`(脑/网状图) / `relic_eternal_candle`(蜡烛) / `relic_chain_core`(链条核心) / `relic_charge_crystal`(闪电水晶) / `relic_vampire_fang`(獠牙) / `relic_energy_shield`(能量盾) |
+| 普通 | `relic_memory_crystal`(水晶球) / `relic_notebook`(笔记本) / `relic_resonance_stone`(音波石) / `relic_twin_dice`(骰子) / `relic_first_aid`(医药包) / `relic_wood_shield`(木盾) |
+| 罕见 | `relic_mind_map`(脑/网状图) / `relic_slow_seal`(减速符文) / `relic_chain_core`(链条核心) / `relic_charge_crystal`(闪电水晶) / `relic_vampire_fang`(獠牙) / `relic_energy_shield`(能量盾) |
 | 稀有 | `relic_stable_anchor`(锚) / `relic_twin_charm`(双生符) / `relic_mirror_echo`(镜子) / `relic_scholar_badge`(徽章) |
 | Boss | `relic_omniscient_eye`(眼睛) / `relic_chaos_core`(漩涡) / `relic_memory_crown`(王冠) |
 
