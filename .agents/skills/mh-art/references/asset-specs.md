@@ -127,7 +127,7 @@ very minimal, no text, no watermark
 
 来自 [10-UI美术资源规格 §3.5](../../../docs/design/10-UI美术资源规格.md)。边框色随稀有度：普通银 `#B0B0B0` / 罕见蓝 `#4A9CD4` / 稀有金 `#D4A857` / Boss 橙 `#E87B35`。「永恒之烛」2026-08-27 起暂移待重设计（07 §3），`relic_eternal_candle` 暂不生成（本表 2026-09-05 同步：slow_seal 归罕见、eternal_candle 挂起，与 10 §3.5/07 §6 对齐）。
 
-> 已发布 5 件（`Assets/UI/relics/`）：v1.14（2026-09-02）`relic_mind_map`（粉脑+金色放射节点导图）/`relic_charge_crystal`（薄荷绿圆润水晶内含金闪电），均拍板 1 号候选；v1.16（2026-09-05）Boss 三件 `relic_omniscient_eye`（白涡轮环带大眼+瞳中金宝珠）/`relic_chaos_core`（金绿环带缠绕螺旋球+垂坠）/`relic_memory_crown`（圆头三尖金冠+冠面双珠），均拍板 **2 号候选**（vision 择优 1 号仅参考——用户的眼是标准，v3.1 描边教训同款流程）；其余 14 个 2026-09-05 批量批次生成中。
+> **已发布 19/19 全量**（`Assets/UI/relics/`，2026-09-05 全齐）：v1.14（2026-09-02）`relic_mind_map`（粉脑+金色放射节点导图）/`relic_charge_crystal`（薄荷绿圆润水晶内含金闪电），均拍板 1 号候选；v1.16（2026-09-05）Boss 三件 `relic_omniscient_eye`（白涡轮环带大眼+瞳中金宝珠）/`relic_chaos_core`（金绿环带缠绕螺旋球+垂坠）/`relic_memory_crown`（圆头三尖金冠+冠面双珠），均拍板 **2 号候选**（vision 择优 1 号仅参考——用户的眼是标准，v3.1 描边教训同款流程）；v1.17（2026-09-05）剩余 14 件批量收官（普通 6/罕见 4/稀有 4，各 ×2 候选、vision 三组校验 28 张全过底线），用户拍板"按建议"：11 件取 1 号，`relic_resonance_stone`/`relic_twin_charm`/`relic_energy_shield` 取 2 号；已知可接受偏形 4 件（resonance_stone 宝珠轨道化+银翼坠、twin_dice 金蝴蝶结连线、first_aid 方挎包、见 10 §3.5 v1.17 注）。desc 惯例：稀有度点缀进 desc（普通银/罕见蓝宝石/稀有哑金），易加戏题材显式否定。
 
 | 稀有度 | 文件名（图标意象） |
 | --- | --- |
