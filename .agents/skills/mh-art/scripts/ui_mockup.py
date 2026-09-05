@@ -1084,27 +1084,67 @@ def s09_event():
 
 
 def s10_bossrelic():
-    """S10 Boss遗物奖励（09 §8.3）：三选一 Boss 遗物。"""
+    """S10 Boss遗物奖励（09 §8.3）：家族版——bg_battle 暗幕 140（与 S05/S12
+    模态一致）+ 顶部战利牌匾（S05 胜利牌匾同款）+ 悬浮羊皮纸页（S05 同族
+    1120 宽；无按钮页高收 660）——三件 Boss 遗物真图标 88px+落点影（S07 遗物
+    区同款；asset() 预览区兜底，图标缺失回退 relic_glyph 占位）+ 名称/Boss
+    chip/两行效果（对齐 07 词条——混沌核心补'揭示'关键信息）+ 细金分隔线 +
+    底注。替换旧版裸金标题 + 平色 panel 三块 + relic_glyph 简笔占位。"""
     base = asset("bg_battle.png") or Image.new("RGBA", (W, H), CREAM)
     img = base.copy()
-    ov = Image.new("RGBA", img.size, (0, 0, 0, 115))
+    ov = Image.new("RGBA", img.size, (0, 0, 0, 140))
     img.alpha_composite(ov)
+    # 顶部战利牌匾（S05 胜利牌匾同款：亮纸胶囊+金边+投影，替换裸金文字）
+    plate = [W // 2 - 200, 52, W // 2 + 200, 120]
+    drop_shadow(img, plate, r=14, alpha=90, blur=8)
+    panel(img, plate, 14, fill=BRIGHT, shadow=False)
     d = ImageDraw.Draw(img)
-    text(d, (W // 2, 150), "Boss 已击败！", size=42, fill=GOLD, anchor="mm")
-    text(d, (W // 2, 212), "选择一件 Boss 遗物", size=20, fill=CREAM, bold=False, anchor="mm")
-    relics = (("eye", "全知之眼", ("场上可同时翻开的", "牌数量 +1")),
-              ("swirl", "混沌核心", ("每回合开始时随机", "交换 2 张牌位置")),
-              ("crown", "记忆王冠", ("所有能力牌的", "持续效果翻倍")))
-    for i, (glyph, name, lines) in enumerate(relics):
-        x = W // 2 + (i - 1) * 460
-        panel(img, [x - 200, 300, x + 200, 720], 14)
+    text(d, (W // 2, 86), "Boss 已击败！", size=36, anchor="mm")
+    # 悬浮羊皮纸页（S05 同族：AI 整版底图缩放+轻叠纸材质，投影 110/20）。
+    # 页高 660：sheet 装饰带顶 8.5%/底 9.1% → 内腔 y≈[256,800]，内容
+    # 300→738，上下净空 ≥44px（S09 r2 拍板标准 ≥25px）
+    page = [400, 200, 1520, 860]
+    drop_shadow(img, page, r=18, alpha=110, blur=20)
+    sheet = asset("panel_map_sheet.png")
+    pw, ph = page[2] - page[0], page[3] - page[1]
+    if sheet is not None:
+        sh = sheet.resize((pw, ph), Image.LANCZOS)
+        blended = Image.blend(sh, _paper_material(pw, ph), 0.2)
+        blended.putalpha(sh.getchannel("A"))
+        img.paste(blended, (page[0], page[1]), blended)
+        inner_vignette(img, page, r=18, width=40)
+    else:
+        parchment_panel(img, page, r=18)
+    d = ImageDraw.Draw(img)
+    text(d, (W // 2, 300), "选择一件 Boss 遗物", size=19, fill=SUB,
+         bold=False, anchor="mm")
+    relics = (("relic_omniscient_eye.png", "eye", "全知之眼",
+               ("场上可同时翻开的", "牌数量 +1")),
+              ("relic_chaos_core.png", "swirl", "混沌核心",
+               ("每回合随机交换 2 张", "牌并揭示其内容")),
+              ("relic_memory_crown.png", "crown", "记忆王冠",
+               ("所有能力牌的", "持续效果翻倍")))
+    for i, (f, glyph, name, lines) in enumerate(relics):
+        x = W // 2 + (i - 1) * 300          # 列心间距 300（与 S05 卡心一致）
+        if asset(f) is not None:
+            # 真遗物图标 88px + 落点影（S07 遗物区同款）
+            sh = Image.new("RGBA", img.size, (0, 0, 0, 0))
+            ImageDraw.Draw(sh).ellipse([x - 40, 476, x + 40, 488],
+                                       fill=(0, 0, 0, 45))
+            img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(3)))
+            icon(img, f, x, 426, 88)
+        else:
+            relic_glyph(d, x, 426, 78, glyph)
         d = ImageDraw.Draw(img)
-        relic_glyph(d, x, 440, 78, glyph)
-        text(d, (x, 560), name, size=22, anchor="mm")
-        chip(d, x - 34, 590, "Boss", (232, 123, 53, 255), size=12, h=24)
+        text(d, (x, 518), name, size=22, anchor="mm")
+        tw = d.textlength("Boss", font=font(12))
+        chip(d, x - (tw + 20) / 2, 548, "Boss", (232, 123, 53, 255),
+             size=12, h=24)
         for j, ln in enumerate(lines):
-            text(d, (x, 650 + j * 30), ln, size=14, bold=False, anchor="mm")
-    text(d, (W // 2, 800), "Boss 遗物全场唯一，选定后立即生效", size=13, fill=CREAM,
+            text(d, (x, 616 + j * 28), ln, size=15, fill=SUB,
+                 bold=False, anchor="mm")
+    d.line([520, 690, 1400, 690], fill=BORDER[:3] + (150,), width=1)
+    text(d, (W // 2, 738), "Boss 遗物全场唯一，选定后立即生效", size=13, fill=SUB,
          bold=False, anchor="mm")
     return img, "mockup_s10_bossrelic.png"
 
