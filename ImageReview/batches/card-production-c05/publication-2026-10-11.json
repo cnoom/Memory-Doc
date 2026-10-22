@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-11",
+  "approvalQuote": "可以",
+  "scope": "C05 skill, ability and curse frames plus derived masks",
+  "files": [
+    {
+      "source": "ImageReview/cardframes/border_card_skill_ornate_c05.png",
+      "target": "Assets/UI/cardframes/border_card_skill_ornate_c05.png",
+      "sha256": "fc8ec793a48230cc79a3cb22224fcd83a5ccbbda7ed11bf932a1285e2318a61d"
+    },
+    {
+      "source": "ImageReview/batches/card-production-c05/skill-window-mask.png",
+      "target": "Assets/UI/cardframes/border_card_skill_ornate_c05_window_mask.png",
+      "sha256": "4f6ba97a67a2a66139e0ad02c0e5bfb77fcfa52ccc497dd0567a8a59e7df862b"
+    },
+    {
+      "source": "ImageReview/cardframes/border_card_ability_ornate_c05.png",
+      "target": "Assets/UI/cardframes/border_card_ability_ornate_c05.png",
+      "sha256": "edb0f85a5686c65fa98e648366d8db77962c56629c3c97c52341cb6b47ee9181"
+    },
+    {
+      "source": "ImageReview/batches/card-production-c05/ability-window-mask.png",
+      "target": "Assets/UI/cardframes/border_card_ability_ornate_c05_window_mask.png",
+      "sha256": "ce395ec885c56256976731a6c5287f1f8bcff94c1ec523b5d551a759090b83af"
+    },
+    {
+      "source": "ImageReview/cardframes/border_card_curse_ornate_c05.png",
+      "target": "Assets/UI/cardframes/border_card_curse_ornate_c05.png",
+      "sha256": "7d0f7b92435aed6bf33106983596a4d5a8fd0fe820a5c0e6fe31796e07fb5c02"
+    },
+    {
+      "source": "ImageReview/batches/card-production-c05/curse-window-mask.png",
+      "target": "Assets/UI/cardframes/border_card_curse_ornate_c05_window_mask.png",
+      "sha256": "4254a29915ecbd0ebd40368199b0cb75711810189c6d77ac7c172b314338d383"
+    }
+  ]
+}

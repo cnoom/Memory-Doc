@@ -1,0 +1,39 @@
+{
+  "sourceCanvas": [
+    1086,
+    1448
+  ],
+  "exportCanvas": [
+    960,
+    1280
+  ],
+  "ratio": "3:4 exact canvas",
+  "window": {
+    "x": 156,
+    "y": 300,
+    "width": 649,
+    "height": 496,
+    "pixels": 318203
+  },
+  "frameAlphaSamples": {
+    "outside": 0,
+    "window": 0,
+    "title": 253,
+    "effect": 253
+  },
+  "backAlphaSamples": {
+    "outside": 0,
+    "center": 253
+  },
+  "checks": [
+    "No source overwrite",
+    "Uniform downsampling only",
+    "Enclosed actual alpha opening",
+    "Original approved illustration unchanged",
+    "Separate text render at each size",
+    "144x192 and 96x128 review",
+    "Deep/light alpha boards"
+  ],
+  "requiresUserApproval": true,
+  "requiresEngineValidation": true
+}

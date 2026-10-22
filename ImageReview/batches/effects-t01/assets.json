@@ -1,0 +1,84 @@
+{
+  "status": "approved",
+  "productionEligible": true,
+  "assets": [
+    {
+      "id": "fx_hit_t01",
+      "png": "effects/fx_hit_t01.png",
+      "width": 1254,
+      "height": 1254,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "visibleBounds": [
+        43,
+        128,
+        1214,
+        1204
+      ],
+      "sha256": "8ead21b0613e490ce529e3ebb59e49a15291046137ccee1331c0108c8d80fa3f",
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "fx_match_dissolve_t01",
+      "png": "effects/fx_match_dissolve_t01.png",
+      "width": 1254,
+      "height": 1254,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "visibleBounds": [
+        35,
+        51,
+        1224,
+        1254
+      ],
+      "sha256": "3ed0f5da8513fc57b9ba0098d0f500cc263e55d0e82be4d164d07866d27df846",
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "fx_heal_t01",
+      "png": "effects/fx_heal_t01.png",
+      "width": 1254,
+      "height": 1254,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "visibleBounds": [
+        0,
+        14,
+        1222,
+        1254
+      ],
+      "sha256": "8be5183d5b5a951fc07dcc4ff9b04cadaafd97a214aa83bf4035db1406076554",
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "fx_campfire_flame_t01",
+      "png": "effects/fx_campfire_flame_t01.png",
+      "width": 1254,
+      "height": 1254,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "visibleBounds": [
+        49,
+        31,
+        1214,
+        1230
+      ],
+      "sha256": "a22070198c49ccc040d7ffb28cd7862ca7804b86c7ea0e4981e5de2453009a2d",
+      "status": "approved",
+      "productionEligible": true
+    }
+  ],
+  "approvedOn": "2026-10-17",
+  "approvalQuote": "审阅通过"
+}

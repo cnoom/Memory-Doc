@@ -1,0 +1,15 @@
+{
+  "id": "mockup_map_i01",
+  "status": "pending-review",
+  "productionEligible": false,
+  "role": "composite-design-reference",
+  "path": "ImageReview/batches/map-i01/mockup_map_i01_1920x1080.png",
+  "sourceResolution": [
+    1672,
+    941
+  ],
+  "width": 1920,
+  "height": 1080,
+  "native1080p": false,
+  "sha256": "59137199014549f6bc79ab585feeea8aa230423b3893be92d0ba3a51b5b4bb0a"
+}

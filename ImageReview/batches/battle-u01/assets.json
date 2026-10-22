@@ -1,0 +1,30 @@
+{
+  "status": "pending-review",
+  "productionEligible": false,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "dependencies": {
+    "border_card_attack_ornate_c04": "Assets/UI/cardframes/border_card_attack_ornate_c04.png",
+    "card_attack_dushubiji_illustration_v02": "Assets/UI/cards/card_attack_dushubiji_illustration_v02.png",
+    "bg_battle_empty_a01": "Assets/UI/backgrounds/bg_battle_empty_a01.png",
+    "enemy_chaos_slime_etching_b01": "Assets/UI/enemies/enemy_chaos_slime_etching_b01.png",
+    "portrait_scholar_etching_b01": "Assets/UI/portraits/portrait_scholar_etching_b01.png",
+    "btn_secondary_normal_b03": "Assets/UI/buttons/btn_secondary_normal_b03.png",
+    "cardback_universal_ornate_c03": "Assets/UI/cardbacks/cardback_universal_ornate_c03.png",
+    "badge_mark_paper_b03": "Assets/UI/badges/badge_mark_paper_b03.png",
+    "hud_enemy_base_a03": "Assets/UI/panels/hud_enemy_base_a03.png",
+    "hud_health_track_a03": "Assets/UI/bars/hud_health_track_a03.png",
+    "hud_health_fill_a03": "Assets/UI/bars/hud_health_fill_a03.png",
+    "hud_action_filled_a03": "Assets/UI/bars/hud_action_filled_a03.png",
+    "hud_action_empty_a03": "Assets/UI/bars/hud_action_empty_a03.png",
+    "icon_intent_attack_etching_b01": "Assets/UI/icons/icon_intent_attack_etching_b01.png",
+    "hud_player_base_a03": "Assets/UI/panels/hud_player_base_a03.png",
+    "enemy_memory_devourer_phase3_s02": "Assets/UI/enemies/enemy_memory_devourer_phase3_s02.png"
+  },
+  "outputs": [
+    "normal.png",
+    "boss_phase3.png"
+  ]
+}

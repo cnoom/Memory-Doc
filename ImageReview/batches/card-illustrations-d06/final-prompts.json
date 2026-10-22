@@ -1,0 +1,26 @@
+[
+  {
+    "name": "遗忘",
+    "slug": "yiwang",
+    "type": "curse",
+    "prompt": "Use case: stylized-concept. Create ONE square standalone card illustration for the game Memory Hero, not a card layout. Black ink woodcut engraving on opaque warm bone-white paper, bold irregular carved outlines, dense but controlled crosshatching, aged printed texture, strong readable silhouette at small size. Rich crafted detail, not minimalist. Center full object cluster with 8 percent clear margin, no crop. Restrained charcoal grey accents only, no bright colors, no gold, no glow, no gradients, no photorealism. No lettering, words, numbers, UI, border, title or watermark. Subject: a weathered sculpted human head in profile, the back of the head dissolving into a few torn blank paper fragments and black ink flakes; a deep jagged fissure crosses the temple. Symbol of lost memory, melancholic and ominous, no gore. Profile and paper loss dominant, no books, clocks or armor."
+  },
+  {
+    "name": "混乱笔记",
+    "slug": "hunluanbiji",
+    "type": "curse",
+    "prompt": "Use case: stylized-concept. Create ONE square standalone card illustration for the game Memory Hero, not a card layout. Black ink woodcut engraving on opaque warm bone-white paper, bold irregular carved outlines, dense but controlled crosshatching, aged printed texture, strong readable silhouette at small size. Rich crafted detail, not minimalist. Center full object cluster with 8 percent clear margin, no crop. Restrained charcoal grey accents only, no bright colors, no gold, no glow, no gradients, no photorealism. No lettering, words, numbers, UI, border, title or watermark. Subject: an open battered notebook with tangled black scribbled loops rather than writing, two loose blank rectangular cards flying above it and two clearly crossed curling paper strips implying an exchange of positions. Torn page corners, charcoal ribbon caught in the tangle. Strong open book silhouette, energetic asymmetry, no legible marks."
+  },
+  {
+    "name": "拖沓",
+    "slug": "tuota",
+    "type": "curse",
+    "prompt": "Use case: stylized-concept. Create ONE square standalone card illustration for the game Memory Hero, not a card layout. Black ink woodcut engraving on opaque warm bone-white paper, bold irregular carved outlines, dense but controlled crosshatching, aged printed texture, strong readable silhouette at small size. Rich crafted detail, not minimalist. Center full object cluster with 8 percent clear margin, no crop. Restrained charcoal grey accents only, no bright colors, no gold, no glow, no gradients, no photorealism. No lettering, words, numbers, UI, border, title or watermark. Subject: a large antique pocket watch dragged downward by a heavy iron chain and angular weight, the watch tilted as if slipping away. Clock face has plain radial tick marks and two hands, absolutely no numbers. Broken quill trapped underneath, a few carved motion strokes convey wasted time and mounting urgency. Full circular watch and weighted chain clearly visible."
+  },
+  {
+    "name": "误解",
+    "slug": "wujie",
+    "type": "curse",
+    "prompt": "Use case: stylized-concept. Create ONE square standalone card illustration for the game Memory Hero, not a card layout. Black ink woodcut engraving on opaque warm bone-white paper, bold irregular carved outlines, dense but controlled crosshatching, aged printed texture, strong readable silhouette at small size. Rich crafted detail, not minimalist. Center full object cluster with 8 percent clear margin, no crop. Restrained charcoal grey accents only, no bright colors, no gold, no glow, no gradients, no photorealism. No lettering, words, numbers, UI, border, title or watermark. Subject: a scholar's snapped quill pointing into a menacing empty medieval breastplate, with two overlapping armor plates and a small cracked heart-shaped wax seal beneath. A curling strip of blank parchment connects quill to breastplate as a visual metaphor for misguided knowledge strengthening an opponent at personal cost. Breastplate is dominant, no person inside, no shield, no blood, no letters."
+  }
+]

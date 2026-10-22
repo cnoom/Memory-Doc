@@ -1,0 +1,69 @@
+{
+  "batch": "relics-e01",
+  "assets": [
+    {
+      "id": "relic_memory_crystal_etching_e01",
+      "name": "记忆水晶",
+      "category": "relics",
+      "png": "relics/relic_memory_crystal_etching_e01.png",
+      "width": 256,
+      "height": 256,
+      "rarity": "common",
+      "sourceResolution": [
+        1254,
+        1254
+      ],
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "fc22105958fb2d7d948d4ae2e4a721fd37a4a22bbaa3bf60d5711fdf5d6b6739"
+    },
+    {
+      "id": "relic_resonance_stone_etching_e01",
+      "name": "共鸣石",
+      "category": "relics",
+      "png": "relics/relic_resonance_stone_etching_e01.png",
+      "width": 256,
+      "height": 256,
+      "rarity": "common",
+      "sourceResolution": [
+        1254,
+        1254
+      ],
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "e1757b175c8af74b9d796b46ac85641a21f59c7d7ee73eb4f376e626a3274da3"
+    },
+    {
+      "id": "relic_first_aid_kit_etching_e01",
+      "name": "急救包",
+      "category": "relics",
+      "png": "relics/relic_first_aid_kit_etching_e01.png",
+      "width": 256,
+      "height": 256,
+      "rarity": "common",
+      "sourceResolution": [
+        1254,
+        1254
+      ],
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "ecd2368c9793dc633e063cb18973883df3cf96889600db6501ebfcff8112d09a"
+    },
+    {
+      "id": "relic_slow_seal_etching_e01",
+      "name": "减速印记",
+      "category": "relics",
+      "png": "relics/relic_slow_seal_etching_e01.png",
+      "width": 256,
+      "height": 256,
+      "rarity": "uncommon",
+      "sourceResolution": [
+        1254,
+        1254
+      ],
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "3166759bece247038a5acb79d162031b73f2705ccd8a939b8feb4349240976bb"
+    }
+  ]
+}

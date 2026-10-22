@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-11",
+  "approvalQuote": "卡背也没问题",
+  "scope": "Universal C03 card back only",
+  "files": [
+    {
+      "source": "ImageReview/cardbacks/cardback_universal_ornate_c03.png",
+      "target": "Assets/UI/cardbacks/cardback_universal_ornate_c03.png",
+      "sha256": "7f324b0508b562f3aa3ac587690acf451456584091d8940171f9a13a52b34927"
+    }
+  ]
+}

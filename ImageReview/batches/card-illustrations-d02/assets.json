@@ -1,0 +1,58 @@
+{
+  "batch": "card-illustrations-d02",
+  "date": "2026-10-11",
+  "status": "pending-review",
+  "assets": [
+    {
+      "id": "card_attack_pizhu_etching_d02",
+      "name": "批注",
+      "category": "cards",
+      "png": "cards/card_attack_pizhu_etching_d02.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "a1c8beb7b10d582049babef654977263d8fc92bbc686f3cc6cd45e8ba829be3f",
+      "sourceResolution": [
+        1254,
+        1254
+      ],
+      "exportMethod": "Unchanged generated original; opaque bone-white paper background",
+      "type": "attack"
+    },
+    {
+      "id": "card_skill_mulu_etching_d02",
+      "name": "目录",
+      "category": "cards",
+      "png": "cards/card_skill_mulu_etching_d02.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "ee285786e400c80dffd1d1c3f7f994e86f2563788955117c8d7358906f92dc76",
+      "sourceResolution": [
+        1254,
+        1254
+      ],
+      "exportMethod": "Unchanged generated original; opaque bone-white paper background",
+      "type": "skill"
+    },
+    {
+      "id": "card_skill_suji_etching_d02",
+      "name": "速记",
+      "category": "cards",
+      "png": "cards/card_skill_suji_etching_d02.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "58cb1f580ec32bf71b60c75113e42dbcf5227a38eb7d5886f80c16e24e43d49f",
+      "sourceResolution": [
+        1254,
+        1254
+      ],
+      "exportMethod": "Unchanged generated original; opaque bone-white paper background",
+      "type": "skill"
+    }
+  ]
+}

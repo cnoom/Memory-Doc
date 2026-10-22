@@ -1,0 +1,43 @@
+{
+  "status": "approved",
+  "productionEligible": false,
+  "role": "v1-static-flow-reference-batch",
+  "outputs": [
+    "victory",
+    "defeat",
+    "character_select",
+    "journey_profile",
+    "journey_cards",
+    "journey_cards_empty",
+    "journey_relics",
+    "journey_relics_empty",
+    "event_card_result",
+    "event_relic_result"
+  ],
+  "dependencies": {
+    "border_card_attack_ornate_c04": "Assets/UI/cardframes/border_card_attack_ornate_c04.png",
+    "card_attack_daji_etching_b01": "Assets/UI/cards/card_attack_daji_etching_b01.png",
+    "border_card_skill_ornate_c05": "Assets/UI/cardframes/border_card_skill_ornate_c05.png",
+    "card_skill_gedang_etching_b01": "Assets/UI/cards/card_skill_gedang_etching_b01.png",
+    "card_attack_biji_etching_b01": "Assets/UI/cards/card_attack_biji_etching_b01.png",
+    "card_attack_dushubiji_illustration_v02": "Assets/UI/cards/card_attack_dushubiji_illustration_v02.png",
+    "bg_battle_empty_a01": "Assets/UI/backgrounds/bg_battle_empty_a01.png",
+    "panel_paper_a03": "Assets/UI/panels/panel_paper_a03.png",
+    "ornament_memory_ring_b03": "Assets/UI/ornaments/ornament_memory_ring_b03.png",
+    "btn_secondary_normal_b03": "Assets/UI/buttons/btn_secondary_normal_b03.png",
+    "btn_primary_normal_b03": "Assets/UI/buttons/btn_primary_normal_b03.png",
+    "bg_main_menu_h03": "Assets/UI/backgrounds/bg_main_menu_h03.png",
+    "portrait_scholar_etching_b01": "Assets/UI/portraits/portrait_scholar_etching_b01.png",
+    "bg_map_i04": "Assets/UI/backgrounds/bg_map_i04.png",
+    "relic_memory_crystal_etching_e01": "Assets/UI/relics/relic_memory_crystal_etching_e01.png",
+    "relic_first_aid_kit_etching_e01": "Assets/UI/relics/relic_first_aid_kit_etching_e01.png",
+    "ill_event_diary_etching_g01": "Assets/UI/illustrations/ill_event_diary_etching_g01.png",
+    "ill_event_caravan_gift_etching_g01": "Assets/UI/illustrations/ill_event_caravan_gift_etching_g01.png"
+  },
+  "note": "All numeric values are illustrative; static reference only.",
+  "approvedOn": "2026-10-15",
+  "approvalQuote": "可以",
+  "visualStatus": "final",
+  "implementationStatus": "not-verified",
+  "runtimeTexture": false
+}

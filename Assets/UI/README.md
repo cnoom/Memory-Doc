@@ -1,9 +1,7 @@
-# Assets/UI — 正式美术资产（实际应用区）
+# 已收录美术资源
 
-本目录存放**用户拍板确认后正式发布**的游戏美术资产，位于项目根目录 `Assets/UI/`（与将来 Unity 项目的资源路径一致），随仓库进 git，被 `docs/design/` 下的设计文档以相对路径嵌入（从任一设计文档引用均为 `../../Assets/UI/<类型>/<文件>.png`，如 `![记忆水晶](../../Assets/UI/relics/relic_memory_crystal.png)`）。
+开发接入先读 [13·开发AI美术资源使用说明](../../docs/design/13-开发AI美术资源使用说明.md)，使用 [归一化资源索引](../../docs/design/art-inventory/developer-asset-registry.json) 查找准确文件路径与用途。
 
-- 生成与发布流程见 [.agents/skills/mh-art/SKILL.md](../../.agents/skills/mh-art/SKILL.md)，候选/归档在仓库根 `ImageReview/`（同样进 git，便于远端查看）。
-- 命名与规格遵循 [10-UI美术资源规格 §9](../../docs/design/10-UI美术资源规格.md)（全小写 snake_case + 类别前缀），完整名录见 [.agents/skills/mh-art/references/asset-specs.md](../../.agents/skills/mh-art/references/asset-specs.md)。
-- 子目录：**按类型分目录**，目录名与 `ImageReview/<类型>/` 一致——`cards/` `cardbacks/` `cardframes/` `icons/` `relics/` `potions/` `map-nodes/` `enemies/` `portraits/` `backgrounds/` `textures/` `logos/` `mockups/` `buttons/` `panels/` `illustrations/`；文件名前缀仍保留（双重可辨识）。
-- **发布门槛**：任何资产（含 `ui_mockup.py` 合成的界面示意图）必须先落 `ImageReview/<类型>/` 待用户确认，用户拍板后才可 `--publish` 进本目录；校验/vision 通过不等于发布许可。
-- 只放发布成品，不放候选与草稿；修改已发布资产 = 重新生成候选走 ImageReview 流程、再次经用户确认后覆盖发布，并在嵌入它的文档处检查引用是否仍成立。
+分类目录中的独立资源与 mockups 中的设计参考不同。references 仅表示组合依赖，不能据此批量批准其来源候选。V05 为当前细节基准，B03 为基础组件方向。旧背景包含人物，禁止再叠同一独立人物造成重复。
+
+ImageReview 中的新资源经用户确认后才可收录本目录。收录不代表完成引擎导入、图集、材质、字体或游戏逻辑。旧图已由用户移除，不按历史链接恢复。

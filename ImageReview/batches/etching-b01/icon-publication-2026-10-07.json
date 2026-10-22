@@ -1,0 +1,338 @@
+{
+  "date": "2026-10-07",
+  "userReply": "可以",
+  "reviewImage": "ImageReview/batches/etching-b01/review_icons_2026-10-07.png",
+  "scope": "15 displayed B01 icons, PNG and SVG formats; no other batch assets.",
+  "assets": [
+    {
+      "id": "icon_type_attack_etching_b01",
+      "name": "攻击类型",
+      "width": 192,
+      "height": 192,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_type_attack_etching_b01.png",
+          "published": "Assets/UI/icons/icon_type_attack_etching_b01.png",
+          "sha256": "0569510169198fac6dbe4d3a2ec928d6f42a8e81e1205c78cad7cab9a32d249c"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_type_attack_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_type_attack_etching_b01.svg",
+          "sha256": "98a1b7b85277684a13782de0d862bed9ce6f7a54c0de8a7b11b80e86a8b7d425"
+        }
+      }
+    },
+    {
+      "id": "icon_type_skill_etching_b01",
+      "name": "技能类型",
+      "width": 192,
+      "height": 192,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_type_skill_etching_b01.png",
+          "published": "Assets/UI/icons/icon_type_skill_etching_b01.png",
+          "sha256": "5346c1129210083a1c92f391505c1578a0f5ae045aac76cb367cae3b02a56ec0"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_type_skill_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_type_skill_etching_b01.svg",
+          "sha256": "b6f58ebddfa5d7c81bab897f21b1fbfb327d4e49d8ede399f922eb05137e869e"
+        }
+      }
+    },
+    {
+      "id": "icon_type_ability_etching_b01",
+      "name": "能力类型",
+      "width": 192,
+      "height": 192,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_type_ability_etching_b01.png",
+          "published": "Assets/UI/icons/icon_type_ability_etching_b01.png",
+          "sha256": "f9224f596884806b8f2fcdc3d7cdc629251eace0c31f5ee9201cabca9e405427"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_type_ability_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_type_ability_etching_b01.svg",
+          "sha256": "6fde2addf2a324bcc73965bbc0051743819b780e91f3050f9c1820bf1c63cc4f"
+        }
+      }
+    },
+    {
+      "id": "icon_type_curse_etching_b01",
+      "name": "诅咒类型",
+      "width": 192,
+      "height": 192,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_type_curse_etching_b01.png",
+          "published": "Assets/UI/icons/icon_type_curse_etching_b01.png",
+          "sha256": "edfe46ebe6a22555e87d8ac013b7d45732c7549359f130392cd063282208c7b8"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_type_curse_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_type_curse_etching_b01.svg",
+          "sha256": "8c3d15c680e41cf8016cebe64cbe0440c12fb7a419a5e8f5b67490723c14327c"
+        }
+      }
+    },
+    {
+      "id": "icon_status_burn_etching_b01",
+      "name": "灼烧",
+      "width": 160,
+      "height": 160,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_status_burn_etching_b01.png",
+          "published": "Assets/UI/icons/icon_status_burn_etching_b01.png",
+          "sha256": "c987b699df265693cba2b0a51451323ed68c274af070109fed57334fc6d8ca77"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_status_burn_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_status_burn_etching_b01.svg",
+          "sha256": "52cdbfa0403d9148962b64acb2226003afeae0ce8ab215fdfacf028e26388d3f"
+        }
+      }
+    },
+    {
+      "id": "icon_status_freeze_etching_b01",
+      "name": "冰冻",
+      "width": 160,
+      "height": 160,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_status_freeze_etching_b01.png",
+          "published": "Assets/UI/icons/icon_status_freeze_etching_b01.png",
+          "sha256": "f67bfc06222df1f953ef2133fe3cfa06aabe4a52d37cac2390c74949eb3d2726"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_status_freeze_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_status_freeze_etching_b01.svg",
+          "sha256": "32f8b0a7bb0104d0b44b683912b0c4ace89afe68ddc06ba7624bf2a476d29817"
+        }
+      }
+    },
+    {
+      "id": "icon_status_poison_etching_b01",
+      "name": "中毒",
+      "width": 160,
+      "height": 160,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_status_poison_etching_b01.png",
+          "published": "Assets/UI/icons/icon_status_poison_etching_b01.png",
+          "sha256": "e437e47f64d2b6ad2b46b5f6b140597d0224d56024d8287c1e3195cc0051ccff"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_status_poison_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_status_poison_etching_b01.svg",
+          "sha256": "fbc0d3fd9ac3879050988d31ff6f5aadfae876535501fa41282debbe7c4bba67"
+        }
+      }
+    },
+    {
+      "id": "icon_status_armor_etching_b01",
+      "name": "护甲",
+      "width": 160,
+      "height": 160,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_status_armor_etching_b01.png",
+          "published": "Assets/UI/icons/icon_status_armor_etching_b01.png",
+          "sha256": "5911ec6604caa7585b9c558c5dc9df2237ee998013d93920ce22f584e7083ff4"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_status_armor_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_status_armor_etching_b01.svg",
+          "sha256": "484e1111f6a3e824a345616d3952b88e42f2104d829def7bd268071d0def30b4"
+        }
+      }
+    },
+    {
+      "id": "icon_status_vulnerable_etching_b01",
+      "name": "易伤",
+      "width": 160,
+      "height": 160,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_status_vulnerable_etching_b01.png",
+          "published": "Assets/UI/icons/icon_status_vulnerable_etching_b01.png",
+          "sha256": "75a30189a4dade8d99acc956e9117fbb5ff06fecbedf3ae1ca1e1c2821e7ec57"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_status_vulnerable_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_status_vulnerable_etching_b01.svg",
+          "sha256": "d86826b5c1496fe9324c6d9e0c042b11dbf93dd380fc5451e0ab6e709081bf7b"
+        }
+      }
+    },
+    {
+      "id": "icon_status_weak_etching_b01",
+      "name": "虚弱",
+      "width": 160,
+      "height": 160,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_status_weak_etching_b01.png",
+          "published": "Assets/UI/icons/icon_status_weak_etching_b01.png",
+          "sha256": "5bcef50a7ac23dfd2e66014f84e194cb26d20687f4e4a4afc3bc3caf2d80ac67"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_status_weak_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_status_weak_etching_b01.svg",
+          "sha256": "af1e2f2999063536ce77a89657fda7a399ff405ceba32fa50f279669a3912737"
+        }
+      }
+    },
+    {
+      "id": "icon_intent_attack_etching_b01",
+      "name": "攻击意图",
+      "width": 192,
+      "height": 192,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_intent_attack_etching_b01.png",
+          "published": "Assets/UI/icons/icon_intent_attack_etching_b01.png",
+          "sha256": "a4d4ea40db55a0f7d48382f36a89628a01a5cc112911976799708014d3b45966"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_intent_attack_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_intent_attack_etching_b01.svg",
+          "sha256": "ab3d7adab7734bf48cb19fd18257396bcde88cd1e5e34cd5f5b316874c2189b0"
+        }
+      }
+    },
+    {
+      "id": "icon_intent_charge_etching_b01",
+      "name": "蓄力意图",
+      "width": 192,
+      "height": 192,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_intent_charge_etching_b01.png",
+          "published": "Assets/UI/icons/icon_intent_charge_etching_b01.png",
+          "sha256": "f68670a25fa8b1bf9a84bb9d0426e7c86d0e128f5787fd89084c81fab211b696"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_intent_charge_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_intent_charge_etching_b01.svg",
+          "sha256": "2740337087a544f23871345b75141d25577d961f9664728e721ef56bdab303f2"
+        }
+      }
+    },
+    {
+      "id": "icon_intent_defend_etching_b01",
+      "name": "防御意图",
+      "width": 192,
+      "height": 192,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_intent_defend_etching_b01.png",
+          "published": "Assets/UI/icons/icon_intent_defend_etching_b01.png",
+          "sha256": "08395b6801f069d9852b1595e6a50f503e7c3fb0aa00f5c0571ea8d861f6e336"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_intent_defend_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_intent_defend_etching_b01.svg",
+          "sha256": "e4d2c61122e645355c2411fee8c12bb15c2c42a69ee3f51f79272989238ae66f"
+        }
+      }
+    },
+    {
+      "id": "icon_intent_special_etching_b01",
+      "name": "特殊意图",
+      "width": 192,
+      "height": 192,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_intent_special_etching_b01.png",
+          "published": "Assets/UI/icons/icon_intent_special_etching_b01.png",
+          "sha256": "9be56c8ea89323992304f73009b47996d20730455f7b196d859fb34b03fbad3b"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_intent_special_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_intent_special_etching_b01.svg",
+          "sha256": "307d5075bbf75b8693bdd465572e24604218ae7e6d5a6d9a2d8e5cd5c1cd6eca"
+        }
+      }
+    },
+    {
+      "id": "icon_intent_berserk_etching_b01",
+      "name": "狂暴意图",
+      "width": 192,
+      "height": 192,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "files": {
+        "png": {
+          "source": "ImageReview/icons/icon_intent_berserk_etching_b01.png",
+          "published": "Assets/UI/icons/icon_intent_berserk_etching_b01.png",
+          "sha256": "aeb50fc437ab3408aff170205bdb35e0fd7014188159463e9cef9c297e611c91"
+        },
+        "svg": {
+          "source": "ImageReview/icons/icon_intent_berserk_etching_b01.svg",
+          "published": "Assets/UI/icons/icon_intent_berserk_etching_b01.svg",
+          "sha256": "df297848fdf5686a13d4c3b709a62620f4c6807adc9580d3b410931de528824c"
+        }
+      }
+    }
+  ]
+}

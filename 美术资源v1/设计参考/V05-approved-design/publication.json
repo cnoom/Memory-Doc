@@ -1,0 +1,82 @@
+{
+  "status": "approved",
+  "approval": "可以了，就这样的细节吧",
+  "files": [
+    {
+      "path": "app.js",
+      "sha256": "ac12638f5a9caef05b35b0332c51afe747cdbbbe72c88f6d2ca0994ea07b0782"
+    },
+    {
+      "path": "details.css",
+      "sha256": "5457fa08ef37fe779dc7c8c39d33f119f98c6ab3711c0cc1c5436eb53f0d9335"
+    },
+    {
+      "path": "details.js",
+      "sha256": "ea34433d3a80512ada0413bdf80a76f94bab2af93db4447f0e2fe878d582b480"
+    },
+    {
+      "path": "index.html",
+      "sha256": "520233b99ecf190014b9d5089c046101a5dfeae577d0ce311aa39ffc57360092"
+    },
+    {
+      "path": "journal.css",
+      "sha256": "636b23db1f38c8fb0ff1f8bdbf3435bf1040524d2d8671339be7213b91e064a2"
+    },
+    {
+      "path": "journal.js",
+      "sha256": "878730dd0f84bb78ff678d783a6a6cc6eb15c4f42f69ce426e2c23075b9955b2"
+    },
+    {
+      "path": "overlap-validation.json",
+      "sha256": "7f8b4bdcc1102786f7b4cc3279b152d1068a053b22da0a33c1e743f383e72969"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9d983611c9764b491da9aa36d788fc51d03db0a2c375ffd6c03632a99a905d2f"
+    },
+    {
+      "path": "review_battle_1080.png",
+      "sha256": "70bd4bc246f7bee8d83d7aadf954bb3c0e17554dec931c2bfcec6e5672ecc0c4"
+    },
+    {
+      "path": "review_battle_720.png",
+      "sha256": "e6af4d3bae744e9134522c795521696b6c3e3ea56a43268a1b6c43442d748c93"
+    },
+    {
+      "path": "review_battle_danger_1080.png",
+      "sha256": "d4b3ffa13aedcd503bf0642515c9f0d17853893461cbf88bdd79223d595ca2ac"
+    },
+    {
+      "path": "review_battle_danger_720.png",
+      "sha256": "337274d8add655f408995b7880ee6a328a5fe4f4bb29e56786ac7a1dfdff8524"
+    },
+    {
+      "path": "review_pause_1080.png",
+      "sha256": "63bd3ef66e5ce61ea9b6fc9b87070ef80100c052dc09a94d8cb646746334b91e"
+    },
+    {
+      "path": "review_pause_720.png",
+      "sha256": "a68c0934e337e364b2c2cf5f282f1d7e093a5637d0bead5adaac1bbf676c3516"
+    },
+    {
+      "path": "style.css",
+      "sha256": "113e29cbec16e8d99aa06d7af523fccbf2b48c7b4d2b35ea5362f27b7b7a5ee9"
+    },
+    {
+      "path": "validation.json",
+      "sha256": "8a3b12650da5f4d0f9a11fe85e1827ebc2a96fcee9e487f3c7aad62e4347551c"
+    },
+    {
+      "path": "references/bg_battle_etching_textless_v02.png",
+      "sha256": "374d20cf823eda5a5ea6d919e0b504c76d69f334f389bea7f40db64d66bbcfb5"
+    },
+    {
+      "path": "references/card_attack_dushubiji_illustration_v02.png",
+      "sha256": "c9abd1a94ed7afeec4d63252cdb7507f4438efce6767a1ad5c2549be84978d05"
+    },
+    {
+      "path": "references/portrait_scholar_etching_b01.png",
+      "sha256": "2460295476b4f0137e1738a03aa68507ab6b88f6841f2910d41cd14c2cf350ba"
+    }
+  ]
+}

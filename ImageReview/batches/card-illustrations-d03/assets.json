@@ -1,0 +1,102 @@
+{
+  "batch": "card-illustrations-d03",
+  "date": "2026-10-11",
+  "assets": [
+    {
+      "id": "card_attack_pangzhengboyin_etching_d03",
+      "name": "旁征博引",
+      "category": "cards",
+      "png": "cards/card_attack_pangzhengboyin_etching_d03.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "298a11abb4218608bf8e66213381be31ce1323048f69d734e9c50118ed7c40d8",
+      "type": "attack"
+    },
+    {
+      "id": "card_attack_yinjingjudian_etching_d03",
+      "name": "引经据典",
+      "category": "cards",
+      "png": "cards/card_attack_yinjingjudian_etching_d03.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "ce981570bbdc493ccad926852e5f53f9537df53de4fa8ae077f167cc422440f5",
+      "type": "attack"
+    },
+    {
+      "id": "card_skill_suoyin_etching_d03",
+      "name": "索引",
+      "category": "cards",
+      "png": "cards/card_skill_suoyin_etching_d03.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "a7bba01f4c85e2123d105f4cbb8ff109c0abcc44fcbac70a08c886ff70cb3ee1",
+      "type": "skill"
+    },
+    {
+      "id": "card_skill_zhaiyao_etching_d03",
+      "name": "摘要",
+      "category": "cards",
+      "png": "cards/card_skill_zhaiyao_etching_d03.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "39bc8536a7d28369e144272d12cc805b202e91aaa49fb52a11405aa4f0055585",
+      "type": "skill"
+    },
+    {
+      "id": "card_skill_bijibengedang_etching_d03",
+      "name": "笔记本格挡",
+      "category": "cards",
+      "png": "cards/card_skill_bijibengedang_etching_d03.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "7ad2bf94e9f06a3be71175518f88cad6267ac96f9d7a210d3a073ce84015b893",
+      "type": "skill"
+    },
+    {
+      "id": "card_ability_bowenqiangshi_etching_d03",
+      "name": "博闻强识",
+      "category": "cards",
+      "png": "cards/card_ability_bowenqiangshi_etching_d03.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "e6694bcb742382f7305e88f944700dbfbf0c7cfcf36d037a44fe4e51d4ae1387",
+      "type": "ability"
+    },
+    {
+      "id": "card_ability_guomubuwang_etching_d03",
+      "name": "过目不忘",
+      "category": "cards",
+      "png": "cards/card_ability_guomubuwang_etching_d03.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "8dffe94783f6981ee3168e9ff45bf77405740d72defd412497b231fde6f62754",
+      "type": "ability"
+    },
+    {
+      "id": "card_ability_xueshuzhijue_etching_d03",
+      "name": "学术直觉",
+      "category": "cards",
+      "png": "cards/card_ability_xueshuzhijue_etching_d03.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "5ad01500a6efdc14b93b241442b71dddf1a93181520db131f0b95d7f49d2707c",
+      "type": "ability"
+    }
+  ]
+}

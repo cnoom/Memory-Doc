@@ -1,0 +1,14 @@
+{
+  "errors": [],
+  "check": {
+    "overflow": false,
+    "broken": 0
+  },
+  "verified": [
+    "comparison",
+    "critical 9/10",
+    "settings dialog and Escape",
+    "collapse and reopen",
+    "1280px layout"
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "破甲斩",
+    "slug": "pojiazhan",
+    "type": "attack",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy game card illustration, black ink woodcut engraving on opaque warm bone-white paper. Bold carved silhouette, rich controlled hatching, handcrafted aged print. Center entire subject with clear margins. No text, letters, numbers, UI, border, watermark, glow, gradients, 3D or photorealism. A broad sword cleaving an empty metal breastplate into two visibly separated cracked halves, small metal shards, no person or gore. Diagonal blade and split armor silhouette, tiny dark brick-red hilt cord."
+  },
+  {
+    "name": "致残击",
+    "slug": "zhicanji",
+    "type": "attack",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy game card illustration, black ink woodcut engraving on opaque warm bone-white paper. Bold carved silhouette, rich controlled hatching, handcrafted aged print. Center entire subject with clear margins. No text, letters, numbers, UI, border, watermark, glow, gradients, 3D or photorealism. A heavy spiked mace striking and bending an empty armored gauntlet, fingers collapsed and wrist plate cracked; a few impact strokes. No flesh or gore. Dominant round mace head above crumpled gauntlet, tiny dark brick-red cloth accent."
+  },
+  {
+    "name": "连锁雷",
+    "slug": "liansuolei",
+    "type": "attack",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy game card illustration, black ink woodcut engraving on opaque warm bone-white paper. Bold carved silhouette, rich controlled hatching, handcrafted aged print. Center entire subject with clear margins. No text, letters, numbers, UI, border, watermark, glow, gradients, 3D or photorealism. A bold zigzag lightning bolt branching between three small floating blank cards, black carved lightning edges with muted brick-red inner streak. Strong angular branching silhouette, restrained sparks, no electric glow."
+  },
+  {
+    "name": "绝响",
+    "slug": "juexiang",
+    "type": "attack",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy game card illustration, black ink woodcut engraving on opaque warm bone-white paper. Bold carved silhouette, rich controlled hatching, handcrafted aged print. Center entire subject with clear margins. No text, letters, numbers, UI, border, watermark, glow, gradients, 3D or photorealism. An ornate cracked bronze war horn with its mouthpiece broken away, a final broad curling band of sound bursting from the bell, a small dark red ribbon. Full curved horn silhouette, no musical notes or text."
+  },
+  {
+    "name": "铁壁",
+    "slug": "tiebi",
+    "type": "skill",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy game card illustration, black ink woodcut engraving on opaque warm bone-white paper. Bold carved silhouette, rich controlled hatching, handcrafted aged print. Center entire subject with clear margins. No text, letters, numbers, UI, border, watermark, glow, gradients, 3D or photorealism. A squat massive riveted iron fortress wall with three battlements, thick reinforced central gate and a tiny muted steel-blue banner. Heavy blocky silhouette, no landscape, no people."
+  },
+  {
+    "name": "清理",
+    "slug": "qingli",
+    "type": "skill",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy game card illustration, black ink woodcut engraving on opaque warm bone-white paper. Bold carved silhouette, rich controlled hatching, handcrafted aged print. Center entire subject with clear margins. No text, letters, numbers, UI, border, watermark, glow, gradients, 3D or photorealism. A small stiff bristle brush sweeping a blackened blank card aside while a clean blank card slides into the vacated space, a few dust flecks. Brush is dominant, muted steel-blue handle wrap, clear practical tabletop cleaning metaphor, no words."
+  },
+  {
+    "name": "绷带",
+    "slug": "bengdai",
+    "type": "skill",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy game card illustration, black ink woodcut engraving on opaque warm bone-white paper. Bold carved silhouette, rich controlled hatching, handcrafted aged print. Center entire subject with clear margins. No text, letters, numbers, UI, border, watermark, glow, gradients, 3D or photorealism. A large rolled linen bandage partly unfurled into a broad protective loop, a small herb sprig and safety pin beside it. Detailed woven fabric engraving, tiny muted steel-blue tie, no wounds, no medical text, compact spiral silhouette."
+  },
+  {
+    "name": "守护结界",
+    "slug": "shouhujiejie",
+    "type": "ability",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy game card illustration, black ink woodcut engraving on opaque warm bone-white paper. Bold carved silhouette, rich controlled hatching, handcrafted aged print. Center entire subject with clear margins. No text, letters, numbers, UI, border, watermark, glow, gradients, 3D or photorealism. An ornate small stone obelisk at the center of a protective arch formed by layered engraved concentric rings, two blank cards safely underneath. Muted dusty purple in a few ring segments. Clear domed silhouette, no runic letters or glow."
+  },
+  {
+    "name": "余烬",
+    "slug": "yujin",
+    "type": "ability",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy game card illustration, black ink woodcut engraving on opaque warm bone-white paper. Bold carved silhouette, rich controlled hatching, handcrafted aged print. Center entire subject with clear margins. No text, letters, numbers, UI, border, watermark, glow, gradients, 3D or photorealism. A pile of three charred logs holding a single persistent small flame above a dark ember core, flecks of ash and carved smoke. Tiny muted burnt-red embers and dusty purple binding ribbon near base. Low triangular silhouette, no large fireball."
+  },
+  {
+    "name": "风眼",
+    "slug": "fengyan",
+    "type": "ability",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy game card illustration, black ink woodcut engraving on opaque warm bone-white paper. Bold carved silhouette, rich controlled hatching, handcrafted aged print. Center entire subject with clear margins. No text, letters, numbers, UI, border, watermark, glow, gradients, 3D or photorealism. A spiral of three bold carved wind ribbons circling an unmistakable quiet hollow center, two small blank cards caught on outer rim. Sparse muted dusty-purple ribbon accents. Strong circular vortex silhouette, no literal human eye, no glow."
+  }
+]

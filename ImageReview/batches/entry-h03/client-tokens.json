@@ -1,0 +1,21 @@
+{
+  "canvas": [
+    1920,
+    1080
+  ],
+  "colorSpace": "sRGB",
+  "textOpacity": 1,
+  "colors": {
+    "text": "#252F32",
+    "onPrimary": "#F1EEE2",
+    "secondary": "#48575A",
+    "disabledOnPrimary": "#485356",
+    "disabledOnSecondary": "#657174",
+    "error": "#8D3D35",
+    "accentOnDark": "#A8C5CA",
+    "track": "#283438",
+    "trackOuter": "#687C7F",
+    "trackInner": "#BBC3B6",
+    "fill": "#91ADB2"
+  }
+}

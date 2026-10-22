@@ -1,0 +1,38 @@
+[
+  {
+    "name": "侦察兵",
+    "slug": "zhenchabing",
+    "type": "skill",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy card illustration, Memory Hero game. Rich black ink woodcut engraving, bold carved outlines, controlled fine crosshatching on opaque warm bone-white paper. Full centered subject with clear margins, strong silhouette readable very small. Small muted steel-blue accents only. No text, lettering, numbers, UI, border, watermark, glow, gradients or 3D. A hooded scout bust in three-quarter profile looking through a short antique brass spyglass held in a gloved hand. Weathered cloak clasp and small blue scarf, compact clear hood and horizontal spyglass silhouette. No scene background, no modern equipment."
+  },
+  {
+    "name": "石肤",
+    "slug": "shifu",
+    "type": "skill",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy card illustration, Memory Hero game. Rich black ink woodcut engraving, bold carved outlines, controlled fine crosshatching on opaque warm bone-white paper. Full centered subject with clear margins, strong silhouette readable very small. Small muted steel-blue accents only. No text, lettering, numbers, UI, border, watermark, glow, gradients or 3D. A large clenched human fist and forearm transformed into rugged stone, polygonal rock plates across knuckles and wrist, small chips falling away, fine engraved cracks. Small blue cloth wrist wrap. No armor gauntlet, no shield. Dominant upright rocky fist silhouette."
+  },
+  {
+    "name": "甲胄",
+    "slug": "jiazhou",
+    "type": "skill",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy card illustration, Memory Hero game. Rich black ink woodcut engraving, bold carved outlines, controlled fine crosshatching on opaque warm bone-white paper. Full centered subject with clear margins, strong silhouette readable very small. Small muted steel-blue accents only. No text, lettering, numbers, UI, border, watermark, glow, gradients or 3D. A complete ornate medieval breastplate displayed frontally with paired shoulder guards, engraved leaf ornament, rivets and layered waist plates. Short blue cloth drape behind shoulders. Symmetrical upright armor silhouette, no wearer, no quill, no weapons, no shield."
+  },
+  {
+    "name": "消散风",
+    "slug": "xiaosanfeng",
+    "type": "skill",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy card illustration, Memory Hero game. Rich black ink woodcut engraving, bold carved outlines, controlled fine crosshatching on opaque warm bone-white paper. Full centered subject with clear margins, strong silhouette readable very small. Small muted steel-blue accents only. No text, lettering, numbers, UI, border, watermark, glow, gradients or 3D. A forceful sideways curling gust of wind represented as carved black flowing ribbons, sweeping a single blank rectangular card into scattered torn paper fragments. Tiny muted blue ribbon interwoven in wind. Wide airy horizontal silhouette, no eye, no tornado cone, no text."
+  },
+  {
+    "name": "生命泉",
+    "slug": "shengmingquan",
+    "type": "skill",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy card illustration, Memory Hero game. Rich black ink woodcut engraving, bold carved outlines, controlled fine crosshatching on opaque warm bone-white paper. Full centered subject with clear margins, strong silhouette readable very small. Small muted steel-blue accents only. No text, lettering, numbers, UI, border, watermark, glow, gradients or 3D. An ancient small stone fountain shaped as a shallow carved bowl, clear water bubbling upward and spilling in two arcs, young leaves growing around pedestal, a small heart-shaped relief carved in basin. Sparse muted blue water accents. Compact symmetrical fountain silhouette, no letters, no figures."
+  },
+  {
+    "name": "回声",
+    "slug": "huisheng",
+    "type": "skill",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy card illustration, Memory Hero game. Rich black ink woodcut engraving, bold carved outlines, controlled fine crosshatching on opaque warm bone-white paper. Full centered subject with clear margins, strong silhouette readable very small. Small muted steel-blue accents only. No text, lettering, numbers, UI, border, watermark, glow, gradients or 3D. A large antique handbell tilted diagonally, wooden handle and visible clapper, three clean nested engraved curved sound waves traveling outward toward one small blank card tipped upright. Small muted blue ribbon on handle. Bell is dominant, no musical notes, no lettering, no glow."
+  }
+]

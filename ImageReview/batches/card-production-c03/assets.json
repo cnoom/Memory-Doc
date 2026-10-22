@@ -1,0 +1,78 @@
+{
+  "batch": "card-production-c03",
+  "date": "2026-10-11",
+  "status": "pending-review",
+  "approvedDirection": "C02",
+  "assets": [
+    {
+      "id": "border_card_attack_ornate_c03",
+      "category": "cardframes",
+      "png": "cardframes/border_card_attack_ornate_c03.png",
+      "width": 960,
+      "height": 1280,
+      "status": "pending-review",
+      "productionEligible": false,
+      "scaling": "uniform-only",
+      "textBaked": false,
+      "source": "ImageReview/batches/card-production-c03/sources/frame_generated.png",
+      "sourceResolution": [
+        1086,
+        1448
+      ],
+      "exportMethod": "Uniform Lanczos3 downsampling; no cropping, repainting or color changes; generated alpha preserved.",
+      "sha256": "8910df109de79d7d04fa885bd533b9533cab50f430c21a6739202a55c63d5b31",
+      "sourceSha256": "d730e34cc62ab87b5ab30f5527df9c306588ab0f7a64cc5405313c666dec28b1",
+      "window": {
+        "x": 156,
+        "y": 299,
+        "width": 649,
+        "height": 498,
+        "pixels": 319723
+      },
+      "windowMask": "ImageReview/batches/card-production-c03/illustration-window-mask.png",
+      "textSafe": {
+        "title": {
+          "x": 235,
+          "y": 153,
+          "width": 545,
+          "height": 107
+        },
+        "effect": {
+          "x": 180,
+          "y": 858,
+          "width": 600,
+          "height": 192
+        }
+      },
+      "note": "Measured C03 opening differs from B01; do not use old x64/y250/w832/h430. Art below mask, frame above, UI text last."
+    },
+    {
+      "id": "cardback_universal_ornate_c03",
+      "category": "cardbacks",
+      "png": "cardbacks/cardback_universal_ornate_c03.png",
+      "width": 960,
+      "height": 1280,
+      "status": "pending-review",
+      "productionEligible": false,
+      "scaling": "uniform-only",
+      "textBaked": false,
+      "source": "ImageReview/batches/card-production-c03/sources/back_generated.png",
+      "sourceResolution": [
+        1086,
+        1448
+      ],
+      "exportMethod": "Uniform Lanczos3 downsampling; no cropping, repainting or color changes; generated alpha preserved.",
+      "sha256": "7f324b0508b562f3aa3ac587690acf451456584091d8940171f9a13a52b34927",
+      "sourceSha256": "3f15cdf3939a8fd21b3848220c9dc7843a72b18c6be4e6320ad3cbe4f07a9b52",
+      "universal": true,
+      "note": "All hidden cards use the exact same texture and UVs. No random wear, type color or rarity signals."
+    }
+  ],
+  "helpers": [
+    {
+      "path": "ImageReview/batches/card-production-c03/illustration-window-mask.png",
+      "role": "Derived illustration-window mask, same 960x1280 origin"
+    }
+  ],
+  "previewFont": "System Microsoft YaHei/SimSun; no font redistributed"
+}

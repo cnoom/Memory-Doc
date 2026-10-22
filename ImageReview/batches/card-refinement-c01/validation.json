@@ -1,0 +1,34 @@
+[
+  {
+    "id": "border_card_attack_journal_c01a",
+    "width": 960,
+    "height": 1280,
+    "hasAlpha": true,
+    "cornerAlpha": 0,
+    "windowAlpha": 0
+  },
+  {
+    "id": "cardback_universal_journal_c01a",
+    "width": 960,
+    "height": 1280,
+    "hasAlpha": true,
+    "cornerAlpha": 0,
+    "windowAlpha": null
+  },
+  {
+    "id": "border_card_attack_journal_c01b",
+    "width": 960,
+    "height": 1280,
+    "hasAlpha": true,
+    "cornerAlpha": 0,
+    "windowAlpha": 0
+  },
+  {
+    "id": "cardback_universal_journal_c01b",
+    "width": 960,
+    "height": 1280,
+    "hasAlpha": true,
+    "cornerAlpha": 0,
+    "windowAlpha": null
+  }
+]

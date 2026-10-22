@@ -1,0 +1,54 @@
+{
+  "batch": "card-illustrations-d10",
+  "date": "2026-10-13",
+  "assets": [
+    {
+      "id": "card_skill_moligongming_etching_d10",
+      "name": "魔力共鸣",
+      "category": "cards",
+      "png": "cards/card_skill_moligongming_etching_d10.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "87f4fdab2de267ca1099faf61ba41d9cc5dd68d9ca58b069bad19d606c10c437",
+      "type": "skill"
+    },
+    {
+      "id": "card_curse_fuhuazhongzi_etching_d10",
+      "name": "腐化种子",
+      "category": "cards",
+      "png": "cards/card_curse_fuhuazhongzi_etching_d10.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "a425d1c644c50e863b96a022b64a4ac4991072598be050a8a02fadf1592fb93d",
+      "type": "curse"
+    },
+    {
+      "id": "card_curse_jiyichenai_etching_d10",
+      "name": "记忆尘埃",
+      "category": "cards",
+      "png": "cards/card_curse_jiyichenai_etching_d10.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "00f95784a563e7cbf1c5436c90092ffbae728d6528b0698b74f4eb73cf149ee1",
+      "type": "curse"
+    },
+    {
+      "id": "card_curse_xukongliehen_etching_d10",
+      "name": "虚空裂痕",
+      "category": "cards",
+      "png": "cards/card_curse_xukongliehen_etching_d10.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "78cbaeae3f877118f3d7300456cf0e600e0cd7be42ed7908dab59df11b4a17b3",
+      "type": "curse"
+    }
+  ]
+}

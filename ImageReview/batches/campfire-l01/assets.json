@@ -1,0 +1,23 @@
+{
+  "batch": "campfire-l01",
+  "assets": [
+    {
+      "id": "bg_campfire_l01",
+      "png": "backgrounds/bg_campfire_l01.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "native1080p": false,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "34401bb0dc55ab86ae302fef6644649d632a21b293b100c79813a2762f567b14",
+      "approvalQuote": "没问题",
+      "approvedOn": "2026-10-15"
+    }
+  ],
+  "reference": "mockup_campfire_l01_1920x1080.png",
+  "button": "Assets/UI/buttons/btn_primary_normal_b03.png"
+}

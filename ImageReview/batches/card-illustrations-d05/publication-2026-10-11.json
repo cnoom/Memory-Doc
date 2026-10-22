@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-11",
+  "authorizationQuote": "继续吧，这种icon可以批量生成无需向我确认",
+  "approvalMode": "standing-user-authorization-after-agent-review",
+  "scope": "小型卡牌插画；不扩展到卡框、角色立绘或界面",
+  "files": [
+    {
+      "id": "card_ability_baikequanshu_etching_d05",
+      "source": "ImageReview/cards/card_ability_baikequanshu_etching_d05.png",
+      "target": "Assets/UI/cards/card_ability_baikequanshu_etching_d05.png",
+      "sha256": "db00640dba1b22f018f890d0c87fe7ec09754cc02e9872c9c4b708e552605aec"
+    },
+    {
+      "id": "card_skill_wanyouwenku_etching_d05",
+      "source": "ImageReview/cards/card_skill_wanyouwenku_etching_d05.png",
+      "target": "Assets/UI/cards/card_skill_wanyouwenku_etching_d05.png",
+      "sha256": "55071f513dcfc5495311073c07fda7247a85acdd93d1084af9e1b2e82db3d927"
+    },
+    {
+      "id": "card_attack_zhenlizhiyan_etching_d05",
+      "source": "ImageReview/cards/card_attack_zhenlizhiyan_etching_d05.png",
+      "target": "Assets/UI/cards/card_attack_zhenlizhiyan_etching_d05.png",
+      "sha256": "0d1a4b15177e130a3bc5d1c0dba840fe4acb8d6f980aec3fd297e731946f1983"
+    },
+    {
+      "id": "card_skill_shikonghuisu_etching_d05",
+      "source": "ImageReview/cards/card_skill_shikonghuisu_etching_d05.png",
+      "target": "Assets/UI/cards/card_skill_shikonghuisu_etching_d05.png",
+      "sha256": "48733dae6c7b9de63b276a3d53065e36f92e57be396e9b54692e091d80808d4f"
+    },
+    {
+      "id": "card_ability_quanzhiquanneng_etching_d05",
+      "source": "ImageReview/cards/card_ability_quanzhiquanneng_etching_d05.png",
+      "target": "Assets/UI/cards/card_ability_quanzhiquanneng_etching_d05.png",
+      "sha256": "c7dfcf64414b16bee4ea01f0108ff2c57e215354239ca91c0cba9545bbf721c4"
+    },
+    {
+      "id": "card_skill_ronghuiguantong_etching_d05",
+      "source": "ImageReview/cards/card_skill_ronghuiguantong_etching_d05.png",
+      "target": "Assets/UI/cards/card_skill_ronghuiguantong_etching_d05.png",
+      "sha256": "ffd3a9137162cf67d43510289545336cf5af9fe308d52bf751f82ed3a9952a4c"
+    }
+  ]
+}

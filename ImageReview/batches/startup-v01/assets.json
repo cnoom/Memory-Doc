@@ -1,0 +1,23 @@
+{
+  "status": "needs-revision",
+  "productionEligible": false,
+  "canvas": [
+    1920,
+    1080
+  ],
+  "assets": [
+    {
+      "id": "logo_memory_hero_v01",
+      "png": "logos/logo_memory_hero_v01.png",
+      "width": 1254,
+      "height": 1254,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "53673477e38129d965808b5b02ea00905aab4cc7b1703eb7c21282b79f151f38"
+    }
+  ],
+  "composition": "startup_1920x1080.png",
+  "reason": "User found the composition too plain; V02 is new pending direction."
+}

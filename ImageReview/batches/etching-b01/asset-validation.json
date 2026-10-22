@@ -1,0 +1,348 @@
+{
+  "logicalAssetCount": 27,
+  "frameAlphaIdentical": true,
+  "assets": [
+    {
+      "id": "cardback_universal_etching_b01",
+      "size": [
+        960,
+        1280
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "3deb476d4f887eb89e8552f1fd0fab8130f04ee63fa435148d1c53dabb9da780"
+    },
+    {
+      "id": "border_card_attack_etching_b01",
+      "size": [
+        960,
+        1280
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "39ad6d1d44ff5fcadbab402d5db872e41944a15c178ec0620ce617053d109f96"
+    },
+    {
+      "id": "border_card_skill_etching_b01",
+      "size": [
+        960,
+        1280
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "f1462632f68571a3d214727e434268646b775b00a09bc96df138da0f371fef9a"
+    },
+    {
+      "id": "border_card_ability_etching_b01",
+      "size": [
+        960,
+        1280
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "00f8f6fd18fc69b48b8c461a3a7435225bc5fe02bf91a9b1837606806591d580"
+    },
+    {
+      "id": "border_card_curse_etching_b01",
+      "size": [
+        960,
+        1280
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "4424b955cf1e11d642affce8d1bf54fe0db5e3e7a1244a95515d829997a2a67f"
+    },
+    {
+      "id": "icon_type_attack_etching_b01",
+      "size": [
+        192,
+        192
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "0569510169198fac6dbe4d3a2ec928d6f42a8e81e1205c78cad7cab9a32d249c"
+    },
+    {
+      "id": "icon_type_skill_etching_b01",
+      "size": [
+        192,
+        192
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "5346c1129210083a1c92f391505c1578a0f5ae045aac76cb367cae3b02a56ec0"
+    },
+    {
+      "id": "icon_type_ability_etching_b01",
+      "size": [
+        192,
+        192
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "f9224f596884806b8f2fcdc3d7cdc629251eace0c31f5ee9201cabca9e405427"
+    },
+    {
+      "id": "icon_type_curse_etching_b01",
+      "size": [
+        192,
+        192
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "edfe46ebe6a22555e87d8ac013b7d45732c7549359f130392cd063282208c7b8"
+    },
+    {
+      "id": "icon_status_burn_etching_b01",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "c987b699df265693cba2b0a51451323ed68c274af070109fed57334fc6d8ca77"
+    },
+    {
+      "id": "icon_status_freeze_etching_b01",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "f67bfc06222df1f953ef2133fe3cfa06aabe4a52d37cac2390c74949eb3d2726"
+    },
+    {
+      "id": "icon_status_poison_etching_b01",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "e437e47f64d2b6ad2b46b5f6b140597d0224d56024d8287c1e3195cc0051ccff"
+    },
+    {
+      "id": "icon_status_armor_etching_b01",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "5911ec6604caa7585b9c558c5dc9df2237ee998013d93920ce22f584e7083ff4"
+    },
+    {
+      "id": "icon_status_vulnerable_etching_b01",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "75a30189a4dade8d99acc956e9117fbb5ff06fecbedf3ae1ca1e1c2821e7ec57"
+    },
+    {
+      "id": "icon_status_weak_etching_b01",
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "5bcef50a7ac23dfd2e66014f84e194cb26d20687f4e4a4afc3bc3caf2d80ac67"
+    },
+    {
+      "id": "icon_intent_attack_etching_b01",
+      "size": [
+        192,
+        192
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "a4d4ea40db55a0f7d48382f36a89628a01a5cc112911976799708014d3b45966"
+    },
+    {
+      "id": "icon_intent_charge_etching_b01",
+      "size": [
+        192,
+        192
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "f68670a25fa8b1bf9a84bb9d0426e7c86d0e128f5787fd89084c81fab211b696"
+    },
+    {
+      "id": "icon_intent_defend_etching_b01",
+      "size": [
+        192,
+        192
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "08395b6801f069d9852b1595e6a50f503e7c3fb0aa00f5c0571ea8d861f6e336"
+    },
+    {
+      "id": "icon_intent_special_etching_b01",
+      "size": [
+        192,
+        192
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "9be56c8ea89323992304f73009b47996d20730455f7b196d859fb34b03fbad3b"
+    },
+    {
+      "id": "icon_intent_berserk_etching_b01",
+      "size": [
+        192,
+        192
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "aeb50fc437ab3408aff170205bdb35e0fd7014188159463e9cef9c297e611c91"
+    },
+    {
+      "id": "card_attack_daji_etching_b01",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "sha256": "1262c540d30c9828c0085eca9a16c30c54fbcd4359804836d720515e96b21bec"
+    },
+    {
+      "id": "card_skill_gedang_etching_b01",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "sha256": "b094376781fc80396438fa80d9ec93541c37f81f043adc9870eb9dac0ffde000"
+    },
+    {
+      "id": "card_attack_biji_etching_b01",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "alphaRange": null,
+      "sha256": "9b9af2566995326c7105271e6abe6d54b4ce4ff10f58d3ec9a1d6718b79fefa1"
+    },
+    {
+      "id": "portrait_scholar_etching_b01",
+      "size": [
+        1199,
+        1312
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "2460295476b4f0137e1738a03aa68507ab6b88f6841f2910d41cd14c2cf350ba"
+    },
+    {
+      "id": "enemy_chaos_slime_etching_b01",
+      "size": [
+        1308,
+        1202
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "da5674dd669b2eec3d9d63adb21155cfebd5be1760f64d208115393e2b2d4048"
+    },
+    {
+      "id": "enemy_training_dummy_etching_b01",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "sha256": "53e511b7076d5aacb58e78ac9aab8c5eaca5c76bf542130152704e83bb198a87"
+    },
+    {
+      "id": "enemy_goblin_etching_b01",
+      "size": [
+        1168,
+        1346
+      ],
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "54cdf5e4ab9356b9d080b4f2d4ccead11121970209e98d83acc873f5eca0907a"
+    }
+  ]
+}

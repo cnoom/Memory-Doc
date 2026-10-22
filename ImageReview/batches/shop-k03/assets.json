@@ -1,0 +1,21 @@
+{
+  "batch": "shop-k03",
+  "assets": [
+    {
+      "id": "bg_shop_k03",
+      "png": "backgrounds/bg_shop_k03.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "native1080p": false,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "cb4166eb4f6b648ea0ccaf27db9aec1cfab75b2994eec0604193c1188054f77d",
+      "approvalQuote": "继续吧",
+      "approvedOn": "2026-10-15"
+    }
+  ]
+}

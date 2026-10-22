@@ -1,0 +1,30 @@
+{
+  "approvalQuote": "继续吧，没什么问题",
+  "date": "2026-10-13",
+  "files": [
+    {
+      "source": "ImageReview\\relics\\relic_memory_crystal_etching_e01.png",
+      "target": "Assets\\UI\\relics\\relic_memory_crystal_etching_e01.png",
+      "id": "relic_memory_crystal_etching_e01",
+      "sha256": "fc22105958fb2d7d948d4ae2e4a721fd37a4a22bbaa3bf60d5711fdf5d6b6739"
+    },
+    {
+      "source": "ImageReview\\relics\\relic_resonance_stone_etching_e01.png",
+      "target": "Assets\\UI\\relics\\relic_resonance_stone_etching_e01.png",
+      "id": "relic_resonance_stone_etching_e01",
+      "sha256": "e1757b175c8af74b9d796b46ac85641a21f59c7d7ee73eb4f376e626a3274da3"
+    },
+    {
+      "source": "ImageReview\\relics\\relic_first_aid_kit_etching_e01.png",
+      "target": "Assets\\UI\\relics\\relic_first_aid_kit_etching_e01.png",
+      "id": "relic_first_aid_kit_etching_e01",
+      "sha256": "ecd2368c9793dc633e063cb18973883df3cf96889600db6501ebfcff8112d09a"
+    },
+    {
+      "source": "ImageReview\\relics\\relic_slow_seal_etching_e01.png",
+      "target": "Assets\\UI\\relics\\relic_slow_seal_etching_e01.png",
+      "id": "relic_slow_seal_etching_e01",
+      "sha256": "3166759bece247038a5acb79d162031b73f2705ccd8a939b8feb4349240976bb"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-13",
+  "approvalQuote": "可以",
+  "status": "approved",
+  "scope": "Six static enemy illustrations only; no animation or boss phase variants.",
+  "files": [
+    {
+      "id": "enemy_barbarian_etching_f01",
+      "source": "ImageReview/enemies/enemy_barbarian_etching_f01.png",
+      "target": "Assets/UI/enemies/enemy_barbarian_etching_f01.png",
+      "sha256": "e383501605e9003ba2424791db44d82ed2256ee9cd1df1a896d99452a5b77b02"
+    },
+    {
+      "id": "enemy_corrupted_bud_etching_f01",
+      "source": "ImageReview/enemies/enemy_corrupted_bud_etching_f01.png",
+      "target": "Assets/UI/enemies/enemy_corrupted_bud_etching_f01.png",
+      "sha256": "d53d631037bdd906c423730de2cb969cbb330c209b3cce9e749886c303ecf14e"
+    },
+    {
+      "id": "enemy_phantom_etching_f01",
+      "source": "ImageReview/enemies/enemy_phantom_etching_f01.png",
+      "target": "Assets/UI/enemies/enemy_phantom_etching_f01.png",
+      "sha256": "1a5273c834341ff039be1b6265a81d033b5356f72e1f116810ff984a0c08872d"
+    },
+    {
+      "id": "enemy_twinblade_executor_etching_f01",
+      "source": "ImageReview/enemies/enemy_twinblade_executor_etching_f01.png",
+      "target": "Assets/UI/enemies/enemy_twinblade_executor_etching_f01.png",
+      "sha256": "a297d688272852a4577b1cbe9b7ea11e0c5958158cb57c9ce600a9b4270c950b"
+    },
+    {
+      "id": "enemy_memory_thief_etching_f01",
+      "source": "ImageReview/enemies/enemy_memory_thief_etching_f01.png",
+      "target": "Assets/UI/enemies/enemy_memory_thief_etching_f01.png",
+      "sha256": "21b266c04ead06fc40c615da54fd015e157669d95a139a85e79d0f82c8e8e34c"
+    },
+    {
+      "id": "enemy_memory_devourer_etching_f01",
+      "source": "ImageReview/enemies/enemy_memory_devourer_etching_f01.png",
+      "target": "Assets/UI/enemies/enemy_memory_devourer_etching_f01.png",
+      "sha256": "15a9e326ea588a26644a7719e3a99f36d96c0abb8473b92815c7f30eeb1c3e9b"
+    }
+  ]
+}

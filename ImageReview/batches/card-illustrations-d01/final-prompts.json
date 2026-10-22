@@ -1,0 +1,20 @@
+[
+  {
+    "type": "attack",
+    "slug": "kaoju",
+    "name": "考据",
+    "prompt": "Use case: illustration-story. Create a new standalone card illustration for a scholarly memory roguelike. Input reference is STYLE ONLY: match its bold black ink woodcut, strong cut-paper silhouette, carved ivory hatching, warm bone-white opaque paper and tiny restrained accent. Do not copy the closed notebook and quill composition. Square canvas, no border, no UI, no lettering, no readable writing, no numerals. A single clear central visual with rich engraved detail, not sparse minimalist clipart, readable at 96px. Keep whole subject inside central 85%, plain bone-white background, no scenery. Subject: scholarly examination of evidence. A large circular magnifying glass tilted diagonally across two overlapping antique manuscript fragments, revealing a crisp engraved branching diagram under the lens. Paper edges, wax seal and small bookmark give depth. Abstract scratches only, no text. Magnifying glass dominates the silhouette; tiny muted brick-red seal. No eye or skull."
+  },
+  {
+    "type": "skill",
+    "slug": "sudu",
+    "name": "速读",
+    "prompt": "Use case: illustration-story. Create a new standalone card illustration for a scholarly memory roguelike. Input reference is STYLE ONLY: match its bold black ink woodcut, strong cut-paper silhouette, carved ivory hatching, warm bone-white opaque paper and tiny restrained accent. Do not copy the closed notebook and quill composition. Square canvas, no border, no UI, no lettering, no readable writing, no numerals. A single clear central visual with rich engraved detail, not sparse minimalist clipart, readable at 96px. Keep whole subject inside central 85%, plain bone-white background, no scenery. Subject: rapid reading. An open book in three-quarter view, its pages sweeping in a single strong fan-shaped arc to the right, thick engraved flowing speed strokes and a tiny muted blue cloth bookmark. The fanned pages convey rapid browsing, not flying loose paper chaos. Book and page fan dominate silhouette. No quill, no magnifying glass, no eye, no words."
+  },
+  {
+    "type": "ability",
+    "slug": "quanshenguanzhu",
+    "name": "全神贯注",
+    "prompt": "Use case: illustration-story. Create a new standalone card illustration for a scholarly memory roguelike. Input reference is STYLE ONLY: match its bold black ink woodcut, strong cut-paper silhouette, carved ivory hatching, warm bone-white opaque paper and tiny restrained accent. Do not copy the closed notebook and quill composition. Square canvas, no border, no UI, no lettering, no readable writing, no numerals. A single clear central visual with rich engraved detail, not sparse minimalist clipart, readable at 96px. Keep whole subject inside central 85%, plain bone-white background, no scenery. Subject: sustained concentration. One tall slender candle with a perfectly steady ivory flame in a simple black ink candleholder, standing behind a small open book. Three clean nested elliptical arcs converge around the steady flame, contrasting the calm center with richly engraved rays. The candle and flame dominate a tall clear silhouette. Sober scholarly desk symbolism. Tiny muted violet bookmark in the book. No eyes, magnifying glass, quill, skull, letters, or scene background. Keep candle and book together as one compact composition."
+  }
+]

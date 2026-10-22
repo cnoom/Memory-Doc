@@ -1,0 +1,315 @@
+{
+  "date": "2026-10-07",
+  "userReply": "可以，就是一些细节描述上的小问题，可以先不处理",
+  "reviewImage": "ImageReview/batches/core-a02/journal-1080.png",
+  "scope": "8 A01 journal layers and 9 A02 ornaments; no buttons, controls or HUD",
+  "deferred": "细节描述小问题暂不处理；用户未指定具体句子，保留现有文案，后续单独汇总。",
+  "assets": [
+    {
+      "id": "journal_cover_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/journal_cover_a01.png",
+          "published": "Assets/UI/journal/journal_cover_a01.png",
+          "sha256": "a14bc567b5088f261ca0e2a79d70530a501b1ca15c2f61051a444f6ba3f0cc20"
+        },
+        "svg": {
+          "source": "ImageReview/journal/journal_cover_a01.svg",
+          "published": "Assets/UI/journal/journal_cover_a01.svg",
+          "sha256": "d18ad4b974ea69798ae474cf7773a505c11a85cd5e4214967ea79b1e263f141b"
+        }
+      },
+      "width": 1260,
+      "height": 810
+    },
+    {
+      "id": "journal_page_edges_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/journal_page_edges_a01.png",
+          "published": "Assets/UI/journal/journal_page_edges_a01.png",
+          "sha256": "bbeeca1b429eaab01d75f38c5b8c72aa1ce976bb3b5f7957d8616832079de36f"
+        },
+        "svg": {
+          "source": "ImageReview/journal/journal_page_edges_a01.svg",
+          "published": "Assets/UI/journal/journal_page_edges_a01.svg",
+          "sha256": "05d67e872ba1ea1ea083b9eb71716174c5ddfef748d9339dc055b2b798479931"
+        }
+      },
+      "width": 1260,
+      "height": 810
+    },
+    {
+      "id": "journal_page_left_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/journal_page_left_a01.png",
+          "published": "Assets/UI/journal/journal_page_left_a01.png",
+          "sha256": "bdba3a1d57a1fe5f80a8af776b240ce02d41497588f04c09ba7b1f38d4999db7"
+        },
+        "svg": {
+          "source": "ImageReview/journal/journal_page_left_a01.svg",
+          "published": "Assets/UI/journal/journal_page_left_a01.svg",
+          "sha256": "1ea3bb14dc781d8c17c45cccc6b665e236874076e6ddc914fb60bd4fffc37bc3"
+        }
+      },
+      "width": 1260,
+      "height": 810
+    },
+    {
+      "id": "journal_page_right_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/journal_page_right_a01.png",
+          "published": "Assets/UI/journal/journal_page_right_a01.png",
+          "sha256": "fae29dc090a7107e6e4e14796cd151553509f142b3472fde89373c5c58a18e41"
+        },
+        "svg": {
+          "source": "ImageReview/journal/journal_page_right_a01.svg",
+          "published": "Assets/UI/journal/journal_page_right_a01.svg",
+          "sha256": "a7cfd7645fdf1a926eb3069b9b396d408a77e12143c0e8b24078e4e3ce5071ca"
+        }
+      },
+      "width": 1260,
+      "height": 810
+    },
+    {
+      "id": "journal_spine_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/journal_spine_a01.png",
+          "published": "Assets/UI/journal/journal_spine_a01.png",
+          "sha256": "1a2e40d5b672eb3952821d4a147df845a633dfc48463bb91a90e99987000d741"
+        },
+        "svg": {
+          "source": "ImageReview/journal/journal_spine_a01.svg",
+          "published": "Assets/UI/journal/journal_spine_a01.svg",
+          "sha256": "0f8b2b48aa63e0c9e28593347c533e5f31a764ee9c2873e64ec23f02d5529302"
+        }
+      },
+      "width": 1260,
+      "height": 810
+    },
+    {
+      "id": "journal_binding_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/journal_binding_a01.png",
+          "published": "Assets/UI/journal/journal_binding_a01.png",
+          "sha256": "323f5895718489468633056c1b61c1f561d974b5cf9b963a16a4c81363b94274"
+        },
+        "svg": {
+          "source": "ImageReview/journal/journal_binding_a01.svg",
+          "published": "Assets/UI/journal/journal_binding_a01.svg",
+          "sha256": "c7c7b9c6c26b2b02b1069db430c84a4da3dff25eeeded3c615359626007beda3"
+        }
+      },
+      "width": 1260,
+      "height": 810
+    },
+    {
+      "id": "journal_ribbon_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/journal_ribbon_a01.png",
+          "published": "Assets/UI/journal/journal_ribbon_a01.png",
+          "sha256": "7be171cc26da64c20dba0658d7c876b4fec3c85f616625f1c84c0614edd0f33f"
+        },
+        "svg": {
+          "source": "ImageReview/journal/journal_ribbon_a01.svg",
+          "published": "Assets/UI/journal/journal_ribbon_a01.svg",
+          "sha256": "421d7dcf2a2509f5b7f431b33a1528bc73c6de736f4ffdb32999b46f0daea966"
+        }
+      },
+      "width": 1260,
+      "height": 810
+    },
+    {
+      "id": "journal_fold_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/journal_fold_a01.png",
+          "published": "Assets/UI/journal/journal_fold_a01.png",
+          "sha256": "7dbac37f12f78f18a8e7de7acffb66b2d9c473154a90b5107b6af119324e4389"
+        },
+        "svg": {
+          "source": "ImageReview/journal/journal_fold_a01.svg",
+          "published": "Assets/UI/journal/journal_fold_a01.svg",
+          "sha256": "b996813df1d11a14d4ecfab0063ab3abb33278b308e40494bda75635d3e1d2c3"
+        }
+      },
+      "width": 1260,
+      "height": 810
+    },
+    {
+      "id": "decor_chapter_tab_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/decor_chapter_tab_a02.png",
+          "published": "Assets/UI/journal/decor_chapter_tab_a02.png",
+          "sha256": "759dc7a594f029eb46d6be4a80a4a75d705335cc8e736f79ff42a8493fd5b231"
+        },
+        "svg": {
+          "source": "ImageReview/journal/decor_chapter_tab_a02.svg",
+          "published": "Assets/UI/journal/decor_chapter_tab_a02.svg",
+          "sha256": "39983a8b5eab0a5f21c70e840dd2b19e7182f130e0bc64f156962101f188609a"
+        }
+      },
+      "width": 76,
+      "height": 152
+    },
+    {
+      "id": "decor_loose_leaf_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/decor_loose_leaf_a02.png",
+          "published": "Assets/UI/journal/decor_loose_leaf_a02.png",
+          "sha256": "7c974e8a5bc26df04e01c0ae0bf75c2a747432f74c3ee52d6c67d917aeefa33e"
+        },
+        "svg": {
+          "source": "ImageReview/journal/decor_loose_leaf_a02.svg",
+          "published": "Assets/UI/journal/decor_loose_leaf_a02.svg",
+          "sha256": "d92d9fb032e2959dbb996d4cea89d641624a6eff1930ffa8e6e21f770c63a864"
+        }
+      },
+      "width": 360,
+      "height": 110
+    },
+    {
+      "id": "decor_portrait_mount_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/decor_portrait_mount_a02.png",
+          "published": "Assets/UI/journal/decor_portrait_mount_a02.png",
+          "sha256": "ad155814731b01c73acf8a574e371187d5ad89674c1371719008eff50d9f87c2"
+        },
+        "svg": {
+          "source": "ImageReview/journal/decor_portrait_mount_a02.svg",
+          "published": "Assets/UI/journal/decor_portrait_mount_a02.svg",
+          "sha256": "d498537d25c87a0353ebc176a0dfe613f8cfa3f0e6a01eb4ada2a7ec87e8ac1e"
+        }
+      },
+      "width": 410,
+      "height": 290
+    },
+    {
+      "id": "decor_paper_tape_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/decor_paper_tape_a02.png",
+          "published": "Assets/UI/journal/decor_paper_tape_a02.png",
+          "sha256": "8c6831e60c9335ec917e1d5a5b705a50a68efb548e04f952ddbc9c9607af621e"
+        },
+        "svg": {
+          "source": "ImageReview/journal/decor_paper_tape_a02.svg",
+          "published": "Assets/UI/journal/decor_paper_tape_a02.svg",
+          "sha256": "84a729666789472d156fc698368ef37c4fbdfda4f11c2dfceb18ae393e1ac501"
+        }
+      },
+      "width": 110,
+      "height": 22
+    },
+    {
+      "id": "decor_stamp_frame_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/decor_stamp_frame_a02.png",
+          "published": "Assets/UI/journal/decor_stamp_frame_a02.png",
+          "sha256": "22bf688e2a3d2e58d12b69cb1dc7edca6c105ff91cd33826f5b3b67e59f0b45c"
+        },
+        "svg": {
+          "source": "ImageReview/journal/decor_stamp_frame_a02.svg",
+          "published": "Assets/UI/journal/decor_stamp_frame_a02.svg",
+          "sha256": "83a1bf341ecd3d9907fa21bf51838148a925d0a481b0eae0aa4b032ed71081ad"
+        }
+      },
+      "width": 112,
+      "height": 62
+    },
+    {
+      "id": "decor_page_flourish_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/decor_page_flourish_a02.png",
+          "published": "Assets/UI/journal/decor_page_flourish_a02.png",
+          "sha256": "0b1a5e1df4f7fc9bf05d7b08d047fc3b7d3d18f86350b2e669f7888a8a564b3b"
+        },
+        "svg": {
+          "source": "ImageReview/journal/decor_page_flourish_a02.svg",
+          "published": "Assets/UI/journal/decor_page_flourish_a02.svg",
+          "sha256": "fb0a8ef6c5622ad4e41dfc1f2dc0e500a821be5a37a2696ed1845e07f266427a"
+        }
+      },
+      "width": 280,
+      "height": 30
+    },
+    {
+      "id": "decor_pressed_ring_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/decor_pressed_ring_a02.png",
+          "published": "Assets/UI/journal/decor_pressed_ring_a02.png",
+          "sha256": "072665c50cb13dcfcdf8c9987877dec467bd426a9c744ebb993be42eb89765c2"
+        },
+        "svg": {
+          "source": "ImageReview/journal/decor_pressed_ring_a02.svg",
+          "published": "Assets/UI/journal/decor_pressed_ring_a02.svg",
+          "sha256": "1c045447e473a997fd652a9ae6a45c8187ea0b818dadad08d4c45574efc78a29"
+        }
+      },
+      "width": 54,
+      "height": 54
+    },
+    {
+      "id": "decor_margin_ticks_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/decor_margin_ticks_a02.png",
+          "published": "Assets/UI/journal/decor_margin_ticks_a02.png",
+          "sha256": "1ab006bdc64ff12fee5994d7339ea7032d59ff58b5e5cc755e35351376e0f454"
+        },
+        "svg": {
+          "source": "ImageReview/journal/decor_margin_ticks_a02.svg",
+          "published": "Assets/UI/journal/decor_margin_ticks_a02.svg",
+          "sha256": "711545d856cd9bb6a9bd60bb331dfe5fc9451e5e482af3a9da5b79ecc89b8edc"
+        }
+      },
+      "width": 18,
+      "height": 120
+    },
+    {
+      "id": "decor_foreedge_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/journal/decor_foreedge_a02.png",
+          "published": "Assets/UI/journal/decor_foreedge_a02.png",
+          "sha256": "d8fdac2965308fca5818ee38a160c52eec3f7ee29d9aa6d426d9c6fd2442980a"
+        },
+        "svg": {
+          "source": "ImageReview/journal/decor_foreedge_a02.svg",
+          "published": "Assets/UI/journal/decor_foreedge_a02.svg",
+          "sha256": "9d2b6a511213599053566fb46fea9a152497d7226bffbec234bfd56b97ef069e"
+        }
+      },
+      "width": 10,
+      "height": 252
+    }
+  ]
+}

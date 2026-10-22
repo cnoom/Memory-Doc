@@ -1,0 +1,38 @@
+{
+  "canvas": [
+    1920,
+    1080
+  ],
+  "colors": {
+    "text": "#252F32",
+    "onDark": "#F1EEE2",
+    "secondary": "#48575A",
+    "disabled": "#657174",
+    "disabledPrimary": "#485356"
+  },
+  "sliderRows": [
+    440,
+    580,
+    720
+  ],
+  "sliderTrack": {
+    "x": 650,
+    "width": 640,
+    "height": 24,
+    "yOffsetFromRowCenter": -12
+  },
+  "buttonRects": [
+    [
+      550,
+      850,
+      352,
+      61.6
+    ],
+    [
+      1010,
+      850,
+      352,
+      61.6
+    ]
+  ]
+}

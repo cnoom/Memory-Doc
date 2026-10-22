@@ -1,0 +1,18 @@
+{
+  "status": "approved-design-reference",
+  "productionEligible": false,
+  "role": "startup-composition-reference",
+  "sourceResolution": [
+    1672,
+    941
+  ],
+  "targetCanvas": [
+    1920,
+    1080
+  ],
+  "path": "startup_cover_v03.png",
+  "sha256": "f963e53e781d29bd6c561558acf1e7255bb31006d1efcd66be6fa6f406f93c95",
+  "textBaked": true,
+  "approvedOn": "2026-10-17",
+  "approvalQuote": "就这个吧"
+}

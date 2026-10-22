@@ -1,0 +1,50 @@
+[
+  {
+    "type": "attack",
+    "slug": "pangzhengboyin",
+    "name": "旁征博引",
+    "prompt": "New standalone card illustration for scholarly memory roguelike, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, strong compact silhouette, warm bone-white opaque paper, square composition, entire object within central 85%. No borders, UI, words, numerals, readable writing, watermark or scenery. Highly legible at small size, detailed engraving not plain clipart. No magnifying glass or wax seal. Three small open books arranged in a triangular cluster with three thick connecting paper ribbons converging into a pointed nib shape at the center, knowledge converging into force. Muted brick red ribbon accents. Not a stack of closed books."
+  },
+  {
+    "type": "attack",
+    "slug": "yinjingjudian",
+    "name": "引经据典",
+    "prompt": "New standalone card illustration for scholarly memory roguelike, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, strong compact silhouette, warm bone-white opaque paper, square composition, entire object within central 85%. No borders, UI, words, numerals, readable writing, watermark or scenery. Highly legible at small size, detailed engraving not plain clipart. No magnifying glass or wax seal. One heavy ancient leather tome standing upright with clasp open, pages bursting out in a sharp sweeping slash arc, two bold impact rays. Tome is the dominant silhouette, muted red clasp strap. No sword."
+  },
+  {
+    "type": "skill",
+    "slug": "suoyin",
+    "name": "索引",
+    "prompt": "New standalone card illustration for scholarly memory roguelike, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, strong compact silhouette, warm bone-white opaque paper, square composition, entire object within central 85%. No borders, UI, words, numerals, readable writing, watermark or scenery. Highly legible at small size, detailed engraving not plain clipart. No magnifying glass or wax seal. A large old-fashioned pointing hand-shaped brass bookmark resting across a compact fan of five loose index slips. Strong pointing finger tab silhouette, muted blue edge tab. Not a drawer, no human arm, no hand holding objects."
+  },
+  {
+    "type": "skill",
+    "slug": "zhaiyao",
+    "name": "摘要",
+    "prompt": "New standalone card illustration for scholarly memory roguelike, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, strong compact silhouette, warm bone-white opaque paper, square composition, entire object within central 85%. No borders, UI, words, numerals, readable writing, watermark or scenery. Highly legible at small size, detailed engraving not plain clipart. No magnifying glass or wax seal. Three loose curled manuscript sheets compressed beneath a single small rolled scroll tied tightly by muted blue ribbon, with a short angular pen-nib-shaped paper fold on one side and shield-shaped paper fold on the other. Compact rolled scroll dominates. No letters or weapons."
+  },
+  {
+    "type": "skill",
+    "slug": "bijibengedang",
+    "name": "笔记本格挡",
+    "prompt": "New standalone card illustration for scholarly memory roguelike, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, strong compact silhouette, warm bone-white opaque paper, square composition, entire object within central 85%. No borders, UI, words, numerals, readable writing, watermark or scenery. Highly legible at small size, detailed engraving not plain clipart. No magnifying glass or wax seal. A heavy closed reinforced leather notebook seen front-on at a slight angle, its spine and metal corner guards forming a protective shield shape; three strong impact strokes bounce off cover. Tiny muted blue binding strap. No quill, actual separate shield or text."
+  },
+  {
+    "type": "ability",
+    "slug": "bowenqiangshi",
+    "name": "博闻强识",
+    "prompt": "New standalone card illustration for scholarly memory roguelike, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, strong compact silhouette, warm bone-white opaque paper, square composition, entire object within central 85%. No borders, UI, words, numerals, readable writing, watermark or scenery. Highly legible at small size, detailed engraving not plain clipart. No magnifying glass or wax seal. Three antique closed books stacked into a stepped pedestal supporting a large laurel wreath with a sharp upright quill at center, scholarly mastery. Wreath is bold round silhouette, tiny muted violet ribbon. No candle."
+  },
+  {
+    "type": "ability",
+    "slug": "guomubuwang",
+    "name": "过目不忘",
+    "prompt": "New standalone card illustration for scholarly memory roguelike, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, strong compact silhouette, warm bone-white opaque paper, square composition, entire object within central 85%. No borders, UI, words, numerals, readable writing, watermark or scenery. Highly legible at small size, detailed engraving not plain clipart. No magnifying glass or wax seal. A looped knotted remembrance cord threaded through three blank rectangular card outlines arranged as a triangle. One large central knot and trailing loop clearly preserve positions. Cards remain blank, no eye or text. Tiny muted violet cord section. No book."
+  },
+  {
+    "type": "ability",
+    "slug": "xueshuzhijue",
+    "name": "学术直觉",
+    "prompt": "New standalone card illustration for scholarly memory roguelike, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, strong compact silhouette, warm bone-white opaque paper, square composition, entire object within central 85%. No borders, UI, words, numerals, readable writing, watermark or scenery. Highly legible at small size, detailed engraving not plain clipart. No magnifying glass or wax seal. An antique small pendulum with a faceted plumb weight suspended above two touching blank cards, a single crisp four-point discovery spark between cards. Pendulum and arched suspension thread dominate, restrained muted violet accent. No eye, candle, compass or text."
+  }
+]

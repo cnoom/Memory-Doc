@@ -1,0 +1,39 @@
+{
+  "batch": "entry-h01",
+  "assets": [
+    {
+      "id": "mockup_main_menu_h01",
+      "path": "ImageReview/batches/entry-h01/mockup_main_menu_h01_1920x1080.png",
+      "source": "ImageReview/batches/entry-h01/main_menu_source.png",
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "width": 1920,
+      "height": 1080,
+      "method": "Lanczos cover; centered negligible aspect crop",
+      "native1080p": false,
+      "status": "pending-review",
+      "productionEligible": false,
+      "role": "composite-ui-design-reference",
+      "sha256": "91addfee51d421ff961bb1894cb734c8094a97eb234668d9028d50e6f2760bee"
+    },
+    {
+      "id": "mockup_loading_h01",
+      "path": "ImageReview/batches/entry-h01/mockup_loading_h01_1920x1080.png",
+      "source": "ImageReview/batches/entry-h01/loading_source.png",
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "width": 1920,
+      "height": 1080,
+      "method": "Lanczos cover; centered negligible aspect crop",
+      "native1080p": false,
+      "status": "pending-review",
+      "productionEligible": false,
+      "role": "composite-ui-design-reference",
+      "sha256": "fa0980ba34be00e4214d820be2f93bdccb251a1f709a2b4137161f4826344320"
+    }
+  ]
+}

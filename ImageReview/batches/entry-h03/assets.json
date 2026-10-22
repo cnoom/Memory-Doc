@@ -1,0 +1,33 @@
+{
+  "batch": "entry-h03",
+  "assets": [
+    {
+      "id": "bg_main_menu_h03",
+      "png": "backgrounds/bg_main_menu_h03.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "native1080p": false,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "7906af39cbe7c672bf82725c4e097a35713e55efb1429fc3264dd2e1bc22b175"
+    },
+    {
+      "id": "bg_loading_h03",
+      "png": "backgrounds/bg_loading_h03.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "native1080p": false,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "7efd8549b37e95d2153c7290f45ccf44d4a53777ba59d0cf7019e31b91b511c1"
+    }
+  ]
+}

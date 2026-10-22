@@ -1,0 +1,25 @@
+{
+  "status": "pending-review",
+  "productionEligible": false,
+  "assets": [
+    {
+      "id": "enemy_memory_devourer_phase3_s02",
+      "png": "enemies/enemy_memory_devourer_phase3_s02.png",
+      "width": 1224,
+      "height": 1285,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        1224,
+        1285
+      ],
+      "sha256": "59b71f3e8d6d35f19f465a07f7e7c42ef965d857e2fce362c9e9165446137c22",
+      "status": "pending-review",
+      "productionEligible": false
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+const journal=document.querySelector('.journal');
+journal.insertAdjacentHTML('afterbegin','<div class="loose-leaf"></div><div class="chapter-tab" aria-hidden="true">第一章</div>');
+journal.insertAdjacentHTML('beforeend',`<div class="cover-corner tl"></div><div class="cover-corner br"></div><div class="foreedge"></div><div class="corner-crease"></div><div class="margin-ticks"></div><div class="pencil-note">记下沿途，勿忘来路。</div><div class="pressed-ring" aria-hidden="true">Ⅰ</div><div class="page-flourish" aria-hidden="true"><svg viewBox="0 0 280 30" fill="none" stroke="currentColor"><path d="M2 15h95m86 0h95M104 15l13-6 13 6-13 6Zm46 0 13-6 13 6-13 6ZM136 4v22m8-22v22M15 12v6m250-6v6"/><path d="M124 15h31"/></svg></div>`);
+document.querySelector('.booklandscape').insertAdjacentHTML('beforeend','<span class="photo-tape" aria-hidden="true"></span><span class="sketch-label">学者 / 行旅肖像</span>');
+const dt=document.createElement('button');dt.className='detail-toggle';dt.textContent='细节对照 · 减少装饰';dt.onclick=()=>{const less=journal.classList.toggle('less-detail');dt.textContent=less?'细节对照 · 恢复装饰':'细节对照 · 减少装饰'};document.querySelector('.journal-overlay').append(dt);

@@ -1,0 +1,38 @@
+[
+  {
+    "type": "ability",
+    "slug": "baikequanshu",
+    "name": "百科全书",
+    "prompt": "Standalone scholarly memory roguelike card illustration, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, warm bone-white opaque paper. Square canvas, complete compact silhouette within central 85%, legible at small size. No UI, border, words, readable writing, digits, watermark, background scenery or glow. One huge open encyclopedia with thick layered pages and multiple violet index tabs, two blank upright cards emerging side by side from its gutter like balanced wings. Dominant broad book silhouette, restrained violet accent. No eye or globe."
+  },
+  {
+    "type": "skill",
+    "slug": "wanyouwenku",
+    "name": "万有文库",
+    "prompt": "Standalone scholarly memory roguelike card illustration, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, warm bone-white opaque paper. Square canvas, complete compact silhouette within central 85%, legible at small size. No UI, border, words, readable writing, digits, watermark, background scenery or glow. A miniature circular archive carousel of old books around a central upright quill, outward flowing blue ribbons linking a ring of small blank cards. Bold radial silhouette, limited clear elements, dense engraving. Not a room or bookcase."
+  },
+  {
+    "type": "attack",
+    "slug": "zhenlizhiyan",
+    "name": "真理之眼",
+    "prompt": "Standalone scholarly memory roguelike card illustration, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, warm bone-white opaque paper. Square canvas, complete compact silhouette within central 85%, legible at small size. No UI, border, words, readable writing, digits, watermark, background scenery or glow. One large serene engraved human eye in a broken circular ink halo, sharp radial rays and two small blank cards below reflecting the eye. Bold almond-shaped eye dominates. Tiny muted red iris ring. No gore, no flesh wounds, no pyramid."
+  },
+  {
+    "type": "skill",
+    "slug": "shikonghuisu",
+    "name": "时空回溯",
+    "prompt": "Standalone scholarly memory roguelike card illustration, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, warm bone-white opaque paper. Square canvas, complete compact silhouette within central 85%, legible at small size. No UI, border, words, readable writing, digits, watermark, background scenery or glow. An antique hourglass with sand rising upward inside, surrounded by a single counterclockwise curved arrow. Strong hourglass silhouette, tiny muted blue ties at frame. Rich woodgrain and glass engraving, no clock numbers."
+  },
+  {
+    "type": "ability",
+    "slug": "quanzhiquanneng",
+    "name": "全知全能",
+    "prompt": "Standalone scholarly memory roguelike card illustration, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, warm bone-white opaque paper. Square canvas, complete compact silhouette within central 85%, legible at small size. No UI, border, words, readable writing, digits, watermark, background scenery or glow. A small antique balance scale with two identical blank card tiles balanced on one pan and a toothed clock gear held still in the other pan. A single sharp scholar quill forms upright support. Muted violet cloth tie. Strong horizontal balance silhouette. No eye, globe or hourglass, no clock face."
+  },
+  {
+    "type": "skill",
+    "slug": "ronghuiguantong",
+    "name": "融会贯通",
+    "prompt": "Standalone scholarly memory roguelike card illustration, reference STYLE ONLY. Bold black ink woodcut, rich carved ivory hatching, warm bone-white opaque paper. Square canvas, complete compact silhouette within central 85%, legible at small size. No UI, border, words, readable writing, digits, watermark, background scenery or glow. A large old-fashioned hand mirror tilted diagonally, reflecting a blank card with an engraved four-point emblem; a matching real card stands partly in front, visibly identical emblem, connecting thin blue ribbon forms a flowing loop. Clear mirror silhouette, black ivory woodcut. No person, eyes or readable text."
+  }
+]

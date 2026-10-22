@@ -1,0 +1,487 @@
+{
+  "count": 40,
+  "textBaked": false,
+  "sliceBoundsValid": true,
+  "assets": [
+    {
+      "id": "btn_primary_normal_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "5cac6690f713c51dfa173bf4e23ee9a7aed7252edbb0c1dcb9be13f49535b143"
+    },
+    {
+      "id": "btn_primary_hover_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "c8af6cc4a214565aca8395c2c5aa1ca285a02f9bf529f362c7b0e1bc7b6d4e01"
+    },
+    {
+      "id": "btn_primary_pressed_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "96dedca4757b58b84904aa742547a620b5598f8d9d628de52eb70c1081c95405"
+    },
+    {
+      "id": "btn_primary_disabled_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "6261016c626e195aef77dd46fdba3a642b67724f23aca924287dc7fea0043202"
+    },
+    {
+      "id": "btn_secondary_normal_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "481c62fe52a95a499a3d2a1f264311c4ec3b5323cc98e1420034c4834b604b92"
+    },
+    {
+      "id": "btn_secondary_hover_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "8c82ad13c8ed68f8b875ba9f83653d72cf2a754d7f1bdb87009a582d275e1e5b"
+    },
+    {
+      "id": "btn_secondary_pressed_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "77454fc3855a0bc261375fc66a1cfa57a31c37ec4ea21007dde16928dbed5efd"
+    },
+    {
+      "id": "btn_secondary_disabled_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "6261016c626e195aef77dd46fdba3a642b67724f23aca924287dc7fea0043202"
+    },
+    {
+      "id": "btn_danger_normal_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "6b392ab2f0dac8ecf8959458fc6de5db1dc75ea7555803ec83dbbe1b6cbbe3e8"
+    },
+    {
+      "id": "btn_danger_hover_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "8c82ad13c8ed68f8b875ba9f83653d72cf2a754d7f1bdb87009a582d275e1e5b"
+    },
+    {
+      "id": "btn_danger_pressed_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "04820738a0303335182e31d54a6fa28ecee2752ec8522ff7bed5d542f9b19850"
+    },
+    {
+      "id": "btn_danger_disabled_etching_b02",
+      "size": [
+        960,
+        208
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "6261016c626e195aef77dd46fdba3a642b67724f23aca924287dc7fea0043202"
+    },
+    {
+      "id": "panel_paper_etching_b02",
+      "size": [
+        512,
+        384
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "af0297001819b3ec9ecf7c30bb3029a92b90b3d23276352748cf60cbeb4e5127"
+    },
+    {
+      "id": "panel_ink_etching_b02",
+      "size": [
+        512,
+        384
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "a92c5b5483339a65458ab295d83986ba6bd99863be9086fbe2271859911f8200"
+    },
+    {
+      "id": "panel_tooltip_etching_b02",
+      "size": [
+        512,
+        384
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "ef671072aee386f86d84ba245d5fef098afcbaad8e0731ac3dd575ee4d2a611d"
+    },
+    {
+      "id": "panel_modal_etching_b02",
+      "size": [
+        512,
+        384
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "ed91914bc780cdc2c6e05fe2687e113d8c76db7678ffe3639d9565efd3f5337e"
+    },
+    {
+      "id": "bar_health_track_etching_b02",
+      "size": [
+        512,
+        24
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "8446217ca4aa5688bd592afd88f3399bc4355cd986510adec6c3733d9bd203df"
+    },
+    {
+      "id": "bar_health_fill_etching_b02",
+      "size": [
+        512,
+        24
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "657d224772592fb131728adc6f43da035944119e129bbeeb5940a04d8921577a"
+    },
+    {
+      "id": "bar_action_empty_etching_b02",
+      "size": [
+        72,
+        32
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "910fd3d4f4b37313df10ff656b934e1240f378a62f8ef052c69322d110d23d36"
+    },
+    {
+      "id": "bar_action_filled_etching_b02",
+      "size": [
+        72,
+        32
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "856a1a38936f3aa372fa574df6547a8b5938fd33947d9d19fae69c12752235b5"
+    },
+    {
+      "id": "bar_action_critical_etching_b02",
+      "size": [
+        72,
+        32
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "193d73c38f114ff6c0bd34580ace15fa70f9474ba58aa8c3ccb8599a4a238ee5"
+    },
+    {
+      "id": "control_toggle_off_etching_b02",
+      "size": [
+        128,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "23e4d590dbffdd3199e146388dfe11abb35a7ed03a56109cf2870e8b59c7ad08"
+    },
+    {
+      "id": "control_toggle_on_etching_b02",
+      "size": [
+        128,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "c5e94c53c5bcb75d663364d8a820a0ccbd7bb962288c7c04506da293cfbd8e7d"
+    },
+    {
+      "id": "control_check_off_etching_b02",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "3d5e9524cd6e028fe2e1836558a71347aa6e0dc3c84056cb41543f874649789a"
+    },
+    {
+      "id": "control_check_on_etching_b02",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "a3854c8389a865fb765785fb66bf96057b37cfb0f91860ef9f05b17c8438d26a"
+    },
+    {
+      "id": "control_slider_track_etching_b02",
+      "size": [
+        256,
+        16
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "a86bee8623c6c40c5c2ed6b7b4b0b7eaf89131f4467d1e3030c36978d8c859c8"
+    },
+    {
+      "id": "control_slider_fill_etching_b02",
+      "size": [
+        256,
+        16
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "a0d9bcbb6634280b1f0f57d3d6095e3691bbc72c60cd600f2097ce92228cea37"
+    },
+    {
+      "id": "control_slider_thumb_etching_b02",
+      "size": [
+        64,
+        64
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "4a25bd0820458a7c6e260036bf3e16fdce93d8de3fc93471103ab23552efe954"
+    },
+    {
+      "id": "overlay_card_focus_etching_b02",
+      "size": [
+        960,
+        1280
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "53f48bd47e4237da08f6bd4922f4e9519639b4b44ba56a932ebc7ac677ca1268"
+    },
+    {
+      "id": "overlay_card_sealed_etching_b02",
+      "size": [
+        960,
+        1280
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "e23c8df5a15daf95c89ac1d997e37dd41e8973872e51cad024c66b09bf2d0f20"
+    },
+    {
+      "id": "badge_mark_etching_b02",
+      "size": [
+        256,
+        112
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "3a775f60a35c2dd24a08478e905f5d3933a6b1bc9c9b90fcf02b7f139a8bdf0c"
+    },
+    {
+      "id": "badge_keyword_etching_b02",
+      "size": [
+        256,
+        96
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "cee5e35bb04426bba3c854dda88af2e8099ac9a52272aa5a6c9c68651f761dba"
+    },
+    {
+      "id": "icon_ui_close_etching_b02",
+      "size": [
+        128,
+        128
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "91e9f4e0b817f4d0ca8de053fdfa25e1457704ad0d9eceea6aa858afc1f208c0"
+    },
+    {
+      "id": "icon_ui_back_etching_b02",
+      "size": [
+        128,
+        128
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "fc3f86264dc2ab1c1cef3f74d5e887e5b23a1bc775a4d87cf7f501df7380c6c9"
+    },
+    {
+      "id": "icon_ui_menu_etching_b02",
+      "size": [
+        128,
+        128
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "3bd1e6839fcd5970933e79ef198b120c12aa4c808871edf92cdc982df67413c2"
+    },
+    {
+      "id": "icon_ui_deck_etching_b02",
+      "size": [
+        128,
+        128
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "b0eaf04d6bed598e02e8efe03b1700baf6c554865052647b162a0034c056b8e2"
+    },
+    {
+      "id": "icon_ui_coin_etching_b02",
+      "size": [
+        128,
+        128
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "7b44b454a2e7ff5d2da44c0a28e8cf845aa18e7eb3f01096f0d6f93981f098e7"
+    },
+    {
+      "id": "icon_ui_block_etching_b02",
+      "size": [
+        128,
+        128
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "ff150bdcbaaced2e602197405ccca1e14caa552db5b161b6edb0642d5e3f218d"
+    },
+    {
+      "id": "icon_ui_info_etching_b02",
+      "size": [
+        128,
+        128
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "f74e2a97509b8686b332b8feb0a562e1c820105dc136d814b2272cd49ca9cfe1"
+    },
+    {
+      "id": "icon_ui_settings_etching_b02",
+      "size": [
+        128,
+        128
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "27f6877b73f348f9940d4a8370de9958737f7335bda6a5cb186213ecc47badca"
+    }
+  ]
+}

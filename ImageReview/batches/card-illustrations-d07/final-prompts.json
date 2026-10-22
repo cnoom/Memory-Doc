@@ -1,0 +1,26 @@
+[
+  {
+    "name": "火球术",
+    "slug": "huoqiushu",
+    "type": "attack",
+    "prompt": "Use case: stylized-concept. ONE square standalone game card illustration for Memory Hero. Rich black ink woodcut engraving on opaque warm bone-white paper, strong carved outlines, fine crosshatching, handcrafted aged print, readable central silhouette at small size. Whole subject contained with clear margins. Black ink dominant, tiny muted brick-red accents, no glossy rendering, no glow, no gradients, no 3D, no UI, no card border, no text, letters, numerals or watermark. A compact swirling sphere of fire flying diagonally, round dense black core with engraved spiral fissures and a large curling flame tail. Restrained rusty red inside a few flames. A few sparks, no weapon, no person. Strong circular comet silhouette."
+  },
+  {
+    "name": "横扫",
+    "slug": "hengsao",
+    "type": "attack",
+    "prompt": "Use case: stylized-concept. ONE square standalone game card illustration for Memory Hero. Rich black ink woodcut engraving on opaque warm bone-white paper, strong carved outlines, fine crosshatching, handcrafted aged print, readable central silhouette at small size. Whole subject contained with clear margins. Black ink dominant, tiny muted brick-red accents, no glossy rendering, no glow, no gradients, no 3D, no UI, no card border, no text, letters, numerals or watermark. A broad single edged medieval falchion sweeping horizontally from left to right, full blade and wrapped hilt visible, a wide curved band of carved motion strokes passing behind blade, several torn paper scraps swept aside. Small brick-red cloth strip at pommel. No fire, no magic, no person. Wide horizontal silhouette."
+  },
+  {
+    "name": "烈焰斩",
+    "slug": "lieyanzhan",
+    "type": "attack",
+    "prompt": "Use case: stylized-concept. ONE square standalone game card illustration for Memory Hero. Rich black ink woodcut engraving on opaque warm bone-white paper, strong carved outlines, fine crosshatching, handcrafted aged print, readable central silhouette at small size. Whole subject contained with clear margins. Black ink dominant, tiny muted brick-red accents, no glossy rendering, no glow, no gradients, no 3D, no UI, no card border, no text, letters, numerals or watermark. A long medieval straight sword angled steeply upward, blade wrapped in three curling tongues of flame, full crossguard hilt and blade visible. Black engraved flame edges with restrained brick-red flame centers. Diagonal upward slashing motion suggested by a few short strokes, no person. Tall diagonal blade silhouette, not a round fireball."
+  },
+  {
+    "name": "淬毒刃",
+    "slug": "cuiduren",
+    "type": "attack",
+    "prompt": "Use case: stylized-concept. ONE square standalone game card illustration for Memory Hero. Rich black ink woodcut engraving on opaque warm bone-white paper, strong carved outlines, fine crosshatching, handcrafted aged print, readable central silhouette at small size. Whole subject contained with clear margins. Black ink dominant, tiny muted brick-red accents, no glossy rendering, no glow, no gradients, no 3D, no UI, no card border, no text, letters, numerals or watermark. A short ornate curved dagger pointing downward, dripping thick poison into a small open apothecary vial beneath, ivy-like etching on blade and frayed dark red hilt cord. Poison only tiny desaturated olive-grey accents. Clearly separated large teardrop and squat vial. No skull, no person, no fire. Compact hooked dagger silhouette."
+  }
+]

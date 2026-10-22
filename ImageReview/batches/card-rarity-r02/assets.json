@@ -1,0 +1,143 @@
+{
+  "batch": "card-rarity-r02",
+  "status": "pending-review",
+  "assets": [
+    {
+      "id": "border_card_skill_uncommon_r02",
+      "category": "cardframes",
+      "png": "cardframes/border_card_skill_uncommon_r02.png",
+      "rarity": "uncommon",
+      "type": "skill",
+      "width": 960,
+      "height": 1280,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "113f478cbbe578ebba74db78c50a1911f85a7dfb092d30ed159f2827a85db997",
+      "window": {
+        "x": 158,
+        "y": 303,
+        "width": 646,
+        "height": 492
+      },
+      "windowMask": "ImageReview/batches/card-rarity-r02/skill-uncommon-window-mask.png",
+      "textSafe": {
+        "title": {
+          "x": 235,
+          "y": 153,
+          "width": 545,
+          "height": 107
+        },
+        "effect": {
+          "x": 180,
+          "y": 858,
+          "width": 600,
+          "height": 280
+        }
+      },
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "border_card_skill_rare_r02",
+      "category": "cardframes",
+      "png": "cardframes/border_card_skill_rare_r02.png",
+      "rarity": "rare",
+      "type": "skill",
+      "width": 960,
+      "height": 1280,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "d1964f0173cb52a641eaba38e16fe0d7d514640a01175fcf78e4b38c812b68f0",
+      "window": {
+        "x": 158,
+        "y": 303,
+        "width": 646,
+        "height": 492
+      },
+      "windowMask": "ImageReview/batches/card-rarity-r02/skill-rare-window-mask.png",
+      "textSafe": {
+        "title": {
+          "x": 235,
+          "y": 153,
+          "width": 545,
+          "height": 107
+        },
+        "effect": {
+          "x": 180,
+          "y": 858,
+          "width": 600,
+          "height": 280
+        }
+      },
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "border_card_ability_uncommon_r02",
+      "category": "cardframes",
+      "png": "cardframes/border_card_ability_uncommon_r02.png",
+      "rarity": "uncommon",
+      "type": "ability",
+      "width": 960,
+      "height": 1280,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "cc22314d2c916c3a5c7cfcc1c9d2190b1b07c1ca9471ed0ee75874a8208bc135",
+      "window": {
+        "x": 157,
+        "y": 301,
+        "width": 647,
+        "height": 496
+      },
+      "windowMask": "ImageReview/batches/card-rarity-r02/ability-uncommon-window-mask.png",
+      "textSafe": {
+        "title": {
+          "x": 235,
+          "y": 153,
+          "width": 545,
+          "height": 107
+        },
+        "effect": {
+          "x": 180,
+          "y": 858,
+          "width": 600,
+          "height": 280
+        }
+      },
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "border_card_ability_rare_r02",
+      "category": "cardframes",
+      "png": "cardframes/border_card_ability_rare_r02.png",
+      "rarity": "rare",
+      "type": "ability",
+      "width": 960,
+      "height": 1280,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "a14dfe927130ee9cd370d77a0acbe6e0d7367589ae5aad527f01b198ea41d519",
+      "window": {
+        "x": 157,
+        "y": 302,
+        "width": 647,
+        "height": 493
+      },
+      "windowMask": "ImageReview/batches/card-rarity-r02/ability-rare-window-mask.png",
+      "textSafe": {
+        "title": {
+          "x": 235,
+          "y": 153,
+          "width": 545,
+          "height": 107
+        },
+        "effect": {
+          "x": 180,
+          "y": 858,
+          "width": 600,
+          "height": 280
+        }
+      },
+      "scaling": "uniform-only"
+    }
+  ],
+  "reused": []
+}

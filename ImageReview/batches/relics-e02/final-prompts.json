@@ -1,0 +1,92 @@
+[
+  {
+    "name": "双生骰",
+    "slug": "twin_dice",
+    "rarity": "common",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. Two chunky bone dice tied together by a short frayed cord, clear black round pips, worn corners and engraved metal corner caps. No bow. Neutral silver accents."
+  },
+  {
+    "name": "笔记本",
+    "slug": "notebook",
+    "rarity": "common",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. A closed thick pocket notebook with stitched leather spine, two protruding page tabs and an embossed small four-point star seal on cover. Muted brown leather, silver clasp."
+  },
+  {
+    "name": "木盾",
+    "slug": "wood_shield",
+    "rarity": "common",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. A round wooden shield made of broad weathered planks with a dark iron central boss and riveted rim, three strong wood grain bands. Bone highlights, restrained brown."
+  },
+  {
+    "name": "思维导图",
+    "slug": "mind_map",
+    "rarity": "uncommon",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. A folded parchment map with five large empty circles linked by bold branching lines, tiny steel-blue pin at center, curled corners. No writing. Compact map silhouette."
+  },
+  {
+    "name": "连锁核心",
+    "slug": "chain_core",
+    "rarity": "uncommon",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. A hexagonal mechanical core surrounded by three interlocking thick chain links, small steel-blue central inset, bold symmetrical radial silhouette."
+  },
+  {
+    "name": "蓄能水晶",
+    "slug": "charge_crystal",
+    "rarity": "uncommon",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. A squat cluster of three faceted crystals bound inside an iron clamp with three thick horizontal charging bands, restrained steel-blue facets. No eye, no tall single crystal."
+  },
+  {
+    "name": "吸血鬼之牙",
+    "slug": "vampire_fang",
+    "rarity": "uncommon",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. One large curved ivory fang mounted as an antique pendant with steel-blue metal cap and a tiny rust-red teardrop inset. No blood or gore, compact curved silhouette."
+  },
+  {
+    "name": "能量护盾",
+    "slug": "energy_shield",
+    "rarity": "uncommon",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. An ornate kite shield with a smaller inset shield layered over its center, riveted steel-blue rim and broad carved concentric defensive grooves. No pedestal or cup."
+  },
+  {
+    "name": "稳定锚",
+    "slug": "stable_anchor",
+    "rarity": "rare",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. A heavy nautical anchor with wide flukes gripping two small blank rectangular tiles, rope wrapped tightly around its shaft. Small matte antique-gold metal fittings, strong anchor silhouette."
+  },
+  {
+    "name": "双生符",
+    "slug": "twin_talisman",
+    "rarity": "rare",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. Two matching elongated talisman plates linked by a short cord, each embossed with the same bold four-point geometric star, matte antique-gold edge accents. No runes or letters."
+  },
+  {
+    "name": "镜像回声",
+    "slug": "mirror_echo",
+    "rarity": "rare",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. A small oval antique hand mirror reflecting a blank rectangular card, the matching physical card overlaps the lower mirror edge. Matte antique-gold frame, strong oval mirror silhouette."
+  },
+  {
+    "name": "学者徽章",
+    "slug": "scholar_badge",
+    "rarity": "rare",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. An antique round academic medal bearing an open book and a single quill in relief, small laurel leaves and short folded ribbon. Matte antique-gold rim, no text."
+  },
+  {
+    "name": "全知之眼",
+    "slug": "omniscient_eye",
+    "rarity": "boss",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. A single bold open eye carved into an almond-shaped antique amulet, surrounded by a restrained ring of short rays, small burnt-copper corners. No crystal or hand, eye dominant."
+  },
+  {
+    "name": "混沌核心",
+    "slug": "chaos_core",
+    "rarity": "boss",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. An asymmetric cracked polyhedral core held between two crossing orbital metal bands, two offset opposing fragments implying exchange. Tiny burnt-copper facets, no eye, no chain links, no glow."
+  },
+  {
+    "name": "记忆王冠",
+    "slug": "memory_crown",
+    "rarity": "boss",
+    "prompt": "ONE square isolated game relic icon with genuinely transparent background. Rich black ink woodcut engraving, opaque bone-white object highlights, bold carved outlines and restrained crosshatching. Match an antique engraved relic set. Strong simple silhouette at 48 pixels, full subject inside clear margins. No background, words, letters, numbers, UI border, watermark, glow, gradients or photorealism. An ornate low broad crown with five points shaped like folded book leaves, central diamond-shaped inset and layered engraved arches. Bone-white highlights and restrained burnt-copper trim, no floating particles."
+  }
+]

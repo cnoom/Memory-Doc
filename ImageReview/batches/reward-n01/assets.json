@@ -1,0 +1,27 @@
+{
+  "status": "approved-direction",
+  "productionEligible": false,
+  "role": "card-reward-flow-reference",
+  "dependencies": {
+    "border_card_attack_ornate_c04": "Assets/UI/cardframes/border_card_attack_ornate_c04.png",
+    "card_attack_huoqiushu_etching_d07": "Assets/UI/cards/card_attack_huoqiushu_etching_d07.png",
+    "border_card_attack_uncommon_r01": "Assets/UI/cardframes/border_card_attack_uncommon_r01.png",
+    "card_attack_liansuolei_etching_d09": "Assets/UI/cards/card_attack_liansuolei_etching_d09.png",
+    "border_card_skill_rare_r02": "Assets/UI/cardframes/border_card_skill_rare_r02.png",
+    "card_skill_moligongming_etching_d10": "Assets/UI/cards/card_skill_moligongming_etching_d10.png",
+    "bg_battle_empty_a01": "Assets/UI/backgrounds/bg_battle_empty_a01.png",
+    "panel_paper_a03": "Assets/UI/panels/panel_paper_a03.png",
+    "btn_secondary_normal_b03": "Assets/UI/buttons/btn_secondary_normal_b03.png",
+    "btn_primary_disabled_b03": "Assets/UI/buttons/btn_primary_disabled_b03.png",
+    "btn_primary_normal_b03": "Assets/UI/buttons/btn_primary_normal_b03.png"
+  },
+  "states": [
+    "unselected",
+    "selected",
+    "claimed",
+    "skipped"
+  ],
+  "note": "Rarity mix is illustrative, not one-per-rarity guarantee; no additional art generated.",
+  "approvalQuote": "可以",
+  "approvedOn": "2026-10-15"
+}

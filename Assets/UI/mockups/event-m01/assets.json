@@ -1,0 +1,19 @@
+{
+  "status": "approved",
+  "productionEligible": false,
+  "role": "event-composite-ui-reference",
+  "event": "E01",
+  "dependencies": {
+    "bg_map_i04": "Assets/UI/backgrounds/bg_map_i04.png",
+    "panel_paper_a03": "Assets/UI/panels/panel_paper_a03.png",
+    "btn_primary_normal_b03": "Assets/UI/buttons/btn_primary_normal_b03.png",
+    "ill_event_diary_etching_g01": "Assets/UI/illustrations/ill_event_diary_etching_g01.png",
+    "btn_secondary_normal_b03": "Assets/UI/buttons/btn_secondary_normal_b03.png"
+  },
+  "note": "Approved illustration and UI assets composed without regeneration; choice/result values are examples.",
+  "approvedOn": "2026-10-17",
+  "approvalQuote": "审阅通过",
+  "visualStatus": "final",
+  "implementationStatus": "not-verified",
+  "runtimeTexture": false
+}

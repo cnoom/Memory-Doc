@@ -1,0 +1,20 @@
+// Existing panels, HUD plates and bars displayed unchanged for review.
+const fs=require('node:fs'),path=require('node:path'),sharp=require(process.argv[2]);
+const root=path.resolve(__dirname,'../../..'),dir=path.join(root,'ImageReview');
+const text=(s,x,y,n=20,c='#2A3B32')=>`<text x="${x}" y="${y}" font-family="Microsoft YaHei,sans-serif" font-size="${n}" fill="${c}">${s}</text>`;
+const img=(f,x,y,w,h)=>`<image href="data:image/png;base64,${fs.readFileSync(path.join(dir,f)).toString('base64')}" x="${x}" y="${y}" width="${w}" height="${h}"/>`;
+let s='<rect width="1440" height="1180" fill="#E9E3D2"/>'+text('A01 / A02 · 通用面板与战斗信息组件',36,48,30)+text('14项候选；图片为无字底图，名称与示例数值由界面独立排版',36,82,18);
+s+=text('通用面板',36,125,23);
+[['paper','纸白面板'],['tooltip','提示面板'],['ink','深墨面板']].forEach(([id,label],i)=>{let x=36+i*265;s+=img(`panels/panel_${id}_a01.png`,x,146,164,164)+text(label,x,340,19);});
+s+=text('用于详情、提示与弹窗',877,208,22)+text('三种面板支持九宫格伸缩',877,247,19)+text('本图保持原始方形比例展示',877,280,17);
+s+='<path d="M36 368h1368" stroke="#BBC3A9"/>'+text('1080p 战斗信息底板',36,408,23);
+s+=img('panels/hud_enemy_base_a02.png',36,434,660,232)+text('敌人属性底板',58,472,22,'#E9E3D2');
+s+=img('panels/hud_player_base_a02.png',769,434,362,180)+text('玩家属性底板',791,477,22);
+s+=text('720p 专用紧凑版',36,712,22)+img('panels/hud_enemy_compact_a02.png',36,731,347.2,144.8)+img('panels/hud_player_compact_a02.png',419,731,202.4,114.4);
+s+=text('姓名纸签 / 意图挂签',769,712,22)+img('panels/hud_name_tag_a02.png',769,733,420,64)+text('混乱史莱姆',790,775,24);
+s+='<rect x="769" y="815" width="512" height="64" fill="#26342F"/>'+img('panels/hud_intent_tag_a02.png',769,815,512,64)+text('下次行动 · 攻击 6',790,855,22,'#E9E3D2');
+s+='<path d="M36 910h1368" stroke="#BBC3A9"/>'+text('生命条与行动刻槽',36,950,23)+'<rect x="36" y="970" width="1368" height="169" rx="6" fill="#26342F"/>';
+s+=text('生命：轨道＋填充',58,1007,19,'#E9E3D2')+img('bars/hud_health_track_a02.png',58,1041,512,12)+img('bars/hud_health_fill_a02.png',58,1043,350,8)+text('示例填充；长度由当前生命决定',58,1104,17,'#B7C3AF');
+[['empty','空槽'],['filled','已累计'],['critical','临界']].forEach(([state,label],i)=>{const x=719+i*210;s+=text(label,x,1008,19,'#E9E3D2')+img(`bars/hud_action_${state}_a02.png`,x,1038,108,48);});
+s+=text('分段数量随敌人行动阈值变化',719,1117,17,'#B7C3AF');
+sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1180">${s}</svg>`)).png().toFile(path.join(dir,'batches/core-a02/review_panels_hud_2026-10-07.png')).then(()=>console.log('14 panels/HUD/bar assets rendered for review')).catch(e=>{console.error(e);process.exitCode=1});

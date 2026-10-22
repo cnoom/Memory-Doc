@@ -1,0 +1,56 @@
+[
+  {
+    "type": "attack",
+    "slug": "lunwen",
+    "name": "论文",
+    "prompt": "Standalone scholarly memory roguelike card illustration. Reference STYLE ONLY: bold black ink woodcut, rich ivory carved hatching, bone-white opaque paper. Square canvas, centered compact single composition, whole subject inside 85% canvas, strong silhouette readable small. No UI, frame, words, readable writing, numbers, watermark, scenery, glow. Accent restrained. A thick stitched manuscript thesis with layered pages spreading upward into a branching tree of paper, ending in a single sharp pen nib at its apex. Muted brick-red binding thread. Not a magnifying glass."
+  },
+  {
+    "type": "attack",
+    "slug": "jingzhundaji",
+    "name": "精准打击",
+    "prompt": "Standalone scholarly memory roguelike card illustration. Reference STYLE ONLY: bold black ink woodcut, rich ivory carved hatching, bone-white opaque paper. Square canvas, centered compact single composition, whole subject inside 85% canvas, strong silhouette readable small. No UI, frame, words, readable writing, numbers, watermark, scenery, glow. Accent restrained. One short engraved dart striking exactly the center of a circular parchment target bearing a small red four-point star. Bold concentric target rings, precise diagonal impact, no digits, no blood."
+  },
+  {
+    "type": "attack",
+    "slug": "jiaochayinyong",
+    "name": "交叉引用",
+    "prompt": "Standalone scholarly memory roguelike card illustration. Reference STYLE ONLY: bold black ink woodcut, rich ivory carved hatching, bone-white opaque paper. Square canvas, centered compact single composition, whole subject inside 85% canvas, strong silhouette readable small. No UI, frame, words, readable writing, numbers, watermark, scenery, glow. Accent restrained. Two open manuscript folios crossing in an X shape, connected by two interwoven muted red bookmark ribbons forming a clear central knot. Pages carry abstract hatching only. Strong crossed silhouette."
+  },
+  {
+    "type": "attack",
+    "slug": "pozhanfenxi",
+    "name": "破绽分析",
+    "prompt": "Standalone scholarly memory roguelike card illustration. Reference STYLE ONLY: bold black ink woodcut, rich ivory carved hatching, bone-white opaque paper. Square canvas, centered compact single composition, whole subject inside 85% canvas, strong silhouette readable small. No UI, frame, words, readable writing, numbers, watermark, scenery, glow. Accent restrained. One battered steel breastplate as a compact still-life, a sharply branching crack highlighted in muted red, thin drafting dividers pointing at the crack. Armor rendered black ivory, no person, no magnifying glass."
+  },
+  {
+    "type": "skill",
+    "slug": "tushuguan",
+    "name": "图书馆",
+    "prompt": "Standalone scholarly memory roguelike card illustration. Reference STYLE ONLY: bold black ink woodcut, rich ivory carved hatching, bone-white opaque paper. Square canvas, centered compact single composition, whole subject inside 85% canvas, strong silhouette readable small. No UI, frame, words, readable writing, numbers, watermark, scenery, glow. Accent restrained. A compact miniature arched library bookcase with three shelves of uneven old books and two outward-open protective wooden doors. Strong arch silhouette, small blue bookmark. Isolated object, not an interior scene."
+  },
+  {
+    "type": "skill",
+    "slug": "shuqian",
+    "name": "书签",
+    "prompt": "Standalone scholarly memory roguelike card illustration. Reference STYLE ONLY: bold black ink woodcut, rich ivory carved hatching, bone-white opaque paper. Square canvas, centered compact single composition, whole subject inside 85% canvas, strong silhouette readable small. No UI, frame, words, readable writing, numbers, watermark, scenery, glow. Accent restrained. An oversized elegant muted blue fabric bookmark with a forked tail and metal clip pinning three blank cards into a neat fan. Bookmark dominates, simple secure fastening conveys holding positions. No hand or pointing finger."
+  },
+  {
+    "type": "skill",
+    "slug": "wenxi",
+    "name": "温习",
+    "prompt": "Standalone scholarly memory roguelike card illustration. Reference STYLE ONLY: bold black ink woodcut, rich ivory carved hatching, bone-white opaque paper. Square canvas, centered compact single composition, whole subject inside 85% canvas, strong silhouette readable small. No UI, frame, words, readable writing, numbers, watermark, scenery, glow. Accent restrained. A loose blank card rising from a small discard stack and curling back toward an open book, a thick engraved circular return arrow encircling them. Muted blue binding ribbon, clear looping silhouette."
+  },
+  {
+    "type": "ability",
+    "slug": "zhishiyuanbo",
+    "name": "知识渊博",
+    "prompt": "Standalone scholarly memory roguelike card illustration. Reference STYLE ONLY: bold black ink woodcut, rich ivory carved hatching, bone-white opaque paper. Square canvas, centered compact single composition, whole subject inside 85% canvas, strong silhouette readable small. No UI, frame, words, readable writing, numbers, watermark, scenery, glow. Accent restrained. An antique armillary sphere with broad intersecting engraved rings perched on a small open book, tiny violet ribbon. Knowledge overview metaphor, strong spherical silhouette. No letters, stars with text or globe labels."
+  },
+  {
+    "type": "ability",
+    "slug": "juyifansan",
+    "name": "举一反三",
+    "prompt": "Standalone scholarly memory roguelike card illustration. Reference STYLE ONLY: bold black ink woodcut, rich ivory carved hatching, bone-white opaque paper. Square canvas, centered compact single composition, whole subject inside 85% canvas, strong silhouette readable small. No UI, frame, words, readable writing, numbers, watermark, scenery, glow. Accent restrained. Two matching blank paper tiles join at bottom to support a branching stem ending in three small shield-shaped leaves overhead. Clear tree-like silhouette, tiny muted violet ties. Scholarly paper-cut woodcut metaphor for matching building defense. No book, text, numerals."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "魔力共鸣",
+    "slug": "moligongming",
+    "type": "skill",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy card illustration for Memory Hero, rich black ink woodcut engraving on opaque warm bone-white paper, strong carved outlines and fine controlled crosshatching. Clear centered silhouette, whole subject within margins. No text, letters, numbers, UI, border, watermark, glow, gradients or 3D. Two ornate tuning forks angled inward around a floating faceted crystal, engraved concentric sound arcs link them and one small blank card rises below. Sparse muted steel-blue ribbon accents. Strong symmetrical resonating silhouette, arc lines carved in black rather than luminous. Rich magical instrument craftsmanship."
+  },
+  {
+    "name": "腐化种子",
+    "slug": "fuhuazhongzi",
+    "type": "curse",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy card illustration for Memory Hero, rich black ink woodcut engraving on opaque warm bone-white paper, strong carved outlines and fine controlled crosshatching. Clear centered silhouette, whole subject within margins. No text, letters, numbers, UI, border, watermark, glow, gradients or 3D. A large split corrupted seed with a dark hollow core, jagged thorn roots twisting downward and two withered leaves curling above. Tiny restrained charcoal and grey-olive accents. Compact ominous botanical silhouette, no skull, no gore, no colorful magic."
+  },
+  {
+    "name": "记忆尘埃",
+    "slug": "jiyichenai",
+    "type": "curse",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy card illustration for Memory Hero, rich black ink woodcut engraving on opaque warm bone-white paper, strong carved outlines and fine controlled crosshatching. Clear centered silhouette, whole subject within margins. No text, letters, numbers, UI, border, watermark, glow, gradients or 3D. An old open notebook disintegrating from its upper half into a dense curling cloud of black ink dust and small blank paper flakes; a broken bookmark hangs from the intact binding. Large coherent book silhouette beneath a distinct dust plume. Monochrome charcoal, no writing or symbols."
+  },
+  {
+    "name": "虚空裂痕",
+    "slug": "xukongliehen",
+    "type": "curse",
+    "prompt": "Use case: stylized-concept. ONE square standalone fantasy card illustration for Memory Hero, rich black ink woodcut engraving on opaque warm bone-white paper, strong carved outlines and fine controlled crosshatching. Clear centered silhouette, whole subject within margins. No text, letters, numbers, UI, border, watermark, glow, gradients or 3D. A vertical jagged black rift tearing through two overlapping blank parchment cards, separated sharp torn edges curl outward, a few paper shards suspended around the deep black void. Bold fissure silhouette with bone-white negative space inside, restrained charcoal only, no eye, no galaxy, no glow."
+  }
+]

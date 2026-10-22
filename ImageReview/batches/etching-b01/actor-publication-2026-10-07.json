@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-07",
+  "userReply": "可以",
+  "reviewImage": "ImageReview/batches/etching-b01/review_characters.png",
+  "scope": "Four displayed static illustrations only; no animations or other B01 assets.",
+  "assets": [
+    {
+      "id": "portrait_scholar_etching_b01",
+      "name": "学者",
+      "source": "ImageReview/portraits/portrait_scholar_etching_b01.png",
+      "published": "Assets/UI/portraits/portrait_scholar_etching_b01.png",
+      "width": 1199,
+      "height": 1312,
+      "sha256": "2460295476b4f0137e1738a03aa68507ab6b88f6841f2910d41cd14c2cf350ba",
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "enemy_chaos_slime_etching_b01",
+      "name": "混乱史莱姆",
+      "source": "ImageReview/enemies/enemy_chaos_slime_etching_b01.png",
+      "published": "Assets/UI/enemies/enemy_chaos_slime_etching_b01.png",
+      "width": 1308,
+      "height": 1202,
+      "sha256": "da5674dd669b2eec3d9d63adb21155cfebd5be1760f64d208115393e2b2d4048",
+      "alphaRange": [
+        0,
+        255
+      ]
+    },
+    {
+      "id": "enemy_training_dummy_etching_b01",
+      "name": "训练假人",
+      "source": "ImageReview/enemies/enemy_training_dummy_etching_b01.png",
+      "published": "Assets/UI/enemies/enemy_training_dummy_etching_b01.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "53e511b7076d5aacb58e78ac9aab8c5eaca5c76bf542130152704e83bb198a87",
+      "alphaRange": [
+        0,
+        254
+      ]
+    },
+    {
+      "id": "enemy_goblin_etching_b01",
+      "name": "哥林布",
+      "source": "ImageReview/enemies/enemy_goblin_etching_b01.png",
+      "published": "Assets/UI/enemies/enemy_goblin_etching_b01.png",
+      "width": 1168,
+      "height": 1346,
+      "sha256": "54cdf5e4ab9356b9d080b4f2d4ccead11121970209e98d83acc873f5eca0907a",
+      "alphaRange": [
+        0,
+        255
+      ]
+    }
+  ]
+}

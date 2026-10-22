@@ -1,0 +1,344 @@
+{
+  "assetChecks": [
+    {
+      "id": "journal_cover_a01",
+      "width": 1260,
+      "height": 810,
+      "alpha": true
+    },
+    {
+      "id": "journal_page_edges_a01",
+      "width": 1260,
+      "height": 810,
+      "alpha": true
+    },
+    {
+      "id": "journal_page_left_a01",
+      "width": 1260,
+      "height": 810,
+      "alpha": true
+    },
+    {
+      "id": "journal_page_right_a01",
+      "width": 1260,
+      "height": 810,
+      "alpha": true
+    },
+    {
+      "id": "journal_spine_a01",
+      "width": 1260,
+      "height": 810,
+      "alpha": true
+    },
+    {
+      "id": "journal_binding_a01",
+      "width": 1260,
+      "height": 810,
+      "alpha": true
+    },
+    {
+      "id": "journal_ribbon_a01",
+      "width": 1260,
+      "height": 810,
+      "alpha": true
+    },
+    {
+      "id": "journal_fold_a01",
+      "width": 1260,
+      "height": 810,
+      "alpha": true
+    },
+    {
+      "id": "btn_menu_normal_a01",
+      "width": 640,
+      "height": 112,
+      "alpha": true
+    },
+    {
+      "id": "btn_menu_hover_a01",
+      "width": 640,
+      "height": 112,
+      "alpha": true
+    },
+    {
+      "id": "btn_menu_pressed_a01",
+      "width": 640,
+      "height": 112,
+      "alpha": true
+    },
+    {
+      "id": "btn_menu_disabled_a01",
+      "width": 640,
+      "height": 112,
+      "alpha": true
+    },
+    {
+      "id": "btn_danger_normal_a01",
+      "width": 640,
+      "height": 112,
+      "alpha": true
+    },
+    {
+      "id": "btn_danger_hover_a01",
+      "width": 640,
+      "height": 112,
+      "alpha": true
+    },
+    {
+      "id": "btn_danger_pressed_a01",
+      "width": 640,
+      "height": 112,
+      "alpha": true
+    },
+    {
+      "id": "btn_danger_disabled_a01",
+      "width": 640,
+      "height": 112,
+      "alpha": true
+    },
+    {
+      "id": "panel_paper_a01",
+      "width": 256,
+      "height": 256,
+      "alpha": true
+    },
+    {
+      "id": "panel_tooltip_a01",
+      "width": 256,
+      "height": 256,
+      "alpha": true
+    },
+    {
+      "id": "panel_ink_a01",
+      "width": 256,
+      "height": 256,
+      "alpha": true
+    },
+    {
+      "id": "toggle_off_a01",
+      "width": 128,
+      "height": 64,
+      "alpha": true
+    },
+    {
+      "id": "check_off_a01",
+      "width": 64,
+      "height": 64,
+      "alpha": true
+    },
+    {
+      "id": "toggle_on_a01",
+      "width": 128,
+      "height": 64,
+      "alpha": true
+    },
+    {
+      "id": "check_on_a01",
+      "width": 64,
+      "height": 64,
+      "alpha": true
+    },
+    {
+      "id": "slider_track_a01",
+      "width": 256,
+      "height": 16,
+      "alpha": true
+    },
+    {
+      "id": "slider_fill_a01",
+      "width": 256,
+      "height": 16,
+      "alpha": true
+    },
+    {
+      "id": "slider_thumb_a01",
+      "width": 64,
+      "height": 64,
+      "alpha": true
+    },
+    {
+      "id": "bg_battle_empty_a01",
+      "width": 1672,
+      "height": 941,
+      "alpha": false
+    },
+    {
+      "id": "cardback_universal_etching_b01",
+      "width": 960,
+      "height": 1280,
+      "alpha": true
+    },
+    {
+      "id": "border_card_attack_etching_b01",
+      "width": 960,
+      "height": 1280,
+      "alpha": true
+    },
+    {
+      "id": "border_card_skill_etching_b01",
+      "width": 960,
+      "height": 1280,
+      "alpha": true
+    },
+    {
+      "id": "border_card_ability_etching_b01",
+      "width": 960,
+      "height": 1280,
+      "alpha": true
+    },
+    {
+      "id": "border_card_curse_etching_b01",
+      "width": 960,
+      "height": 1280,
+      "alpha": true
+    },
+    {
+      "id": "icon_type_attack_etching_b01",
+      "width": 192,
+      "height": 192,
+      "alpha": true
+    },
+    {
+      "id": "icon_type_skill_etching_b01",
+      "width": 192,
+      "height": 192,
+      "alpha": true
+    },
+    {
+      "id": "icon_type_ability_etching_b01",
+      "width": 192,
+      "height": 192,
+      "alpha": true
+    },
+    {
+      "id": "icon_type_curse_etching_b01",
+      "width": 192,
+      "height": 192,
+      "alpha": true
+    },
+    {
+      "id": "icon_status_burn_etching_b01",
+      "width": 160,
+      "height": 160,
+      "alpha": true
+    },
+    {
+      "id": "icon_status_freeze_etching_b01",
+      "width": 160,
+      "height": 160,
+      "alpha": true
+    },
+    {
+      "id": "icon_status_poison_etching_b01",
+      "width": 160,
+      "height": 160,
+      "alpha": true
+    },
+    {
+      "id": "icon_status_armor_etching_b01",
+      "width": 160,
+      "height": 160,
+      "alpha": true
+    },
+    {
+      "id": "icon_status_vulnerable_etching_b01",
+      "width": 160,
+      "height": 160,
+      "alpha": true
+    },
+    {
+      "id": "icon_status_weak_etching_b01",
+      "width": 160,
+      "height": 160,
+      "alpha": true
+    },
+    {
+      "id": "icon_intent_attack_etching_b01",
+      "width": 192,
+      "height": 192,
+      "alpha": true
+    },
+    {
+      "id": "icon_intent_charge_etching_b01",
+      "width": 192,
+      "height": 192,
+      "alpha": true
+    },
+    {
+      "id": "icon_intent_defend_etching_b01",
+      "width": 192,
+      "height": 192,
+      "alpha": true
+    },
+    {
+      "id": "icon_intent_special_etching_b01",
+      "width": 192,
+      "height": 192,
+      "alpha": true
+    },
+    {
+      "id": "icon_intent_berserk_etching_b01",
+      "width": 192,
+      "height": 192,
+      "alpha": true
+    },
+    {
+      "id": "card_attack_daji_etching_b01",
+      "width": 1254,
+      "height": 1254,
+      "alpha": false
+    },
+    {
+      "id": "card_skill_gedang_etching_b01",
+      "width": 1254,
+      "height": 1254,
+      "alpha": false
+    },
+    {
+      "id": "card_attack_biji_etching_b01",
+      "width": 1254,
+      "height": 1254,
+      "alpha": false
+    },
+    {
+      "id": "portrait_scholar_etching_b01",
+      "width": 1199,
+      "height": 1312,
+      "alpha": true
+    },
+    {
+      "id": "enemy_chaos_slime_etching_b01",
+      "width": 1308,
+      "height": 1202,
+      "alpha": true
+    },
+    {
+      "id": "enemy_training_dummy_etching_b01",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true
+    },
+    {
+      "id": "enemy_goblin_etching_b01",
+      "width": 1168,
+      "height": 1346,
+      "alpha": true
+    }
+  ],
+  "geometry": {
+    "enemyHudBottom": 487,
+    "heroTop": 500,
+    "enemyBottom": 294,
+    "hudTop": 306,
+    "faces": 1
+  },
+  "errors": [],
+  "checks": [
+    "decoded 54 PNGs",
+    "goblin threshold 9",
+    "hide/show sprites",
+    "separate actor bounds",
+    "journal layers",
+    "gallery images"
+  ]
+}

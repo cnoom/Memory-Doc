@@ -1,0 +1,97 @@
+{
+  "approvalQuote": "继续吧",
+  "date": "2026-10-13",
+  "files": [
+    {
+      "target": "Assets\\UI\\relics\\relic_twin_dice_etching_e02.png",
+      "sha256": "65a6f4ecd6f9df914fae890388dc9a90bbeb0b739daf15ce0cdac08dd169358b",
+      "source": "ImageReview\\relics\\relic_twin_dice_etching_e02.png",
+      "id": "relic_twin_dice_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_notebook_etching_e02.png",
+      "sha256": "296aa9fd34e26ae84d1d7fe87d4b94078a9ae8f9184e84f9fcefdeaf9ee8f54e",
+      "source": "ImageReview\\relics\\relic_notebook_etching_e02.png",
+      "id": "relic_notebook_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_wood_shield_etching_e02.png",
+      "sha256": "1aa832ae6ff34cb3932a239c9d1b7722a455ac3b99145c7da8713ae228a8d356",
+      "source": "ImageReview\\relics\\relic_wood_shield_etching_e02.png",
+      "id": "relic_wood_shield_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_mind_map_etching_e02.png",
+      "sha256": "cfbcd9d6a0b178bd5ae278478a3bde7dd7d04c21f6597f9f94a06a44a6a16b68",
+      "source": "ImageReview\\relics\\relic_mind_map_etching_e02.png",
+      "id": "relic_mind_map_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_chain_core_etching_e02.png",
+      "sha256": "45062ef023782bf914f67fcb5cc6bee27a3ebe4c67c59b6aec7f84f20d86dfba",
+      "source": "ImageReview\\relics\\relic_chain_core_etching_e02.png",
+      "id": "relic_chain_core_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_charge_crystal_etching_e02.png",
+      "sha256": "a0477d4e464f6712e3cbe4f63974bd146abe8778c1c85379718eb6e6a212452a",
+      "source": "ImageReview\\relics\\relic_charge_crystal_etching_e02.png",
+      "id": "relic_charge_crystal_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_vampire_fang_etching_e02.png",
+      "sha256": "f42eabd5ffcb170f229f49ad37f4302fc4c016ece276323b950cd9dfe7ebe47d",
+      "source": "ImageReview\\relics\\relic_vampire_fang_etching_e02.png",
+      "id": "relic_vampire_fang_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_energy_shield_etching_e02.png",
+      "sha256": "79384816ffbbf205146b0b6e280c9c263a7605e7e7017cfbb6cb4e0a2be42b1a",
+      "source": "ImageReview\\relics\\relic_energy_shield_etching_e02.png",
+      "id": "relic_energy_shield_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_stable_anchor_etching_e02.png",
+      "sha256": "788b184d442f0f6e92715c4a896ea3a11f0eadf2de79c9f2ba73a22600154a4d",
+      "source": "ImageReview\\relics\\relic_stable_anchor_etching_e02.png",
+      "id": "relic_stable_anchor_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_twin_talisman_etching_e02.png",
+      "sha256": "0a1cfb9ba87c86ca20b073b9c1b5d50c8653a3cb63a489b85953bf855392ea8e",
+      "source": "ImageReview\\relics\\relic_twin_talisman_etching_e02.png",
+      "id": "relic_twin_talisman_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_mirror_echo_etching_e02.png",
+      "sha256": "af1b7017f82720784d07fc96918d52425096cc497a56a7c16eeaf40e5f3d058d",
+      "source": "ImageReview\\relics\\relic_mirror_echo_etching_e02.png",
+      "id": "relic_mirror_echo_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_scholar_badge_etching_e02.png",
+      "sha256": "818b547cf426b8303ef3fcc4ffbdf2092d347c98eef1e09f63df2325e69edbf1",
+      "source": "ImageReview\\relics\\relic_scholar_badge_etching_e02.png",
+      "id": "relic_scholar_badge_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_omniscient_eye_etching_e02.png",
+      "sha256": "a0532dc604c3db0803547a8ec8f764bdbad6cb7906eb81e48e49787b093ef8e6",
+      "source": "ImageReview\\relics\\relic_omniscient_eye_etching_e02.png",
+      "id": "relic_omniscient_eye_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_chaos_core_etching_e02.png",
+      "sha256": "09322b7ff99f30014cae2a7c48d73917e17c57b0a86497ae4a29eaf3e83e7d05",
+      "source": "ImageReview\\relics\\relic_chaos_core_etching_e02.png",
+      "id": "relic_chaos_core_etching_e02"
+    },
+    {
+      "target": "Assets\\UI\\relics\\relic_memory_crown_etching_e02.png",
+      "sha256": "772e6a3d9b9b162f9f716a506c8c058d2bbddfa7e9292bf46fd2e569624d7d8b",
+      "source": "ImageReview\\relics\\relic_memory_crown_etching_e02.png",
+      "id": "relic_memory_crown_etching_e02"
+    }
+  ],
+  "approvalContext": "用户确认展示的E02十五件遗物正式收录"
+}

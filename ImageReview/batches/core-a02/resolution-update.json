@@ -1,0 +1,24 @@
+{
+  "revision": "1080p-r2",
+  "targetResolution": [
+    1920,
+    1080
+  ],
+  "asset": "ImageReview/backgrounds/bg_battle_empty_a01.png",
+  "source": "ImageReview/backgrounds/bg_battle_empty_a01_r2_source.png",
+  "generatedResolution": [
+    1672,
+    941
+  ],
+  "deliveredResolution": [
+    1920,
+    1080
+  ],
+  "method": "Built-in imagegen redraw followed by sharp Lanczos3 cover resampling; not native 1080p generation or proven super-resolution.",
+  "nativeHighResolutionOutstanding": true,
+  "selectedAttempt": 1,
+  "prompts": [
+    "Edit target: the attached existing game background. Resolution upgrade only, preserve the composition, exact large dark charcoal left 60% area for cards, ivory right 40% area for character and HUD, ruins, moon, small raven at bottom left, understated black ink etched print texture and muted ivory palette. Reconstruct fine crisp etching detail without changing placement, contrast balance, silhouettes, or adding objects. No characters, no enemies, no text, no UI, no frames. Output landscape exactly 1920x1080 pixels (16:9), full bleed opaque background. This is a production game background for the approved 1920x1080 game composition. Preserve all safe negative spaces. If exact dimensions cannot be output, generate at 3840x2160 or greater than 1920x1080 in 16:9 for downsample; never lower resolution.",
+    "Generate a high resolution game background with output pixel dimensions 3840 x 2160, landscape 16:9. Do not output 1672x941: previous edit incorrectly kept input resolution; the delivery MUST exceed 1920x1080 pixels. Reference attached only for composition/style. Recreate same dark charcoal left 60%, ivory right 40% empty game battlefield, ink etching/woodcut ruined arches mountains pale moon distant valley, tiny black raven on ruin at lower left, ivory safe areas on right for UI; preserve reference composition closely. Fine crisp black ink engraved detail with low contrast center, no people, no enemies, no text, no UI. Full bleed opaque high resolution raster image."
+  ]
+}

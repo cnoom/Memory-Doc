@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-16",
+  "tool": "built-in imagegen",
+  "status": "failed-network-retry",
+  "generatedAssets": 0,
+  "prompt": "Edit image 1 (approved phase II Memory Devourer) into phase III BERSERK/POLLUTION, single full-body transparent game enemy sprite. Preserve same crowned pointed blank ivory mask, hunched book-armored giant, exactly two long claw arms and two planted feet, three-quarter left facing and recognizable proportions. Fine black woodcut engraving with bone-white paper, charcoal ink, antique brass and muted oxblood ribbons. Phase III unmistakable transformation: chest void expands, surrounding pages splay outward like torn jagged ribs; binding ribbons snap with dangling seal ends, shoulder book covers split and flare outward, sparse torn pages and black ink flecks spill very close to body; ink corruption stains one forearm and lower chest. More aggressive claw tension, still same standing character, not a new monster. Retain mask and crown intact enough to recognize. No neon, no luminous fog, no floor or shadow, no words, no UI, no extra limbs. Entire crown, claws, feet and debris fully visible within canvas with at least 8 percent clear transparent margins on ALL sides. Genuine alpha background. One isolated character only.",
+  "reference": "Assets/UI/enemies/enemy_memory_devourer_phase2_s01.png",
+  "latestTurnAttempts": 2,
+  "retryPrompt": "Create phase THREE of this same crowned paper-and-book golem boss, transparent full-body sprite. Preserve ivory pointed blank mask, crown, two arms, two feet, left-facing hunched pose and fine bone-white/charcoal woodcut engraving. Make its chest void much larger, book armor cracked and splayed, red sealing ribbons broken, ink corruption on forearms and torn pages around shoulders: a clearly more aggressive final form. Keep antique brass and muted red accents. No background, floor, text, glow or UI. Show every claw and foot fully with ample transparent margins. Same character identity as reference, one isolated figure."
+}

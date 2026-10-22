@@ -1,0 +1,58 @@
+{
+  "batch": "card-illustrations-d01",
+  "date": "2026-10-11",
+  "status": "pending-review",
+  "assets": [
+    {
+      "id": "card_attack_kaoju_etching_d01",
+      "name": "考据",
+      "category": "cards",
+      "png": "cards/card_attack_kaoju_etching_d01.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "cb4fc0039f00e9ee09fc87d62594070391c4775f8c37eaf0c792e45eeca6383f",
+      "sourceResolution": [
+        1254,
+        1254
+      ],
+      "exportMethod": "Unchanged generated original; opaque bone-white paper background",
+      "type": "attack"
+    },
+    {
+      "id": "card_skill_sudu_etching_d01",
+      "name": "速读",
+      "category": "cards",
+      "png": "cards/card_skill_sudu_etching_d01.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "55966cd535c6eef6a4722ffa0b31d5fa05b5d8c18ce4882b3cf1440f7259f528",
+      "sourceResolution": [
+        1254,
+        1254
+      ],
+      "exportMethod": "Unchanged generated original; opaque bone-white paper background",
+      "type": "skill"
+    },
+    {
+      "id": "card_ability_quanshenguanzhu_etching_d01",
+      "name": "全神贯注",
+      "category": "cards",
+      "png": "cards/card_ability_quanshenguanzhu_etching_d01.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "0fb75917b1ea8b5830af5caf718229da304d9241b03e57a4a9449cedc8bcf0b7",
+      "sourceResolution": [
+        1254,
+        1254
+      ],
+      "exportMethod": "Unchanged generated original; opaque bone-white paper background",
+      "type": "ability"
+    }
+  ]
+}

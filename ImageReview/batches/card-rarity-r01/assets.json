@@ -1,0 +1,75 @@
+{
+  "batch": "card-rarity-r01",
+  "status": "pending-review",
+  "assets": [
+    {
+      "id": "border_card_attack_uncommon_r01",
+      "category": "cardframes",
+      "png": "cardframes/border_card_attack_uncommon_r01.png",
+      "rarity": "uncommon",
+      "width": 960,
+      "height": 1280,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "17d9a71a98287444152c7a6148db3cbef77005d09da3be0722ba27bbed117763",
+      "window": {
+        "x": 157,
+        "y": 301,
+        "width": 647,
+        "height": 495
+      },
+      "windowMask": "ImageReview/batches/card-rarity-r01/uncommon-window-mask.png",
+      "textSafe": {
+        "title": {
+          "x": 235,
+          "y": 153,
+          "width": 545,
+          "height": 107
+        },
+        "effect": {
+          "x": 180,
+          "y": 858,
+          "width": 600,
+          "height": 280
+        }
+      },
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "border_card_attack_rare_r01",
+      "category": "cardframes",
+      "png": "cardframes/border_card_attack_rare_r01.png",
+      "rarity": "rare",
+      "width": 960,
+      "height": 1280,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sha256": "d64d670e06f84b5ad3f9e2826874d9c58ac75906552df40cd1e9a9fda72b41c0",
+      "window": {
+        "x": 157,
+        "y": 301,
+        "width": 647,
+        "height": 495
+      },
+      "windowMask": "ImageReview/batches/card-rarity-r01/rare-window-mask.png",
+      "textSafe": {
+        "title": {
+          "x": 235,
+          "y": 153,
+          "width": 545,
+          "height": 107
+        },
+        "effect": {
+          "x": 180,
+          "y": 858,
+          "width": 600,
+          "height": 280
+        }
+      },
+      "scaling": "uniform-only"
+    }
+  ],
+  "reused": [
+    "border_card_attack_ornate_c04"
+  ]
+}

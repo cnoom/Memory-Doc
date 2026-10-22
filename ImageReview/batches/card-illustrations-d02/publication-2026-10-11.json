@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-11",
+  "authorizationQuote": "继续吧，这种icon可以批量生成无需向我确认",
+  "approvalMode": "standing-user-authorization-after-agent-review",
+  "scope": "小型卡牌插画；不扩展到卡框、角色立绘或界面",
+  "files": [
+    {
+      "id": "card_attack_pizhu_etching_d02",
+      "source": "ImageReview/cards/card_attack_pizhu_etching_d02.png",
+      "target": "Assets/UI/cards/card_attack_pizhu_etching_d02.png",
+      "sha256": "a1c8beb7b10d582049babef654977263d8fc92bbc686f3cc6cd45e8ba829be3f"
+    },
+    {
+      "id": "card_skill_mulu_etching_d02",
+      "source": "ImageReview/cards/card_skill_mulu_etching_d02.png",
+      "target": "Assets/UI/cards/card_skill_mulu_etching_d02.png",
+      "sha256": "ee285786e400c80dffd1d1c3f7f994e86f2563788955117c8d7358906f92dc76"
+    },
+    {
+      "id": "card_skill_suji_etching_d02",
+      "source": "ImageReview/cards/card_skill_suji_etching_d02.png",
+      "target": "Assets/UI/cards/card_skill_suji_etching_d02.png",
+      "sha256": "58cb1f580ec32bf71b60c75113e42dbcf5227a38eb7d5886f80c16e24e43d49f"
+    }
+  ]
+}

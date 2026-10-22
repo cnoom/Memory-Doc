@@ -1,0 +1,6267 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-21",
+  "pathBase": "美术资源v1",
+  "items": [
+    {
+      "id": "ornament_memory_ring_b03",
+      "batch": "B03",
+      "status": "approved",
+      "role": "component",
+      "productionEligible": true,
+      "paths": {
+        "png": "ornaments/ornament_memory_ring_b03.png",
+        "svg": "ornaments/ornament_memory_ring_b03.svg"
+      },
+      "width": 64,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "4ba6f621f8bfeb8c43a1cf926a16f0589e923b18413fb3be331720d4004d41cf",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "btn_primary_normal_b03",
+      "batch": "B03",
+      "status": "approved",
+      "role": "component",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_primary_normal_b03.png",
+        "svg": "buttons/btn_primary_normal_b03.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "a704b6984a6f740785cab92da1a7f460be7bd741de0070ad6e3ea71edeb3a7b0",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "btn_primary_hover_b03",
+      "batch": "B03",
+      "status": "approved",
+      "role": "component",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_primary_hover_b03.png",
+        "svg": "buttons/btn_primary_hover_b03.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "9410528de3c0a6a5c4c76e8c9bae2d93281f10ba569aa2f210edc4cc0cdc14df",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "btn_primary_pressed_b03",
+      "batch": "B03",
+      "status": "approved",
+      "role": "component",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_primary_pressed_b03.png",
+        "svg": "buttons/btn_primary_pressed_b03.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "1932949d7976683af36fb6fb0ed006a18d290c39d369ba678d68662553ee88be",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "btn_primary_disabled_b03",
+      "batch": "B03",
+      "status": "approved",
+      "role": "component",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_primary_disabled_b03.png",
+        "svg": "buttons/btn_primary_disabled_b03.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "39474cd560b046379db0cb653e487f471d0bf1fd0edfbfc3580c02ac07a91b2f",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "btn_secondary_normal_b03",
+      "batch": "B03",
+      "status": "approved",
+      "role": "component",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_secondary_normal_b03.png",
+        "svg": "buttons/btn_secondary_normal_b03.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "7bcff665eacb515ed1397c3d8dcad805e96de51bd02c6e5c028615990f3f8b3e",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "btn_secondary_hover_b03",
+      "batch": "B03",
+      "status": "approved",
+      "role": "component",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_secondary_hover_b03.png",
+        "svg": "buttons/btn_secondary_hover_b03.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "7e2e034aa9c12688918fbcf3054ad0ea93b99491ddfdd9c53e4826c59fb11c1e",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "btn_secondary_pressed_b03",
+      "batch": "B03",
+      "status": "approved",
+      "role": "component",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_secondary_pressed_b03.png",
+        "svg": "buttons/btn_secondary_pressed_b03.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "a67c4585a3b730e138033f34e4b4123a01030ff7383793d35e00cd39a1c86742",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "btn_secondary_disabled_b03",
+      "batch": "B03",
+      "status": "approved",
+      "role": "component",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_secondary_disabled_b03.png",
+        "svg": "buttons/btn_secondary_disabled_b03.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "39474cd560b046379db0cb653e487f471d0bf1fd0edfbfc3580c02ac07a91b2f",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "badge_mark_paper_b03",
+      "batch": "B03",
+      "status": "approved",
+      "role": "component",
+      "productionEligible": true,
+      "paths": {
+        "png": "badges/badge_mark_paper_b03.png",
+        "svg": "badges/badge_mark_paper_b03.svg"
+      },
+      "width": 240,
+      "height": 100,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "38dca9ff2fff5350ca611e1cd8cc4c5ba677fc9c4d5463986138f59eb4415b95",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "seal_pairing_b03",
+      "batch": "B03",
+      "status": "approved",
+      "role": "component",
+      "productionEligible": true,
+      "paths": {
+        "png": "overlays/seal_pairing_b03.png",
+        "svg": "overlays/seal_pairing_b03.svg"
+      },
+      "width": 128,
+      "height": 128,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "dc4349f747dbd8dede72d7c13f7ae68fab6b1abd80f52e24f85b0d2f1264ab6f",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "bg_battle_etching_textless_v02",
+      "batch": "V02",
+      "status": "approved",
+      "role": "composite-background-with-actors",
+      "productionEligible": true,
+      "paths": {
+        "png": "backgrounds/bg_battle_etching_textless_v02.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "374d20cf823eda5a5ea6d919e0b504c76d69f334f389bea7f40db64d66bbcfb5",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "card_attack_dushubiji_illustration_v02",
+      "batch": "V02",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_dushubiji_illustration_v02.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "c9abd1a94ed7afeec4d63252cdb7507f4438efce6767a1ad5c2549be84978d05",
+      "spec": {},
+      "requiresEngineValidation": true
+    },
+    {
+      "id": "icon_type_attack_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_type_attack_etching_b01.png",
+        "svg": "icons/icon_type_attack_etching_b01.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "0569510169198fac6dbe4d3a2ec928d6f42a8e81e1205c78cad7cab9a32d249c",
+      "spec": {
+        "display": [
+          48,
+          48
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_type_skill_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_type_skill_etching_b01.png",
+        "svg": "icons/icon_type_skill_etching_b01.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "5346c1129210083a1c92f391505c1578a0f5ae045aac76cb367cae3b02a56ec0",
+      "spec": {
+        "display": [
+          48,
+          48
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_type_ability_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_type_ability_etching_b01.png",
+        "svg": "icons/icon_type_ability_etching_b01.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "f9224f596884806b8f2fcdc3d7cdc629251eace0c31f5ee9201cabca9e405427",
+      "spec": {
+        "display": [
+          48,
+          48
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_type_curse_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_type_curse_etching_b01.png",
+        "svg": "icons/icon_type_curse_etching_b01.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "edfe46ebe6a22555e87d8ac013b7d45732c7549359f130392cd063282208c7b8",
+      "spec": {
+        "display": [
+          48,
+          48
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_status_burn_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_status_burn_etching_b01.png",
+        "svg": "icons/icon_status_burn_etching_b01.svg"
+      },
+      "width": 160,
+      "height": 160,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "c987b699df265693cba2b0a51451323ed68c274af070109fed57334fc6d8ca77",
+      "spec": {
+        "display": [
+          40,
+          40
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_status_freeze_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_status_freeze_etching_b01.png",
+        "svg": "icons/icon_status_freeze_etching_b01.svg"
+      },
+      "width": 160,
+      "height": 160,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "f67bfc06222df1f953ef2133fe3cfa06aabe4a52d37cac2390c74949eb3d2726",
+      "spec": {
+        "display": [
+          40,
+          40
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_status_poison_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_status_poison_etching_b01.png",
+        "svg": "icons/icon_status_poison_etching_b01.svg"
+      },
+      "width": 160,
+      "height": 160,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "e437e47f64d2b6ad2b46b5f6b140597d0224d56024d8287c1e3195cc0051ccff",
+      "spec": {
+        "display": [
+          40,
+          40
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_status_armor_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_status_armor_etching_b01.png",
+        "svg": "icons/icon_status_armor_etching_b01.svg"
+      },
+      "width": 160,
+      "height": 160,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "5911ec6604caa7585b9c558c5dc9df2237ee998013d93920ce22f584e7083ff4",
+      "spec": {
+        "display": [
+          40,
+          40
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_status_vulnerable_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_status_vulnerable_etching_b01.png",
+        "svg": "icons/icon_status_vulnerable_etching_b01.svg"
+      },
+      "width": 160,
+      "height": 160,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "75a30189a4dade8d99acc956e9117fbb5ff06fecbedf3ae1ca1e1c2821e7ec57",
+      "spec": {
+        "display": [
+          40,
+          40
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_status_weak_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_status_weak_etching_b01.png",
+        "svg": "icons/icon_status_weak_etching_b01.svg"
+      },
+      "width": 160,
+      "height": 160,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "5bcef50a7ac23dfd2e66014f84e194cb26d20687f4e4a4afc3bc3caf2d80ac67",
+      "spec": {
+        "display": [
+          40,
+          40
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_intent_attack_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_intent_attack_etching_b01.png",
+        "svg": "icons/icon_intent_attack_etching_b01.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "a4d4ea40db55a0f7d48382f36a89628a01a5cc112911976799708014d3b45966",
+      "spec": {
+        "display": [
+          48,
+          48
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_intent_charge_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_intent_charge_etching_b01.png",
+        "svg": "icons/icon_intent_charge_etching_b01.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "f68670a25fa8b1bf9a84bb9d0426e7c86d0e128f5787fd89084c81fab211b696",
+      "spec": {
+        "display": [
+          48,
+          48
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_intent_defend_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_intent_defend_etching_b01.png",
+        "svg": "icons/icon_intent_defend_etching_b01.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "08395b6801f069d9852b1595e6a50f503e7c3fb0aa00f5c0571ea8d861f6e336",
+      "spec": {
+        "display": [
+          48,
+          48
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_intent_special_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_intent_special_etching_b01.png",
+        "svg": "icons/icon_intent_special_etching_b01.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "9be56c8ea89323992304f73009b47996d20730455f7b196d859fb34b03fbad3b",
+      "spec": {
+        "display": [
+          48,
+          48
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "icon_intent_berserk_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "battle-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_intent_berserk_etching_b01.png",
+        "svg": "icons/icon_intent_berserk_etching_b01.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "aeb50fc437ab3408aff170205bdb35e0fd7014188159463e9cef9c297e611c91",
+      "spec": {
+        "display": [
+          48,
+          48
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed 15 type/status/intent icons with 可以; PNG and SVG published with unchanged content."
+    },
+    {
+      "id": "card_attack_daji_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_daji_etching_b01.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "1262c540d30c9828c0085eca9a16c30c54fbcd4359804836d720515e96b21bec",
+      "spec": {},
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the three standalone illustrations with 可以; opaque bone-white background intended for card illustration window, not transparent object use."
+    },
+    {
+      "id": "card_skill_gedang_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_gedang_etching_b01.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "b094376781fc80396438fa80d9ec93541c37f81f043adc9870eb9dac0ffde000",
+      "spec": {},
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the three standalone illustrations with 可以; opaque bone-white background intended for card illustration window, not transparent object use."
+    },
+    {
+      "id": "card_attack_biji_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_biji_etching_b01.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "9b9af2566995326c7105271e6abe6d54b4ce4ff10f58d3ec9a1d6718b79fefa1",
+      "spec": {},
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the three standalone illustrations with 可以; opaque bone-white background intended for card illustration window, not transparent object use."
+    },
+    {
+      "id": "portrait_scholar_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "static-character-portrait",
+      "productionEligible": true,
+      "paths": {
+        "png": "portraits/portrait_scholar_etching_b01.png"
+      },
+      "width": 1199,
+      "height": 1312,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "2460295476b4f0137e1738a03aa68507ab6b88f6841f2910d41cd14c2cf350ba",
+      "spec": {},
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed scholar, chaos slime, training dummy and goblin static illustrations with 可以; animation assets are outside this approval."
+    },
+    {
+      "id": "enemy_chaos_slime_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "static-enemy-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "enemies/enemy_chaos_slime_etching_b01.png"
+      },
+      "width": 1308,
+      "height": 1202,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "da5674dd669b2eec3d9d63adb21155cfebd5be1760f64d208115393e2b2d4048",
+      "spec": {},
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed scholar, chaos slime, training dummy and goblin static illustrations with 可以; animation assets are outside this approval."
+    },
+    {
+      "id": "enemy_training_dummy_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "static-enemy-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "enemies/enemy_training_dummy_etching_b01.png"
+      },
+      "width": 1024,
+      "height": 1536,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "sha256": "53e511b7076d5aacb58e78ac9aab8c5eaca5c76bf542130152704e83bb198a87",
+      "spec": {},
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed scholar, chaos slime, training dummy and goblin static illustrations with 可以; animation assets are outside this approval."
+    },
+    {
+      "id": "enemy_goblin_etching_b01",
+      "batch": "B01",
+      "status": "approved",
+      "role": "static-enemy-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "enemies/enemy_goblin_etching_b01.png"
+      },
+      "width": 1168,
+      "height": 1346,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "54cdf5e4ab9356b9d080b4f2d4ccead11121970209e98d83acc873f5eca0907a",
+      "spec": {},
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved the displayed scholar, chaos slime, training dummy and goblin static illustrations with 可以; animation assets are outside this approval."
+    },
+    {
+      "id": "journal_cover_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "journal-structure",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/journal_cover_a01.png",
+        "svg": "journal/journal_cover_a01.svg"
+      },
+      "width": 1260,
+      "height": 810,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "a14bc567b5088f261ca0e2a79d70530a501b1ca15c2f61051a444f6ba3f0cc20",
+      "spec": {
+        "display": [
+          1260,
+          810
+        ],
+        "scaling": "uniform-only",
+        "anchor": [
+          0,
+          0
+        ],
+        "z": 0
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "journal_page_edges_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "journal-structure",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/journal_page_edges_a01.png",
+        "svg": "journal/journal_page_edges_a01.svg"
+      },
+      "width": 1260,
+      "height": 810,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "bbeeca1b429eaab01d75f38c5b8c72aa1ce976bb3b5f7957d8616832079de36f",
+      "spec": {
+        "display": [
+          1260,
+          810
+        ],
+        "scaling": "uniform-only",
+        "anchor": [
+          0,
+          0
+        ],
+        "z": 1
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "journal_page_left_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "journal-structure",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/journal_page_left_a01.png",
+        "svg": "journal/journal_page_left_a01.svg"
+      },
+      "width": 1260,
+      "height": 810,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "bdba3a1d57a1fe5f80a8af776b240ce02d41497588f04c09ba7b1f38d4999db7",
+      "spec": {
+        "display": [
+          1260,
+          810
+        ],
+        "scaling": "uniform-only",
+        "anchor": [
+          0,
+          0
+        ],
+        "z": 2
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "journal_page_right_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "journal-structure",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/journal_page_right_a01.png",
+        "svg": "journal/journal_page_right_a01.svg"
+      },
+      "width": 1260,
+      "height": 810,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "fae29dc090a7107e6e4e14796cd151553509f142b3472fde89373c5c58a18e41",
+      "spec": {
+        "display": [
+          1260,
+          810
+        ],
+        "scaling": "uniform-only",
+        "anchor": [
+          0,
+          0
+        ],
+        "z": 2
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "journal_spine_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "journal-structure",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/journal_spine_a01.png",
+        "svg": "journal/journal_spine_a01.svg"
+      },
+      "width": 1260,
+      "height": 810,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        144
+      ],
+      "sha256": "1a2e40d5b672eb3952821d4a147df845a633dfc48463bb91a90e99987000d741",
+      "spec": {
+        "display": [
+          1260,
+          810
+        ],
+        "scaling": "uniform-only",
+        "anchor": [
+          0,
+          0
+        ],
+        "z": 3
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "journal_binding_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "journal-structure",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/journal_binding_a01.png",
+        "svg": "journal/journal_binding_a01.svg"
+      },
+      "width": 1260,
+      "height": 810,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "323f5895718489468633056c1b61c1f561d974b5cf9b963a16a4c81363b94274",
+      "spec": {
+        "display": [
+          1260,
+          810
+        ],
+        "scaling": "uniform-only",
+        "anchor": [
+          0,
+          0
+        ],
+        "z": 4
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "journal_ribbon_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "journal-structure",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/journal_ribbon_a01.png",
+        "svg": "journal/journal_ribbon_a01.svg"
+      },
+      "width": 1260,
+      "height": 810,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "7be171cc26da64c20dba0658d7c876b4fec3c85f616625f1c84c0614edd0f33f",
+      "spec": {
+        "display": [
+          1260,
+          810
+        ],
+        "scaling": "uniform-only",
+        "anchor": [
+          0,
+          0
+        ],
+        "z": 5
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "journal_fold_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "journal-structure",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/journal_fold_a01.png",
+        "svg": "journal/journal_fold_a01.svg"
+      },
+      "width": 1260,
+      "height": 810,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "7dbac37f12f78f18a8e7de7acffb66b2d9c473154a90b5107b6af119324e4389",
+      "spec": {
+        "display": [
+          1260,
+          810
+        ],
+        "scaling": "uniform-only",
+        "anchor": [
+          0,
+          0
+        ],
+        "z": 4
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "btn_menu_normal_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "button",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_menu_normal_a01.png",
+        "svg": "buttons/btn_menu_normal_a01.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "1e7eaf7d82237f1f25c2a8a93f802ee5b003a257a8b34c5a3a8d7b2163c9d38b",
+      "spec": {
+        "display": [
+          440,
+          77
+        ],
+        "textSafe": {
+          "x": 65,
+          "y": 18,
+          "width": 495,
+          "height": 64
+        },
+        "scaling": "uniform-only",
+        "state": "normal",
+        "type": "menu"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "btn_menu_hover_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "button",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_menu_hover_a01.png",
+        "svg": "buttons/btn_menu_hover_a01.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "79b90c2c6402b4cde2c60adad375ba37e74773f843344cda2f5310366827927d",
+      "spec": {
+        "display": [
+          440,
+          77
+        ],
+        "textSafe": {
+          "x": 65,
+          "y": 18,
+          "width": 495,
+          "height": 64
+        },
+        "scaling": "uniform-only",
+        "state": "hover",
+        "type": "menu"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "btn_menu_pressed_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "button",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_menu_pressed_a01.png",
+        "svg": "buttons/btn_menu_pressed_a01.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "de1ed5cacdf111a7293aa6811be65d9d552be5413a2fd1038befe98ad31ac476",
+      "spec": {
+        "display": [
+          440,
+          77
+        ],
+        "textSafe": {
+          "x": 65,
+          "y": 18,
+          "width": 495,
+          "height": 64
+        },
+        "scaling": "uniform-only",
+        "state": "pressed",
+        "type": "menu"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "btn_menu_disabled_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "button",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_menu_disabled_a01.png",
+        "svg": "buttons/btn_menu_disabled_a01.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "378f6b1a0bc12bfbd639d467dfcb569a355c09eb5aa46d5a14b595a048f7623c",
+      "spec": {
+        "display": [
+          440,
+          77
+        ],
+        "textSafe": {
+          "x": 65,
+          "y": 18,
+          "width": 495,
+          "height": 64
+        },
+        "scaling": "uniform-only",
+        "state": "disabled",
+        "type": "menu"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "btn_danger_normal_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "button",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_danger_normal_a01.png",
+        "svg": "buttons/btn_danger_normal_a01.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "d34e184098d5dad8b86975dc5b2931880cda14786210854493e649f53906e10d",
+      "spec": {
+        "display": [
+          440,
+          77
+        ],
+        "textSafe": {
+          "x": 65,
+          "y": 18,
+          "width": 495,
+          "height": 64
+        },
+        "scaling": "uniform-only",
+        "state": "normal",
+        "type": "danger"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "btn_danger_hover_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "button",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_danger_hover_a01.png",
+        "svg": "buttons/btn_danger_hover_a01.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "b344ffbb462bc34469ad6e214d7935cf31bf8b4fab88c18302a6c5c6ca54b2b1",
+      "spec": {
+        "display": [
+          440,
+          77
+        ],
+        "textSafe": {
+          "x": 65,
+          "y": 18,
+          "width": 495,
+          "height": 64
+        },
+        "scaling": "uniform-only",
+        "state": "hover",
+        "type": "danger"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "btn_danger_pressed_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "button",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_danger_pressed_a01.png",
+        "svg": "buttons/btn_danger_pressed_a01.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "d34e184098d5dad8b86975dc5b2931880cda14786210854493e649f53906e10d",
+      "spec": {
+        "display": [
+          440,
+          77
+        ],
+        "textSafe": {
+          "x": 65,
+          "y": 18,
+          "width": 495,
+          "height": 64
+        },
+        "scaling": "uniform-only",
+        "state": "pressed",
+        "type": "danger"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "btn_danger_disabled_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "button",
+      "productionEligible": true,
+      "paths": {
+        "png": "buttons/btn_danger_disabled_a01.png",
+        "svg": "buttons/btn_danger_disabled_a01.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "6e659ade202598b1bfde1540ac8427f24ea260975fdc29a4cd13497d75b17385",
+      "spec": {
+        "display": [
+          440,
+          77
+        ],
+        "textSafe": {
+          "x": 65,
+          "y": 18,
+          "width": 495,
+          "height": 64
+        },
+        "scaling": "uniform-only",
+        "state": "disabled",
+        "type": "danger"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "toggle_off_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "settings-control",
+      "productionEligible": true,
+      "paths": {
+        "png": "controls/toggle_off_a01.png",
+        "svg": "controls/toggle_off_a01.svg"
+      },
+      "width": 128,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "18c8f70071f0e3ba831b734777603028c199ba08d8f07aeccb01c04f89a5faa4",
+      "spec": {
+        "display": [
+          64,
+          32
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "check_off_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "settings-control",
+      "productionEligible": true,
+      "paths": {
+        "png": "controls/check_off_a01.png",
+        "svg": "controls/check_off_a01.svg"
+      },
+      "width": 64,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "3c9579610c8fc9fe7c4c5a3a6b1d291b82d6129c4a929d6d12f332abf60840e8",
+      "spec": {
+        "display": [
+          32,
+          32
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "toggle_on_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "settings-control",
+      "productionEligible": true,
+      "paths": {
+        "png": "controls/toggle_on_a01.png",
+        "svg": "controls/toggle_on_a01.svg"
+      },
+      "width": 128,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "857bed2190d6f39c556a6307c6fb540632e1e9041ff229860343c0eb60628303",
+      "spec": {
+        "display": [
+          64,
+          32
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "check_on_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "settings-control",
+      "productionEligible": true,
+      "paths": {
+        "png": "controls/check_on_a01.png",
+        "svg": "controls/check_on_a01.svg"
+      },
+      "width": 64,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "647886af2afd129dc8ab551510e9672236a53f500ca5e31526eb563b1dc99b5e",
+      "spec": {
+        "display": [
+          32,
+          32
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "slider_track_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "settings-control",
+      "productionEligible": true,
+      "paths": {
+        "png": "controls/slider_track_a01.png",
+        "svg": "controls/slider_track_a01.svg"
+      },
+      "width": 256,
+      "height": 16,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "321adc10b477b897b97454e6d4f4cd59143c190a8b4119bbfcc0d52b04e75193",
+      "spec": {
+        "slice": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "display": [
+          256,
+          8
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "slider_fill_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "settings-control",
+      "productionEligible": true,
+      "paths": {
+        "png": "controls/slider_fill_a01.png",
+        "svg": "controls/slider_fill_a01.svg"
+      },
+      "width": 256,
+      "height": 16,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "38f3bc7e51fac1eab454db6b25ef3b32f28d53692c1f1f4a5b62d51fef218982",
+      "spec": {
+        "slice": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "display": [
+          256,
+          8
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "slider_thumb_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "settings-control",
+      "productionEligible": true,
+      "paths": {
+        "png": "controls/slider_thumb_a01.png",
+        "svg": "controls/slider_thumb_a01.svg"
+      },
+      "width": 64,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "616f5fb9b002f681416023cfa5b8a0c08663888e8816324919081205667a04d2",
+      "spec": {
+        "display": [
+          32,
+          32
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "bg_battle_empty_a01",
+      "batch": "A01",
+      "status": "approved",
+      "role": "empty-battle-background",
+      "productionEligible": true,
+      "paths": {
+        "png": "backgrounds/bg_battle_empty_a01.png"
+      },
+      "width": 1920,
+      "height": 1080,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "370c55f4e17e3cc8fc7c5686630a08e56795c30cc5198b569b23a7af0027cdd4",
+      "spec": {
+        "display": [
+          1920,
+          1080
+        ],
+        "scaling": "1:1 at 1920x1080; uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved current 1920x1080 empty background after disclosure of smaller resampled source; other A01/A02 assets remain pending.",
+      "provenance": {
+        "generatedResolution": [
+          1672,
+          941
+        ],
+        "deliveredResolution": [
+          1920,
+          1080
+        ],
+        "method": "Lanczos3 cover resampling",
+        "native1080p": false
+      }
+    },
+    {
+      "id": "decor_chapter_tab_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "journal-ornament",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/decor_chapter_tab_a02.png",
+        "svg": "journal/decor_chapter_tab_a02.svg"
+      },
+      "width": 76,
+      "height": 152,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "759dc7a594f029eb46d6be4a80a4a75d705335cc8e736f79ff42a8493fd5b231",
+      "spec": {
+        "textSafe": {
+          "x": 13,
+          "y": 15,
+          "width": 45,
+          "height": 122
+        },
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "decor_loose_leaf_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "journal-ornament",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/decor_loose_leaf_a02.png",
+        "svg": "journal/decor_loose_leaf_a02.svg"
+      },
+      "width": 360,
+      "height": 110,
+      "hasAlpha": true,
+      "alphaRange": [
+        64,
+        255
+      ],
+      "sha256": "7c974e8a5bc26df04e01c0ae0bf75c2a747432f74c3ee52d6c67d917aeefa33e",
+      "spec": {
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "decor_portrait_mount_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "journal-ornament",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/decor_portrait_mount_a02.png",
+        "svg": "journal/decor_portrait_mount_a02.svg"
+      },
+      "width": 410,
+      "height": 290,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "ad155814731b01c73acf8a574e371187d5ad89674c1371719008eff50d9f87c2",
+      "spec": {
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "decor_paper_tape_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "journal-ornament",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/decor_paper_tape_a02.png",
+        "svg": "journal/decor_paper_tape_a02.svg"
+      },
+      "width": 110,
+      "height": 22,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        198
+      ],
+      "sha256": "8c6831e60c9335ec917e1d5a5b705a50a68efb548e04f952ddbc9c9607af621e",
+      "spec": {
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "decor_stamp_frame_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "journal-ornament",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/decor_stamp_frame_a02.png",
+        "svg": "journal/decor_stamp_frame_a02.svg"
+      },
+      "width": 112,
+      "height": 62,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "22bf688e2a3d2e58d12b69cb1dc7edca6c105ff91cd33826f5b3b67e59f0b45c",
+      "spec": {
+        "textSafe": {
+          "x": 14,
+          "y": 14,
+          "width": 84,
+          "height": 34
+        },
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "decor_page_flourish_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "journal-ornament",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/decor_page_flourish_a02.png",
+        "svg": "journal/decor_page_flourish_a02.svg"
+      },
+      "width": 280,
+      "height": 30,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        179
+      ],
+      "sha256": "0b1a5e1df4f7fc9bf05d7b08d047fc3b7d3d18f86350b2e669f7888a8a564b3b",
+      "spec": {
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "decor_pressed_ring_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "journal-ornament",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/decor_pressed_ring_a02.png",
+        "svg": "journal/decor_pressed_ring_a02.svg"
+      },
+      "width": 54,
+      "height": 54,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        84
+      ],
+      "sha256": "072665c50cb13dcfcdf8c9987877dec467bd426a9c744ebb993be42eb89765c2",
+      "spec": {
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "decor_margin_ticks_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "journal-ornament",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/decor_margin_ticks_a02.png",
+        "svg": "journal/decor_margin_ticks_a02.svg"
+      },
+      "width": 18,
+      "height": 120,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        96
+      ],
+      "sha256": "1ab006bdc64ff12fee5994d7339ea7032d59ff58b5e5cc755e35351376e0f454",
+      "spec": {
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "decor_foreedge_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "journal-ornament",
+      "productionEligible": true,
+      "paths": {
+        "png": "journal/decor_foreedge_a02.png",
+        "svg": "journal/decor_foreedge_a02.svg"
+      },
+      "width": 10,
+      "height": 252,
+      "hasAlpha": true,
+      "alphaRange": [
+        255,
+        255
+      ],
+      "sha256": "d8fdac2965308fca5818ee38a160c52eec3f7ee29d9aa6d426d9c6fd2442980a",
+      "spec": {
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
+    },
+    {
+      "id": "focus_button_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "focus-overlay",
+      "productionEligible": true,
+      "paths": {
+        "png": "overlays/focus_button_a02.png",
+        "svg": "overlays/focus_button_a02.svg"
+      },
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "af10a755987e1990948de569a5622064aa4047ef88dfb5b899befe49c24fecdc",
+      "spec": {
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "focus_toggle_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "focus-overlay",
+      "productionEligible": true,
+      "paths": {
+        "png": "overlays/focus_toggle_a02.png",
+        "svg": "overlays/focus_toggle_a02.svg"
+      },
+      "width": 128,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "bdb6b449c27879bf10b587820b0ceb2e1487fa344d0428fec837d7f5da4ffafc",
+      "spec": {
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "focus_check_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "focus-overlay",
+      "productionEligible": true,
+      "paths": {
+        "png": "overlays/focus_check_a02.png",
+        "svg": "overlays/focus_check_a02.svg"
+      },
+      "width": 64,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "25b62769b73b4bfb120fe561d505d9fdb9ecea7b1f090c2baed7dc0f6fe25d55",
+      "spec": {
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "focus_slider_a02",
+      "batch": "A02",
+      "status": "approved",
+      "role": "focus-overlay",
+      "productionEligible": true,
+      "paths": {
+        "png": "overlays/focus_slider_a02.png",
+        "svg": "overlays/focus_slider_a02.svg"
+      },
+      "width": 64,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "25b62769b73b4bfb120fe561d505d9fdb9ecea7b1f090c2baed7dc0f6fe25d55",
+      "spec": {
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+    },
+    {
+      "id": "panel_paper_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "panels/panel_paper_a03.png",
+        "svg": "panels/panel_paper_a03.svg"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "6d2f699775c4943aded5733687561275bc27f90e49e8656b055b145660f80f3a",
+      "spec": {
+        "slice": [
+          32,
+          32,
+          32,
+          32
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "textSafe": {
+          "x": 36,
+          "y": 36,
+          "width": 184,
+          "height": 184
+        },
+        "scaling": "9-slice"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "panel_paper_a01",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "panel_tooltip_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "panels/panel_tooltip_a03.png",
+        "svg": "panels/panel_tooltip_a03.svg"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "6d2f699775c4943aded5733687561275bc27f90e49e8656b055b145660f80f3a",
+      "spec": {
+        "slice": [
+          32,
+          32,
+          32,
+          32
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "textSafe": {
+          "x": 36,
+          "y": 36,
+          "width": 184,
+          "height": 184
+        },
+        "scaling": "9-slice"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "panel_tooltip_a01",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "panel_ink_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "panels/panel_ink_a03.png",
+        "svg": "panels/panel_ink_a03.svg"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "58d05d47ceddc4aba102dba35df51198c7f31096d55fdd567c73d298fb3ddb20",
+      "spec": {
+        "slice": [
+          32,
+          32,
+          32,
+          32
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "textSafe": {
+          "x": 36,
+          "y": 36,
+          "width": 184,
+          "height": 184
+        },
+        "scaling": "9-slice"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "panel_ink_a01",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "hud_enemy_base_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "panels/hud_enemy_base_a03.png",
+        "svg": "panels/hud_enemy_base_a03.svg"
+      },
+      "width": 660,
+      "height": 232,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "578d0343f7984bd0bc89d2dd9c5df0f8b29573a3b36ecc044bb3e2a06c1a8e33",
+      "spec": {
+        "textSafe": {
+          "x": 36,
+          "y": 32,
+          "width": 596,
+          "height": 166
+        },
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "hud_enemy_base_a02",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "hud_name_tag_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "panels/hud_name_tag_a03.png",
+        "svg": "panels/hud_name_tag_a03.svg"
+      },
+      "width": 420,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "3b8f0a71be34818d8a41f8e3ee8cc0b1f681ef0f6111d20166d4ce6dc0305121",
+      "spec": {
+        "slice": [
+          24,
+          16,
+          32,
+          16
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "textSafe": {
+          "x": 24,
+          "y": 16,
+          "width": 364,
+          "height": 32
+        },
+        "scaling": "9-slice"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "hud_name_tag_a02",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "hud_enemy_compact_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "panels/hud_enemy_compact_a03.png",
+        "svg": "panels/hud_enemy_compact_a03.svg"
+      },
+      "width": 434,
+      "height": 181,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "fd64cb50c136eaa3d010d4f0576709d73604ed425127731d40ac9d2b4ba57d9b",
+      "spec": {
+        "display": [
+          434,
+          181
+        ],
+        "textSafe": {
+          "x": 36,
+          "y": 32,
+          "width": 370,
+          "height": 115
+        },
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "hud_enemy_compact_a02",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "hud_player_compact_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "panels/hud_player_compact_a03.png",
+        "svg": "panels/hud_player_compact_a03.svg"
+      },
+      "width": 253,
+      "height": 143,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "100701f529b209df103e9d255e44b57e297589df66916b10888a067b8b26dd8f",
+      "spec": {
+        "display": [
+          253,
+          143
+        ],
+        "textSafe": {
+          "x": 36,
+          "y": 32,
+          "width": 189,
+          "height": 77
+        },
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "hud_player_compact_a02",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "hud_player_base_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "panels/hud_player_base_a03.png",
+        "svg": "panels/hud_player_base_a03.svg"
+      },
+      "width": 362,
+      "height": 180,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "2b3361ab6bf5b3020c43f7563c76950cf459fde5d5a680a1850a5899bcd30e6e",
+      "spec": {
+        "textSafe": {
+          "x": 36,
+          "y": 32,
+          "width": 298,
+          "height": 114
+        },
+        "scaling": "uniform-only"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "hud_player_base_a02",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "hud_intent_tag_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "panels/hud_intent_tag_a03.png",
+        "svg": "panels/hud_intent_tag_a03.svg"
+      },
+      "width": 512,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "db67d08a3746bbdc1187124ddcb8730afe938c6df9ae77c514c756326867f406",
+      "spec": {
+        "slice": [
+          24,
+          16,
+          32,
+          16
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "textSafe": {
+          "x": 24,
+          "y": 16,
+          "width": 456,
+          "height": 32
+        },
+        "scaling": "9-slice"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "hud_intent_tag_a02",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "hud_health_track_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "bars/hud_health_track_a03.png",
+        "svg": "bars/hud_health_track_a03.svg"
+      },
+      "width": 512,
+      "height": 12,
+      "hasAlpha": true,
+      "alphaRange": [
+        119,
+        255
+      ],
+      "sha256": "ecd2062bc0bf4c4e7678d62358320f5315e963ae9dd2844fa3553248e3df0032",
+      "spec": {
+        "slice": [
+          6,
+          3,
+          6,
+          3
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "scaling": "9-slice"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "hud_health_track_a02",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "hud_health_fill_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "bars/hud_health_fill_a03.png",
+        "svg": "bars/hud_health_fill_a03.svg"
+      },
+      "width": 512,
+      "height": 8,
+      "hasAlpha": true,
+      "alphaRange": [
+        1,
+        255
+      ],
+      "sha256": "406010182aaaa2aba5e27026d34d8e5424ccaadb557b42b45919d2c9bed759e1",
+      "spec": {
+        "scaling": "masked-fill"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "hud_health_fill_a02",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "hud_action_empty_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "bars/hud_action_empty_a03.png",
+        "svg": "bars/hud_action_empty_a03.svg"
+      },
+      "width": 72,
+      "height": 32,
+      "hasAlpha": true,
+      "alphaRange": [
+        1,
+        255
+      ],
+      "sha256": "9bd2a95fa3decf3bf13ec28e6f76bf8074fe9773ceba48483e61be3e2fcb8fa3",
+      "spec": {
+        "slice": [
+          14,
+          11,
+          14,
+          11
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "scaling": "9-slice"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "hud_action_empty_a02",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "hud_action_filled_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "bars/hud_action_filled_a03.png",
+        "svg": "bars/hud_action_filled_a03.svg"
+      },
+      "width": 72,
+      "height": 32,
+      "hasAlpha": true,
+      "alphaRange": [
+        1,
+        255
+      ],
+      "sha256": "e06f32d9e5d8ecba50bc90c002e4b30aef1ee9fe376723fef1fe192e81b3e827",
+      "spec": {
+        "slice": [
+          14,
+          11,
+          14,
+          11
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "scaling": "9-slice"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "hud_action_filled_a02",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "hud_action_critical_a03",
+      "batch": "A03",
+      "status": "approved",
+      "role": "panel-hud-bar",
+      "productionEligible": true,
+      "paths": {
+        "png": "bars/hud_action_critical_a03.png",
+        "svg": "bars/hud_action_critical_a03.svg"
+      },
+      "width": 72,
+      "height": 32,
+      "hasAlpha": true,
+      "alphaRange": [
+        1,
+        255
+      ],
+      "sha256": "6fbc904fe675669b823324515b8ccc728f3b5537e361d53b309c51376372637c",
+      "spec": {
+        "slice": [
+          14,
+          11,
+          14,
+          11
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "scaling": "9-slice"
+      },
+      "requiresEngineValidation": true,
+      "replaces": "hud_action_critical_a02",
+      "approvalNote": "2026-10-07: user approved A03 refinement with 可以了. Use updated textSafe/slice metadata; target-engine layout validation remains required."
+    },
+    {
+      "id": "cardback_universal_ornate_c03",
+      "batch": "C03",
+      "status": "approved",
+      "role": "universal-card-back",
+      "productionEligible": true,
+      "paths": {
+        "png": "cardbacks/cardback_universal_ornate_c03.png"
+      },
+      "width": 960,
+      "height": 1280,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "7f324b0508b562f3aa3ac587690acf451456584091d8940171f9a13a52b34927",
+      "spec": {
+        "scaling": "uniform-only",
+        "sourceResolution": [
+          1086,
+          1448
+        ],
+        "exportMethod": "Uniform Lanczos3 downsampling; no cropping, repainting or color changes; generated alpha preserved.",
+        "universal": true
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user explicitly approved universal C03 back with 卡背也没问题."
+    },
+    {
+      "id": "border_card_attack_ornate_c04",
+      "batch": "C04",
+      "status": "approved",
+      "role": "card-frame",
+      "productionEligible": true,
+      "paths": {
+        "png": "cardframes/border_card_attack_ornate_c04.png"
+      },
+      "width": 960,
+      "height": 1280,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "84bf6d388f3ccc0db650f238868b6db1a791de02e08f8c2a47c98570942fb14a",
+      "spec": {
+        "window": {
+          "x": 156,
+          "y": 300,
+          "width": 649,
+          "height": 496,
+          "pixels": 318203
+        },
+        "textSafe": {
+          "title": {
+            "x": 235,
+            "y": 153,
+            "width": 545,
+            "height": 107
+          },
+          "effect": {
+            "x": 180,
+            "y": 858,
+            "width": 600,
+            "height": 280
+          }
+        },
+        "scaling": "uniform-only",
+        "windowMask": "cardframes/border_card_attack_ornate_c04_window_mask.png",
+        "sourceResolution": [
+          1086,
+          1448
+        ],
+        "exportMethod": "Uniform Lanczos3 downsampling; no cropping, repainting or color changes; generated alpha preserved."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user approved enlarged description area with 可以了. C04 attack frame approved."
+    },
+    {
+      "id": "relic_twin_dice_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_twin_dice_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "65a6f4ecd6f9df914fae890388dc9a90bbeb0b739daf15ce0cdac08dd169358b",
+      "spec": {
+        "rarity": "common",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_notebook_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_notebook_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "296aa9fd34e26ae84d1d7fe87d4b94078a9ae8f9184e84f9fcefdeaf9ee8f54e",
+      "spec": {
+        "rarity": "common",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_wood_shield_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_wood_shield_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "1aa832ae6ff34cb3932a239c9d1b7722a455ac3b99145c7da8713ae228a8d356",
+      "spec": {
+        "rarity": "common",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_mind_map_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_mind_map_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "cfbcd9d6a0b178bd5ae278478a3bde7dd7d04c21f6597f9f94a06a44a6a16b68",
+      "spec": {
+        "rarity": "uncommon",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ],
+        "gameplayAvailability": "suspended-per-design-07-v1.31; art completion does not restore availability"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_chain_core_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_chain_core_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "45062ef023782bf914f67fcb5cc6bee27a3ebe4c67c59b6aec7f84f20d86dfba",
+      "spec": {
+        "rarity": "uncommon",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_charge_crystal_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_charge_crystal_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "a0477d4e464f6712e3cbe4f63974bd146abe8778c1c85379718eb6e6a212452a",
+      "spec": {
+        "rarity": "uncommon",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_vampire_fang_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_vampire_fang_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "f42eabd5ffcb170f229f49ad37f4302fc4c016ece276323b950cd9dfe7ebe47d",
+      "spec": {
+        "rarity": "uncommon",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_energy_shield_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_energy_shield_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "79384816ffbbf205146b0b6e280c9c263a7605e7e7017cfbb6cb4e0a2be42b1a",
+      "spec": {
+        "rarity": "uncommon",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_stable_anchor_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_stable_anchor_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "788b184d442f0f6e92715c4a896ea3a11f0eadf2de79c9f2ba73a22600154a4d",
+      "spec": {
+        "rarity": "rare",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_twin_talisman_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_twin_talisman_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "0a1cfb9ba87c86ca20b073b9c1b5d50c8653a3cb63a489b85953bf855392ea8e",
+      "spec": {
+        "rarity": "rare",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_mirror_echo_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_mirror_echo_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "af1b7017f82720784d07fc96918d52425096cc497a56a7c16eeaf40e5f3d058d",
+      "spec": {
+        "rarity": "rare",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_scholar_badge_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_scholar_badge_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "818b547cf426b8303ef3fcc4ffbdf2092d347c98eef1e09f63df2325e69edbf1",
+      "spec": {
+        "rarity": "rare",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_omniscient_eye_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_omniscient_eye_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "a0532dc604c3db0803547a8ec8f764bdbad6cb7906eb81e48e49787b093ef8e6",
+      "spec": {
+        "rarity": "boss",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_chaos_core_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_chaos_core_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "09322b7ff99f30014cae2a7c48d73917e17c57b0a86497ae4a29eaf3e83e7d05",
+      "spec": {
+        "rarity": "boss",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_memory_crown_etching_e02",
+      "batch": "E02",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_memory_crown_etching_e02.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "772e6a3d9b9b162f9f716a506c8c058d2bbddfa7e9292bf46fd2e569624d7d8b",
+      "spec": {
+        "rarity": "boss",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user confirmed publication of the fifteen displayed E02 relic icons with 继续吧."
+    },
+    {
+      "id": "relic_memory_crystal_etching_e01",
+      "batch": "E01",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_memory_crystal_etching_e01.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "fc22105958fb2d7d948d4ae2e4a721fd37a4a22bbaa3bf60d5711fdf5d6b6739",
+      "spec": {
+        "rarity": "common",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved first four relic icons with 继续吧，没什么问题."
+    },
+    {
+      "id": "relic_resonance_stone_etching_e01",
+      "batch": "E01",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_resonance_stone_etching_e01.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "e1757b175c8af74b9d796b46ac85641a21f59c7d7ee73eb4f376e626a3274da3",
+      "spec": {
+        "rarity": "common",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved first four relic icons with 继续吧，没什么问题."
+    },
+    {
+      "id": "relic_first_aid_kit_etching_e01",
+      "batch": "E01",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_first_aid_kit_etching_e01.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "ecd2368c9793dc633e063cb18973883df3cf96889600db6501ebfcff8112d09a",
+      "spec": {
+        "rarity": "common",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved first four relic icons with 继续吧，没什么问题."
+    },
+    {
+      "id": "relic_slow_seal_etching_e01",
+      "batch": "E01",
+      "status": "approved",
+      "role": "relic-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "relics/relic_slow_seal_etching_e01.png"
+      },
+      "width": 256,
+      "height": 256,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "3166759bece247038a5acb79d162031b73f2705ccd8a939b8feb4349240976bb",
+      "spec": {
+        "rarity": "uncommon",
+        "sourceResolution": [
+          1254,
+          1254
+        ],
+        "displaySizes": [
+          48,
+          64
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved first four relic icons with 继续吧，没什么问题."
+    },
+    {
+      "id": "card_skill_zhenchabing_etching_d08",
+      "batch": "D08",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_zhenchabing_etching_d08.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "58928e64fbf6ca97012872dc455b17ca571a1a50a3b39da584ed3ee508cee277",
+      "spec": {
+        "type": "skill",
+        "rarity": "common"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing authorization for small card illustrations; not individually user-reviewed. Scout is a card illustration, not a standalone character portrait."
+    },
+    {
+      "id": "card_skill_shifu_etching_d08",
+      "batch": "D08",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_shifu_etching_d08.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "f71df37436131ba249a5b1b8d235b0110b7be4d5b63da7e9bc21903f46b883ad",
+      "spec": {
+        "type": "skill",
+        "rarity": "common"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing authorization for small card illustrations; not individually user-reviewed. Scout is a card illustration, not a standalone character portrait."
+    },
+    {
+      "id": "card_skill_jiazhou_etching_d08",
+      "batch": "D08",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_jiazhou_etching_d08.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "f51c25405764907ab41858926ca927e3f11548d6f975795790de558bf5e43c6c",
+      "spec": {
+        "type": "skill",
+        "rarity": "common"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing authorization for small card illustrations; not individually user-reviewed. Scout is a card illustration, not a standalone character portrait."
+    },
+    {
+      "id": "card_skill_xiaosanfeng_etching_d08",
+      "batch": "D08",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_xiaosanfeng_etching_d08.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "ddcd8d4809673ec1ad88fb283923e94f8b0f391002954c500f1f8d9c716dd548",
+      "spec": {
+        "type": "skill",
+        "rarity": "common"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing authorization for small card illustrations; not individually user-reviewed. Scout is a card illustration, not a standalone character portrait."
+    },
+    {
+      "id": "card_skill_shengmingquan_etching_d08",
+      "batch": "D08",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_shengmingquan_etching_d08.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "85d614d2595362ec2ffb650e8b2ae11b05c13990a15c95d5d35870537931531a",
+      "spec": {
+        "type": "skill",
+        "rarity": "common"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing authorization for small card illustrations; not individually user-reviewed. Scout is a card illustration, not a standalone character portrait."
+    },
+    {
+      "id": "card_skill_huisheng_etching_d08",
+      "batch": "D08",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_huisheng_etching_d08.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "0513943b261e631f32b5aebcb644414966eb086cb26ac7c7e1227063471e982d",
+      "spec": {
+        "type": "skill",
+        "rarity": "common"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing authorization for small card illustrations; not individually user-reviewed. Scout is a card illustration, not a standalone character portrait."
+    },
+    {
+      "id": "card_attack_pojiazhan_etching_d09",
+      "batch": "D09",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_pojiazhan_etching_d09.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "a552b7f4812e8daab02ddfa8d87f0131e9fbdb5b3beef9324be44e371c58d77e",
+      "spec": {
+        "type": "attack",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_zhicanji_etching_d09",
+      "batch": "D09",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_zhicanji_etching_d09.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "4f4df8ba299616ad4b349d8ec022a97f877e6f5c382162736ecc504c51c7bb72",
+      "spec": {
+        "type": "attack",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_liansuolei_etching_d09",
+      "batch": "D09",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_liansuolei_etching_d09.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "df1c30affb7d3189b1d0d4d7252937bd558689b6c77be2c757557312363b940a",
+      "spec": {
+        "type": "attack",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_juexiang_etching_d09",
+      "batch": "D09",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_juexiang_etching_d09.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "4ad55dd8c15e9dedfb48158a51ec7be030af6ab02b29c252d316e18131820e0c",
+      "spec": {
+        "type": "attack",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_skill_tiebi_etching_d09",
+      "batch": "D09",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_tiebi_etching_d09.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "d4012f177372c77e0620c693d053697158e452648b60c111698d26f29b2be4e4",
+      "spec": {
+        "type": "skill",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_skill_qingli_etching_d09",
+      "batch": "D09",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_qingli_etching_d09.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "6ad41ccf313b2d922cece3cdc393d77d593df0a92991d86d97bf0066490780eb",
+      "spec": {
+        "type": "skill",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_skill_bengdai_etching_d09",
+      "batch": "D09",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_bengdai_etching_d09.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "026cfca87c6fec6b7e67c88b5b425ab2a7801ae204370cc667eb606963d21b12",
+      "spec": {
+        "type": "skill",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_ability_shouhujiejie_etching_d09",
+      "batch": "D09",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_ability_shouhujiejie_etching_d09.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "be96e94660672d7cb31c0d93b393e0ba4bc59b3cec6a020fe2d0cbf1761f3c74",
+      "spec": {
+        "type": "ability",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_ability_yujin_etching_d09",
+      "batch": "D09",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_ability_yujin_etching_d09.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "61eec9b074b88cfdb88c124f3ce39ed6ab58fa32c1bc315a8af2dfe21f6630dc",
+      "spec": {
+        "type": "ability",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_ability_fengyan_etching_d09",
+      "batch": "D09",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_ability_fengyan_etching_d09.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "9dda193c23a68f188d85a81f30ef1f79454c8648bd1e4d25bd93255bd6e462ed",
+      "spec": {
+        "type": "ability",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_skill_moligongming_etching_d10",
+      "batch": "D10",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_moligongming_etching_d10.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "87f4fdab2de267ca1099faf61ba41d9cc5dd68d9ca58b069bad19d606c10c437",
+      "spec": {
+        "type": "skill",
+        "rarity": "rare"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_curse_fuhuazhongzi_etching_d10",
+      "batch": "D10",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_curse_fuhuazhongzi_etching_d10.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "a425d1c644c50e863b96a022b64a4ac4991072598be050a8a02fadf1592fb93d",
+      "spec": {
+        "type": "curse"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_curse_jiyichenai_etching_d10",
+      "batch": "D10",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_curse_jiyichenai_etching_d10.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "00f95784a563e7cbf1c5436c90092ffbae728d6528b0698b74f4eb73cf149ee1",
+      "spec": {
+        "type": "curse"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_curse_xukongliehen_etching_d10",
+      "batch": "D10",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_curse_xukongliehen_etching_d10.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "78cbaeae3f877118f3d7300456cf0e600e0cd7be42ed7908dab59df11b4a17b3",
+      "spec": {
+        "type": "curse"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_huoqiushu_etching_d07",
+      "batch": "D07",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_huoqiushu_etching_d07.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "0c36c210906a8c4ac8423d348c1f692c61e3a23d82b1e0397807ceed70aa20ff",
+      "spec": {
+        "type": "attack",
+        "rarity": "common"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_hengsao_etching_d07",
+      "batch": "D07",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_hengsao_etching_d07.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "9781267284954d5f4dd87ea3616bd2f199281d7b6de51b37f7613801ead3b8df",
+      "spec": {
+        "type": "attack",
+        "rarity": "common"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_lieyanzhan_etching_d07",
+      "batch": "D07",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_lieyanzhan_etching_d07.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "2aeb5ddfb76abd5c51270160f8571cd6a84f3d607e51499dad1b1be40ba13a8e",
+      "spec": {
+        "type": "attack",
+        "rarity": "common"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_cuiduren_etching_d07",
+      "batch": "D07",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_cuiduren_etching_d07.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "637ca9c5145f1e82fdec67b4f03bb442977aa169d934baba55eb9627bb40cfb5",
+      "spec": {
+        "type": "attack",
+        "rarity": "common"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_curse_yiwang_etching_d06",
+      "batch": "D06",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_curse_yiwang_etching_d06.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "46991beb7d3750a33c2c50dfb775a4723981f4585c25d123447384decda5d60d",
+      "spec": {
+        "type": "curse"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed. Curse cards use C05 without rarity variants."
+    },
+    {
+      "id": "card_curse_hunluanbiji_etching_d06",
+      "batch": "D06",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_curse_hunluanbiji_etching_d06.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "8f0174dd85167b89d4cf147f2b8f8f50263e4a518a30b100cac55a51970d0f39",
+      "spec": {
+        "type": "curse"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed. Curse cards use C05 without rarity variants."
+    },
+    {
+      "id": "card_curse_tuota_etching_d06",
+      "batch": "D06",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_curse_tuota_etching_d06.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "96ed28e84aab43b6d3a3349300b21acf3d60a6f02a5e9dc28778453768426862",
+      "spec": {
+        "type": "curse"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed. Curse cards use C05 without rarity variants."
+    },
+    {
+      "id": "card_curse_wujie_etching_d06",
+      "batch": "D06",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_curse_wujie_etching_d06.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "be9feaa66aa73ea1e4f8503b04060f9727fe27aef0f63736fc0d9290a937ce98",
+      "spec": {
+        "type": "curse"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed. Curse cards use C05 without rarity variants."
+    },
+    {
+      "id": "card_ability_baikequanshu_etching_d05",
+      "batch": "D05",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_ability_baikequanshu_etching_d05.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "db00640dba1b22f018f890d0c87fe7ec09754cc02e9872c9c4b708e552605aec",
+      "spec": {
+        "type": "ability",
+        "rarity": "rare"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_skill_wanyouwenku_etching_d05",
+      "batch": "D05",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_wanyouwenku_etching_d05.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "55071f513dcfc5495311073c07fda7247a85acdd93d1084af9e1b2e82db3d927",
+      "spec": {
+        "type": "skill",
+        "rarity": "rare"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_zhenlizhiyan_etching_d05",
+      "batch": "D05",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_zhenlizhiyan_etching_d05.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "0d1a4b15177e130a3bc5d1c0dba840fe4acb8d6f980aec3fd297e731946f1983",
+      "spec": {
+        "type": "attack",
+        "rarity": "rare"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_skill_shikonghuisu_etching_d05",
+      "batch": "D05",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_shikonghuisu_etching_d05.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "48733dae6c7b9de63b276a3d53065e36f92e57be396e9b54692e091d80808d4f",
+      "spec": {
+        "type": "skill",
+        "rarity": "rare"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_ability_quanzhiquanneng_etching_d05",
+      "batch": "D05",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_ability_quanzhiquanneng_etching_d05.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "c7dfcf64414b16bee4ea01f0108ff2c57e215354239ca91c0cba9545bbf721c4",
+      "spec": {
+        "type": "ability",
+        "rarity": "rare"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_skill_ronghuiguantong_etching_d05",
+      "batch": "D05",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_ronghuiguantong_etching_d05.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "ffd3a9137162cf67d43510289545336cf5af9fe308d52bf751f82ed3a9952a4c",
+      "spec": {
+        "type": "skill",
+        "rarity": "rare"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_lunwen_etching_d04",
+      "batch": "D04",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_lunwen_etching_d04.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "cc22f15129419545c0a16bb3a5994e05430f976533f0726795ca169b482e8571",
+      "spec": {
+        "type": "attack",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_jingzhundaji_etching_d04",
+      "batch": "D04",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_jingzhundaji_etching_d04.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "f44214204517365c11be78d7cbece4aa96905453996aaf2008dbeb4e7c5d8024",
+      "spec": {
+        "type": "attack",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_jiaochayinyong_etching_d04",
+      "batch": "D04",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_jiaochayinyong_etching_d04.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "4efc607c1b7583333cbb77a684b45655bf725c43a975595b87e2943bf895a1f2",
+      "spec": {
+        "type": "attack",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_attack_pozhanfenxi_etching_d04",
+      "batch": "D04",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_pozhanfenxi_etching_d04.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "9f2e7624a110bd4d76b606f2b7ae34326f5af85572bb66ade204613365a8a138",
+      "spec": {
+        "type": "attack",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_skill_tushuguan_etching_d04",
+      "batch": "D04",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_tushuguan_etching_d04.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "57c74d3c91ca277070afabc6eda84ad7f4fcaa389ce79a76cdc27d5611414ceb",
+      "spec": {
+        "type": "skill",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_skill_shuqian_etching_d04",
+      "batch": "D04",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_shuqian_etching_d04.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "cc1b7fb404b309f3aa5e21ae37ec94155dcb8d84a4ed8037f8efd85b4c646736",
+      "spec": {
+        "type": "skill",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_skill_wenxi_etching_d04",
+      "batch": "D04",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_wenxi_etching_d04.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "be3413f2ccc7ba9903a24aa92c1b9e991df4ab8a12575da50fe53c28794c4d0a",
+      "spec": {
+        "type": "skill",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_ability_zhishiyuanbo_etching_d04",
+      "batch": "D04",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_ability_zhishiyuanbo_etching_d04.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "4c3f640e7086d20d19b53cc195c09c431e2447677224d77b7bd303f6c297f44f",
+      "spec": {
+        "type": "ability",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "card_ability_juyifansan_etching_d04",
+      "batch": "D04",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_ability_juyifansan_etching_d04.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "a41a408a2b3d5efbbf7044e02278d65bb53d759f1dc635a839955fa475f07668",
+      "spec": {
+        "type": "ability",
+        "rarity": "uncommon"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under standing batch authorization for small card illustrations; not individually user-reviewed."
+    },
+    {
+      "id": "border_card_skill_uncommon_r02",
+      "batch": "R02",
+      "status": "approved",
+      "role": "card-frame",
+      "productionEligible": true,
+      "paths": {
+        "png": "cardframes/border_card_skill_uncommon_r02.png"
+      },
+      "width": 960,
+      "height": 1280,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "113f478cbbe578ebba74db78c50a1911f85a7dfb092d30ed159f2827a85db997",
+      "spec": {
+        "window": {
+          "x": 158,
+          "y": 303,
+          "width": 646,
+          "height": 492
+        },
+        "textSafe": {
+          "title": {
+            "x": 235,
+            "y": 153,
+            "width": 545,
+            "height": 107
+          },
+          "effect": {
+            "x": 180,
+            "y": 858,
+            "width": 600,
+            "height": 280
+          }
+        },
+        "scaling": "uniform-only",
+        "type": "skill",
+        "rarity": "uncommon",
+        "windowMask": "cardframes/border_card_skill_uncommon_r02_window_mask.png"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user approved all four R02 skill/ability uncommon and rare frames with 可以."
+    },
+    {
+      "id": "border_card_skill_rare_r02",
+      "batch": "R02",
+      "status": "approved",
+      "role": "card-frame",
+      "productionEligible": true,
+      "paths": {
+        "png": "cardframes/border_card_skill_rare_r02.png"
+      },
+      "width": 960,
+      "height": 1280,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "d1964f0173cb52a641eaba38e16fe0d7d514640a01175fcf78e4b38c812b68f0",
+      "spec": {
+        "window": {
+          "x": 158,
+          "y": 303,
+          "width": 646,
+          "height": 492
+        },
+        "textSafe": {
+          "title": {
+            "x": 235,
+            "y": 153,
+            "width": 545,
+            "height": 107
+          },
+          "effect": {
+            "x": 180,
+            "y": 858,
+            "width": 600,
+            "height": 280
+          }
+        },
+        "scaling": "uniform-only",
+        "type": "skill",
+        "rarity": "rare",
+        "windowMask": "cardframes/border_card_skill_rare_r02_window_mask.png"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user approved all four R02 skill/ability uncommon and rare frames with 可以."
+    },
+    {
+      "id": "border_card_ability_uncommon_r02",
+      "batch": "R02",
+      "status": "approved",
+      "role": "card-frame",
+      "productionEligible": true,
+      "paths": {
+        "png": "cardframes/border_card_ability_uncommon_r02.png"
+      },
+      "width": 960,
+      "height": 1280,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "cc22314d2c916c3a5c7cfcc1c9d2190b1b07c1ca9471ed0ee75874a8208bc135",
+      "spec": {
+        "window": {
+          "x": 157,
+          "y": 301,
+          "width": 647,
+          "height": 496
+        },
+        "textSafe": {
+          "title": {
+            "x": 235,
+            "y": 153,
+            "width": 545,
+            "height": 107
+          },
+          "effect": {
+            "x": 180,
+            "y": 858,
+            "width": 600,
+            "height": 280
+          }
+        },
+        "scaling": "uniform-only",
+        "type": "ability",
+        "rarity": "uncommon",
+        "windowMask": "cardframes/border_card_ability_uncommon_r02_window_mask.png"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user approved all four R02 skill/ability uncommon and rare frames with 可以."
+    },
+    {
+      "id": "border_card_ability_rare_r02",
+      "batch": "R02",
+      "status": "approved",
+      "role": "card-frame",
+      "productionEligible": true,
+      "paths": {
+        "png": "cardframes/border_card_ability_rare_r02.png"
+      },
+      "width": 960,
+      "height": 1280,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "a14dfe927130ee9cd370d77a0acbe6e0d7367589ae5aad527f01b198ea41d519",
+      "spec": {
+        "window": {
+          "x": 157,
+          "y": 302,
+          "width": 647,
+          "height": 493
+        },
+        "textSafe": {
+          "title": {
+            "x": 235,
+            "y": 153,
+            "width": 545,
+            "height": 107
+          },
+          "effect": {
+            "x": 180,
+            "y": 858,
+            "width": 600,
+            "height": 280
+          }
+        },
+        "scaling": "uniform-only",
+        "type": "ability",
+        "rarity": "rare",
+        "windowMask": "cardframes/border_card_ability_rare_r02_window_mask.png"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user approved all four R02 skill/ability uncommon and rare frames with 可以."
+    },
+    {
+      "id": "border_card_attack_uncommon_r01",
+      "batch": "R01",
+      "status": "approved",
+      "role": "card-frame",
+      "productionEligible": true,
+      "paths": {
+        "png": "cardframes/border_card_attack_uncommon_r01.png"
+      },
+      "width": 960,
+      "height": 1280,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "17d9a71a98287444152c7a6148db3cbef77005d09da3be0722ba27bbed117763",
+      "spec": {
+        "window": {
+          "x": 157,
+          "y": 301,
+          "width": 647,
+          "height": 495
+        },
+        "textSafe": {
+          "title": {
+            "x": 235,
+            "y": 153,
+            "width": 545,
+            "height": 107
+          },
+          "effect": {
+            "x": 180,
+            "y": 858,
+            "width": 600,
+            "height": 280
+          }
+        },
+        "scaling": "uniform-only",
+        "rarity": "uncommon",
+        "windowMask": "cardframes/border_card_attack_uncommon_r01_window_mask.png"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "User approved R01 uncommon/rare attack frames with 可以 on 2026-10-11."
+    },
+    {
+      "id": "border_card_attack_rare_r01",
+      "batch": "R01",
+      "status": "approved",
+      "role": "card-frame",
+      "productionEligible": true,
+      "paths": {
+        "png": "cardframes/border_card_attack_rare_r01.png"
+      },
+      "width": 960,
+      "height": 1280,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "d64d670e06f84b5ad3f9e2826874d9c58ac75906552df40cd1e9a9fda72b41c0",
+      "spec": {
+        "window": {
+          "x": 157,
+          "y": 301,
+          "width": 647,
+          "height": 495
+        },
+        "textSafe": {
+          "title": {
+            "x": 235,
+            "y": 153,
+            "width": 545,
+            "height": 107
+          },
+          "effect": {
+            "x": 180,
+            "y": 858,
+            "width": 600,
+            "height": 280
+          }
+        },
+        "scaling": "uniform-only",
+        "rarity": "rare",
+        "windowMask": "cardframes/border_card_attack_rare_r01_window_mask.png"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "User approved R01 uncommon/rare attack frames with 可以 on 2026-10-11."
+    },
+    {
+      "id": "card_attack_pangzhengboyin_etching_d03",
+      "batch": "D03",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_pangzhengboyin_etching_d03.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "298a11abb4218608bf8e66213381be31ce1323048f69d734e9c50118ed7c40d8",
+      "spec": {
+        "type": "attack"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent visual review under standing user authorization for batch small card illustrations, without per-batch confirmation."
+    },
+    {
+      "id": "card_attack_yinjingjudian_etching_d03",
+      "batch": "D03",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_yinjingjudian_etching_d03.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "ce981570bbdc493ccad926852e5f53f9537df53de4fa8ae077f167cc422440f5",
+      "spec": {
+        "type": "attack"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent visual review under standing user authorization for batch small card illustrations, without per-batch confirmation."
+    },
+    {
+      "id": "card_skill_suoyin_etching_d03",
+      "batch": "D03",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_suoyin_etching_d03.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "a7bba01f4c85e2123d105f4cbb8ff109c0abcc44fcbac70a08c886ff70cb3ee1",
+      "spec": {
+        "type": "skill"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent visual review under standing user authorization for batch small card illustrations, without per-batch confirmation."
+    },
+    {
+      "id": "card_skill_zhaiyao_etching_d03",
+      "batch": "D03",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_zhaiyao_etching_d03.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "39bc8536a7d28369e144272d12cc805b202e91aaa49fb52a11405aa4f0055585",
+      "spec": {
+        "type": "skill"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent visual review under standing user authorization for batch small card illustrations, without per-batch confirmation."
+    },
+    {
+      "id": "card_skill_bijibengedang_etching_d03",
+      "batch": "D03",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_bijibengedang_etching_d03.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "7ad2bf94e9f06a3be71175518f88cad6267ac96f9d7a210d3a073ce84015b893",
+      "spec": {
+        "type": "skill"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent visual review under standing user authorization for batch small card illustrations, without per-batch confirmation."
+    },
+    {
+      "id": "card_ability_bowenqiangshi_etching_d03",
+      "batch": "D03",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_ability_bowenqiangshi_etching_d03.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "e6694bcb742382f7305e88f944700dbfbf0c7cfcf36d037a44fe4e51d4ae1387",
+      "spec": {
+        "type": "ability"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent visual review under standing user authorization for batch small card illustrations, without per-batch confirmation."
+    },
+    {
+      "id": "card_ability_guomubuwang_etching_d03",
+      "batch": "D03",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_ability_guomubuwang_etching_d03.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "8dffe94783f6981ee3168e9ff45bf77405740d72defd412497b231fde6f62754",
+      "spec": {
+        "type": "ability"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent visual review under standing user authorization for batch small card illustrations, without per-batch confirmation."
+    },
+    {
+      "id": "card_ability_xueshuzhijue_etching_d03",
+      "batch": "D03",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_ability_xueshuzhijue_etching_d03.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "5ad01500a6efdc14b93b241442b71dddf1a93181520db131f0b95d7f49d2707c",
+      "spec": {
+        "type": "ability"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent visual review under standing user authorization for batch small card illustrations, without per-batch confirmation."
+    },
+    {
+      "id": "card_attack_pizhu_etching_d02",
+      "batch": "D02",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_pizhu_etching_d02.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "a1c8beb7b10d582049babef654977263d8fc92bbc686f3cc6cd45e8ba829be3f",
+      "spec": {
+        "type": "attack"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under explicit standing authorization: 这种icon可以批量生成无需向我确认."
+    },
+    {
+      "id": "card_skill_mulu_etching_d02",
+      "batch": "D02",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_mulu_etching_d02.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "ee285786e400c80dffd1d1c3f7f994e86f2563788955117c8d7358906f92dc76",
+      "spec": {
+        "type": "skill"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under explicit standing authorization: 这种icon可以批量生成无需向我确认."
+    },
+    {
+      "id": "card_skill_suji_etching_d02",
+      "batch": "D02",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_suji_etching_d02.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "58cb1f580ec32bf71b60c75113e42dbcf5227a38eb7d5886f80c16e24e43d49f",
+      "spec": {
+        "type": "skill"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: published after agent review under explicit standing authorization: 这种icon可以批量生成无需向我确认."
+    },
+    {
+      "id": "card_attack_kaoju_etching_d01",
+      "batch": "D01",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_attack_kaoju_etching_d01.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "cb4fc0039f00e9ee09fc87d62594070391c4775f8c37eaf0c792e45eeca6383f",
+      "spec": {
+        "type": "attack"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user approved 考据、速读、全神贯注 standalone illustrations with 可以、. Opaque bone-white paper; framed previews are not runtime assets."
+    },
+    {
+      "id": "card_skill_sudu_etching_d01",
+      "batch": "D01",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_skill_sudu_etching_d01.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "55966cd535c6eef6a4722ffa0b31d5fa05b5d8c18ce4882b3cf1440f7259f528",
+      "spec": {
+        "type": "skill"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user approved 考据、速读、全神贯注 standalone illustrations with 可以、. Opaque bone-white paper; framed previews are not runtime assets."
+    },
+    {
+      "id": "card_ability_quanshenguanzhu_etching_d01",
+      "batch": "D01",
+      "status": "approved",
+      "role": "card-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "cards/card_ability_quanshenguanzhu_etching_d01.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "0fb75917b1ea8b5830af5caf718229da304d9241b03e57a4a9449cedc8bcf0b7",
+      "spec": {
+        "type": "ability"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user approved 考据、速读、全神贯注 standalone illustrations with 可以、. Opaque bone-white paper; framed previews are not runtime assets."
+    },
+    {
+      "id": "border_card_skill_ornate_c05",
+      "batch": "C05",
+      "status": "approved",
+      "role": "card-frame",
+      "productionEligible": true,
+      "paths": {
+        "png": "cardframes/border_card_skill_ornate_c05.png"
+      },
+      "width": 960,
+      "height": 1280,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "fc8ec793a48230cc79a3cb22224fcd83a5ccbbda7ed11bf932a1285e2318a61d",
+      "spec": {
+        "window": {
+          "x": 157,
+          "y": 301,
+          "width": 647,
+          "height": 495
+        },
+        "textSafe": {
+          "title": {
+            "x": 235,
+            "y": 153,
+            "width": 545,
+            "height": 107
+          },
+          "effect": {
+            "x": 180,
+            "y": 858,
+            "width": 600,
+            "height": 280
+          }
+        },
+        "scaling": "uniform-only",
+        "windowMask": "cardframes/border_card_skill_ornate_c05_window_mask.png",
+        "sourceResolution": [
+          1086,
+          1448
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user approved the displayed C05 skill, ability and curse frames with 可以."
+    },
+    {
+      "id": "border_card_ability_ornate_c05",
+      "batch": "C05",
+      "status": "approved",
+      "role": "card-frame",
+      "productionEligible": true,
+      "paths": {
+        "png": "cardframes/border_card_ability_ornate_c05.png"
+      },
+      "width": 960,
+      "height": 1280,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "edb0f85a5686c65fa98e648366d8db77962c56629c3c97c52341cb6b47ee9181",
+      "spec": {
+        "window": {
+          "x": 157,
+          "y": 302,
+          "width": 647,
+          "height": 494
+        },
+        "textSafe": {
+          "title": {
+            "x": 235,
+            "y": 153,
+            "width": 545,
+            "height": 107
+          },
+          "effect": {
+            "x": 180,
+            "y": 858,
+            "width": 600,
+            "height": 280
+          }
+        },
+        "scaling": "uniform-only",
+        "windowMask": "cardframes/border_card_ability_ornate_c05_window_mask.png",
+        "sourceResolution": [
+          1086,
+          1448
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user approved the displayed C05 skill, ability and curse frames with 可以."
+    },
+    {
+      "id": "border_card_curse_ornate_c05",
+      "batch": "C05",
+      "status": "approved",
+      "role": "card-frame",
+      "productionEligible": true,
+      "paths": {
+        "png": "cardframes/border_card_curse_ornate_c05.png"
+      },
+      "width": 960,
+      "height": 1280,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "7d0f7b92435aed6bf33106983596a4d5a8fd0fe820a5c0e6fe31796e07fb5c02",
+      "spec": {
+        "window": {
+          "x": 157,
+          "y": 301,
+          "width": 647,
+          "height": 496
+        },
+        "textSafe": {
+          "title": {
+            "x": 235,
+            "y": 153,
+            "width": 545,
+            "height": 107
+          },
+          "effect": {
+            "x": 180,
+            "y": 858,
+            "width": 600,
+            "height": 280
+          }
+        },
+        "scaling": "uniform-only",
+        "windowMask": "cardframes/border_card_curse_ornate_c05_window_mask.png",
+        "sourceResolution": [
+          1086,
+          1448
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-11: user approved the displayed C05 skill, ability and curse frames with 可以."
+    },
+    {
+      "id": "enemy_barbarian_etching_f01",
+      "batch": "F01",
+      "status": "approved",
+      "role": "static-enemy-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "enemies/enemy_barbarian_etching_f01.png"
+      },
+      "width": 1024,
+      "height": 1536,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "sha256": "e383501605e9003ba2424791db44d82ed2256ee9cd1df1a896d99452a5b77b02",
+      "spec": {
+        "scope": "Static full-body only; animations excluded. Memory devourer is baseline form; phase variants excluded."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all six displayed F01 enemy static illustrations with 可以; animation and boss phase variants excluded."
+    },
+    {
+      "id": "enemy_corrupted_bud_etching_f01",
+      "batch": "F01",
+      "status": "approved",
+      "role": "static-enemy-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "enemies/enemy_corrupted_bud_etching_f01.png"
+      },
+      "width": 1145,
+      "height": 1374,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "d53d631037bdd906c423730de2cb969cbb330c209b3cce9e749886c303ecf14e",
+      "spec": {
+        "scope": "Static full-body only; animations excluded. Memory devourer is baseline form; phase variants excluded."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all six displayed F01 enemy static illustrations with 可以; animation and boss phase variants excluded."
+    },
+    {
+      "id": "enemy_phantom_etching_f01",
+      "batch": "F01",
+      "status": "approved",
+      "role": "static-enemy-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "enemies/enemy_phantom_etching_f01.png"
+      },
+      "width": 1024,
+      "height": 1536,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "sha256": "1a5273c834341ff039be1b6265a81d033b5356f72e1f116810ff984a0c08872d",
+      "spec": {
+        "scope": "Static full-body only; animations excluded. Memory devourer is baseline form; phase variants excluded."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all six displayed F01 enemy static illustrations with 可以; animation and boss phase variants excluded."
+    },
+    {
+      "id": "enemy_twinblade_executor_etching_f01",
+      "batch": "F01",
+      "status": "approved",
+      "role": "static-enemy-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "enemies/enemy_twinblade_executor_etching_f01.png"
+      },
+      "width": 1024,
+      "height": 1536,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "sha256": "a297d688272852a4577b1cbe9b7ea11e0c5958158cb57c9ce600a9b4270c950b",
+      "spec": {
+        "scope": "Static full-body only; animations excluded. Memory devourer is baseline form; phase variants excluded."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all six displayed F01 enemy static illustrations with 可以; animation and boss phase variants excluded."
+    },
+    {
+      "id": "enemy_memory_thief_etching_f01",
+      "batch": "F01",
+      "status": "approved",
+      "role": "static-enemy-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "enemies/enemy_memory_thief_etching_f01.png"
+      },
+      "width": 1145,
+      "height": 1374,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "21b266c04ead06fc40c615da54fd015e157669d95a139a85e79d0f82c8e8e34c",
+      "spec": {
+        "scope": "Static full-body only; animations excluded. Memory devourer is baseline form; phase variants excluded."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all six displayed F01 enemy static illustrations with 可以; animation and boss phase variants excluded."
+    },
+    {
+      "id": "enemy_memory_devourer_etching_f01",
+      "batch": "F01",
+      "status": "approved",
+      "role": "static-enemy-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "enemies/enemy_memory_devourer_etching_f01.png"
+      },
+      "width": 1224,
+      "height": 1285,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "15a9e326ea588a26644a7719e3a99f36d96c0abb8473b92815c7f30eeb1c3e9b",
+      "spec": {
+        "scope": "Static full-body only; animations excluded. Memory devourer is baseline form; phase variants excluded."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all six displayed F01 enemy static illustrations with 可以; animation and boss phase variants excluded."
+    },
+    {
+      "id": "ill_event_diary_etching_g01",
+      "batch": "G01",
+      "status": "approved",
+      "role": "event-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "illustrations/ill_event_diary_etching_g01.png"
+      },
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "7e15729ab7c4d75b0c89828ea633af0274d0a1aed65a6ae9ebe889f8c0c9aa23",
+      "spec": {
+        "display": [
+          600,
+          260
+        ],
+        "scaling": "cover; centered crop; keep text outside artwork",
+        "eventId": "E01",
+        "scope": "Opaque narrative illustration; UI text and choices rendered separately."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all ten displayed G01 event illustrations with 可以."
+    },
+    {
+      "id": "ill_event_forgotten_altar_etching_g01",
+      "batch": "G01",
+      "status": "approved",
+      "role": "event-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "illustrations/ill_event_forgotten_altar_etching_g01.png"
+      },
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "4d24f1a2d3985e3dc4abbad8183d197a549be0febf10d34f1893eecc747143df",
+      "spec": {
+        "display": [
+          600,
+          260
+        ],
+        "scaling": "cover; centered crop; keep text outside artwork",
+        "eventId": "E02",
+        "scope": "Opaque narrative illustration; UI text and choices rendered separately."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all ten displayed G01 event illustrations with 可以."
+    },
+    {
+      "id": "ill_event_merchant_remains_etching_g01",
+      "batch": "G01",
+      "status": "approved",
+      "role": "event-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "illustrations/ill_event_merchant_remains_etching_g01.png"
+      },
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "fad5835138fa2ffc4c30f2ccaaff27816ad21321d3eea52f946f44d7a5be0390",
+      "spec": {
+        "display": [
+          600,
+          260
+        ],
+        "scaling": "cover; centered crop; keep text outside artwork",
+        "eventId": "E03",
+        "scope": "Opaque narrative illustration; UI text and choices rendered separately."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all ten displayed G01 event illustrations with 可以."
+    },
+    {
+      "id": "ill_event_broken_chest_etching_g01",
+      "batch": "G01",
+      "status": "approved",
+      "role": "event-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "illustrations/ill_event_broken_chest_etching_g01.png"
+      },
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "e6d16a0bed8978335b1f6ecb4035a462ad5bb9d43696df9a6e501dd13d7edf47",
+      "spec": {
+        "display": [
+          600,
+          260
+        ],
+        "scaling": "cover; centered crop; keep text outside artwork",
+        "eventId": "E04",
+        "scope": "Opaque narrative illustration; UI text and choices rendered separately."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all ten displayed G01 event illustrations with 可以."
+    },
+    {
+      "id": "ill_event_ghost_library_etching_g01",
+      "batch": "G01",
+      "status": "approved",
+      "role": "event-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "illustrations/ill_event_ghost_library_etching_g01.png"
+      },
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "2fb88a11c827e007aa71a1fd973872ff212c4ab9bb4221b1fd3f8211c6307614",
+      "spec": {
+        "display": [
+          600,
+          260
+        ],
+        "scaling": "cover; centered crop; keep text outside artwork",
+        "eventId": "E05",
+        "scope": "Opaque narrative illustration; UI text and choices rendered separately."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all ten displayed G01 event illustrations with 可以."
+    },
+    {
+      "id": "ill_event_mirror_corridor_etching_g01",
+      "batch": "G01",
+      "status": "approved",
+      "role": "event-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "illustrations/ill_event_mirror_corridor_etching_g01.png"
+      },
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "12a2d2a450ec7643f3a05b1fa140e7b334d2128253a8b525a86a8cb431dcefda",
+      "spec": {
+        "display": [
+          600,
+          260
+        ],
+        "scaling": "cover; centered crop; keep text outside artwork",
+        "eventId": "E06",
+        "scope": "Opaque narrative illustration; UI text and choices rendered separately."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all ten displayed G01 event illustrations with 可以."
+    },
+    {
+      "id": "ill_event_lost_apprentice_etching_g01",
+      "batch": "G01",
+      "status": "approved",
+      "role": "event-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "illustrations/ill_event_lost_apprentice_etching_g01.png"
+      },
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "f6f9a95bf2214ab1d62505bdde4291df8c7d5ef1bffc4c898f86c3976028d3c9",
+      "spec": {
+        "display": [
+          600,
+          260
+        ],
+        "scaling": "cover; centered crop; keep text outside artwork",
+        "eventId": "E07",
+        "scope": "Opaque narrative illustration; UI text and choices rendered separately."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all ten displayed G01 event illustrations with 可以."
+    },
+    {
+      "id": "ill_event_whispering_fountain_etching_g01",
+      "batch": "G01",
+      "status": "approved",
+      "role": "event-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "illustrations/ill_event_whispering_fountain_etching_g01.png"
+      },
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "9ffaab8833a8fb77e5cad5b347035321b2676de20b29fd381c4d0e7727725181",
+      "spec": {
+        "display": [
+          600,
+          260
+        ],
+        "scaling": "cover; centered crop; keep text outside artwork",
+        "eventId": "E08",
+        "scope": "Opaque narrative illustration; UI text and choices rendered separately."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all ten displayed G01 event illustrations with 可以."
+    },
+    {
+      "id": "ill_event_caravan_gift_etching_g01",
+      "batch": "G01",
+      "status": "approved",
+      "role": "event-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "illustrations/ill_event_caravan_gift_etching_g01.png"
+      },
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "897c7d45c3a930577afc2965de9b173d8ce03f881507ce10cf25fc0e6b572079",
+      "spec": {
+        "display": [
+          600,
+          260
+        ],
+        "scaling": "cover; centered crop; keep text outside artwork",
+        "eventId": "E09",
+        "scope": "Opaque narrative illustration; UI text and choices rendered separately."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all ten displayed G01 event illustrations with 可以."
+    },
+    {
+      "id": "ill_event_sealed_display_etching_g01",
+      "batch": "G01",
+      "status": "approved",
+      "role": "event-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "illustrations/ill_event_sealed_display_etching_g01.png"
+      },
+      "width": 1536,
+      "height": 1024,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "caeda745cc72785b6e87c045820ff9488662f8184e210807641bb624fe3dae08",
+      "spec": {
+        "display": [
+          600,
+          260
+        ],
+        "scaling": "cover; centered crop; keep text outside artwork",
+        "eventId": "E10",
+        "scope": "Opaque narrative illustration; UI text and choices rendered separately."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-13: user approved all ten displayed G01 event illustrations with 可以."
+    },
+    {
+      "id": "bg_main_menu_h03",
+      "batch": "H03",
+      "status": "approved",
+      "role": "entry-screen-background",
+      "productionEligible": true,
+      "paths": {
+        "png": "backgrounds/bg_main_menu_h03.png"
+      },
+      "width": 1920,
+      "height": 1080,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "7906af39cbe7c672bf82725c4e097a35713e55efb1429fc3264dd2e1bc22b175",
+      "spec": {
+        "native1080p": false,
+        "sourceResolution": [
+          1672,
+          941
+        ],
+        "clientSpec": "entry-h03/README.md",
+        "clientTokens": "entry-h03/client-tokens.json"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-14: user confirmed H03 backgrounds and client handoff with 确认."
+    },
+    {
+      "id": "bg_loading_h03",
+      "batch": "H03",
+      "status": "approved",
+      "role": "entry-screen-background",
+      "productionEligible": true,
+      "paths": {
+        "png": "backgrounds/bg_loading_h03.png"
+      },
+      "width": 1920,
+      "height": 1080,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "7efd8549b37e95d2153c7290f45ccf44d4a53777ba59d0cf7019e31b91b511c1",
+      "spec": {
+        "native1080p": false,
+        "sourceResolution": [
+          1672,
+          941
+        ],
+        "clientSpec": "entry-h03/README.md",
+        "clientTokens": "entry-h03/client-tokens.json"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-14: user confirmed H03 backgrounds and client handoff with 确认."
+    },
+    {
+      "id": "node_battle_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/node_battle_i04.png",
+        "svg": "map/node_battle_i04.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "ea8b40b8383c2f6de2874ac42c031325c5625d4729d010bb08f075cb83031ab7",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "node_elite_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/node_elite_i04.png",
+        "svg": "map/node_elite_i04.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "550751111283dea249f80b23bb26b71cf8118833d577c823f12fbf9cdafa9d0b",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "node_event_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/node_event_i04.png",
+        "svg": "map/node_event_i04.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "23edd603d50503c99bad1171ab28f1730bbe93ece86d1a90cb19d17e96769fcf",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "node_shop_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/node_shop_i04.png",
+        "svg": "map/node_shop_i04.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "f70f9e7fffb9ce95500a22d27559af5a6a00fd9f862569dfe7a2b9d15bc56b90",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "node_campfire_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/node_campfire_i04.png",
+        "svg": "map/node_campfire_i04.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "fcb9d34b198b8aebecf5c667f3abf9841f7b8712a1e67918df01dcd8a66bf57b",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "node_start_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/node_start_i04.png",
+        "svg": "map/node_start_i04.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "632579c83efdc2225b084c3ae39a9f0d22ea174ac6a511912cef061e87f3c47c",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "node_ring_future_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/node_ring_future_i04.png",
+        "svg": "map/node_ring_future_i04.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "45a2e20209f0106e657b5b210bbd78e9cc2faa2770ca110b0c6d14aa4b15ad2a",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "node_ring_available_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/node_ring_available_i04.png",
+        "svg": "map/node_ring_available_i04.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "0e7485513afecac8e08ee9398e34ef641b6a1e21435338e06f9fbe89b9c73b18",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "node_ring_selected_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/node_ring_selected_i04.png",
+        "svg": "map/node_ring_selected_i04.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "0d7d36e343dbb39fdb879d3b4c728988380cd2a623ec6090924a4bf0f26db081",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "node_ring_current_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/node_ring_current_i04.png",
+        "svg": "map/node_ring_current_i04.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "41ea08ce638692990e1b98cbe2289f3e32cc231894b608786049505881f30e46",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "node_ring_completed_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/node_ring_completed_i04.png",
+        "svg": "map/node_ring_completed_i04.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "0cfef7081ed1a5b93bb263909eac622fb3349d83df364634daf55e524ea78c29",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "marker_current_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/marker_current_i04.png",
+        "svg": "map/marker_current_i04.svg"
+      },
+      "width": 248,
+      "height": 64,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "5b82d4390f60510801536679765d748ef236120c977c973563cbed66bb1f5e84",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "panel_node_tip_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-component",
+      "productionEligible": true,
+      "paths": {
+        "png": "map/panel_node_tip_i04.png",
+        "svg": "map/panel_node_tip_i04.svg"
+      },
+      "width": 640,
+      "height": 180,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "1dd1e29126bb83524d0e7aef835ea35286c269138cf73bdde4a8bfe95f6b1a04",
+      "spec": {
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "bg_map_i04",
+      "batch": "I04",
+      "status": "approved",
+      "role": "map-background",
+      "productionEligible": true,
+      "paths": {
+        "png": "backgrounds/bg_map_i04.png"
+      },
+      "width": 1920,
+      "height": 1080,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "5b566f4de656205e70d155b7c85def4b1e02ebb9ff4f5425e7f954edc0c109b8",
+      "spec": {
+        "sourceResolution": [
+          1672,
+          941
+        ],
+        "native1080p": false,
+        "clientSpec": "map-i04/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user explicitly approved publication of all fourteen I04 standalone map assets."
+    },
+    {
+      "id": "panel_settings_j03",
+      "batch": "J03",
+      "status": "approved",
+      "role": "settings-panel",
+      "productionEligible": true,
+      "paths": {
+        "png": "panels/panel_settings_j03.png"
+      },
+      "width": 1920,
+      "height": 1080,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "acd98fae4901ed6661e97c287167d43b54e2e6714a928a2414d3961a8e7aae39",
+      "spec": {
+        "clientSpec": "settings-j03/README.md",
+        "clientLayout": "settings-j03/client-layout.json",
+        "sourceResolution": [
+          1672,
+          941
+        ],
+        "native1080p": false
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-14: user approved J03 settings panel with 可以."
+    },
+    {
+      "id": "bg_shop_k03",
+      "batch": "K03",
+      "status": "approved",
+      "role": "shop-background",
+      "productionEligible": true,
+      "paths": {
+        "png": "backgrounds/bg_shop_k03.png"
+      },
+      "width": 1920,
+      "height": 1080,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "cb4166eb4f6b648ea0ccaf27db9aec1cfab75b2994eec0604193c1188054f77d",
+      "spec": {
+        "clientSpec": "shop-k03/README.md",
+        "sourceResolution": [
+          1672,
+          941
+        ],
+        "native1080p": false
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved K03 textless background and state direction with 继续吧."
+    },
+    {
+      "id": "bg_campfire_l01",
+      "batch": "L01",
+      "status": "approved",
+      "role": "campfire-background",
+      "productionEligible": true,
+      "paths": {
+        "png": "backgrounds/bg_campfire_l01.png"
+      },
+      "width": 1920,
+      "height": 1080,
+      "hasAlpha": true,
+      "alphaRange": [
+        255,
+        255
+      ],
+      "sha256": "34401bb0dc55ab86ae302fef6644649d632a21b293b100c79813a2762f567b14",
+      "spec": {
+        "clientSpec": "campfire-l01/README.md",
+        "sourceResolution": [
+          1672,
+          941
+        ],
+        "native1080p": false
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved L01 background and campfire layout with 没问题."
+    },
+    {
+      "id": "icon_trigger_flip_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_trigger_flip_q02.png",
+        "svg": "icons/icon_trigger_flip_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "df65e2a43b55ceb21b1c416db7dae359980c3710898bd9adf82e249a246782ef",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_trigger_flipback_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_trigger_flipback_q02.png",
+        "svg": "icons/icon_trigger_flipback_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "acf1fa63fbb36ff6e4c6f69fa2964135411891c2a9ac01fbcbc3e701bd169a18",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_trigger_discard_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_trigger_discard_q02.png",
+        "svg": "icons/icon_trigger_discard_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "e8a2d5618820825f007a696c4e57ccb8de7a0fa1c1a8b36b8a0ab3a1a2768f61",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_trigger_leave_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_trigger_leave_q02.png",
+        "svg": "icons/icon_trigger_leave_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "d97520ce08cc3f2b77008c9f2a5869eb442e325b024fd88f7c3873dcc83c2d97",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_trigger_enter_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_trigger_enter_q02.png",
+        "svg": "icons/icon_trigger_enter_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "aa45ea43632ef6e9442cb76e00e6c8743444923f5763e0915a5938fddba14563",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_behavior_exhaust_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_behavior_exhaust_q02.png",
+        "svg": "icons/icon_behavior_exhaust_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "67eb6e2e522905c15b208a2abf0f36d8e6fe3e9caafa3ed3b8d8f1cffef01b8a",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_behavior_remove_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_behavior_remove_q02.png",
+        "svg": "icons/icon_behavior_remove_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "5a5a1e2db8aa8657cf6d2c2e0b8eda2cc953f4cc06d052a07309e1ba26a98e84",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_behavior_stubborn_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_behavior_stubborn_q02.png",
+        "svg": "icons/icon_behavior_stubborn_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "d0ffc6f9088115e9b01f4be6952c43dc49f9d9c0def1fd307e4644f496f5846e",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_behavior_hidden_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_behavior_hidden_q02.png",
+        "svg": "icons/icon_behavior_hidden_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "986848dd7f577df47aaa4c71604378bd507c3348c75efcb20b6621445ed2eb76",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_behavior_swift_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_behavior_swift_q02.png",
+        "svg": "icons/icon_behavior_swift_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "be43f64879e4313564153717f1eca2cc9f7d368ba0b74b2a3ea80b0aa8460028",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_match_resonance_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_match_resonance_q02.png",
+        "svg": "icons/icon_match_resonance_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "a5285f0f9292f3b29b5c922cf0de82071d9dede2ca8d2a68187f73543d5f8b65",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_match_sword_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_match_sword_q02.png",
+        "svg": "icons/icon_match_sword_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "0731379c5494cca1bb9f2cd530232742222490f0384dc4ffe6d7a5604afe1400",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_match_shield_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_match_shield_q02.png",
+        "svg": "icons/icon_match_shield_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "c0f99535d69c5ea9363180aa9003a91ecd7cf36fe40d2d2fd9270817c6907793",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_intent_swap_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_intent_swap_q02.png",
+        "svg": "icons/icon_intent_swap_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "028ac0b885ab0093e3684f41e010985807ad4c89b0e106f53296058762252210",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_intent_pollute_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_intent_pollute_q02.png",
+        "svg": "icons/icon_intent_pollute_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "cd74e7654ab43ed0472446939f4809e82e39e0a44d74ba66c66efb6ddb1e1f75",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_intent_lock_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_intent_lock_q02.png",
+        "svg": "icons/icon_intent_lock_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "932b12ec4e755dee316fbccf51cf7c6c5164424f9ea87b8b32667f9788f72896",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_action_upgrade_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_action_upgrade_q02.png",
+        "svg": "icons/icon_action_upgrade_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "9c436047ecf6bb63adc92d327c65fe689c4ec42a650e1ffdecb2a3b40a224acb",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_action_sort_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_action_sort_q02.png",
+        "svg": "icons/icon_action_sort_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "df8d99d3ffb9b1138753465469e78ca74ea072bd586169cbdd208085e313693e",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_action_filter_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_action_filter_q02.png",
+        "svg": "icons/icon_action_filter_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "50b94c3bf0db721b06313f6dfed1ad52f76760e424d5e9e0bed8dea8badc7591",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_action_details_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_action_details_q02.png",
+        "svg": "icons/icon_action_details_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "9ed9ea0cd4a7fa0e6961229a2a19d7f993d37e35baab7e1f1421b0d9f0ddb3b5",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_action_deck_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_action_deck_q02.png",
+        "svg": "icons/icon_action_deck_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "776868fca8c58c4ba8cd0568dc35953458f97529458e667cb6b6395ed52dff23",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_action_gold_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_action_gold_q02.png",
+        "svg": "icons/icon_action_gold_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "928be2591226d8423ca47275c6bb26b43b1657b4b623cb69778795960c61e312",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_action_close_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_action_close_q02.png",
+        "svg": "icons/icon_action_close_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "d4167785e406b7f5246aa1b700b2b41696350382db896246a6de676f16c3a0a5",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "icon_action_return_q02",
+      "batch": "Q02",
+      "status": "approved",
+      "role": "functional-ui-icon",
+      "productionEligible": true,
+      "paths": {
+        "png": "icons/icon_action_return_q02.png",
+        "svg": "icons/icon_action_return_q02.svg"
+      },
+      "width": 192,
+      "height": 192,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "3c85099a4a33b7c0da3ad3b304ccf2b0482f9089fffe731c6be13ad2663b8a7a",
+      "spec": {
+        "clientSpec": "icons-q02/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-15: user approved P01/Q01/Q02/R01 with 可以."
+    },
+    {
+      "id": "enemy_memory_devourer_phase2_s01",
+      "batch": "S01",
+      "status": "approved",
+      "role": "static-boss-phase-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "enemies/enemy_memory_devourer_phase2_s01.png"
+      },
+      "width": 1224,
+      "height": 1285,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "c9967d6e4ae9c7b6c947da501d680193782ba9770c4c4e125fcb03e7790a762e",
+      "spec": {
+        "clientSpec": "boss-phase2-s01/README.md",
+        "phase": 2,
+        "visibleBounds": [
+          0,
+          0,
+          1224,
+          1285
+        ],
+        "scope": "Static phase II only; tight edge padding, align visible feet in engine."
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-16: user approved phase II with 我觉得可以; phase III and effects excluded."
+    },
+    {
+      "id": "fx_hit_t01",
+      "batch": "T01",
+      "status": "approved",
+      "role": "effect-texture",
+      "productionEligible": true,
+      "paths": {
+        "png": "effects/fx_hit_t01.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "8ead21b0613e490ce529e3ebb59e49a15291046137ccee1331c0108c8d80fa3f",
+      "spec": {
+        "clientSpec": "mockups/effects-t01/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-17: user approved the unified review page with 审阅通过."
+    },
+    {
+      "id": "fx_match_dissolve_t01",
+      "batch": "T01",
+      "status": "approved",
+      "role": "effect-texture",
+      "productionEligible": true,
+      "paths": {
+        "png": "effects/fx_match_dissolve_t01.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "3ed0f5da8513fc57b9ba0098d0f500cc263e55d0e82be4d164d07866d27df846",
+      "spec": {
+        "clientSpec": "mockups/effects-t01/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-17: user approved the unified review page with 审阅通过."
+    },
+    {
+      "id": "fx_heal_t01",
+      "batch": "T01",
+      "status": "approved",
+      "role": "effect-texture",
+      "productionEligible": true,
+      "paths": {
+        "png": "effects/fx_heal_t01.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "8be5183d5b5a951fc07dcc4ff9b04cadaafd97a214aa83bf4035db1406076554",
+      "spec": {
+        "clientSpec": "mockups/effects-t01/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-17: user approved the unified review page with 审阅通过."
+    },
+    {
+      "id": "fx_campfire_flame_t01",
+      "batch": "T01",
+      "status": "approved",
+      "role": "effect-texture",
+      "productionEligible": true,
+      "paths": {
+        "png": "effects/fx_campfire_flame_t01.png"
+      },
+      "width": 1254,
+      "height": 1254,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "a22070198c49ccc040d7ffb28cd7862ca7804b86c7ea0e4981e5de2453009a2d",
+      "spec": {
+        "clientSpec": "mockups/effects-t01/README.md"
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-17: user approved the unified review page with 审阅通过."
+    },
+    {
+      "id": "enemy_memory_devourer_phase3_s02",
+      "batch": "S02",
+      "status": "approved",
+      "role": "static-boss-phase-illustration",
+      "productionEligible": true,
+      "paths": {
+        "png": "enemies/enemy_memory_devourer_phase3_s02.png"
+      },
+      "width": 1224,
+      "height": 1285,
+      "hasAlpha": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "59b71f3e8d6d35f19f465a07f7e7c42ef965d857e2fce362c9e9165446137c22",
+      "spec": {
+        "phase": 3,
+        "clientSpec": "boss-phase3-s02/README.md",
+        "visibleBounds": [
+          0,
+          0,
+          1224,
+          1285
+        ]
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-17: user approved phase III with 确认没有问题. Static art only."
+    }
+  ]
+}

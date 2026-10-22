@@ -1,0 +1,185 @@
+{
+  "batch": "events-g01",
+  "assets": [
+    {
+      "id": "ill_event_diary_etching_g01",
+      "eventId": "E01",
+      "name": "古老日记",
+      "category": "illustrations",
+      "png": "illustrations/ill_event_diary_etching_g01.png",
+      "width": 1536,
+      "height": 1024,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-63adb617-6748-446d-b446-51fa82a94ddb.png",
+      "sha256": "7e15729ab7c4d75b0c89828ea633af0274d0a1aed65a6ae9ebe889f8c0c9aa23",
+      "display": [
+        600,
+        260
+      ],
+      "scaling": "cover; centered crop; keep text outside artwork"
+    },
+    {
+      "id": "ill_event_forgotten_altar_etching_g01",
+      "eventId": "E02",
+      "name": "遗忘的祭坛",
+      "category": "illustrations",
+      "png": "illustrations/ill_event_forgotten_altar_etching_g01.png",
+      "width": 1536,
+      "height": 1024,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-7d767b10-653b-4a0a-b860-4132905bd7ba.png",
+      "sha256": "4d24f1a2d3985e3dc4abbad8183d197a549be0febf10d34f1893eecc747143df",
+      "display": [
+        600,
+        260
+      ],
+      "scaling": "cover; centered crop; keep text outside artwork"
+    },
+    {
+      "id": "ill_event_merchant_remains_etching_g01",
+      "eventId": "E03",
+      "name": "记忆商人的遗骸",
+      "category": "illustrations",
+      "png": "illustrations/ill_event_merchant_remains_etching_g01.png",
+      "width": 1536,
+      "height": 1024,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-80127bb3-f661-4ce3-b41e-eed7e642d442.png",
+      "sha256": "fad5835138fa2ffc4c30f2ccaaff27816ad21321d3eea52f946f44d7a5be0390",
+      "display": [
+        600,
+        260
+      ],
+      "scaling": "cover; centered crop; keep text outside artwork"
+    },
+    {
+      "id": "ill_event_broken_chest_etching_g01",
+      "eventId": "E04",
+      "name": "破碎的宝箱",
+      "category": "illustrations",
+      "png": "illustrations/ill_event_broken_chest_etching_g01.png",
+      "width": 1536,
+      "height": 1024,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-8506046f-486e-4cf7-9993-fb622ed8ef2d.png",
+      "sha256": "e6d16a0bed8978335b1f6ecb4035a462ad5bb9d43696df9a6e501dd13d7edf47",
+      "display": [
+        600,
+        260
+      ],
+      "scaling": "cover; centered crop; keep text outside artwork"
+    },
+    {
+      "id": "ill_event_ghost_library_etching_g01",
+      "eventId": "E05",
+      "name": "幽灵图书馆",
+      "category": "illustrations",
+      "png": "illustrations/ill_event_ghost_library_etching_g01.png",
+      "width": 1536,
+      "height": 1024,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-b97ce94a-a021-491f-bb56-c41ad76259d6.png",
+      "sha256": "2fb88a11c827e007aa71a1fd973872ff212c4ab9bb4221b1fd3f8211c6307614",
+      "display": [
+        600,
+        260
+      ],
+      "scaling": "cover; centered crop; keep text outside artwork"
+    },
+    {
+      "id": "ill_event_mirror_corridor_etching_g01",
+      "eventId": "E06",
+      "name": "镜之回廊",
+      "category": "illustrations",
+      "png": "illustrations/ill_event_mirror_corridor_etching_g01.png",
+      "width": 1536,
+      "height": 1024,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-b7ace83e-0a39-4dc7-addc-8a802195c8e1.png",
+      "sha256": "12a2d2a450ec7643f3a05b1fa140e7b334d2128253a8b525a86a8cb431dcefda",
+      "display": [
+        600,
+        260
+      ],
+      "scaling": "cover; centered crop; keep text outside artwork"
+    },
+    {
+      "id": "ill_event_lost_apprentice_etching_g01",
+      "eventId": "E07",
+      "name": "迷路的学徒",
+      "category": "illustrations",
+      "png": "illustrations/ill_event_lost_apprentice_etching_g01.png",
+      "width": 1536,
+      "height": 1024,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-74e34560-ca9a-491c-a68f-b5b52afa2f34.png",
+      "sha256": "f6f9a95bf2214ab1d62505bdde4291df8c7d5ef1bffc4c898f86c3976028d3c9",
+      "display": [
+        600,
+        260
+      ],
+      "scaling": "cover; centered crop; keep text outside artwork"
+    },
+    {
+      "id": "ill_event_whispering_fountain_etching_g01",
+      "eventId": "E08",
+      "name": "低语的喷泉",
+      "category": "illustrations",
+      "png": "illustrations/ill_event_whispering_fountain_etching_g01.png",
+      "width": 1536,
+      "height": 1024,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-477768ca-8282-41c3-b973-fefed15283ac.png",
+      "sha256": "9ffaab8833a8fb77e5cad5b347035321b2676de20b29fd381c4d0e7727725181",
+      "display": [
+        600,
+        260
+      ],
+      "scaling": "cover; centered crop; keep text outside artwork"
+    },
+    {
+      "id": "ill_event_caravan_gift_etching_g01",
+      "eventId": "E09",
+      "name": "流浪商队的谢礼",
+      "category": "illustrations",
+      "png": "illustrations/ill_event_caravan_gift_etching_g01.png",
+      "width": 1536,
+      "height": 1024,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-5e138acd-9dee-4f0e-af72-17429cbe9c8c.png",
+      "sha256": "897c7d45c3a930577afc2965de9b173d8ce03f881507ce10cf25fc0e6b572079",
+      "display": [
+        600,
+        260
+      ],
+      "scaling": "cover; centered crop; keep text outside artwork"
+    },
+    {
+      "id": "ill_event_sealed_display_etching_g01",
+      "eventId": "E10",
+      "name": "封印的陈列柜",
+      "category": "illustrations",
+      "png": "illustrations/ill_event_sealed_display_etching_g01.png",
+      "width": 1536,
+      "height": 1024,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-403bf160-960c-474b-9aa5-f73fa11be7c8.png",
+      "sha256": "caeda745cc72785b6e87c045820ff9488662f8184e210807641bb624fe3dae08",
+      "display": [
+        600,
+        260
+      ],
+      "scaling": "cover; centered crop; keep text outside artwork"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "approved-direction",
+  "productionEligible": false,
+  "role": "upgrade-before-arrow-after-reference",
+  "dependencies": {
+    "panel_paper_a03": "Assets/UI/panels/panel_paper_a03.png",
+    "border_card_skill_rare_r02": "Assets/UI/cardframes/border_card_skill_rare_r02.png",
+    "card_skill_moligongming_etching_d10": "Assets/UI/cards/card_skill_moligongming_etching_d10.png",
+    "btn_secondary_normal_b03": "Assets/UI/buttons/btn_secondary_normal_b03.png",
+    "btn_primary_normal_b03": "Assets/UI/buttons/btn_primary_normal_b03.png"
+  },
+  "mask": "Assets/UI/cardframes/border_card_skill_rare_r02_window_mask.png",
+  "changes": {
+    "damage": [
+      4,
+      6
+    ],
+    "draw": [
+      1,
+      2
+    ]
+  },
+  "note": "Exact approved art and frame, independent before/after text, no rarity or illustration change.",
+  "approvalQuote": "可以，继续吧",
+  "approvedOn": "2026-10-15"
+}

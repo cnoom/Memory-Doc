@@ -1,0 +1,517 @@
+{
+  "batch": "foundation-a01",
+  "status": "awaiting-user-review",
+  "assets": [
+    {
+      "id": "journal_cover_a01",
+      "category": "journal",
+      "svg": "journal/journal_cover_a01.svg",
+      "png": "journal/journal_cover_a01.png",
+      "width": 1260,
+      "height": 810,
+      "status": "preview",
+      "textBaked": false,
+      "z": 0,
+      "anchor": [
+        0,
+        0
+      ],
+      "display": [
+        1260,
+        810
+      ],
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "journal_page_edges_a01",
+      "category": "journal",
+      "svg": "journal/journal_page_edges_a01.svg",
+      "png": "journal/journal_page_edges_a01.png",
+      "width": 1260,
+      "height": 810,
+      "status": "preview",
+      "textBaked": false,
+      "z": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "display": [
+        1260,
+        810
+      ],
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "journal_page_left_a01",
+      "category": "journal",
+      "svg": "journal/journal_page_left_a01.svg",
+      "png": "journal/journal_page_left_a01.png",
+      "width": 1260,
+      "height": 810,
+      "status": "preview",
+      "textBaked": false,
+      "z": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "display": [
+        1260,
+        810
+      ],
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "journal_page_right_a01",
+      "category": "journal",
+      "svg": "journal/journal_page_right_a01.svg",
+      "png": "journal/journal_page_right_a01.png",
+      "width": 1260,
+      "height": 810,
+      "status": "preview",
+      "textBaked": false,
+      "z": 2,
+      "anchor": [
+        0,
+        0
+      ],
+      "display": [
+        1260,
+        810
+      ],
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "journal_spine_a01",
+      "category": "journal",
+      "svg": "journal/journal_spine_a01.svg",
+      "png": "journal/journal_spine_a01.png",
+      "width": 1260,
+      "height": 810,
+      "status": "preview",
+      "textBaked": false,
+      "z": 3,
+      "anchor": [
+        0,
+        0
+      ],
+      "display": [
+        1260,
+        810
+      ],
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "journal_binding_a01",
+      "category": "journal",
+      "svg": "journal/journal_binding_a01.svg",
+      "png": "journal/journal_binding_a01.png",
+      "width": 1260,
+      "height": 810,
+      "status": "preview",
+      "textBaked": false,
+      "z": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "display": [
+        1260,
+        810
+      ],
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "journal_ribbon_a01",
+      "category": "journal",
+      "svg": "journal/journal_ribbon_a01.svg",
+      "png": "journal/journal_ribbon_a01.png",
+      "width": 1260,
+      "height": 810,
+      "status": "preview",
+      "textBaked": false,
+      "z": 5,
+      "anchor": [
+        0,
+        0
+      ],
+      "display": [
+        1260,
+        810
+      ],
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "journal_fold_a01",
+      "category": "journal",
+      "svg": "journal/journal_fold_a01.svg",
+      "png": "journal/journal_fold_a01.png",
+      "width": 1260,
+      "height": 810,
+      "status": "preview",
+      "textBaked": false,
+      "z": 4,
+      "anchor": [
+        0,
+        0
+      ],
+      "display": [
+        1260,
+        810
+      ],
+      "scaling": "uniform-only"
+    },
+    {
+      "id": "btn_menu_normal_a01",
+      "category": "buttons",
+      "svg": "buttons/btn_menu_normal_a01.svg",
+      "png": "buttons/btn_menu_normal_a01.png",
+      "width": 640,
+      "height": 112,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        440,
+        77
+      ],
+      "scaling": "uniform-only",
+      "textSafe": {
+        "x": 65,
+        "y": 18,
+        "width": 495,
+        "height": 64
+      },
+      "state": "normal",
+      "type": "menu"
+    },
+    {
+      "id": "btn_menu_hover_a01",
+      "category": "buttons",
+      "svg": "buttons/btn_menu_hover_a01.svg",
+      "png": "buttons/btn_menu_hover_a01.png",
+      "width": 640,
+      "height": 112,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        440,
+        77
+      ],
+      "scaling": "uniform-only",
+      "textSafe": {
+        "x": 65,
+        "y": 18,
+        "width": 495,
+        "height": 64
+      },
+      "state": "hover",
+      "type": "menu"
+    },
+    {
+      "id": "btn_menu_pressed_a01",
+      "category": "buttons",
+      "svg": "buttons/btn_menu_pressed_a01.svg",
+      "png": "buttons/btn_menu_pressed_a01.png",
+      "width": 640,
+      "height": 112,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        440,
+        77
+      ],
+      "scaling": "uniform-only",
+      "textSafe": {
+        "x": 65,
+        "y": 18,
+        "width": 495,
+        "height": 64
+      },
+      "state": "pressed",
+      "type": "menu"
+    },
+    {
+      "id": "btn_menu_disabled_a01",
+      "category": "buttons",
+      "svg": "buttons/btn_menu_disabled_a01.svg",
+      "png": "buttons/btn_menu_disabled_a01.png",
+      "width": 640,
+      "height": 112,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        440,
+        77
+      ],
+      "scaling": "uniform-only",
+      "textSafe": {
+        "x": 65,
+        "y": 18,
+        "width": 495,
+        "height": 64
+      },
+      "state": "disabled",
+      "type": "menu"
+    },
+    {
+      "id": "btn_danger_normal_a01",
+      "category": "buttons",
+      "svg": "buttons/btn_danger_normal_a01.svg",
+      "png": "buttons/btn_danger_normal_a01.png",
+      "width": 640,
+      "height": 112,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        440,
+        77
+      ],
+      "scaling": "uniform-only",
+      "textSafe": {
+        "x": 65,
+        "y": 18,
+        "width": 495,
+        "height": 64
+      },
+      "state": "normal",
+      "type": "danger"
+    },
+    {
+      "id": "btn_danger_hover_a01",
+      "category": "buttons",
+      "svg": "buttons/btn_danger_hover_a01.svg",
+      "png": "buttons/btn_danger_hover_a01.png",
+      "width": 640,
+      "height": 112,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        440,
+        77
+      ],
+      "scaling": "uniform-only",
+      "textSafe": {
+        "x": 65,
+        "y": 18,
+        "width": 495,
+        "height": 64
+      },
+      "state": "hover",
+      "type": "danger"
+    },
+    {
+      "id": "btn_danger_pressed_a01",
+      "category": "buttons",
+      "svg": "buttons/btn_danger_pressed_a01.svg",
+      "png": "buttons/btn_danger_pressed_a01.png",
+      "width": 640,
+      "height": 112,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        440,
+        77
+      ],
+      "scaling": "uniform-only",
+      "textSafe": {
+        "x": 65,
+        "y": 18,
+        "width": 495,
+        "height": 64
+      },
+      "state": "pressed",
+      "type": "danger"
+    },
+    {
+      "id": "btn_danger_disabled_a01",
+      "category": "buttons",
+      "svg": "buttons/btn_danger_disabled_a01.svg",
+      "png": "buttons/btn_danger_disabled_a01.png",
+      "width": 640,
+      "height": 112,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        440,
+        77
+      ],
+      "scaling": "uniform-only",
+      "textSafe": {
+        "x": 65,
+        "y": 18,
+        "width": 495,
+        "height": 64
+      },
+      "state": "disabled",
+      "type": "danger"
+    },
+    {
+      "id": "panel_paper_a01",
+      "category": "panels",
+      "svg": "panels/panel_paper_a01.svg",
+      "png": "panels/panel_paper_a01.png",
+      "width": 256,
+      "height": 256,
+      "status": "preview",
+      "textBaked": false,
+      "slice": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "sliceOrder": "left,bottom,right,top",
+      "padding": 24,
+      "scaling": "9-slice"
+    },
+    {
+      "id": "panel_tooltip_a01",
+      "category": "panels",
+      "svg": "panels/panel_tooltip_a01.svg",
+      "png": "panels/panel_tooltip_a01.png",
+      "width": 256,
+      "height": 256,
+      "status": "preview",
+      "textBaked": false,
+      "slice": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "sliceOrder": "left,bottom,right,top",
+      "padding": 24,
+      "scaling": "9-slice"
+    },
+    {
+      "id": "panel_ink_a01",
+      "category": "panels",
+      "svg": "panels/panel_ink_a01.svg",
+      "png": "panels/panel_ink_a01.png",
+      "width": 256,
+      "height": 256,
+      "status": "preview",
+      "textBaked": false,
+      "slice": [
+        32,
+        32,
+        32,
+        32
+      ],
+      "sliceOrder": "left,bottom,right,top",
+      "padding": 24,
+      "scaling": "9-slice"
+    },
+    {
+      "id": "toggle_off_a01",
+      "category": "controls",
+      "svg": "controls/toggle_off_a01.svg",
+      "png": "controls/toggle_off_a01.png",
+      "width": 128,
+      "height": 64,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        64,
+        32
+      ]
+    },
+    {
+      "id": "check_off_a01",
+      "category": "controls",
+      "svg": "controls/check_off_a01.svg",
+      "png": "controls/check_off_a01.png",
+      "width": 64,
+      "height": 64,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        32,
+        32
+      ]
+    },
+    {
+      "id": "toggle_on_a01",
+      "category": "controls",
+      "svg": "controls/toggle_on_a01.svg",
+      "png": "controls/toggle_on_a01.png",
+      "width": 128,
+      "height": 64,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        64,
+        32
+      ]
+    },
+    {
+      "id": "check_on_a01",
+      "category": "controls",
+      "svg": "controls/check_on_a01.svg",
+      "png": "controls/check_on_a01.png",
+      "width": 64,
+      "height": 64,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        32,
+        32
+      ]
+    },
+    {
+      "id": "slider_track_a01",
+      "category": "controls",
+      "svg": "controls/slider_track_a01.svg",
+      "png": "controls/slider_track_a01.png",
+      "width": 256,
+      "height": 16,
+      "status": "preview",
+      "textBaked": false,
+      "slice": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "display": [
+        256,
+        8
+      ]
+    },
+    {
+      "id": "slider_fill_a01",
+      "category": "controls",
+      "svg": "controls/slider_fill_a01.svg",
+      "png": "controls/slider_fill_a01.png",
+      "width": 256,
+      "height": 16,
+      "status": "preview",
+      "textBaked": false,
+      "slice": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "display": [
+        256,
+        8
+      ]
+    },
+    {
+      "id": "slider_thumb_a01",
+      "category": "controls",
+      "svg": "controls/slider_thumb_a01.svg",
+      "png": "controls/slider_thumb_a01.png",
+      "width": 64,
+      "height": 64,
+      "status": "preview",
+      "textBaked": false,
+      "display": [
+        32,
+        32
+      ]
+    }
+  ]
+}

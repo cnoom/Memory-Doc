@@ -1,0 +1,16 @@
+{
+  "status": "pending-review",
+  "productionEligible": false,
+  "role": "startup-composition-reference",
+  "sourceResolution": [
+    1672,
+    941
+  ],
+  "targetCanvas": [
+    1920,
+    1080
+  ],
+  "path": "startup_cover_v02.png",
+  "sha256": "a445a316df4555ca3e80c3a84d9fef1a695f8f1567667cdb85cf9764ca6faf8c",
+  "textBaked": true
+}

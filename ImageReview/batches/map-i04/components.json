@@ -1,0 +1,122 @@
+{
+  "batch": "map-i04",
+  "assets": [
+    {
+      "id": "node_battle_i04",
+      "png": "map/node_battle_i04.png",
+      "svg": "map/node_battle_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "node_elite_i04",
+      "png": "map/node_elite_i04.png",
+      "svg": "map/node_elite_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "node_event_i04",
+      "png": "map/node_event_i04.png",
+      "svg": "map/node_event_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "node_shop_i04",
+      "png": "map/node_shop_i04.png",
+      "svg": "map/node_shop_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "node_campfire_i04",
+      "png": "map/node_campfire_i04.png",
+      "svg": "map/node_campfire_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "node_start_i04",
+      "png": "map/node_start_i04.png",
+      "svg": "map/node_start_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "node_ring_future_i04",
+      "png": "map/node_ring_future_i04.png",
+      "svg": "map/node_ring_future_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "node_ring_available_i04",
+      "png": "map/node_ring_available_i04.png",
+      "svg": "map/node_ring_available_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "node_ring_selected_i04",
+      "png": "map/node_ring_selected_i04.png",
+      "svg": "map/node_ring_selected_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "node_ring_current_i04",
+      "png": "map/node_ring_current_i04.png",
+      "svg": "map/node_ring_current_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "node_ring_completed_i04",
+      "png": "map/node_ring_completed_i04.png",
+      "svg": "map/node_ring_completed_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "marker_current_i04",
+      "png": "map/marker_current_i04.png",
+      "svg": "map/marker_current_i04.svg",
+      "width": 248,
+      "height": 64,
+      "status": "approved",
+      "productionEligible": true
+    },
+    {
+      "id": "panel_node_tip_i04",
+      "png": "map/panel_node_tip_i04.png",
+      "svg": "map/panel_node_tip_i04.svg",
+      "width": 640,
+      "height": 180,
+      "status": "approved",
+      "productionEligible": true
+    }
+  ]
+}

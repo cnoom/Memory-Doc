@@ -1,0 +1,716 @@
+{
+  "batch": "ui-b02",
+  "status": "awaiting-user-review",
+  "mode": "native-svg",
+  "sliceOrder": "left,bottom,right,top; source pixels",
+  "assets": [
+    {
+      "id": "btn_primary_normal_etching_b02",
+      "name": "主按钮 · 常态",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_primary_normal_etching_b02.png",
+      "svg": "buttons/btn_primary_normal_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#EDE8DC",
+      "state": "normal",
+      "type": "primary"
+    },
+    {
+      "id": "btn_primary_hover_etching_b02",
+      "name": "主按钮 · 悬停",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_primary_hover_etching_b02.png",
+      "svg": "buttons/btn_primary_hover_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#EDE8DC",
+      "state": "hover",
+      "type": "primary"
+    },
+    {
+      "id": "btn_primary_pressed_etching_b02",
+      "name": "主按钮 · 按下",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_primary_pressed_etching_b02.png",
+      "svg": "buttons/btn_primary_pressed_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#EDE8DC",
+      "state": "pressed",
+      "type": "primary"
+    },
+    {
+      "id": "btn_primary_disabled_etching_b02",
+      "name": "主按钮 · 禁用",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_primary_disabled_etching_b02.png",
+      "svg": "buttons/btn_primary_disabled_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#6B6C65",
+      "state": "disabled",
+      "type": "primary"
+    },
+    {
+      "id": "btn_secondary_normal_etching_b02",
+      "name": "次按钮 · 常态",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_secondary_normal_etching_b02.png",
+      "svg": "buttons/btn_secondary_normal_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#242629",
+      "state": "normal",
+      "type": "secondary"
+    },
+    {
+      "id": "btn_secondary_hover_etching_b02",
+      "name": "次按钮 · 悬停",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_secondary_hover_etching_b02.png",
+      "svg": "buttons/btn_secondary_hover_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#242629",
+      "state": "hover",
+      "type": "secondary"
+    },
+    {
+      "id": "btn_secondary_pressed_etching_b02",
+      "name": "次按钮 · 按下",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_secondary_pressed_etching_b02.png",
+      "svg": "buttons/btn_secondary_pressed_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#242629",
+      "state": "pressed",
+      "type": "secondary"
+    },
+    {
+      "id": "btn_secondary_disabled_etching_b02",
+      "name": "次按钮 · 禁用",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_secondary_disabled_etching_b02.png",
+      "svg": "buttons/btn_secondary_disabled_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#6B6C65",
+      "state": "disabled",
+      "type": "secondary"
+    },
+    {
+      "id": "btn_danger_normal_etching_b02",
+      "name": "危险按钮 · 常态",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_danger_normal_etching_b02.png",
+      "svg": "buttons/btn_danger_normal_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#963B30",
+      "state": "normal",
+      "type": "danger"
+    },
+    {
+      "id": "btn_danger_hover_etching_b02",
+      "name": "危险按钮 · 悬停",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_danger_hover_etching_b02.png",
+      "svg": "buttons/btn_danger_hover_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#963B30",
+      "state": "hover",
+      "type": "danger"
+    },
+    {
+      "id": "btn_danger_pressed_etching_b02",
+      "name": "危险按钮 · 按下",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_danger_pressed_etching_b02.png",
+      "svg": "buttons/btn_danger_pressed_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#963B30",
+      "state": "pressed",
+      "type": "danger"
+    },
+    {
+      "id": "btn_danger_disabled_etching_b02",
+      "name": "危险按钮 · 禁用",
+      "category": "buttons",
+      "width": 960,
+      "height": 208,
+      "png": "buttons/btn_danger_disabled_etching_b02.png",
+      "svg": "buttons/btn_danger_disabled_etching_b02.svg",
+      "slice": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "display": [
+        240,
+        52
+      ],
+      "textColor": "#6B6C65",
+      "state": "disabled",
+      "type": "danger"
+    },
+    {
+      "id": "panel_paper_etching_b02",
+      "name": "阅读面板",
+      "category": "panels",
+      "width": 512,
+      "height": 384,
+      "png": "panels/panel_paper_etching_b02.png",
+      "svg": "panels/panel_paper_etching_b02.svg",
+      "slice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "display": [
+        512,
+        384
+      ],
+      "padding": 24
+    },
+    {
+      "id": "panel_ink_etching_b02",
+      "name": "战斗信息面板",
+      "category": "panels",
+      "width": 512,
+      "height": 384,
+      "png": "panels/panel_ink_etching_b02.png",
+      "svg": "panels/panel_ink_etching_b02.svg",
+      "slice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "display": [
+        512,
+        384
+      ],
+      "padding": 24
+    },
+    {
+      "id": "panel_tooltip_etching_b02",
+      "name": "提示框",
+      "category": "panels",
+      "width": 512,
+      "height": 384,
+      "png": "panels/panel_tooltip_etching_b02.png",
+      "svg": "panels/panel_tooltip_etching_b02.svg",
+      "slice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "display": [
+        512,
+        384
+      ],
+      "padding": 24
+    },
+    {
+      "id": "panel_modal_etching_b02",
+      "name": "弹窗面板",
+      "category": "panels",
+      "width": 512,
+      "height": 384,
+      "png": "panels/panel_modal_etching_b02.png",
+      "svg": "panels/panel_modal_etching_b02.svg",
+      "slice": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "display": [
+        512,
+        384
+      ],
+      "padding": 24
+    },
+    {
+      "id": "bar_health_track_etching_b02",
+      "name": "生命槽",
+      "category": "bars",
+      "width": 512,
+      "height": 24,
+      "png": "bars/bar_health_track_etching_b02.png",
+      "svg": "bars/bar_health_track_etching_b02.svg",
+      "slice": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "display": [
+        512,
+        24
+      ],
+      "usage": "填充使用遮罩裁切，不缩放圆角；数值在槽外排版"
+    },
+    {
+      "id": "bar_health_fill_etching_b02",
+      "name": "生命填充",
+      "category": "bars",
+      "width": 512,
+      "height": 24,
+      "png": "bars/bar_health_fill_etching_b02.png",
+      "svg": "bars/bar_health_fill_etching_b02.svg",
+      "slice": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "display": [
+        512,
+        24
+      ],
+      "usage": "填充使用遮罩裁切，不缩放圆角；数值在槽外排版"
+    },
+    {
+      "id": "bar_action_empty_etching_b02",
+      "name": "行动空格",
+      "category": "bars",
+      "width": 72,
+      "height": 32,
+      "png": "bars/bar_action_empty_etching_b02.png",
+      "svg": "bars/bar_action_empty_etching_b02.svg",
+      "display": [
+        36,
+        16
+      ],
+      "usage": "等大分段；数量与阈值来自规则，搭配当前值/阈值文字"
+    },
+    {
+      "id": "bar_action_filled_etching_b02",
+      "name": "行动已填",
+      "category": "bars",
+      "width": 72,
+      "height": 32,
+      "png": "bars/bar_action_filled_etching_b02.png",
+      "svg": "bars/bar_action_filled_etching_b02.svg",
+      "display": [
+        36,
+        16
+      ],
+      "usage": "等大分段；数量与阈值来自规则，搭配当前值/阈值文字"
+    },
+    {
+      "id": "bar_action_critical_etching_b02",
+      "name": "行动临界",
+      "category": "bars",
+      "width": 72,
+      "height": 32,
+      "png": "bars/bar_action_critical_etching_b02.png",
+      "svg": "bars/bar_action_critical_etching_b02.svg",
+      "display": [
+        36,
+        16
+      ],
+      "usage": "等大分段；数量与阈值来自规则，搭配当前值/阈值文字"
+    },
+    {
+      "id": "control_toggle_off_etching_b02",
+      "name": "开关关闭",
+      "category": "controls",
+      "width": 128,
+      "height": 64,
+      "png": "controls/control_toggle_off_etching_b02.png",
+      "svg": "controls/control_toggle_off_etching_b02.svg",
+      "display": [
+        64,
+        32
+      ]
+    },
+    {
+      "id": "control_toggle_on_etching_b02",
+      "name": "开关开启",
+      "category": "controls",
+      "width": 128,
+      "height": 64,
+      "png": "controls/control_toggle_on_etching_b02.png",
+      "svg": "controls/control_toggle_on_etching_b02.svg",
+      "display": [
+        64,
+        32
+      ]
+    },
+    {
+      "id": "control_check_off_etching_b02",
+      "name": "未勾选",
+      "category": "controls",
+      "width": 64,
+      "height": 64,
+      "png": "controls/control_check_off_etching_b02.png",
+      "svg": "controls/control_check_off_etching_b02.svg",
+      "display": [
+        32,
+        32
+      ]
+    },
+    {
+      "id": "control_check_on_etching_b02",
+      "name": "已勾选",
+      "category": "controls",
+      "width": 64,
+      "height": 64,
+      "png": "controls/control_check_on_etching_b02.png",
+      "svg": "controls/control_check_on_etching_b02.svg",
+      "display": [
+        32,
+        32
+      ]
+    },
+    {
+      "id": "control_slider_track_etching_b02",
+      "name": "滑条轨道",
+      "category": "controls",
+      "width": 256,
+      "height": 16,
+      "png": "controls/control_slider_track_etching_b02.png",
+      "svg": "controls/control_slider_track_etching_b02.svg",
+      "slice": [
+        8,
+        6,
+        8,
+        6
+      ],
+      "display": [
+        256,
+        8
+      ]
+    },
+    {
+      "id": "control_slider_fill_etching_b02",
+      "name": "滑条已填",
+      "category": "controls",
+      "width": 256,
+      "height": 16,
+      "png": "controls/control_slider_fill_etching_b02.png",
+      "svg": "controls/control_slider_fill_etching_b02.svg",
+      "slice": [
+        8,
+        6,
+        8,
+        6
+      ],
+      "display": [
+        256,
+        8
+      ]
+    },
+    {
+      "id": "control_slider_thumb_etching_b02",
+      "name": "滑条滑块",
+      "category": "controls",
+      "width": 64,
+      "height": 64,
+      "png": "controls/control_slider_thumb_etching_b02.png",
+      "svg": "controls/control_slider_thumb_etching_b02.svg",
+      "display": [
+        32,
+        32
+      ]
+    },
+    {
+      "id": "overlay_card_focus_etching_b02",
+      "name": "卡牌悬停轮廓",
+      "category": "overlays",
+      "width": 960,
+      "height": 1280,
+      "png": "overlays/overlay_card_focus_etching_b02.png",
+      "svg": "overlays/overlay_card_focus_etching_b02.svg",
+      "display": [
+        144,
+        192
+      ],
+      "usage": "固定格心，只叠加轮廓，不移动或放大卡牌"
+    },
+    {
+      "id": "overlay_card_sealed_etching_b02",
+      "name": "封锁覆层",
+      "category": "overlays",
+      "width": 960,
+      "height": 1280,
+      "png": "overlays/overlay_card_sealed_etching_b02.png",
+      "svg": "overlays/overlay_card_sealed_etching_b02.svg",
+      "display": [
+        144,
+        192
+      ],
+      "usage": "仅限制配对，不阻止翻开与查看；配文字说明，不覆盖正文"
+    },
+    {
+      "id": "badge_mark_etching_b02",
+      "name": "标记层数底签",
+      "category": "badges",
+      "width": 256,
+      "height": 112,
+      "png": "badges/badge_mark_etching_b02.png",
+      "svg": "badges/badge_mark_etching_b02.svg",
+      "display": [
+        64,
+        28
+      ],
+      "textSafe": {
+        "x": 92,
+        "y": 16,
+        "width": 148,
+        "height": 80
+      },
+      "usage": "右上角只叠加 ×N 层数，不泄露增益类型"
+    },
+    {
+      "id": "badge_keyword_etching_b02",
+      "name": "词条底签",
+      "category": "badges",
+      "width": 256,
+      "height": 96,
+      "png": "badges/badge_keyword_etching_b02.png",
+      "svg": "badges/badge_keyword_etching_b02.svg",
+      "slice": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "display": [
+        96,
+        28
+      ]
+    },
+    {
+      "id": "icon_ui_close_etching_b02",
+      "name": "关闭",
+      "category": "icons",
+      "width": 128,
+      "height": 128,
+      "png": "icons/icon_ui_close_etching_b02.png",
+      "svg": "icons/icon_ui_close_etching_b02.svg",
+      "display": [
+        32,
+        32
+      ],
+      "usage": "默认浅底深墨；深底修改 SVG stroke 或使用 alpha mask 纯色材质，不能用乘法 tint 将深色变白"
+    },
+    {
+      "id": "icon_ui_back_etching_b02",
+      "name": "返回",
+      "category": "icons",
+      "width": 128,
+      "height": 128,
+      "png": "icons/icon_ui_back_etching_b02.png",
+      "svg": "icons/icon_ui_back_etching_b02.svg",
+      "display": [
+        32,
+        32
+      ],
+      "usage": "默认浅底深墨；深底修改 SVG stroke 或使用 alpha mask 纯色材质，不能用乘法 tint 将深色变白"
+    },
+    {
+      "id": "icon_ui_menu_etching_b02",
+      "name": "菜单",
+      "category": "icons",
+      "width": 128,
+      "height": 128,
+      "png": "icons/icon_ui_menu_etching_b02.png",
+      "svg": "icons/icon_ui_menu_etching_b02.svg",
+      "display": [
+        32,
+        32
+      ],
+      "usage": "默认浅底深墨；深底修改 SVG stroke 或使用 alpha mask 纯色材质，不能用乘法 tint 将深色变白"
+    },
+    {
+      "id": "icon_ui_deck_etching_b02",
+      "name": "牌库",
+      "category": "icons",
+      "width": 128,
+      "height": 128,
+      "png": "icons/icon_ui_deck_etching_b02.png",
+      "svg": "icons/icon_ui_deck_etching_b02.svg",
+      "display": [
+        32,
+        32
+      ],
+      "usage": "默认浅底深墨；深底修改 SVG stroke 或使用 alpha mask 纯色材质，不能用乘法 tint 将深色变白"
+    },
+    {
+      "id": "icon_ui_coin_etching_b02",
+      "name": "金币",
+      "category": "icons",
+      "width": 128,
+      "height": 128,
+      "png": "icons/icon_ui_coin_etching_b02.png",
+      "svg": "icons/icon_ui_coin_etching_b02.svg",
+      "display": [
+        32,
+        32
+      ],
+      "usage": "默认浅底深墨；深底修改 SVG stroke 或使用 alpha mask 纯色材质，不能用乘法 tint 将深色变白"
+    },
+    {
+      "id": "icon_ui_block_etching_b02",
+      "name": "格挡",
+      "category": "icons",
+      "width": 128,
+      "height": 128,
+      "png": "icons/icon_ui_block_etching_b02.png",
+      "svg": "icons/icon_ui_block_etching_b02.svg",
+      "display": [
+        32,
+        32
+      ],
+      "usage": "默认浅底深墨；深底修改 SVG stroke 或使用 alpha mask 纯色材质，不能用乘法 tint 将深色变白"
+    },
+    {
+      "id": "icon_ui_info_etching_b02",
+      "name": "说明",
+      "category": "icons",
+      "width": 128,
+      "height": 128,
+      "png": "icons/icon_ui_info_etching_b02.png",
+      "svg": "icons/icon_ui_info_etching_b02.svg",
+      "display": [
+        32,
+        32
+      ],
+      "usage": "默认浅底深墨；深底修改 SVG stroke 或使用 alpha mask 纯色材质，不能用乘法 tint 将深色变白"
+    },
+    {
+      "id": "icon_ui_settings_etching_b02",
+      "name": "设置",
+      "category": "icons",
+      "width": 128,
+      "height": 128,
+      "png": "icons/icon_ui_settings_etching_b02.png",
+      "svg": "icons/icon_ui_settings_etching_b02.svg",
+      "display": [
+        32,
+        32
+      ],
+      "usage": "默认浅底深墨；深底修改 SVG stroke 或使用 alpha mask 纯色材质，不能用乘法 tint 将深色变白"
+    }
+  ]
+}

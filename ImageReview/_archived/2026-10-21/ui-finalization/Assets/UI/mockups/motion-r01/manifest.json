@@ -1,0 +1,40 @@
+{
+  "status": "approved-design-reference",
+  "approvalQuote": "可以",
+  "approvedOn": "2026-10-15",
+  "productionEligible": false,
+  "files": [
+    {
+      "path": "assets/card_1_review.png",
+      "sha256": "890946ee6c416b6e8e2e410e8d24a7f27a13140ef7af058610fade523cc65668"
+    },
+    {
+      "path": "assets/SourceHanSansSC-LICENSE.txt",
+      "sha256": "fcac737e761ec63dbfbdce11030a1780161920d80315edba9c8beff1c2bac5a2"
+    },
+    {
+      "path": "assets/SourceHanSansSC-Regular.otf",
+      "sha256": "f1d8611151880c6c336aabeac4640ef434fa13cbfbf1ffe82d0a71b2a5637256"
+    },
+    {
+      "path": "assets/cardbacks/cardback_universal_ornate_c03.png",
+      "sha256": "7f324b0508b562f3aa3ac587690acf451456584091d8940171f9a13a52b34927"
+    },
+    {
+      "path": "assets/enemies/enemy_goblin_etching_b01.png",
+      "sha256": "54cdf5e4ab9356b9d080b4f2d4ccead11121970209e98d83acc873f5eca0907a"
+    },
+    {
+      "path": "assets/enemies/enemy_memory_devourer_etching_f01.png",
+      "sha256": "15a9e326ea588a26644a7719e3a99f36d96c0abb8473b92815c7f30eeb1c3e9b"
+    },
+    {
+      "path": "assets/overlays/seal_pairing_b03.png",
+      "sha256": "dc4349f747dbd8dede72d7c13f7ae68fab6b1abd80f52e24f85b0d2f1264ab6f"
+    },
+    {
+      "path": "assets/relics/relic_memory_crystal_etching_e01.png",
+      "sha256": "fc22105958fb2d7d948d4ae2e4a721fd37a4a22bbaa3bf60d5711fdf5d6b6739"
+    }
+  ]
+}

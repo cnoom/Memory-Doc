@@ -1,0 +1,21 @@
+{
+  "status": "pending-review",
+  "productionEligible": false,
+  "role": "boss-relic-reward-flow-reference",
+  "dependencies": {
+    "bg_battle_empty_a01": "Assets/UI/backgrounds/bg_battle_empty_a01.png",
+    "panel_paper_a03": "Assets/UI/panels/panel_paper_a03.png",
+    "relic_omniscient_eye_etching_e02": "Assets/UI/relics/relic_omniscient_eye_etching_e02.png",
+    "relic_chaos_core_etching_e02": "Assets/UI/relics/relic_chaos_core_etching_e02.png",
+    "relic_memory_crown_etching_e02": "Assets/UI/relics/relic_memory_crown_etching_e02.png",
+    "btn_primary_disabled_b03": "Assets/UI/buttons/btn_primary_disabled_b03.png",
+    "btn_primary_normal_b03": "Assets/UI/buttons/btn_primary_normal_b03.png"
+  },
+  "states": [
+    "unselected",
+    "selected",
+    "partial",
+    "empty",
+    "claimed"
+  ]
+}

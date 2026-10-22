@@ -1,0 +1,26 @@
+[
+  {
+    "name": "记忆水晶",
+    "slug": "memory_crystal",
+    "rarity": "common",
+    "prompt": "ONE square game relic icon, standalone isolated object with genuinely transparent background. Memory Hero black ink woodcut engraving style, opaque bone-white highlights within object, bold carved dark outlines, crafted crosshatching, strong silhouette legible at 48 pixels. Full object inside 12 percent transparent margin. No paper background, no text letters numbers UI frame watermark, no glow or gradients. A single tall faceted crystal held in a small antique engraved metal cradle, tiny muted slate-blue facets, a carved eye-like oval inclusion inside crystal suggesting memory and perception. Compact pointed silhouette; no floating cards or scattered particles."
+  },
+  {
+    "name": "共鸣石",
+    "slug": "resonance_stone",
+    "rarity": "common",
+    "prompt": "ONE square game relic icon, standalone isolated object with genuinely transparent background. Memory Hero black ink woodcut engraving style, opaque bone-white highlights within object, bold carved dark outlines, crafted crosshatching, strong silhouette legible at 48 pixels. Full object inside 12 percent transparent margin. No paper background, no text letters numbers UI frame watermark, no glow or gradients. Two interlocking weathered stone halves forming a squat oval talisman, matching carved concentric grooves meeting across a central seam. Tiny muted rust-red groove accent suggests paired resonance. Clearly rough stone not jewel or orb, simple strong squat silhouette, no floating sound waves."
+  },
+  {
+    "name": "急救包",
+    "slug": "first_aid_kit",
+    "rarity": "common",
+    "prompt": "ONE square game relic icon, standalone isolated object with genuinely transparent background. Memory Hero black ink woodcut engraving style, opaque bone-white highlights within object, bold carved dark outlines, crafted crosshatching, strong silhouette legible at 48 pixels. Full object inside 12 percent transparent margin. No paper background, no text letters numbers UI frame watermark, no glow or gradients. A small worn linen medical satchel, flap open enough to show a rolled bandage and herb sprig, sturdy handle and stitched straps, small muted sage cloth patch with a simple leaf emblem, no cross symbol. Compact rounded bag silhouette, antique handmade feel."
+  },
+  {
+    "name": "减速印记",
+    "slug": "slow_seal",
+    "rarity": "uncommon",
+    "prompt": "ONE square game relic icon, standalone isolated object with genuinely transparent background. Memory Hero black ink woodcut engraving style, opaque bone-white highlights within object, bold carved dark outlines, crafted crosshatching, strong silhouette legible at 48 pixels. Full object inside 12 percent transparent margin. No paper background, no text letters numbers UI frame watermark, no glow or gradients. A heavy circular engraved metal seal medallion with an embossed hourglass at center, three short locking teeth gripping its outer rim, small muted steel-blue edge segments. Bold circular silhouette and unmistakable hourglass, no clock numerals, no letters, no chains outside silhouette."
+  }
+]

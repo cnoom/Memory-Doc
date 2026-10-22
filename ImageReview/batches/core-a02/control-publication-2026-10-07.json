@@ -1,0 +1,350 @@
+{
+  "date": "2026-10-07",
+  "userReply": "可以",
+  "reviewImage": "ImageReview/batches/core-a02/review_controls_2026-10-07.png",
+  "scope": "8 button states, 7 control parts, 4 focus overlays; no panels or HUD",
+  "assets": [
+    {
+      "id": "btn_menu_normal_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/buttons/btn_menu_normal_a01.png",
+          "published": "Assets/UI/buttons/btn_menu_normal_a01.png",
+          "sha256": "1e7eaf7d82237f1f25c2a8a93f802ee5b003a257a8b34c5a3a8d7b2163c9d38b"
+        },
+        "svg": {
+          "source": "ImageReview/buttons/btn_menu_normal_a01.svg",
+          "published": "Assets/UI/buttons/btn_menu_normal_a01.svg",
+          "sha256": "6d528c16cf664d50d205751fb8b4c52cc30cc2303e4f0b4bdd6fa2ef03cfa10b"
+        }
+      },
+      "width": 640,
+      "height": 112
+    },
+    {
+      "id": "btn_menu_hover_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/buttons/btn_menu_hover_a01.png",
+          "published": "Assets/UI/buttons/btn_menu_hover_a01.png",
+          "sha256": "79b90c2c6402b4cde2c60adad375ba37e74773f843344cda2f5310366827927d"
+        },
+        "svg": {
+          "source": "ImageReview/buttons/btn_menu_hover_a01.svg",
+          "published": "Assets/UI/buttons/btn_menu_hover_a01.svg",
+          "sha256": "833f336d628cc5e67039745d7348732c6d3f1e0885473d3338628d22b5869c1d"
+        }
+      },
+      "width": 640,
+      "height": 112
+    },
+    {
+      "id": "btn_menu_pressed_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/buttons/btn_menu_pressed_a01.png",
+          "published": "Assets/UI/buttons/btn_menu_pressed_a01.png",
+          "sha256": "de1ed5cacdf111a7293aa6811be65d9d552be5413a2fd1038befe98ad31ac476"
+        },
+        "svg": {
+          "source": "ImageReview/buttons/btn_menu_pressed_a01.svg",
+          "published": "Assets/UI/buttons/btn_menu_pressed_a01.svg",
+          "sha256": "af0d4a40f135151ab6ebb0668cf575896dcc014db6c5e66d35d7d7c1e343d0a3"
+        }
+      },
+      "width": 640,
+      "height": 112
+    },
+    {
+      "id": "btn_menu_disabled_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/buttons/btn_menu_disabled_a01.png",
+          "published": "Assets/UI/buttons/btn_menu_disabled_a01.png",
+          "sha256": "378f6b1a0bc12bfbd639d467dfcb569a355c09eb5aa46d5a14b595a048f7623c"
+        },
+        "svg": {
+          "source": "ImageReview/buttons/btn_menu_disabled_a01.svg",
+          "published": "Assets/UI/buttons/btn_menu_disabled_a01.svg",
+          "sha256": "db62bc3f15fb6c00a05cf05f561b9a876a639e54c163ebbf9422b9d2045c4f65"
+        }
+      },
+      "width": 640,
+      "height": 112
+    },
+    {
+      "id": "btn_danger_normal_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/buttons/btn_danger_normal_a01.png",
+          "published": "Assets/UI/buttons/btn_danger_normal_a01.png",
+          "sha256": "d34e184098d5dad8b86975dc5b2931880cda14786210854493e649f53906e10d"
+        },
+        "svg": {
+          "source": "ImageReview/buttons/btn_danger_normal_a01.svg",
+          "published": "Assets/UI/buttons/btn_danger_normal_a01.svg",
+          "sha256": "171bd6a8992f4c7898f550912a0f5bcc447ace81daeb01192e55176b4faa52e1"
+        }
+      },
+      "width": 640,
+      "height": 112
+    },
+    {
+      "id": "btn_danger_hover_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/buttons/btn_danger_hover_a01.png",
+          "published": "Assets/UI/buttons/btn_danger_hover_a01.png",
+          "sha256": "b344ffbb462bc34469ad6e214d7935cf31bf8b4fab88c18302a6c5c6ca54b2b1"
+        },
+        "svg": {
+          "source": "ImageReview/buttons/btn_danger_hover_a01.svg",
+          "published": "Assets/UI/buttons/btn_danger_hover_a01.svg",
+          "sha256": "9a72cc42c38307004b3dbd7cab529d45aa68849d8b2d0be078984d897e0d5386"
+        }
+      },
+      "width": 640,
+      "height": 112
+    },
+    {
+      "id": "btn_danger_pressed_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/buttons/btn_danger_pressed_a01.png",
+          "published": "Assets/UI/buttons/btn_danger_pressed_a01.png",
+          "sha256": "d34e184098d5dad8b86975dc5b2931880cda14786210854493e649f53906e10d"
+        },
+        "svg": {
+          "source": "ImageReview/buttons/btn_danger_pressed_a01.svg",
+          "published": "Assets/UI/buttons/btn_danger_pressed_a01.svg",
+          "sha256": "171bd6a8992f4c7898f550912a0f5bcc447ace81daeb01192e55176b4faa52e1"
+        }
+      },
+      "width": 640,
+      "height": 112
+    },
+    {
+      "id": "btn_danger_disabled_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/buttons/btn_danger_disabled_a01.png",
+          "published": "Assets/UI/buttons/btn_danger_disabled_a01.png",
+          "sha256": "6e659ade202598b1bfde1540ac8427f24ea260975fdc29a4cd13497d75b17385"
+        },
+        "svg": {
+          "source": "ImageReview/buttons/btn_danger_disabled_a01.svg",
+          "published": "Assets/UI/buttons/btn_danger_disabled_a01.svg",
+          "sha256": "e79c9e2711e0250b37e01da40b9b3fafaf28ac5ae45b95d3dfadcbdc6b8febf6"
+        }
+      },
+      "width": 640,
+      "height": 112
+    },
+    {
+      "id": "toggle_off_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/controls/toggle_off_a01.png",
+          "published": "Assets/UI/controls/toggle_off_a01.png",
+          "sha256": "18c8f70071f0e3ba831b734777603028c199ba08d8f07aeccb01c04f89a5faa4"
+        },
+        "svg": {
+          "source": "ImageReview/controls/toggle_off_a01.svg",
+          "published": "Assets/UI/controls/toggle_off_a01.svg",
+          "sha256": "5c2a3049efc5872c8102c303983e4b9038cb81ba663d02098476a1a9377d4507"
+        }
+      },
+      "width": 128,
+      "height": 64
+    },
+    {
+      "id": "check_off_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/controls/check_off_a01.png",
+          "published": "Assets/UI/controls/check_off_a01.png",
+          "sha256": "3c9579610c8fc9fe7c4c5a3a6b1d291b82d6129c4a929d6d12f332abf60840e8"
+        },
+        "svg": {
+          "source": "ImageReview/controls/check_off_a01.svg",
+          "published": "Assets/UI/controls/check_off_a01.svg",
+          "sha256": "50bde8996aeff9f65ba32c2dea5d737cbbda279e2682d1966fe382478ac5187b"
+        }
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "id": "toggle_on_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/controls/toggle_on_a01.png",
+          "published": "Assets/UI/controls/toggle_on_a01.png",
+          "sha256": "857bed2190d6f39c556a6307c6fb540632e1e9041ff229860343c0eb60628303"
+        },
+        "svg": {
+          "source": "ImageReview/controls/toggle_on_a01.svg",
+          "published": "Assets/UI/controls/toggle_on_a01.svg",
+          "sha256": "95565300bd49d2fcc3a6e2c5dd2ccf20e387f7b775522009c32fe7bb250bf527"
+        }
+      },
+      "width": 128,
+      "height": 64
+    },
+    {
+      "id": "check_on_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/controls/check_on_a01.png",
+          "published": "Assets/UI/controls/check_on_a01.png",
+          "sha256": "647886af2afd129dc8ab551510e9672236a53f500ca5e31526eb563b1dc99b5e"
+        },
+        "svg": {
+          "source": "ImageReview/controls/check_on_a01.svg",
+          "published": "Assets/UI/controls/check_on_a01.svg",
+          "sha256": "761b24c6d43e5f25680cafeb69d082b01f960ef4c4cdc196bfbf55a7a2090c0f"
+        }
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "id": "slider_track_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/controls/slider_track_a01.png",
+          "published": "Assets/UI/controls/slider_track_a01.png",
+          "sha256": "321adc10b477b897b97454e6d4f4cd59143c190a8b4119bbfcc0d52b04e75193"
+        },
+        "svg": {
+          "source": "ImageReview/controls/slider_track_a01.svg",
+          "published": "Assets/UI/controls/slider_track_a01.svg",
+          "sha256": "55892fc9b38dd2df04999abe7fece7e00b300f2a20f71dc62e6f69971e6265c5"
+        }
+      },
+      "width": 256,
+      "height": 16
+    },
+    {
+      "id": "slider_fill_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/controls/slider_fill_a01.png",
+          "published": "Assets/UI/controls/slider_fill_a01.png",
+          "sha256": "38f3bc7e51fac1eab454db6b25ef3b32f28d53692c1f1f4a5b62d51fef218982"
+        },
+        "svg": {
+          "source": "ImageReview/controls/slider_fill_a01.svg",
+          "published": "Assets/UI/controls/slider_fill_a01.svg",
+          "sha256": "aecb9ee7c3697096a8172a70355fdf8c1d1c0719ff84e1f12b11a449c504e97e"
+        }
+      },
+      "width": 256,
+      "height": 16
+    },
+    {
+      "id": "slider_thumb_a01",
+      "batch": "foundation-a01",
+      "files": {
+        "png": {
+          "source": "ImageReview/controls/slider_thumb_a01.png",
+          "published": "Assets/UI/controls/slider_thumb_a01.png",
+          "sha256": "616f5fb9b002f681416023cfa5b8a0c08663888e8816324919081205667a04d2"
+        },
+        "svg": {
+          "source": "ImageReview/controls/slider_thumb_a01.svg",
+          "published": "Assets/UI/controls/slider_thumb_a01.svg",
+          "sha256": "bdd6733b8d9b94d33c7d36ec7b1f322b54778f344bb5771419cf792020cc0b07"
+        }
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "id": "focus_button_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/overlays/focus_button_a02.png",
+          "published": "Assets/UI/overlays/focus_button_a02.png",
+          "sha256": "af10a755987e1990948de569a5622064aa4047ef88dfb5b899befe49c24fecdc"
+        },
+        "svg": {
+          "source": "ImageReview/overlays/focus_button_a02.svg",
+          "published": "Assets/UI/overlays/focus_button_a02.svg",
+          "sha256": "5bfb3acccea4fc0bda0a73a0b630fbaaab49eda5b5db39b13cb1a27914917339"
+        }
+      },
+      "width": 640,
+      "height": 112
+    },
+    {
+      "id": "focus_toggle_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/overlays/focus_toggle_a02.png",
+          "published": "Assets/UI/overlays/focus_toggle_a02.png",
+          "sha256": "bdb6b449c27879bf10b587820b0ceb2e1487fa344d0428fec837d7f5da4ffafc"
+        },
+        "svg": {
+          "source": "ImageReview/overlays/focus_toggle_a02.svg",
+          "published": "Assets/UI/overlays/focus_toggle_a02.svg",
+          "sha256": "a8555b521ea2f13b4e008fd81b2065a63d28cf63b388e626c6aa3cca4bd49d08"
+        }
+      },
+      "width": 128,
+      "height": 64
+    },
+    {
+      "id": "focus_check_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/overlays/focus_check_a02.png",
+          "published": "Assets/UI/overlays/focus_check_a02.png",
+          "sha256": "25b62769b73b4bfb120fe561d505d9fdb9ecea7b1f090c2baed7dc0f6fe25d55"
+        },
+        "svg": {
+          "source": "ImageReview/overlays/focus_check_a02.svg",
+          "published": "Assets/UI/overlays/focus_check_a02.svg",
+          "sha256": "0106c81bac426a0c6ef99de185b1e668d3d5c96ef588eaf08757d837f34ab0f9"
+        }
+      },
+      "width": 64,
+      "height": 64
+    },
+    {
+      "id": "focus_slider_a02",
+      "batch": "core-a02",
+      "files": {
+        "png": {
+          "source": "ImageReview/overlays/focus_slider_a02.png",
+          "published": "Assets/UI/overlays/focus_slider_a02.png",
+          "sha256": "25b62769b73b4bfb120fe561d505d9fdb9ecea7b1f090c2baed7dc0f6fe25d55"
+        },
+        "svg": {
+          "source": "ImageReview/overlays/focus_slider_a02.svg",
+          "published": "Assets/UI/overlays/focus_slider_a02.svg",
+          "sha256": "0106c81bac426a0c6ef99de185b1e668d3d5c96ef588eaf08757d837f34ab0f9"
+        }
+      },
+      "width": 64,
+      "height": 64
+    }
+  ]
+}

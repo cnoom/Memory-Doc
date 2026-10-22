@@ -1,0 +1,22 @@
+[
+  {
+    "type": "skill",
+    "rarity": "uncommon",
+    "prompt": "Precise-object-edit. Edit this approved uncommon attack card frame into a skill frame. Change ONLY the top-left red ribbon: recolor it muted blue, replace its star with a small ivory engraved scroll. Keep the steel blue OUTER rarity trim and bottom compass exactly as reference. Keep all ivory foliage, blackgreen woodcut, blank title, large blank description paper, shallow footer and illustration opening unchanged. Same full 3:4 canvas and geometry. True transparent exterior and central illustration opening, opaque parchment title and description. No text, digits, art in hole, extra ornaments, glow or gems. Do not reduce description safe area x180 y858 w600 h280 on960x1280 canvas."
+  },
+  {
+    "type": "skill",
+    "rarity": "rare",
+    "prompt": "Precise-object-edit. Edit this approved rare attack card frame into a skill frame. Change ONLY the top-left red ribbon: recolor it muted blue, replace its star with a small ivory engraved scroll. Keep the antique gold OUTER rarity trim and bottom compass exactly as reference. Keep all ivory foliage, blackgreen woodcut, blank title, large blank description paper, shallow footer and illustration opening unchanged. Same full 3:4 canvas and geometry. True transparent exterior and central illustration opening, opaque parchment title and description. No text, digits, art in hole, extra ornaments, glow or gems. Do not reduce description safe area x180 y858 w600 h280 on960x1280 canvas."
+  },
+  {
+    "type": "ability",
+    "rarity": "uncommon",
+    "prompt": "Precise-object-edit. Edit this approved uncommon attack card frame into a ability frame. Change ONLY the top-left red ribbon: recolor it muted purple, replace its star with a small ivory engraved flat diamond. Keep the steel blue OUTER rarity trim and bottom compass exactly as reference. Keep all ivory foliage, blackgreen woodcut, blank title, large blank description paper, shallow footer and illustration opening unchanged. Same full 3:4 canvas and geometry. True transparent exterior and central illustration opening, opaque parchment title and description. No text, digits, art in hole, extra ornaments, glow or gems. Do not reduce description safe area x180 y858 w600 h280 on960x1280 canvas."
+  },
+  {
+    "type": "ability",
+    "rarity": "rare",
+    "prompt": "Precise-object-edit. Edit this approved rare attack card frame into a ability frame. Change ONLY the top-left red ribbon: recolor it muted purple, replace its star with a small ivory engraved flat diamond. Keep the antique gold OUTER rarity trim and bottom compass exactly as reference. Keep all ivory foliage, blackgreen woodcut, blank title, large blank description paper, shallow footer and illustration opening unchanged. Same full 3:4 canvas and geometry. True transparent exterior and central illustration opening, opaque parchment title and description. No text, digits, art in hole, extra ornaments, glow or gems. Do not reduce description safe area x180 y858 w600 h280 on960x1280 canvas."
+  }
+]

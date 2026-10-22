@@ -1,0 +1,326 @@
+{
+  "date": "2026-10-17",
+  "scope": "Integration mapping; U01 composition visually finalized on 2026-10-21. Not runtime implementation.",
+  "pathBase": "Assets/UI or exported art package root",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "coordinateSystem": "top-left, x-right y-down, logical screen pixels",
+  "assets": [
+    {
+      "id": "border_card_attack_ornate_c04",
+      "assetPaths": {
+        "png": "cardframes/border_card_attack_ornate_c04.png"
+      },
+      "sha256": "84bf6d388f3ccc0db650f238868b6db1a791de02e08f8c2a47c98570942fb14a",
+      "spec": {
+        "window": {
+          "x": 156,
+          "y": 300,
+          "width": 649,
+          "height": 496,
+          "pixels": 318203
+        },
+        "textSafe": {
+          "title": {
+            "x": 235,
+            "y": 153,
+            "width": 545,
+            "height": 107
+          },
+          "effect": {
+            "x": 180,
+            "y": 858,
+            "width": 600,
+            "height": 280
+          }
+        },
+        "scaling": "uniform-only",
+        "windowMask": "Assets/UI/cardframes/border_card_attack_ornate_c04_window_mask.png",
+        "sourceResolution": [
+          1086,
+          1448
+        ],
+        "exportMethod": "Uniform Lanczos3 downsampling; no cropping, repainting or color changes; generated alpha preserved."
+      }
+    },
+    {
+      "id": "card_attack_dushubiji_illustration_v02",
+      "assetPaths": {
+        "png": "cards/card_attack_dushubiji_illustration_v02.png"
+      },
+      "sha256": "c9abd1a94ed7afeec4d63252cdb7507f4438efce6767a1ad5c2549be84978d05",
+      "spec": {}
+    },
+    {
+      "id": "bg_battle_empty_a01",
+      "assetPaths": {
+        "png": "backgrounds/bg_battle_empty_a01.png"
+      },
+      "sha256": "370c55f4e17e3cc8fc7c5686630a08e56795c30cc5198b569b23a7af0027cdd4",
+      "spec": {
+        "display": [
+          1920,
+          1080
+        ],
+        "scaling": "1:1 at 1920x1080; uniform-only"
+      }
+    },
+    {
+      "id": "enemy_chaos_slime_etching_b01",
+      "assetPaths": {
+        "png": "enemies/enemy_chaos_slime_etching_b01.png"
+      },
+      "sha256": "da5674dd669b2eec3d9d63adb21155cfebd5be1760f64d208115393e2b2d4048",
+      "spec": {}
+    },
+    {
+      "id": "portrait_scholar_etching_b01",
+      "assetPaths": {
+        "png": "portraits/portrait_scholar_etching_b01.png"
+      },
+      "sha256": "2460295476b4f0137e1738a03aa68507ab6b88f6841f2910d41cd14c2cf350ba",
+      "spec": {}
+    },
+    {
+      "id": "btn_secondary_normal_b03",
+      "assetPaths": {
+        "png": "buttons/btn_secondary_normal_b03.png",
+        "svg": "buttons/btn_secondary_normal_b03.svg"
+      },
+      "sha256": "7bcff665eacb515ed1397c3d8dcad805e96de51bd02c6e5c028615990f3f8b3e",
+      "spec": {}
+    },
+    {
+      "id": "cardback_universal_ornate_c03",
+      "assetPaths": {
+        "png": "cardbacks/cardback_universal_ornate_c03.png"
+      },
+      "sha256": "7f324b0508b562f3aa3ac587690acf451456584091d8940171f9a13a52b34927",
+      "spec": {
+        "scaling": "uniform-only",
+        "sourceResolution": [
+          1086,
+          1448
+        ],
+        "exportMethod": "Uniform Lanczos3 downsampling; no cropping, repainting or color changes; generated alpha preserved.",
+        "universal": true
+      }
+    },
+    {
+      "id": "badge_mark_paper_b03",
+      "assetPaths": {
+        "png": "badges/badge_mark_paper_b03.png",
+        "svg": "badges/badge_mark_paper_b03.svg"
+      },
+      "sha256": "38dca9ff2fff5350ca611e1cd8cc4c5ba677fc9c4d5463986138f59eb4415b95",
+      "spec": {}
+    },
+    {
+      "id": "hud_enemy_base_a03",
+      "assetPaths": {
+        "png": "panels/hud_enemy_base_a03.png",
+        "svg": "panels/hud_enemy_base_a03.svg"
+      },
+      "sha256": "578d0343f7984bd0bc89d2dd9c5df0f8b29573a3b36ecc044bb3e2a06c1a8e33",
+      "spec": {
+        "textSafe": {
+          "x": 36,
+          "y": 32,
+          "width": 596,
+          "height": 166
+        },
+        "scaling": "uniform-only"
+      }
+    },
+    {
+      "id": "hud_health_track_a03",
+      "assetPaths": {
+        "png": "bars/hud_health_track_a03.png",
+        "svg": "bars/hud_health_track_a03.svg"
+      },
+      "sha256": "ecd2062bc0bf4c4e7678d62358320f5315e963ae9dd2844fa3553248e3df0032",
+      "spec": {
+        "slice": [
+          6,
+          3,
+          6,
+          3
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "scaling": "9-slice"
+      }
+    },
+    {
+      "id": "hud_health_fill_a03",
+      "assetPaths": {
+        "png": "bars/hud_health_fill_a03.png",
+        "svg": "bars/hud_health_fill_a03.svg"
+      },
+      "sha256": "406010182aaaa2aba5e27026d34d8e5424ccaadb557b42b45919d2c9bed759e1",
+      "spec": {
+        "scaling": "masked-fill"
+      }
+    },
+    {
+      "id": "hud_action_filled_a03",
+      "assetPaths": {
+        "png": "bars/hud_action_filled_a03.png",
+        "svg": "bars/hud_action_filled_a03.svg"
+      },
+      "sha256": "e06f32d9e5d8ecba50bc90c002e4b30aef1ee9fe376723fef1fe192e81b3e827",
+      "spec": {
+        "slice": [
+          14,
+          11,
+          14,
+          11
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "scaling": "9-slice"
+      }
+    },
+    {
+      "id": "hud_action_empty_a03",
+      "assetPaths": {
+        "png": "bars/hud_action_empty_a03.png",
+        "svg": "bars/hud_action_empty_a03.svg"
+      },
+      "sha256": "9bd2a95fa3decf3bf13ec28e6f76bf8074fe9773ceba48483e61be3e2fcb8fa3",
+      "spec": {
+        "slice": [
+          14,
+          11,
+          14,
+          11
+        ],
+        "sliceOrder": "left,bottom,right,top",
+        "scaling": "9-slice"
+      }
+    },
+    {
+      "id": "icon_intent_attack_etching_b01",
+      "assetPaths": {
+        "png": "icons/icon_intent_attack_etching_b01.png",
+        "svg": "icons/icon_intent_attack_etching_b01.svg"
+      },
+      "sha256": "a4d4ea40db55a0f7d48382f36a89628a01a5cc112911976799708014d3b45966",
+      "spec": {
+        "display": [
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "id": "hud_player_base_a03",
+      "assetPaths": {
+        "png": "panels/hud_player_base_a03.png",
+        "svg": "panels/hud_player_base_a03.svg"
+      },
+      "sha256": "2b3361ab6bf5b3020c43f7563c76950cf459fde5d5a680a1850a5899bcd30e6e",
+      "spec": {
+        "textSafe": {
+          "x": 36,
+          "y": 32,
+          "width": 298,
+          "height": 114
+        },
+        "scaling": "uniform-only"
+      }
+    },
+    {
+      "id": "enemy_memory_devourer_phase3_s02",
+      "assetPaths": {
+        "png": "enemies/enemy_memory_devourer_phase3_s02.png"
+      },
+      "sha256": "59b71f3e8d6d35f19f465a07f7e7c42ef965d857e2fce362c9e9165446137c22",
+      "spec": {
+        "phase": 3,
+        "clientSpec": "Assets/UI/boss-phase3-s02/README.md",
+        "visibleBounds": [
+          0,
+          0,
+          1224,
+          1285
+        ]
+      }
+    }
+  ],
+  "layout": {
+    "grid": {
+      "origin": [
+        304,
+        132
+      ],
+      "rows": 4,
+      "columns": 4,
+      "cardSize": [
+        144,
+        192
+      ],
+      "step": [
+        164,
+        212
+      ]
+    },
+    "enemyContainRect": [
+      1260,
+      145,
+      480,
+      300
+    ],
+    "playerContainRect": [
+      1180,
+      750,
+      285,
+      330
+    ],
+    "actorAlignment": "center-bottom of full source canvas; engine pivot validation required",
+    "enemyHud": [
+      1206,
+      456,
+      660,
+      232
+    ],
+    "playerHud": [
+      1480,
+      864,
+      362,
+      180
+    ]
+  },
+  "fixtureOnly": {
+    "normal": {
+      "enemy": "enemy_chaos_slime_etching_b01",
+      "hp": [
+        35,
+        35
+      ],
+      "action": [
+        1,
+        10
+      ],
+      "attack": 6
+    },
+    "boss": {
+      "enemy": "enemy_memory_devourer_phase3_s02",
+      "hp": [
+        54,
+        180
+      ],
+      "action": [
+        6,
+        8
+      ],
+      "attack": 16
+    },
+    "faceSlotZeroBased": 6,
+    "markedSlotZeroBased": 7
+  },
+  "fonts": {
+    "body": "fonts/q01/SourceHanSansSC-Regular.otf",
+    "title": "fonts/q01/SourceHanSerifSC-Regular.otf"
+  }
+}

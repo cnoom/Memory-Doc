@@ -1,0 +1,20 @@
+[
+  {
+    "type": "attack",
+    "slug": "pizhu",
+    "name": "批注",
+    "prompt": "Use case: illustration-story. New standalone scholarly memory roguelike card illustration. Reference image is STYLE ONLY. Match bold black woodcut ink, rich ivory carved hatching, warm bone-white opaque paper, small muted accent. Square canvas, entire subject within central 85 percent. Strong distinctive silhouette readable small. No card frame, UI, words, letters, numerals, readable writing, scenery, glow, gradients or watermark. Do not copy reference magnifying glass or seal. Subject: annotation. A dominant diagonal old-fashioned wooden dip pen with a sharp metal nib touching the wide margin of a single curled manuscript sheet. Three bold vermilion editing strokes, a circled abstract ink blot and a vermilion star-shaped mark show active annotation, without any letters. Strong pen silhouette with rich engraved shaft. Only one sheet, not a closed notebook, no feather quill, no hand."
+  },
+  {
+    "type": "skill",
+    "slug": "mulu",
+    "name": "目录",
+    "prompt": "Use case: illustration-story. New standalone scholarly memory roguelike card illustration. Reference image is STYLE ONLY. Match bold black woodcut ink, rich ivory carved hatching, warm bone-white opaque paper, small muted accent. Square canvas, entire subject within central 85 percent. Strong distinctive silhouette readable small. No card frame, UI, words, letters, numerals, readable writing, scenery, glow, gradients or watermark. Do not copy reference magnifying glass or seal. Subject: a catalog overview. An antique wooden library card catalog drawer pulled open toward the viewer, with five clearly staggered tall tabbed dividers rising in an orderly stepped fan. All cards are blank except abstract engraved lines, no labels or letters. Drawer and tabs form one broad compact silhouette. Small muted blue tab accents, engraved wood grain, brass-style handle rendered black ivory. No books, pen, magnifying glass or room."
+  },
+  {
+    "type": "skill",
+    "slug": "suji",
+    "name": "速记",
+    "prompt": "Use case: illustration-story. New standalone scholarly memory roguelike card illustration. Reference image is STYLE ONLY. Match bold black woodcut ink, rich ivory carved hatching, warm bone-white opaque paper, small muted accent. Square canvas, entire subject within central 85 percent. Strong distinctive silhouette readable small. No card frame, UI, words, letters, numerals, readable writing, scenery, glow, gradients or watermark. Do not copy reference magnifying glass or seal. Subject: rapid note taking that keeps information fixed. A small rigid writing board holding three stacked loose paper sheets tightly under one large distinctive spring metal clip at the top. A short sharpened graphite pencil lies diagonally across the sheets, three swift black shorthand strokes and compact speed marks suggest rapid writing without letters. Clip and angular board are the dominant silhouette, not a book. Tiny muted blue cloth tie at lower corner. Rich woodcut hatching and paper folds. No hands, feather quill, drawer or magnifying glass."
+  }
+]

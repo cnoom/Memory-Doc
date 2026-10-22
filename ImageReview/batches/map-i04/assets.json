@@ -1,0 +1,218 @@
+{
+  "batch": "map-i04",
+  "assets": [
+    {
+      "id": "node_battle_i04",
+      "png": "map/node_battle_i04.png",
+      "svg": "map/node_battle_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "ea8b40b8383c2f6de2874ac42c031325c5625d4729d010bb08f075cb83031ab7",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "node_elite_i04",
+      "png": "map/node_elite_i04.png",
+      "svg": "map/node_elite_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "550751111283dea249f80b23bb26b71cf8118833d577c823f12fbf9cdafa9d0b",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "node_event_i04",
+      "png": "map/node_event_i04.png",
+      "svg": "map/node_event_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "23edd603d50503c99bad1171ab28f1730bbe93ece86d1a90cb19d17e96769fcf",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "node_shop_i04",
+      "png": "map/node_shop_i04.png",
+      "svg": "map/node_shop_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "f70f9e7fffb9ce95500a22d27559af5a6a00fd9f862569dfe7a2b9d15bc56b90",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "node_campfire_i04",
+      "png": "map/node_campfire_i04.png",
+      "svg": "map/node_campfire_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "fcb9d34b198b8aebecf5c667f3abf9841f7b8712a1e67918df01dcd8a66bf57b",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "node_start_i04",
+      "png": "map/node_start_i04.png",
+      "svg": "map/node_start_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "632579c83efdc2225b084c3ae39a9f0d22ea174ac6a511912cef061e87f3c47c",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "node_ring_future_i04",
+      "png": "map/node_ring_future_i04.png",
+      "svg": "map/node_ring_future_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "45a2e20209f0106e657b5b210bbd78e9cc2faa2770ca110b0c6d14aa4b15ad2a",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "node_ring_available_i04",
+      "png": "map/node_ring_available_i04.png",
+      "svg": "map/node_ring_available_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "0e7485513afecac8e08ee9398e34ef641b6a1e21435338e06f9fbe89b9c73b18",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "node_ring_selected_i04",
+      "png": "map/node_ring_selected_i04.png",
+      "svg": "map/node_ring_selected_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "0d7d36e343dbb39fdb879d3b4c728988380cd2a623ec6090924a4bf0f26db081",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "node_ring_current_i04",
+      "png": "map/node_ring_current_i04.png",
+      "svg": "map/node_ring_current_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "41ea08ce638692990e1b98cbe2289f3e32cc231894b608786049505881f30e46",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "node_ring_completed_i04",
+      "png": "map/node_ring_completed_i04.png",
+      "svg": "map/node_ring_completed_i04.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "0cfef7081ed1a5b93bb263909eac622fb3349d83df364634daf55e524ea78c29",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "marker_current_i04",
+      "png": "map/marker_current_i04.png",
+      "svg": "map/marker_current_i04.svg",
+      "width": 248,
+      "height": 64,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "5b82d4390f60510801536679765d748ef236120c977c973563cbed66bb1f5e84",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "panel_node_tip_i04",
+      "png": "map/panel_node_tip_i04.png",
+      "svg": "map/panel_node_tip_i04.svg",
+      "width": 640,
+      "height": 180,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "1dd1e29126bb83524d0e7aef835ea35286c269138cf73bdde4a8bfe95f6b1a04",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    },
+    {
+      "id": "bg_map_i04",
+      "width": 1920,
+      "height": 1080,
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "native1080p": false,
+      "status": "approved",
+      "productionEligible": true,
+      "png": "backgrounds/bg_map_i04.png",
+      "sha256": "5b566f4de656205e70d155b7c85def4b1e02ebb9ff4f5425e7f954edc0c109b8",
+      "approvalQuote": "我确认没有问题了，收录吧",
+      "approvedOn": "2026-10-15"
+    }
+  ],
+  "references": [
+    {
+      "id": "mockup_journey_profile_1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "native1080p": false,
+      "status": "pending-review",
+      "productionEligible": false,
+      "path": "ImageReview/batches/map-i04/mockup_journey_profile_1920x1080.png"
+    },
+    {
+      "id": "mockup_journey_cards_1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "native1080p": false,
+      "status": "pending-review",
+      "productionEligible": false,
+      "path": "ImageReview/batches/map-i04/mockup_journey_cards_1920x1080.png"
+    },
+    {
+      "id": "mockup_journey_relics_1920x1080",
+      "width": 1920,
+      "height": 1080,
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "native1080p": false,
+      "status": "pending-review",
+      "productionEligible": false,
+      "path": "ImageReview/batches/map-i04/mockup_journey_relics_1920x1080.png"
+    }
+  ]
+}

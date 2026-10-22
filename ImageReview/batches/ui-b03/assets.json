@@ -1,0 +1,85 @@
+{
+  "batch": "ui-b03",
+  "status": "approved",
+  "scope": "用户确认的 UI 风格基准与本批 11 项组件；非全套 UI 实装",
+  "assets": [
+    {
+      "id": "ornament_memory_ring_b03",
+      "width": 64,
+      "height": 64,
+      "svg": "assets/ornament_memory_ring_b03.svg",
+      "png": "assets/ornament_memory_ring_b03.png"
+    },
+    {
+      "id": "btn_primary_normal_b03",
+      "width": 640,
+      "height": 112,
+      "svg": "assets/btn_primary_normal_b03.svg",
+      "png": "assets/btn_primary_normal_b03.png"
+    },
+    {
+      "id": "btn_primary_hover_b03",
+      "width": 640,
+      "height": 112,
+      "svg": "assets/btn_primary_hover_b03.svg",
+      "png": "assets/btn_primary_hover_b03.png"
+    },
+    {
+      "id": "btn_primary_pressed_b03",
+      "width": 640,
+      "height": 112,
+      "svg": "assets/btn_primary_pressed_b03.svg",
+      "png": "assets/btn_primary_pressed_b03.png"
+    },
+    {
+      "id": "btn_primary_disabled_b03",
+      "width": 640,
+      "height": 112,
+      "svg": "assets/btn_primary_disabled_b03.svg",
+      "png": "assets/btn_primary_disabled_b03.png"
+    },
+    {
+      "id": "btn_secondary_normal_b03",
+      "width": 640,
+      "height": 112,
+      "svg": "assets/btn_secondary_normal_b03.svg",
+      "png": "assets/btn_secondary_normal_b03.png"
+    },
+    {
+      "id": "btn_secondary_hover_b03",
+      "width": 640,
+      "height": 112,
+      "svg": "assets/btn_secondary_hover_b03.svg",
+      "png": "assets/btn_secondary_hover_b03.png"
+    },
+    {
+      "id": "btn_secondary_pressed_b03",
+      "width": 640,
+      "height": 112,
+      "svg": "assets/btn_secondary_pressed_b03.svg",
+      "png": "assets/btn_secondary_pressed_b03.png"
+    },
+    {
+      "id": "btn_secondary_disabled_b03",
+      "width": 640,
+      "height": 112,
+      "svg": "assets/btn_secondary_disabled_b03.svg",
+      "png": "assets/btn_secondary_disabled_b03.png"
+    },
+    {
+      "id": "badge_mark_paper_b03",
+      "width": 240,
+      "height": 100,
+      "svg": "assets/badge_mark_paper_b03.svg",
+      "png": "assets/badge_mark_paper_b03.png"
+    },
+    {
+      "id": "seal_pairing_b03",
+      "width": 128,
+      "height": 128,
+      "svg": "assets/seal_pairing_b03.svg",
+      "png": "assets/seal_pairing_b03.png"
+    }
+  ],
+  "approval": "用户：可以，就这个风格吧"
+}

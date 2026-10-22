@@ -1,0 +1,273 @@
+{
+  "batch": "ui-icons-q02",
+  "assets": [
+    {
+      "id": "icon_trigger_flip_q02",
+      "label": "翻开",
+      "png": "icons/icon_trigger_flip_q02.png",
+      "svg": "icons/icon_trigger_flip_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "df65e2a43b55ceb21b1c416db7dae359980c3710898bd9adf82e249a246782ef"
+    },
+    {
+      "id": "icon_trigger_flipback_q02",
+      "label": "翻回",
+      "png": "icons/icon_trigger_flipback_q02.png",
+      "svg": "icons/icon_trigger_flipback_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "acf1fa63fbb36ff6e4c6f69fa2964135411891c2a9ac01fbcbc3e701bd169a18"
+    },
+    {
+      "id": "icon_trigger_discard_q02",
+      "label": "丢弃",
+      "png": "icons/icon_trigger_discard_q02.png",
+      "svg": "icons/icon_trigger_discard_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "e8a2d5618820825f007a696c4e57ccb8de7a0fa1c1a8b36b8a0ab3a1a2768f61"
+    },
+    {
+      "id": "icon_trigger_leave_q02",
+      "label": "离场",
+      "png": "icons/icon_trigger_leave_q02.png",
+      "svg": "icons/icon_trigger_leave_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "d97520ce08cc3f2b77008c9f2a5869eb442e325b024fd88f7c3873dcc83c2d97"
+    },
+    {
+      "id": "icon_trigger_enter_q02",
+      "label": "入场",
+      "png": "icons/icon_trigger_enter_q02.png",
+      "svg": "icons/icon_trigger_enter_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "aa45ea43632ef6e9442cb76e00e6c8743444923f5763e0915a5938fddba14563"
+    },
+    {
+      "id": "icon_behavior_exhaust_q02",
+      "label": "消耗",
+      "png": "icons/icon_behavior_exhaust_q02.png",
+      "svg": "icons/icon_behavior_exhaust_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "67eb6e2e522905c15b208a2abf0f36d8e6fe3e9caafa3ed3b8d8f1cffef01b8a"
+    },
+    {
+      "id": "icon_behavior_remove_q02",
+      "label": "移除",
+      "png": "icons/icon_behavior_remove_q02.png",
+      "svg": "icons/icon_behavior_remove_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "5a5a1e2db8aa8657cf6d2c2e0b8eda2cc953f4cc06d052a07309e1ba26a98e84"
+    },
+    {
+      "id": "icon_behavior_stubborn_q02",
+      "label": "顽固",
+      "png": "icons/icon_behavior_stubborn_q02.png",
+      "svg": "icons/icon_behavior_stubborn_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "d0ffc6f9088115e9b01f4be6952c43dc49f9d9c0def1fd307e4644f496f5846e"
+    },
+    {
+      "id": "icon_behavior_hidden_q02",
+      "label": "隐秘",
+      "png": "icons/icon_behavior_hidden_q02.png",
+      "svg": "icons/icon_behavior_hidden_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "986848dd7f577df47aaa4c71604378bd507c3348c75efcb20b6621445ed2eb76"
+    },
+    {
+      "id": "icon_behavior_swift_q02",
+      "label": "迅速",
+      "png": "icons/icon_behavior_swift_q02.png",
+      "svg": "icons/icon_behavior_swift_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "be43f64879e4313564153717f1eca2cc9f7d368ba0b74b2a3ea80b0aa8460028"
+    },
+    {
+      "id": "icon_match_resonance_q02",
+      "label": "共鸣",
+      "png": "icons/icon_match_resonance_q02.png",
+      "svg": "icons/icon_match_resonance_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "a5285f0f9292f3b29b5c922cf0de82071d9dede2ca8d2a68187f73543d5f8b65"
+    },
+    {
+      "id": "icon_match_sword_q02",
+      "label": "剑",
+      "png": "icons/icon_match_sword_q02.png",
+      "svg": "icons/icon_match_sword_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "0731379c5494cca1bb9f2cd530232742222490f0384dc4ffe6d7a5604afe1400"
+    },
+    {
+      "id": "icon_match_shield_q02",
+      "label": "盾",
+      "png": "icons/icon_match_shield_q02.png",
+      "svg": "icons/icon_match_shield_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "c0f99535d69c5ea9363180aa9003a91ecd7cf36fe40d2d2fd9270817c6907793"
+    },
+    {
+      "id": "icon_intent_swap_q02",
+      "label": "换位",
+      "png": "icons/icon_intent_swap_q02.png",
+      "svg": "icons/icon_intent_swap_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "028ac0b885ab0093e3684f41e010985807ad4c89b0e106f53296058762252210"
+    },
+    {
+      "id": "icon_intent_pollute_q02",
+      "label": "污染",
+      "png": "icons/icon_intent_pollute_q02.png",
+      "svg": "icons/icon_intent_pollute_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "cd74e7654ab43ed0472446939f4809e82e39e0a44d74ba66c66efb6ddb1e1f75"
+    },
+    {
+      "id": "icon_intent_lock_q02",
+      "label": "封锁",
+      "png": "icons/icon_intent_lock_q02.png",
+      "svg": "icons/icon_intent_lock_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "932b12ec4e755dee316fbccf51cf7c6c5164424f9ea87b8b32667f9788f72896"
+    },
+    {
+      "id": "icon_action_upgrade_q02",
+      "label": "强化",
+      "png": "icons/icon_action_upgrade_q02.png",
+      "svg": "icons/icon_action_upgrade_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "9c436047ecf6bb63adc92d327c65fe689c4ec42a650e1ffdecb2a3b40a224acb"
+    },
+    {
+      "id": "icon_action_sort_q02",
+      "label": "排序",
+      "png": "icons/icon_action_sort_q02.png",
+      "svg": "icons/icon_action_sort_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "df8d99d3ffb9b1138753465469e78ca74ea072bd586169cbdd208085e313693e"
+    },
+    {
+      "id": "icon_action_filter_q02",
+      "label": "筛选",
+      "png": "icons/icon_action_filter_q02.png",
+      "svg": "icons/icon_action_filter_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "50b94c3bf0db721b06313f6dfed1ad52f76760e424d5e9e0bed8dea8badc7591"
+    },
+    {
+      "id": "icon_action_details_q02",
+      "label": "详情",
+      "png": "icons/icon_action_details_q02.png",
+      "svg": "icons/icon_action_details_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "9ed9ea0cd4a7fa0e6961229a2a19d7f993d37e35baab7e1f1421b0d9f0ddb3b5"
+    },
+    {
+      "id": "icon_action_deck_q02",
+      "label": "牌库",
+      "png": "icons/icon_action_deck_q02.png",
+      "svg": "icons/icon_action_deck_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "776868fca8c58c4ba8cd0568dc35953458f97529458e667cb6b6395ed52dff23"
+    },
+    {
+      "id": "icon_action_gold_q02",
+      "label": "金币",
+      "png": "icons/icon_action_gold_q02.png",
+      "svg": "icons/icon_action_gold_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "928be2591226d8423ca47275c6bb26b43b1657b4b623cb69778795960c61e312"
+    },
+    {
+      "id": "icon_action_close_q02",
+      "label": "关闭",
+      "png": "icons/icon_action_close_q02.png",
+      "svg": "icons/icon_action_close_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "d4167785e406b7f5246aa1b700b2b41696350382db896246a6de676f16c3a0a5"
+    },
+    {
+      "id": "icon_action_return_q02",
+      "label": "返回",
+      "png": "icons/icon_action_return_q02.png",
+      "svg": "icons/icon_action_return_q02.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "productionEligible": true,
+      "sha256": "3c85099a4a33b7c0da3ad3b304ccf2b0482f9089fffe731c6be13ad2663b8a7a"
+    }
+  ],
+  "status": "approved",
+  "approvedOn": "2026-10-15",
+  "approvalQuote": "可以",
+  "productionEligible": true
+}

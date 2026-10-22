@@ -1,0 +1,31 @@
+{
+  "status": "approved",
+  "productionEligible": true,
+  "assets": [
+    {
+      "id": "enemy_memory_devourer_phase2_s01",
+      "png": "enemies/enemy_memory_devourer_phase2_s01.png",
+      "width": 1224,
+      "height": 1285,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "visibleBounds": [
+        0,
+        0,
+        1224,
+        1285
+      ],
+      "sha256": "c9967d6e4ae9c7b6c947da501d680193782ba9770c4c4e125fcb03e7790a762e",
+      "source": "C:\\Users\\Administrator\\.codex\\generated_images\\01a11676-0a6c-7dd3-b7c7-20ab00b8e9c9\\exec-567505ad-2281-42a7-8fd9-cb82b5a5ca1f.png",
+      "note": "Generated phase II candidate; edge padding is tight. Align by visible feet rather than assuming identical canvas coordinates.",
+      "status": "approved",
+      "productionEligible": true,
+      "approvedOn": "2026-10-16",
+      "approvalQuote": "我觉得可以"
+    }
+  ],
+  "approvedOn": "2026-10-16",
+  "approvalQuote": "我觉得可以"
+}

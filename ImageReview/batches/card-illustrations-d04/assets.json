@@ -1,0 +1,114 @@
+{
+  "batch": "card-illustrations-d04",
+  "date": "2026-10-11",
+  "assets": [
+    {
+      "id": "card_attack_lunwen_etching_d04",
+      "name": "论文",
+      "category": "cards",
+      "png": "cards/card_attack_lunwen_etching_d04.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "cc22f15129419545c0a16bb3a5994e05430f976533f0726795ca169b482e8571",
+      "type": "attack"
+    },
+    {
+      "id": "card_attack_jingzhundaji_etching_d04",
+      "name": "精准打击",
+      "category": "cards",
+      "png": "cards/card_attack_jingzhundaji_etching_d04.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "f44214204517365c11be78d7cbece4aa96905453996aaf2008dbeb4e7c5d8024",
+      "type": "attack"
+    },
+    {
+      "id": "card_attack_jiaochayinyong_etching_d04",
+      "name": "交叉引用",
+      "category": "cards",
+      "png": "cards/card_attack_jiaochayinyong_etching_d04.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "4efc607c1b7583333cbb77a684b45655bf725c43a975595b87e2943bf895a1f2",
+      "type": "attack"
+    },
+    {
+      "id": "card_attack_pozhanfenxi_etching_d04",
+      "name": "破绽分析",
+      "category": "cards",
+      "png": "cards/card_attack_pozhanfenxi_etching_d04.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "9f2e7624a110bd4d76b606f2b7ae34326f5af85572bb66ade204613365a8a138",
+      "type": "attack"
+    },
+    {
+      "id": "card_skill_tushuguan_etching_d04",
+      "name": "图书馆",
+      "category": "cards",
+      "png": "cards/card_skill_tushuguan_etching_d04.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "57c74d3c91ca277070afabc6eda84ad7f4fcaa389ce79a76cdc27d5611414ceb",
+      "type": "skill"
+    },
+    {
+      "id": "card_skill_shuqian_etching_d04",
+      "name": "书签",
+      "category": "cards",
+      "png": "cards/card_skill_shuqian_etching_d04.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "cc1b7fb404b309f3aa5e21ae37ec94155dcb8d84a4ed8037f8efd85b4c646736",
+      "type": "skill"
+    },
+    {
+      "id": "card_skill_wenxi_etching_d04",
+      "name": "温习",
+      "category": "cards",
+      "png": "cards/card_skill_wenxi_etching_d04.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "be3413f2ccc7ba9903a24aa92c1b9e991df4ab8a12575da50fe53c28794c4d0a",
+      "type": "skill"
+    },
+    {
+      "id": "card_ability_zhishiyuanbo_etching_d04",
+      "name": "知识渊博",
+      "category": "cards",
+      "png": "cards/card_ability_zhishiyuanbo_etching_d04.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "4c3f640e7086d20d19b53cc195c09c431e2447677224d77b7bd303f6c297f44f",
+      "type": "ability"
+    },
+    {
+      "id": "card_ability_juyifansan_etching_d04",
+      "name": "举一反三",
+      "category": "cards",
+      "png": "cards/card_ability_juyifansan_etching_d04.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "a41a408a2b3d5efbbf7044e02278d65bb53d759f1dc635a839955fa475f07668",
+      "type": "ability"
+    }
+  ]
+}

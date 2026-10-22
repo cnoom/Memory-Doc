@@ -1,0 +1,26 @@
+{
+  "approvalQuote": "可以",
+  "scope": "R01罕见与稀有攻击框及派生遮罩",
+  "files": [
+    {
+      "source": "ImageReview/cardframes/border_card_attack_uncommon_r01.png",
+      "target": "Assets/UI/cardframes/border_card_attack_uncommon_r01.png",
+      "sha256": "17d9a71a98287444152c7a6148db3cbef77005d09da3be0722ba27bbed117763"
+    },
+    {
+      "source": "ImageReview/batches/card-rarity-r01/uncommon-window-mask.png",
+      "target": "Assets/UI/cardframes/border_card_attack_uncommon_r01_window_mask.png",
+      "sha256": "58921b82762407032f7964b303236fcc7ec03e46e0a72cf34248d0a011ecb788"
+    },
+    {
+      "source": "ImageReview/cardframes/border_card_attack_rare_r01.png",
+      "target": "Assets/UI/cardframes/border_card_attack_rare_r01.png",
+      "sha256": "d64d670e06f84b5ad3f9e2826874d9c58ac75906552df40cd1e9a9fda72b41c0"
+    },
+    {
+      "source": "ImageReview/batches/card-rarity-r01/rare-window-mask.png",
+      "target": "Assets/UI/cardframes/border_card_attack_rare_r01_window_mask.png",
+      "sha256": "4813d8e4eb167073e3e6dc62c2356db0e48e2e60cdb354b066bf3950da3e723a"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "batch": "settings-j03",
+  "assets": [
+    {
+      "id": "panel_settings_j03",
+      "png": "panels/panel_settings_j03.png",
+      "width": 1920,
+      "height": 1080,
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "native1080p": false,
+      "status": "approved",
+      "productionEligible": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "acd98fae4901ed6661e97c287167d43b54e2e6714a928a2414d3961a8e7aae39",
+      "approvalQuote": "可以",
+      "approvedOn": "2026-10-14",
+      "publishedPath": "Assets/UI/panels/panel_settings_j03.png"
+    }
+  ]
+}

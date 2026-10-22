@@ -1,0 +1,37 @@
+{
+  "batch": "entry-h02",
+  "assets": [
+    {
+      "id": "mockup_main_menu_h02",
+      "path": "ImageReview/batches/entry-h02/mockup_main_menu_h02_1920x1080.png",
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "width": 1920,
+      "height": 1080,
+      "native1080p": false,
+      "method": "Lanczos centered cover",
+      "status": "pending-review",
+      "productionEligible": false,
+      "role": "composite-ui-design-reference",
+      "sha256": "fc1a07a64c50cca54c95ce61dda47290952b1ff3ab32d5bd2bb57dec5a5eb4d3"
+    },
+    {
+      "id": "mockup_loading_h02",
+      "path": "ImageReview/batches/entry-h02/mockup_loading_h02_1920x1080.png",
+      "sourceResolution": [
+        1672,
+        941
+      ],
+      "width": 1920,
+      "height": 1080,
+      "native1080p": false,
+      "method": "Lanczos centered cover",
+      "status": "pending-review",
+      "productionEligible": false,
+      "role": "composite-ui-design-reference",
+      "sha256": "1ffaa0896894da1dd8e0bb6157455f4f0f876ed0176605a93d46f790b22316c0"
+    }
+  ]
+}

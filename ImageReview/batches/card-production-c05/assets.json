@@ -1,0 +1,121 @@
+{
+  "batch": "card-production-c05",
+  "date": "2026-10-11",
+  "status": "pending-review",
+  "assets": [
+    {
+      "id": "border_card_skill_ornate_c05",
+      "category": "cardframes",
+      "png": "cardframes/border_card_skill_ornate_c05.png",
+      "status": "pending-review",
+      "productionEligible": false,
+      "width": 960,
+      "height": 1280,
+      "scaling": "uniform-only",
+      "textBaked": false,
+      "sourceResolution": [
+        1086,
+        1448
+      ],
+      "sha256": "fc8ec793a48230cc79a3cb22224fcd83a5ccbbda7ed11bf932a1285e2318a61d",
+      "sourceSha256": "843bca7fa4a917ced5082e1798279ed0fae465facfd333e840e8c5c3ad73ade6",
+      "window": {
+        "x": 157,
+        "y": 301,
+        "width": 647,
+        "height": 495
+      },
+      "windowMask": "ImageReview/batches/card-production-c05/skill-window-mask.png",
+      "textSafe": {
+        "title": {
+          "x": 235,
+          "y": 153,
+          "width": 545,
+          "height": 107
+        },
+        "effect": {
+          "x": 180,
+          "y": 858,
+          "width": 600,
+          "height": 280
+        }
+      }
+    },
+    {
+      "id": "border_card_ability_ornate_c05",
+      "category": "cardframes",
+      "png": "cardframes/border_card_ability_ornate_c05.png",
+      "status": "pending-review",
+      "productionEligible": false,
+      "width": 960,
+      "height": 1280,
+      "scaling": "uniform-only",
+      "textBaked": false,
+      "sourceResolution": [
+        1086,
+        1448
+      ],
+      "sha256": "edb0f85a5686c65fa98e648366d8db77962c56629c3c97c52341cb6b47ee9181",
+      "sourceSha256": "3e718f3996806940bd6f67633161b3a4f9925d891aac7695bade9bd1077ecb66",
+      "window": {
+        "x": 157,
+        "y": 302,
+        "width": 647,
+        "height": 494
+      },
+      "windowMask": "ImageReview/batches/card-production-c05/ability-window-mask.png",
+      "textSafe": {
+        "title": {
+          "x": 235,
+          "y": 153,
+          "width": 545,
+          "height": 107
+        },
+        "effect": {
+          "x": 180,
+          "y": 858,
+          "width": 600,
+          "height": 280
+        }
+      }
+    },
+    {
+      "id": "border_card_curse_ornate_c05",
+      "category": "cardframes",
+      "png": "cardframes/border_card_curse_ornate_c05.png",
+      "status": "pending-review",
+      "productionEligible": false,
+      "width": 960,
+      "height": 1280,
+      "scaling": "uniform-only",
+      "textBaked": false,
+      "sourceResolution": [
+        1086,
+        1448
+      ],
+      "sha256": "7d0f7b92435aed6bf33106983596a4d5a8fd0fe820a5c0e6fe31796e07fb5c02",
+      "sourceSha256": "df7c591a3e827c3fe1b86d68a9fcadc89cc476a260db15e6be142eb329decc03",
+      "window": {
+        "x": 157,
+        "y": 301,
+        "width": 647,
+        "height": 496
+      },
+      "windowMask": "ImageReview/batches/card-production-c05/curse-window-mask.png",
+      "textSafe": {
+        "title": {
+          "x": 235,
+          "y": 153,
+          "width": 545,
+          "height": 107
+        },
+        "effect": {
+          "x": 180,
+          "y": 858,
+          "width": 600,
+          "height": 280
+        }
+      }
+    }
+  ]
+}

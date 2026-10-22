@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>记忆勇者 · 手记精修 V04</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="journal.css"></head>
+<body>
+<main id="viewport"><div id="stage">
+  <img class="scene" src="../../backgrounds/bg_battle_etching_textless_v02.png" alt="">
+  <div class="board-shade"></div>
+  <header class="topbar">
+    <div class="brand">记忆勇者<span class="edition">残页秘境</span></div>
+    <div class="chapter">第一章<span class="sep">/</span>记忆回廊</div>
+    <nav><button data-info="金币为本次冒险的货币。此页面为 UI 预览，不执行消费。"><span class="nav-icon">◈</span>金币 <b>50</b></button><button data-info="牌库按单份记录，共 10 张；战斗开始复制为 20 张。"><span class="nav-icon">▤</span>牌库 <b>10</b></button><button id="help" aria-label="查看预览说明">···</button></nav>
+  </header>
+  <aside class="relic-rail" aria-label="遗物栏"><span>遗物</span><div class="empty-slot">＋</div><p>暂无</p></aside>
+  <section class="board" aria-label="四行四列牌阵">
+    <div class="board-heading"><span>记忆牌阵</span><span class="board-hint">翻牌推进敌人行动</span></div>
+    <div id="grid" class="grid"></div>
+    <div class="board-footer"><span class="face-count">正面 <b>1</b> / 1</span><span>点击正面牌查看详情</span></div>
+  </section>
+  <section class="tray" aria-label="战斗牌区">
+    <div class="piles">
+      <button data-pile="draw"><span>抽牌</span><b id="draw">4</b></button>
+      <button data-pile="discard"><span>弃牌</span><b>0</b></button>
+      <button data-pile="exhaust"><span>消耗</span><b>0</b></button>
+      <button data-pile="memory"><span>记忆</span><b>1</b></button>
+    </div>
+    <button id="refill" class="refill"><span class="refresh">↻</span>重新铺满 <strong>+2</strong></button>
+  </section>
+  <section class="enemy-info" aria-label="敌人信息">
+    <div class="enemy-heading"><h1>混乱史莱姆</h1><span class="enemy-label">普通敌人</span></div>
+    <div class="hp"><span class="hp-fill"></span><span class="hp-caption">生命</span><b>35 <small>/ 35</small></b></div>
+    <div class="action-heading"><h2>行动条</h2><span id="remaining">距行动 <b>9</b> 点</span><strong id="action-value">1 <small>/ 10</small></strong></div>
+    <div id="meter" class="meter" role="progressbar" aria-label="敌人行动条" aria-valuemin="0" aria-valuemax="10" aria-valuenow="1"></div>
+    <div class="intent"><span class="intent-icon" id="sword-icon"></span><div><span class="eyebrow">下次行动</span><p>攻击 <strong>6</strong></p></div><span class="intent-note" id="intent-note">行动条满时执行</span></div>
+    <div class="enemy-foot"><span class="ability-tag">混乱</span><span>特殊行动时交换 2 张牌的位置</span></div>
+  </section>
+  <section class="player-info" aria-label="玩家信息"><div class="player-heading"><h2>学者</h2><span>触类旁通</span></div><div class="player-hp"><span></span><b>60 <small>/ 60</small></b></div><div class="block"><span id="shield-icon"></span>格挡 <b>0</b><small>敌人行动后清零</small></div><div class="sustain">持续能力<span>暂无</span></div></section>
+  <div class="screen-footer">战斗界面 · 精排预览 V02</div>
+  <aside id="detail" class="detail" hidden aria-label="读书笔记详情"><button id="close-detail" class="close" aria-label="关闭详情">×</button><span class="detail-kicker">卡牌详情 <span>查看不消耗行动</span></span><div class="detail-heading"><h2>读书笔记</h2><span>攻击 · 普通</span></div><div class="detail-art"><img src="../../cards/card_attack_dushubiji_illustration_v02.png" alt="展开的书页与蓝色批注"></div><dl><dt>配对</dt><dd>造成 <b>8</b> 点伤害。<small>单张牌的效果，配对时两张牌分别结算。</small></dd><dt>翻开</dt><dd>随机标记相邻 1 张背面牌。<small>相邻包含斜角，最多 8 格；优先选择有可增益数值的牌。</small></dd><dt>共鸣</dt><dd>可与其他带「共鸣」的牌跨名匹配。</dd></dl><div class="mark-explain"><b>标记是什么？</b><p>基础效果中的随机一项伤害或格挡临时 +1，可叠加，持续至离场。背面只显示层数。</p></div><div class="detail-combat-summary"><b>混乱史莱姆</b><span>35/35</span><span id="detail-action">行动 1/10</span><strong>下次攻击 6</strong></div></aside>
+  <div id="toast" class="toast" hidden role="status"></div>
+</div></main>
+<footer class="preview-controls"><div><b>战斗 UI · V02</b><span>设计预览，未连接战斗逻辑</span></div><div class="switcher"><button id="normal" class="active">常态</button><button id="danger">临界状态</button><button id="show-detail">卡牌详情</button></div><span class="control-hint">也可点击「读书笔记」查看 · Esc 关闭</span></footer>
+<script src="app.js"></script>
+<script src="journal.js"></script></body>
+</html>
+

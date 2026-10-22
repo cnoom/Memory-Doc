@@ -1,0 +1,42 @@
+[
+  {
+    "width": 1920,
+    "mode": "normal",
+    "portraitSafeTop": 750,
+    "bottom": 688,
+    "height": 232,
+    "noteOverflow": false,
+    "lit": 1,
+    "face": 1
+  },
+  {
+    "width": 1920,
+    "mode": "danger",
+    "portraitSafeTop": 750,
+    "bottom": 688,
+    "height": 232,
+    "noteOverflow": false,
+    "lit": 9,
+    "face": 1
+  },
+  {
+    "width": 1280,
+    "mode": "normal",
+    "portraitSafeTop": 500,
+    "bottom": 487,
+    "height": 181,
+    "noteOverflow": false,
+    "lit": 1,
+    "face": 1
+  },
+  {
+    "width": 1280,
+    "mode": "danger",
+    "portraitSafeTop": 500,
+    "bottom": 487,
+    "height": 181,
+    "noteOverflow": false,
+    "lit": 9,
+    "face": 1
+  }
+]

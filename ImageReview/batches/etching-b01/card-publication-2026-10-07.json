@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-07",
+  "userReply": "可以",
+  "reviewImage": "ImageReview/batches/etching-b01/review_card_art_2026-10-07.png",
+  "scope": "Three unchanged standalone illustrations only; frames/back remain unfinished",
+  "assets": [
+    {
+      "id": "card_attack_daji_etching_b01",
+      "name": "打击",
+      "source": "ImageReview/cards/card_attack_daji_etching_b01.png",
+      "published": "Assets/UI/cards/card_attack_daji_etching_b01.png",
+      "sha256": "1262c540d30c9828c0085eca9a16c30c54fbcd4359804836d720515e96b21bec",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "card_skill_gedang_etching_b01",
+      "name": "格挡",
+      "source": "ImageReview/cards/card_skill_gedang_etching_b01.png",
+      "published": "Assets/UI/cards/card_skill_gedang_etching_b01.png",
+      "sha256": "b094376781fc80396438fa80d9ec93541c37f81f043adc9870eb9dac0ffde000",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "card_attack_biji_etching_b01",
+      "name": "笔记",
+      "source": "ImageReview/cards/card_attack_biji_etching_b01.png",
+      "published": "Assets/UI/cards/card_attack_biji_etching_b01.png",
+      "sha256": "9b9af2566995326c7105271e6abe6d54b4ce4ff10f58d3ec9a1d6718b79fefa1",
+      "width": 1254,
+      "height": 1254
+    }
+  ]
+}

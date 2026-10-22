@@ -1,0 +1,62 @@
+[
+  {
+    "eventId": "E01",
+    "slug": "diary",
+    "name": "古老日记",
+    "prompt": "Create ONE landscape 3:2 narrative event illustration for Memory Hero. Antique black-ink woodcut/etching printed on opaque warm bone-white paper, dense irregular crosshatching, worn fine linework, bold focal silhouettes, layered architectural depth and rich material detail. Mostly ink and bone white with very restrained faded accent color. Match a dark fairytale book engraving, not glossy digital painting or cartoon. Edge-to-edge scene, no UI, no frame, no lettering, no readable writing, no title, no watermark. Keep all story-critical focal objects inside the central horizontal band (middle 65% of height), since UI may crop to a wide 600x260 window; top and bottom contain expendable atmosphere/architecture. Request 1536x1024 landscape image. An open ancient diary on a low stone lectern in a ruined memory corridor. Curling blank pages, loose paper slips and a tiny muted antique-gold thread of memory coiling above the binding. The diary is the clear focal subject."
+  },
+  {
+    "eventId": "E02",
+    "slug": "forgotten_altar",
+    "name": "遗忘的祭坛",
+    "prompt": "Create ONE landscape 3:2 narrative event illustration for Memory Hero. Antique black-ink woodcut/etching printed on opaque warm bone-white paper, dense irregular crosshatching, worn fine linework, bold focal silhouettes, layered architectural depth and rich material detail. Mostly ink and bone white with very restrained faded accent color. Match a dark fairytale book engraving, not glossy digital painting or cartoon. Edge-to-edge scene, no UI, no frame, no lettering, no readable writing, no title, no watermark. Keep all story-critical focal objects inside the central horizontal band (middle 65% of height), since UI may crop to a wide 600x260 window; top and bottom contain expendable atmosphere/architecture. Request 1536x1024 landscape image. A dust-covered low stone altar in a deserted corridor niche, three small wax candles with bent flames, worn offering bowl and drifting paper fragments. Solemn and ambiguous, no deity or person."
+  },
+  {
+    "eventId": "E03",
+    "slug": "merchant_remains",
+    "name": "记忆商人的遗骸",
+    "prompt": "Create ONE landscape 3:2 narrative event illustration for Memory Hero. Antique black-ink woodcut/etching printed on opaque warm bone-white paper, dense irregular crosshatching, worn fine linework, bold focal silhouettes, layered architectural depth and rich material detail. Mostly ink and bone white with very restrained faded accent color. Match a dark fairytale book engraving, not glossy digital painting or cartoon. Edge-to-edge scene, no UI, no frame, no lettering, no readable writing, no title, no watermark. Keep all story-critical focal objects inside the central horizontal band (middle 65% of height), since UI may crop to a wide 600x260 window; top and bottom contain expendable atmosphere/architecture. Request 1536x1024 landscape image. An absent merchant's abandoned travel satchel spilled on a stone corridor floor: rolled cloth, small coin pouch, scattered coins and blank cards. No human remains, no skeleton, no corpse: the owner has vanished. Focus on the abandoned belongings."
+  },
+  {
+    "eventId": "E04",
+    "slug": "broken_chest",
+    "name": "破碎的宝箱",
+    "prompt": "Create ONE landscape 3:2 narrative event illustration for Memory Hero. Antique black-ink woodcut/etching printed on opaque warm bone-white paper, dense irregular crosshatching, worn fine linework, bold focal silhouettes, layered architectural depth and rich material detail. Mostly ink and bone white with very restrained faded accent color. Match a dark fairytale book engraving, not glossy digital painting or cartoon. Edge-to-edge scene, no UI, no frame, no lettering, no readable writing, no title, no watermark. Keep all story-critical focal objects inside the central horizontal band (middle 65% of height), since UI may crop to a wide 600x260 window; top and bottom contain expendable atmosphere/architecture. Request 1536x1024 landscape image. A broken wooden treasure chest half embedded in a ruined stone wall, dense thorn vines wrapped around its lid and broken lock, a few coins visible through the narrow opening. The damaged chest and thorns are dominant."
+  },
+  {
+    "eventId": "E05",
+    "slug": "ghost_library",
+    "name": "幽灵图书馆",
+    "prompt": "Create ONE landscape 3:2 narrative event illustration for Memory Hero. Antique black-ink woodcut/etching printed on opaque warm bone-white paper, dense irregular crosshatching, worn fine linework, bold focal silhouettes, layered architectural depth and rich material detail. Mostly ink and bone white with very restrained faded accent color. Match a dark fairytale book engraving, not glossy digital painting or cartoon. Edge-to-edge scene, no UI, no frame, no lettering, no readable writing, no title, no watermark. Keep all story-critical focal objects inside the central horizontal band (middle 65% of height), since UI may crop to a wide 600x260 window; top and bottom contain expendable atmosphere/architecture. Request 1536x1024 landscape image. A spectral library suspended over thin mist, two receding bookshelves framing a friendly mysterious hooded ghost librarian who beckons beside a floating open book. Blank book spines, detailed antique furniture. Main librarian and book centered."
+  },
+  {
+    "eventId": "E06",
+    "slug": "mirror_corridor",
+    "name": "镜之回廊",
+    "prompt": "Create ONE landscape 3:2 narrative event illustration for Memory Hero. Antique black-ink woodcut/etching printed on opaque warm bone-white paper, dense irregular crosshatching, worn fine linework, bold focal silhouettes, layered architectural depth and rich material detail. Mostly ink and bone white with very restrained faded accent color. Match a dark fairytale book engraving, not glossy digital painting or cartoon. Edge-to-edge scene, no UI, no frame, no lettering, no readable writing, no title, no watermark. Keep all story-critical focal objects inside the central horizontal band (middle 65% of height), since UI may crop to a wide 600x260 window; top and bottom contain expendable atmosphere/architecture. Request 1536x1024 landscape image. A corridor of many tall old mirrors receding into depth, their reflections show forgotten books, keys and distant empty chairs rather than people. A central mirror with a fine hairline crack, strong repeating perspective. No broken shards flying."
+  },
+  {
+    "eventId": "E07",
+    "slug": "lost_apprentice",
+    "name": "迷路的学徒",
+    "prompt": "Create ONE landscape 3:2 narrative event illustration for Memory Hero. Antique black-ink woodcut/etching printed on opaque warm bone-white paper, dense irregular crosshatching, worn fine linework, bold focal silhouettes, layered architectural depth and rich material detail. Mostly ink and bone white with very restrained faded accent color. Match a dark fairytale book engraving, not glossy digital painting or cartoon. Edge-to-edge scene, no UI, no frame, no lettering, no readable writing, no title, no watermark. Keep all story-critical focal objects inside the central horizontal band (middle 65% of height), since UI may crop to a wide 600x260 window; top and bottom contain expendable atmosphere/architecture. Request 1536x1024 landscape image. A young adult scholar apprentice curled up sitting in the corner of a ruined library corridor, holding a small closed book against the chest, travel bag at feet, looking up hopefully. Worn layered robes and timid expression, empathetic rather than horrific."
+  },
+  {
+    "eventId": "E08",
+    "slug": "whispering_fountain",
+    "name": "低语的喷泉",
+    "prompt": "Create ONE landscape 3:2 narrative event illustration for Memory Hero. Antique black-ink woodcut/etching printed on opaque warm bone-white paper, dense irregular crosshatching, worn fine linework, bold focal silhouettes, layered architectural depth and rich material detail. Mostly ink and bone white with very restrained faded accent color. Match a dark fairytale book engraving, not glossy digital painting or cartoon. Edge-to-edge scene, no UI, no frame, no lettering, no readable writing, no title, no watermark. Keep all story-critical focal objects inside the central horizontal band (middle 65% of height), since UI may crop to a wide 600x260 window; top and bottom contain expendable atmosphere/architecture. Request 1536x1024 landscape image. An ancient circular stone fountain in a memory corridor, gentle rippling water, a vague sealed sleeping form suggested under water without revealing an identifiable creature, a few coins on the rim. Restrained faded teal water accent, etched ripples, no magical neon glow."
+  },
+  {
+    "eventId": "E09",
+    "slug": "caravan_gift",
+    "name": "流浪商队的谢礼",
+    "prompt": "Create ONE landscape 3:2 narrative event illustration for Memory Hero. Antique black-ink woodcut/etching printed on opaque warm bone-white paper, dense irregular crosshatching, worn fine linework, bold focal silhouettes, layered architectural depth and rich material detail. Mostly ink and bone white with very restrained faded accent color. Match a dark fairytale book engraving, not glossy digital painting or cartoon. Edge-to-edge scene, no UI, no frame, no lettering, no readable writing, no title, no watermark. Keep all story-critical focal objects inside the central horizontal band (middle 65% of height), since UI may crop to a wide 600x260 window; top and bottom contain expendable atmosphere/architecture. Request 1536x1024 landscape image. A kindly weathered caravan leader at a roadside resting place extending one small dusty wrapped keepsake toward the viewer, covered wagon and bundled trade goods behind. The hand with the gift and welcoming face are primary focal points. No text and no identifiable canonical relic."
+  },
+  {
+    "eventId": "E10",
+    "slug": "sealed_display",
+    "name": "封印的陈列柜",
+    "prompt": "Create ONE landscape 3:2 narrative event illustration for Memory Hero. Antique black-ink woodcut/etching printed on opaque warm bone-white paper, dense irregular crosshatching, worn fine linework, bold focal silhouettes, layered architectural depth and rich material detail. Mostly ink and bone white with very restrained faded accent color. Match a dark fairytale book engraving, not glossy digital painting or cartoon. Edge-to-edge scene, no UI, no frame, no lettering, no readable writing, no title, no watermark. Keep all story-critical focal objects inside the central horizontal band (middle 65% of height), since UI may crop to a wide 600x260 window; top and bottom contain expendable atmosphere/architecture. Request 1536x1024 landscape image. An old glass display cabinet sealed within a roadside stone niche, three indistinct antique objects behind dusty glass, a dark red wax seal and ribbon across the door, small locked money drawer below. Mysterious valuable objects and visible intact seal; no person, blood, or enacted choice."
+  }
+]

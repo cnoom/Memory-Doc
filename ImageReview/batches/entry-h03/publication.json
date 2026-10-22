@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-14",
+  "approvalQuote": "确认",
+  "status": "approved",
+  "files": [
+    {
+      "id": "bg_main_menu_h03",
+      "source": "ImageReview/backgrounds/bg_main_menu_h03.png",
+      "target": "Assets/UI/backgrounds/bg_main_menu_h03.png",
+      "sha256": "7906af39cbe7c672bf82725c4e097a35713e55efb1429fc3264dd2e1bc22b175"
+    },
+    {
+      "id": "bg_loading_h03",
+      "source": "ImageReview/backgrounds/bg_loading_h03.png",
+      "target": "Assets/UI/backgrounds/bg_loading_h03.png",
+      "sha256": "7efd8549b37e95d2153c7290f45ccf44d4a53777ba59d0cf7019e31b91b511c1"
+    }
+  ]
+}

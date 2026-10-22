@@ -1,0 +1,65 @@
+{
+  "id": "mockup_shop_k02",
+  "status": "approved-direction",
+  "productionEligible": false,
+  "role": "composite-reference-with-approved-assets",
+  "width": 1920,
+  "height": 1080,
+  "plateSourceResolution": [
+    1672,
+    941
+  ],
+  "dependencies": {
+    "border_card_attack_ornate_c04": {
+      "path": "Assets/UI/cardframes/border_card_attack_ornate_c04.png",
+      "sha256": "84bf6d388f3ccc0db650f238868b6db1a791de02e08f8c2a47c98570942fb14a"
+    },
+    "card_attack_huoqiushu_etching_d07": {
+      "path": "Assets/UI/cards/card_attack_huoqiushu_etching_d07.png",
+      "sha256": "0c36c210906a8c4ac8423d348c1f692c61e3a23d82b1e0397807ceed70aa20ff"
+    },
+    "border_card_attack_ornate_c04_mask": {
+      "path": "Assets/UI/cardframes/border_card_attack_ornate_c04_window_mask.png",
+      "sha256": "24bb29f43722521c6d2a6b239966d12b8ef2c00d34264af7436429e54984cd5a"
+    },
+    "btn_primary_normal_b03": {
+      "path": "Assets/UI/buttons/btn_primary_normal_b03.png",
+      "sha256": "a704b6984a6f740785cab92da1a7f460be7bd741de0070ad6e3ea71edeb3a7b0"
+    },
+    "border_card_attack_uncommon_r01": {
+      "path": "Assets/UI/cardframes/border_card_attack_uncommon_r01.png",
+      "sha256": "17d9a71a98287444152c7a6148db3cbef77005d09da3be0722ba27bbed117763"
+    },
+    "card_attack_liansuolei_etching_d09": {
+      "path": "Assets/UI/cards/card_attack_liansuolei_etching_d09.png",
+      "sha256": "df1c30affb7d3189b1d0d4d7252937bd558689b6c77be2c757557312363b940a"
+    },
+    "border_card_attack_uncommon_r01_mask": {
+      "path": "Assets/UI/cardframes/border_card_attack_uncommon_r01_window_mask.png",
+      "sha256": "58921b82762407032f7964b303236fcc7ec03e46e0a72cf34248d0a011ecb788"
+    },
+    "border_card_skill_rare_r02": {
+      "path": "Assets/UI/cardframes/border_card_skill_rare_r02.png",
+      "sha256": "d1964f0173cb52a641eaba38e16fe0d7d514640a01175fcf78e4b38c812b68f0"
+    },
+    "card_skill_moligongming_etching_d10": {
+      "path": "Assets/UI/cards/card_skill_moligongming_etching_d10.png",
+      "sha256": "87f4fdab2de267ca1099faf61ba41d9cc5dd68d9ca58b069bad19d606c10c437"
+    },
+    "border_card_skill_rare_r02_mask": {
+      "path": "Assets/UI/cardframes/border_card_skill_rare_r02_window_mask.png",
+      "sha256": "549a886433e005933608cf41f7bb49b23cf9d15290ae9b28f2f44683296fe79f"
+    },
+    "relic_memory_crystal_etching_e01": {
+      "path": "Assets/UI/relics/relic_memory_crystal_etching_e01.png",
+      "sha256": "fc22105958fb2d7d948d4ae2e4a721fd37a4a22bbaa3bf60d5711fdf5d6b6739"
+    },
+    "relic_chain_core_etching_e02": {
+      "path": "Assets/UI/relics/relic_chain_core_etching_e02.png",
+      "sha256": "45062ef023782bf914f67fcb5cc6bee27a3ebe4c67c59b6aec7f84f20d86dfba"
+    }
+  },
+  "sha256": "aa9307df61da5b5a4880a572cca58dbfea324b5bffe508da23c8344a06995442",
+  "approvalQuote": "继续吧",
+  "approvedOn": "2026-10-15"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "uncommon",
+    "name": "罕见",
+    "prompt": "Use case precise-object-edit. Edit the provided approved card frame into a uncommon variant. Preserve geometry, red upper-left ATTACK ribbon including ivory emblem, black green woodcut foliage, bone ivory title parchment, opaque large description parchment. Preserve true alpha outside and in central illustration hole. Full 3:4 card canvas. Change ONLY the narrow OUTERMOST rounded ivory border band to muted steel blue engraved trim, and color the shallow bottom compass ornament the same muted steel blue. Add two small carved notch marks immediately around the bottom compass within existing shallow footer. Strong enough trim to distinguish at 144px but no thicker geometry. All leaf carvings remain ivory on black, do not flood whole frame with color. No gems, glow, gold other than requested trim, words, digits, art inside hole or extra panels. Preserve description safe rectangle x180 y858 width600 height280 in 960x1280 coordinates, do not encroach. Keep title and illustration geometry unchanged as closely as possible. Bottom ornament must stay shallow. Transparent background."
+  },
+  {
+    "slug": "rare",
+    "name": "稀有",
+    "prompt": "Use case precise-object-edit. Edit the provided approved card frame into a rare variant. Preserve geometry, red upper-left ATTACK ribbon including ivory emblem, black green woodcut foliage, bone ivory title parchment, opaque large description parchment. Preserve true alpha outside and in central illustration hole. Full 3:4 card canvas. Change ONLY the narrow OUTERMOST rounded ivory border band to matte antique gold ochre engraved trim, and color the shallow bottom compass ornament the same matte antique gold ochre. Add three small carved notch marks immediately around the bottom compass within existing shallow footer. Strong enough trim to distinguish at 144px but no thicker geometry. All leaf carvings remain ivory on black, do not flood whole frame with color. No gems, glow, gold other than requested trim, words, digits, art inside hole or extra panels. Preserve description safe rectangle x180 y858 width600 height280 in 960x1280 coordinates, do not encroach. Keep title and illustration geometry unchanged as closely as possible. Bottom ornament must stay shallow. Transparent background."
+  }
+]

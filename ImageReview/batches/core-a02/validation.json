@@ -1,0 +1,318 @@
+{
+  "revision": "1080p-r2",
+  "targetResolution": [
+    1920,
+    1080
+  ],
+  "background": {
+    "width": 1920,
+    "height": 1080,
+    "nativeHighResolution": false
+  },
+  "assets": [
+    {
+      "id": "decor_chapter_tab_a02",
+      "width": 76,
+      "height": 152,
+      "hasAlpha": true
+    },
+    {
+      "id": "decor_loose_leaf_a02",
+      "width": 360,
+      "height": 110,
+      "hasAlpha": true
+    },
+    {
+      "id": "decor_portrait_mount_a02",
+      "width": 410,
+      "height": 290,
+      "hasAlpha": true
+    },
+    {
+      "id": "decor_paper_tape_a02",
+      "width": 110,
+      "height": 22,
+      "hasAlpha": true
+    },
+    {
+      "id": "decor_stamp_frame_a02",
+      "width": 112,
+      "height": 62,
+      "hasAlpha": true
+    },
+    {
+      "id": "decor_page_flourish_a02",
+      "width": 280,
+      "height": 30,
+      "hasAlpha": true
+    },
+    {
+      "id": "decor_pressed_ring_a02",
+      "width": 54,
+      "height": 54,
+      "hasAlpha": true
+    },
+    {
+      "id": "decor_margin_ticks_a02",
+      "width": 18,
+      "height": 120,
+      "hasAlpha": true
+    },
+    {
+      "id": "decor_foreedge_a02",
+      "width": 10,
+      "height": 252,
+      "hasAlpha": true
+    },
+    {
+      "id": "hud_enemy_base_a02",
+      "width": 660,
+      "height": 232,
+      "hasAlpha": true
+    },
+    {
+      "id": "hud_name_tag_a02",
+      "width": 420,
+      "height": 64,
+      "hasAlpha": true
+    },
+    {
+      "id": "hud_enemy_compact_a02",
+      "width": 434,
+      "height": 181,
+      "hasAlpha": true
+    },
+    {
+      "id": "hud_player_compact_a02",
+      "width": 253,
+      "height": 143,
+      "hasAlpha": true
+    },
+    {
+      "id": "hud_player_base_a02",
+      "width": 362,
+      "height": 180,
+      "hasAlpha": true
+    },
+    {
+      "id": "hud_intent_tag_a02",
+      "width": 512,
+      "height": 64,
+      "hasAlpha": true
+    },
+    {
+      "id": "hud_health_track_a02",
+      "width": 512,
+      "height": 12,
+      "hasAlpha": true
+    },
+    {
+      "id": "hud_health_fill_a02",
+      "width": 512,
+      "height": 8,
+      "hasAlpha": true
+    },
+    {
+      "id": "hud_action_empty_a02",
+      "width": 72,
+      "height": 32,
+      "hasAlpha": true
+    },
+    {
+      "id": "hud_action_filled_a02",
+      "width": 72,
+      "height": 32,
+      "hasAlpha": true
+    },
+    {
+      "id": "hud_action_critical_a02",
+      "width": 72,
+      "height": 32,
+      "hasAlpha": true
+    },
+    {
+      "id": "focus_button_a02",
+      "width": 640,
+      "height": 112,
+      "hasAlpha": true
+    },
+    {
+      "id": "focus_toggle_a02",
+      "width": 128,
+      "height": 64,
+      "hasAlpha": true
+    },
+    {
+      "id": "focus_check_a02",
+      "width": 64,
+      "height": 64,
+      "hasAlpha": true
+    },
+    {
+      "id": "focus_slider_a02",
+      "width": 64,
+      "height": 64,
+      "hasAlpha": true
+    }
+  ],
+  "geometry": [
+    {
+      "width": 1920,
+      "hudBottom": 688,
+      "heroTop": 750,
+      "intentBottom": 230,
+      "hudHeight": 232,
+      "cards": [
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ],
+        [
+          144,
+          192
+        ]
+      ],
+      "faces": 1
+    },
+    {
+      "width": 1280,
+      "hudBottom": 487,
+      "heroTop": 500,
+      "intentBottom": 173,
+      "hudHeight": 181,
+      "cards": [
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ],
+        [
+          96,
+          128
+        ]
+      ],
+      "faces": 1
+    }
+  ],
+  "errors": [],
+  "verified": [
+    "normal/critical inherited layout",
+    "long intent",
+    "settings checked + focus",
+    "music value",
+    "disabled input and resume",
+    "Escape and resume",
+    "gallery assets"
+  ]
+}

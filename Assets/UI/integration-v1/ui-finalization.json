@@ -1,0 +1,171 @@
+{
+  "asOf": "2026-10-21",
+  "pathBase": "Assets/UI or art package root",
+  "authorization": "用户：检查类似UI，帮我定了；继续未完成任务",
+  "screens": [
+    {
+      "name": "启动Logo",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/startup-v03/startup_cover_v03.png",
+      "clientSpec": "mockups/startup-v03/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "主菜单",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/entry-h02/mockup_main_menu_h02_1920x1080.png",
+      "clientSpec": "mockups/entry-h02/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "加载页",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/entry-h02/mockup_loading_h02_1920x1080.png",
+      "clientSpec": "mockups/entry-h02/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "角色选择",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/v1-closure-p01/character_select.png",
+      "clientSpec": "mockups/v1-closure-p01/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "地图",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/map-i03/mockup_map_i03_1920x1080.png",
+      "clientSpec": "mockups/map-i03/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "战斗",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/battle-u01/normal.png",
+      "clientSpec": "mockups/battle-u01/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "暂停手记/卡牌详情",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/battle-journal-v05/index.html",
+      "clientSpec": "mockups/battle-journal-v05/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "设置",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/settings-j02/mockup_settings_j02_1920x1080.png",
+      "clientSpec": "mockups/settings-j02/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "商店",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/shop-k02/mockup_shop_k02_1920x1080.png",
+      "clientSpec": "mockups/shop-k02/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "移除卡牌",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/shop-k04/selected.png",
+      "clientSpec": "mockups/shop-k04/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "篝火",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/campfire-l01/mockup_campfire_l01_1920x1080.png",
+      "clientSpec": "mockups/campfire-l01/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "强化卡牌",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/campfire-l03/selected.png",
+      "clientSpec": "mockups/campfire-l03/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "事件选择与结果",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/event-m01/choices.png",
+      "clientSpec": "mockups/event-m01/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "战后卡牌奖励",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/reward-n01/selected.png",
+      "clientSpec": "mockups/reward-n01/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "Boss遗物奖励",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/relic-reward-o01/selected.png",
+      "clientSpec": "mockups/relic-reward-o01/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "旅途详情",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/v1-closure-p01/journey_profile.png",
+      "clientSpec": "mockups/v1-closure-p01/README.md",
+      "finalizedOn": "2026-10-21"
+    },
+    {
+      "name": "胜利/失败结算",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "reference": "mockups/v1-closure-p01/victory.png",
+      "clientSpec": "mockups/v1-closure-p01/README.md",
+      "finalizedOn": "2026-10-21"
+    }
+  ],
+  "additionalFinalBatches": [
+    "motion-r01",
+    "effects-t01"
+  ],
+  "pendingEngineering": [
+    "非16:9适配",
+    "长列表/排序菜单/悬浮说明",
+    "Boss实景pivot",
+    "启动失败分支",
+    "目标引擎字体与动效验证"
+  ]
+}

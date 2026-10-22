@@ -1,0 +1,78 @@
+{
+  "batch": "card-illustrations-d08",
+  "date": "2026-10-11",
+  "assets": [
+    {
+      "id": "card_skill_zhenchabing_etching_d08",
+      "name": "侦察兵",
+      "category": "cards",
+      "png": "cards/card_skill_zhenchabing_etching_d08.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "58928e64fbf6ca97012872dc455b17ca571a1a50a3b39da584ed3ee508cee277",
+      "type": "skill"
+    },
+    {
+      "id": "card_skill_shifu_etching_d08",
+      "name": "石肤",
+      "category": "cards",
+      "png": "cards/card_skill_shifu_etching_d08.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "f71df37436131ba249a5b1b8d235b0110b7be4d5b63da7e9bc21903f46b883ad",
+      "type": "skill"
+    },
+    {
+      "id": "card_skill_jiazhou_etching_d08",
+      "name": "甲胄",
+      "category": "cards",
+      "png": "cards/card_skill_jiazhou_etching_d08.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "f51c25405764907ab41858926ca927e3f11548d6f975795790de558bf5e43c6c",
+      "type": "skill"
+    },
+    {
+      "id": "card_skill_xiaosanfeng_etching_d08",
+      "name": "消散风",
+      "category": "cards",
+      "png": "cards/card_skill_xiaosanfeng_etching_d08.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "ddcd8d4809673ec1ad88fb283923e94f8b0f391002954c500f1f8d9c716dd548",
+      "type": "skill"
+    },
+    {
+      "id": "card_skill_shengmingquan_etching_d08",
+      "name": "生命泉",
+      "category": "cards",
+      "png": "cards/card_skill_shengmingquan_etching_d08.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "85d614d2595362ec2ffb650e8b2ae11b05c13990a15c95d5d35870537931531a",
+      "type": "skill"
+    },
+    {
+      "id": "card_skill_huisheng_etching_d08",
+      "name": "回声",
+      "category": "cards",
+      "png": "cards/card_skill_huisheng_etching_d08.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "0513943b261e631f32b5aebcb644414966eb086cb26ac7c7e1227063471e982d",
+      "type": "skill"
+    }
+  ]
+}

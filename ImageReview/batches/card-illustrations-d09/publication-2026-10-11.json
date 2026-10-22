@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-11",
+  "authorizationQuote": "继续吧，这种icon可以批量生成无需向我确认",
+  "approvalMode": "standing-user-authorization-after-agent-review",
+  "scope": "小型卡牌插画；不扩展到卡框、角色立绘或界面",
+  "files": [
+    {
+      "id": "card_attack_pojiazhan_etching_d09",
+      "source": "ImageReview/cards/card_attack_pojiazhan_etching_d09.png",
+      "target": "Assets/UI/cards/card_attack_pojiazhan_etching_d09.png",
+      "sha256": "a552b7f4812e8daab02ddfa8d87f0131e9fbdb5b3beef9324be44e371c58d77e"
+    },
+    {
+      "id": "card_attack_zhicanji_etching_d09",
+      "source": "ImageReview/cards/card_attack_zhicanji_etching_d09.png",
+      "target": "Assets/UI/cards/card_attack_zhicanji_etching_d09.png",
+      "sha256": "4f4df8ba299616ad4b349d8ec022a97f877e6f5c382162736ecc504c51c7bb72"
+    },
+    {
+      "id": "card_attack_liansuolei_etching_d09",
+      "source": "ImageReview/cards/card_attack_liansuolei_etching_d09.png",
+      "target": "Assets/UI/cards/card_attack_liansuolei_etching_d09.png",
+      "sha256": "df1c30affb7d3189b1d0d4d7252937bd558689b6c77be2c757557312363b940a"
+    },
+    {
+      "id": "card_attack_juexiang_etching_d09",
+      "source": "ImageReview/cards/card_attack_juexiang_etching_d09.png",
+      "target": "Assets/UI/cards/card_attack_juexiang_etching_d09.png",
+      "sha256": "4ad55dd8c15e9dedfb48158a51ec7be030af6ab02b29c252d316e18131820e0c"
+    },
+    {
+      "id": "card_skill_tiebi_etching_d09",
+      "source": "ImageReview/cards/card_skill_tiebi_etching_d09.png",
+      "target": "Assets/UI/cards/card_skill_tiebi_etching_d09.png",
+      "sha256": "d4012f177372c77e0620c693d053697158e452648b60c111698d26f29b2be4e4"
+    },
+    {
+      "id": "card_skill_qingli_etching_d09",
+      "source": "ImageReview/cards/card_skill_qingli_etching_d09.png",
+      "target": "Assets/UI/cards/card_skill_qingli_etching_d09.png",
+      "sha256": "6ad41ccf313b2d922cece3cdc393d77d593df0a92991d86d97bf0066490780eb"
+    },
+    {
+      "id": "card_skill_bengdai_etching_d09",
+      "source": "ImageReview/cards/card_skill_bengdai_etching_d09.png",
+      "target": "Assets/UI/cards/card_skill_bengdai_etching_d09.png",
+      "sha256": "026cfca87c6fec6b7e67c88b5b425ab2a7801ae204370cc667eb606963d21b12"
+    },
+    {
+      "id": "card_ability_shouhujiejie_etching_d09",
+      "source": "ImageReview/cards/card_ability_shouhujiejie_etching_d09.png",
+      "target": "Assets/UI/cards/card_ability_shouhujiejie_etching_d09.png",
+      "sha256": "be96e94660672d7cb31c0d93b393e0ba4bc59b3cec6a020fe2d0cbf1761f3c74"
+    },
+    {
+      "id": "card_ability_yujin_etching_d09",
+      "source": "ImageReview/cards/card_ability_yujin_etching_d09.png",
+      "target": "Assets/UI/cards/card_ability_yujin_etching_d09.png",
+      "sha256": "61eec9b074b88cfdb88c124f3ce39ed6ab58fa32c1bc315a8af2dfe21f6630dc"
+    },
+    {
+      "id": "card_ability_fengyan_etching_d09",
+      "source": "ImageReview/cards/card_ability_fengyan_etching_d09.png",
+      "target": "Assets/UI/cards/card_ability_fengyan_etching_d09.png",
+      "sha256": "9dda193c23a68f188d85a81f30ef1f79454c8648bd1e4d25bd93255bd6e462ed"
+    }
+  ]
+}

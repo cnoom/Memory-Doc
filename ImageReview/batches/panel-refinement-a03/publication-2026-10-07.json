@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-07",
+  "userReply": "可以了",
+  "reviewImage": "ImageReview/batches/panel-refinement-a03/comparison.png",
+  "scope": "14 A03 replacements; artwork approval, engine integration remains unverified",
+  "assets": [
+    {
+      "id": "panel_paper_a03",
+      "replaces": "panel_paper_a01",
+      "width": 256,
+      "height": 256,
+      "files": {
+        "png": {
+          "source": "ImageReview/panels/panel_paper_a03.png",
+          "published": "Assets/UI/panels/panel_paper_a03.png",
+          "sha256": "6d2f699775c4943aded5733687561275bc27f90e49e8656b055b145660f80f3a"
+        },
+        "svg": {
+          "source": "ImageReview/panels/panel_paper_a03.svg",
+          "published": "Assets/UI/panels/panel_paper_a03.svg",
+          "sha256": "0d4dabaf36533aef02347d629838e57ce4a39d3f2b4afab0ab3c0eae079000c0"
+        }
+      }
+    },
+    {
+      "id": "panel_tooltip_a03",
+      "replaces": "panel_tooltip_a01",
+      "width": 256,
+      "height": 256,
+      "files": {
+        "png": {
+          "source": "ImageReview/panels/panel_tooltip_a03.png",
+          "published": "Assets/UI/panels/panel_tooltip_a03.png",
+          "sha256": "6d2f699775c4943aded5733687561275bc27f90e49e8656b055b145660f80f3a"
+        },
+        "svg": {
+          "source": "ImageReview/panels/panel_tooltip_a03.svg",
+          "published": "Assets/UI/panels/panel_tooltip_a03.svg",
+          "sha256": "0d4dabaf36533aef02347d629838e57ce4a39d3f2b4afab0ab3c0eae079000c0"
+        }
+      }
+    },
+    {
+      "id": "panel_ink_a03",
+      "replaces": "panel_ink_a01",
+      "width": 256,
+      "height": 256,
+      "files": {
+        "png": {
+          "source": "ImageReview/panels/panel_ink_a03.png",
+          "published": "Assets/UI/panels/panel_ink_a03.png",
+          "sha256": "58d05d47ceddc4aba102dba35df51198c7f31096d55fdd567c73d298fb3ddb20"
+        },
+        "svg": {
+          "source": "ImageReview/panels/panel_ink_a03.svg",
+          "published": "Assets/UI/panels/panel_ink_a03.svg",
+          "sha256": "356f8c959bd6c8ee1cae196d71ab04f950cfa5775e7111fa3b89196fd3029c04"
+        }
+      }
+    },
+    {
+      "id": "hud_enemy_base_a03",
+      "replaces": "hud_enemy_base_a02",
+      "width": 660,
+      "height": 232,
+      "files": {
+        "png": {
+          "source": "ImageReview/panels/hud_enemy_base_a03.png",
+          "published": "Assets/UI/panels/hud_enemy_base_a03.png",
+          "sha256": "578d0343f7984bd0bc89d2dd9c5df0f8b29573a3b36ecc044bb3e2a06c1a8e33"
+        },
+        "svg": {
+          "source": "ImageReview/panels/hud_enemy_base_a03.svg",
+          "published": "Assets/UI/panels/hud_enemy_base_a03.svg",
+          "sha256": "00e21a59943bab7f57a72da83d27346d2e4a716df084095233f12e9f74e49d11"
+        }
+      }
+    },
+    {
+      "id": "hud_name_tag_a03",
+      "replaces": "hud_name_tag_a02",
+      "width": 420,
+      "height": 64,
+      "files": {
+        "png": {
+          "source": "ImageReview/panels/hud_name_tag_a03.png",
+          "published": "Assets/UI/panels/hud_name_tag_a03.png",
+          "sha256": "3b8f0a71be34818d8a41f8e3ee8cc0b1f681ef0f6111d20166d4ce6dc0305121"
+        },
+        "svg": {
+          "source": "ImageReview/panels/hud_name_tag_a03.svg",
+          "published": "Assets/UI/panels/hud_name_tag_a03.svg",
+          "sha256": "d8c964cc78b87ad7fa2c25a3d473c46eea285314c2bab6cb889c67a9446c87ee"
+        }
+      }
+    },
+    {
+      "id": "hud_enemy_compact_a03",
+      "replaces": "hud_enemy_compact_a02",
+      "width": 434,
+      "height": 181,
+      "files": {
+        "png": {
+          "source": "ImageReview/panels/hud_enemy_compact_a03.png",
+          "published": "Assets/UI/panels/hud_enemy_compact_a03.png",
+          "sha256": "fd64cb50c136eaa3d010d4f0576709d73604ed425127731d40ac9d2b4ba57d9b"
+        },
+        "svg": {
+          "source": "ImageReview/panels/hud_enemy_compact_a03.svg",
+          "published": "Assets/UI/panels/hud_enemy_compact_a03.svg",
+          "sha256": "0c3d598cb7617b164733a018874c65ccd36dc8362078f2fb1d0b57b49eb11ce6"
+        }
+      }
+    },
+    {
+      "id": "hud_player_compact_a03",
+      "replaces": "hud_player_compact_a02",
+      "width": 253,
+      "height": 143,
+      "files": {
+        "png": {
+          "source": "ImageReview/panels/hud_player_compact_a03.png",
+          "published": "Assets/UI/panels/hud_player_compact_a03.png",
+          "sha256": "100701f529b209df103e9d255e44b57e297589df66916b10888a067b8b26dd8f"
+        },
+        "svg": {
+          "source": "ImageReview/panels/hud_player_compact_a03.svg",
+          "published": "Assets/UI/panels/hud_player_compact_a03.svg",
+          "sha256": "ccc6f5af41df389288ac47e12eb71f41d472d8a49c058a82a5234aa140f297a1"
+        }
+      }
+    },
+    {
+      "id": "hud_player_base_a03",
+      "replaces": "hud_player_base_a02",
+      "width": 362,
+      "height": 180,
+      "files": {
+        "png": {
+          "source": "ImageReview/panels/hud_player_base_a03.png",
+          "published": "Assets/UI/panels/hud_player_base_a03.png",
+          "sha256": "2b3361ab6bf5b3020c43f7563c76950cf459fde5d5a680a1850a5899bcd30e6e"
+        },
+        "svg": {
+          "source": "ImageReview/panels/hud_player_base_a03.svg",
+          "published": "Assets/UI/panels/hud_player_base_a03.svg",
+          "sha256": "b6cc5cce10eaf206685ac25393a8e3eeee202aaa927d2c8b9c20c0021e427fd9"
+        }
+      }
+    },
+    {
+      "id": "hud_intent_tag_a03",
+      "replaces": "hud_intent_tag_a02",
+      "width": 512,
+      "height": 64,
+      "files": {
+        "png": {
+          "source": "ImageReview/panels/hud_intent_tag_a03.png",
+          "published": "Assets/UI/panels/hud_intent_tag_a03.png",
+          "sha256": "db67d08a3746bbdc1187124ddcb8730afe938c6df9ae77c514c756326867f406"
+        },
+        "svg": {
+          "source": "ImageReview/panels/hud_intent_tag_a03.svg",
+          "published": "Assets/UI/panels/hud_intent_tag_a03.svg",
+          "sha256": "49a4093ef363f4781e1e84b880a4a095b4c485bd0c7022814b0f353bb90ac0bb"
+        }
+      }
+    },
+    {
+      "id": "hud_health_track_a03",
+      "replaces": "hud_health_track_a02",
+      "width": 512,
+      "height": 12,
+      "files": {
+        "png": {
+          "source": "ImageReview/bars/hud_health_track_a03.png",
+          "published": "Assets/UI/bars/hud_health_track_a03.png",
+          "sha256": "ecd2062bc0bf4c4e7678d62358320f5315e963ae9dd2844fa3553248e3df0032"
+        },
+        "svg": {
+          "source": "ImageReview/bars/hud_health_track_a03.svg",
+          "published": "Assets/UI/bars/hud_health_track_a03.svg",
+          "sha256": "573e9b6692858397b1e0de3f84719de2809e9fac495cfee15ce5fe6edce008ec"
+        }
+      }
+    },
+    {
+      "id": "hud_health_fill_a03",
+      "replaces": "hud_health_fill_a02",
+      "width": 512,
+      "height": 8,
+      "files": {
+        "png": {
+          "source": "ImageReview/bars/hud_health_fill_a03.png",
+          "published": "Assets/UI/bars/hud_health_fill_a03.png",
+          "sha256": "406010182aaaa2aba5e27026d34d8e5424ccaadb557b42b45919d2c9bed759e1"
+        },
+        "svg": {
+          "source": "ImageReview/bars/hud_health_fill_a03.svg",
+          "published": "Assets/UI/bars/hud_health_fill_a03.svg",
+          "sha256": "305d7464afa906684beab686d09b3527d0ced010d25f51116f90ebb24c210d26"
+        }
+      }
+    },
+    {
+      "id": "hud_action_empty_a03",
+      "replaces": "hud_action_empty_a02",
+      "width": 72,
+      "height": 32,
+      "files": {
+        "png": {
+          "source": "ImageReview/bars/hud_action_empty_a03.png",
+          "published": "Assets/UI/bars/hud_action_empty_a03.png",
+          "sha256": "9bd2a95fa3decf3bf13ec28e6f76bf8074fe9773ceba48483e61be3e2fcb8fa3"
+        },
+        "svg": {
+          "source": "ImageReview/bars/hud_action_empty_a03.svg",
+          "published": "Assets/UI/bars/hud_action_empty_a03.svg",
+          "sha256": "1e60bda7dfd876e3ca3d22d98e3e61b6e43ce06a3ae3bd6a6d96df558582ab2a"
+        }
+      }
+    },
+    {
+      "id": "hud_action_filled_a03",
+      "replaces": "hud_action_filled_a02",
+      "width": 72,
+      "height": 32,
+      "files": {
+        "png": {
+          "source": "ImageReview/bars/hud_action_filled_a03.png",
+          "published": "Assets/UI/bars/hud_action_filled_a03.png",
+          "sha256": "e06f32d9e5d8ecba50bc90c002e4b30aef1ee9fe376723fef1fe192e81b3e827"
+        },
+        "svg": {
+          "source": "ImageReview/bars/hud_action_filled_a03.svg",
+          "published": "Assets/UI/bars/hud_action_filled_a03.svg",
+          "sha256": "a0164a4615a3947a959c38462c6b59baf184be90ddb01831a6707cc2d98c4728"
+        }
+      }
+    },
+    {
+      "id": "hud_action_critical_a03",
+      "replaces": "hud_action_critical_a02",
+      "width": 72,
+      "height": 32,
+      "files": {
+        "png": {
+          "source": "ImageReview/bars/hud_action_critical_a03.png",
+          "published": "Assets/UI/bars/hud_action_critical_a03.png",
+          "sha256": "6fbc904fe675669b823324515b8ccc728f3b5537e361d53b309c51376372637c"
+        },
+        "svg": {
+          "source": "ImageReview/bars/hud_action_critical_a03.svg",
+          "published": "Assets/UI/bars/hud_action_critical_a03.svg",
+          "sha256": "5ec53b41fab276877f9ae4a857036720016e56498adba95c0a510472666a3d50"
+        }
+      }
+    }
+  ]
+}

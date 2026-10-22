@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-07",
+  "generatedResolution": [
+    1672,
+    941
+  ],
+  "method": "Lanczos3 cover resampling; not native 1080p or proven super-resolution",
+  "id": "bg_battle_empty_a01",
+  "userReply": "可以",
+  "published": "Assets/UI/backgrounds/bg_battle_empty_a01.png",
+  "source": "ImageReview/backgrounds/bg_battle_empty_a01.png",
+  "approvalScope": "Empty battlefield background appearance and current delivered version; no HUD or other A01/A02 assets",
+  "sha256": "370c55f4e17e3cc8fc7c5686630a08e56795c30cc5198b569b23a7af0027cdd4",
+  "deliveredResolution": [
+    1920,
+    1080
+  ]
+}

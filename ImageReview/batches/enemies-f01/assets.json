@@ -1,0 +1,101 @@
+{
+  "batch": "enemies-f01",
+  "assets": [
+    {
+      "id": "enemy_barbarian_etching_f01",
+      "name": "蛮族战士",
+      "category": "enemies",
+      "png": "enemies/enemy_barbarian_etching_f01.png",
+      "width": 1024,
+      "height": 1536,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-2ca83fc4-39e1-4cc2-b57d-0014a5394ae8.png",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "sha256": "e383501605e9003ba2424791db44d82ed2256ee9cd1df1a896d99452a5b77b02"
+    },
+    {
+      "id": "enemy_corrupted_bud_etching_f01",
+      "name": "腐化花蕾",
+      "category": "enemies",
+      "png": "enemies/enemy_corrupted_bud_etching_f01.png",
+      "width": 1145,
+      "height": 1374,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-d12fee33-4756-495c-9e82-a7d5c11e50ac.png",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "d53d631037bdd906c423730de2cb969cbb330c209b3cce9e749886c303ecf14e"
+    },
+    {
+      "id": "enemy_phantom_etching_f01",
+      "name": "幻影",
+      "category": "enemies",
+      "png": "enemies/enemy_phantom_etching_f01.png",
+      "width": 1024,
+      "height": 1536,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-13c4e64e-dcc2-4a23-bf7f-328bc89e5ea1.png",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "sha256": "1a5273c834341ff039be1b6265a81d033b5356f72e1f116810ff984a0c08872d"
+    },
+    {
+      "id": "enemy_twinblade_executor_etching_f01",
+      "name": "双刃执行者",
+      "category": "enemies",
+      "png": "enemies/enemy_twinblade_executor_etching_f01.png",
+      "width": 1024,
+      "height": 1536,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-c1241006-52fa-4f4b-b5a4-f65f58fd7829.png",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "sha256": "a297d688272852a4577b1cbe9b7ea11e0c5958158cb57c9ce600a9b4270c950b"
+    },
+    {
+      "id": "enemy_memory_thief_etching_f01",
+      "name": "记忆窃贼",
+      "category": "enemies",
+      "png": "enemies/enemy_memory_thief_etching_f01.png",
+      "width": 1145,
+      "height": 1374,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-ea0e210a-5217-4f30-bc90-c159862545cc.png",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "21b266c04ead06fc40c615da54fd015e157669d95a139a85e79d0f82c8e8e34c"
+    },
+    {
+      "id": "enemy_memory_devourer_etching_f01",
+      "name": "记忆吞噬者",
+      "category": "enemies",
+      "png": "enemies/enemy_memory_devourer_etching_f01.png",
+      "width": 1224,
+      "height": 1285,
+      "status": "pending-review",
+      "productionEligible": false,
+      "sourceFile": "exec-b2bd2303-1858-489a-a9fa-f2c7507ed0dc.png",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "sha256": "15a9e326ea588a26644a7719e3a99f36d96c0abb8473b92815c7f30eeb1c3e9b"
+    }
+  ]
+}

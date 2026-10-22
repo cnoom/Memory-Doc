@@ -1,0 +1,13 @@
+{
+  "id": "mockup_map_i03",
+  "status": "pending-review",
+  "productionEligible": false,
+  "sourceResolution": [
+    1672,
+    941
+  ],
+  "width": 1920,
+  "height": 1080,
+  "native1080p": false,
+  "sha256": "09e088403504e3b75120513b1dc1a1df9676f6f1a98de39cd5a40af5e36f8859"
+}

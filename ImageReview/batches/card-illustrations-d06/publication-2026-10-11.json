@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-11",
+  "authorizationQuote": "继续吧，这种icon可以批量生成无需向我确认",
+  "approvalMode": "standing-user-authorization-after-agent-review",
+  "scope": "小型卡牌插画；不扩展到卡框、角色立绘或界面",
+  "files": [
+    {
+      "id": "card_curse_yiwang_etching_d06",
+      "source": "ImageReview/cards/card_curse_yiwang_etching_d06.png",
+      "target": "Assets/UI/cards/card_curse_yiwang_etching_d06.png",
+      "sha256": "46991beb7d3750a33c2c50dfb775a4723981f4585c25d123447384decda5d60d"
+    },
+    {
+      "id": "card_curse_hunluanbiji_etching_d06",
+      "source": "ImageReview/cards/card_curse_hunluanbiji_etching_d06.png",
+      "target": "Assets/UI/cards/card_curse_hunluanbiji_etching_d06.png",
+      "sha256": "8f0174dd85167b89d4cf147f2b8f8f50263e4a518a30b100cac55a51970d0f39"
+    },
+    {
+      "id": "card_curse_tuota_etching_d06",
+      "source": "ImageReview/cards/card_curse_tuota_etching_d06.png",
+      "target": "Assets/UI/cards/card_curse_tuota_etching_d06.png",
+      "sha256": "96ed28e84aab43b6d3a3349300b21acf3d60a6f02a5e9dc28778453768426862"
+    },
+    {
+      "id": "card_curse_wujie_etching_d06",
+      "source": "ImageReview/cards/card_curse_wujie_etching_d06.png",
+      "target": "Assets/UI/cards/card_curse_wujie_etching_d06.png",
+      "sha256": "be9feaa66aa73ea1e4f8503b04060f9727fe27aef0f63736fc0d9290a937ce98"
+    }
+  ]
+}

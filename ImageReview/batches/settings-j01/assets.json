@@ -1,0 +1,14 @@
+{
+  "id": "mockup_settings_j01",
+  "status": "pending-review",
+  "productionEligible": false,
+  "role": "composite-ui-design-reference",
+  "sourceResolution": [
+    1672,
+    941
+  ],
+  "width": 1920,
+  "height": 1080,
+  "native1080p": false,
+  "sha256": "29fa62c7ee3a44425c6b719f2f86c1cbd276893acb2b5e1fe212baaeeb0f97f5"
+}

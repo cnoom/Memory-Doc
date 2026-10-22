@@ -1,0 +1,6 @@
+{
+  "mode": "built-in image_gen",
+  "editTarget": "Assets/UI/backgrounds/bg_battle_etching_textless_v02.png",
+  "prompt": "Use case: precise-object-edit. Edit this approved game background into an EMPTY environment plate. Remove the entire black slime in the upper right, all its flying droplets and its ground puddle/shadow; remove the entire scholar in the lower right, including cloak, books and torso. Reconstruct only quiet background paper/ground and distant environment behind both removed subjects. Keep the exact scene composition, aspect ratio, black-ink etched ruins, trees, moon, the large dark charcoal quiet left 60 percent card-table region and bone-white right 40 percent open scene. No creatures, no people, no silhouettes, no replacement props, no cards, no UI, no text. Right upper area must remain open for a separately layered enemy and right lower area open for a separate scholar. Preserve surrounding ruins; do not crop, zoom, redesign or add decoration. Opaque landscape game environment image.",
+  "result": "ImageReview/backgrounds/bg_battle_empty_a01.png"
+}

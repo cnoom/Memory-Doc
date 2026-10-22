@@ -1,0 +1,374 @@
+{
+  "batch": "etching-b01",
+  "status": "awaiting-user-review",
+  "palette": {
+    "attack": "#A44436",
+    "skill": "#396577",
+    "ability": "#705A80",
+    "curse": "#45414A"
+  },
+  "assets": [
+    {
+      "id": "cardback_universal_etching_b01",
+      "category": "cardbacks",
+      "png": "cardbacks/cardback_universal_etching_b01.png",
+      "svg": "cardbacks/cardback_universal_etching_b01.svg",
+      "width": 960,
+      "height": 1280,
+      "status": "preview",
+      "name": "统一卡背",
+      "display": [
+        144,
+        192
+      ],
+      "alpha": "仅圆角外透明"
+    },
+    {
+      "id": "border_card_attack_etching_b01",
+      "category": "cardframes",
+      "png": "cardframes/border_card_attack_etching_b01.png",
+      "svg": "cardframes/border_card_attack_etching_b01.svg",
+      "width": 960,
+      "height": 1280,
+      "status": "preview",
+      "name": "攻击卡框",
+      "typeColor": "#A44436",
+      "window": {
+        "x": 64,
+        "y": 250,
+        "width": 832,
+        "height": 430
+      },
+      "display": [
+        144,
+        192
+      ],
+      "alpha": "矩形插画窗和圆角外透明",
+      "textBaked": false
+    },
+    {
+      "id": "border_card_skill_etching_b01",
+      "category": "cardframes",
+      "png": "cardframes/border_card_skill_etching_b01.png",
+      "svg": "cardframes/border_card_skill_etching_b01.svg",
+      "width": 960,
+      "height": 1280,
+      "status": "preview",
+      "name": "技能卡框",
+      "typeColor": "#396577",
+      "window": {
+        "x": 64,
+        "y": 250,
+        "width": 832,
+        "height": 430
+      },
+      "display": [
+        144,
+        192
+      ],
+      "alpha": "矩形插画窗和圆角外透明",
+      "textBaked": false
+    },
+    {
+      "id": "border_card_ability_etching_b01",
+      "category": "cardframes",
+      "png": "cardframes/border_card_ability_etching_b01.png",
+      "svg": "cardframes/border_card_ability_etching_b01.svg",
+      "width": 960,
+      "height": 1280,
+      "status": "preview",
+      "name": "能力卡框",
+      "typeColor": "#705A80",
+      "window": {
+        "x": 64,
+        "y": 250,
+        "width": 832,
+        "height": 430
+      },
+      "display": [
+        144,
+        192
+      ],
+      "alpha": "矩形插画窗和圆角外透明",
+      "textBaked": false
+    },
+    {
+      "id": "border_card_curse_etching_b01",
+      "category": "cardframes",
+      "png": "cardframes/border_card_curse_etching_b01.png",
+      "svg": "cardframes/border_card_curse_etching_b01.svg",
+      "width": 960,
+      "height": 1280,
+      "status": "preview",
+      "name": "诅咒卡框",
+      "typeColor": "#45414A",
+      "window": {
+        "x": 64,
+        "y": 250,
+        "width": 832,
+        "height": 430
+      },
+      "display": [
+        144,
+        192
+      ],
+      "alpha": "矩形插画窗和圆角外透明",
+      "textBaked": false
+    },
+    {
+      "id": "icon_type_attack_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_type_attack_etching_b01.png",
+      "svg": "icons/icon_type_attack_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "preview",
+      "name": "攻击类型",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#A44436",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_type_skill_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_type_skill_etching_b01.png",
+      "svg": "icons/icon_type_skill_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "preview",
+      "name": "技能类型",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#396577",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_type_ability_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_type_ability_etching_b01.png",
+      "svg": "icons/icon_type_ability_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "preview",
+      "name": "能力类型",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#705A80",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_type_curse_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_type_curse_etching_b01.png",
+      "svg": "icons/icon_type_curse_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "preview",
+      "name": "诅咒类型",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#45414A",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_status_burn_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_burn_etching_b01.png",
+      "svg": "icons/icon_status_burn_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "preview",
+      "name": "灼烧",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#A44436",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_status_freeze_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_freeze_etching_b01.png",
+      "svg": "icons/icon_status_freeze_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "preview",
+      "name": "冰冻",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#396577",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_status_poison_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_poison_etching_b01.png",
+      "svg": "icons/icon_status_poison_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "preview",
+      "name": "中毒",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#4E6C46",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_status_armor_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_armor_etching_b01.png",
+      "svg": "icons/icon_status_armor_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "preview",
+      "name": "护甲",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#59636B",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_status_vulnerable_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_vulnerable_etching_b01.png",
+      "svg": "icons/icon_status_vulnerable_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "preview",
+      "name": "易伤",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#805B72",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_status_weak_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_weak_etching_b01.png",
+      "svg": "icons/icon_status_weak_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "preview",
+      "name": "虚弱",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#747044",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_intent_attack_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_intent_attack_etching_b01.png",
+      "svg": "icons/icon_intent_attack_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "preview",
+      "name": "攻击意图",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#A44436",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_intent_charge_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_intent_charge_etching_b01.png",
+      "svg": "icons/icon_intent_charge_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "preview",
+      "name": "蓄力意图",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#976A36",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_intent_defend_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_intent_defend_etching_b01.png",
+      "svg": "icons/icon_intent_defend_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "preview",
+      "name": "防御意图",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#396577",
+      "alpha": "透明背景",
+      "variant": ""
+    },
+    {
+      "id": "icon_intent_special_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_intent_special_etching_b01.png",
+      "svg": "icons/icon_intent_special_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "preview",
+      "name": "特殊意图",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#705A80",
+      "alpha": "透明背景",
+      "variant": "通用问号：具体特殊效果必须配意图文字"
+    },
+    {
+      "id": "icon_intent_berserk_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_intent_berserk_etching_b01.png",
+      "svg": "icons/icon_intent_berserk_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "preview",
+      "name": "狂暴意图",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#933E37",
+      "alpha": "透明背景",
+      "variant": ""
+    }
+  ]
+}

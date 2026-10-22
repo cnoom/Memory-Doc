@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-11",
+  "authorizationQuote": "继续吧，这种icon可以批量生成无需向我确认",
+  "approvalMode": "standing-user-authorization-after-agent-review",
+  "scope": "小型卡牌插画；不扩展到卡框、角色立绘或界面",
+  "files": [
+    {
+      "id": "card_attack_huoqiushu_etching_d07",
+      "source": "ImageReview/cards/card_attack_huoqiushu_etching_d07.png",
+      "target": "Assets/UI/cards/card_attack_huoqiushu_etching_d07.png",
+      "sha256": "0c36c210906a8c4ac8423d348c1f692c61e3a23d82b1e0397807ceed70aa20ff"
+    },
+    {
+      "id": "card_attack_hengsao_etching_d07",
+      "source": "ImageReview/cards/card_attack_hengsao_etching_d07.png",
+      "target": "Assets/UI/cards/card_attack_hengsao_etching_d07.png",
+      "sha256": "9781267284954d5f4dd87ea3616bd2f199281d7b6de51b37f7613801ead3b8df"
+    },
+    {
+      "id": "card_attack_lieyanzhan_etching_d07",
+      "source": "ImageReview/cards/card_attack_lieyanzhan_etching_d07.png",
+      "target": "Assets/UI/cards/card_attack_lieyanzhan_etching_d07.png",
+      "sha256": "2aeb5ddfb76abd5c51270160f8571cd6a84f3d607e51499dad1b1be40ba13a8e"
+    },
+    {
+      "id": "card_attack_cuiduren_etching_d07",
+      "source": "ImageReview/cards/card_attack_cuiduren_etching_d07.png",
+      "target": "Assets/UI/cards/card_attack_cuiduren_etching_d07.png",
+      "sha256": "637ca9c5145f1e82fdec67b4f03bb442977aa169d934baba55eb9627bb40cfb5"
+    }
+  ]
+}

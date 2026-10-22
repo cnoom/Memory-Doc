@@ -1,0 +1,15 @@
+{
+  "id": "mockup_shop_k01",
+  "status": "pending-review",
+  "productionEligible": false,
+  "role": "composite-ui-design-reference",
+  "date": "2026-10-15",
+  "sourceResolution": [
+    1672,
+    941
+  ],
+  "width": 1920,
+  "height": 1080,
+  "native1080p": false,
+  "sha256": "5fbab021f538034c70761a7eb49a910cc024139d75b85fab7fb050a49f51a07b"
+}

@@ -1,0 +1,27 @@
+const fs=require('node:fs'),path=require('node:path'),sharp=require(process.argv[2]);
+const root=path.resolve(__dirname,'../../..'),review=path.join(root,'ImageReview'),out=path.join(review,'batches/ui-b02');fs.mkdirSync(out,{recursive:true});const entries=[];
+const P='#EDE8DC',I='#242629',B='#83B0C1',R='#B94D3E';
+async function emit(cat,id,name,w,h,body,meta={}){id+='_etching_b02';const dir=path.join(review,cat);fs.mkdirSync(dir,{recursive:true});const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${body}</svg>`;fs.writeFileSync(path.join(dir,id+'.svg'),svg);await sharp(Buffer.from(svg)).png().toFile(path.join(dir,id+'.png'));entries.push({id,name,category:cat,width:w,height:h,png:`${cat}/${id}.png`,svg:`${cat}/${id}.svg`,...meta});}
+const rect=(w,h,fill,stroke,r=12,sw=3)=>`<rect x="${sw/2}" y="${sw/2}" width="${w-sw}" height="${h-sw}" rx="${r}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`;
+(async()=>{
+for(const [type,label]of [['primary','主按钮'],['secondary','次按钮'],['danger','危险按钮']])for(const[state,cn]of [['normal','常态'],['hover','悬停'],['pressed','按下'],['disabled','禁用']]){
+ const disabled=state==='disabled',fill=disabled?'#D1CBBD':state==='pressed'?(type==='primary'?'#171B1E':'#DAD6CA'):(type==='primary'?I:P),stroke=disabled?'#B4B0A6':state==='hover'?B:type==='danger'?R:type==='primary'?I:'#696F68';
+ await emit('buttons',`btn_${type}_${state}`,label+' · '+cn,960,208,rect(960,208,fill,stroke,22,state==='hover'?8:5),{slice:[28,28,28,28],display:[240,52],textColor:disabled?'#6B6C65':type==='primary'?P:type==='danger'?'#963B30':I,state,type});
+}
+for(const[id,name,fill,stroke]of [['paper','阅读面板',P,'#8C9185'],['ink','战斗信息面板','#292F32','#626D6E'],['tooltip','提示框','#F4F0E7','#777E72'],['modal','弹窗面板',P,'#4F5C5D']])await emit('panels','panel_'+id,name,512,384,rect(512,384,fill,stroke,12,3),{slice:[20,20,20,20],display:[512,384],padding:24});
+for(const[id,name,fill]of [['health_track','生命槽','#171D20'],['health_fill','生命填充',R]])await emit('bars','bar_'+id,name,512,24,rect(512,24,fill,id.endsWith('track')?'#7E8580':fill,5,2),{slice:[8,8,8,8],display:[512,24],usage:'填充使用遮罩裁切，不缩放圆角；数值在槽外排版'});
+for(const[id,name,fill,stroke]of [['empty','行动空格','#252B30','#77817E'],['filled','行动已填',B,B],['critical','行动临界',R,'#E6B6A7']])await emit('bars','bar_action_'+id,name,72,32,rect(72,32,fill,stroke,3,2),{display:[36,16],usage:'等大分段；数量与阈值来自规则，搭配当前值/阈值文字'});
+for(const[id,name,on]of [['off','开关关闭',false],['on','开关开启',true]])await emit('controls','control_toggle_'+id,name,128,64,rect(128,64,on?'#396577':'#B9BCAF',on?'#396577':'#68716B',30,3)+`<circle cx="${on?96:32}" cy="32" r="24" fill="${P}" stroke="${on?P:I}" stroke-width="2"/>`,{display:[64,32]});
+for(const[id,name,on]of [['off','未勾选',false],['on','已勾选',true]])await emit('controls','control_check_'+id,name,64,64,rect(64,64,on?'#396577':P,'#596D70',8,3)+(on?'<path d="m15 32 12 12 23-26" fill="none" stroke="#F4F0E7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>':''),{display:[32,32]});
+await emit('controls','control_slider_track','滑条轨道',256,16,rect(256,16,'#B9BCAF','#69756E',7,2),{slice:[8,6,8,6],display:[256,8]});
+await emit('controls','control_slider_fill','滑条已填',256,16,rect(256,16,'#396577','#396577',7,2),{slice:[8,6,8,6],display:[256,8]});
+await emit('controls','control_slider_thumb','滑条滑块',64,64,'<circle cx="32" cy="32" r="27" fill="#EDE8DC" stroke="#396577" stroke-width="4"/><path d="M28 23v18m8-18v18" stroke="#396577" stroke-width="3"/>',{display:[32,32]});
+await emit('overlays','overlay_card_focus','卡牌悬停轮廓',960,1280,rect(960,1280,'none',B,30,14),{display:[144,192],usage:'固定格心，只叠加轮廓，不移动或放大卡牌'});
+await emit('overlays','overlay_card_sealed','封锁覆层',960,1280,'<g fill="none" stroke="#A496AC" stroke-width="12"><path d="M20 154V32q0-12 12-12h122m652 0h122q12 0 12 12v122M20 1126v122q0 12 12 12h122m652 0h122q12 0 12-12v-122"/><path d="m824 1128 60 40-60 40-60-40Z"/><path d="m824 1143-17 25 17 25 17-25Z"/></g>',{display:[144,192],usage:'仅限制配对，不阻止翻开与查看；配文字说明，不覆盖正文'});
+await emit('badges','badge_mark','标记层数底签',256,112,rect(256,112,B,'#252B30',10,4)+'<path d="m46 24 9 23 23 9-23 9-9 23-9-23-23-9 23-9Z" fill="#242629"/>',{display:[64,28],textSafe:{x:92,y:16,width:148,height:80},usage:'右上角只叠加 ×N 层数，不泄露增益类型'});
+await emit('badges','badge_keyword','词条底签',256,96,rect(256,96,'#D9DED4','#88978C',10,3),{slice:[16,16,16,16],display:[96,28]});
+const glyphs={close:['关闭','M18 18l28 28m0-28L18 46'],back:['返回','m36 13-19 19 19 19M18 32h36'],menu:['菜单','M12 17h40M12 32h40M12 47h40'],deck:['牌库','M14 17h29v38H14ZM22 9h29v38M22 27h13m-13 9h13'],coin:['金币','M32 7a25 25 0 1 0 0 50 25 25 0 1 0 0-50Zm-8 14h16v22H24Z'],block:['格挡','M32 7 53 16v17c0 11-11 18-21 25-10-7-21-14-21-25V16Zm0 10v29'],info:['说明','M32 7a25 25 0 1 0 0 50 25 25 0 1 0 0-50ZM32 29v17m0-29v3'],settings:['设置','M12 17h40M12 32h40M12 47h40M24 10v14m18 1v14M22 40v14']};
+for(const[id,[name,d]]of Object.entries(glyphs))await emit('icons','icon_ui_'+id,name,128,128,`<g transform="scale(2)"><path d="${d}" fill="none" stroke="${I}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></g>`,{display:[32,32],usage:'默认浅底深墨；深底修改 SVG stroke 或使用 alpha mask 纯色材质，不能用乘法 tint 将深色变白'});
+const manifest={batch:'ui-b02',status:'awaiting-user-review',mode:'native-svg',sliceOrder:'left,bottom,right,top; source pixels',assets:entries};fs.writeFileSync(path.join(out,'assets.json'),JSON.stringify(manifest,null,2));console.log(entries.length+' UI assets exported');
+})().catch(e=>{console.error(e);process.exitCode=1});
+

@@ -1,0 +1,30 @@
+{
+  "errors": [],
+  "geometry": {
+    "overflow": false,
+    "broken": [],
+    "cards": [
+      {
+        "w": 144,
+        "h": 192
+      },
+      {
+        "w": 144,
+        "h": 192
+      },
+      {
+        "w": 144,
+        "h": 192
+      }
+    ]
+  },
+  "checks": [
+    "all images decoded",
+    "9 critical segments",
+    "switch",
+    "checkbox",
+    "slider",
+    "dialog open/resume/Escape",
+    "1280x720 no horizontal overflow"
+  ]
+}

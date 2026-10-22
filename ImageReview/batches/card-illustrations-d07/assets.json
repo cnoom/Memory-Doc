@@ -1,0 +1,54 @@
+{
+  "batch": "card-illustrations-d07",
+  "date": "2026-10-11",
+  "assets": [
+    {
+      "id": "card_attack_huoqiushu_etching_d07",
+      "name": "火球术",
+      "category": "cards",
+      "png": "cards/card_attack_huoqiushu_etching_d07.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "0c36c210906a8c4ac8423d348c1f692c61e3a23d82b1e0397807ceed70aa20ff",
+      "type": "attack"
+    },
+    {
+      "id": "card_attack_hengsao_etching_d07",
+      "name": "横扫",
+      "category": "cards",
+      "png": "cards/card_attack_hengsao_etching_d07.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "9781267284954d5f4dd87ea3616bd2f199281d7b6de51b37f7613801ead3b8df",
+      "type": "attack"
+    },
+    {
+      "id": "card_attack_lieyanzhan_etching_d07",
+      "name": "烈焰斩",
+      "category": "cards",
+      "png": "cards/card_attack_lieyanzhan_etching_d07.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "2aeb5ddfb76abd5c51270160f8571cd6a84f3d607e51499dad1b1be40ba13a8e",
+      "type": "attack"
+    },
+    {
+      "id": "card_attack_cuiduren_etching_d07",
+      "name": "淬毒刃",
+      "category": "cards",
+      "png": "cards/card_attack_cuiduren_etching_d07.png",
+      "width": 1254,
+      "height": 1254,
+      "status": "generated-awaiting-agent-review",
+      "productionEligible": false,
+      "sha256": "637ca9c5145f1e82fdec67b4f03bb442977aa169d934baba55eb9627bb40cfb5",
+      "type": "attack"
+    }
+  ]
+}

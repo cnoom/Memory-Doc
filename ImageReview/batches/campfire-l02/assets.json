@@ -1,0 +1,15 @@
+{
+  "status": "needs-revision",
+  "productionEligible": false,
+  "role": "composite-flow-reference",
+  "dependencies": {
+    "panel_paper_a03": "Assets/UI/panels/panel_paper_a03.png",
+    "btn_secondary_normal_b03": "Assets/UI/buttons/btn_secondary_normal_b03.png",
+    "btn_primary_disabled_b03": "Assets/UI/buttons/btn_primary_disabled_b03.png",
+    "btn_primary_normal_b03": "Assets/UI/buttons/btn_primary_normal_b03.png"
+  },
+  "cardCompositions": "ImageReview/batches/shop-k02/card_1_review.png through card_3_review.png",
+  "note": "Upgrade preview follows design 05: damage 4 to 6, draw 1 to 2. Existing card art reused.",
+  "supersededBy": "L03",
+  "reason": "用户要求选牌后用箭头指向强化后的卡面，替代纯文字对比。"
+}

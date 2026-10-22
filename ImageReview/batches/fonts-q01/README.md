@@ -1,0 +1,7 @@
+# Q01 字体候选交付
+
+状态：待审；尚未发布到Assets/UI或美术资源v1。
+
+思源黑体SC Regular用于正文、按钮与数字，思源宋体SC Regular用于标题。两个OTF来自Adobe官方GitHub仓库；精确下载URL、固定提交、文件大小和SHA256见manifest.json。对应LICENSE文件必须随字体保留。按SIL Open Font License使用；修改或子集化时需重新核对保留字体名和许可要求。
+
+未安装到系统，预览脚本直接加载。已用Pillow检查中文、数字、箭头等样本文字可加载；未声称完整Unicode覆盖。客户端应按实际文案建立字库，验证中文标点、缺字回退和字体图集内存。此批仅Regular字重，不能假称包含Bold字体文件。

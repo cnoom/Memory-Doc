@@ -1,0 +1,46 @@
+{
+  "approvalQuote": "可以",
+  "scope": "R02技能与能力罕见及稀有卡框与派生遮罩",
+  "files": [
+    {
+      "source": "ImageReview/cardframes/border_card_skill_uncommon_r02.png",
+      "target": "Assets/UI/cardframes/border_card_skill_uncommon_r02.png",
+      "sha256": "113f478cbbe578ebba74db78c50a1911f85a7dfb092d30ed159f2827a85db997"
+    },
+    {
+      "source": "ImageReview/batches/card-rarity-r02/skill-uncommon-window-mask.png",
+      "target": "Assets/UI/cardframes/border_card_skill_uncommon_r02_window_mask.png",
+      "sha256": "4c974813bfb3b90e81155e59c7908d9e590b1a84a983e54d529d18a7218000c7"
+    },
+    {
+      "source": "ImageReview/cardframes/border_card_skill_rare_r02.png",
+      "target": "Assets/UI/cardframes/border_card_skill_rare_r02.png",
+      "sha256": "d1964f0173cb52a641eaba38e16fe0d7d514640a01175fcf78e4b38c812b68f0"
+    },
+    {
+      "source": "ImageReview/batches/card-rarity-r02/skill-rare-window-mask.png",
+      "target": "Assets/UI/cardframes/border_card_skill_rare_r02_window_mask.png",
+      "sha256": "549a886433e005933608cf41f7bb49b23cf9d15290ae9b28f2f44683296fe79f"
+    },
+    {
+      "source": "ImageReview/cardframes/border_card_ability_uncommon_r02.png",
+      "target": "Assets/UI/cardframes/border_card_ability_uncommon_r02.png",
+      "sha256": "cc22314d2c916c3a5c7cfcc1c9d2190b1b07c1ca9471ed0ee75874a8208bc135"
+    },
+    {
+      "source": "ImageReview/batches/card-rarity-r02/ability-uncommon-window-mask.png",
+      "target": "Assets/UI/cardframes/border_card_ability_uncommon_r02_window_mask.png",
+      "sha256": "1a0f2e340e133cf509887af803489da598a6cb4231aed92791a6a3adf1b73a03"
+    },
+    {
+      "source": "ImageReview/cardframes/border_card_ability_rare_r02.png",
+      "target": "Assets/UI/cardframes/border_card_ability_rare_r02.png",
+      "sha256": "a14dfe927130ee9cd370d77a0acbe6e0d7367589ae5aad527f01b198ea41d519"
+    },
+    {
+      "source": "ImageReview/batches/card-rarity-r02/ability-rare-window-mask.png",
+      "target": "Assets/UI/cardframes/border_card_ability_rare_r02_window_mask.png",
+      "sha256": "20c1aee6c5b670577c387f478e42a5d83f5cc307fff551bd2bbb78250594dec9"
+    }
+  ]
+}

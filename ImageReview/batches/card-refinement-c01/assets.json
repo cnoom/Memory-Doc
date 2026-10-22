@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-07",
+  "status": "pending-review",
+  "scope": "Attack frame and universal back direction proposals only. Other types await direction choice.",
+  "assets": [
+    {
+      "id": "border_card_attack_journal_c01a",
+      "category": "cardframes",
+      "status": "pending-review",
+      "png": "cardframes/border_card_attack_journal_c01a.png",
+      "svg": "cardframes/border_card_attack_journal_c01a.svg",
+      "width": 960,
+      "height": 1280,
+      "window": {
+        "x": 64,
+        "y": 250,
+        "width": 832,
+        "height": 430
+      },
+      "textBaked": false
+    },
+    {
+      "id": "cardback_universal_journal_c01a",
+      "category": "cardbacks",
+      "status": "pending-review",
+      "png": "cardbacks/cardback_universal_journal_c01a.png",
+      "svg": "cardbacks/cardback_universal_journal_c01a.svg",
+      "width": 960,
+      "height": 1280,
+      "universal": true,
+      "identityIndependent": true
+    },
+    {
+      "id": "border_card_attack_journal_c01b",
+      "category": "cardframes",
+      "status": "pending-review",
+      "png": "cardframes/border_card_attack_journal_c01b.png",
+      "svg": "cardframes/border_card_attack_journal_c01b.svg",
+      "width": 960,
+      "height": 1280,
+      "window": {
+        "x": 64,
+        "y": 250,
+        "width": 832,
+        "height": 430
+      },
+      "textBaked": false
+    },
+    {
+      "id": "cardback_universal_journal_c01b",
+      "category": "cardbacks",
+      "status": "pending-review",
+      "png": "cardbacks/cardback_universal_journal_c01b.png",
+      "svg": "cardbacks/cardback_universal_journal_c01b.svg",
+      "width": 960,
+      "height": 1280,
+      "universal": true,
+      "identityIndependent": true
+    }
+  ]
+}

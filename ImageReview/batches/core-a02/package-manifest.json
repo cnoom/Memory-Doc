@@ -1,0 +1,719 @@
+{
+  "status": "pending-review",
+  "revision": "1080p-r2",
+  "targetResolution": [
+    1920,
+    1080
+  ],
+  "pathBase": "repository-root",
+  "files": [
+    {
+      "path": "ImageReview/backgrounds/bg_battle_empty_a01.png",
+      "sha256": "370c55f4e17e3cc8fc7c5686630a08e56795c30cc5198b569b23a7af0027cdd4"
+    },
+    {
+      "path": "ImageReview/backgrounds/bg_battle_empty_a01_r2_source.png",
+      "sha256": "84fe7203f3168099e1567c5223aabefd6e906f18da065ec0439e4cd406457874"
+    },
+    {
+      "path": "ImageReview/bars/hud_action_critical_a02.png",
+      "sha256": "0d60137eb6b39c943ef025426ee42b03bb58608de75a891612a75e6f5e55aa8c"
+    },
+    {
+      "path": "ImageReview/bars/hud_action_critical_a02.svg",
+      "sha256": "0f883d24bc395d7397f1d46401107b518218e02bfa5556b9196e226f213c15a1"
+    },
+    {
+      "path": "ImageReview/bars/hud_action_empty_a02.png",
+      "sha256": "5f77390f86d52dd69fce1d58d648af5071c4fa80d498cebea125556354b69a67"
+    },
+    {
+      "path": "ImageReview/bars/hud_action_empty_a02.svg",
+      "sha256": "96966cd6416d1336e5574cf8905e0a4d2ce028d36530df9f4d488ef4f91df017"
+    },
+    {
+      "path": "ImageReview/bars/hud_action_filled_a02.png",
+      "sha256": "c4dc588d4f8bd84d291b210c91a58d4f48ed7c49814084a17c865f67b25e1042"
+    },
+    {
+      "path": "ImageReview/bars/hud_action_filled_a02.svg",
+      "sha256": "acfdd484522df44ad56e70b33298b63bd10529e8d97f287c295be2c4bb3d2f1a"
+    },
+    {
+      "path": "ImageReview/bars/hud_health_fill_a02.png",
+      "sha256": "fb32657104b5d51f1ae3db0c90cbdf400b9260bc34eca24bf90e2ca456d69ee5"
+    },
+    {
+      "path": "ImageReview/bars/hud_health_fill_a02.svg",
+      "sha256": "7c826917163a3119b2c4df214d83cff83de8c3f084886fe5c5569e7e5dd3ab09"
+    },
+    {
+      "path": "ImageReview/bars/hud_health_track_a02.png",
+      "sha256": "bbeaf72a840bf8f2fb9be491397332d33d608859c6da5495c0aec4e85387d7bd"
+    },
+    {
+      "path": "ImageReview/bars/hud_health_track_a02.svg",
+      "sha256": "5f1bc0de1ab00ba5185f3758c2deea40a8683e3ede8fe792a19cdc5b8640bc8f"
+    },
+    {
+      "path": "ImageReview/batches/core-a02/assets.json",
+      "sha256": "90b57ebaf89089bebc663fb6f524fd1466588240ffa43e008492c7c33cb8dca0"
+    },
+    {
+      "path": "ImageReview/batches/core-a02/battle-1080.png",
+      "sha256": "abfbe7c363b3c714a222780a62053a58c3c9375aee064b6225b09c4531dd75ff"
+    },
+    {
+      "path": "ImageReview/batches/core-a02/battle-720.png",
+      "sha256": "79d202b774686939b347b58e6c5daaf63bc50fde5ee353b896cdd1a40aadb0d4"
+    },
+    {
+      "path": "ImageReview/batches/core-a02/handoff.md",
+      "sha256": "1c5b91ccbdf189c6f6ce418ee2793150969bd376a4a22c9b72ed3e44f03cfe2a"
+    },
+    {
+      "path": "ImageReview/batches/core-a02/index.html",
+      "sha256": "cc59895dc083c832a5b04c373817dc046323963e4fd7328e86eefba835ba9665"
+    },
+    {
+      "path": "ImageReview/batches/core-a02/journal-1080.png",
+      "sha256": "4cbfb2d7abd6bac44723a7adeb4446065a976d69cfeed3e4571ac50e19d47647"
+    },
+    {
+      "path": "ImageReview/batches/core-a02/journal-720.png",
+      "sha256": "de22c5261eff9d1e23987322f5696c06a86ca7c4637b65708f7d83e338516246"
+    },
+    {
+      "path": "ImageReview/batches/core-a02/resolution-update.json",
+      "sha256": "176acffca217245de6b500899694f74cb730f72de0410db52582f8d28ce9d5ef"
+    },
+    {
+      "path": "ImageReview/batches/core-a02/settings-1080.png",
+      "sha256": "b231c70cf1852f5b82199020720d81ed9f8b933572bada6a4c152bb2c1661a03"
+    },
+    {
+      "path": "ImageReview/batches/core-a02/settings-720.png",
+      "sha256": "828f12456a66f9062b7a7e2d91a427e895f74d8a4204f137226c87827ced27a5"
+    },
+    {
+      "path": "ImageReview/batches/core-a02/validation.json",
+      "sha256": "668e4693757be03354c52d9d969590ef08b100bd7aaa67e104702804321db321"
+    },
+    {
+      "path": "ImageReview/batches/etching-b01/assets.json",
+      "sha256": "8715cd052d24403e961ea10f4fe249a211eb0741c983af58893d390ac4d9a083"
+    },
+    {
+      "path": "ImageReview/batches/foundation-a01/assets.json",
+      "sha256": "514bc18f113e9bbce168c2a26ab2f0ab9b297e705f550e7e3780ae0a7914a82d"
+    },
+    {
+      "path": "ImageReview/buttons/btn_danger_disabled_a01.png",
+      "sha256": "6e659ade202598b1bfde1540ac8427f24ea260975fdc29a4cd13497d75b17385"
+    },
+    {
+      "path": "ImageReview/buttons/btn_danger_disabled_a01.svg",
+      "sha256": "e79c9e2711e0250b37e01da40b9b3fafaf28ac5ae45b95d3dfadcbdc6b8febf6"
+    },
+    {
+      "path": "ImageReview/buttons/btn_danger_hover_a01.png",
+      "sha256": "b344ffbb462bc34469ad6e214d7935cf31bf8b4fab88c18302a6c5c6ca54b2b1"
+    },
+    {
+      "path": "ImageReview/buttons/btn_danger_hover_a01.svg",
+      "sha256": "9a72cc42c38307004b3dbd7cab529d45aa68849d8b2d0be078984d897e0d5386"
+    },
+    {
+      "path": "ImageReview/buttons/btn_danger_normal_a01.png",
+      "sha256": "d34e184098d5dad8b86975dc5b2931880cda14786210854493e649f53906e10d"
+    },
+    {
+      "path": "ImageReview/buttons/btn_danger_normal_a01.svg",
+      "sha256": "171bd6a8992f4c7898f550912a0f5bcc447ace81daeb01192e55176b4faa52e1"
+    },
+    {
+      "path": "ImageReview/buttons/btn_danger_pressed_a01.png",
+      "sha256": "d34e184098d5dad8b86975dc5b2931880cda14786210854493e649f53906e10d"
+    },
+    {
+      "path": "ImageReview/buttons/btn_danger_pressed_a01.svg",
+      "sha256": "171bd6a8992f4c7898f550912a0f5bcc447ace81daeb01192e55176b4faa52e1"
+    },
+    {
+      "path": "ImageReview/buttons/btn_menu_disabled_a01.png",
+      "sha256": "378f6b1a0bc12bfbd639d467dfcb569a355c09eb5aa46d5a14b595a048f7623c"
+    },
+    {
+      "path": "ImageReview/buttons/btn_menu_disabled_a01.svg",
+      "sha256": "db62bc3f15fb6c00a05cf05f561b9a876a639e54c163ebbf9422b9d2045c4f65"
+    },
+    {
+      "path": "ImageReview/buttons/btn_menu_hover_a01.png",
+      "sha256": "79b90c2c6402b4cde2c60adad375ba37e74773f843344cda2f5310366827927d"
+    },
+    {
+      "path": "ImageReview/buttons/btn_menu_hover_a01.svg",
+      "sha256": "833f336d628cc5e67039745d7348732c6d3f1e0885473d3338628d22b5869c1d"
+    },
+    {
+      "path": "ImageReview/buttons/btn_menu_normal_a01.png",
+      "sha256": "1e7eaf7d82237f1f25c2a8a93f802ee5b003a257a8b34c5a3a8d7b2163c9d38b"
+    },
+    {
+      "path": "ImageReview/buttons/btn_menu_normal_a01.svg",
+      "sha256": "6d528c16cf664d50d205751fb8b4c52cc30cc2303e4f0b4bdd6fa2ef03cfa10b"
+    },
+    {
+      "path": "ImageReview/buttons/btn_menu_pressed_a01.png",
+      "sha256": "de1ed5cacdf111a7293aa6811be65d9d552be5413a2fd1038befe98ad31ac476"
+    },
+    {
+      "path": "ImageReview/buttons/btn_menu_pressed_a01.svg",
+      "sha256": "af0d4a40f135151ab6ebb0668cf575896dcc014db6c5e66d35d7d7c1e343d0a3"
+    },
+    {
+      "path": "ImageReview/cardbacks/cardback_universal_etching_b01.png",
+      "sha256": "3deb476d4f887eb89e8552f1fd0fab8130f04ee63fa435148d1c53dabb9da780"
+    },
+    {
+      "path": "ImageReview/cardbacks/cardback_universal_etching_b01.svg",
+      "sha256": "2320850a533156d09a9723071c19931f3988fb379e119872f177f237b073347e"
+    },
+    {
+      "path": "ImageReview/cardframes/border_card_ability_etching_b01.png",
+      "sha256": "00f8f6fd18fc69b48b8c461a3a7435225bc5fe02bf91a9b1837606806591d580"
+    },
+    {
+      "path": "ImageReview/cardframes/border_card_ability_etching_b01.svg",
+      "sha256": "bdb701ac713e35a504020a316a6d5509c669f8e594176b10f467d91be073ce56"
+    },
+    {
+      "path": "ImageReview/cardframes/border_card_attack_etching_b01.png",
+      "sha256": "39ad6d1d44ff5fcadbab402d5db872e41944a15c178ec0620ce617053d109f96"
+    },
+    {
+      "path": "ImageReview/cardframes/border_card_attack_etching_b01.svg",
+      "sha256": "76b42c9d29cdd01d7eca9bcb0ce21ac81645263026d1576bee102dcf36c36e38"
+    },
+    {
+      "path": "ImageReview/cardframes/border_card_curse_etching_b01.png",
+      "sha256": "4424b955cf1e11d642affce8d1bf54fe0db5e3e7a1244a95515d829997a2a67f"
+    },
+    {
+      "path": "ImageReview/cardframes/border_card_curse_etching_b01.svg",
+      "sha256": "89e3dea2577d5274eb73590474771b1a2737c9602791a3dea487b38616dc6d71"
+    },
+    {
+      "path": "ImageReview/cardframes/border_card_skill_etching_b01.png",
+      "sha256": "f1462632f68571a3d214727e434268646b775b00a09bc96df138da0f371fef9a"
+    },
+    {
+      "path": "ImageReview/cardframes/border_card_skill_etching_b01.svg",
+      "sha256": "3e7c2f7b46fc0716bce5abd1b6bbe447d96544fdf5c3b200a0c764a515172beb"
+    },
+    {
+      "path": "ImageReview/cards/card_attack_biji_etching_b01.png",
+      "sha256": "9b9af2566995326c7105271e6abe6d54b4ce4ff10f58d3ec9a1d6718b79fefa1"
+    },
+    {
+      "path": "ImageReview/cards/card_attack_daji_etching_b01.png",
+      "sha256": "1262c540d30c9828c0085eca9a16c30c54fbcd4359804836d720515e96b21bec"
+    },
+    {
+      "path": "ImageReview/cards/card_attack_dushubiji_illustration_v02.png",
+      "sha256": "c9abd1a94ed7afeec4d63252cdb7507f4438efce6767a1ad5c2549be84978d05"
+    },
+    {
+      "path": "ImageReview/cards/card_skill_gedang_etching_b01.png",
+      "sha256": "b094376781fc80396438fa80d9ec93541c37f81f043adc9870eb9dac0ffde000"
+    },
+    {
+      "path": "ImageReview/controls/check_off_a01.png",
+      "sha256": "3c9579610c8fc9fe7c4c5a3a6b1d291b82d6129c4a929d6d12f332abf60840e8"
+    },
+    {
+      "path": "ImageReview/controls/check_off_a01.svg",
+      "sha256": "50bde8996aeff9f65ba32c2dea5d737cbbda279e2682d1966fe382478ac5187b"
+    },
+    {
+      "path": "ImageReview/controls/check_on_a01.png",
+      "sha256": "647886af2afd129dc8ab551510e9672236a53f500ca5e31526eb563b1dc99b5e"
+    },
+    {
+      "path": "ImageReview/controls/check_on_a01.svg",
+      "sha256": "761b24c6d43e5f25680cafeb69d082b01f960ef4c4cdc196bfbf55a7a2090c0f"
+    },
+    {
+      "path": "ImageReview/controls/slider_fill_a01.png",
+      "sha256": "38f3bc7e51fac1eab454db6b25ef3b32f28d53692c1f1f4a5b62d51fef218982"
+    },
+    {
+      "path": "ImageReview/controls/slider_fill_a01.svg",
+      "sha256": "aecb9ee7c3697096a8172a70355fdf8c1d1c0719ff84e1f12b11a449c504e97e"
+    },
+    {
+      "path": "ImageReview/controls/slider_thumb_a01.png",
+      "sha256": "616f5fb9b002f681416023cfa5b8a0c08663888e8816324919081205667a04d2"
+    },
+    {
+      "path": "ImageReview/controls/slider_thumb_a01.svg",
+      "sha256": "bdd6733b8d9b94d33c7d36ec7b1f322b54778f344bb5771419cf792020cc0b07"
+    },
+    {
+      "path": "ImageReview/controls/slider_track_a01.png",
+      "sha256": "321adc10b477b897b97454e6d4f4cd59143c190a8b4119bbfcc0d52b04e75193"
+    },
+    {
+      "path": "ImageReview/controls/slider_track_a01.svg",
+      "sha256": "55892fc9b38dd2df04999abe7fece7e00b300f2a20f71dc62e6f69971e6265c5"
+    },
+    {
+      "path": "ImageReview/controls/toggle_off_a01.png",
+      "sha256": "18c8f70071f0e3ba831b734777603028c199ba08d8f07aeccb01c04f89a5faa4"
+    },
+    {
+      "path": "ImageReview/controls/toggle_off_a01.svg",
+      "sha256": "5c2a3049efc5872c8102c303983e4b9038cb81ba663d02098476a1a9377d4507"
+    },
+    {
+      "path": "ImageReview/controls/toggle_on_a01.png",
+      "sha256": "857bed2190d6f39c556a6307c6fb540632e1e9041ff229860343c0eb60628303"
+    },
+    {
+      "path": "ImageReview/controls/toggle_on_a01.svg",
+      "sha256": "95565300bd49d2fcc3a6e2c5dd2ccf20e387f7b775522009c32fe7bb250bf527"
+    },
+    {
+      "path": "ImageReview/enemies/enemy_chaos_slime_etching_b01.png",
+      "sha256": "da5674dd669b2eec3d9d63adb21155cfebd5be1760f64d208115393e2b2d4048"
+    },
+    {
+      "path": "ImageReview/enemies/enemy_goblin_etching_b01.png",
+      "sha256": "54cdf5e4ab9356b9d080b4f2d4ccead11121970209e98d83acc873f5eca0907a"
+    },
+    {
+      "path": "ImageReview/enemies/enemy_training_dummy_etching_b01.png",
+      "sha256": "53e511b7076d5aacb58e78ac9aab8c5eaca5c76bf542130152704e83bb198a87"
+    },
+    {
+      "path": "ImageReview/icons/icon_intent_attack_etching_b01.png",
+      "sha256": "a4d4ea40db55a0f7d48382f36a89628a01a5cc112911976799708014d3b45966"
+    },
+    {
+      "path": "ImageReview/icons/icon_intent_attack_etching_b01.svg",
+      "sha256": "ab3d7adab7734bf48cb19fd18257396bcde88cd1e5e34cd5f5b316874c2189b0"
+    },
+    {
+      "path": "ImageReview/icons/icon_intent_berserk_etching_b01.png",
+      "sha256": "aeb50fc437ab3408aff170205bdb35e0fd7014188159463e9cef9c297e611c91"
+    },
+    {
+      "path": "ImageReview/icons/icon_intent_berserk_etching_b01.svg",
+      "sha256": "df297848fdf5686a13d4c3b709a62620f4c6807adc9580d3b410931de528824c"
+    },
+    {
+      "path": "ImageReview/icons/icon_intent_charge_etching_b01.png",
+      "sha256": "f68670a25fa8b1bf9a84bb9d0426e7c86d0e128f5787fd89084c81fab211b696"
+    },
+    {
+      "path": "ImageReview/icons/icon_intent_charge_etching_b01.svg",
+      "sha256": "2740337087a544f23871345b75141d25577d961f9664728e721ef56bdab303f2"
+    },
+    {
+      "path": "ImageReview/icons/icon_intent_defend_etching_b01.png",
+      "sha256": "08395b6801f069d9852b1595e6a50f503e7c3fb0aa00f5c0571ea8d861f6e336"
+    },
+    {
+      "path": "ImageReview/icons/icon_intent_defend_etching_b01.svg",
+      "sha256": "e4d2c61122e645355c2411fee8c12bb15c2c42a69ee3f51f79272989238ae66f"
+    },
+    {
+      "path": "ImageReview/icons/icon_intent_special_etching_b01.png",
+      "sha256": "9be56c8ea89323992304f73009b47996d20730455f7b196d859fb34b03fbad3b"
+    },
+    {
+      "path": "ImageReview/icons/icon_intent_special_etching_b01.svg",
+      "sha256": "307d5075bbf75b8693bdd465572e24604218ae7e6d5a6d9a2d8e5cd5c1cd6eca"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_armor_etching_b01.png",
+      "sha256": "5911ec6604caa7585b9c558c5dc9df2237ee998013d93920ce22f584e7083ff4"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_armor_etching_b01.svg",
+      "sha256": "484e1111f6a3e824a345616d3952b88e42f2104d829def7bd268071d0def30b4"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_burn_etching_b01.png",
+      "sha256": "c987b699df265693cba2b0a51451323ed68c274af070109fed57334fc6d8ca77"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_burn_etching_b01.svg",
+      "sha256": "52cdbfa0403d9148962b64acb2226003afeae0ce8ab215fdfacf028e26388d3f"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_freeze_etching_b01.png",
+      "sha256": "f67bfc06222df1f953ef2133fe3cfa06aabe4a52d37cac2390c74949eb3d2726"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_freeze_etching_b01.svg",
+      "sha256": "32f8b0a7bb0104d0b44b683912b0c4ace89afe68ddc06ba7624bf2a476d29817"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_poison_etching_b01.png",
+      "sha256": "e437e47f64d2b6ad2b46b5f6b140597d0224d56024d8287c1e3195cc0051ccff"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_poison_etching_b01.svg",
+      "sha256": "fbc0d3fd9ac3879050988d31ff6f5aadfae876535501fa41282debbe7c4bba67"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_vulnerable_etching_b01.png",
+      "sha256": "75a30189a4dade8d99acc956e9117fbb5ff06fecbedf3ae1ca1e1c2821e7ec57"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_vulnerable_etching_b01.svg",
+      "sha256": "d86826b5c1496fe9324c6d9e0c042b11dbf93dd380fc5451e0ab6e709081bf7b"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_weak_etching_b01.png",
+      "sha256": "5bcef50a7ac23dfd2e66014f84e194cb26d20687f4e4a4afc3bc3caf2d80ac67"
+    },
+    {
+      "path": "ImageReview/icons/icon_status_weak_etching_b01.svg",
+      "sha256": "af1e2f2999063536ce77a89657fda7a399ff405ceba32fa50f279669a3912737"
+    },
+    {
+      "path": "ImageReview/icons/icon_type_ability_etching_b01.png",
+      "sha256": "f9224f596884806b8f2fcdc3d7cdc629251eace0c31f5ee9201cabca9e405427"
+    },
+    {
+      "path": "ImageReview/icons/icon_type_ability_etching_b01.svg",
+      "sha256": "6fde2addf2a324bcc73965bbc0051743819b780e91f3050f9c1820bf1c63cc4f"
+    },
+    {
+      "path": "ImageReview/icons/icon_type_attack_etching_b01.png",
+      "sha256": "0569510169198fac6dbe4d3a2ec928d6f42a8e81e1205c78cad7cab9a32d249c"
+    },
+    {
+      "path": "ImageReview/icons/icon_type_attack_etching_b01.svg",
+      "sha256": "98a1b7b85277684a13782de0d862bed9ce6f7a54c0de8a7b11b80e86a8b7d425"
+    },
+    {
+      "path": "ImageReview/icons/icon_type_curse_etching_b01.png",
+      "sha256": "edfe46ebe6a22555e87d8ac013b7d45732c7549359f130392cd063282208c7b8"
+    },
+    {
+      "path": "ImageReview/icons/icon_type_curse_etching_b01.svg",
+      "sha256": "8c3d15c680e41cf8016cebe64cbe0440c12fb7a419a5e8f5b67490723c14327c"
+    },
+    {
+      "path": "ImageReview/icons/icon_type_skill_etching_b01.png",
+      "sha256": "5346c1129210083a1c92f391505c1578a0f5ae045aac76cb367cae3b02a56ec0"
+    },
+    {
+      "path": "ImageReview/icons/icon_type_skill_etching_b01.svg",
+      "sha256": "b6f58ebddfa5d7c81bab897f21b1fbfb327d4e49d8ede399f922eb05137e869e"
+    },
+    {
+      "path": "ImageReview/journal/decor_chapter_tab_a02.png",
+      "sha256": "759dc7a594f029eb46d6be4a80a4a75d705335cc8e736f79ff42a8493fd5b231"
+    },
+    {
+      "path": "ImageReview/journal/decor_chapter_tab_a02.svg",
+      "sha256": "39983a8b5eab0a5f21c70e840dd2b19e7182f130e0bc64f156962101f188609a"
+    },
+    {
+      "path": "ImageReview/journal/decor_foreedge_a02.png",
+      "sha256": "d8fdac2965308fca5818ee38a160c52eec3f7ee29d9aa6d426d9c6fd2442980a"
+    },
+    {
+      "path": "ImageReview/journal/decor_foreedge_a02.svg",
+      "sha256": "9d2b6a511213599053566fb46fea9a152497d7226bffbec234bfd56b97ef069e"
+    },
+    {
+      "path": "ImageReview/journal/decor_loose_leaf_a02.png",
+      "sha256": "7c974e8a5bc26df04e01c0ae0bf75c2a747432f74c3ee52d6c67d917aeefa33e"
+    },
+    {
+      "path": "ImageReview/journal/decor_loose_leaf_a02.svg",
+      "sha256": "d92d9fb032e2959dbb996d4cea89d641624a6eff1930ffa8e6e21f770c63a864"
+    },
+    {
+      "path": "ImageReview/journal/decor_margin_ticks_a02.png",
+      "sha256": "1ab006bdc64ff12fee5994d7339ea7032d59ff58b5e5cc755e35351376e0f454"
+    },
+    {
+      "path": "ImageReview/journal/decor_margin_ticks_a02.svg",
+      "sha256": "711545d856cd9bb6a9bd60bb331dfe5fc9451e5e482af3a9da5b79ecc89b8edc"
+    },
+    {
+      "path": "ImageReview/journal/decor_page_flourish_a02.png",
+      "sha256": "0b1a5e1df4f7fc9bf05d7b08d047fc3b7d3d18f86350b2e669f7888a8a564b3b"
+    },
+    {
+      "path": "ImageReview/journal/decor_page_flourish_a02.svg",
+      "sha256": "fb0a8ef6c5622ad4e41dfc1f2dc0e500a821be5a37a2696ed1845e07f266427a"
+    },
+    {
+      "path": "ImageReview/journal/decor_paper_tape_a02.png",
+      "sha256": "8c6831e60c9335ec917e1d5a5b705a50a68efb548e04f952ddbc9c9607af621e"
+    },
+    {
+      "path": "ImageReview/journal/decor_paper_tape_a02.svg",
+      "sha256": "84a729666789472d156fc698368ef37c4fbdfda4f11c2dfceb18ae393e1ac501"
+    },
+    {
+      "path": "ImageReview/journal/decor_portrait_mount_a02.png",
+      "sha256": "ad155814731b01c73acf8a574e371187d5ad89674c1371719008eff50d9f87c2"
+    },
+    {
+      "path": "ImageReview/journal/decor_portrait_mount_a02.svg",
+      "sha256": "d498537d25c87a0353ebc176a0dfe613f8cfa3f0e6a01eb4ada2a7ec87e8ac1e"
+    },
+    {
+      "path": "ImageReview/journal/decor_pressed_ring_a02.png",
+      "sha256": "072665c50cb13dcfcdf8c9987877dec467bd426a9c744ebb993be42eb89765c2"
+    },
+    {
+      "path": "ImageReview/journal/decor_pressed_ring_a02.svg",
+      "sha256": "1c045447e473a997fd652a9ae6a45c8187ea0b818dadad08d4c45574efc78a29"
+    },
+    {
+      "path": "ImageReview/journal/decor_stamp_frame_a02.png",
+      "sha256": "22bf688e2a3d2e58d12b69cb1dc7edca6c105ff91cd33826f5b3b67e59f0b45c"
+    },
+    {
+      "path": "ImageReview/journal/decor_stamp_frame_a02.svg",
+      "sha256": "83a1bf341ecd3d9907fa21bf51838148a925d0a481b0eae0aa4b032ed71081ad"
+    },
+    {
+      "path": "ImageReview/journal/journal_binding_a01.png",
+      "sha256": "323f5895718489468633056c1b61c1f561d974b5cf9b963a16a4c81363b94274"
+    },
+    {
+      "path": "ImageReview/journal/journal_binding_a01.svg",
+      "sha256": "c7c7b9c6c26b2b02b1069db430c84a4da3dff25eeeded3c615359626007beda3"
+    },
+    {
+      "path": "ImageReview/journal/journal_cover_a01.png",
+      "sha256": "a14bc567b5088f261ca0e2a79d70530a501b1ca15c2f61051a444f6ba3f0cc20"
+    },
+    {
+      "path": "ImageReview/journal/journal_cover_a01.svg",
+      "sha256": "d18ad4b974ea69798ae474cf7773a505c11a85cd5e4214967ea79b1e263f141b"
+    },
+    {
+      "path": "ImageReview/journal/journal_fold_a01.png",
+      "sha256": "7dbac37f12f78f18a8e7de7acffb66b2d9c473154a90b5107b6af119324e4389"
+    },
+    {
+      "path": "ImageReview/journal/journal_fold_a01.svg",
+      "sha256": "b996813df1d11a14d4ecfab0063ab3abb33278b308e40494bda75635d3e1d2c3"
+    },
+    {
+      "path": "ImageReview/journal/journal_page_edges_a01.png",
+      "sha256": "bbeeca1b429eaab01d75f38c5b8c72aa1ce976bb3b5f7957d8616832079de36f"
+    },
+    {
+      "path": "ImageReview/journal/journal_page_edges_a01.svg",
+      "sha256": "05d67e872ba1ea1ea083b9eb71716174c5ddfef748d9339dc055b2b798479931"
+    },
+    {
+      "path": "ImageReview/journal/journal_page_left_a01.png",
+      "sha256": "bdba3a1d57a1fe5f80a8af776b240ce02d41497588f04c09ba7b1f38d4999db7"
+    },
+    {
+      "path": "ImageReview/journal/journal_page_left_a01.svg",
+      "sha256": "1ea3bb14dc781d8c17c45cccc6b665e236874076e6ddc914fb60bd4fffc37bc3"
+    },
+    {
+      "path": "ImageReview/journal/journal_page_right_a01.png",
+      "sha256": "fae29dc090a7107e6e4e14796cd151553509f142b3472fde89373c5c58a18e41"
+    },
+    {
+      "path": "ImageReview/journal/journal_page_right_a01.svg",
+      "sha256": "a7cfd7645fdf1a926eb3069b9b396d408a77e12143c0e8b24078e4e3ce5071ca"
+    },
+    {
+      "path": "ImageReview/journal/journal_ribbon_a01.png",
+      "sha256": "7be171cc26da64c20dba0658d7c876b4fec3c85f616625f1c84c0614edd0f33f"
+    },
+    {
+      "path": "ImageReview/journal/journal_ribbon_a01.svg",
+      "sha256": "421d7dcf2a2509f5b7f431b33a1528bc73c6de736f4ffdb32999b46f0daea966"
+    },
+    {
+      "path": "ImageReview/journal/journal_spine_a01.png",
+      "sha256": "1a2e40d5b672eb3952821d4a147df845a633dfc48463bb91a90e99987000d741"
+    },
+    {
+      "path": "ImageReview/journal/journal_spine_a01.svg",
+      "sha256": "0f8b2b48aa63e0c9e28593347c533e5f31a764ee9c2873e64ec23f02d5529302"
+    },
+    {
+      "path": "ImageReview/mockups/battle-core-a02/app.js",
+      "sha256": "bcf51d8d2bb75dcab73401df49a042ad521bd6c84b0a42fc6f02ade9284f9c46"
+    },
+    {
+      "path": "ImageReview/mockups/battle-core-a02/core.css",
+      "sha256": "0b76522c6d564805e1995d73ef99c5ddd77a9086f9ded87d1bd3839be7c9f624"
+    },
+    {
+      "path": "ImageReview/mockups/battle-core-a02/core.js",
+      "sha256": "0725ac41a8a3cb75797e2f98291536c996e0ecdbab93416296ec3fcbbacd24f4"
+    },
+    {
+      "path": "ImageReview/mockups/battle-core-a02/details.css",
+      "sha256": "21fa98621d6a8cb45b98e6ee380b76ec55a7730f54f91f6deb354334e36a5fa5"
+    },
+    {
+      "path": "ImageReview/mockups/battle-core-a02/details.js",
+      "sha256": "25eabf136c5bbff953432c57eb4df712c540212e233e46efea3065fb2a201c18"
+    },
+    {
+      "path": "ImageReview/mockups/battle-core-a02/foundation.css",
+      "sha256": "01a9869cd735dc3468d306e9674b56b3b95b0c3fe9728244c477fdbe5a0c1805"
+    },
+    {
+      "path": "ImageReview/mockups/battle-core-a02/foundation.js",
+      "sha256": "c271c8841813e46109bef5593e266048ccec635df8791f0fe3b2269e530afb7c"
+    },
+    {
+      "path": "ImageReview/mockups/battle-core-a02/index.html",
+      "sha256": "fe6f03d45f22638635bc8007d9d7272ca8e8004e74cd91a970197edebf0cfd19"
+    },
+    {
+      "path": "ImageReview/mockups/battle-core-a02/journal.css",
+      "sha256": "de8e4f73b65c011b4740ef86b13babac7049f00b8f3f75922bc19bad208d0666"
+    },
+    {
+      "path": "ImageReview/mockups/battle-core-a02/journal.js",
+      "sha256": "e3086c84f00e592fd259dcabb6191af6e600cd1dacd944c01699c91a87ad417b"
+    },
+    {
+      "path": "ImageReview/mockups/battle-core-a02/style.css",
+      "sha256": "a190ae793155ce342696c47e9b357e4b4c35124b52c251f83d4d2d8c9495b6ab"
+    },
+    {
+      "path": "ImageReview/overlays/focus_button_a02.png",
+      "sha256": "af10a755987e1990948de569a5622064aa4047ef88dfb5b899befe49c24fecdc"
+    },
+    {
+      "path": "ImageReview/overlays/focus_button_a02.svg",
+      "sha256": "5bfb3acccea4fc0bda0a73a0b630fbaaab49eda5b5db39b13cb1a27914917339"
+    },
+    {
+      "path": "ImageReview/overlays/focus_check_a02.png",
+      "sha256": "25b62769b73b4bfb120fe561d505d9fdb9ecea7b1f090c2baed7dc0f6fe25d55"
+    },
+    {
+      "path": "ImageReview/overlays/focus_check_a02.svg",
+      "sha256": "0106c81bac426a0c6ef99de185b1e668d3d5c96ef588eaf08757d837f34ab0f9"
+    },
+    {
+      "path": "ImageReview/overlays/focus_slider_a02.png",
+      "sha256": "25b62769b73b4bfb120fe561d505d9fdb9ecea7b1f090c2baed7dc0f6fe25d55"
+    },
+    {
+      "path": "ImageReview/overlays/focus_slider_a02.svg",
+      "sha256": "0106c81bac426a0c6ef99de185b1e668d3d5c96ef588eaf08757d837f34ab0f9"
+    },
+    {
+      "path": "ImageReview/overlays/focus_toggle_a02.png",
+      "sha256": "bdb6b449c27879bf10b587820b0ceb2e1487fa344d0428fec837d7f5da4ffafc"
+    },
+    {
+      "path": "ImageReview/overlays/focus_toggle_a02.svg",
+      "sha256": "a8555b521ea2f13b4e008fd81b2065a63d28cf63b388e626c6aa3cca4bd49d08"
+    },
+    {
+      "path": "ImageReview/panels/hud_enemy_base_a02.png",
+      "sha256": "da62874291998d9cd891f9637c3115c55258593a4bc9e310dd2c1d1c045ea896"
+    },
+    {
+      "path": "ImageReview/panels/hud_enemy_base_a02.svg",
+      "sha256": "da2e381e21f8f61e9fbc56b652ce050fa2da1fcbb2ec6ecaec443f441d52e5fc"
+    },
+    {
+      "path": "ImageReview/panels/hud_enemy_compact_a02.png",
+      "sha256": "c7bf7d6e461333d095184d1a2fa2f90852dc1e2ace64d25c254c26d185425296"
+    },
+    {
+      "path": "ImageReview/panels/hud_enemy_compact_a02.svg",
+      "sha256": "e0e3045820020a848bf518bf3e18eadd9e0916db1a9576a79aa3b810fbe7caeb"
+    },
+    {
+      "path": "ImageReview/panels/hud_intent_tag_a02.png",
+      "sha256": "983166ffe96680dec62e729ab196571f302aac4732454613ad8647cf5c813a80"
+    },
+    {
+      "path": "ImageReview/panels/hud_intent_tag_a02.svg",
+      "sha256": "77209edba785a5adc5ad6a2257c789fac6a02cd5ea81001cb194d3be7d56ebb7"
+    },
+    {
+      "path": "ImageReview/panels/hud_name_tag_a02.png",
+      "sha256": "06bce1eb30a7eb61c7a2f5b0b9da91ac7b6cee18bb5c63d3311d8876e50b135a"
+    },
+    {
+      "path": "ImageReview/panels/hud_name_tag_a02.svg",
+      "sha256": "fa95ef21fb713d43d745f88698dcc46d33dd855efc0197b2a1892630739cc75c"
+    },
+    {
+      "path": "ImageReview/panels/hud_player_base_a02.png",
+      "sha256": "1bb1363d4d6b934d631d43001e09e646b408eb6c725d0d676b1e8042b86683cc"
+    },
+    {
+      "path": "ImageReview/panels/hud_player_base_a02.svg",
+      "sha256": "c4f2554db8810cf941b0f3083792ea45d1fdba725f5323b65f4f71d888882692"
+    },
+    {
+      "path": "ImageReview/panels/hud_player_compact_a02.png",
+      "sha256": "2e1fcd6ea56e7a40c482c0d87267040168c553d6e9615f7314d7d4de6235a4cf"
+    },
+    {
+      "path": "ImageReview/panels/hud_player_compact_a02.svg",
+      "sha256": "ac68cb79dc2c2e25e1aad7428cb9be115247819d8ce7dab693894b54e15c4be2"
+    },
+    {
+      "path": "ImageReview/panels/panel_ink_a01.png",
+      "sha256": "27fb689a55404cdfe2f883f36c3c6b414a5f20509b6765ff2988e5ae3b8e6414"
+    },
+    {
+      "path": "ImageReview/panels/panel_ink_a01.svg",
+      "sha256": "bc9325d7ffce405de93241b9c0664cd63b43a110592d81049ffd50743db4280c"
+    },
+    {
+      "path": "ImageReview/panels/panel_paper_a01.png",
+      "sha256": "fdfbd91f704d12c6f4e99456902d0ad59e5dd43909577a2e504098b4ea5b16a9"
+    },
+    {
+      "path": "ImageReview/panels/panel_paper_a01.svg",
+      "sha256": "56afdbed329e133a57834e881c75719bb21828f3bba5558ff36f108cd73d3156"
+    },
+    {
+      "path": "ImageReview/panels/panel_tooltip_a01.png",
+      "sha256": "c28e44c1fc204023de30bc70581b4d1bc589535e92a2f8ef14a93458199a3598"
+    },
+    {
+      "path": "ImageReview/panels/panel_tooltip_a01.svg",
+      "sha256": "2f481b9dcf1c67bb7e43226d6eac6c90ae643f6078edf7a9624b32c9eb3b4ff8"
+    },
+    {
+      "path": "ImageReview/portraits/portrait_scholar_etching_b01.png",
+      "sha256": "2460295476b4f0137e1738a03aa68507ab6b88f6841f2910d41cd14c2cf350ba"
+    },
+    {
+      "path": "docs/design/13-开发AI美术资源使用说明.md",
+      "sha256": "80740bd4a0b5c231572ca59b966fba61a9d874335c0ca3c2642540bb43e1a545"
+    },
+    {
+      "path": "docs/design/art-inventory/developer-asset-registry.json",
+      "sha256": "fc46c639252b50c74afaf1eefcd99f18275d48708aaecbf80af2fe8624f32a3c"
+    },
+    {
+      "path": "tools/art/scripts/package_core_a02.py",
+      "sha256": "6098846829b9aba31e8c8df9159bde8530983cbbca0981267dd4caf0324bc61f"
+    }
+  ]
+}

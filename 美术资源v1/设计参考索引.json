@@ -1,0 +1,904 @@
+{
+  "scope": "FINAL visual specifications. productionEligible=false means not standalone runtime textures, NOT unapproved designs.",
+  "asOf": "2026-10-21",
+  "finalizationGuide": "integration-v1/ui-finalization.md",
+  "references": [
+    {
+      "id": "V05-approved-design",
+      "path": "Assets/UI/mockups/battle-journal-v05/index.html",
+      "role": "approved-design-reference-not-runtime-code",
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false,
+      "clientSpec": "Assets/UI/mockups/battle-journal-v05/README.md",
+      "bundleDirectory": "Assets/UI/mockups/battle-journal-v05",
+      "exportReference": true,
+      "productionEligible": false
+    },
+    {
+      "id": "I03-approved-map-direction",
+      "path": "Assets/UI/mockups/map-i03/mockup_map_i03_1920x1080.png",
+      "clientSpec": "Assets/UI/mockups/map-i03/README.md",
+      "role": "approved-direction-reference-not-runtime-asset",
+      "approvalQuote": "可以了",
+      "approvedOn": "2026-10-14",
+      "exportReference": true,
+      "productionEligible": false,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "J02-approved-settings-direction",
+      "path": "Assets/UI/mockups/settings-j02/mockup_settings_j02_1920x1080.png",
+      "clientSpec": "Assets/UI/mockups/settings-j02/README.md",
+      "role": "approved-direction-reference-not-runtime-asset",
+      "approvalQuote": "继续吧",
+      "approvedOn": "2026-10-14",
+      "exportReference": true,
+      "productionEligible": false,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "K02-approved-shop-direction",
+      "path": "Assets/UI/mockups/shop-k02/mockup_shop_k02_1920x1080.png",
+      "clientSpec": "Assets/UI/mockups/shop-k02/README.md",
+      "role": "approved-direction-reference-not-runtime-asset",
+      "approvalQuote": "继续吧",
+      "approvedOn": "2026-10-15",
+      "exportReference": true,
+      "productionEligible": false,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "K04-approved-removal-direction",
+      "path": "Assets/UI/mockups/shop-k04/selected.png",
+      "clientSpec": "Assets/UI/mockups/shop-k04/README.md",
+      "role": "approved-flow-reference-not-runtime-asset",
+      "approvalQuote": "继续吧",
+      "approvedOn": "2026-10-15",
+      "exportReference": true,
+      "productionEligible": false,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "L03-approved-upgrade-direction",
+      "path": "Assets/UI/mockups/campfire-l03/selected.png",
+      "clientSpec": "Assets/UI/mockups/campfire-l03/README.md",
+      "role": "approved-flow-reference-not-runtime-asset",
+      "approvalQuote": "可以，继续吧",
+      "approvedOn": "2026-10-15",
+      "exportReference": true,
+      "productionEligible": false,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "N01-approved-card-reward",
+      "path": "Assets/UI/mockups/reward-n01/selected.png",
+      "clientSpec": "Assets/UI/mockups/reward-n01/README.md",
+      "additionalPaths": [
+        "Assets/UI/mockups/reward-n01/unselected.png",
+        "Assets/UI/mockups/reward-n01/claimed.png",
+        "Assets/UI/mockups/reward-n01/skipped.png"
+      ],
+      "role": "approved-flow-reference-not-runtime-asset",
+      "approvalQuote": "可以",
+      "approvedOn": "2026-10-15",
+      "exportReference": true,
+      "productionEligible": false,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "P01-static-closure",
+      "path": "Assets/UI/mockups/v1-closure-p01/overview.jpg",
+      "clientSpec": "Assets/UI/mockups/v1-closure-p01/README.md",
+      "bundleDirectory": "Assets/UI/mockups/v1-closure-p01",
+      "role": "approved-design-reference-not-runtime-asset",
+      "status": "approved",
+      "approvalQuote": "可以",
+      "approvedOn": "2026-10-15",
+      "productionEligible": false,
+      "exportReference": true,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "R01-motion",
+      "path": "Assets/UI/mockups/motion-r01/index.html",
+      "clientSpec": "Assets/UI/mockups/motion-r01/README.md",
+      "bundleDirectory": "Assets/UI/mockups/motion-r01",
+      "role": "approved-design-reference-not-runtime-asset",
+      "status": "approved",
+      "approvalQuote": "可以",
+      "approvedOn": "2026-10-15",
+      "productionEligible": false,
+      "exportReference": true,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "M01-event",
+      "path": "Assets/UI/mockups/event-m01/choices.png",
+      "clientSpec": "Assets/UI/mockups/event-m01/README.md",
+      "bundleDirectory": "Assets/UI/mockups/event-m01",
+      "role": "approved-design-reference-not-runtime-asset",
+      "status": "approved",
+      "approvalQuote": "审阅通过",
+      "approvedOn": "2026-10-17",
+      "productionEligible": false,
+      "exportReference": true,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "O01-relic-reward",
+      "path": "Assets/UI/mockups/relic-reward-o01/selected.png",
+      "clientSpec": "Assets/UI/mockups/relic-reward-o01/README.md",
+      "bundleDirectory": "Assets/UI/mockups/relic-reward-o01",
+      "role": "approved-design-reference-not-runtime-asset",
+      "status": "approved",
+      "approvalQuote": "审阅通过",
+      "approvedOn": "2026-10-17",
+      "productionEligible": false,
+      "exportReference": true,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "T01-effects-reference",
+      "path": "Assets/UI/mockups/effects-t01/index.html",
+      "clientSpec": "Assets/UI/mockups/effects-t01/README.md",
+      "bundleDirectory": "Assets/UI/mockups/effects-t01",
+      "role": "approved-design-reference-not-runtime-asset",
+      "status": "approved",
+      "approvalQuote": "审阅通过",
+      "approvedOn": "2026-10-17",
+      "productionEligible": false,
+      "exportReference": true,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "V03-startup",
+      "path": "Assets/UI/mockups/startup-v03/startup_cover_v03.png",
+      "clientSpec": "Assets/UI/mockups/startup-v03/README.md",
+      "bundleDirectory": "Assets/UI/mockups/startup-v03",
+      "role": "approved-design-reference-not-runtime-asset",
+      "status": "approved",
+      "approvalQuote": "就这个吧",
+      "approvedOn": "2026-10-17",
+      "productionEligible": false,
+      "exportReference": true,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "U01-battle-final",
+      "path": "Assets/UI/mockups/battle-u01/normal.png",
+      "clientSpec": "Assets/UI/mockups/battle-u01/README.md",
+      "bundleDirectory": "Assets/UI/mockups/battle-u01",
+      "role": "final-ui-design-specification",
+      "status": "approved",
+      "approvalBasis": "User delegated UI finalization",
+      "approvedOn": "2026-10-21",
+      "productionEligible": false,
+      "exportReference": true,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "H02-entry-final",
+      "path": "Assets/UI/mockups/entry-h02/mockup_main_menu_h02_1920x1080.png",
+      "clientSpec": "Assets/UI/mockups/entry-h02/README.md",
+      "bundleDirectory": "Assets/UI/mockups/entry-h02",
+      "role": "final-ui-design-specification",
+      "status": "approved",
+      "approvalBasis": "User delegated UI finalization",
+      "approvedOn": "2026-10-21",
+      "productionEligible": false,
+      "exportReference": true,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    },
+    {
+      "id": "L01-campfire-final",
+      "path": "Assets/UI/mockups/campfire-l01/mockup_campfire_l01_1920x1080.png",
+      "clientSpec": "Assets/UI/mockups/campfire-l01/README.md",
+      "bundleDirectory": "Assets/UI/mockups/campfire-l01",
+      "role": "final-ui-design-specification",
+      "status": "approved",
+      "approvalBasis": "User delegated UI finalization",
+      "approvedOn": "2026-10-21",
+      "productionEligible": false,
+      "exportReference": true,
+      "visualStatus": "final",
+      "implementationStatus": "not-verified",
+      "runtimeTexture": false
+    }
+  ],
+  "files": [
+    {
+      "path": "设计参考/V05-approved-design/app.js",
+      "sha256": "ac12638f5a9caef05b35b0332c51afe747cdbbbe72c88f6d2ca0994ea07b0782",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/details.css",
+      "sha256": "5457fa08ef37fe779dc7c8c39d33f119f98c6ab3711c0cc1c5436eb53f0d9335",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/details.js",
+      "sha256": "ea34433d3a80512ada0413bdf80a76f94bab2af93db4447f0e2fe878d582b480",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/index.html",
+      "sha256": "520233b99ecf190014b9d5089c046101a5dfeae577d0ce311aa39ffc57360092",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/journal.css",
+      "sha256": "636b23db1f38c8fb0ff1f8bdbf3435bf1040524d2d8671339be7213b91e064a2",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/journal.js",
+      "sha256": "878730dd0f84bb78ff678d783a6a6cc6eb15c4f42f69ce426e2c23075b9955b2",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/overlap-validation.json",
+      "sha256": "7f8b4bdcc1102786f7b4cc3279b152d1068a053b22da0a33c1e743f383e72969",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/publication.json",
+      "sha256": "e02eb591512f8f961d935d6b55e6b1cedc4e822d48532f5d18dac32970526d6c",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/README.md",
+      "sha256": "9d983611c9764b491da9aa36d788fc51d03db0a2c375ffd6c03632a99a905d2f",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/review_battle_1080.png",
+      "sha256": "70bd4bc246f7bee8d83d7aadf954bb3c0e17554dec931c2bfcec6e5672ecc0c4",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/review_battle_720.png",
+      "sha256": "e6af4d3bae744e9134522c795521696b6c3e3ea56a43268a1b6c43442d748c93",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/review_battle_danger_1080.png",
+      "sha256": "d4b3ffa13aedcd503bf0642515c9f0d17853893461cbf88bdd79223d595ca2ac",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/review_battle_danger_720.png",
+      "sha256": "337274d8add655f408995b7880ee6a328a5fe4f4bb29e56786ac7a1dfdff8524",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/review_pause_1080.png",
+      "sha256": "63bd3ef66e5ce61ea9b6fc9b87070ef80100c052dc09a94d8cb646746334b91e",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/review_pause_720.png",
+      "sha256": "a68c0934e337e364b2c2cf5f282f1d7e093a5637d0bead5adaac1bbf676c3516",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/style.css",
+      "sha256": "113e29cbec16e8d99aa06d7af523fccbf2b48c7b4d2b35ea5362f27b7b7a5ee9",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/validation.json",
+      "sha256": "8a3b12650da5f4d0f9a11fe85e1827ebc2a96fcee9e487f3c7aad62e4347551c",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/references/bg_battle_etching_textless_v02.png",
+      "sha256": "374d20cf823eda5a5ea6d919e0b504c76d69f334f389bea7f40db64d66bbcfb5",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/references/card_attack_dushubiji_illustration_v02.png",
+      "sha256": "c9abd1a94ed7afeec4d63252cdb7507f4438efce6767a1ad5c2549be84978d05",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V05-approved-design/references/portrait_scholar_etching_b01.png",
+      "sha256": "2460295476b4f0137e1738a03aa68507ab6b88f6841f2910d41cd14c2cf350ba",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/I03-approved-map-direction/mockup_map_i03_1920x1080.png",
+      "sha256": "09e088403504e3b75120513b1dc1a1df9676f6f1a98de39cd5a40af5e36f8859",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/I03-approved-map-direction/README.md",
+      "sha256": "f2cf65a8035fda3f381e1e1c249f82668f67c107efb6f75f7e035e3ecf97f028",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/J02-approved-settings-direction/mockup_settings_j02_1920x1080.png",
+      "sha256": "3ecbc514e5e653b85c974ef14f7e8d048d216f8d78ff41670a2177c84f725364",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/J02-approved-settings-direction/README.md",
+      "sha256": "82c3d5666f0a5567250c2f05903af21770844166c96476f2d7ca112116f400f0",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/K02-approved-shop-direction/mockup_shop_k02_1920x1080.png",
+      "sha256": "aa9307df61da5b5a4880a572cca58dbfea324b5bffe508da23c8344a06995442",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/K02-approved-shop-direction/README.md",
+      "sha256": "d40fd0a1778d1be89adbf8df2350e4529cb21fd5e2353783693f9cb92fdbfe46",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/K04-approved-removal-direction/selected.png",
+      "sha256": "0c451dd2e11d47f73cc5e5f3c6e09c5c65758d93a7c7007ca5af418d30183f1f",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/K04-approved-removal-direction/README.md",
+      "sha256": "bbc8ca80d6a0419a0276ef6d497f4687f540bfadd95c4f23d2a7ed125cfaf72c",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/L03-approved-upgrade-direction/selected.png",
+      "sha256": "c048ef45ab14cb8e3745db1224ce0ea18ca77ee3268a4be245958ab02cfd4c1f",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/L03-approved-upgrade-direction/README.md",
+      "sha256": "5720fabe663e50b3abe2b426ce508e0238641c19b467c8e2ecb9017d475ca6c9",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/N01-approved-card-reward/selected.png",
+      "sha256": "f3abad16653c0e8777cc4b10b352fc1f3756b8394d77bfff7ce8bb852914cff8",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/N01-approved-card-reward/README.md",
+      "sha256": "9e7297495654d4c0a21570fcdda5a879bafd3d451068afcf8074167b11efa3b1",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/N01-approved-card-reward/unselected.png",
+      "sha256": "9cd86e1c84c220f7dcc67e1d06f3f3f5962ee7e4ddfe3ce374f098f2b1a0a4da",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/N01-approved-card-reward/claimed.png",
+      "sha256": "3334f8ec533b7aff298efabf4b7aab7d72f38069a560460e7b4a3bbb580a9bdf",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/N01-approved-card-reward/skipped.png",
+      "sha256": "09815ace63dba5b2f7da191a11bedb7d75fbfb4521a426cbed85650e0e0dc39a",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/assets.json",
+      "sha256": "17aeb60d4f610698be1019863291ec4472a45d395f2109da1a2bdba555107841",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/character_select.png",
+      "sha256": "2b85598ae0c7ae29671805a7e64cbbdbbd795a0191cd58be3a8c3454288f2429",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/defeat.png",
+      "sha256": "562f11773d940a767fdce8e6ca0117b0a1e7639421baaae34c3387f7d9e52d1f",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/event_card_result.png",
+      "sha256": "d4a3b90550e9912b2266a5349f49ab5d8674cf7fd0e6503a7adb60b5653682eb",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/event_relic_result.png",
+      "sha256": "20c720650d730e184b191ab8ec2702adbd64742f2d42f13a6f855ee1063c6f55",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/journey_cards.png",
+      "sha256": "dfd5c0e58714e85babb56325351f35700f6bd3756bbb9641912ea5dcb54b14b6",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/journey_cards_empty.png",
+      "sha256": "88002b3431b5bbad9a969b27798b7be7158a948ac564df94c4dfb95855d77380",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/journey_profile.png",
+      "sha256": "4c65d49d8e26d88b2527b0dfa35555dd54538b602e7a173ab74b3e40357ec817",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/journey_relics.png",
+      "sha256": "5a31e9c0a9610dfd884faa7f31cd277eb11e3b9e0cc3e9b5a3b10c50a33282fa",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/journey_relics_empty.png",
+      "sha256": "6c6c51e9d2384ee941cb2107a6fee24f3a56858a97d74c0800b8ba3288d0b6f2",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/overview.jpg",
+      "sha256": "80aca29f802d4966b54e8cd9209287413a6d01dfc6768df86cfb85bc17fa631d",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/README.md",
+      "sha256": "416c05c1d50f10042caf1d61ce078259b84adca4fc684bb7a10bbe2366682e65",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/P01-static-closure/victory.png",
+      "sha256": "ffc707e76d745a6123ebc80888402f601fa772f2ebf42ecd77dc6e97fa4840f9",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/R01-motion/index.html",
+      "sha256": "a262286657b1154f1f67552e79e79ae6a6a76d16afd30cd39a26a48ed67d0427",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/R01-motion/manifest.json",
+      "sha256": "2eae18281e2246037f0f38ce35c0f42840fc5eeedce7578f2a1e1505fbf68a68",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/R01-motion/README.md",
+      "sha256": "0c879317f9279d9d97286f8c67ae82aaf3c5a600bb6f20483cb16a6e5ca3d18a",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/R01-motion/assets/card_1_review.png",
+      "sha256": "890946ee6c416b6e8e2e410e8d24a7f27a13140ef7af058610fade523cc65668",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/R01-motion/assets/SourceHanSansSC-LICENSE.txt",
+      "sha256": "fcac737e761ec63dbfbdce11030a1780161920d80315edba9c8beff1c2bac5a2",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/R01-motion/assets/SourceHanSansSC-Regular.otf",
+      "sha256": "f1d8611151880c6c336aabeac4640ef434fa13cbfbf1ffe82d0a71b2a5637256",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/R01-motion/assets/cardbacks/cardback_universal_ornate_c03.png",
+      "sha256": "7f324b0508b562f3aa3ac587690acf451456584091d8940171f9a13a52b34927",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/R01-motion/assets/enemies/enemy_goblin_etching_b01.png",
+      "sha256": "54cdf5e4ab9356b9d080b4f2d4ccead11121970209e98d83acc873f5eca0907a",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/R01-motion/assets/enemies/enemy_memory_devourer_etching_f01.png",
+      "sha256": "15a9e326ea588a26644a7719e3a99f36d96c0abb8473b92815c7f30eeb1c3e9b",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/R01-motion/assets/overlays/seal_pairing_b03.png",
+      "sha256": "dc4349f747dbd8dede72d7c13f7ae68fab6b1abd80f52e24f85b0d2f1264ab6f",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/R01-motion/assets/relics/relic_memory_crystal_etching_e01.png",
+      "sha256": "fc22105958fb2d7d948d4ae2e4a721fd37a4a22bbaa3bf60d5711fdf5d6b6739",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/M01-event/assets.json",
+      "sha256": "7742595a16d9efa45863d2bc9878e09623dca862556e7207169beaa53219937d",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/M01-event/choices.png",
+      "sha256": "dd86b7489ac660417a905c136a88b7b6289fff1ab1025602876453307bf507d2",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/M01-event/README.md",
+      "sha256": "aea05907ef99e5e2cef1ec7c9abaecdb2a9703df2f4a3005c4a77ea739d58887",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/M01-event/result.png",
+      "sha256": "d2ce6602eaf1176179ca69a225efb711b9efb887c3ee30ee9906ac08f9f56b7d",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/O01-relic-reward/assets.json",
+      "sha256": "0e1c51156b49f6d7d0a881c3be420a1b2634d33115ea8bc89f88556626ca516f",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/O01-relic-reward/claimed.png",
+      "sha256": "1d7d460c75ba135f3908a99b4168c077170e27f945b9d1d3301dc4bba72f12a2",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/O01-relic-reward/empty.png",
+      "sha256": "74fb821589bf8fbbaec4ec2aacd456c9c4203f1500dc5af0abe38775966f2526",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/O01-relic-reward/partial.png",
+      "sha256": "040bcc6a5e338f7f50265ab2f8060f0ac3abef74cdb7d96073d8fd998615f6c3",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/O01-relic-reward/README.md",
+      "sha256": "32dcfa9f56cd7bd7e85e9ccc5a0795cefa036b0f0cbbe8b73be90b3887bd6bf4",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/O01-relic-reward/selected.png",
+      "sha256": "6c8eeccffc85df500a74dad1175c3f0363edeba91aa802810ce767c019ad6e14",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/O01-relic-reward/unselected.png",
+      "sha256": "32eb635d653764d1f260772b23e64422aaa976686c4dedbcbf1229d68f1563bb",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/T01-effects-reference/assets.json",
+      "sha256": "8b89654d22876e9615d22d778bc1e6407f6e2d61b9033de5e84d3d298aa2f37a",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/T01-effects-reference/index.html",
+      "sha256": "44a9b510277840e1e57e8b46e594ea1e04124052908aa02d106b47a46ceb60ec",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/T01-effects-reference/overview.jpg",
+      "sha256": "3c0fe1eb5122cb0012de2b01c56cd1bea06a5dc65bc8906553f1a96bd2502b02",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/T01-effects-reference/prompts.json",
+      "sha256": "09b090a15755f7c056d365b683ae1f3e553d1fad948c89d60559a9f562d43f8f",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/T01-effects-reference/README.md",
+      "sha256": "978e7c8e9a73bda628a3ad2bf118673d39a5f946a987e0105e0f0b95e76d8414",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/T01-effects-reference/assets/fx_campfire_flame_t01.png",
+      "sha256": "a22070198c49ccc040d7ffb28cd7862ca7804b86c7ea0e4981e5de2453009a2d",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/T01-effects-reference/assets/fx_heal_t01.png",
+      "sha256": "8be5183d5b5a951fc07dcc4ff9b04cadaafd97a214aa83bf4035db1406076554",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/T01-effects-reference/assets/fx_hit_t01.png",
+      "sha256": "8ead21b0613e490ce529e3ebb59e49a15291046137ccee1331c0108c8d80fa3f",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/T01-effects-reference/assets/fx_match_dissolve_t01.png",
+      "sha256": "3ed0f5da8513fc57b9ba0098d0f500cc263e55d0e82be4d164d07866d27df846",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V03-startup/assets.json",
+      "sha256": "1cadfd1205c4b28ad61cbe1cacf30421b10db0170652b0a4aaccb6743914caa5",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V03-startup/index.html",
+      "sha256": "da38bb073caaddbca77d4d5cf8e775afe59f8ae1db6c7dfaa42ebf5495751aff",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V03-startup/prompt.txt",
+      "sha256": "fbac38d19f6daeb5822c8d15203ef651977f99ef18cf7b973efa5fceb88fa190",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V03-startup/README.md",
+      "sha256": "4e77a5b726340b208d4a183e0e6e4f3af171e815643f19271aab3e0e7788c721",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V03-startup/startup_cover_v03.png",
+      "sha256": "f963e53e781d29bd6c561558acf1e7255bb31006d1efcd66be6fa6f406f93c95",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V03-startup/fonts/SourceHanSansSC-LICENSE.txt",
+      "sha256": "fcac737e761ec63dbfbdce11030a1780161920d80315edba9c8beff1c2bac5a2",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/V03-startup/fonts/SourceHanSansSC-Regular.otf",
+      "sha256": "f1d8611151880c6c336aabeac4640ef434fa13cbfbf1ffe82d0a71b2a5637256",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/U01-battle-final/assets.json",
+      "sha256": "a7f88aef0b5bf3db0eee5b733b313bdea9ddbbfa0a726f50072b65add3c5a471",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/U01-battle-final/boss_phase3.png",
+      "sha256": "e70d7ec7052f439c4b01a63c909cb00c8d383712fd3fdfa66f36986f4b987288",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/U01-battle-final/normal.png",
+      "sha256": "9f060c3fd6c8d8d0b18b7da1de5c340f557adfe9030740d9c2951906c8869f7b",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/U01-battle-final/README.md",
+      "sha256": "20a514272ef96fd06613345cd6ebc80c913c4d5cf60fe6c15eeb92bb2e5cf0bd",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/H02-entry-final/mockup_loading_h02_1920x1080.png",
+      "sha256": "1ffaa0896894da1dd8e0bb6157455f4f0f876ed0176605a93d46f790b22316c0",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/H02-entry-final/mockup_main_menu_h02_1920x1080.png",
+      "sha256": "fc1a07a64c50cca54c95ce61dda47290952b1ff3ab32d5bd2bb57dec5a5eb4d3",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/H02-entry-final/README.md",
+      "sha256": "11c36b6d7a104e2064004f6bc4d6f096c897671578ec0cfaa56b284d6b3896a9",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/L01-campfire-final/mockup_campfire_l01_1920x1080.png",
+      "sha256": "5c7de63d884fc2f3780b15635745f2617298d3dbf052ec5ba1695bd316a2acee",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    },
+    {
+      "path": "设计参考/L01-campfire-final/README.md",
+      "sha256": "5e4e087db53dd6bfc8381d61bd107a22fe54ef3f684a07f671d80980e9845f43",
+      "productionEligible": false,
+      "visualStatus": "final",
+      "runtimeTexture": false
+    }
+  ]
+}

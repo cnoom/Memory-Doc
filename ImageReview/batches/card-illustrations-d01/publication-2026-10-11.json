@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-11",
+  "approvalQuote": "可以、",
+  "scope": "考据、速读、全神贯注三张独立插画；不含组合预览",
+  "files": [
+    {
+      "id": "card_attack_kaoju_etching_d01",
+      "source": "ImageReview/cards/card_attack_kaoju_etching_d01.png",
+      "target": "Assets/UI/cards/card_attack_kaoju_etching_d01.png",
+      "sha256": "cb4fc0039f00e9ee09fc87d62594070391c4775f8c37eaf0c792e45eeca6383f"
+    },
+    {
+      "id": "card_skill_sudu_etching_d01",
+      "source": "ImageReview/cards/card_skill_sudu_etching_d01.png",
+      "target": "Assets/UI/cards/card_skill_sudu_etching_d01.png",
+      "sha256": "55966cd535c6eef6a4722ffa0b31d5fa05b5d8c18ce4882b3cf1440f7259f528"
+    },
+    {
+      "id": "card_ability_quanshenguanzhu_etching_d01",
+      "source": "ImageReview/cards/card_ability_quanshenguanzhu_etching_d01.png",
+      "target": "Assets/UI/cards/card_ability_quanshenguanzhu_etching_d01.png",
+      "sha256": "0fb75917b1ea8b5830af5caf718229da304d9241b03e57a4a9449cedc8bcf0b7"
+    }
+  ]
+}

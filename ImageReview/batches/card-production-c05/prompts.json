@@ -1,0 +1,14 @@
+[
+  {
+    "type": "skill",
+    "prompt": "Use case: precise-object-edit. Edit target is the approved attack card frame. Produce ONE standalone matching skill card frame, same full 3:4 canvas and position. Change ONLY the upper-left red ribbon into muted deep blue ribbon with small engraved scroll ivory emblem, replacing its star emblem. Keep all surrounding black-green ink and bone ivory woodcut botanical ornamentation, title plate, large transparent illustration hole, generous blank lower description paper and very shallow compass footer. Preserve every frame proportion and all geometry as closely as possible, particularly description safe box x180 y858 width600 height280 on a 960x1280 canvas. Do not add ornaments into this box. No words, letters, numbers, art in window, glow, gemstone rendering, extra panels or background. Actual transparent outside and actual transparent central hole, opaque title and description parchment. Full card visible, no cropping."
+  },
+  {
+    "type": "ability",
+    "prompt": "Use case: precise-object-edit. Edit target is the approved attack card frame. Produce ONE standalone matching ability card frame, same full 3:4 canvas and position. Change ONLY the upper-left red ribbon into muted deep violet ribbon with small engraved flat diamond ivory emblem, replacing its star emblem. Keep all surrounding black-green ink and bone ivory woodcut botanical ornamentation, title plate, large transparent illustration hole, generous blank lower description paper and very shallow compass footer. Preserve every frame proportion and all geometry as closely as possible, particularly description safe box x180 y858 width600 height280 on a 960x1280 canvas. Do not add ornaments into this box. No words, letters, numbers, art in window, glow, gemstone rendering, extra panels or background. Actual transparent outside and actual transparent central hole, opaque title and description parchment. Full card visible, no cropping."
+  },
+  {
+    "type": "curse",
+    "prompt": "Use case: precise-object-edit. Edit target is the approved attack card frame. Produce ONE standalone matching curse card frame, same full 3:4 canvas and position. Change ONLY the upper-left red ribbon into charcoal gray ribbon with small engraved skull ivory emblem, replacing its star emblem. Keep all surrounding black-green ink and bone ivory woodcut botanical ornamentation, title plate, large transparent illustration hole, generous blank lower description paper and very shallow compass footer. Preserve every frame proportion and all geometry as closely as possible, particularly description safe box x180 y858 width600 height280 on a 960x1280 canvas. Do not add ornaments into this box. No words, letters, numbers, art in window, glow, gemstone rendering, extra panels or background. Actual transparent outside and actual transparent central hole, opaque title and description parchment. Full card visible, no cropping."
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "errors": [],
+  "imagesLoaded": 45,
+  "smallCard": {
+    "x": 264.65625,
+    "y": 97.1875,
+    "width": 96,
+    "height": 128
+  },
+  "backgroundsVerified": [
+    "light",
+    "dark",
+    "check"
+  ]
+}

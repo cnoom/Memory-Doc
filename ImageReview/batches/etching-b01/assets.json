@@ -1,0 +1,516 @@
+{
+  "batch": "etching-b01",
+  "status": "22-approved-5-require-c02-revision",
+  "palette": {
+    "attack": "#A44436",
+    "skill": "#396577",
+    "ability": "#705A80",
+    "curse": "#45414A"
+  },
+  "assets": [
+    {
+      "id": "cardback_universal_etching_b01",
+      "category": "cardbacks",
+      "png": "cardbacks/cardback_universal_etching_b01.png",
+      "svg": "cardbacks/cardback_universal_etching_b01.svg",
+      "width": 960,
+      "height": 1280,
+      "status": "needs-revision",
+      "name": "统一卡背",
+      "display": [
+        144,
+        192
+      ],
+      "alpha": "仅圆角外透明",
+      "revisionDirection": "C02 approved ornate card direction"
+    },
+    {
+      "id": "border_card_attack_etching_b01",
+      "category": "cardframes",
+      "png": "cardframes/border_card_attack_etching_b01.png",
+      "svg": "cardframes/border_card_attack_etching_b01.svg",
+      "width": 960,
+      "height": 1280,
+      "status": "needs-revision",
+      "name": "攻击卡框",
+      "typeColor": "#A44436",
+      "window": {
+        "x": 64,
+        "y": 250,
+        "width": 832,
+        "height": 430
+      },
+      "display": [
+        144,
+        192
+      ],
+      "alpha": "矩形插画窗和圆角外透明",
+      "textBaked": false,
+      "revisionDirection": "C02 approved ornate card direction"
+    },
+    {
+      "id": "border_card_skill_etching_b01",
+      "category": "cardframes",
+      "png": "cardframes/border_card_skill_etching_b01.png",
+      "svg": "cardframes/border_card_skill_etching_b01.svg",
+      "width": 960,
+      "height": 1280,
+      "status": "needs-revision",
+      "name": "技能卡框",
+      "typeColor": "#396577",
+      "window": {
+        "x": 64,
+        "y": 250,
+        "width": 832,
+        "height": 430
+      },
+      "display": [
+        144,
+        192
+      ],
+      "alpha": "矩形插画窗和圆角外透明",
+      "textBaked": false,
+      "revisionDirection": "C02 approved ornate card direction"
+    },
+    {
+      "id": "border_card_ability_etching_b01",
+      "category": "cardframes",
+      "png": "cardframes/border_card_ability_etching_b01.png",
+      "svg": "cardframes/border_card_ability_etching_b01.svg",
+      "width": 960,
+      "height": 1280,
+      "status": "needs-revision",
+      "name": "能力卡框",
+      "typeColor": "#705A80",
+      "window": {
+        "x": 64,
+        "y": 250,
+        "width": 832,
+        "height": 430
+      },
+      "display": [
+        144,
+        192
+      ],
+      "alpha": "矩形插画窗和圆角外透明",
+      "textBaked": false,
+      "revisionDirection": "C02 approved ornate card direction"
+    },
+    {
+      "id": "border_card_curse_etching_b01",
+      "category": "cardframes",
+      "png": "cardframes/border_card_curse_etching_b01.png",
+      "svg": "cardframes/border_card_curse_etching_b01.svg",
+      "width": 960,
+      "height": 1280,
+      "status": "needs-revision",
+      "name": "诅咒卡框",
+      "typeColor": "#45414A",
+      "window": {
+        "x": 64,
+        "y": 250,
+        "width": 832,
+        "height": 430
+      },
+      "display": [
+        144,
+        192
+      ],
+      "alpha": "矩形插画窗和圆角外透明",
+      "textBaked": false,
+      "revisionDirection": "C02 approved ornate card direction"
+    },
+    {
+      "id": "icon_type_attack_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_type_attack_etching_b01.png",
+      "svg": "icons/icon_type_attack_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "name": "攻击类型",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#A44436",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_type_attack_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_type_attack_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_type_skill_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_type_skill_etching_b01.png",
+      "svg": "icons/icon_type_skill_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "name": "技能类型",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#396577",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_type_skill_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_type_skill_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_type_ability_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_type_ability_etching_b01.png",
+      "svg": "icons/icon_type_ability_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "name": "能力类型",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#705A80",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_type_ability_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_type_ability_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_type_curse_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_type_curse_etching_b01.png",
+      "svg": "icons/icon_type_curse_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "name": "诅咒类型",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#45414A",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_type_curse_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_type_curse_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_status_burn_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_burn_etching_b01.png",
+      "svg": "icons/icon_status_burn_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "approved",
+      "name": "灼烧",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#A44436",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_status_burn_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_status_burn_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_status_freeze_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_freeze_etching_b01.png",
+      "svg": "icons/icon_status_freeze_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "approved",
+      "name": "冰冻",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#396577",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_status_freeze_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_status_freeze_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_status_poison_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_poison_etching_b01.png",
+      "svg": "icons/icon_status_poison_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "approved",
+      "name": "中毒",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#4E6C46",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_status_poison_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_status_poison_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_status_armor_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_armor_etching_b01.png",
+      "svg": "icons/icon_status_armor_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "approved",
+      "name": "护甲",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#59636B",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_status_armor_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_status_armor_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_status_vulnerable_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_vulnerable_etching_b01.png",
+      "svg": "icons/icon_status_vulnerable_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "approved",
+      "name": "易伤",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#805B72",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_status_vulnerable_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_status_vulnerable_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_status_weak_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_status_weak_etching_b01.png",
+      "svg": "icons/icon_status_weak_etching_b01.svg",
+      "width": 160,
+      "height": 160,
+      "status": "approved",
+      "name": "虚弱",
+      "display": [
+        40,
+        40
+      ],
+      "color": "#747044",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_status_weak_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_status_weak_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_intent_attack_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_intent_attack_etching_b01.png",
+      "svg": "icons/icon_intent_attack_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "name": "攻击意图",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#A44436",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_intent_attack_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_intent_attack_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_intent_charge_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_intent_charge_etching_b01.png",
+      "svg": "icons/icon_intent_charge_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "name": "蓄力意图",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#976A36",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_intent_charge_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_intent_charge_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_intent_defend_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_intent_defend_etching_b01.png",
+      "svg": "icons/icon_intent_defend_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "name": "防御意图",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#396577",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_intent_defend_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_intent_defend_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_intent_special_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_intent_special_etching_b01.png",
+      "svg": "icons/icon_intent_special_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "name": "特殊意图",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#705A80",
+      "alpha": "透明背景",
+      "variant": "通用问号：具体特殊效果必须配意图文字",
+      "publishedPng": "Assets/UI/icons/icon_intent_special_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_intent_special_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "icon_intent_berserk_etching_b01",
+      "category": "icons",
+      "png": "icons/icon_intent_berserk_etching_b01.png",
+      "svg": "icons/icon_intent_berserk_etching_b01.svg",
+      "width": 192,
+      "height": 192,
+      "status": "approved",
+      "name": "狂暴意图",
+      "display": [
+        48,
+        48
+      ],
+      "color": "#933E37",
+      "alpha": "透明背景",
+      "variant": "",
+      "publishedPng": "Assets/UI/icons/icon_intent_berserk_etching_b01.png",
+      "publishedSvg": "Assets/UI/icons/icon_intent_berserk_etching_b01.svg",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "B01 type, status and intent icon artwork"
+    },
+    {
+      "id": "card_attack_daji_etching_b01",
+      "category": "cards",
+      "name": "打击",
+      "png": "cards/card_attack_daji_etching_b01.png",
+      "status": "approved",
+      "alpha": "不透明骨白底，供卡牌插画窗使用",
+      "publishedPng": "Assets/UI/cards/card_attack_daji_etching_b01.png",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "Standalone opaque card illustration; not frame, back or effects"
+    },
+    {
+      "id": "card_skill_gedang_etching_b01",
+      "category": "cards",
+      "name": "格挡",
+      "png": "cards/card_skill_gedang_etching_b01.png",
+      "status": "approved",
+      "alpha": "不透明骨白底，供卡牌插画窗使用",
+      "publishedPng": "Assets/UI/cards/card_skill_gedang_etching_b01.png",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "Standalone opaque card illustration; not frame, back or effects"
+    },
+    {
+      "id": "card_attack_biji_etching_b01",
+      "category": "cards",
+      "name": "笔记",
+      "png": "cards/card_attack_biji_etching_b01.png",
+      "status": "approved",
+      "alpha": "不透明骨白底，供卡牌插画窗使用",
+      "publishedPng": "Assets/UI/cards/card_attack_biji_etching_b01.png",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "Standalone opaque card illustration; not frame, back or effects"
+    },
+    {
+      "id": "portrait_scholar_etching_b01",
+      "category": "portraits",
+      "name": "学者",
+      "png": "portraits/portrait_scholar_etching_b01.png",
+      "status": "approved",
+      "alpha": "透明背景",
+      "publishedPng": "Assets/UI/portraits/portrait_scholar_etching_b01.png",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "static illustration only"
+    },
+    {
+      "id": "enemy_chaos_slime_etching_b01",
+      "category": "enemies",
+      "name": "混乱史莱姆",
+      "png": "enemies/enemy_chaos_slime_etching_b01.png",
+      "status": "approved",
+      "alpha": "透明背景",
+      "publishedPng": "Assets/UI/enemies/enemy_chaos_slime_etching_b01.png",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "static illustration only"
+    },
+    {
+      "id": "enemy_training_dummy_etching_b01",
+      "category": "enemies",
+      "name": "训练假人",
+      "png": "enemies/enemy_training_dummy_etching_b01.png",
+      "status": "approved",
+      "alpha": "透明背景",
+      "publishedPng": "Assets/UI/enemies/enemy_training_dummy_etching_b01.png",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "static illustration only"
+    },
+    {
+      "id": "enemy_goblin_etching_b01",
+      "category": "enemies",
+      "name": "哥林布",
+      "png": "enemies/enemy_goblin_etching_b01.png",
+      "status": "approved",
+      "alpha": "透明背景",
+      "publishedPng": "Assets/UI/enemies/enemy_goblin_etching_b01.png",
+      "approvedOn": "2026-10-07",
+      "approvalScope": "static illustration only"
+    }
+  ]
+}

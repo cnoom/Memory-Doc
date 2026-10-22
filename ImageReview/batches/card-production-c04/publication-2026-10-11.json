@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-11",
+  "approvalQuote": "可以了",
+  "scope": "C04 attack frame and derived illustration mask only; C03 back remains pending.",
+  "files": [
+    {
+      "source": "ImageReview/cardframes/border_card_attack_ornate_c04.png",
+      "target": "Assets/UI/cardframes/border_card_attack_ornate_c04.png",
+      "sha256": "84bf6d388f3ccc0db650f238868b6db1a791de02e08f8c2a47c98570942fb14a"
+    },
+    {
+      "source": "ImageReview/batches/card-production-c04/illustration-window-mask.png",
+      "target": "Assets/UI/cardframes/border_card_attack_ornate_c04_window_mask.png",
+      "sha256": "24bb29f43722521c6d2a6b239966d12b8ef2c00d34264af7436429e54984cd5a"
+    }
+  ]
+}

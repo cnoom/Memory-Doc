@@ -1,0 +1,16 @@
+{
+  "id": "mockup_settings_j02",
+  "status": "approved-direction",
+  "productionEligible": false,
+  "role": "composite-ui-design-reference",
+  "sourceResolution": [
+    1672,
+    941
+  ],
+  "width": 1920,
+  "height": 1080,
+  "native1080p": false,
+  "sha256": "3ecbc514e5e653b85c974ef14f7e8d048d216f8d78ff41670a2177c84f725364",
+  "approvalQuote": "继续吧",
+  "approvedOn": "2026-10-14"
+}
