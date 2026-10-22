@@ -1,0 +1,1032 @@
+{
+  "scope": "当前已命名内容；不含UI组件和动效工作包，不作为总贴图数量",
+  "counts": {
+    "卡牌插画": 61,
+    "遗物": 19,
+    "敌人": 9,
+    "事件插画": 10,
+    "角色": 3
+  },
+  "items": [
+    {
+      "id": "CARD-001",
+      "category": "卡牌插画",
+      "name": "打击",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_daji_etching_b01.png",
+      "priority": "P0",
+      "note": "普通·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-002",
+      "category": "卡牌插画",
+      "name": "格挡",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_gedang_etching_b01.png",
+      "priority": "P0",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-003",
+      "category": "卡牌插画",
+      "name": "笔记",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_biji_etching_b01.png",
+      "priority": "P0",
+      "note": "普通·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-004",
+      "category": "卡牌插画",
+      "name": "读书笔记",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_dushubiji_illustration_v02.png",
+      "priority": "P0",
+      "note": "普通·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-005",
+      "category": "卡牌插画",
+      "name": "旁征博引",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_pangzhengboyin_etching_d03.png",
+      "priority": "P1",
+      "note": "普通·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-006",
+      "category": "卡牌插画",
+      "name": "引经据典",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_yinjingjudian_etching_d03.png",
+      "priority": "P1",
+      "note": "普通·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-007",
+      "category": "卡牌插画",
+      "name": "考据",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_kaoju_etching_d01.png",
+      "priority": "P1",
+      "note": "普通·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-008",
+      "category": "卡牌插画",
+      "name": "批注",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_pizhu_etching_d02.png",
+      "priority": "P1",
+      "note": "普通·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-009",
+      "category": "卡牌插画",
+      "name": "目录",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_mulu_etching_d02.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-010",
+      "category": "卡牌插画",
+      "name": "索引",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_suoyin_etching_d03.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-011",
+      "category": "卡牌插画",
+      "name": "摘要",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_zhaiyao_etching_d03.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-012",
+      "category": "卡牌插画",
+      "name": "速记",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_suji_etching_d02.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-013",
+      "category": "卡牌插画",
+      "name": "速读",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_sudu_etching_d01.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-014",
+      "category": "卡牌插画",
+      "name": "笔记本格挡",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_bijibengedang_etching_d03.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-015",
+      "category": "卡牌插画",
+      "name": "博闻强识",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_ability_bowenqiangshi_etching_d03.png",
+      "priority": "P1",
+      "note": "普通·能力；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-016",
+      "category": "卡牌插画",
+      "name": "过目不忘",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_ability_guomubuwang_etching_d03.png",
+      "priority": "P1",
+      "note": "普通·能力；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-017",
+      "category": "卡牌插画",
+      "name": "学术直觉",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_ability_xueshuzhijue_etching_d03.png",
+      "priority": "P1",
+      "note": "普通·能力；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-018",
+      "category": "卡牌插画",
+      "name": "全神贯注",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_ability_quanshenguanzhu_etching_d01.png",
+      "priority": "P1",
+      "note": "普通·能力；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-019",
+      "category": "卡牌插画",
+      "name": "论文",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_lunwen_etching_d04.png",
+      "priority": "P1",
+      "note": "罕见·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-020",
+      "category": "卡牌插画",
+      "name": "精准打击",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_jingzhundaji_etching_d04.png",
+      "priority": "P1",
+      "note": "罕见·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-021",
+      "category": "卡牌插画",
+      "name": "交叉引用",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_jiaochayinyong_etching_d04.png",
+      "priority": "P1",
+      "note": "罕见·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-022",
+      "category": "卡牌插画",
+      "name": "破绽分析",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_pozhanfenxi_etching_d04.png",
+      "priority": "P1",
+      "note": "罕见·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-023",
+      "category": "卡牌插画",
+      "name": "图书馆",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_tushuguan_etching_d04.png",
+      "priority": "P1",
+      "note": "罕见·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-024",
+      "category": "卡牌插画",
+      "name": "书签",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_shuqian_etching_d04.png",
+      "priority": "P1",
+      "note": "罕见·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-025",
+      "category": "卡牌插画",
+      "name": "温习",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_wenxi_etching_d04.png",
+      "priority": "P1",
+      "note": "罕见·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-026",
+      "category": "卡牌插画",
+      "name": "知识渊博",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_ability_zhishiyuanbo_etching_d04.png",
+      "priority": "P1",
+      "note": "罕见·能力；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-027",
+      "category": "卡牌插画",
+      "name": "举一反三",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_ability_juyifansan_etching_d04.png",
+      "priority": "P1",
+      "note": "罕见·能力；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-028",
+      "category": "卡牌插画",
+      "name": "百科全书",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_ability_baikequanshu_etching_d05.png",
+      "priority": "P1",
+      "note": "稀有·能力；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-029",
+      "category": "卡牌插画",
+      "name": "万有文库",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_wanyouwenku_etching_d05.png",
+      "priority": "P1",
+      "note": "稀有·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-030",
+      "category": "卡牌插画",
+      "name": "真理之眼",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_zhenlizhiyan_etching_d05.png",
+      "priority": "P1",
+      "note": "稀有·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-031",
+      "category": "卡牌插画",
+      "name": "时空回溯",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_shikonghuisu_etching_d05.png",
+      "priority": "P1",
+      "note": "稀有·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-032",
+      "category": "卡牌插画",
+      "name": "全知全能",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_ability_quanzhiquanneng_etching_d05.png",
+      "priority": "P1",
+      "note": "稀有·能力；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-033",
+      "category": "卡牌插画",
+      "name": "融会贯通",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_ronghuiguantong_etching_d05.png",
+      "priority": "P1",
+      "note": "稀有·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-034",
+      "category": "卡牌插画",
+      "name": "遗忘",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_curse_yiwang_etching_d06.png",
+      "priority": "P1",
+      "note": "诅咒；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-035",
+      "category": "卡牌插画",
+      "name": "混乱笔记",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_curse_hunluanbiji_etching_d06.png",
+      "priority": "P1",
+      "note": "诅咒；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-036",
+      "category": "卡牌插画",
+      "name": "拖沓",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_curse_tuota_etching_d06.png",
+      "priority": "P1",
+      "note": "诅咒；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-037",
+      "category": "卡牌插画",
+      "name": "误解",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_curse_wujie_etching_d06.png",
+      "priority": "P1",
+      "note": "诅咒；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-038",
+      "category": "卡牌插画",
+      "name": "火球术",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_huoqiushu_etching_d07.png",
+      "priority": "P1",
+      "note": "普通·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-039",
+      "category": "卡牌插画",
+      "name": "横扫",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_hengsao_etching_d07.png",
+      "priority": "P1",
+      "note": "普通·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-040",
+      "category": "卡牌插画",
+      "name": "烈焰斩",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_lieyanzhan_etching_d07.png",
+      "priority": "P1",
+      "note": "普通·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-041",
+      "category": "卡牌插画",
+      "name": "淬毒刃",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_cuiduren_etching_d07.png",
+      "priority": "P1",
+      "note": "普通·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-042",
+      "category": "卡牌插画",
+      "name": "破甲斩",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_pojiazhan_etching_d09.png",
+      "priority": "P1",
+      "note": "罕见·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-043",
+      "category": "卡牌插画",
+      "name": "致残击",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_zhicanji_etching_d09.png",
+      "priority": "P1",
+      "note": "罕见·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-044",
+      "category": "卡牌插画",
+      "name": "连锁雷",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_liansuolei_etching_d09.png",
+      "priority": "P1",
+      "note": "罕见·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-045",
+      "category": "卡牌插画",
+      "name": "绝响",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_attack_juexiang_etching_d09.png",
+      "priority": "P1",
+      "note": "罕见·攻击；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-046",
+      "category": "卡牌插画",
+      "name": "侦察兵",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_zhenchabing_etching_d08.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-047",
+      "category": "卡牌插画",
+      "name": "石肤",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_shifu_etching_d08.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-048",
+      "category": "卡牌插画",
+      "name": "甲胄",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_jiazhou_etching_d08.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-049",
+      "category": "卡牌插画",
+      "name": "铁壁",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_tiebi_etching_d09.png",
+      "priority": "P1",
+      "note": "罕见·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-050",
+      "category": "卡牌插画",
+      "name": "消散风",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_xiaosanfeng_etching_d08.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-051",
+      "category": "卡牌插画",
+      "name": "清理",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_qingli_etching_d09.png",
+      "priority": "P1",
+      "note": "罕见·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-052",
+      "category": "卡牌插画",
+      "name": "生命泉",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_shengmingquan_etching_d08.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-053",
+      "category": "卡牌插画",
+      "name": "绷带",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_bengdai_etching_d09.png",
+      "priority": "P1",
+      "note": "罕见·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-054",
+      "category": "卡牌插画",
+      "name": "回声",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_huisheng_etching_d08.png",
+      "priority": "P1",
+      "note": "普通·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-055",
+      "category": "卡牌插画",
+      "name": "魔力共鸣",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_skill_moligongming_etching_d10.png",
+      "priority": "P1",
+      "note": "稀有·技能；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-056",
+      "category": "卡牌插画",
+      "name": "守护结界",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_ability_shouhujiejie_etching_d09.png",
+      "priority": "P1",
+      "note": "罕见·能力；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-057",
+      "category": "卡牌插画",
+      "name": "余烬",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_ability_yujin_etching_d09.png",
+      "priority": "P1",
+      "note": "罕见·能力；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-058",
+      "category": "卡牌插画",
+      "name": "风眼",
+      "source": "docs/design/02-卡牌与词条系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_ability_fengyan_etching_d09.png",
+      "priority": "P1",
+      "note": "罕见·能力；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-059",
+      "category": "卡牌插画",
+      "name": "腐化种子",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_curse_fuhuazhongzi_etching_d10.png",
+      "priority": "P1",
+      "note": "诅咒；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-060",
+      "category": "卡牌插画",
+      "name": "记忆尘埃",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_curse_jiyichenai_etching_d10.png",
+      "priority": "P1",
+      "note": "诅咒；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "CARD-061",
+      "category": "卡牌插画",
+      "name": "虚空裂痕",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/cards/card_curse_xukongliehen_etching_d10.png",
+      "priority": "P1",
+      "note": "诅咒；同名复用，升级通过文字/标记表达，不默认新增插画"
+    },
+    {
+      "id": "RELIC-01",
+      "category": "遗物",
+      "name": "记忆水晶",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_memory_crystal_etching_e01.png",
+      "priority": "P0",
+      "note": "普通；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-02",
+      "category": "遗物",
+      "name": "共鸣石",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_resonance_stone_etching_e01.png",
+      "priority": "P0",
+      "note": "普通；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-03",
+      "category": "遗物",
+      "name": "双生骰",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_twin_dice_etching_e02.png",
+      "priority": "P1",
+      "note": "普通；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-04",
+      "category": "遗物",
+      "name": "笔记本",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_notebook_etching_e02.png",
+      "priority": "P1",
+      "note": "普通；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-05",
+      "category": "遗物",
+      "name": "急救包",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_first_aid_kit_etching_e01.png",
+      "priority": "P0",
+      "note": "普通；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-06",
+      "category": "遗物",
+      "name": "木盾",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_wood_shield_etching_e02.png",
+      "priority": "P1",
+      "note": "普通；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-07",
+      "category": "遗物",
+      "name": "思维导图",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_mind_map_etching_e02.png",
+      "priority": "P1",
+      "note": "罕见；图标+详情复用同主体；07文档v1.31暂缓投放，美术完成不改变游戏投放状态"
+    },
+    {
+      "id": "RELIC-08",
+      "category": "遗物",
+      "name": "连锁核心",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_chain_core_etching_e02.png",
+      "priority": "P1",
+      "note": "罕见；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-09",
+      "category": "遗物",
+      "name": "蓄能水晶",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_charge_crystal_etching_e02.png",
+      "priority": "P1",
+      "note": "罕见；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-10",
+      "category": "遗物",
+      "name": "吸血鬼之牙",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_vampire_fang_etching_e02.png",
+      "priority": "P1",
+      "note": "罕见；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-11",
+      "category": "遗物",
+      "name": "能量护盾",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_energy_shield_etching_e02.png",
+      "priority": "P1",
+      "note": "罕见；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-12",
+      "category": "遗物",
+      "name": "减速印记",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_slow_seal_etching_e01.png",
+      "priority": "P0",
+      "note": "罕见；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-13",
+      "category": "遗物",
+      "name": "稳定锚",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_stable_anchor_etching_e02.png",
+      "priority": "P1",
+      "note": "稀有；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-14",
+      "category": "遗物",
+      "name": "双生符",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_twin_talisman_etching_e02.png",
+      "priority": "P1",
+      "note": "稀有；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-15",
+      "category": "遗物",
+      "name": "镜像回声",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_mirror_echo_etching_e02.png",
+      "priority": "P1",
+      "note": "稀有；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-16",
+      "category": "遗物",
+      "name": "学者徽章",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_scholar_badge_etching_e02.png",
+      "priority": "P1",
+      "note": "稀有；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-17",
+      "category": "遗物",
+      "name": "全知之眼",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_omniscient_eye_etching_e02.png",
+      "priority": "P1",
+      "note": "Boss；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-18",
+      "category": "遗物",
+      "name": "混沌核心",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_chaos_core_etching_e02.png",
+      "priority": "P1",
+      "note": "Boss；图标+详情复用同主体"
+    },
+    {
+      "id": "RELIC-19",
+      "category": "遗物",
+      "name": "记忆王冠",
+      "source": "docs/design/07-遗物设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/relics/relic_memory_crown_etching_e02.png",
+      "priority": "P1",
+      "note": "Boss；图标+详情复用同主体"
+    },
+    {
+      "id": "ENEMY-01",
+      "category": "敌人",
+      "name": "训练假人",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/enemies/enemy_training_dummy_etching_b01.png",
+      "priority": "P0",
+      "note": "静态主体之外需待机/攻击/受击/死亡；Boss另需三阶段表现，先拆层复用"
+    },
+    {
+      "id": "ENEMY-02",
+      "category": "敌人",
+      "name": "哥林布",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/enemies/enemy_goblin_etching_b01.png",
+      "priority": "P0",
+      "note": "静态主体之外需待机/攻击/受击/死亡；Boss另需三阶段表现，先拆层复用"
+    },
+    {
+      "id": "ENEMY-03",
+      "category": "敌人",
+      "name": "混乱史莱姆",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/enemies/enemy_chaos_slime_etching_b01.png",
+      "priority": "P0",
+      "note": "静态主体之外需待机/攻击/受击/死亡；Boss另需三阶段表现，先拆层复用"
+    },
+    {
+      "id": "ENEMY-04",
+      "category": "敌人",
+      "name": "蛮族战士",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/enemies/enemy_barbarian_etching_f01.png",
+      "priority": "P1",
+      "note": "静态主体之外需待机/攻击/受击/死亡；Boss另需三阶段表现，先拆层复用"
+    },
+    {
+      "id": "ENEMY-05",
+      "category": "敌人",
+      "name": "腐化花蕾",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/enemies/enemy_corrupted_bud_etching_f01.png",
+      "priority": "P1",
+      "note": "静态主体之外需待机/攻击/受击/死亡；Boss另需三阶段表现，先拆层复用"
+    },
+    {
+      "id": "ENEMY-06",
+      "category": "敌人",
+      "name": "幻影",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/enemies/enemy_phantom_etching_f01.png",
+      "priority": "P1",
+      "note": "静态主体之外需待机/攻击/受击/死亡；Boss另需三阶段表现，先拆层复用"
+    },
+    {
+      "id": "ENEMY-07",
+      "category": "敌人",
+      "name": "双刃执行者",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/enemies/enemy_twinblade_executor_etching_f01.png",
+      "priority": "P1",
+      "note": "静态主体之外需待机/攻击/受击/死亡；Boss另需三阶段表现，先拆层复用"
+    },
+    {
+      "id": "ENEMY-08",
+      "category": "敌人",
+      "name": "记忆窃贼",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/enemies/enemy_memory_thief_etching_f01.png",
+      "priority": "P1",
+      "note": "静态主体之外需待机/攻击/受击/死亡；Boss另需三阶段表现，先拆层复用"
+    },
+    {
+      "id": "ENEMY-09",
+      "category": "敌人",
+      "name": "记忆吞噬者",
+      "source": "docs/design/08-原型敌人设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/enemies/enemy_memory_devourer_etching_f01.png",
+      "priority": "P1",
+      "note": "静态主体之外需待机/攻击/受击/死亡；Boss另需三阶段表现，先拆层复用"
+    },
+    {
+      "id": "E01",
+      "category": "事件插画",
+      "name": "古老日记",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/illustrations/ill_event_diary_etching_g01.png",
+      "priority": "P1",
+      "note": "独立主体插画+通用手记事件模板；标题仍写8个但实际E01—E10"
+    },
+    {
+      "id": "E02",
+      "category": "事件插画",
+      "name": "遗忘的祭坛",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/illustrations/ill_event_forgotten_altar_etching_g01.png",
+      "priority": "P1",
+      "note": "独立主体插画+通用手记事件模板；标题仍写8个但实际E01—E10"
+    },
+    {
+      "id": "E03",
+      "category": "事件插画",
+      "name": "记忆商人的遗骸",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/illustrations/ill_event_merchant_remains_etching_g01.png",
+      "priority": "P1",
+      "note": "独立主体插画+通用手记事件模板；标题仍写8个但实际E01—E10"
+    },
+    {
+      "id": "E04",
+      "category": "事件插画",
+      "name": "破碎的宝箱",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/illustrations/ill_event_broken_chest_etching_g01.png",
+      "priority": "P1",
+      "note": "独立主体插画+通用手记事件模板；标题仍写8个但实际E01—E10"
+    },
+    {
+      "id": "E05",
+      "category": "事件插画",
+      "name": "幽灵图书馆",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/illustrations/ill_event_ghost_library_etching_g01.png",
+      "priority": "P1",
+      "note": "独立主体插画+通用手记事件模板；标题仍写8个但实际E01—E10"
+    },
+    {
+      "id": "E06",
+      "category": "事件插画",
+      "name": "镜之回廊",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/illustrations/ill_event_mirror_corridor_etching_g01.png",
+      "priority": "P1",
+      "note": "独立主体插画+通用手记事件模板；标题仍写8个但实际E01—E10"
+    },
+    {
+      "id": "E07",
+      "category": "事件插画",
+      "name": "迷路的学徒",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/illustrations/ill_event_lost_apprentice_etching_g01.png",
+      "priority": "P1",
+      "note": "独立主体插画+通用手记事件模板；标题仍写8个但实际E01—E10"
+    },
+    {
+      "id": "E08",
+      "category": "事件插画",
+      "name": "低语的喷泉",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/illustrations/ill_event_whispering_fountain_etching_g01.png",
+      "priority": "P1",
+      "note": "独立主体插画+通用手记事件模板；标题仍写8个但实际E01—E10"
+    },
+    {
+      "id": "E09",
+      "category": "事件插画",
+      "name": "流浪商队的谢礼",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/illustrations/ill_event_caravan_gift_etching_g01.png",
+      "priority": "P1",
+      "note": "独立主体插画+通用手记事件模板；标题仍写8个但实际E01—E10"
+    },
+    {
+      "id": "E10",
+      "category": "事件插画",
+      "name": "封印的陈列柜",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "已收录",
+      "existing": "Assets/UI/illustrations/ill_event_sealed_display_etching_g01.png",
+      "priority": "P1",
+      "note": "独立主体插画+通用手记事件模板；标题仍写8个但实际E01—E10"
+    },
+    {
+      "id": "CHAR-01",
+      "category": "角色",
+      "name": "学者",
+      "source": "docs/design/06-学者角色卡牌设计.md",
+      "status": "已收录",
+      "existing": "Assets/UI/portraits/portrait_scholar_etching_b01.png",
+      "priority": "P0",
+      "note": "2026-10-07用户确认独立静态立绘；不等于已完成全身或动作资源"
+    },
+    {
+      "id": "CHAR-02",
+      "category": "角色",
+      "name": "狂战士",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "范围待定",
+      "existing": "",
+      "priority": "P2",
+      "note": "角色卡组详细设计未完成，先轮廓配色储备"
+    },
+    {
+      "id": "CHAR-03",
+      "category": "角色",
+      "name": "术士",
+      "source": "docs/design/05-Meta系统.md",
+      "status": "范围待定",
+      "existing": "",
+      "priority": "P2",
+      "note": "角色卡组详细设计未完成，先轮廓配色储备"
+    }
+  ]
+}
