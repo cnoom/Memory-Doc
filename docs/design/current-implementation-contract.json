@@ -1,0 +1,2400 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-06",
+  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。",
+  "cards": [
+    {
+      "name": "打击",
+      "pool": "baseline",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "格挡",
+      "pool": "baseline",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "火球术",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "横扫",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "damage",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "烈焰斩",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        },
+        {
+          "op": "applyStatus",
+          "status": "Burn",
+          "amount": 2
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "applyStatus",
+              "status": "Burn",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "淬毒刃",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 3
+        },
+        {
+          "op": "applyStatus",
+          "status": "Poison",
+          "amount": 3
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "applyStatus",
+              "status": "Poison",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "破甲斩",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        },
+        {
+          "op": "applyStatus",
+          "status": "Vulnerable",
+          "amount": 2
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "applyStatus",
+              "status": "Vulnerable",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "致残击",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        },
+        {
+          "op": "applyStatus",
+          "status": "Weak",
+          "amount": 2
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "applyStatus",
+              "status": "Weak",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "连锁雷",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 3
+        },
+        {
+          "op": "flipAdjacent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "绝响",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Leave",
+          "effects": [
+            {
+              "op": "damage",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "侦察兵",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 3
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "flipAdjacent",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "石肤",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "gainBlock",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "甲胄",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "FlipBack",
+          "effects": [
+            {
+              "op": "gainBlock",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "铁壁",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 6
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "gainBlock",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "消散风",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "discard",
+          "selector": "AdjacentRandom",
+          "amount": 1
+        },
+        {
+          "op": "gainBlock",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "清理",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "discard",
+          "selector": "Explicit",
+          "amount": 1
+        },
+        {
+          "op": "drawToTable",
+          "amount": 1
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Discard",
+          "effects": [
+            {
+              "op": "drawToTable",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "生命泉",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "heal",
+          "amount": 4
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "heal",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "绷带",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "heal",
+          "amount": 3
+        },
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Leave",
+          "effects": [
+            {
+              "op": "heal",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "回声",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "flipAdjacent",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "魔力共鸣",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Epic",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        },
+        {
+          "op": "drawToTable",
+          "amount": 1
+        }
+      ],
+      "entries": [
+        {
+          "entry": "match",
+          "keyword": "Resonance"
+        },
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "守护结界",
+      "pool": "commonPool",
+      "type": "Ability",
+      "rarity": "Rare",
+      "aura": "SkillEffectUp"
+    },
+    {
+      "name": "余烬",
+      "pool": "commonPool",
+      "type": "Ability",
+      "rarity": "Rare",
+      "aura": "BurnApplyUp"
+    },
+    {
+      "name": "风眼",
+      "pool": "commonPool",
+      "type": "Ability",
+      "rarity": "Rare",
+      "aura": "DiscardExtra"
+    },
+    {
+      "name": "笔记",
+      "pool": "scholarStarter",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ],
+      "entries": [
+        {
+          "entry": "match",
+          "keyword": "Resonance"
+        }
+      ]
+    },
+    {
+      "name": "读书笔记",
+      "pool": "scholarStarter",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 8
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "mark",
+              "selector": "AdjacentRandom",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "entry": "match",
+          "keyword": "Resonance"
+        }
+      ]
+    },
+    {
+      "name": "旁征博引",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5,
+          "condition": "IfRevealedTwoThisTurn",
+          "amount2": 9
+        }
+      ]
+    },
+    {
+      "name": "引经据典",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "damage",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "考据",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 7
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Leave",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "TableRandom",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "批注",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "mark",
+              "selector": "TableRandom",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "目录",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "TableAll",
+              "amount": 0,
+              "durationSec": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "索引",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "mark",
+              "selector": "TableRandom",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "摘要",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 3
+        },
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "速记",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "lock",
+              "selector": "FaceUpEarliest"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "速读",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "AdjacentRandom",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "笔记本格挡",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "博闻强识",
+      "pool": "scholarReward",
+      "type": "Ability",
+      "rarity": "Common",
+      "aura": "AttackDamageUp"
+    },
+    {
+      "name": "过目不忘",
+      "pool": "scholarReward",
+      "type": "Ability",
+      "rarity": "Common",
+      "aura": "OutlineTracked"
+    },
+    {
+      "name": "学术直觉",
+      "pool": "scholarReward",
+      "type": "Ability",
+      "rarity": "Common",
+      "aura": "RevealOnPair"
+    },
+    {
+      "name": "全神贯注",
+      "pool": "scholarReward",
+      "type": "Ability",
+      "rarity": "Common",
+      "aura": "FocusPerFlip"
+    },
+    {
+      "name": "论文",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4,
+          "condition": "PerDistinctRevealedName",
+          "amount2": 2,
+          "amount3": 10
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "TableRandom",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "精准打击",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 10,
+          "condition": "IfPartnerMarked",
+          "amount2": 5
+        }
+      ]
+    },
+    {
+      "name": "交叉引用",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 7
+        }
+      ],
+      "entries": [
+        {
+          "entry": "match",
+          "keyword": "Resonance"
+        },
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "AdjacentRandom",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "破绽分析",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6,
+          "condition": "IfEnemyVulnerable",
+          "amount2": 12
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "applyStatus",
+              "status": "Vulnerable",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "图书馆",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 8
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "TableAll",
+              "amount": 0,
+              "durationSec": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "书签",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "lock",
+              "selector": "FaceUpAll"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "温习",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "returnFromDiscard",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "知识渊博",
+      "pool": "scholarReward",
+      "type": "Ability",
+      "rarity": "Rare",
+      "aura": "RevealAllOnFlip"
+    },
+    {
+      "name": "举一反三",
+      "pool": "scholarReward",
+      "type": "Ability",
+      "rarity": "Rare",
+      "aura": "BlockOnPair"
+    },
+    {
+      "name": "百科全书",
+      "pool": "scholarReward",
+      "type": "Ability",
+      "rarity": "Epic",
+      "aura": "FaceUpLimitUp"
+    },
+    {
+      "name": "万有文库",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Epic",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        },
+        {
+          "op": "gainBlock",
+          "amount": 6
+        }
+      ],
+      "entries": [
+        {
+          "entry": "match",
+          "keyword": "Resonance"
+        },
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "mark",
+              "selector": "TableAll",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "真理之眼",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Epic",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5,
+          "condition": "PerPairCount",
+          "amount2": 2
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "TableAll",
+              "amount": 0,
+              "durationSec": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "时空回溯",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Epic",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "gauge",
+              "amount": -3
+            }
+          ]
+        },
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "全知全能",
+      "pool": "scholarReward",
+      "type": "Ability",
+      "rarity": "Epic",
+      "aura": "GaugeDownOnPair"
+    },
+    {
+      "name": "融会贯通",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Epic",
+      "effects": [
+        {
+          "op": "copyEffect"
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "TableRandom",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "静观",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "TableRandom",
+              "amount": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "拈页",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "AdjacentRandom",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "笔谏",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4,
+          "condition": "IfEnemyVulnerable",
+          "amount2": 6
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "applyStatus",
+              "status": "Vulnerable",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "一览",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Common",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "TableRandom",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "留白",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 8
+        }
+      ],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Stubborn",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "回锋",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Leave",
+          "effects": [
+            {
+              "op": "returnFromDiscard",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "顿悟",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5,
+          "condition": "IfRevealedTwoThisTurn",
+          "amount2": 8
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "reveal",
+              "selector": "TableRandom",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "掷地有声",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 7
+        },
+        {
+          "op": "gainBlock",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "name": "书海翻澜",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Epic",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        },
+        {
+          "op": "flipAdjacent",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "走笔疾书",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Epic",
+      "effects": [
+        {
+          "op": "drawToTable",
+          "amount": 4
+        }
+      ],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "澄心静虑",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Epic",
+      "effects": [
+        {
+          "op": "drawToTable",
+          "amount": 3
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "gainBlock",
+              "amount": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "腐化种子",
+      "pool": "virus",
+      "type": "Curse",
+      "rarity": "Common",
+      "curseOrigin": "EnemyDrawPile",
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "damage",
+              "amount": 3,
+              "target": "player"
+            },
+            {
+              "op": "removeSelf"
+            }
+          ]
+        },
+        {
+          "entry": "modifier",
+          "kind": "Remove"
+        }
+      ]
+    },
+    {
+      "name": "记忆尘埃",
+      "pool": "virus",
+      "type": "Curse",
+      "rarity": "Common",
+      "curseOrigin": "EnemyDrawPile",
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "gauge",
+              "amount": 2
+            },
+            {
+              "op": "removeSelf"
+            }
+          ]
+        },
+        {
+          "entry": "modifier",
+          "kind": "Remove"
+        }
+      ]
+    },
+    {
+      "name": "虚空裂痕",
+      "pool": "virus",
+      "type": "Curse",
+      "rarity": "Common",
+      "curseOrigin": "EnemyDrawPile",
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "Reveal",
+          "effects": [
+            {
+              "op": "damage",
+              "amount": 5,
+              "target": "player"
+            },
+            {
+              "op": "swapRandom"
+            },
+            {
+              "op": "removeSelf"
+            }
+          ]
+        },
+        {
+          "entry": "modifier",
+          "kind": "Remove"
+        }
+      ]
+    }
+  ],
+  "curses": [
+    {
+      "name": "遗忘",
+      "effects": [
+        {
+          "op": "loseHp",
+          "amount": 2
+        },
+        {
+          "op": "removeSelf"
+        }
+      ]
+    },
+    {
+      "name": "混乱笔记",
+      "effects": [
+        {
+          "op": "swapRandom"
+        },
+        {
+          "op": "removeSelf"
+        }
+      ]
+    },
+    {
+      "name": "拖沓",
+      "effects": [
+        {
+          "op": "gauge",
+          "amount": 2
+        },
+        {
+          "op": "removeSelf"
+        }
+      ]
+    },
+    {
+      "name": "误解",
+      "effects": [
+        {
+          "op": "loseHp",
+          "amount": 1
+        },
+        {
+          "op": "applyStatus",
+          "status": "armor",
+          "amount": 2,
+          "target": "enemy"
+        },
+        {
+          "op": "removeSelf"
+        }
+      ]
+    }
+  ],
+  "enemies": [
+    {
+      "id": "goblin",
+      "name": "哥林布",
+      "maxHp": 38,
+      "gaugeThreshold": 7,
+      "tier": "normal",
+      "homeChapter": 1,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "attack",
+          "damage": 8
+        }
+      ]
+    },
+    {
+      "id": "chaos-slime",
+      "name": "混乱史莱姆",
+      "maxHp": 35,
+      "gaugeThreshold": 8,
+      "tier": "normal",
+      "homeChapter": 1,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 6
+        },
+        {
+          "type": "special",
+          "abilities": [
+            {
+              "kind": "chaos"
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "damage": 6
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "chaos"
+        }
+      ]
+    },
+    {
+      "id": "barbarian",
+      "name": "蛮族战士",
+      "maxHp": 45,
+      "gaugeThreshold": 5,
+      "tier": "normal",
+      "homeChapter": 1,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 9
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "impatient"
+        }
+      ]
+    },
+    {
+      "id": "corrupted-bud",
+      "name": "腐化花蕾",
+      "maxHp": 40,
+      "gaugeThreshold": 8,
+      "tier": "normal",
+      "homeChapter": 1,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "special",
+          "abilities": [
+            {
+              "kind": "pollute",
+              "cards": [
+                "腐化种子"
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "pollute",
+          "cards": [
+            "腐化种子"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phantom",
+      "name": "幻影",
+      "maxHp": 42,
+      "gaugeThreshold": 8,
+      "tier": "normal",
+      "homeChapter": 1,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 7
+        },
+        {
+          "type": "special",
+          "abilities": [
+            {
+              "kind": "seal"
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "damage": 7
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "seal"
+        }
+      ]
+    },
+    {
+      "id": "ink-spirit",
+      "name": "乱序墨灵",
+      "maxHp": 50,
+      "gaugeThreshold": 8,
+      "tier": "normal",
+      "homeChapter": 2,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 9
+        },
+        {
+          "type": "special",
+          "abilities": [
+            {
+              "kind": "shuffle"
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "damage": 9
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "shuffle"
+        }
+      ]
+    },
+    {
+      "id": "frost-archivist",
+      "name": "霜封典官",
+      "maxHp": 54,
+      "gaugeThreshold": 7,
+      "tier": "normal",
+      "homeChapter": 2,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 10
+        },
+        {
+          "type": "special",
+          "abilities": [
+            {
+              "kind": "freeze"
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "damage": 10
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "freeze"
+        }
+      ]
+    },
+    {
+      "id": "memory-echo",
+      "name": "蚀忆回响",
+      "maxHp": 72,
+      "gaugeThreshold": 8,
+      "tier": "normal",
+      "homeChapter": 3,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 12
+        },
+        {
+          "type": "special",
+          "abilities": [
+            {
+              "kind": "proliferate"
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "damage": 12
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "proliferate"
+        }
+      ]
+    },
+    {
+      "id": "faded-zealot",
+      "name": "褪色狂徒",
+      "maxHp": 78,
+      "gaugeThreshold": 9,
+      "tier": "normal",
+      "homeChapter": 3,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 13
+        },
+        {
+          "type": "attack",
+          "damage": 13
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "berserk"
+        }
+      ]
+    },
+    {
+      "id": "twinblade-executor",
+      "name": "双刃执行者",
+      "maxHp": 85,
+      "gaugeThreshold": 10,
+      "tier": "elite",
+      "homeChapter": 1,
+      "intentCycle": [
+        {
+          "type": "charge"
+        },
+        {
+          "type": "attack",
+          "damage": 10,
+          "strikes": 2
+        },
+        {
+          "type": "attack",
+          "damage": 10,
+          "strikes": 2
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "comboStrike"
+        },
+        {
+          "kind": "heavyStrike"
+        }
+      ]
+    },
+    {
+      "id": "memory-thief",
+      "name": "记忆窃贼",
+      "maxHp": 75,
+      "gaugeThreshold": 8,
+      "tier": "elite",
+      "homeChapter": 1,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "special",
+          "abilities": [
+            {
+              "kind": "transpose"
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "damage": 8
+        },
+        {
+          "type": "special",
+          "abilities": [
+            {
+              "kind": "pollute",
+              "cards": [
+                "腐化种子",
+                "记忆尘埃"
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "transpose"
+        },
+        {
+          "kind": "pollute",
+          "cards": [
+            "腐化种子",
+            "记忆尘埃"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sunken-steward",
+      "name": "沉没总管",
+      "maxHp": 112,
+      "gaugeThreshold": 9,
+      "tier": "elite",
+      "homeChapter": 2,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 13
+        },
+        {
+          "type": "special",
+          "abilities": [
+            {
+              "kind": "shuffle"
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "damage": 13
+        },
+        {
+          "type": "special",
+          "abilities": [
+            {
+              "kind": "pollute",
+              "cards": [
+                "腐化种子"
+              ]
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "shuffle"
+        },
+        {
+          "kind": "pollute",
+          "cards": [
+            "腐化种子"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hollow-crown-guard",
+      "name": "空冕卫士",
+      "maxHp": 160,
+      "gaugeThreshold": 9,
+      "tier": "elite",
+      "homeChapter": 3,
+      "intentCycle": [
+        {
+          "type": "attack",
+          "damage": 16
+        },
+        {
+          "type": "special",
+          "abilities": [
+            {
+              "kind": "seal"
+            }
+          ]
+        },
+        {
+          "type": "attack",
+          "damage": 16
+        }
+      ],
+      "abilities": [
+        {
+          "kind": "berserk"
+        },
+        {
+          "kind": "seal"
+        }
+      ]
+    },
+    {
+      "id": "memory-devourer",
+      "name": "记忆吞噬者",
+      "maxHp": 180,
+      "tier": "boss",
+      "homeChapter": 1,
+      "phaseSwitchHp": [
+        108,
+        54
+      ],
+      "phases": [
+        {
+          "gaugeThreshold": 8,
+          "intentCycle": [
+            {
+              "type": "attack",
+              "damage": 12
+            },
+            {
+              "type": "special",
+              "abilities": [
+                {
+                  "kind": "chaos"
+                }
+              ]
+            },
+            {
+              "type": "attack",
+              "damage": 12
+            }
+          ],
+          "abilities": [
+            {
+              "kind": "chaos"
+            }
+          ]
+        },
+        {
+          "gaugeThreshold": 7,
+          "intentCycle": [
+            {
+              "type": "attack",
+              "damage": 14
+            },
+            {
+              "type": "special",
+              "abilities": [
+                {
+                  "kind": "chaos"
+                },
+                {
+                  "kind": "seal"
+                }
+              ]
+            },
+            {
+              "type": "attack",
+              "damage": 14
+            }
+          ],
+          "abilities": [
+            {
+              "kind": "chaos"
+            },
+            {
+              "kind": "seal"
+            }
+          ]
+        },
+        {
+          "gaugeThreshold": 6,
+          "intentCycle": [
+            {
+              "type": "attack",
+              "damage": 16
+            },
+            {
+              "type": "special",
+              "abilities": [
+                {
+                  "kind": "chaos"
+                },
+                {
+                  "kind": "seal"
+                },
+                {
+                  "kind": "pollute",
+                  "cards": [
+                    "虚空裂痕"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "attack",
+              "damage": 16
+            }
+          ],
+          "abilities": [
+            {
+              "kind": "chaos"
+            },
+            {
+              "kind": "seal"
+            },
+            {
+              "kind": "pollute",
+              "cards": [
+                "虚空裂痕"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sunken-warden",
+      "name": "沉沦典狱",
+      "maxHp": 240,
+      "tier": "boss",
+      "homeChapter": 2,
+      "phaseSwitchHp": [
+        144,
+        72
+      ],
+      "phases": [
+        {
+          "gaugeThreshold": 8,
+          "intentCycle": [
+            {
+              "type": "attack",
+              "damage": 14
+            },
+            {
+              "type": "special",
+              "abilities": [
+                {
+                  "kind": "shuffle"
+                }
+              ]
+            },
+            {
+              "type": "attack",
+              "damage": 14
+            }
+          ],
+          "abilities": [
+            {
+              "kind": "shuffle"
+            }
+          ]
+        },
+        {
+          "gaugeThreshold": 7,
+          "intentCycle": [
+            {
+              "type": "attack",
+              "damage": 17
+            },
+            {
+              "type": "special",
+              "abilities": [
+                {
+                  "kind": "shuffle"
+                },
+                {
+                  "kind": "freeze"
+                }
+              ]
+            },
+            {
+              "type": "attack",
+              "damage": 17
+            }
+          ],
+          "abilities": [
+            {
+              "kind": "shuffle"
+            },
+            {
+              "kind": "freeze"
+            }
+          ]
+        },
+        {
+          "gaugeThreshold": 6,
+          "intentCycle": [
+            {
+              "type": "attack",
+              "damage": 20
+            },
+            {
+              "type": "special",
+              "abilities": [
+                {
+                  "kind": "shuffle"
+                },
+                {
+                  "kind": "freeze"
+                },
+                {
+                  "kind": "pollute",
+                  "cards": [
+                    "腐化种子"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "attack",
+              "damage": 20
+            }
+          ],
+          "abilities": [
+            {
+              "kind": "shuffle"
+            },
+            {
+              "kind": "freeze"
+            },
+            {
+              "kind": "pollute",
+              "cards": [
+                "腐化种子"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forgotten-monarch",
+      "name": "遗忘君王",
+      "maxHp": 320,
+      "tier": "boss",
+      "homeChapter": 3,
+      "phaseSwitchHp": [
+        192,
+        96
+      ],
+      "phases": [
+        {
+          "gaugeThreshold": 8,
+          "intentCycle": [
+            {
+              "type": "attack",
+              "damage": 18
+            },
+            {
+              "type": "special",
+              "abilities": [
+                {
+                  "kind": "proliferate"
+                }
+              ]
+            },
+            {
+              "type": "attack",
+              "damage": 18
+            }
+          ],
+          "abilities": [
+            {
+              "kind": "proliferate"
+            }
+          ]
+        },
+        {
+          "gaugeThreshold": 7,
+          "intentCycle": [
+            {
+              "type": "attack",
+              "damage": 21
+            },
+            {
+              "type": "special",
+              "abilities": [
+                {
+                  "kind": "proliferate"
+                }
+              ]
+            },
+            {
+              "type": "attack",
+              "damage": 21
+            }
+          ],
+          "abilities": [
+            {
+              "kind": "proliferate"
+            },
+            {
+              "kind": "berserk"
+            }
+          ]
+        },
+        {
+          "gaugeThreshold": 6,
+          "intentCycle": [
+            {
+              "type": "attack",
+              "damage": 24
+            },
+            {
+              "type": "special",
+              "abilities": [
+                {
+                  "kind": "proliferate"
+                },
+                {
+                  "kind": "pollute",
+                  "cards": [
+                    "虚空裂痕"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "attack",
+              "damage": 24
+            }
+          ],
+          "abilities": [
+            {
+              "kind": "proliferate"
+            },
+            {
+              "kind": "berserk"
+            },
+            {
+              "kind": "pollute",
+              "cards": [
+                "虚空裂痕"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "number": 1,
+      "name": "记忆回廊",
+      "contentLayers": 15,
+      "eliteCount": 3,
+      "eliteLayers": [
+        6,
+        10,
+        13
+      ],
+      "campfireLayers": [
+        8,
+        15
+      ],
+      "teachingAnchor": true
+    },
+    {
+      "number": 2,
+      "name": "沉没书库",
+      "contentLayers": 15,
+      "eliteCount": 3,
+      "eliteLayers": [
+        5,
+        9,
+        13
+      ],
+      "campfireLayers": [
+        8,
+        15
+      ],
+      "teachingAnchor": false
+    },
+    {
+      "number": 3,
+      "name": "遗忘王座",
+      "contentLayers": 15,
+      "eliteCount": 4,
+      "eliteLayers": [
+        5,
+        8,
+        11,
+        14
+      ],
+      "campfireLayers": [
+        8,
+        15
+      ],
+      "teachingAnchor": false
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "古老日记"
+    },
+    {
+      "id": 2,
+      "name": "遗忘的祭坛"
+    },
+    {
+      "id": 3,
+      "name": "记忆商人的遗骸"
+    },
+    {
+      "id": 4,
+      "name": "破碎的宝箱"
+    },
+    {
+      "id": 5,
+      "name": "幽灵图书馆"
+    },
+    {
+      "id": 6,
+      "name": "镜之回廊"
+    },
+    {
+      "id": 7,
+      "name": "迷路的学徒"
+    },
+    {
+      "id": 8,
+      "name": "低语的喷泉"
+    },
+    {
+      "id": 9,
+      "name": "流浪商队的谢礼"
+    },
+    {
+      "id": 10,
+      "name": "封印的陈列柜"
+    },
+    {
+      "id": 11,
+      "name": "拾荒学者的营地"
+    },
+    {
+      "id": 12,
+      "name": "无名者的神龛"
+    },
+    {
+      "id": 13,
+      "name": "守序的墨灵"
+    },
+    {
+      "id": 14,
+      "name": "旧友的重影"
+    },
+    {
+      "id": 15,
+      "name": "沉没的书架"
+    },
+    {
+      "id": 16,
+      "name": "泡胀的孤本"
+    },
+    {
+      "id": 17,
+      "name": "管理员的亡魂"
+    },
+    {
+      "id": 18,
+      "name": "无主的冠冕"
+    },
+    {
+      "id": 19,
+      "name": "褪色的加冕图"
+    },
+    {
+      "id": 20,
+      "name": "忘川渡口"
+    }
+  ],
+  "relics": [
+    "CommonRelics.MemoryCrystal",
+    "CommonRelics.ResonanceStone",
+    "CommonRelics.TwinDice",
+    "CommonRelics.Notebook",
+    "CommonRelics.FirstAidKit",
+    "CommonRelics.WoodenShield",
+    "RareRelics.MindMap",
+    "RareRelics.ChainCore",
+    "RareRelics.ChargeCrystal",
+    "RareRelics.VampireFang",
+    "RareRelics.EnergyShield",
+    "RareRelics.SlowMark",
+    "EpicRelics.StableAnchor",
+    "EpicRelics.TwinCharm",
+    "EpicRelics.MirrorEcho",
+    "EpicRelics.ScholarBadge",
+    "BossRelics.OmniscientEye",
+    "BossRelics.ChaosCore",
+    "BossRelics.MemoryCrown"
+  ],
+  "shopPrices": {
+    "CardPriceCommon": 45,
+    "CardPriceRare": 60,
+    "CardPriceEpic": 75,
+    "RelicPriceCommon": 95,
+    "RelicPriceRare": 130,
+    "RelicPriceEpic": 180,
+    "RemovalPrice": 75
+  },
+  "artReuse": {
+    "静观": "CardSkillSudu",
+    "拈页": "CardAttackYinjingjudian",
+    "笔谏": "CardAttackPozhanfenxi",
+    "一览": "CardAttackKaoju",
+    "留白": "CardSkillShuqian",
+    "回锋": "CardAttackPangzhengboyin",
+    "顿悟": "CardAttackJingzhundaji",
+    "掷地有声": "CardAttackZhenlizhiyan",
+    "书海翻澜": "CardAttackLiansuolei",
+    "走笔疾书": "CardSkillWenxi",
+    "澄心静虑": "CardSkillTushuguan"
+  }
+}
