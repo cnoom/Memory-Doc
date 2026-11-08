@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-21",
+  "asOf": "2026-10-24",
   "pathBase": "repository-root",
   "approvalPolicy": "Snapshot only: current explicit user instructions supersede this registry; file presence is not approval.",
   "items": [
@@ -263,12 +263,9 @@
       },
       "width": 1254,
       "height": 1254,
-      "hasAlpha": true,
-      "alphaRange": [
-        0,
-        255
-      ],
-      "sha256": "c9abd1a94ed7afeec4d63252cdb7507f4438efce6767a1ad5c2549be84978d05",
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "86038ba8987af4c6ff8bf5d25c5b9b31fc45e913d66202c3057df240b5fb166c",
       "spec": {},
       "requiresEngineValidation": true
     },

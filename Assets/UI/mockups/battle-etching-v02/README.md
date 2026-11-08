@@ -8,7 +8,7 @@
 - `verification.json`：本批浏览器验证记录。
 - 上级目录 `mockup_s03_battle.png`、`mockup_s03_battle_detail.png`、`mockup_s03_battle_danger.png`、`mockup_s03_battle_720p.png`、`mockup_s03_battle_720p_detail.png`：确认稿截图。
 - `../../backgrounds/bg_battle_etching_textless_v02.png`：无字场景底图。
-- `../../cards/card_attack_dushubiji_illustration_v02.png`：透明书本插画。
+- `../../cards/card_attack_dushubiji_illustration_v02.png`：书本插画；2026-10-24 已补不透明骨白纸纹背景，原透明版见 ImageReview/_archived/2026-10-24/cards/dushubiji-background。
 
 直接用浏览器打开 index.html，无网络依赖。1080p 卡牌为 144×192，720p 为 96×128；十格行动条和所有规则文字由 UI 层生成。
 

@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21",
+  "date": "2026-10-24",
   "assetCount": 238,
   "fileCount": 383,
   "files": [
@@ -144,8 +144,8 @@
     {
       "source": "Assets/UI/cards/card_attack_dushubiji_illustration_v02.png",
       "path": "cards/card_attack_dushubiji_illustration_v02.png",
-      "sha256": "c9abd1a94ed7afeec4d63252cdb7507f4438efce6767a1ad5c2549be84978d05",
-      "bytes": 1086045
+      "sha256": "86038ba8987af4c6ff8bf5d25c5b9b31fc45e913d66202c3057df240b5fb166c",
+      "bytes": 2357020
     },
     {
       "source": "Assets/UI/icons/icon_type_attack_etching_b01.png",
@@ -2250,7 +2250,7 @@
     {
       "source": "Assets/UI/integration-v1/battle-replacement.json",
       "path": "integration-v1/battle-replacement.json",
-      "sha256": "e5732eda94fffabd60769330719fc782cae65c10949418ff584aeb6388aa72d4",
+      "sha256": "dd8a447c47f3331c20dc713515ddf70c3b3952263cd702521a61c2e2797d50ec",
       "bytes": 8404
     },
     {
