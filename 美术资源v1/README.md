@@ -1,6 +1,6 @@
 # 美术资源 v1
 
-整理日期：2026-10-21。包含当前正式收录的 238 项独立资源，共 383 个资源文件（包含PNG、SVG及辅助遮罩）。原始正式目录 Assets/UI 保留，此目录为可独立拷贝的分类交付副本。
+整理日期：2026-10-21；2026-11-08 修订（见文末修订记录）。包含当前正式收录的 231 项独立资源，共 368 个资源文件（包含PNG、SVG及辅助遮罩）。原始正式目录 Assets/UI 保留，此目录为可独立拷贝的分类交付副本。
 
 包含61种卡牌插画、10种卡框、统一卡背，以及已确认的角色／敌人、图标、背景与UI组件。未收录待审候选、已替代版本和卡牌装框预览。
 
@@ -23,7 +23,7 @@
 
 | 目录 | 文件数 |
 |---|---:|
-| backgrounds | 7 |
+| backgrounds | 8 |
 | badges | 2 |
 | bars | 10 |
 | boss-phase2-s01 | 1 |
@@ -42,7 +42,7 @@
 | icons-q02 | 1 |
 | illustrations | 10 |
 | integration-v1 | 5 |
-| journal | 34 |
+| journal | 18 |
 | map | 26 |
 | map-i04 | 1 |
 | mockups | 1 |
@@ -53,3 +53,7 @@
 | relics | 19 |
 | settings-j03 | 2 |
 | shop-k03 | 1 |
+
+## 修订记录
+
+- **2026-11-08**：① journal 手账视觉 8 件（journal_*_a01 png+svg 共 16 文件）按用户 2026-11-01 退役裁定从本目录删除（资源索引/校验清单同步去除）；journal/ 目录仅存 decor_*_a02 9 对（工程侧保留为无消费预载在册观察）。② 启动封面正本归位 backgrounds/bg_startup_v03.png（与工程 Assets/Art/backgrounds/bg_startup_v03.png 同字节；原 startup_cover_v03.png 见 设计参考/V03-startup 与 Assets/UI/mockups/startup-v03，为历史稿名）。③ 工程侧同日退役五件无消费美术——训练假人立绘、seal_pairing_b03、check_on/off_a01、focus_check_a02（工程入库 cc57db2，230→225 键）——**本目录正本五件保留为生产档案**，资源索引仍收录。

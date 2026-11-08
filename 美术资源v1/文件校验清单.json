@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-24",
-  "assetCount": 238,
-  "fileCount": 383,
+  "date": "2026-11-08",
+  "assetCount": 231,
+  "fileCount": 368,
   "files": [
     {
       "source": "Assets/UI/ornaments/ornament_memory_ring_b03.png",
@@ -368,102 +368,6 @@
       "path": "enemies/enemy_goblin_etching_b01.png",
       "sha256": "54cdf5e4ab9356b9d080b4f2d4ccead11121970209e98d83acc873f5eca0907a",
       "bytes": 1465283
-    },
-    {
-      "source": "Assets/UI/journal/journal_cover_a01.png",
-      "path": "journal/journal_cover_a01.png",
-      "sha256": "a14bc567b5088f261ca0e2a79d70530a501b1ca15c2f61051a444f6ba3f0cc20",
-      "bytes": 47926
-    },
-    {
-      "source": "Assets/UI/journal/journal_cover_a01.svg",
-      "path": "journal/journal_cover_a01.svg",
-      "sha256": "d18ad4b974ea69798ae474cf7773a505c11a85cd5e4214967ea79b1e263f141b",
-      "bytes": 513
-    },
-    {
-      "source": "Assets/UI/journal/journal_page_edges_a01.png",
-      "path": "journal/journal_page_edges_a01.png",
-      "sha256": "bbeeca1b429eaab01d75f38c5b8c72aa1ce976bb3b5f7957d8616832079de36f",
-      "bytes": 21765
-    },
-    {
-      "source": "Assets/UI/journal/journal_page_edges_a01.svg",
-      "path": "journal/journal_page_edges_a01.svg",
-      "sha256": "05d67e872ba1ea1ea083b9eb71716174c5ddfef748d9339dc055b2b798479931",
-      "bytes": 315
-    },
-    {
-      "source": "Assets/UI/journal/journal_page_left_a01.png",
-      "path": "journal/journal_page_left_a01.png",
-      "sha256": "bdba3a1d57a1fe5f80a8af776b240ce02d41497588f04c09ba7b1f38d4999db7",
-      "bytes": 25688
-    },
-    {
-      "source": "Assets/UI/journal/journal_page_left_a01.svg",
-      "path": "journal/journal_page_left_a01.svg",
-      "sha256": "1ea3bb14dc781d8c17c45cccc6b665e236874076e6ddc914fb60bd4fffc37bc3",
-      "bytes": 419
-    },
-    {
-      "source": "Assets/UI/journal/journal_page_right_a01.png",
-      "path": "journal/journal_page_right_a01.png",
-      "sha256": "fae29dc090a7107e6e4e14796cd151553509f142b3472fde89373c5c58a18e41",
-      "bytes": 27418
-    },
-    {
-      "source": "Assets/UI/journal/journal_page_right_a01.svg",
-      "path": "journal/journal_page_right_a01.svg",
-      "sha256": "a7cfd7645fdf1a926eb3069b9b396d408a77e12143c0e8b24078e4e3ce5071ca",
-      "bytes": 369
-    },
-    {
-      "source": "Assets/UI/journal/journal_spine_a01.png",
-      "path": "journal/journal_spine_a01.png",
-      "sha256": "1a2e40d5b672eb3952821d4a147df845a633dfc48463bb91a90e99987000d741",
-      "bytes": 5887
-    },
-    {
-      "source": "Assets/UI/journal/journal_spine_a01.svg",
-      "path": "journal/journal_spine_a01.svg",
-      "sha256": "0f8b2b48aa63e0c9e28593347c533e5f31a764ee9c2873e64ec23f02d5529302",
-      "bytes": 429
-    },
-    {
-      "source": "Assets/UI/journal/journal_binding_a01.png",
-      "path": "journal/journal_binding_a01.png",
-      "sha256": "323f5895718489468633056c1b61c1f561d974b5cf9b963a16a4c81363b94274",
-      "bytes": 7458
-    },
-    {
-      "source": "Assets/UI/journal/journal_binding_a01.svg",
-      "path": "journal/journal_binding_a01.svg",
-      "sha256": "c7c7b9c6c26b2b02b1069db430c84a4da3dff25eeeded3c615359626007beda3",
-      "bytes": 1159
-    },
-    {
-      "source": "Assets/UI/journal/journal_ribbon_a01.png",
-      "path": "journal/journal_ribbon_a01.png",
-      "sha256": "7be171cc26da64c20dba0658d7c876b4fec3c85f616625f1c84c0614edd0f33f",
-      "bytes": 5097
-    },
-    {
-      "source": "Assets/UI/journal/journal_ribbon_a01.svg",
-      "path": "journal/journal_ribbon_a01.svg",
-      "sha256": "421d7dcf2a2509f5b7f431b33a1528bc73c6de736f4ffdb32999b46f0daea966",
-      "bytes": 398
-    },
-    {
-      "source": "Assets/UI/journal/journal_fold_a01.png",
-      "path": "journal/journal_fold_a01.png",
-      "sha256": "7dbac37f12f78f18a8e7de7acffb66b2d9c473154a90b5107b6af119324e4389",
-      "bytes": 5861
-    },
-    {
-      "source": "Assets/UI/journal/journal_fold_a01.svg",
-      "path": "journal/journal_fold_a01.svg",
-      "sha256": "b996813df1d11a14d4ecfab0063ab3abb33278b308e40494bda75635d3e1d2c3",
-      "bytes": 276
     },
     {
       "source": "Assets/UI/buttons/btn_menu_normal_a01.png",
@@ -2300,6 +2204,12 @@
       "path": "fonts/q01/SourceHanSerifSC-Regular.otf",
       "sha256": "78aa7a328fd974df2d688c8a9fd74a33d8334dfa84ab24d9d11efb2ffc464117",
       "bytes": 24543332
+    },
+    {
+      "source": "Assets/UI/mockups/startup-v03/startup_cover_v03.png",
+      "path": "backgrounds/bg_startup_v03.png",
+      "sha256": "f963e53e781d29bd6c561558acf1e7255bb31006d1efcd66be6fa6f406f93c95",
+      "bytes": 4023847
     }
   ]
 }

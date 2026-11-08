@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-24",
+  "asOf": "2026-11-08",
   "pathBase": "美术资源v1",
   "items": [
     {
@@ -810,270 +810,6 @@
       "spec": {},
       "requiresEngineValidation": true,
       "approvalNote": "2026-10-07: user approved the displayed scholar, chaos slime, training dummy and goblin static illustrations with 可以; animation assets are outside this approval."
-    },
-    {
-      "id": "journal_cover_a01",
-      "batch": "A01",
-      "status": "approved",
-      "role": "journal-structure",
-      "productionEligible": true,
-      "paths": {
-        "png": "journal/journal_cover_a01.png",
-        "svg": "journal/journal_cover_a01.svg"
-      },
-      "width": 1260,
-      "height": 810,
-      "hasAlpha": true,
-      "alphaRange": [
-        0,
-        255
-      ],
-      "sha256": "a14bc567b5088f261ca0e2a79d70530a501b1ca15c2f61051a444f6ba3f0cc20",
-      "spec": {
-        "display": [
-          1260,
-          810
-        ],
-        "scaling": "uniform-only",
-        "anchor": [
-          0,
-          0
-        ],
-        "z": 0
-      },
-      "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
-    },
-    {
-      "id": "journal_page_edges_a01",
-      "batch": "A01",
-      "status": "approved",
-      "role": "journal-structure",
-      "productionEligible": true,
-      "paths": {
-        "png": "journal/journal_page_edges_a01.png",
-        "svg": "journal/journal_page_edges_a01.svg"
-      },
-      "width": 1260,
-      "height": 810,
-      "hasAlpha": true,
-      "alphaRange": [
-        0,
-        255
-      ],
-      "sha256": "bbeeca1b429eaab01d75f38c5b8c72aa1ce976bb3b5f7957d8616832079de36f",
-      "spec": {
-        "display": [
-          1260,
-          810
-        ],
-        "scaling": "uniform-only",
-        "anchor": [
-          0,
-          0
-        ],
-        "z": 1
-      },
-      "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
-    },
-    {
-      "id": "journal_page_left_a01",
-      "batch": "A01",
-      "status": "approved",
-      "role": "journal-structure",
-      "productionEligible": true,
-      "paths": {
-        "png": "journal/journal_page_left_a01.png",
-        "svg": "journal/journal_page_left_a01.svg"
-      },
-      "width": 1260,
-      "height": 810,
-      "hasAlpha": true,
-      "alphaRange": [
-        0,
-        255
-      ],
-      "sha256": "bdba3a1d57a1fe5f80a8af776b240ce02d41497588f04c09ba7b1f38d4999db7",
-      "spec": {
-        "display": [
-          1260,
-          810
-        ],
-        "scaling": "uniform-only",
-        "anchor": [
-          0,
-          0
-        ],
-        "z": 2
-      },
-      "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
-    },
-    {
-      "id": "journal_page_right_a01",
-      "batch": "A01",
-      "status": "approved",
-      "role": "journal-structure",
-      "productionEligible": true,
-      "paths": {
-        "png": "journal/journal_page_right_a01.png",
-        "svg": "journal/journal_page_right_a01.svg"
-      },
-      "width": 1260,
-      "height": 810,
-      "hasAlpha": true,
-      "alphaRange": [
-        0,
-        255
-      ],
-      "sha256": "fae29dc090a7107e6e4e14796cd151553509f142b3472fde89373c5c58a18e41",
-      "spec": {
-        "display": [
-          1260,
-          810
-        ],
-        "scaling": "uniform-only",
-        "anchor": [
-          0,
-          0
-        ],
-        "z": 2
-      },
-      "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
-    },
-    {
-      "id": "journal_spine_a01",
-      "batch": "A01",
-      "status": "approved",
-      "role": "journal-structure",
-      "productionEligible": true,
-      "paths": {
-        "png": "journal/journal_spine_a01.png",
-        "svg": "journal/journal_spine_a01.svg"
-      },
-      "width": 1260,
-      "height": 810,
-      "hasAlpha": true,
-      "alphaRange": [
-        0,
-        144
-      ],
-      "sha256": "1a2e40d5b672eb3952821d4a147df845a633dfc48463bb91a90e99987000d741",
-      "spec": {
-        "display": [
-          1260,
-          810
-        ],
-        "scaling": "uniform-only",
-        "anchor": [
-          0,
-          0
-        ],
-        "z": 3
-      },
-      "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
-    },
-    {
-      "id": "journal_binding_a01",
-      "batch": "A01",
-      "status": "approved",
-      "role": "journal-structure",
-      "productionEligible": true,
-      "paths": {
-        "png": "journal/journal_binding_a01.png",
-        "svg": "journal/journal_binding_a01.svg"
-      },
-      "width": 1260,
-      "height": 810,
-      "hasAlpha": true,
-      "alphaRange": [
-        0,
-        255
-      ],
-      "sha256": "323f5895718489468633056c1b61c1f561d974b5cf9b963a16a4c81363b94274",
-      "spec": {
-        "display": [
-          1260,
-          810
-        ],
-        "scaling": "uniform-only",
-        "anchor": [
-          0,
-          0
-        ],
-        "z": 4
-      },
-      "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
-    },
-    {
-      "id": "journal_ribbon_a01",
-      "batch": "A01",
-      "status": "approved",
-      "role": "journal-structure",
-      "productionEligible": true,
-      "paths": {
-        "png": "journal/journal_ribbon_a01.png",
-        "svg": "journal/journal_ribbon_a01.svg"
-      },
-      "width": 1260,
-      "height": 810,
-      "hasAlpha": true,
-      "alphaRange": [
-        0,
-        255
-      ],
-      "sha256": "7be171cc26da64c20dba0658d7c876b4fec3c85f616625f1c84c0614edd0f33f",
-      "spec": {
-        "display": [
-          1260,
-          810
-        ],
-        "scaling": "uniform-only",
-        "anchor": [
-          0,
-          0
-        ],
-        "z": 5
-      },
-      "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
-    },
-    {
-      "id": "journal_fold_a01",
-      "batch": "A01",
-      "status": "approved",
-      "role": "journal-structure",
-      "productionEligible": true,
-      "paths": {
-        "png": "journal/journal_fold_a01.png",
-        "svg": "journal/journal_fold_a01.svg"
-      },
-      "width": 1260,
-      "height": 810,
-      "hasAlpha": true,
-      "alphaRange": [
-        0,
-        255
-      ],
-      "sha256": "7dbac37f12f78f18a8e7de7acffb66b2d9c473154a90b5107b6af119324e4389",
-      "spec": {
-        "display": [
-          1260,
-          810
-        ],
-        "scaling": "uniform-only",
-        "anchor": [
-          0,
-          0
-        ],
-        "z": 4
-      },
-      "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved journal structure and ornaments; minor wording issues explicitly deferred. Buttons, controls and HUD are not covered."
     },
     {
       "id": "btn_menu_normal_a01",
@@ -6259,6 +5995,32 @@
       },
       "requiresEngineValidation": true,
       "approvalNote": "2026-10-17: user approved phase III with 确认没有问题. Static art only."
+    },
+    {
+      "id": "bg_startup_v03",
+      "batch": "V03",
+      "status": "approved",
+      "role": "entry-screen-background",
+      "productionEligible": true,
+      "paths": {
+        "png": "backgrounds/bg_startup_v03.png"
+      },
+      "width": 1672,
+      "height": 941,
+      "hasAlpha": false,
+      "alphaRange": null,
+      "sha256": "f963e53e781d29bd6c561558acf1e7255bb31006d1efcd66be6fa6f406f93c95",
+      "spec": {
+        "native1080p": false,
+        "sourceResolution": [
+          1672,
+          941
+        ],
+        "clientSpec": "mockups/startup-v03/README.md",
+        "clientTokens": null
+      },
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-10-17: 用户确认 V03 启动封面（「就这个吧」）；2026-11-08 正本归位 backgrounds/bg_startup_v03.png（键名与工程 ArtKeys 对齐，原 startup_cover_v03.png 见 设计参考/V03-startup 与 mockups）。"
     }
   ]
 }
