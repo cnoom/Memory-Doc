@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewDate": "2026-11-06",
+  "reviewDate": "2026-11-08",
   "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。",
   "cards": [
     {
@@ -2382,7 +2382,8 @@
     "RelicPriceCommon": 95,
     "RelicPriceRare": 130,
     "RelicPriceEpic": 180,
-    "RemovalPrice": 75
+    "ExpansionBasePrice": 100,
+    "ExpansionPriceStep": 50
   },
   "artReuse": {
     "静观": "CardSkillSudu",
