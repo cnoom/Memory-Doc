@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-24",
+  "asOf": "2026-11-09",
   "pathBase": "repository-root",
   "approvalPolicy": "Snapshot only: current explicit user instructions supersede this registry; file presence is not approval.",
   "items": [
@@ -233,7 +233,8 @@
       ],
       "sha256": "dc4349f747dbd8dede72d7c13f7ae68fab6b1abd80f52e24f85b0d2f1264ab6f",
       "spec": {},
-      "requiresEngineValidation": true
+      "requiresEngineValidation": true,
+      "approvalNote": "2026-11-08: 工程侧随无消费退役删除（游戏仓 cc57db2, ArtKeys 230→225）；本仓正本保留为生产档案，勿再接入工程。"
     },
     {
       "id": "bg_battle_etching_textless_v02",
@@ -948,7 +949,7 @@
       "sha256": "53e511b7076d5aacb58e78ac9aab8c5eaca5c76bf542130152704e83bb198a87",
       "spec": {},
       "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved the displayed scholar, chaos slime, training dummy and goblin static illustrations with 可以; animation assets are outside this approval."
+      "approvalNote": "2026-10-07: user approved the displayed scholar, chaos slime, training dummy and goblin static illustrations with 可以; animation assets are outside this approval. 2026-11-08: 工程侧随无消费退役删除（游戏仓 cc57db2, ArtKeys 230→225）；本仓正本保留为生产档案，勿再接入工程。"
     },
     {
       "id": "enemy_goblin_etching_b01",
@@ -2879,7 +2880,7 @@
         ]
       },
       "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation. 2026-11-08: 工程侧随无消费退役删除（游戏仓 cc57db2, ArtKeys 230→225）；本仓正本保留为生产档案，勿再接入工程。"
     },
     {
       "id": "toggle_on_a01",
@@ -2933,7 +2934,7 @@
         ]
       },
       "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation. 2026-11-08: 工程侧随无消费退役删除（游戏仓 cc57db2, ArtKeys 230→225）；本仓正本保留为生产档案，勿再接入工程。"
     },
     {
       "id": "slider_track_a01",
@@ -3699,7 +3700,7 @@
         "scaling": "uniform-only"
       },
       "requiresEngineValidation": true,
-      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation."
+      "approvalNote": "2026-10-07: user approved all 19 displayed button/control/focus assets with 可以. Runtime interaction still needs engine implementation. 2026-11-08: 工程侧随无消费退役删除（游戏仓 cc57db2, ArtKeys 230→225）；本仓正本保留为生产档案，勿再接入工程。"
     },
     {
       "id": "focus_slider_a02",
