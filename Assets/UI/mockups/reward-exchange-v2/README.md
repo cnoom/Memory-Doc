@@ -6,7 +6,7 @@
 ## 必读文件
 
 1. [设计 17 · 奖励选牌与交换 UI V2](../../../docs/design/17-奖励选牌与交换UI-V2定稿.md)：规则和风格边界。
-2. [设计 18 · 美术资源交付与 Unity 接入规范](../../../docs/design/18-奖励交换UI-V2美术资源交付与Unity接入规范.md)：资产、挂点、导入参数、冷加载、测试。
+2. [设计 20 · 美术资源交付与 Unity 接入规范](../../../docs/design/20-奖励交换UI-V2美术资源交付与Unity接入规范.md)：资产、挂点、导入参数、冷加载、测试。
 3. [asset-handoff.json](./asset-handoff.json)：机器可读资源/GUID/状态/坐标。
 4. [layout-blueprint.svg](./layout-blueprint.svg)：逻辑尺寸蓝图。注意它是**结构草图而非已批准的最终贴图**。
 5. 游戏仓 [reward-exchange-ui-v2-implementation-plan.md](https://github.com/cnoom/MemoryRouge/blob/main/docs/reward-exchange-ui-v2-implementation-plan.md)：Unity 施工入口。

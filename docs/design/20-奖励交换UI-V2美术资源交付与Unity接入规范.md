@@ -1,4 +1,4 @@
-# 18 · 奖励/交换 UI V2：美术资源交付与 Unity 接入规范
+# 20 · 奖励/交换 UI V2：美术资源交付与 Unity 接入规范
 
 > 日期：2026-11-09  
 > **状态：交付规格已冻结；正式独立新素材尚未生产/导入；Unity 实机尚未验收。**  
@@ -10,7 +10,7 @@
 | 文件 | 仓库位置 | 作用 |
 |---|---|---|
 | 已确认的交换界面原图 | 本会话交付包 `approved-exchange-full-1672x941.png`（原名“典雅卡牌交换界面.png”） | **唯一高保真视觉锚点；非运行时 Sprite** |
-| 本文 | `docs/design/18-奖励交换UI-V2美术资源交付与Unity接入规范.md` | 资源制作/接入规格 |
+| 本文 | `docs/design/20-奖励交换UI-V2美术资源交付与Unity接入规范.md` | 资源制作/接入规格 |
 | 机读资源表 | `Assets/UI/mockups/reward-exchange-v2/asset-handoff.json` | 资源、GUID、状态、坐标与预制体依赖 |
 | 布局蓝图 | `Assets/UI/mockups/reward-exchange-v2/layout-blueprint.svg` | 1920×1080 节点示意，**仅几何线框，不替代原图** |
 | 本批入口 | `Assets/UI/mockups/reward-exchange-v2/README.md` | 资源包摘要、交接核验 |

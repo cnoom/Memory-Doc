@@ -3,7 +3,7 @@
   "date": "2026-11-09",
   "truthPriority": [
     "Memory-Doc/docs/design/17-奖励选牌与交换UI-V2定稿.md",
-    "Memory-Doc/docs/design/18-奖励交换UI-V2美术资源交付与Unity接入规范.md",
+    "Memory-Doc/docs/design/20-奖励交换UI-V2美术资源交付与Unity接入规范.md",
     "MemoryRouge/docs/reward-exchange-ui-v2-implementation-plan.md",
     "MemoryRouge运行时卡牌与规则定义"
   ],
