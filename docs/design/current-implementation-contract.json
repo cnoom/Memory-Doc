@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewDate": "2026-11-08",
+  "reviewDate": "2026-11-09",
   "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。",
   "cards": [
     {
@@ -484,7 +484,7 @@
       "effects": [
         {
           "op": "damage",
-          "amount": 6
+          "amount": 8
         }
       ],
       "entries": [
@@ -497,26 +497,15 @@
     {
       "name": "读书笔记",
       "pool": "scholarStarter",
-      "type": "Attack",
+      "type": "Skill",
       "rarity": "Common",
       "effects": [
         {
-          "op": "damage",
-          "amount": 8
+          "op": "gainBlock",
+          "amount": 7
         }
       ],
       "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "mark",
-              "selector": "AdjacentRandom",
-              "amount": 1
-            }
-          ]
-        },
         {
           "entry": "match",
           "keyword": "Resonance"
@@ -565,24 +554,28 @@
       "name": "考据",
       "pool": "scholarReward",
       "type": "Attack",
-      "rarity": "Common",
+      "rarity": "Rare",
       "effects": [
         {
           "op": "damage",
-          "amount": 7
+          "amount": 7,
+          "condition": "IfSlotRevisited",
+          "amount2": 5
         }
-      ],
-      "entries": [
+      ]
+    },
+    {
+      "name": "封卷",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Rare",
+      "effects": [
         {
-          "entry": "trigger",
-          "timing": "Leave",
-          "effects": [
-            {
-              "op": "reveal",
-              "selector": "TableRandom",
-              "amount": 2
-            }
-          ]
+          "op": "gainBlock",
+          "amount": 5,
+          "condition": "IfGaugeNearFull",
+          "amount2": 2,
+          "amount3": 4
         }
       ]
     },
@@ -716,12 +709,11 @@
       "entries": [
         {
           "entry": "trigger",
-          "timing": "Reveal",
+          "timing": "FirstFlip",
           "effects": [
             {
-              "op": "reveal",
-              "selector": "AdjacentRandom",
-              "amount": 1
+              "op": "gainBlock",
+              "amount": 4
             }
           ]
         }
@@ -2396,6 +2388,7 @@
     "掷地有声": "CardAttackZhenlizhiyan",
     "书海翻澜": "CardAttackLiansuolei",
     "走笔疾书": "CardSkillWenxi",
-    "澄心静虑": "CardSkillTushuguan"
+    "澄心静虑": "CardSkillTushuguan",
+    "封卷": "CardSkillBijibengedang"
   }
 }
