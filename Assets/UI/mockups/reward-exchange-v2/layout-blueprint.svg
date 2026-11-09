@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="记忆勇者 卡牌交换V2布局线框，非正式美术贴图">
+<defs><pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 12L12 0" stroke="#3d4648" stroke-opacity=".17" stroke-width="1"/></pattern><filter id="shade" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#0b1216" flood-opacity=".55"/></filter></defs>
+<rect x="0" y="0" width="1920" height="1080" rx="0" fill="#202326" stroke="#202326" stroke-width="0"/>
+<rect x="0" y="0" width="1920" height="90" rx="0" fill="#1b272b" stroke="#647070" stroke-width="2"/>
+<text x="70" y="63" text-anchor="start" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="48" fill="#ede8dc">记忆勇者</text>
+<text x="1740" y="61" text-anchor="end" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="27" fill="#ede8dc">牌库 12 / 12</text>
+<rect x="0" y="90" width="1920" height="990" rx="0" fill="url(#hatch)" stroke="#28353a" stroke-width="0"/>
+<rect x="0" y="90" width="1920" height="990" rx="0" fill="#12171a" fill-opacity=".44" stroke="#21292e" stroke-width="0"/>
+<rect x="190" y="170" width="1540" height="780" rx="12" fill="#ded7c7" stroke="#263135" stroke-width="6"/>
+<rect x="206" y="184" width="1508" height="746" rx="9" fill="#ede8dc" stroke="#6a7470" stroke-width="2"/>
+<rect x="230" y="200" width="1460" height="80" rx="3" fill="#e4ded1" stroke="#aca99b" stroke-width="1"/>
+<text x="960" y="258" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="58" fill="#242629">交换卡牌</text>
+<text x="960" y="313" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="26" fill="#283135">牌库已满，请选择一张已有的牌与奖励牌交换</text>
+<rect x="255" y="330" width="435" height="482" rx="14" fill="#d1cbbd" stroke="#9a9b92" stroke-width="2"/>
+<rect x="755" y="330" width="900" height="482" rx="14" fill="#d1cbbd" stroke="#9a9b92" stroke-width="2"/>
+<rect x="294" y="317" width="360" height="49" rx="8" fill="#343a3d" stroke="#343a3d" stroke-width="2"/>
+<text x="474" y="353" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="600" font-size="27" fill="#ede8dc">将获得的奖励牌</text>
+<rect x="1000" y="317" width="410" height="49" rx="8" fill="#343a3d" stroke="#343a3d" stroke-width="2"/>
+<text x="1205" y="353" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="600" font-size="27" fill="#ede8dc">选择换出的旧牌</text>
+<rect x="318" y="376" width="300" height="400" rx="7" fill="#eee8db" stroke="#343a3d" stroke-width="5"/>
+<rect x="333" y="390" width="270" height="250" rx="2" fill="#4b5657" stroke="#2e3538" stroke-width="2"/>
+<text x="468" y="478" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="36" fill="#ede8dc">奖励卡图</text>
+<text x="468" y="590" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="20" fill="#ede8dc">正式插画绑定</text>
+<text x="468" y="695" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="600" font-size="24" fill="#283135">新卡名 · 效果文本</text>
+<text x="722" y="557" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="54" fill="#36474b">⇄</text>
+<rect x="810" y="366" width="146" height="195" rx="6" fill="#e8e4d6" stroke="#454b4b" stroke-width="2"/>
+<rect x="818" y="374" width="130" height="112" rx="3" fill="#4a5656" stroke="#818e8a" stroke-width="1"/>
+<text x="883" y="431" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="20" fill="#f1eee2">旧卡图</text>
+<text x="883" y="512" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="22" fill="#2a3133">打击</text>
+<text x="883" y="541" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="16" fill="#556164">原始实例 #1</text>
+<rect x="1000" y="366" width="146" height="195" rx="6" fill="#edf0ea" stroke="#83b0c1" stroke-width="5"/>
+<rect x="1008" y="374" width="130" height="112" rx="3" fill="#4a5656" stroke="#818e8a" stroke-width="1"/>
+<text x="1073" y="431" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="20" fill="#f1eee2">选中旧牌</text>
+<text x="1073" y="512" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="22" fill="#2a3133">格挡</text>
+<text x="1073" y="541" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="16" fill="#355c67">已选择</text>
+<rect x="1190" y="366" width="146" height="195" rx="6" fill="#e8e4d6" stroke="#454b4b" stroke-width="2"/>
+<rect x="1198" y="374" width="130" height="112" rx="3" fill="#4a5656" stroke="#818e8a" stroke-width="1"/>
+<text x="1263" y="431" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="20" fill="#f1eee2">旧卡图</text>
+<text x="1263" y="512" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="22" fill="#2a3133">专注</text>
+<text x="1263" y="541" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="16" fill="#556164">原始实例 #3</text>
+<rect x="1380" y="366" width="146" height="195" rx="6" fill="#e8e4d6" stroke="#454b4b" stroke-width="2"/>
+<rect x="1388" y="374" width="130" height="112" rx="3" fill="#4a5656" stroke="#818e8a" stroke-width="1"/>
+<text x="1453" y="431" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="20" fill="#f1eee2">旧卡图</text>
+<text x="1453" y="512" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="22" fill="#2a3133">疾行</text>
+<text x="1453" y="541" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="16" fill="#556164">原始实例 #4</text>
+<rect x="810" y="572" width="146" height="195" rx="6" fill="#e8e4d6" stroke="#454b4b" stroke-width="2"/>
+<rect x="818" y="580" width="130" height="112" rx="3" fill="#4a5656" stroke="#818e8a" stroke-width="1"/>
+<text x="883" y="637" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="20" fill="#f1eee2">旧卡图</text>
+<text x="883" y="718" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="22" fill="#2a3133">笔记</text>
+<text x="883" y="747" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="16" fill="#556164">原始实例 #5</text>
+<rect x="1000" y="572" width="146" height="195" rx="6" fill="#e8e4d6" stroke="#454b4b" stroke-width="2"/>
+<rect x="1008" y="580" width="130" height="112" rx="3" fill="#4a5656" stroke="#818e8a" stroke-width="1"/>
+<text x="1073" y="637" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="20" fill="#f1eee2">旧卡图</text>
+<text x="1073" y="718" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="22" fill="#2a3133">读书笔记</text>
+<text x="1073" y="747" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="16" fill="#556164">原始实例 #6</text>
+<rect x="1190" y="572" width="146" height="195" rx="6" fill="#e8e4d6" stroke="#454b4b" stroke-width="2"/>
+<rect x="1198" y="580" width="130" height="112" rx="3" fill="#4a5656" stroke="#818e8a" stroke-width="1"/>
+<text x="1263" y="637" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="20" fill="#f1eee2">旧卡图</text>
+<text x="1263" y="718" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="22" fill="#2a3133">整理</text>
+<text x="1263" y="747" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="16" fill="#556164">原始实例 #7</text>
+<rect x="1380" y="572" width="146" height="195" rx="6" fill="#e8e4d6" stroke="#454b4b" stroke-width="2"/>
+<rect x="1388" y="580" width="130" height="112" rx="3" fill="#4a5656" stroke="#818e8a" stroke-width="1"/>
+<text x="1453" y="637" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="20" fill="#f1eee2">旧卡图</text>
+<text x="1453" y="718" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="22" fill="#2a3133">回想</text>
+<text x="1453" y="747" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="16" fill="#556164">原始实例 #8</text>
+<text x="1076" y="801" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="30" fill="#34474e">◀</text>
+<text x="1200" y="801" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="28" fill="#283135">1 / 2</text>
+<text x="1330" y="801" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="30" fill="#34474e">▶</text>
+<rect x="455" y="858" width="320" height="56" rx="6" fill="#f1eee2" stroke="#354145" stroke-width="3"/>
+<text x="615" y="896" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="28" fill="#242629">返回奖励页</text>
+<rect x="1005" y="858" width="320" height="56" rx="6" fill="#343a3d" stroke="#343a3d" stroke-width="3"/>
+<text x="1165" y="896" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="700" font-size="28" fill="#f1eee2">确认交换</text>
+<text x="960" y="1005" text-anchor="middle" font-family="Noto Serif CJK SC,Source Han Serif SC,serif" font-weight="500" font-size="20" fill="#d1cbbd">布局蓝图 · 1920×1080 逻辑坐标 · 非正式美术资产，实际贴图与卡文均应动态加载</text>
+</svg>
