@@ -1,0 +1,260 @@
+{
+  "schema": "memory-rouge.reward-exchange-ui-v2.asset-handoff.v1",
+  "date": "2026-11-09",
+  "truthPriority": [
+    "Memory-Doc/docs/design/17-奖励选牌与交换UI-V2定稿.md",
+    "Memory-Doc/docs/design/18-奖励交换UI-V2美术资源交付与Unity接入规范.md",
+    "MemoryRouge/docs/reward-exchange-ui-v2-implementation-plan.md",
+    "MemoryRouge运行时卡牌与规则定义"
+  ],
+  "approval": {
+    "design": true,
+    "visualTarget": "final swap screen 1672x941",
+    "binaryCommittedToGitHub": false,
+    "notes": "原始确认图包含示例卡文，不能当运行时资产"
+  },
+  "referenceCanvas": {
+    "width": 1920,
+    "height": 1080,
+    "coord": "top-left logical pixel",
+    "layoutStatus": "engineering_candidate_not_pixel_perfect_approval",
+    "screenScaling": "CanvasScaler: Scale With Screen Size, reference 1920x1080; verify existing canvas first",
+    "panel": {
+      "x": 190,
+      "y": 170,
+      "w": 1540,
+      "h": 780
+    },
+    "regions": {
+      "title": {
+        "x": 350,
+        "y": 195,
+        "w": 1220,
+        "h": 68
+      },
+      "hint": {
+        "x": 390,
+        "y": 270,
+        "w": 1140,
+        "h": 44
+      },
+      "incomingZone": {
+        "x": 255,
+        "y": 330,
+        "w": 435,
+        "h": 482
+      },
+      "incomingCard": {
+        "x": 318,
+        "y": 376,
+        "w": 300,
+        "h": 400
+      },
+      "outgoingZone": {
+        "x": 755,
+        "y": 330,
+        "w": 900,
+        "h": 482
+      },
+      "outgoingGrid": {
+        "x": 810,
+        "y": 360,
+        "columns": 4,
+        "rows": 2,
+        "itemW": 146,
+        "itemH": 195,
+        "gapX": 44,
+        "gapY": 15,
+        "pageSize": 8
+      },
+      "pagination": {
+        "x": 1010,
+        "y": 780,
+        "w": 390,
+        "h": 42
+      },
+      "backButton": {
+        "x": 455,
+        "y": 858,
+        "w": 320,
+        "h": 56
+      },
+      "confirmButton": {
+        "x": 1005,
+        "y": 858,
+        "w": 320,
+        "h": 56
+      }
+    }
+  },
+  "prefab": {
+    "reward": "Assets/UI/Panels/RewardPanel.prefab",
+    "sharedOverlay": "Assets/UI/Templates/LibraryChoice.prefab",
+    "baker": "Assets/Editor/MemoryRouge/LibraryChoiceOverlaySetup.cs",
+    "controller": "Assets/Game/UI/Run/LibraryChoiceOverlay.cs",
+    "rewardController": "Assets/Game/UI/Run/RewardPanel.cs",
+    "binder": "Assets/Game/UI/CardViewBinder.cs",
+    "cardCore": "Assets/UI/Cards/CardCore.prefab",
+    "important": "Baker checks existing prefab and skips. Must explicitly migrate existing prefab without deleting .meta, or re-bake with preserved GUID/serialized refs. Adjust all 3 hosts."
+  },
+  "states": {
+    "reward": [
+      "no_candidate_selected",
+      "candidate_selected_library_not_full_direct_add",
+      "candidate_selected_library_full_direct_swap",
+      "skip"
+    ],
+    "swap": [
+      "unselected_old_disabled_confirm",
+      "selected_old_enable_confirm",
+      "change_page_retains_instance_index",
+      "return_without_commit",
+      "confirm_atomic_replacement",
+      "curse_ineligible",
+      "overflow_library"
+    ]
+  },
+  "assets": [
+    {
+      "key": "v2.reference.approved",
+      "role": "visual_reference",
+      "source": "本会话最后确认的‘典雅卡牌交换界面.png’",
+      "filename": "approved-exchange-full-1672x941.png",
+      "sha256": "4bb6f8eb029dc16f59cf09fc6363727e3e2c61f988139b7ff43a09a77a7745cf",
+      "pixel": [
+        1672,
+        941
+      ],
+      "status": "approved_reference_not_runtime_asset",
+      "github": "binary-pending",
+      "notes": "以本会话原图为准；线框 SVG 不可替代；不得裁成 Sprite 作为运行时面板"
+    },
+    {
+      "key": "v2.panel.paper",
+      "role": "exchange_panel_base",
+      "source": "Assets/Art/panels/panel_paper_a03.png",
+      "guid": "36de27dba2ba4fbc9cc10218eb75ef3d",
+      "status": "existing_use",
+      "spriteType": "Sliced",
+      "border": {
+        "left": 32,
+        "bottom": 32,
+        "right": 32,
+        "top": 32
+      },
+      "notes": "优先 Sliced；宽幅拉伸时检验中央纸纹与角饰，必要时另做无字底材；不可用 1672×941 合成图"
+    },
+    {
+      "key": "v2.panel.ink",
+      "role": "old_grid_group_optional",
+      "source": "Assets/Art/panels/panel_ink_a03.png",
+      "guid": "359478e09e1c43bcab09c53ade447182",
+      "status": "existing_optional",
+      "spriteType": "Sliced",
+      "border": {
+        "left": 32,
+        "bottom": 32,
+        "right": 32,
+        "top": 32
+      },
+      "notes": "深色组底局部使用，不能遮蔽缩略卡"
+    },
+    {
+      "key": "v2.button.primary",
+      "role": "confirm_exchange_button",
+      "source": "Assets/Art/buttons/btn_primary_{normal,hover,pressed,disabled}_b03.png",
+      "normalGuid": "f92d0415c93b16a4895c42ccc4155e63",
+      "status": "existing_use",
+      "spriteType": "Simple",
+      "sourcePixel": [
+        640,
+        112
+      ],
+      "aspect": "40:7",
+      "notes": "四态 SpriteSwap + TMP 文本；不得设 Sliced 或强行分别拉宽拉高"
+    },
+    {
+      "key": "v2.button.secondary",
+      "role": "back_to_reward_button",
+      "source": "Assets/Art/buttons/btn_secondary_{normal,hover,pressed,disabled}_b03.png",
+      "normalGuid": "f262d412a3a04f94db4e443110b115b7",
+      "status": "existing_use",
+      "spriteType": "Simple",
+      "sourcePixel": [
+        640,
+        112
+      ],
+      "aspect": "40:7",
+      "notes": "四态 SpriteSwap；可在 320×56 等比显示"
+    },
+    {
+      "key": "v2.button.focus",
+      "role": "button_keyboard_focus",
+      "source": "Assets/Art/overlays/focus_button_a02.png",
+      "guid": "70c84a5183574f6d99cefde23eae04cb",
+      "status": "existing_optional",
+      "notes": "与按钮 focus 共用，注意 selection 与 focus 两个状态不能混合"
+    },
+    {
+      "key": "v2.background.battle",
+      "role": "reward_background",
+      "source": "Assets/Art/backgrounds/bg_battle_empty_a01.png",
+      "guid": "8180cfed80ce4a7384aa7e3aa9e4de3a",
+      "status": "existing_optional",
+      "notes": "须确认 S05 当前背景，在不重复加载/不丢背景的情况下优先保留；弹层仅半透明 Dim"
+    },
+    {
+      "key": "v2.card.full",
+      "role": "incoming_large_card",
+      "source": "Assets/UI/Cards/CardCore.prefab",
+      "status": "existing_bind",
+      "binder": "CardViewBinder.Bind",
+      "binding": "CardCatalog.ByName(incoming)",
+      "layout": "preserve 3:4",
+      "notes": "图片来源 BattleArt.FrameKeyOf/ CardArtKeyOf；节点必须包含 Frame, ArtWindow/Art, Name, Desc；文字动态绑定，不带能量费用"
+    },
+    {
+      "key": "v2.card.list",
+      "role": "old_instance_thumbnails",
+      "source": "Assets/UI/Cards/CardCore.prefab",
+      "status": "existing_bind_adapt",
+      "binding": "Library[index] + CardCatalog.ByName(...)",
+      "layout": "preserve 3:4; 4 columns x 2 rows",
+      "notes": "同名不去重；Upgraded、Resonated 独立标示；禁用诅咒；被选描边与键盘焦点分别渲染"
+    },
+    {
+      "key": "v2.decor.chapter",
+      "role": "header_tab_optional",
+      "source": "Assets/Art/decor/decor_chapter_tab_a02.png",
+      "guid": "4211b410e7f545f69c0556810e2547e7",
+      "status": "existing_optional",
+      "notes": "可复用才用；不得恢复 2026-11-01 退役的手记八层"
+    },
+    {
+      "key": "v2.highlight",
+      "role": "selected_old_card_ring",
+      "source": null,
+      "status": "implementation_required_no_approved_independent_asset",
+      "style": {
+        "color": "#83B0C1",
+        "outlineLogicalPx": 2,
+        "outerGlow": "subtle"
+      },
+      "implementation": "优先现有 Image/Outline/角标与可用 focus 资源，若观感不合格另单独制作透明 PNG（需审阅）"
+    },
+    {
+      "key": "v2.group_label",
+      "role": "incoming_and_outgoing_titles",
+      "source": null,
+      "status": "reuse_or_create_after_review",
+      "implementation": "优先骨白/深墨 TMP 分组签组合；不具备边角效果才做无字透明小纸签"
+    },
+    {
+      "key": "v2.arrow",
+      "role": "swap_direction_icon",
+      "source": null,
+      "status": "reuse_or_create_after_review",
+      "implementation": "优先适配已有图标/简单 TMP 符号；不得引入文字内嵌截图"
+    }
+  ]
+}
