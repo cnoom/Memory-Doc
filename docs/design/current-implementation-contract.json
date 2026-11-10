@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewDate": "2026-11-09",
+  "reviewDate": "2026-11-10",
   "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。",
   "cards": [
     {
@@ -1493,21 +1493,20 @@
           "damage": 6
         },
         {
-          "type": "special",
-          "abilities": [
-            {
-              "kind": "chaos"
-            }
-          ]
+          "type": "charge"
         },
         {
           "type": "attack",
           "damage": 6
         }
       ],
-      "abilities": [
+      "abilities": [],
+      "passives": [
         {
-          "kind": "chaos"
+          "id": "局部混乱",
+          "trigger": "InvalidFlip",
+          "effect": "SwapTwo",
+          "threshold": 3
         }
       ]
     },
@@ -1543,23 +1542,18 @@
           "damage": 7
         },
         {
-          "type": "special",
-          "abilities": [
-            {
-              "kind": "pollute",
-              "cards": [
-                "腐化种子"
-              ]
-            }
-          ]
+          "type": "charge"
         }
       ],
-      "abilities": [
+      "abilities": [],
+      "passives": [
         {
-          "kind": "pollute",
-          "cards": [
-            "腐化种子"
-          ]
+          "id": "腐化增殖",
+          "trigger": "ActionEnd",
+          "effect": "SpawnVirus",
+          "threshold": 2,
+          "count": 2,
+          "virus": "腐化种子"
         }
       ]
     },
@@ -1607,21 +1601,20 @@
           "damage": 9
         },
         {
-          "type": "special",
-          "abilities": [
-            {
-              "kind": "shuffle"
-            }
-          ]
+          "type": "charge"
         },
         {
           "type": "attack",
           "damage": 9
         }
       ],
-      "abilities": [
+      "abilities": [],
+      "passives": [
         {
-          "kind": "shuffle"
+          "id": "乱序之手",
+          "trigger": "Match",
+          "effect": "CycleThree",
+          "threshold": 2
         }
       ]
     },
@@ -1708,6 +1701,14 @@
         {
           "kind": "berserk"
         }
+      ],
+      "passives": [
+        {
+          "id": "半血狂暴",
+          "trigger": "HpBelow",
+          "effect": "Berserk",
+          "percent": 50
+        }
       ]
     },
     {
@@ -1754,40 +1755,25 @@
           "damage": 8
         },
         {
-          "type": "special",
-          "abilities": [
-            {
-              "kind": "transpose"
-            }
-          ]
+          "type": "charge"
         },
         {
           "type": "attack",
           "damage": 8
         },
         {
-          "type": "special",
-          "abilities": [
-            {
-              "kind": "pollute",
-              "cards": [
-                "腐化种子",
-                "记忆尘埃"
-              ]
-            }
-          ]
+          "type": "charge"
         }
       ],
-      "abilities": [
+      "abilities": [],
+      "passives": [
         {
-          "kind": "transpose"
-        },
-        {
-          "kind": "pollute",
-          "cards": [
-            "腐化种子",
-            "记忆尘埃"
-          ]
+          "id": "偷换记忆",
+          "trigger": "Progress",
+          "effect": "SpawnVirusAndSwap",
+          "percent": 50,
+          "count": 2,
+          "virus": "腐化种子"
         }
       ]
     },
