@@ -1570,21 +1570,21 @@
           "damage": 7
         },
         {
-          "type": "special",
-          "abilities": [
-            {
-              "kind": "seal"
-            }
-          ]
+          "type": "charge"
         },
         {
           "type": "attack",
           "damage": 7
         }
       ],
-      "abilities": [
+      "abilities": [],
+      "passives": [
         {
-          "kind": "seal"
+          "id": "幽影封锁",
+          "trigger": "Progress",
+          "effect": "Seal",
+          "percent": 75,
+          "maxPerCycle": 1
         }
       ]
     },
