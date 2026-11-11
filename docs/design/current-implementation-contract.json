@@ -1878,21 +1878,21 @@
               "damage": 12
             },
             {
-              "type": "special",
-              "abilities": [
-                {
-                  "kind": "chaos"
-                }
-              ]
+              "type": "charge"
             },
             {
               "type": "attack",
               "damage": 12
             }
           ],
-          "abilities": [
+          "abilities": [],
+          "passives": [
             {
-              "kind": "chaos"
+              "id": "遗忘错位",
+              "trigger": "InvalidFlip",
+              "effect": "SwapTwo",
+              "threshold": 3,
+              "maxPerCycle": 1
             }
           ]
         },
@@ -1907,9 +1907,6 @@
               "type": "special",
               "abilities": [
                 {
-                  "kind": "chaos"
-                },
-                {
                   "kind": "seal"
                 }
               ]
@@ -1921,10 +1918,16 @@
           ],
           "abilities": [
             {
-              "kind": "chaos"
-            },
-            {
               "kind": "seal"
+            }
+          ],
+          "passives": [
+            {
+              "id": "配对扰动",
+              "trigger": "Match",
+              "effect": "SwapTwo",
+              "threshold": 2,
+              "maxPerCycle": 1
             }
           ]
         },
@@ -1939,16 +1942,7 @@
               "type": "special",
               "abilities": [
                 {
-                  "kind": "chaos"
-                },
-                {
                   "kind": "seal"
-                },
-                {
-                  "kind": "pollute",
-                  "cards": [
-                    "虚空裂痕"
-                  ]
                 }
               ]
             },
@@ -1959,16 +1953,25 @@
           ],
           "abilities": [
             {
-              "kind": "chaos"
-            },
-            {
               "kind": "seal"
+            }
+          ],
+          "passives": [
+            {
+              "id": "遗忘错位",
+              "trigger": "InvalidFlip",
+              "effect": "SwapTwo",
+              "threshold": 3,
+              "maxPerCycle": 1
             },
             {
-              "kind": "pollute",
-              "cards": [
-                "虚空裂痕"
-              ]
+              "id": "虚空侵蚀",
+              "trigger": "ActionEnd",
+              "effect": "SpawnVirus",
+              "threshold": 2,
+              "count": 1,
+              "virus": "虚空裂痕",
+              "maxPerCycle": 1
             }
           ]
         }
