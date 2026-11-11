@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "reviewDate": "2026-11-10",
-  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。",
+  "reviewDate": "2026-11-11",
+  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-11：随奖励牌V2全量50种（学者30+中立20）及V3通用机制收敛（位置/行动条时机条件移除、四角索引→连环索引改写）重新快照，对应 MemoryRouge PR #15 合成树 Unity 三门通过版本。",
   "cards": [
     {
       "name": "打击",
@@ -555,6 +555,7 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Rare",
+      "description": "配对造成 7 伤害。这张牌曾在当前格翻开又翻回时，再造成 5 伤害。",
       "effects": [
         {
           "op": "damage",
@@ -569,6 +570,7 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Rare",
+      "description": "配对获得 5 格挡。若这两张牌都曾在当前格翻开后翻回，各额外获得 4 格挡。",
       "effects": [
         {
           "op": "gainBlock",
@@ -700,6 +702,7 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Common",
+      "description": "首翻获得 4 格挡。配对获得 4 格挡。",
       "effects": [
         {
           "op": "gainBlock",
@@ -749,8 +752,9 @@
       "name": "学术直觉",
       "pool": "scholarReward",
       "type": "Ability",
-      "rarity": "Common",
-      "aura": "RevealOnPair"
+      "rarity": "Rare",
+      "description": "每周期首次成功配对后获得 4 格挡。",
+      "aura": "V2AcademicIntuition"
     },
     {
       "name": "全神贯注",
@@ -1319,6 +1323,619 @@
               "amount": 4
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "墨锋",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "首翻造成 4 伤害。配对造成 6 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "FirstFlip",
+          "effects": [
+            {
+              "op": "damage",
+              "amount": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "初勘",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "首翻时，若敌人意图包含伤害且你当前为 0 格挡，获得 3 护甲。配对获得 5 格挡。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "探卷",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "配对造成 6 伤害。若双方自本次入格后均未被翻回，各额外造成 3 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "草稿",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "首翻时，若至少有 2 格挡，自动消耗 2 格挡并造成 6 伤害。配对造成 7 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "name": "长夜编目",
+      "pool": "scholarReward",
+      "type": "Ability",
+      "rarity": "Epic",
+      "description": "生效后，每周期第 3 次首翻时造成 4 伤害并获得 4 格挡。",
+      "aura": "V2LongNight"
+    },
+    {
+      "name": "复习",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每个战斗实例本场首次回访时获得 3 护甲。配对获得 5 格挡。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "订正",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "配对造成 7 伤害。若这张牌最近一次在当前格翻回恰在上一个周期，额外获得 4 格挡。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "name": "夹页",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "配对获得 5 格挡。整对结算后，给本周期下一次回访准备 5 伤害，在该牌翻开后、配对前打出。准备效果不可叠加，周期结束时清除。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "校对",
+      "pool": "scholarReward",
+      "type": "Ability",
+      "rarity": "Rare",
+      "description": "每周期首个有至少一张牌曾在当前格翻回的同名配对，整对结算后额外造成 5 伤害。",
+      "aura": "V2Proofreading"
+    },
+    {
+      "name": "定稿",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Epic",
+      "description": "配对造成 8 伤害。若两张都曾在当前格翻回，整对结算后额外造成 10 伤害并获得 6 格挡，每周期限一次。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "近注",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "配对造成 6 伤害。若本周期此前已经成功配对至少 1 组，两张各额外造成 4 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "书脊",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "配对获得 6 格挡。若本周期上一组成功配对包含技能牌，两张各额外获得 4 格挡。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "页角",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "配对获得 5 格挡。若这是本周期首次成功配对，每张额外获得 2 护甲。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "对照",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "配对造成 6 伤害。若本周期上一组成功的同名配对牌名与本组不同，两张各额外造成 4 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "连环索引",
+      "pool": "scholarReward",
+      "type": "Ability",
+      "rarity": "Epic",
+      "description": "每周期第二组成功配对，整对结算后额外获得 6 格挡。能力生效前的机会不补发。",
+      "aura": "V2ChainIndex"
+    },
+    {
+      "name": "开篇",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "配对造成 6 伤害。若这是本周期首次成功配对，两张各额外造成 3 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "息笔",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "配对获得 5 格挡。若配对前玩家是 0 格挡，各额外获得 2 护甲。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "逆题",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "配对造成 6 伤害。若敌人配对前处于虚弱状态，两张各额外造成 4 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "插叙",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "配对造成 5 伤害。若本周期上一组成功配对包含攻击牌，两张各额外造成 2 伤害，整对结算后施加 1 层冰冻（每周期限一次）。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "旁注",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "配对造成 5 伤害，并获得 5 格挡。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        },
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "续写",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "配对造成 6 伤害。若本周期上一组配对含技能牌，各额外造成 4 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "承接",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "配对获得 5 格挡。若本周期上一组配对含攻击牌，各额外获得 4 格挡。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "整理",
+      "pool": "scholarReward",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "配对获得 4 格挡。若本周期上一组配对与这次配对的手动翻牌序号相差不超过 3，各额外获得 5 格挡。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "论证成篇",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Epic",
+      "description": "配对造成 8 伤害。若本周期先前已配成至少 2 种不同牌名的同名对，整对结算后额外造成 8 伤害并获得 4 格挡，每周期限一次。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "引火注",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每个战斗实例首翻时施加 2 层灼烧。配对造成 5 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "FirstFlip",
+          "effects": [
+            {
+              "op": "applyStatus",
+              "amount": 2,
+              "status": "Burn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "墨蚀",
+      "pool": "scholarReward",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "配对造成 6 伤害。若至少一张曾在当前格翻开又翻回，整对结算后施加 1 层中毒，每周期限一次。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "重击",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "配对造成 8 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "破甲锤",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "配对造成 6 伤害。若敌人配对前有护甲，各额外造成 4 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "追猎",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "配对造成 7 伤害。若敌人配对前生命不高于一半，各额外造成 3 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "name": "挫锋",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "配对造成 5 伤害。整对结算后施加 1 回合虚弱，每周期限一次。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "破绽打击",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "配对造成 6 伤害。整对结算后施加 1 回合易伤，每周期限一次。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "铁卫",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "配对获得 8 格挡。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "皮甲",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "配对获得 4 格挡和 2 护甲。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        },
+        {
+          "op": "applyStatus",
+          "amount": 2,
+          "status": "Armor",
+          "target": "player"
+        }
+      ]
+    },
+    {
+      "name": "急救包",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "配对获得 3 格挡。本场首次配成急救包，整对结算后恢复 2 生命。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "稳步",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "配对获得 5 格挡。若玩家配对前生命不高于一半，各额外获得 4 格挡。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "应急护符",
+      "pool": "commonPool",
+      "type": "Ability",
+      "rarity": "Rare",
+      "description": "生效后，在敌人下一次执行含伤害的行动、结算第一段伤害前，获得 5 格挡和 3 护甲。每场一次。",
+      "aura": "V2EmergencyAmulet"
+    },
+    {
+      "name": "火星",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "配对造成 4 伤害并施加 2 层灼烧。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        },
+        {
+          "op": "applyStatus",
+          "amount": 2,
+          "status": "Burn"
+        }
+      ]
+    },
+    {
+      "name": "寒铁",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "配对造成 5 伤害。整对结算后施加 1 层冰冻，每周期限一次。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "毒针",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "配对造成 4 伤害。整对结算后施加 1 层中毒，每周期限一次。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "炉火守卫",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "配对获得 5 格挡。若敌人配对前有灼烧，各额外获得 3 格挡。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "苦药",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "配对获得 5 格挡。若敌人配对前已有中毒，整对结算后追加 1 层中毒，每周期限一次。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "name": "熏烟",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "配对获得 4 格挡。整对结算后施加 1 回合虚弱，每周期限一次。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "提灯",
+      "pool": "commonPool",
+      "type": "Ability",
+      "rarity": "Rare",
+      "description": "生效后，从下一次手动翻牌起，每周期第一次手动翻牌结算获得 2 格挡，在常规行动条 +1 前触发。",
+      "aura": "V2Lantern"
+    },
+    {
+      "name": "投石",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "配对造成 7 伤害。若这是本场第一次成功配对，各额外造成 3 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 7
+        }
+      ]
+    },
+    {
+      "name": "盾击",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Epic",
+      "description": "配对造成 6 伤害。若玩家配对前至少有 6 格挡，各额外造成 5 伤害。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "孤注",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Epic",
+      "description": "配对造成 8 伤害。若配对前至少有 4 格挡，整对结算后自动消耗 4 格挡并额外造成 8 伤害，每周期限一次。",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 8
         }
       ]
     },
@@ -2367,6 +2984,68 @@
     "ExpansionPriceStep": 50
   },
   "artReuse": {
+    "万有文库": "CardSkillWanyouwenku",
+    "举一反三": "CardAbilityJuyifansan",
+    "书签": "CardSkillShuqian",
+    "交叉引用": "CardAttackJiaochayinyong",
+    "余烬": "CardAbilityYujin",
+    "侦察兵": "CardSkillZhenchabing",
+    "全知全能": "CardAbilityQuanzhiquanneng",
+    "全神贯注": "CardAbilityQuanshenguanzhu",
+    "博闻强识": "CardAbilityBowenqiangshi",
+    "回声": "CardSkillHuisheng",
+    "图书馆": "CardSkillTushuguan",
+    "学术直觉": "CardAbilityXueshuzhijue",
+    "守护结界": "CardAbilityShouhujiejie",
+    "引经据典": "CardAttackYinjingjudian",
+    "打击": "CardAttackDaji",
+    "批注": "CardAttackPizhu",
+    "拖沓": "CardCurseTuota",
+    "摘要": "CardSkillZhaiyao",
+    "旁征博引": "CardAttackPangzhengboyin",
+    "时空回溯": "CardSkillShikonghuisu",
+    "格挡": "CardSkillGedang",
+    "横扫": "CardAttackHengsao",
+    "消散风": "CardSkillXiaosanfeng",
+    "淬毒刃": "CardAttackCuiduren",
+    "混乱笔记": "CardCurseHunluanbiji",
+    "清理": "CardSkillQingli",
+    "温习": "CardSkillWenxi",
+    "火球术": "CardAttackHuoqiushu",
+    "烈焰斩": "CardAttackLieyanzhan",
+    "生命泉": "CardSkillShengmingquan",
+    "甲胄": "CardSkillJiazhou",
+    "百科全书": "CardAbilityBaikequanshu",
+    "目录": "CardSkillMulu",
+    "真理之眼": "CardAttackZhenlizhiyan",
+    "知识渊博": "CardAbilityZhishiyuanbo",
+    "石肤": "CardSkillShifu",
+    "破甲斩": "CardAttackPojiazhan",
+    "破绽分析": "CardAttackPozhanfenxi",
+    "笔记": "CardAttackBiji",
+    "笔记本格挡": "CardSkillBijibengedang",
+    "精准打击": "CardAttackJingzhundaji",
+    "索引": "CardSkillSuoyin",
+    "绝响": "CardAttackJuexiang",
+    "绷带": "CardSkillBengdai",
+    "考据": "CardAttackKaoju",
+    "腐化种子": "CardCurseFuhuazhongzi",
+    "致残击": "CardAttackZhicanji",
+    "虚空裂痕": "CardCurseXukongliehen",
+    "融会贯通": "CardSkillRonghuiguantong",
+    "记忆尘埃": "CardCurseJiyichenai",
+    "论文": "CardAttackLunwen",
+    "误解": "CardCurseWujie",
+    "读书笔记": "CardAttackDushubiji",
+    "过目不忘": "CardAbilityGuomubuwang",
+    "连锁雷": "CardAttackLiansuolei",
+    "速记": "CardSkillSuji",
+    "速读": "CardSkillSudu",
+    "封卷": "CardSkillBijibengedang",
+    "遗忘": "CardCurseYiwang",
+    "铁壁": "CardSkillTiebi",
+    "风眼": "CardAbilityFengyan",
+    "魔力共鸣": "CardSkillMoligongming",
     "静观": "CardSkillSudu",
     "拈页": "CardAttackYinjingjudian",
     "笔谏": "CardAttackPozhanfenxi",
@@ -2378,6 +3057,19 @@
     "书海翻澜": "CardAttackLiansuolei",
     "走笔疾书": "CardSkillWenxi",
     "澄心静虑": "CardSkillTushuguan",
-    "封卷": "CardSkillBijibengedang"
+    "哥林布": "EnemyGoblin",
+    "混乱史莱姆": "EnemyChaosSlime",
+    "蛮族战士": "EnemyBarbarian",
+    "腐化花蕾": "EnemyCorruptedBud",
+    "幻影": "EnemyPhantom",
+    "双刃执行者": "EnemyTwinbladeExecutor",
+    "记忆窃贼": "EnemyMemoryThief",
+    "记忆吞噬者": "EnemyMemoryDevourer",
+    "burn": "IconStatusBurn",
+    "freeze": "IconStatusFreeze",
+    "poison": "IconStatusPoison",
+    "armor": "IconStatusArmor",
+    "vulnerable": "IconStatusVulnerable",
+    "weak": "IconStatusWeak"
   }
 }
