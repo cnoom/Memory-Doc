@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "reviewDate": "2026-11-12",
-  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-12：随 V5 公共奖励牌迁移（50 张职业共享攻击/技能池、取消正式能力牌投放、配对后消耗、独立附伤原语、多段伤害拆分；学者30+中立20 池不变；提灯/投石行保留旧档解析并新增磨砺/试锋；长夜编目/校对/连环索引/学术直觉/应急护符转技能）重新快照，对应 MemoryRouge PR #17 feat/v5-public-50-pair-exhaust 合成树（合并以 Unity 6000.3.27f1 三门验收全绿为前提）。",
+  "reviewDate": "2026-11-13",
+  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-12：随 V5 公共奖励牌迁移（50 张职业共享攻击/技能池、取消正式能力牌投放、配对后消耗、独立附伤原语、多段伤害拆分；学者30+中立20 池不变；提灯/投石行保留旧档解析并新增磨砺/试锋；长夜编目/校对/连环索引/学术直觉/应急护符转技能）重新快照，对应 MemoryRouge PR #17 feat/v5-public-50-pair-exhaust 合成树（合并以 Unity 6000.3.27f1 三门验收全绿为前提）。。2026-11-13：随 V6 A批「基础可理解」20 张公共奖励牌（轻刃/并击/磨锋纹/三拍/划痕/锯齿/沉红/毒雾/毒刺/缓毒/火舌/焚纸/凝霜/挪页/游刃/藏锋/移页签/错位刃/续甲/旧识，commonPool）入池，正式奖励投放 50→70；新增玩家可选背面位移（正交一步、空格移动或背面交换）与蓄步兑现（翻开锁定、离场清零、无上限）",
   "cards": [
     {
       "name": "打击",
@@ -2222,6 +2222,337 @@
       ],
       "entries": [],
       "description": "每张攻击2×2；本场首次成功配对时整对获得1力量"
+    },
+    {
+      "name": "轻刃",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每张攻击3×1；配对前力量≥2则每张追加攻击1×1",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 1
+        },
+        {
+          "op": "damage",
+          "amount": 1
+        },
+        {
+          "op": "damage",
+          "amount": 1
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "并击",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每张攻击2×3；本周期上一组成功配对含攻击牌则每张追加攻击1×1",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 3
+        },
+        {
+          "op": "damage",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "磨锋纹",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得4格挡；配对前己方力量为0则整对获得1力量（每场首次满足一次）",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "三拍",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每张攻击3×1；该实例第三段有效直接命中后施加1流血",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 1
+        },
+        {
+          "op": "damage",
+          "amount": 1
+        },
+        {
+          "op": "damage",
+          "amount": 1
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "划痕",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每张攻击1×4；整对结束后施加1流血",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "锯齿",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每张攻击2×2；该实例第二段有效直接命中后施加1流血",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 2
+        },
+        {
+          "op": "damage",
+          "amount": 2
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "沉红",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得4格挡；配对前敌人流血≥3则整对额外获得2护甲",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "毒雾",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得3格挡；整对施加1中毒，若配对前敌人已有中毒则改为2中毒",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "毒刺",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每个实例首翻施加1中毒；配对时每张攻击1×4",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        }
+      ],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "FirstFlip",
+          "effects": [
+            {
+              "op": "applyStatus",
+              "status": "Poison",
+              "amount": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "缓毒",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得4格挡；配对前敌人中毒≥3则每张恢复1生命",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "火舌",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每张攻击1×4；每张有效命中时若敌人无灼烧则施加1灼烧",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "焚纸",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得3格挡并施加1灼烧",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        },
+        {
+          "op": "applyStatus",
+          "status": "Burn",
+          "amount": 1
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "凝霜",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得4格挡；整对施加1冰冻",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "挪页",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得4格挡；整对后可选一张背面牌正交移位1格，目标有合法背面牌则交换",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "游刃",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击2×2；翻开时锁定此前全部蓄步次数，每次位移使该实例本次配对各直接攻击段基础伤害+1",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 2
+        },
+        {
+          "op": "damage",
+          "amount": 2
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "藏锋",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得4格挡；该实例真正翻开时，按此前全部蓄步次数每次获得1护甲",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "移页签",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得3格挡；每实例本场首次手动翻开时，可让另一张合法背面牌正交移位1格",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "错位刃",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每张攻击1×5；整对后可移动一张合法背面牌1格",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "续甲",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得2格挡；整对可将当前至多4格挡转为等量护甲",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 2
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "旧识",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每实例本场首次手动翻开获得2格挡；配对时曾在当前格翻回的实例额外获得1护甲",
+      "effects": [],
+      "entries": [
+        {
+          "entry": "trigger",
+          "timing": "FirstFlip",
+          "effects": [
+            {
+              "op": "gainBlock",
+              "amount": 2
+            }
+          ]
+        }
+      ]
     }
   ],
   "curses": [
