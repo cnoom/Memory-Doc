@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "reviewDate": "2026-11-14",
-  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-12：随 V5 公共奖励牌迁移（50 张职业共享攻击/技能池、取消正式能力牌投放、配对后消耗、独立附伤原语、多段伤害拆分；学者30+中立20 池不变；提灯/投石行保留旧档解析并新增磨砺/试锋；长夜编目/校对/连环索引/学术直觉/应急护符转技能）重新快照，对应 MemoryRouge PR #17 feat/v5-public-50-pair-exhaust 合成树（合并以 Unity 6000.3.27f1 三门验收全绿为前提）。。2026-11-13：随 V6 A批「基础可理解」20 张公共奖励牌（轻刃/并击/磨锋纹/三拍/划痕/锯齿/沉红/毒雾/毒刺/缓毒/火舌/焚纸/凝霜/挪页/游刃/藏锋/移页签/错位刃/续甲/旧识，commonPool）入池，正式奖励投放 50→70；新增玩家可选背面位移（正交一步、空格移动或背面交换）与蓄步兑现（翻开锁定、离场清零、无上限）。2026-11-14：随 V6 B批「跨机制联动」20 张公共奖励牌（逆握/破势/余震/撕裂/伤痕反制/鲜红涂刃/毒血互换/毒发/渗毒斩/燃魂/裂冰/排阵/穿书/影袭/脚印/飞墨/余盾/刃甲/倒书，commonPool）入池，正式奖励投放 70→90；旧「余烬」能力行（BurnApplyUp 光环）经同名冲突裁决原位改写为 X26 余烬攻击行（名字/位置/池/稀有度不变，旧档按名可解析，BurnApplyUp 光环随行退役——正式能力牌 11→10）；新增有效直接命中钩子、整对状态消耗自动支付（整额门槛零扣费）、伤痕反制/鲜红涂刃预备态、受约束双移位与连续移位（排阵/穿书/影袭）与蓄步兑现（脚印/飞墨）；对应 MemoryRouge PR #22 feat/v6-batch-b-20-cards 合成树（以 Unity 6000.3.27f1 三门验收全绿为前提：编译 0 CS、EditMode 64/64、PlayMode 1134/1134）。2026-11-14（PR #24 兼容修复）：X26 更名「烬纹斩」（同名冲突终裁——旧「余烬」Ability/BurnApplyUp 行恢复原定义与原行序供旧档按名读回，不重新投放；上一段的「原位改写/能力牌 11→10」口径废止，正式能力牌恢复 11、BurnApplyUp 光环行保留）；cards.json 156→157、全目录 160→161、commonPool 82→83、正式奖励投放仍 90；新增旧档按名读回实证（含余烬旧档经 RunSaveMapping 校验通过且保持能力语义）；对应 MemoryRouge PR #24 fix/v6-b-x26-legacy-ember-compat 合成树（Unity 6000.3.27f1 三门验收：编译 0 CS、EditMode 64/64、PlayMode 1136/1136，独立 worktree 拷贝 Library 隔离验收）",
+  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-12：随 V5 公共奖励牌迁移（50 张职业共享攻击/技能池、取消正式能力牌投放、配对后消耗、独立附伤原语、多段伤害拆分；学者30+中立20 池不变；提灯/投石行保留旧档解析并新增磨砺/试锋；长夜编目/校对/连环索引/学术直觉/应急护符转技能）重新快照，对应 MemoryRouge PR #17 feat/v5-public-50-pair-exhaust 合成树（合并以 Unity 6000.3.27f1 三门验收全绿为前提）。。2026-11-13：随 V6 A批「基础可理解」20 张公共奖励牌（轻刃/并击/磨锋纹/三拍/划痕/锯齿/沉红/毒雾/毒刺/缓毒/火舌/焚纸/凝霜/挪页/游刃/藏锋/移页签/错位刃/续甲/旧识，commonPool）入池，正式奖励投放 50→70；新增玩家可选背面位移（正交一步、空格移动或背面交换）与蓄步兑现（翻开锁定、离场清零、无上限）。2026-11-14：随 V6 B批「跨机制联动」20 张公共奖励牌（逆握/破势/余震/撕裂/伤痕反制/鲜红涂刃/毒血互换/毒发/渗毒斩/燃魂/裂冰/排阵/穿书/影袭/脚印/飞墨/余盾/刃甲/倒书，commonPool）入池，正式奖励投放 70→90；旧「余烬」能力行（BurnApplyUp 光环）经同名冲突裁决原位改写为 X26 余烬攻击行（名字/位置/池/稀有度不变，旧档按名可解析，BurnApplyUp 光环随行退役——正式能力牌 11→10）；新增有效直接命中钩子、整对状态消耗自动支付（整额门槛零扣费）、伤痕反制/鲜红涂刃预备态、受约束双移位与连续移位（排阵/穿书/影袭）与蓄步兑现（脚印/飞墨）；对应 MemoryRouge PR #22 feat/v6-batch-b-20-cards 合成树（以 Unity 6000.3.27f1 三门验收全绿为前提：编译 0 CS、EditMode 64/64、PlayMode 1134/1134）。2026-11-14（PR #24 兼容修复）：X26 更名「烬纹斩」（同名冲突终裁——旧「余烬」Ability/BurnApplyUp 行恢复原定义与原行序供旧档按名读回，不重新投放；上一段的「原位改写/能力牌 11→10」口径废止，正式能力牌恢复 11、BurnApplyUp 光环行保留）；cards.json 156→157、全目录 160→161、commonPool 82→83、正式奖励投放仍 90；新增旧档按名读回实证（含余烬旧档经 RunSaveMapping 校验通过且保持能力语义）；对应 MemoryRouge PR #24 fix/v6-b-x26-legacy-ember-compat 合成树（Unity 6000.3.27f1 三门验收：编译 0 CS、EditMode 64/64、PlayMode 1136/1136，独立 worktree 拷贝 Library 隔离验收）。2026-11-14（PR #25 C批）：V6 C批「复杂与终结」20 张公共奖励牌（千刃/血祭/血潮/腐蚀环/冰火转写/追影/流影/迷踪/随风成阵/铁壁击/反制/虎魄盾/脉络/追注/折返/构篇/号令/燃志/瞬燃/绝唱，commonPool）入池，正式奖励投放 90→110、正式[消耗] 21/110（C批 10 种）；cards.json 157→177、全目录 161→181；C批[消耗]与 V5 同语义（仅成功配对+真实离场消耗）；新增命中共生附伤（血潮窗口）、敌攻格挡消耗反击（反制）、定时毒提前结算（腐蚀环）、全量冰冻转写（冰火转写）、生命代价致死短路（燃志）、合并附伤包（瞬燃）与配对周期记忆准备态（脉络/追注/构篇/号令）；对应 MemoryRouge PR #25 feat/v6-batch-c-20-cards 合成树（Unity 6000.3.27f1 三门验收全绿为前提）",
   "cards": [
     {
       "name": "打击",
@@ -2862,6 +2862,342 @@
         }
       ],
       "entries": []
+    },
+    {
+      "name": "千刃",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Epic",
+      "description": "每张攻击4×1；配对前敌人流血≥3则每张追加攻击1×2",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 1
+        },
+        {
+          "op": "damage",
+          "amount": 1
+        },
+        {
+          "op": "damage",
+          "amount": 1
+        },
+        {
+          "op": "damage",
+          "amount": 1
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "血祭",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "每张获得3格挡；整对可消耗3流血，获得1力量并恢复2生命",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "血潮",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Epic",
+      "description": "每张攻击3×2；配对前敌人流血≥4则本对每段有效直接攻击额外造成1包基础1的独立附伤",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 2
+        },
+        {
+          "op": "damage",
+          "amount": 2
+        },
+        {
+          "op": "damage",
+          "amount": 2
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "腐蚀环",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Epic",
+      "description": "整对施加2中毒，然后立即按敌人当时中毒层数结算一次中毒定时伤害（不消耗中毒）",
+      "effects": [],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "冰火转写",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Epic",
+      "description": "整对消耗敌人全部冰冻，并施加等量灼烧；无冰冻则无状态收益",
+      "effects": [],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "追影",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击2×2；翻开时每累计2次蓄步，为该实例本次配对追加攻击1×2（可多次，无上限）",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 2
+        },
+        {
+          "op": "damage",
+          "amount": 2
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "流影",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击1×5；该实例真正翻开时按此前全部蓄步次数施加等量流血",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "迷踪",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "每张获得3格挡；整对任一实例本次翻开锁步≥3则获得1力量（每场限一次）",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "随风成阵",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Epic",
+      "description": "整对将双方本次翻开锁步次数相加，每累计3次获得1力量，收益无上限",
+      "effects": [],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "铁壁击",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每张攻击1×5；配对前敌人虚弱则整对获得3格挡",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "反制",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "每张获得4格挡；整对准备一次反击：敌人下一次直接攻击后，按该次实际消耗的玩家格挡数造成1包附伤（力量仅加一次）",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "虎魄盾",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "每张获得3格挡；整对可消耗3自身护甲，获得1力量",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "脉络",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得4格挡；若本周期上一组配对含攻击牌则整对施加1流血，否则若含技能牌则整对获得2护甲",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "追注",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击2×2；本周期此前已完成至少2种不同牌名同名对时每张追加攻击1×3",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 2
+        },
+        {
+          "op": "damage",
+          "amount": 2
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "折返",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "每张获得3格挡；双方都曾在当前格翻回则整对施加2冰冻并恢复2生命",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "构篇",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Epic",
+      "description": "本周期此前至少完成3种不同牌名同名对，则整对令本周期后续2次成功配对各额外造成1包基础3附伤（不叠加）",
+      "effects": [],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "号令",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "整对令下一组攻击配对的两张攻击牌各追加2段基础1伤直接攻击，不叠加",
+      "effects": [],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "燃志",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "整对使玩家失去3生命，获得2力量；生命代价不享受学者增益",
+      "effects": [],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "瞬燃",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击1×4；整对可消耗至多5灼烧，按每层4基础伤害合并为1包独立附伤",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        }
+      ],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "绝唱",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Epic",
+      "description": "每张攻击3×2；配对前敌人同时具有至少2种不同负面状态（灼烧／中毒／流血／冰冻／虚弱／易伤）则每张追加攻击1×3",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 2
+        },
+        {
+          "op": "damage",
+          "amount": 2
+        },
+        {
+          "op": "damage",
+          "amount": 2
+        }
+      ],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
     }
   ],
   "curses": [
