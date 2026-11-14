@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "reviewDate": "2026-11-13",
-  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-12：随 V5 公共奖励牌迁移（50 张职业共享攻击/技能池、取消正式能力牌投放、配对后消耗、独立附伤原语、多段伤害拆分；学者30+中立20 池不变；提灯/投石行保留旧档解析并新增磨砺/试锋；长夜编目/校对/连环索引/学术直觉/应急护符转技能）重新快照，对应 MemoryRouge PR #17 feat/v5-public-50-pair-exhaust 合成树（合并以 Unity 6000.3.27f1 三门验收全绿为前提）。。2026-11-13：随 V6 A批「基础可理解」20 张公共奖励牌（轻刃/并击/磨锋纹/三拍/划痕/锯齿/沉红/毒雾/毒刺/缓毒/火舌/焚纸/凝霜/挪页/游刃/藏锋/移页签/错位刃/续甲/旧识，commonPool）入池，正式奖励投放 50→70；新增玩家可选背面位移（正交一步、空格移动或背面交换）与蓄步兑现（翻开锁定、离场清零、无上限）",
+  "reviewDate": "2026-11-14",
+  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-12：随 V5 公共奖励牌迁移（50 张职业共享攻击/技能池、取消正式能力牌投放、配对后消耗、独立附伤原语、多段伤害拆分；学者30+中立20 池不变；提灯/投石行保留旧档解析并新增磨砺/试锋；长夜编目/校对/连环索引/学术直觉/应急护符转技能）重新快照，对应 MemoryRouge PR #17 feat/v5-public-50-pair-exhaust 合成树（合并以 Unity 6000.3.27f1 三门验收全绿为前提）。。2026-11-13：随 V6 A批「基础可理解」20 张公共奖励牌（轻刃/并击/磨锋纹/三拍/划痕/锯齿/沉红/毒雾/毒刺/缓毒/火舌/焚纸/凝霜/挪页/游刃/藏锋/移页签/错位刃/续甲/旧识，commonPool）入池，正式奖励投放 50→70；新增玩家可选背面位移（正交一步、空格移动或背面交换）与蓄步兑现（翻开锁定、离场清零、无上限）。2026-11-14：随 V6 B批「跨机制联动」20 张公共奖励牌（逆握/破势/余震/撕裂/伤痕反制/鲜红涂刃/毒血互换/毒发/渗毒斩/燃魂/裂冰/排阵/穿书/影袭/脚印/飞墨/余盾/刃甲/倒书，commonPool）入池，正式奖励投放 70→90；旧「余烬」能力行（BurnApplyUp 光环）经同名冲突裁决原位改写为 X26 余烬攻击行（名字/位置/池/稀有度不变，旧档按名可解析，BurnApplyUp 光环随行退役——正式能力牌 11→10）；新增有效直接命中钩子、整对状态消耗自动支付（整额门槛零扣费）、伤痕反制/鲜红涂刃预备态、受约束双移位与连续移位（排阵/穿书/影袭）与蓄步兑现（脚印/飞墨）；对应 MemoryRouge PR #22 feat/v6-batch-b-20-cards 合成树（以 Unity 6000.3.27f1 三门验收全绿为前提：编译 0 CS、EditMode 64/64、PlayMode 1134/1134）",
   "cards": [
     {
       "name": "打击",
@@ -465,9 +465,20 @@
     {
       "name": "余烬",
       "pool": "commonPool",
-      "type": "Ability",
+      "type": "Attack",
       "rarity": "Rare",
-      "aura": "BurnApplyUp"
+      "description": "每张攻击2×2；配对前敌人灼烧≥2则整对额外施加2流血",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 2
+        },
+        {
+          "op": "damage",
+          "amount": 2
+        }
+      ],
+      "entries": []
     },
     {
       "name": "风眼",
@@ -2553,6 +2564,297 @@
           ]
         }
       ]
+    },
+    {
+      "name": "逆握",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "每张获得3格挡；整对可消耗3自身护甲，获得1力量",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": [
+        {
+          "entry": "modifier",
+          "kind": "Exhaust"
+        }
+      ]
+    },
+    {
+      "name": "破势",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击1×6；配对前力量≥2则每张追加攻击1×3",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 6
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "余震",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击2×3；配对前本周期敌人已受到至少3段直接攻击时每张追加攻击1×3",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 3
+        },
+        {
+          "op": "damage",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "撕裂",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击2×3；整对开始时可消耗2流血，使双方各追加攻击1×4",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 3
+        },
+        {
+          "op": "damage",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "伤痕反制",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得4格挡；整对准备下一次敌人直接攻击命中玩家后向敌人施加2流血（不叠加）",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "鲜红涂刃",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "每张获得4格挡；整对使接下来2段玩家有效直接攻击各施加1流血（共享次数，不叠加）",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "毒血互换",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "每张获得3格挡；整对可消耗2流血，施加3中毒",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "毒发",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击1×5；整对可消耗至多3中毒，每消耗1层整对追加攻击1×2（双方基础攻击后执行）",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 5
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "渗毒斩",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击2×3；每段有效命中中毒目标后另造成1包基础1的独立附伤",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 3
+        },
+        {
+          "op": "damage",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "燃魂",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "每张获得4格挡；整对可消耗2灼烧，获得1力量",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "裂冰",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击2×3；整对可消耗1冰冻，使每张追加攻击1×2",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 3
+        },
+        {
+          "op": "damage",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "排阵",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "每张获得3格挡；整对后依次选两张不同的合法背面牌，各正交移位1格",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "穿书",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Rare",
+      "description": "每张获得3格挡；整对后选一张背面牌连续正交移位至多2步，第二步不得返回起点",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "影袭",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Rare",
+      "description": "每张攻击2×2；整对后可移位一张背面牌1格；若与目标背面牌交换则整对额外施加2流血",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 2
+        },
+        {
+          "op": "damage",
+          "amount": 2
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "脚印",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每张攻击1×4；翻开时锁定此前全部蓄步次数，配对时该实例追加一包基础值等于锁步次数的附伤（0次不产生包）",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "飞墨",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得3格挡；该实例真正翻开时按此前全部蓄步次数施加等量中毒",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "余盾",
+      "pool": "commonPool",
+      "type": "Skill",
+      "rarity": "Common",
+      "description": "每张获得3格挡；配对前己方护甲≥1则每张额外获得2格挡",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 3
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "刃甲",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每张攻击1×4；配对前己方护甲≥3则每张追加攻击1×2",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        }
+      ],
+      "entries": []
+    },
+    {
+      "name": "倒书",
+      "pool": "commonPool",
+      "type": "Attack",
+      "rarity": "Common",
+      "description": "每张攻击1×4；曾在当前格翻回的实例在配对时施加1中毒",
+      "effects": [
+        {
+          "op": "damage",
+          "amount": 4
+        }
+      ],
+      "entries": []
     }
   ],
   "curses": [
