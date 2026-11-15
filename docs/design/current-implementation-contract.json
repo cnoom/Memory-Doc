@@ -4473,6 +4473,70 @@
       "generation": "V2",
       "available": true,
       "effectRule": "每周期首次敌方移动背面牌后记录该次实际移动的实例；本周期首次手动翻开其中任一实例时获得 3 格挡（每周期一次），不泄露牌名或位置"
+    },
+    {
+      "id": 128,
+      "name": "血潮棱镜",
+      "rarity": "Epic",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期第3次流血附伤对敌人完成结算时，额外造成一包基础3的独立附伤；该附伤不再次产生流血触发"
+    },
+    {
+      "id": 129,
+      "name": "毒蚀心脏",
+      "rarity": "Epic",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每次敌人行动后，若本次中毒伤害实际发生且敌人仍存活，并且结算前中毒≥3，则额外施加1流血；每敌方行动最多一次"
+    },
+    {
+      "id": 130,
+      "name": "熔芯",
+      "rarity": "Epic",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场首次由玩家效果一次消耗至少3层灼烧时，获得1力量；每场一次"
+    },
+    {
+      "id": 131,
+      "name": "叠页行军旗",
+      "rarity": "Epic",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场前2次玩家真正手动翻开蓄步≥3的牌时，各获得1力量；每场最多2力量，蓄步本身永不封顶"
+    },
+    {
+      "id": 132,
+      "name": "全知之眼",
+      "rarity": "Boss",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "正面牌上限+1；但每周期首次手动翻开后未成功配对的有效翻牌额外令敌人行动条+1（冰冻及灼烧按正常规则）"
+    },
+    {
+      "id": 133,
+      "name": "混沌核心",
+      "rarity": "Boss",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每次敌人行动结束后，若桌面有至少2张可移动背面玩家牌，随机选择两张交换，双方各得1蓄步；显示完整交换轨迹；该事件不额外推进敌方行动条"
+    },
+    {
+      "id": 134,
+      "name": "记忆王冠",
+      "rarity": "Boss",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场前3组成功配对且涉及带[消耗]牌的组合，各获得1力量和2护甲；每组只触发一次"
+    },
+    {
+      "id": 135,
+      "name": "血契剑鞘",
+      "rarity": "Boss",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "获取后最大生命永久降低12（当前生命上限同步裁切，至少保留1最大生命）；此后玩家直接攻击每段基础伤害+1、每包卡牌或遗物来源的独立附伤基础伤害+1；不能放大灼烧中毒定时伤害"
     }
   ]
 }
