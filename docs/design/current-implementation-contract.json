@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewDate": "2026-11-14",
+  "reviewDate": "2026-11-15",
   "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-12：随 V5 公共奖励牌迁移（50 张职业共享攻击/技能池、取消正式能力牌投放、配对后消耗、独立附伤原语、多段伤害拆分；学者30+中立20 池不变；提灯/投石行保留旧档解析并新增磨砺/试锋；长夜编目/校对/连环索引/学术直觉/应急护符转技能）重新快照，对应 MemoryRouge PR #17 feat/v5-public-50-pair-exhaust 合成树（合并以 Unity 6000.3.27f1 三门验收全绿为前提）。。2026-11-13：随 V6 A批「基础可理解」20 张公共奖励牌（轻刃/并击/磨锋纹/三拍/划痕/锯齿/沉红/毒雾/毒刺/缓毒/火舌/焚纸/凝霜/挪页/游刃/藏锋/移页签/错位刃/续甲/旧识，commonPool）入池，正式奖励投放 50→70；新增玩家可选背面位移（正交一步、空格移动或背面交换）与蓄步兑现（翻开锁定、离场清零、无上限）。2026-11-14：随 V6 B批「跨机制联动」20 张公共奖励牌（逆握/破势/余震/撕裂/伤痕反制/鲜红涂刃/毒血互换/毒发/渗毒斩/燃魂/裂冰/排阵/穿书/影袭/脚印/飞墨/余盾/刃甲/倒书，commonPool）入池，正式奖励投放 70→90；旧「余烬」能力行（BurnApplyUp 光环）经同名冲突裁决原位改写为 X26 余烬攻击行（名字/位置/池/稀有度不变，旧档按名可解析，BurnApplyUp 光环随行退役——正式能力牌 11→10）；新增有效直接命中钩子、整对状态消耗自动支付（整额门槛零扣费）、伤痕反制/鲜红涂刃预备态、受约束双移位与连续移位（排阵/穿书/影袭）与蓄步兑现（脚印/飞墨）；对应 MemoryRouge PR #22 feat/v6-batch-b-20-cards 合成树（以 Unity 6000.3.27f1 三门验收全绿为前提：编译 0 CS、EditMode 64/64、PlayMode 1134/1134）。2026-11-14（PR #24 兼容修复）：X26 更名「烬纹斩」（同名冲突终裁——旧「余烬」Ability/BurnApplyUp 行恢复原定义与原行序供旧档按名读回，不重新投放；上一段的「原位改写/能力牌 11→10」口径废止，正式能力牌恢复 11、BurnApplyUp 光环行保留）；cards.json 156→157、全目录 160→161、commonPool 82→83、正式奖励投放仍 90；新增旧档按名读回实证（含余烬旧档经 RunSaveMapping 校验通过且保持能力语义）；对应 MemoryRouge PR #24 fix/v6-b-x26-legacy-ember-compat 合成树（Unity 6000.3.27f1 三门验收：编译 0 CS、EditMode 64/64、PlayMode 1136/1136，独立 worktree 拷贝 Library 隔离验收）。2026-11-14（PR #25 C批）：V6 C批「复杂与终结」20 张公共奖励牌（千刃/血祭/血潮/腐蚀环/冰火转写/追影/流影/迷踪/随风成阵/铁壁击/反制/虎魄盾/脉络/追注/折返/构篇/号令/燃志/瞬燃/绝唱，commonPool）入池，正式奖励投放 90→110、正式[消耗] 21/110（C批 10 种）；cards.json 157→177、全目录 161→181；C批[消耗]与 V5 同语义（仅成功配对+真实离场消耗）；新增命中共生附伤（血潮窗口）、敌攻格挡消耗反击（反制）、定时毒提前结算（腐蚀环）、全量冰冻转写（冰火转写）、生命代价致死短路（燃志）、合并附伤包（瞬燃）与配对周期记忆准备态（脉络/追注/构篇/号令）；对应 MemoryRouge PR #25 feat/v6-batch-c-20-cards 合成树（Unity 6000.3.27f1 三门验收全绿为前提）",
   "cards": [
     {
@@ -4248,5 +4248,231 @@
     "armor": "IconStatusArmor",
     "vulnerable": "IconStatusVulnerable",
     "weak": "IconStatusWeak"
-  }
+  },
+  "relicsV2": [
+    {
+      "id": 100,
+      "name": "木盾",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每次敌人行动结束、正常格挡清空后，获得 2 格挡（供下一周期）；该次敌人行动仅触发 1 次"
+    },
+    {
+      "id": 101,
+      "name": "旅行药箱",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场首次玩家生命降至最大生命 50% 及以下时，恢复 4 生命（一次/场）"
+    },
+    {
+      "id": 102,
+      "name": "共鸣石",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期首次成功配对时，向敌人造成一包基础 1 的独立附加伤害（受力量与易伤，不视作直接命中）"
+    },
+    {
+      "id": 103,
+      "name": "双生骰",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期第一次玩家卡牌效果让背面牌发生有效位移时，获得 2 格挡；无有效位移不触发"
+    },
+    {
+      "id": 104,
+      "name": "笔记本",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期首次手动回访一张曾在当前格翻回的玩家牌，获得 1 护甲；翻牌预览不算"
+    },
+    {
+      "id": 105,
+      "name": "磨刃石",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场首次成功攻击牌配对时，使本对两张攻击牌各自第一段直接攻击基础伤害 +1"
+    },
+    {
+      "id": 106,
+      "name": "火绒盒",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场首次由玩家卡牌向敌人施加灼烧时，追加 1 层灼烧；此追加不再次触发自身"
+    },
+    {
+      "id": 107,
+      "name": "苦液瓶",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场首次由玩家卡牌向敌人施加中毒时，追加 1 层中毒；此追加不再次触发自身"
+    },
+    {
+      "id": 108,
+      "name": "血纹夹",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场首次由玩家卡牌向敌人施加流血时，追加 1 层流血；此追加不再次触发自身"
+    },
+    {
+      "id": 109,
+      "name": "旧扣环",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期首次有背面玩家牌发生有效位移（无论敌我来源）时，获得 1 护甲；整次事件仅触发一次"
+    },
+    {
+      "id": 110,
+      "name": "封口绷带",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场首次成功完成带[消耗]牌的配对后，获得 2 格挡与 1 护甲"
+    },
+    {
+      "id": 111,
+      "name": "厚皮背带",
+      "rarity": "Common",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场战斗开始时若当前生命不高于最大生命的一半，获得 3 护甲"
+    },
+    {
+      "id": 112,
+      "name": "连锁核心",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期首次成功攻击牌配对时，双方攻击牌各追加 1 段基础 1 伤的直接攻击；无攻击牌不触发"
+    },
+    {
+      "id": 113,
+      "name": "蓄能水晶",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场首次在同一周期完成至少 2 种不同牌名的同名配对时，获得 1 力量"
+    },
+    {
+      "id": 114,
+      "name": "吸血鬼之牙",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "本场每完成 3 次成功配对，恢复 1 生命；每场最多触发 3 次"
+    },
+    {
+      "id": 115,
+      "name": "能量护盾",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每次敌人行动结束清除格挡时，保留至多 3 点原有格挡进入下一周期；不额外生成格挡"
+    },
+    {
+      "id": 116,
+      "name": "减速印记",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "敌人有效行动条阈值 +1；不会改变已积累的进度；冰冻/灼烧/中毒仍按自身规则结算"
+    },
+    {
+      "id": 117,
+      "name": "思维导图",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期首次敌方位置效果实际移动了至少 1 张玩家背面牌时，获得 2 护甲；不揭示身份或记录牌名"
+    },
+    {
+      "id": 118,
+      "name": "锯刃戒",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期第 3 次有效玩家直接攻击段命中敌人后施加 1 流血；每周期至多一次，附伤与状态包不计数"
+    },
+    {
+      "id": 119,
+      "name": "冷焰石",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期首次冰冻确实抵消敌方行动条正增长时，向敌人施加 1 灼烧；不额外制造行动条变化"
+    },
+    {
+      "id": 120,
+      "name": "酸蚀漏斗",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期首次由玩家效果单次成功消耗至少 2 层敌方中毒时，获得 2 护甲；本周期累计消费不凑门槛"
+    },
+    {
+      "id": 121,
+      "name": "撕裂指环",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期首次直接攻击段成功触发流血附伤时，该次流血不减少层数；其它结算正常"
+    },
+    {
+      "id": 122,
+      "name": "折返齿轮",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场首次玩家卡牌效果使两张背面牌实际交换位置时，获得 1 力量；无法交换则不触发"
+    },
+    {
+      "id": 123,
+      "name": "旧页徽章",
+      "rarity": "Rare",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期首次手动翻开一张此前累计至少 2 次有效蓄步的玩家牌时，获得 2 格挡；不改变蓄步计数或上限"
+    },
+    {
+      "id": 124,
+      "name": "稳定锚",
+      "rarity": "Epic",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场首次手动翻开一张曾被敌方换位且本次翻开前蓄步至少 2 的玩家牌时，获得 1 力量；不免疫任何敌方位置效果"
+    },
+    {
+      "id": 125,
+      "name": "双生符",
+      "rarity": "Epic",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期首次成功攻击牌配对时，两张攻击牌各追加 1 段基础 1 伤的直接攻击；若另有连锁核心，双方各自再多 1 段"
+    },
+    {
+      "id": 126,
+      "name": "镜像回声",
+      "rarity": "Epic",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每场首次完成带[消耗]牌的成功配对后，本对至多一个应进入消耗堆的实例改进入弃牌堆（按稳定结算序选先结算实例）；仅生效一次"
+    },
+    {
+      "id": 127,
+      "name": "沿迹罗盘",
+      "rarity": "Epic",
+      "generation": "V2",
+      "available": true,
+      "effectRule": "每周期首次敌方移动背面牌后记录该次实际移动的实例；本周期首次手动翻开其中任一实例时获得 3 格挡（每周期一次），不泄露牌名或位置"
+    }
+  ]
 }
