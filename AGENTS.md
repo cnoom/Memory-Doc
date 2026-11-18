@@ -2,7 +2,7 @@
 
 本仓应只保存玩法、系统和内容策划文档，主要位于 `docs/design/`。Unity 工程位于 [MemoryRouge](https://github.com/cnoom/MemoryRouge)。
 
-## 美术工作已拆分（迁移进行中）
+## 美术工作已拆分（迁移已完成，待双 PR 合并验收）
 
 - **美术规范与制作说明正本**：[Memory-Art](https://github.com/cnoom/Memory-Art) 的 `docs/design/`。
 - **美术工具正本**：Memory-Art 的 `tools/art/`。
