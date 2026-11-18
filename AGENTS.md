@@ -11,3 +11,8 @@
 - 待二进制资源验证、相对链接修复及 Unity 消费路径确认完成，再清理本仓资源与重复美术规范。迁移剩余任务见 [Memory-Art #1](https://github.com/cnoom/Memory-Art/issues/1)。
 
 **策划变更仍以本仓玩法文档为准；美术视觉决策以 Memory-Art 为准。** 不要仅凭历史记录覆盖用户最新裁决。
+
+
+## 双仓库整理执行合同
+
+策划仓与美术仓的最终边界、文件分类、混合文档拆分和清理顺序，统一遵循 [Memory-Art 仓库清理执行规范](https://github.com/cnoom/Memory-Art/blob/main/docs/repository-boundaries-and-cleanup.md)。本仓只保留玩法/系统/内容策划文档及其文本型附件。**迁移、哈希校验、链接修复和目标仓验收全部通过前，不得删除 Assets、ImageReview、美术资源v1 或 tools/art。**
