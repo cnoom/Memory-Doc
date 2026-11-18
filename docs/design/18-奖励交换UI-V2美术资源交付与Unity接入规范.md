@@ -1,3 +1,5 @@
+> **已迁移通告（2026-11-18）**：本文件正本已迁 [Memory-Art](https://github.com/cnoom/Memory-Art/blob/main/) `docs/design/design/18-奖励交换UI-V2美术资源交付与Unity接入规范.md`（迁移时逐字节一致并已复验，后续修订以彼为准）。本仓副本为待清理存档，请勿在此继续编辑。
+
 # 18 · 奖励/交换 UI V2：美术资源交付与 Unity 接入规范
 
 > 日期：2026-11-09  
