@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "reviewDate": "2026-11-15",
-  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-12：随 V5 公共奖励牌迁移（50 张职业共享攻击/技能池、取消正式能力牌投放、配对后消耗、独立附伤原语、多段伤害拆分；学者30+中立20 池不变；提灯/投石行保留旧档解析并新增磨砺/试锋；长夜编目/校对/连环索引/学术直觉/应急护符转技能）重新快照，对应 MemoryRouge PR #17 feat/v5-public-50-pair-exhaust 合成树（合并以 Unity 6000.3.27f1 三门验收全绿为前提）。。2026-11-13：随 V6 A批「基础可理解」20 张公共奖励牌（轻刃/并击/磨锋纹/三拍/划痕/锯齿/沉红/毒雾/毒刺/缓毒/火舌/焚纸/凝霜/挪页/游刃/藏锋/移页签/错位刃/续甲/旧识，commonPool）入池，正式奖励投放 50→70；新增玩家可选背面位移（正交一步、空格移动或背面交换）与蓄步兑现（翻开锁定、离场清零、无上限）。2026-11-14：随 V6 B批「跨机制联动」20 张公共奖励牌（逆握/破势/余震/撕裂/伤痕反制/鲜红涂刃/毒血互换/毒发/渗毒斩/燃魂/裂冰/排阵/穿书/影袭/脚印/飞墨/余盾/刃甲/倒书，commonPool）入池，正式奖励投放 70→90；旧「余烬」能力行（BurnApplyUp 光环）经同名冲突裁决原位改写为 X26 余烬攻击行（名字/位置/池/稀有度不变，旧档按名可解析，BurnApplyUp 光环随行退役——正式能力牌 11→10）；新增有效直接命中钩子、整对状态消耗自动支付（整额门槛零扣费）、伤痕反制/鲜红涂刃预备态、受约束双移位与连续移位（排阵/穿书/影袭）与蓄步兑现（脚印/飞墨）；对应 MemoryRouge PR #22 feat/v6-batch-b-20-cards 合成树（以 Unity 6000.3.27f1 三门验收全绿为前提：编译 0 CS、EditMode 64/64、PlayMode 1134/1134）。2026-11-14（PR #24 兼容修复）：X26 更名「烬纹斩」（同名冲突终裁——旧「余烬」Ability/BurnApplyUp 行恢复原定义与原行序供旧档按名读回，不重新投放；上一段的「原位改写/能力牌 11→10」口径废止，正式能力牌恢复 11、BurnApplyUp 光环行保留）；cards.json 156→157、全目录 160→161、commonPool 82→83、正式奖励投放仍 90；新增旧档按名读回实证（含余烬旧档经 RunSaveMapping 校验通过且保持能力语义）；对应 MemoryRouge PR #24 fix/v6-b-x26-legacy-ember-compat 合成树（Unity 6000.3.27f1 三门验收：编译 0 CS、EditMode 64/64、PlayMode 1136/1136，独立 worktree 拷贝 Library 隔离验收）。2026-11-14（PR #25 C批）：V6 C批「复杂与终结」20 张公共奖励牌（千刃/血祭/血潮/腐蚀环/冰火转写/追影/流影/迷踪/随风成阵/铁壁击/反制/虎魄盾/脉络/追注/折返/构篇/号令/燃志/瞬燃/绝唱，commonPool）入池，正式奖励投放 90→110、正式[消耗] 21/110（C批 10 种）；cards.json 157→177、全目录 161→181；C批[消耗]与 V5 同语义（仅成功配对+真实离场消耗）；新增命中共生附伤（血潮窗口）、敌攻格挡消耗反击（反制）、定时毒提前结算（腐蚀环）、全量冰冻转写（冰火转写）、生命代价致死短路（燃志）、合并附伤包（瞬燃）与配对周期记忆准备态（脉络/追注/构篇/号令）；对应 MemoryRouge PR #25 feat/v6-batch-c-20-cards 合成树（Unity 6000.3.27f1 三门验收全绿为前提）",
+  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-12：随 V5 公共奖励牌迁移（50 张职业共享攻击/技能池、取消正式能力牌投放、配对后消耗、独立附伤原语、多段伤害拆分；学者30+中立20 池不变；提灯/投石行保留旧档解析并新增磨砺/试锋；长夜编目/校对/连环索引/学术直觉/应急护符转技能）重新快照，对应 MemoryRouge PR #17 feat/v5-public-50-pair-exhaust 合成树（合并以 Unity 6000.3.27f1 三门验收全绿为前提）。。2026-11-13：随 V6 A批「基础可理解」20 张公共奖励牌（轻刃/并击/磨锋纹/三拍/划痕/锯齿/沉红/毒雾/毒刺/缓毒/火舌/焚纸/凝霜/挪页/游刃/藏锋/移页签/错位刃/续甲/旧识，commonPool）入池，正式奖励投放 50→70；新增玩家可选背面位移（正交一步、空格移动或背面交换）与蓄步兑现（翻开锁定、离场清零、无上限）。2026-11-14：随 V6 B批「跨机制联动」20 张公共奖励牌（逆握/破势/余震/撕裂/伤痕反制/鲜红涂刃/毒血互换/毒发/渗毒斩/燃魂/裂冰/排阵/穿书/影袭/脚印/飞墨/余盾/刃甲/倒书，commonPool）入池，正式奖励投放 70→90；旧「余烬」能力行（BurnApplyUp 光环）经同名冲突裁决原位改写为 X26 余烬攻击行（名字/位置/池/稀有度不变，旧档按名可解析，BurnApplyUp 光环随行退役——正式能力牌 11→10）；新增有效直接命中钩子、整对状态消耗自动支付（整额门槛零扣费）、伤痕反制/鲜红涂刃预备态、受约束双移位与连续移位（排阵/穿书/影袭）与蓄步兑现（脚印/飞墨）；对应 MemoryRouge PR #22 feat/v6-batch-b-20-cards 合成树（以 Unity 6000.3.27f1 三门验收全绿为前提：编译 0 CS、EditMode 64/64、PlayMode 1134/1134）。2026-11-14（PR #24 兼容修复）：X26 更名「烬纹斩」（同名冲突终裁——旧「余烬」Ability/BurnApplyUp 行恢复原定义与原行序供旧档按名读回，不重新投放；上一段的「原位改写/能力牌 11→10」口径废止，正式能力牌恢复 11、BurnApplyUp 光环行保留）；cards.json 156→157、全目录 160→161、commonPool 82→83、正式奖励投放仍 90；新增旧档按名读回实证（含余烬旧档经 RunSaveMapping 校验通过且保持能力语义）；对应 MemoryRouge PR #24 fix/v6-b-x26-legacy-ember-compat 合成树（Unity 6000.3.27f1 三门验收：编译 0 CS、EditMode 64/64、PlayMode 1136/1136，独立 worktree 拷贝 Library 隔离验收）。2026-11-14（PR #25 C批）：V6 C批「复杂与终结」20 张公共奖励牌（千刃/血祭/血潮/腐蚀环/冰火转写/追影/流影/迷踪/随风成阵/铁壁击/反制/虎魄盾/脉络/追注/折返/构篇/号令/燃志/瞬燃/绝唱，commonPool）入池，正式奖励投放 90→110、正式[消耗] 21/110（C批 10 种）；cards.json 157→177、全目录 161→181；C批[消耗]与 V5 同语义（仅成功配对+真实离场消耗）；新增命中共生附伤（血潮窗口）、敌攻格挡消耗反击（反制）、定时毒提前结算（腐蚀环）、全量冰冻转写（冰火转写）、生命代价致死短路（燃志）、合并附伤包（瞬燃）与配对周期记忆准备态（脉络/追注/构篇/号令）；对应 MemoryRouge PR #25 feat/v6-batch-c-20-cards 合成树（Unity 6000.3.27f1 三门验收全绿为前提）。2026-11-21（待评审，Draft，关联 MemoryRouge PR #58）：V7.2 卡牌候选实现快照提案，96 张卡的描述、数值、条件及必要 ID/entries 差异按当前代码逐项对齐；14 张暂缓投放卡仍保留历史定义。仅同步 cards，不变更 relicsV2；卡牌数值仍待玩家体验与平衡验收。必须与 PR #58 验收合成树配套评审后合并，不得提前使已批准的 main 合同失效",
   "cards": [
     {
       "name": "打击",
@@ -555,15 +555,15 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×3；本实例回访当前格时追加攻击1×2",
+      "description": "造成2段4点伤害；本实例曾翻回时，追加1段3点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         }
       ],
       "entries": []
@@ -573,11 +573,11 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张4格挡；双方都在当前格翻回过时整对获得1力量（本场限一次）",
+      "description": "获得7点格挡；本实例曾翻回时，施加1层流血；敌人已有流血时，额外造成1包3点附加伤害。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -703,25 +703,14 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Common",
-      "description": "首翻3格挡；每张配对4格挡",
+      "description": "获得7点格挡。[翻开] 获得2点格挡。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "FirstFlip",
-          "effects": [
-            {
-              "op": "gainBlock",
-              "amount": 3
-            }
-          ]
-        }
-      ]
+      "entries": []
     },
     {
       "name": "笔记本格挡",
@@ -754,8 +743,18 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "整对施加2流血；本周期首对时整对额外3格挡",
-      "effects": [],
+      "description": "获得8点格挡，施加2层流血。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 8
+        },
+        {
+          "op": "applyStatus",
+          "amount": 2,
+          "status": "Bleed"
+        }
+      ],
       "entries": [
         {
           "entry": "modifier",
@@ -1338,40 +1337,29 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Common",
-      "description": "首翻攻击1×1；每张配对攻击2×2",
+      "description": "造成2段4点伤害。[翻开] 造成1点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         }
       ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "FirstFlip",
-          "effects": [
-            {
-              "op": "damage",
-              "amount": 1
-            }
-          ]
-        }
-      ]
+      "entries": []
     },
     {
       "name": "初勘",
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Common",
-      "description": "首翻时若敌有负面状态，获得2护甲；每张配对5格挡",
+      "description": "获得7点格挡。[翻开] 敌人有负面状态时，获得2点格挡。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 5
+          "amount": 7
         }
       ],
       "entries": []
@@ -1381,7 +1369,7 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击2×2；双方本次入场均未翻回则每张追加攻击1×2",
+      "description": "造成2段2点伤害。[翻开] 临时伤害+1。",
       "effects": [
         {
           "op": "damage",
@@ -1399,15 +1387,15 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×3；整对可消耗4格挡，使两张各追加攻击1×2",
+      "description": "造成2段5点伤害；自身格挡≥6时，追加2段3点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 3
+          "amount": 5
         },
         {
           "op": "damage",
-          "amount": 3
+          "amount": 5
         }
       ],
       "entries": []
@@ -1417,8 +1405,21 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Epic",
-      "description": "本场已手动首翻至少3个不同实例时，整对获得2力量",
-      "effects": [],
+      "description": "获得1层力量和1点护甲。",
+      "effects": [
+        {
+          "op": "applyStatus",
+          "amount": 1,
+          "status": "Strength",
+          "target": "player"
+        },
+        {
+          "op": "applyStatus",
+          "amount": 1,
+          "status": "Armor",
+          "target": "player"
+        }
+      ],
       "entries": [
         {
           "entry": "modifier",
@@ -1431,11 +1432,11 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Common",
-      "description": "本实例首次回访获得1护甲；每张配对4格挡",
+      "description": "获得7点格挡。[翻回] 获得2点格挡。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -1445,11 +1446,15 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击1×5；配对前敌中毒≥2时整对消耗2中毒、双方各追加攻击1×2",
+      "description": "造成2段4点伤害；敌人中毒≥4时，追加2段3点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 5
+          "amount": 4
+        },
+        {
+          "op": "damage",
+          "amount": 4
         }
       ],
       "entries": []
@@ -1459,11 +1464,11 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张4格挡；整对使本周期下一组攻击配对每张追加攻击1×2（一次且不叠加）",
+      "description": "获得7点格挡；下一次玩家直接攻击追加1段3点伤害。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -1473,8 +1478,14 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "若配对前敌有流血，整对以敌当前流血层数造成一包附伤，随后施加1流血",
-      "effects": [],
+      "description": "施加2层流血；敌人流血≥3时，额外造成2包5点附加伤害。",
+      "effects": [
+        {
+          "op": "applyStatus",
+          "amount": 2,
+          "status": "Bleed"
+        }
+      ],
       "entries": [
         {
           "entry": "modifier",
@@ -1487,15 +1498,19 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Epic",
-      "description": "每张攻击2×3；整对可消耗至多3流血，每层使本对所有直接攻击段基础伤害+1",
+      "description": "造成3段5点伤害；敌人流血≥4时，每段伤害+2。",
       "effects": [
         {
           "op": "damage",
-          "amount": 3
+          "amount": 5
         },
         {
           "op": "damage",
-          "amount": 3
+          "amount": 5
+        },
+        {
+          "op": "damage",
+          "amount": 5
         }
       ],
       "entries": [
@@ -1510,15 +1525,15 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击2×2；本周期此前已成功配对一组时每张追加攻击1×2",
+      "description": "造成2段4点伤害；自身有力量时，追加1段3点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         }
       ],
       "entries": []
@@ -1528,11 +1543,11 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张4格挡；上组配对含技能牌时，整对施加1流血",
+      "description": "获得7点格挡；自身有护甲时，额外施加1层流血。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -1542,17 +1557,11 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张4格挡、1护甲；本周期首对额外整对2护甲",
+      "description": "获得8点格挡；本实例曾翻回时，额外获得2点格挡。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
-        },
-        {
-          "op": "applyStatus",
-          "status": "Armor",
-          "amount": 1,
-          "target": "player"
+          "amount": 8
         }
       ],
       "entries": []
@@ -1562,15 +1571,15 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×2；上组同名配对卡名与本组不同则整对施加2流血",
+      "description": "造成2段4点伤害；敌人有流血时，额外施加1层流血。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         }
       ],
       "entries": []
@@ -1580,8 +1589,13 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Epic",
-      "description": "整对令本周期下一组攻击配对各直接攻击段基础伤害+1；不叠加",
-      "effects": [],
+      "description": "获得6点格挡；下一次玩家直接攻击的每段基础伤害+3。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 6
+        }
+      ],
       "entries": [
         {
           "entry": "modifier",
@@ -1594,11 +1608,16 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击1×5；本周期首对时整对施加2流血",
+      "description": "造成7点伤害，施加1层流血。",
       "effects": [
         {
           "op": "damage",
-          "amount": 5
+          "amount": 7
+        },
+        {
+          "op": "applyStatus",
+          "amount": 1,
+          "status": "Bleed"
         }
       ],
       "entries": []
@@ -1608,11 +1627,11 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张5格挡；配对前自身0格挡时每张另获2护甲",
+      "description": "获得8点格挡；自身格挡为0且护甲为0时，获得1点护甲。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 5
+          "amount": 8
         }
       ],
       "entries": []
@@ -1622,15 +1641,15 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×2；配对前敌虚弱时每张追加攻击1×3",
+      "description": "造成2段4点伤害；敌人虚弱时，追加1段4点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         }
       ],
       "entries": []
@@ -1658,11 +1677,11 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张3格挡并造成一次基础2附加伤害",
+      "description": "获得6点格挡，造成2点附加伤害。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 6
         },
         {
           "op": "additionalDamage",
@@ -1676,15 +1695,19 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×3；本周期上组配对含技能牌则每张追加攻击1×3",
+      "description": "造成3段4点伤害；自身格挡≥8时，追加2段3点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
+        },
+        {
+          "op": "damage",
+          "amount": 4
         }
       ],
       "entries": []
@@ -1694,11 +1717,16 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张4格挡；本周期上组含攻击牌时整对施加2流血",
+      "description": "获得7点格挡，施加1层流血；敌人已有流血时，改为施加2层流血。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
+        },
+        {
+          "op": "applyStatus",
+          "amount": 1,
+          "status": "Bleed"
         }
       ],
       "entries": []
@@ -1708,11 +1736,11 @@
       "pool": "scholarReward",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张4格挡；整对消耗恰好2流血后获得2治疗及2护甲",
+      "description": "获得7点格挡；敌人有流血时，恢复2点生命；敌人有流血且自身护甲为0时，获得1点护甲。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -1722,15 +1750,23 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Epic",
-      "description": "每张攻击2×2；本周期已配成至少两种不同卡名同名对时本对每段基础伤害+2",
+      "description": "造成4段4点伤害；自身力量≥2时，每段伤害+2。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
+        },
+        {
+          "op": "damage",
+          "amount": 4
+        },
+        {
+          "op": "damage",
+          "amount": 4
         }
       ],
       "entries": [
@@ -1771,20 +1807,20 @@
       "pool": "scholarReward",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×2并施加1中毒；若该实例回访则额外施加1中毒",
+      "description": "造成2段4点伤害，施加1层中毒；本实例曾翻回时，额外施加1层中毒。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "applyStatus",
-          "status": "Poison",
-          "amount": 1
+          "amount": 1,
+          "status": "Poison"
         }
       ],
       "entries": []
@@ -1794,43 +1830,44 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击1×8",
+      "description": "造成9点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 8
+          "amount": 9
         }
       ],
       "entries": []
     },
     {
-      "name": "破甲锤",
+      "name": "破盾锤",
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张先削敌2护甲，再攻击1×5",
+      "description": "造成7点伤害；敌人有格挡时，额外造成3点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 5
+          "amount": 7
         }
       ],
-      "entries": []
+      "entries": [],
+      "id": "破甲锤"
     },
     {
       "name": "追猎",
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击2×3；配对前敌有流血则每张追加攻击1×2",
+      "description": "造成2段4点伤害；敌人有流血时，追加1段3点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         }
       ],
       "entries": []
@@ -1840,11 +1877,16 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击1×5；整对结算后施加2流血",
+      "description": "造成7点伤害，施加2层流血。",
       "effects": [
         {
           "op": "damage",
-          "amount": 5
+          "amount": 7
+        },
+        {
+          "op": "applyStatus",
+          "amount": 2,
+          "status": "Bleed"
         }
       ],
       "entries": []
@@ -1854,11 +1896,16 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击1×6；整对结算后施加1回合易伤",
+      "description": "造成9点伤害，施加1回合易伤。",
       "effects": [
         {
           "op": "damage",
-          "amount": 6
+          "amount": 9
+        },
+        {
+          "op": "applyStatus",
+          "amount": 1,
+          "status": "Vulnerable"
         }
       ],
       "entries": [
@@ -1873,11 +1920,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得7格挡",
+      "description": "获得9点格挡。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 7
+          "amount": 9
         }
       ],
       "entries": []
@@ -1887,17 +1934,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张4格挡和2护甲",
+      "description": "获得7点格挡；自身护甲为0时，获得1点护甲。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
-        },
-        {
-          "op": "applyStatus",
-          "status": "Armor",
-          "amount": 2,
-          "target": "player"
+          "amount": 7
         }
       ],
       "entries": []
@@ -1907,11 +1948,15 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张3格挡；本场首次配成时整对恢复2生命",
+      "description": "获得7点格挡，恢复2点生命。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 7
+        },
+        {
+          "op": "heal",
+          "amount": 2
         }
       ],
       "entries": [
@@ -1926,11 +1971,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张5格挡；配对前自身生命≤50%时整对另获3护甲",
+      "description": "获得8点格挡；自身生命≤50%且护甲为0时，获得1点护甲。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 5
+          "amount": 8
         }
       ],
       "entries": []
@@ -1940,19 +1985,20 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "首翻3格挡；配对整对5格挡、3护甲",
-      "effects": [],
-      "entries": [
+      "description": "获得8点格挡和1点护甲。[翻开] 获得3点格挡。",
+      "effects": [
         {
-          "entry": "trigger",
-          "timing": "FirstFlip",
-          "effects": [
-            {
-              "op": "gainBlock",
-              "amount": 3
-            }
-          ]
+          "op": "gainBlock",
+          "amount": 8
         },
+        {
+          "op": "applyStatus",
+          "amount": 1,
+          "status": "Armor",
+          "target": "player"
+        }
+      ],
+      "entries": [
         {
           "entry": "modifier",
           "kind": "Exhaust"
@@ -1992,15 +2038,15 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×2；每张第二段有效直接命中后施加1中毒",
+      "description": "造成2段4点伤害；第二段有效命中时，施加2层中毒。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         }
       ],
       "entries": []
@@ -2024,11 +2070,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张4格挡；整对消耗敌至多3中毒，每层3伤合并为一包附伤",
+      "description": "获得7点格挡；敌人中毒≥2时，额外造成1包4点附加伤害。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -2038,11 +2084,16 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张4格挡；整对施加1回合虚弱，每周期限一次",
+      "description": "获得7点格挡，施加1回合虚弱。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
+        },
+        {
+          "op": "applyStatus",
+          "amount": 1,
+          "status": "Weak"
         }
       ],
       "entries": []
@@ -2073,15 +2124,19 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Epic",
-      "description": "每张攻击2×3；配对前自身格挡≥8时每张追加攻击1×2",
+      "description": "造成3段4点伤害；自身格挡≥8时，追加1段4点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
+        },
+        {
+          "op": "damage",
+          "amount": 4
         }
       ],
       "entries": []
@@ -2091,19 +2146,19 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Epic",
-      "description": "每张攻击3×2；配对前自身格挡≥4时整对消耗4格挡使每张追加攻击1×2，每周期限一次",
+      "description": "造成3段3点伤害；其中第2段基础伤害+1、第3段基础伤害+2；自身格挡≥4时，追加1段4点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 3
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 5
         }
       ],
       "entries": []
@@ -2196,14 +2251,25 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "effects": [],
+      "effects": [
+        {
+          "op": "applyStatus",
+          "amount": 1,
+          "status": "Strength",
+          "target": "player"
+        },
+        {
+          "op": "gainBlock",
+          "amount": 4
+        }
+      ],
       "entries": [
         {
           "entry": "modifier",
           "kind": "Exhaust"
         }
       ],
-      "description": "整对获得1力量，本场持续"
+      "description": "获得1层力量和4点格挡。"
     },
     {
       "name": "试锋",
@@ -2213,34 +2279,34 @@
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         }
       ],
       "entries": [],
-      "description": "每张攻击2×2；本场首次成功配对时整对获得1力量"
+      "description": "造成2段4点伤害；自身力量为0时，获得1层力量。"
     },
     {
       "name": "轻刃",
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击3×1；配对前力量≥2则每张追加攻击1×1",
+      "description": "造成3段2点伤害；其中第2段基础伤害+1、第3段基础伤害+2；自身力量≥2时，追加1段2点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 1
+          "amount": 2
         },
         {
           "op": "damage",
-          "amount": 1
+          "amount": 3
         },
         {
           "op": "damage",
-          "amount": 1
+          "amount": 4
         }
       ],
       "entries": []
@@ -2250,15 +2316,15 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击2×3；本周期上一组成功配对含攻击牌则每张追加攻击1×1",
+      "description": "造成2段4点伤害；自身有力量时，追加1段3点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         }
       ],
       "entries": []
@@ -2268,11 +2334,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得4格挡；配对前己方力量为0则整对获得1力量（每场首次满足一次）",
+      "description": "获得7点格挡；自身力量为0时，获得1层力量。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -2282,19 +2348,19 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击3×1；该实例第三段有效直接命中后施加1流血",
+      "description": "造成3段3点伤害；第三段有效命中时，施加1层流血。",
       "effects": [
         {
           "op": "damage",
-          "amount": 1
+          "amount": 3
         },
         {
           "op": "damage",
-          "amount": 1
+          "amount": 3
         },
         {
           "op": "damage",
-          "amount": 1
+          "amount": 3
         }
       ],
       "entries": []
@@ -2304,11 +2370,16 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击1×4；整对结束后施加1流血",
+      "description": "造成6点伤害，施加1层流血；敌人已有流血时，额外造成2点附加伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 4
+          "amount": 6
+        },
+        {
+          "op": "applyStatus",
+          "amount": 1,
+          "status": "Bleed"
         }
       ],
       "entries": []
@@ -2318,15 +2389,15 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击2×2；该实例第二段有效直接命中后施加1流血",
+      "description": "造成2段3点伤害；第二段有效命中时，施加1层流血。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 3
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 3
         }
       ],
       "entries": []
@@ -2336,11 +2407,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得4格挡；配对前敌人流血≥3则整对额外获得2护甲",
+      "description": "获得7点格挡；敌人流血≥3且自身护甲为0时，获得1点护甲。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -2350,11 +2421,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得3格挡；整对施加1中毒，若配对前敌人已有中毒则改为2中毒",
+      "description": "获得6点格挡，施加1层中毒；敌人已有中毒时，改为施加2层。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 6
         }
       ],
       "entries": []
@@ -2364,37 +2435,25 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每个实例首翻施加1中毒；配对时每张攻击1×4",
+      "description": "造成6点伤害。[翻开] 施加1层中毒。（同一战斗实例每次真实翻开均生效；需与行动条代价一起验收。）",
       "effects": [
         {
           "op": "damage",
-          "amount": 4
+          "amount": 6
         }
       ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "FirstFlip",
-          "effects": [
-            {
-              "op": "applyStatus",
-              "status": "Poison",
-              "amount": 1
-            }
-          ]
-        }
-      ]
+      "entries": []
     },
     {
       "name": "缓毒",
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得4格挡；配对前敌人中毒≥3则每张恢复1生命",
+      "description": "获得7点格挡；敌人中毒≥2时，恢复2点生命。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -2451,11 +2510,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得4格挡；整对后可选一张背面牌正交移位1格，目标有合法背面牌则交换",
+      "description": "获得7点格挡；可移动一张合法背面牌1格。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -2465,15 +2524,15 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×2；翻开时锁定此前全部蓄步次数，每次位移使该实例本次配对各直接攻击段基础伤害+1",
+      "description": "造成2段3点伤害。[翻开] 本次锁定蓄步每1次，使本实例各攻击段基础伤害+1；重新翻开仅刷新本实例由蓄步提供的修正，不重复累计。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 3
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 3
         }
       ],
       "entries": []
@@ -2483,11 +2542,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得4格挡；该实例真正翻开时，按此前全部蓄步次数每次获得1护甲",
+      "description": "获得7点格挡。[翻开] 本次锁定蓄步每累计2次，获得2点格挡。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -2497,11 +2556,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得3格挡；每实例本场首次手动翻开时，可让另一张合法背面牌正交移位1格",
+      "description": "获得7点格挡。[翻开] 可移动另一张合法背面牌1格。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 7
         }
       ],
       "entries": []
@@ -2511,11 +2570,11 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击1×5；整对后可移动一张合法背面牌1格",
+      "description": "造成7点伤害；可移动一张合法背面牌1格。",
       "effects": [
         {
           "op": "damage",
-          "amount": 5
+          "amount": 7
         }
       ],
       "entries": []
@@ -2525,11 +2584,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得2格挡；整对可将当前至多4格挡转为等量护甲",
+      "description": "获得7点格挡；自身格挡≥4时，额外获得3点格挡。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 2
+          "amount": 7
         }
       ],
       "entries": []
@@ -2539,31 +2598,25 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每实例本场首次手动翻开获得2格挡；配对时曾在当前格翻回的实例额外获得1护甲",
-      "effects": [],
-      "entries": [
+      "description": "获得7点格挡。[翻回] 临时格挡+1。",
+      "effects": [
         {
-          "entry": "trigger",
-          "timing": "FirstFlip",
-          "effects": [
-            {
-              "op": "gainBlock",
-              "amount": 2
-            }
-          ]
+          "op": "gainBlock",
+          "amount": 7
         }
-      ]
+      ],
+      "entries": []
     },
     {
       "name": "逆握",
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张获得3格挡；整对可消耗3自身护甲，获得1力量",
+      "description": "获得7点格挡；自身护甲≥2时，获得1层力量。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 7
         }
       ],
       "entries": [
@@ -2578,11 +2631,11 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击1×6；配对前力量≥2则每张追加攻击1×3",
+      "description": "造成9点伤害；自身力量≥2时，追加1段5点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 6
+          "amount": 9
         }
       ],
       "entries": []
@@ -2592,7 +2645,7 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×3；配对前本周期敌人已受到至少3段直接攻击时每张追加攻击1×3",
+      "description": "造成3段3点伤害；其中第2段基础伤害+2、第3段基础伤害+4；自身力量≥3时，追加1段4点伤害。",
       "effects": [
         {
           "op": "damage",
@@ -2600,7 +2653,11 @@
         },
         {
           "op": "damage",
-          "amount": 3
+          "amount": 5
+        },
+        {
+          "op": "damage",
+          "amount": 7
         }
       ],
       "entries": []
@@ -2610,15 +2667,15 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×3；整对开始时可消耗2流血，使双方各追加攻击1×4",
+      "description": "造成2段4点伤害；敌人流血≥2时，追加1段4点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         }
       ],
       "entries": []
@@ -2628,11 +2685,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得4格挡；整对准备下一次敌人直接攻击命中玩家后向敌人施加2流血（不叠加）",
+      "description": "获得7点格挡；下一次受到敌人有效直接攻击时，向敌人施加2层流血。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -2642,11 +2699,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张获得4格挡；整对使接下来2段玩家有效直接攻击各施加1流血（共享次数，不叠加）",
+      "description": "获得7点格挡；下一次玩家有效直接攻击命中时，额外施加2层流血。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -2656,11 +2713,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张获得3格挡；整对可消耗2流血，施加3中毒",
+      "description": "获得7点格挡；敌人有流血时，额外施加2层中毒。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 7
         }
       ],
       "entries": []
@@ -2670,11 +2727,11 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击1×5；整对可消耗至多3中毒，每消耗1层整对追加攻击1×2（双方基础攻击后执行）",
+      "description": "造成8点伤害；敌人中毒≥2时，追加1段4点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 5
+          "amount": 8
         }
       ],
       "entries": []
@@ -2684,15 +2741,15 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×3；每段有效命中中毒目标后另造成1包基础1的独立附伤",
+      "description": "造成2段4点伤害；每段有效命中中毒目标时，额外造成1包1点附加伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 3
+          "amount": 4
         }
       ],
       "entries": []
@@ -2734,11 +2791,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张获得3格挡；整对后依次选两张不同的合法背面牌，各正交移位1格",
+      "description": "获得7点格挡；可移动一张合法背面牌1格，发生交换时额外获得3点格挡。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 7
         }
       ],
       "entries": []
@@ -2748,11 +2805,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张获得3格挡；整对后选一张背面牌连续正交移位至多2步，第二步不得返回起点",
+      "description": "获得7点格挡；本实例本次翻开锁定蓄步≥2时，使下一次玩家直接攻击追加2段3点伤害。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 7
         }
       ],
       "entries": []
@@ -2762,15 +2819,15 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×2；整对后可移位一张背面牌1格；若与目标背面牌交换则整对额外施加2流血",
+      "description": "造成2段4点伤害；可移动一张合法背面牌1格，发生交换时施加1层流血。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         }
       ],
       "entries": []
@@ -2780,11 +2837,11 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击1×4；翻开时锁定此前全部蓄步次数，配对时该实例追加一包基础值等于锁步次数的附伤（0次不产生包）",
+      "description": "造成7点伤害；额外造成1包等于本次翻开锁定蓄步次数的附加伤害（蓄步为0则无此伤害包）。",
       "effects": [
         {
           "op": "damage",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -2794,11 +2851,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得3格挡；该实例真正翻开时按此前全部蓄步次数施加等量中毒",
+      "description": "获得7点格挡。[翻开] 本次锁定蓄步每累计2次，施加1层中毒。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 7
         }
       ],
       "entries": []
@@ -2808,11 +2865,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得3格挡；配对前己方护甲≥1则每张额外获得2格挡",
+      "description": "获得7点格挡；自身有护甲时，额外获得3点格挡。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 7
         }
       ],
       "entries": []
@@ -2822,11 +2879,11 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击1×4；配对前己方护甲≥3则每张追加攻击1×2",
+      "description": "造成7点伤害；自身护甲≥2时，追加1段4点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -2836,11 +2893,11 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击1×4；曾在当前格翻回的实例在配对时施加1中毒",
+      "description": "造成7点伤害；本实例曾翻回时，施加1层中毒。",
       "effects": [
         {
           "op": "damage",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -2868,23 +2925,27 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Epic",
-      "description": "每张攻击4×1；配对前敌人流血≥3则每张追加攻击1×2",
+      "description": "造成5段3点伤害；敌人流血≥4时，追加2段3点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 1
+          "amount": 3
         },
         {
           "op": "damage",
-          "amount": 1
+          "amount": 3
         },
         {
           "op": "damage",
-          "amount": 1
+          "amount": 3
         },
         {
           "op": "damage",
-          "amount": 1
+          "amount": 3
+        },
+        {
+          "op": "damage",
+          "amount": 3
         }
       ],
       "entries": []
@@ -2894,11 +2955,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张获得3格挡；整对可消耗3流血，获得1力量并恢复2生命",
+      "description": "获得8点格挡；敌人流血≥4时，获得1层力量并恢复3点生命。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 8
         }
       ],
       "entries": [
@@ -2913,19 +2974,19 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Epic",
-      "description": "每张攻击3×2；配对前敌人流血≥4则本对每段有效直接攻击额外造成1包基础1的独立附伤",
+      "description": "造成3段5点伤害；敌人流血≥4时，每段有效命中额外造成1包1点附加伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 5
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 5
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 5
         }
       ],
       "entries": []
@@ -2935,8 +2996,18 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Epic",
-      "description": "整对施加2中毒，然后立即按敌人当时中毒层数结算一次中毒定时伤害（不消耗中毒）",
-      "effects": [],
+      "description": "获得7点格挡，施加2层中毒；敌人中毒≥4时，额外造成1包等于敌人中毒层数的附加伤害（最多12点）。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 7
+        },
+        {
+          "op": "applyStatus",
+          "amount": 2,
+          "status": "Poison"
+        }
+      ],
       "entries": [
         {
           "entry": "modifier",
@@ -2963,15 +3034,15 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×2；翻开时每累计2次蓄步，为该实例本次配对追加攻击1×2（可多次，无上限）",
+      "description": "造成2段4点伤害。[翻开] 本次锁定蓄步每累计2次，临时追加1段3点伤害；重新翻开仅刷新蓄步带来的追加段，不重复累计。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         }
       ],
       "entries": []
@@ -2981,11 +3052,11 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击1×5；该实例真正翻开时按此前全部蓄步次数施加等量流血",
+      "description": "造成7点伤害。[翻开] 本次锁定蓄步每累计2次，施加1层流血。",
       "effects": [
         {
           "op": "damage",
-          "amount": 5
+          "amount": 7
         }
       ],
       "entries": []
@@ -2995,11 +3066,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张获得3格挡；整对任一实例本次翻开锁步≥3则获得1力量（每场限一次）",
+      "description": "获得7点格挡；本次翻开锁定蓄步≥3时，获得1层力量。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 7
         }
       ],
       "entries": []
@@ -3009,8 +3080,13 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Epic",
-      "description": "整对将双方本次翻开锁步次数相加，每累计3次获得1力量，收益无上限",
-      "effects": [],
+      "description": "获得7点格挡；本实例锁定蓄步每累计4次，获得1层力量（无上限）。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 7
+        }
+      ],
       "entries": [
         {
           "entry": "modifier",
@@ -3023,11 +3099,11 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Common",
-      "description": "每张攻击1×5；配对前敌人虚弱则整对获得3格挡",
+      "description": "造成7点伤害；敌人虚弱时，获得2点格挡。",
       "effects": [
         {
           "op": "damage",
-          "amount": 5
+          "amount": 7
         }
       ],
       "entries": []
@@ -3037,11 +3113,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张获得4格挡；整对准备一次反击：敌人下一次直接攻击后，按该次实际消耗的玩家格挡数造成1包附伤（力量仅加一次）",
+      "description": "获得7点格挡；下一次敌人直接攻击实际消耗己方格挡时，造成1包等于该次被消耗格挡数的附加伤害（最多8点）。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -3051,11 +3127,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "每张获得3格挡；整对可消耗3自身护甲，获得1力量",
+      "description": "获得7点格挡；自身护甲≥2时，造成8点附加伤害。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 3
+          "amount": 7
         }
       ],
       "entries": [
@@ -3070,11 +3146,11 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Common",
-      "description": "每张获得4格挡；若本周期上一组配对含攻击牌则整对施加1流血，否则若含技能牌则整对获得2护甲",
+      "description": "获得7点格挡；敌人有负面状态时，施加1层流血；否则自身护甲为0时，获得1点护甲。",
       "effects": [
         {
           "op": "gainBlock",
-          "amount": 4
+          "amount": 7
         }
       ],
       "entries": []
@@ -3084,15 +3160,15 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Rare",
-      "description": "每张攻击2×2；本周期此前已完成至少2种不同牌名同名对时每张追加攻击1×3",
+      "description": "造成2段4点伤害；本实例曾有效移动时，追加1段4点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         }
       ],
       "entries": []
@@ -3116,8 +3192,13 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Epic",
-      "description": "本周期此前至少完成3种不同牌名同名对，则整对令本周期后续2次成功配对各额外造成1包基础3附伤（不叠加）",
-      "effects": [],
+      "description": "获得7点格挡；接下来2次玩家直接攻击的每段基础伤害+2。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 7
+        }
+      ],
       "entries": [
         {
           "entry": "modifier",
@@ -3130,8 +3211,13 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "整对令下一组攻击配对的两张攻击牌各追加2段基础1伤直接攻击，不叠加",
-      "effects": [],
+      "description": "获得7点格挡；下一次玩家直接攻击追加2段2点伤害（追加段不再触发本准备效果）。",
+      "effects": [
+        {
+          "op": "gainBlock",
+          "amount": 7
+        }
+      ],
       "entries": [
         {
           "entry": "modifier",
@@ -3144,8 +3230,19 @@
       "pool": "commonPool",
       "type": "Skill",
       "rarity": "Rare",
-      "description": "整对使玩家失去3生命，获得2力量；生命代价不享受学者增益",
-      "effects": [],
+      "description": "获得1层力量和5点格挡；自身生命≤50%时，额外获得1层力量。",
+      "effects": [
+        {
+          "op": "applyStatus",
+          "amount": 1,
+          "status": "Strength",
+          "target": "player"
+        },
+        {
+          "op": "gainBlock",
+          "amount": 5
+        }
+      ],
       "entries": [
         {
           "entry": "modifier",
@@ -3177,19 +3274,23 @@
       "pool": "commonPool",
       "type": "Attack",
       "rarity": "Epic",
-      "description": "每张攻击3×2；配对前敌人同时具有至少2种不同负面状态（灼烧／中毒／流血／冰冻／虚弱／易伤）则每张追加攻击1×3",
+      "description": "造成4段4点伤害；敌人同时具有至少2种不同负面状态时，追加2段4点伤害。",
       "effects": [
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
         },
         {
           "op": "damage",
-          "amount": 2
+          "amount": 4
+        },
+        {
+          "op": "damage",
+          "amount": 4
         }
       ],
       "entries": [
