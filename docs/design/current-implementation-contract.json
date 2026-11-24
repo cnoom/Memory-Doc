@@ -3412,6 +3412,10 @@
       "gaugeThreshold": 5,
       "tier": "normal",
       "homeChapter": 1,
+      "strengthening": {
+        "interval": 5,
+        "strengthStacks": 1
+      },
       "intentCycle": [
         {
           "type": "attack",
@@ -3459,6 +3463,10 @@
       "gaugeThreshold": 8,
       "tier": "normal",
       "homeChapter": 1,
+      "strengthening": {
+        "interval": 4,
+        "strengthStacks": 1
+      },
       "intentCycle": [
         {
           "type": "attack",
@@ -3878,6 +3886,10 @@
       "maxHp": 240,
       "tier": "boss",
       "homeChapter": 2,
+      "strengthening": {
+        "interval": 5,
+        "strengthStacks": 1
+      },
       "phaseSwitchHp": [
         144,
         72
