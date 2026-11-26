@@ -1,7 +1,7 @@
-﻿{
-  "schemaVersion": 1,
-  "reviewDate": "2026-11-15",
-  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-12：随 V5 公共奖励牌迁移（50 张职业共享攻击/技能池、取消正式能力牌投放、配对后消耗、独立附伤原语、多段伤害拆分；学者30+中立20 池不变；提灯/投石行保留旧档解析并新增磨砺/试锋；长夜编目/校对/连环索引/学术直觉/应急护符转技能）重新快照，对应 MemoryRouge PR #17 feat/v5-public-50-pair-exhaust 合成树（合并以 Unity 6000.3.27f1 三门验收全绿为前提）。。2026-11-13：随 V6 A批「基础可理解」20 张公共奖励牌（轻刃/并击/磨锋纹/三拍/划痕/锯齿/沉红/毒雾/毒刺/缓毒/火舌/焚纸/凝霜/挪页/游刃/藏锋/移页签/错位刃/续甲/旧识，commonPool）入池，正式奖励投放 50→70；新增玩家可选背面位移（正交一步、空格移动或背面交换）与蓄步兑现（翻开锁定、离场清零、无上限）。2026-11-14：随 V6 B批「跨机制联动」20 张公共奖励牌（逆握/破势/余震/撕裂/伤痕反制/鲜红涂刃/毒血互换/毒发/渗毒斩/燃魂/裂冰/排阵/穿书/影袭/脚印/飞墨/余盾/刃甲/倒书，commonPool）入池，正式奖励投放 70→90；旧「余烬」能力行（BurnApplyUp 光环）经同名冲突裁决原位改写为 X26 余烬攻击行（名字/位置/池/稀有度不变，旧档按名可解析，BurnApplyUp 光环随行退役——正式能力牌 11→10）；新增有效直接命中钩子、整对状态消耗自动支付（整额门槛零扣费）、伤痕反制/鲜红涂刃预备态、受约束双移位与连续移位（排阵/穿书/影袭）与蓄步兑现（脚印/飞墨）；对应 MemoryRouge PR #22 feat/v6-batch-b-20-cards 合成树（以 Unity 6000.3.27f1 三门验收全绿为前提：编译 0 CS、EditMode 64/64、PlayMode 1134/1134）。2026-11-14（PR #24 兼容修复）：X26 更名「烬纹斩」（同名冲突终裁——旧「余烬」Ability/BurnApplyUp 行恢复原定义与原行序供旧档按名读回，不重新投放；上一段的「原位改写/能力牌 11→10」口径废止，正式能力牌恢复 11、BurnApplyUp 光环行保留）；cards.json 156→157、全目录 160→161、commonPool 82→83、正式奖励投放仍 90；新增旧档按名读回实证（含余烬旧档经 RunSaveMapping 校验通过且保持能力语义）；对应 MemoryRouge PR #24 fix/v6-b-x26-legacy-ember-compat 合成树（Unity 6000.3.27f1 三门验收：编译 0 CS、EditMode 64/64、PlayMode 1136/1136，独立 worktree 拷贝 Library 隔离验收）。2026-11-14（PR #25 C批）：V6 C批「复杂与终结」20 张公共奖励牌（千刃/血祭/血潮/腐蚀环/冰火转写/追影/流影/迷踪/随风成阵/铁壁击/反制/虎魄盾/脉络/追注/折返/构篇/号令/燃志/瞬燃/绝唱，commonPool）入池，正式奖励投放 90→110、正式[消耗] 21/110（C批 10 种）；cards.json 157→177、全目录 161→181；C批[消耗]与 V5 同语义（仅成功配对+真实离场消耗）；新增命中共生附伤（血潮窗口）、敌攻格挡消耗反击（反制）、定时毒提前结算（腐蚀环）、全量冰冻转写（冰火转写）、生命代价致死短路（燃志）、合并附伤包（瞬燃）与配对周期记忆准备态（脉络/追注/构篇/号令）；对应 MemoryRouge PR #25 feat/v6-batch-c-20-cards 合成树（Unity 6000.3.27f1 三门验收全绿为前提）。2026-11-21（待评审，Draft，关联 MemoryRouge PR #58）：V7.2 卡牌候选实现快照提案，96 张卡的描述、数值、条件及必要 ID/entries 差异按当前代码逐项对齐；14 张暂缓投放卡仍保留历史定义。仅同步 cards，不变更 relicsV2；卡牌数值仍待玩家体验与平衡验收。必须与 PR #58 验收合成树配套评审后合并，不得提前使已批准的 main 合同失效",
+{
+  "schemaVersion": 2,
+  "reviewDate": "2026-11-26",
+  "description": "设计仓审阅锁定的实现内容快照。变更须先确认设计并同时修改设计文档/本契约与 Unity 工程。数组顺序具有投放与种子意义，完整字段逐项比较。2026-11-12：随 V5 公共奖励牌迁移（50 张职业共享攻击/技能池、取消正式能力牌投放、配对后消耗、独立附伤原语、多段伤害拆分；学者30+中立20 池不变；提灯/投石行保留旧档解析并新增磨砺/试锋；长夜编目/校对/连环索引/学术直觉/应急护符转技能）重新快照，对应 MemoryRouge PR #17 feat/v5-public-50-pair-exhaust 合成树（合并以 Unity 6000.3.27f1 三门验收全绿为前提）。。2026-11-13：随 V6 A批「基础可理解」20 张公共奖励牌（轻刃/并击/磨锋纹/三拍/划痕/锯齿/沉红/毒雾/毒刺/缓毒/火舌/焚纸/凝霜/挪页/游刃/藏锋/移页签/错位刃/续甲/旧识，commonPool）入池，正式奖励投放 50→70；新增玩家可选背面位移（正交一步、空格移动或背面交换）与蓄步兑现（翻开锁定、离场清零、无上限）。2026-11-14：随 V6 B批「跨机制联动」20 张公共奖励牌（逆握/破势/余震/撕裂/伤痕反制/鲜红涂刃/毒血互换/毒发/渗毒斩/燃魂/裂冰/排阵/穿书/影袭/脚印/飞墨/余盾/刃甲/倒书，commonPool）入池，正式奖励投放 70→90；旧「余烬」能力行（BurnApplyUp 光环）经同名冲突裁决原位改写为 X26 余烬攻击行（名字/位置/池/稀有度不变，旧档按名可解析，BurnApplyUp 光环随行退役——正式能力牌 11→10）；新增有效直接命中钩子、整对状态消耗自动支付（整额门槛零扣费）、伤痕反制/鲜红涂刃预备态、受约束双移位与连续移位（排阵/穿书/影袭）与蓄步兑现（脚印/飞墨）；对应 MemoryRouge PR #22 feat/v6-batch-b-20-cards 合成树（以 Unity 6000.3.27f1 三门验收全绿为前提：编译 0 CS、EditMode 64/64、PlayMode 1134/1134）。2026-11-14（PR #24 兼容修复）：X26 更名「烬纹斩」（同名冲突终裁——旧「余烬」Ability/BurnApplyUp 行恢复原定义与原行序供旧档按名读回，不重新投放；上一段的「原位改写/能力牌 11→10」口径废止，正式能力牌恢复 11、BurnApplyUp 光环行保留）；cards.json 156→157、全目录 160→161、commonPool 82→83、正式奖励投放仍 90；新增旧档按名读回实证（含余烬旧档经 RunSaveMapping 校验通过且保持能力语义）；对应 MemoryRouge PR #24 fix/v6-b-x26-legacy-ember-compat 合成树（Unity 6000.3.27f1 三门验收：编译 0 CS、EditMode 64/64、PlayMode 1136/1136，独立 worktree 拷贝 Library 隔离验收）。2026-11-14（PR #25 C批）：V6 C批「复杂与终结」20 张公共奖励牌（千刃/血祭/血潮/腐蚀环/冰火转写/追影/流影/迷踪/随风成阵/铁壁击/反制/虎魄盾/脉络/追注/折返/构篇/号令/燃志/瞬燃/绝唱，commonPool）入池，正式奖励投放 90→110、正式[消耗] 21/110（C批 10 种）；cards.json 157→177、全目录 161→181；C批[消耗]与 V5 同语义（仅成功配对+真实离场消耗）；新增命中共生附伤（血潮窗口）、敌攻格挡消耗反击（反制）、定时毒提前结算（腐蚀环）、全量冰冻转写（冰火转写）、生命代价致死短路（燃志）、合并附伤包（瞬燃）与配对周期记忆准备态（脉络/追注/构篇/号令）；对应 MemoryRouge PR #25 feat/v6-batch-c-20-cards 合成树（Unity 6000.3.27f1 三门验收全绿为前提）。2026-11-21（待评审，Draft，关联 MemoryRouge PR #58）：V7.2 卡牌候选实现快照提案，96 张卡的描述、数值、条件及必要 ID/entries 差异按当前代码逐项对齐；14 张暂缓投放卡仍保留历史定义。仅同步 cards，不变更 relicsV2；卡牌数值仍待玩家体验与平衡验收。必须与 PR #58 验收合成树配套评审后合并，不得提前使已批准的 main 合同失效2026-11-26（待评审，Draft，关联 Memory-Doc PR #14；游戏仓 feat/v73-p1b-schema2 P2-A）：V7.3 P2-A 废弃内容清除快照——cards 177→103（删除 74 张非现行卡：58 张 V5 前历史卡 + 16 张 Legacy 专用火冰/提灯/投石），relicsV2 36→33（删除冻结 R07/R20/R31；ID 106/119/130 永久空缺），移除 Legacy 19 件遗物节与对应 artReuse 条目；合同升 schemaVersion 2（relicsV2 条目仅保留 id/name/rarity/effectRule）。卡牌与遗物效果对账由 P2-B..G 逐批同步。",
   "cards": [
     {
       "name": "打击",
@@ -26,455 +26,6 @@
           "amount": 6
         }
       ]
-    },
-    {
-      "name": "火球术",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 6
-        }
-      ]
-    },
-    {
-      "name": "横扫",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "damage",
-              "amount": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "烈焰斩",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4
-        },
-        {
-          "op": "applyStatus",
-          "status": "Burn",
-          "amount": 2
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "applyStatus",
-              "status": "Burn",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "淬毒刃",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 3
-        },
-        {
-          "op": "applyStatus",
-          "status": "Poison",
-          "amount": 3
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "applyStatus",
-              "status": "Poison",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "破甲斩",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4
-        },
-        {
-          "op": "applyStatus",
-          "status": "Vulnerable",
-          "amount": 2
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "applyStatus",
-              "status": "Vulnerable",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "致残击",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4
-        },
-        {
-          "op": "applyStatus",
-          "status": "Weak",
-          "amount": 2
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "applyStatus",
-              "status": "Weak",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "连锁雷",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 3
-        },
-        {
-          "op": "flipAdjacent",
-          "amount": 1
-        }
-      ]
-    },
-    {
-      "name": "绝响",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 5
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Leave",
-          "effects": [
-            {
-              "op": "damage",
-              "amount": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "侦察兵",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 3
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "flipAdjacent",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "石肤",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 5
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "gainBlock",
-              "amount": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "甲胄",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 5
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "FlipBack",
-          "effects": [
-            {
-              "op": "gainBlock",
-              "amount": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "铁壁",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 6
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "gainBlock",
-              "amount": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "消散风",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "discard",
-          "selector": "AdjacentRandom",
-          "amount": 1
-        },
-        {
-          "op": "gainBlock",
-          "amount": 2
-        }
-      ]
-    },
-    {
-      "name": "清理",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "discard",
-          "selector": "Explicit",
-          "amount": 1
-        },
-        {
-          "op": "drawToTable",
-          "amount": 1
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Discard",
-          "effects": [
-            {
-              "op": "drawToTable",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "生命泉",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "heal",
-          "amount": 4
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "heal",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "绷带",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "heal",
-          "amount": 3
-        },
-        {
-          "op": "gainBlock",
-          "amount": 3
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Leave",
-          "effects": [
-            {
-              "op": "heal",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "回声",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "flipAdjacent",
-          "amount": 1
-        }
-      ]
-    },
-    {
-      "name": "魔力共鸣",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Epic",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4
-        },
-        {
-          "op": "drawToTable",
-          "amount": 1
-        }
-      ],
-      "entries": [
-        {
-          "entry": "match",
-          "keyword": "Resonance"
-        },
-        {
-          "entry": "modifier",
-          "kind": "Exhaust"
-        }
-      ]
-    },
-    {
-      "name": "守护结界",
-      "pool": "commonPool",
-      "type": "Ability",
-      "rarity": "Rare",
-      "aura": "SkillEffectUp"
-    },
-    {
-      "name": "余烬",
-      "pool": "commonPool",
-      "type": "Ability",
-      "rarity": "Rare",
-      "aura": "BurnApplyUp"
-    },
-    {
-      "name": "风眼",
-      "pool": "commonPool",
-      "type": "Ability",
-      "rarity": "Rare",
-      "aura": "DiscardExtra"
     },
     {
       "name": "笔记",
@@ -513,44 +64,6 @@
       ]
     },
     {
-      "name": "旁征博引",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 5,
-          "condition": "IfRevealedTwoThisTurn",
-          "amount2": 9
-        }
-      ]
-    },
-    {
-      "name": "引经据典",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "damage",
-              "amount": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "考据",
       "pool": "scholarReward",
       "type": "Attack",
@@ -583,122 +96,6 @@
       "entries": []
     },
     {
-      "name": "批注",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 6
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "mark",
-              "selector": "TableRandom",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "目录",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 5
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "reveal",
-              "selector": "TableAll",
-              "amount": 0,
-              "durationSec": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "索引",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 3
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "mark",
-              "selector": "TableRandom",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "摘要",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 3
-        },
-        {
-          "op": "gainBlock",
-          "amount": 3
-        }
-      ]
-    },
-    {
-      "name": "速记",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 4
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "lock",
-              "selector": "FaceUpEarliest"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "速读",
       "pool": "scholarReward",
       "type": "Skill",
@@ -711,32 +108,6 @@
         }
       ],
       "entries": []
-    },
-    {
-      "name": "笔记本格挡",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 6
-        }
-      ]
-    },
-    {
-      "name": "博闻强识",
-      "pool": "scholarReward",
-      "type": "Ability",
-      "rarity": "Common",
-      "aura": "AttackDamageUp"
-    },
-    {
-      "name": "过目不忘",
-      "pool": "scholarReward",
-      "type": "Ability",
-      "rarity": "Common",
-      "aura": "OutlineTracked"
     },
     {
       "name": "学术直觉",
@@ -759,576 +130,6 @@
         {
           "entry": "modifier",
           "kind": "Exhaust"
-        }
-      ]
-    },
-    {
-      "name": "全神贯注",
-      "pool": "scholarReward",
-      "type": "Ability",
-      "rarity": "Common",
-      "aura": "FocusPerFlip"
-    },
-    {
-      "name": "论文",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4,
-          "condition": "PerDistinctRevealedName",
-          "amount2": 2,
-          "amount3": 10
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "reveal",
-              "selector": "TableRandom",
-              "amount": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "精准打击",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 10,
-          "condition": "IfPartnerMarked",
-          "amount2": 5
-        }
-      ]
-    },
-    {
-      "name": "交叉引用",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 7
-        }
-      ],
-      "entries": [
-        {
-          "entry": "match",
-          "keyword": "Resonance"
-        },
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "reveal",
-              "selector": "AdjacentRandom",
-              "amount": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "破绽分析",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 6,
-          "condition": "IfEnemyVulnerable",
-          "amount2": 12
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "applyStatus",
-              "status": "Vulnerable",
-              "amount": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "图书馆",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 8
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "reveal",
-              "selector": "TableAll",
-              "amount": 0,
-              "durationSec": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "书签",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 4
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "lock",
-              "selector": "FaceUpAll"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "温习",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 5
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "returnFromDiscard",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "知识渊博",
-      "pool": "scholarReward",
-      "type": "Ability",
-      "rarity": "Rare",
-      "aura": "RevealAllOnFlip"
-    },
-    {
-      "name": "举一反三",
-      "pool": "scholarReward",
-      "type": "Ability",
-      "rarity": "Rare",
-      "aura": "BlockOnPair"
-    },
-    {
-      "name": "百科全书",
-      "pool": "scholarReward",
-      "type": "Ability",
-      "rarity": "Epic",
-      "aura": "FaceUpLimitUp"
-    },
-    {
-      "name": "万有文库",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Epic",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 6
-        },
-        {
-          "op": "gainBlock",
-          "amount": 6
-        }
-      ],
-      "entries": [
-        {
-          "entry": "match",
-          "keyword": "Resonance"
-        },
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "mark",
-              "selector": "TableAll",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "真理之眼",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Epic",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 5,
-          "condition": "PerPairCount",
-          "amount2": 2
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "reveal",
-              "selector": "TableAll",
-              "amount": 0,
-              "durationSec": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "时空回溯",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Epic",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 5
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "gauge",
-              "amount": -3
-            }
-          ]
-        },
-        {
-          "entry": "modifier",
-          "kind": "Exhaust"
-        }
-      ]
-    },
-    {
-      "name": "全知全能",
-      "pool": "scholarReward",
-      "type": "Ability",
-      "rarity": "Epic",
-      "aura": "GaugeDownOnPair"
-    },
-    {
-      "name": "融会贯通",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Epic",
-      "effects": [
-        {
-          "op": "copyEffect"
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "reveal",
-              "selector": "TableRandom",
-              "amount": 2
-            }
-          ]
-        },
-        {
-          "entry": "modifier",
-          "kind": "Exhaust"
-        }
-      ]
-    },
-    {
-      "name": "静观",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 5
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "reveal",
-              "selector": "TableRandom",
-              "amount": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "拈页",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "reveal",
-              "selector": "AdjacentRandom",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "笔谏",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4,
-          "condition": "IfEnemyVulnerable",
-          "amount2": 6
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "applyStatus",
-              "status": "Vulnerable",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "一览",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Common",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 6
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "reveal",
-              "selector": "TableRandom",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "留白",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 8
-        }
-      ],
-      "entries": [
-        {
-          "entry": "modifier",
-          "kind": "Stubborn",
-          "amount": 1
-        }
-      ]
-    },
-    {
-      "name": "回锋",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 5
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Leave",
-          "effects": [
-            {
-              "op": "returnFromDiscard",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "顿悟",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 5,
-          "condition": "IfRevealedTwoThisTurn",
-          "amount2": 8
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "reveal",
-              "selector": "TableRandom",
-              "amount": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "掷地有声",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Rare",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 7
-        },
-        {
-          "op": "gainBlock",
-          "amount": 7
-        }
-      ]
-    },
-    {
-      "name": "书海翻澜",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Epic",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 5
-        },
-        {
-          "op": "flipAdjacent",
-          "amount": 3
-        }
-      ]
-    },
-    {
-      "name": "走笔疾书",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Epic",
-      "effects": [
-        {
-          "op": "drawToTable",
-          "amount": 4
-        }
-      ],
-      "entries": [
-        {
-          "entry": "modifier",
-          "kind": "Exhaust"
-        }
-      ]
-    },
-    {
-      "name": "澄心静虑",
-      "pool": "scholarReward",
-      "type": "Skill",
-      "rarity": "Epic",
-      "effects": [
-        {
-          "op": "drawToTable",
-          "amount": 3
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "Reveal",
-          "effects": [
-            {
-              "op": "gainBlock",
-              "amount": 4
-            }
-          ]
         }
       ]
     },
@@ -1655,24 +456,6 @@
       "entries": []
     },
     {
-      "name": "插叙",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Rare",
-      "description": "每张攻击2×2；上组配对含攻击牌则整对消耗至多3灼烧，每层3伤合并为一包附伤",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 2
-        },
-        {
-          "op": "damage",
-          "amount": 2
-        }
-      ],
-      "entries": []
-    },
-    {
       "name": "旁注",
       "pool": "scholarReward",
       "type": "Skill",
@@ -1773,32 +556,6 @@
         {
           "entry": "modifier",
           "kind": "Exhaust"
-        }
-      ]
-    },
-    {
-      "name": "引火注",
-      "pool": "scholarReward",
-      "type": "Attack",
-      "rarity": "Rare",
-      "description": "首翻施加1灼烧；每张配对攻击1×3",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 3
-        }
-      ],
-      "entries": [
-        {
-          "entry": "trigger",
-          "timing": "FirstFlip",
-          "effects": [
-            {
-              "op": "applyStatus",
-              "status": "Burn",
-              "amount": 1
-            }
-          ]
         }
       ]
     },
@@ -2006,34 +763,6 @@
       ]
     },
     {
-      "name": "火星",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Common",
-      "description": "每张攻击1×3；整对施加2灼烧",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 3
-        }
-      ],
-      "entries": []
-    },
-    {
-      "name": "寒铁",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Rare",
-      "description": "每张攻击1×4；敌已有冰冻则每张追加攻击1×2；整对施加2冰冻",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4
-        }
-      ],
-      "entries": []
-    },
-    {
       "name": "毒针",
       "pool": "commonPool",
       "type": "Attack",
@@ -2046,20 +775,6 @@
         },
         {
           "op": "damage",
-          "amount": 4
-        }
-      ],
-      "entries": []
-    },
-    {
-      "name": "炉火守卫",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Common",
-      "description": "每张4格挡；配对前敌有灼烧时整对加2护甲",
-      "effects": [
-        {
-          "op": "gainBlock",
           "amount": 4
         }
       ],
@@ -2097,27 +812,6 @@
         }
       ],
       "entries": []
-    },
-    {
-      "name": "提灯",
-      "pool": "commonPool",
-      "type": "Ability",
-      "rarity": "Rare",
-      "description": "生效后，从下一次手动翻牌起，每周期第一次手动翻牌结算获得 2 格挡，在常规行动条 +1 前触发。",
-      "aura": "V2Lantern"
-    },
-    {
-      "name": "投石",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Common",
-      "description": "配对造成 7 伤害。若这是本场第一次成功配对，各额外造成 3 伤害。",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 7
-        }
-      ]
     },
     {
       "name": "盾击",
@@ -2459,53 +1153,6 @@
       "entries": []
     },
     {
-      "name": "火舌",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Common",
-      "description": "每张攻击1×4；每张有效命中时若敌人无灼烧则施加1灼烧",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4
-        }
-      ],
-      "entries": []
-    },
-    {
-      "name": "焚纸",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Common",
-      "description": "每张获得3格挡并施加1灼烧",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 3
-        },
-        {
-          "op": "applyStatus",
-          "status": "Burn",
-          "amount": 1
-        }
-      ],
-      "entries": []
-    },
-    {
-      "name": "凝霜",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Common",
-      "description": "每张获得4格挡；整对施加1冰冻",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 4
-        }
-      ],
-      "entries": []
-    },
-    {
       "name": "挪页",
       "pool": "commonPool",
       "type": "Skill",
@@ -2755,38 +1402,6 @@
       "entries": []
     },
     {
-      "name": "燃魂",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Rare",
-      "description": "每张获得4格挡；整对可消耗2灼烧，获得1力量",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 4
-        }
-      ],
-      "entries": []
-    },
-    {
-      "name": "裂冰",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Rare",
-      "description": "每张攻击2×3；整对可消耗1冰冻，使每张追加攻击1×2",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 3
-        },
-        {
-          "op": "damage",
-          "amount": 3
-        }
-      ],
-      "entries": []
-    },
-    {
       "name": "排阵",
       "pool": "commonPool",
       "type": "Skill",
@@ -2903,24 +1518,6 @@
       "entries": []
     },
     {
-      "name": "烬纹斩",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Rare",
-      "description": "每张攻击2×2；配对前敌人灼烧≥2则整对额外施加2流血",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 2
-        },
-        {
-          "op": "damage",
-          "amount": 2
-        }
-      ],
-      "entries": []
-    },
-    {
       "name": "千刃",
       "pool": "commonPool",
       "type": "Attack",
@@ -3008,20 +1605,6 @@
           "status": "Poison"
         }
       ],
-      "entries": [
-        {
-          "entry": "modifier",
-          "kind": "Exhaust"
-        }
-      ]
-    },
-    {
-      "name": "冰火转写",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Epic",
-      "description": "整对消耗敌人全部冰冻，并施加等量灼烧；无冰冻则无状态收益",
-      "effects": [],
       "entries": [
         {
           "entry": "modifier",
@@ -3178,20 +1761,6 @@
       "entries": []
     },
     {
-      "name": "折返",
-      "pool": "commonPool",
-      "type": "Skill",
-      "rarity": "Rare",
-      "description": "每张获得3格挡；双方都曾在当前格翻回则整对施加2冰冻并恢复2生命",
-      "effects": [
-        {
-          "op": "gainBlock",
-          "amount": 3
-        }
-      ],
-      "entries": []
-    },
-    {
       "name": "构篇",
       "pool": "commonPool",
       "type": "Skill",
@@ -3245,25 +1814,6 @@
         {
           "op": "gainBlock",
           "amount": 5
-        }
-      ],
-      "entries": [
-        {
-          "entry": "modifier",
-          "kind": "Exhaust"
-        }
-      ]
-    },
-    {
-      "name": "瞬燃",
-      "pool": "commonPool",
-      "type": "Attack",
-      "rarity": "Rare",
-      "description": "每张攻击1×4；整对可消耗至多5灼烧，按每层4基础伤害合并为1包独立附伤",
-      "effects": [
-        {
-          "op": "damage",
-          "amount": 4
         }
       ],
       "entries": [
@@ -4246,27 +2796,6 @@
       "name": "忘川渡口"
     }
   ],
-  "relics": [
-    "CommonRelics.MemoryCrystal",
-    "CommonRelics.ResonanceStone",
-    "CommonRelics.TwinDice",
-    "CommonRelics.Notebook",
-    "CommonRelics.FirstAidKit",
-    "CommonRelics.WoodenShield",
-    "RareRelics.MindMap",
-    "RareRelics.ChainCore",
-    "RareRelics.ChargeCrystal",
-    "RareRelics.VampireFang",
-    "RareRelics.EnergyShield",
-    "RareRelics.SlowMark",
-    "EpicRelics.StableAnchor",
-    "EpicRelics.TwinCharm",
-    "EpicRelics.MirrorEcho",
-    "EpicRelics.ScholarBadge",
-    "BossRelics.OmniscientEye",
-    "BossRelics.ChaosCore",
-    "BossRelics.MemoryCrown"
-  ],
   "shopPrices": {
     "CardPriceCommon": 45,
     "CardPriceRare": 60,
@@ -4278,380 +2807,214 @@
     "ExpansionPriceStep": 50
   },
   "artReuse": {
-    "万有文库": "CardSkillWanyouwenku",
-    "举一反三": "CardAbilityJuyifansan",
-    "书签": "CardSkillShuqian",
-    "交叉引用": "CardAttackJiaochayinyong",
-    "余烬": "CardAbilityYujin",
-    "侦察兵": "CardSkillZhenchabing",
-    "全知全能": "CardAbilityQuanzhiquanneng",
-    "全神贯注": "CardAbilityQuanshenguanzhu",
-    "博闻强识": "CardAbilityBowenqiangshi",
-    "回声": "CardSkillHuisheng",
-    "图书馆": "CardSkillTushuguan",
     "学术直觉": "CardAbilityXueshuzhijue",
-    "守护结界": "CardAbilityShouhujiejie",
-    "引经据典": "CardAttackYinjingjudian",
     "打击": "CardAttackDaji",
-    "批注": "CardAttackPizhu",
-    "拖沓": "CardCurseTuota",
-    "摘要": "CardSkillZhaiyao",
-    "旁征博引": "CardAttackPangzhengboyin",
-    "时空回溯": "CardSkillShikonghuisu",
     "格挡": "CardSkillGedang",
-    "横扫": "CardAttackHengsao",
-    "消散风": "CardSkillXiaosanfeng",
-    "淬毒刃": "CardAttackCuiduren",
-    "混乱笔记": "CardCurseHunluanbiji",
-    "清理": "CardSkillQingli",
-    "温习": "CardSkillWenxi",
-    "火球术": "CardAttackHuoqiushu",
-    "烈焰斩": "CardAttackLieyanzhan",
-    "生命泉": "CardSkillShengmingquan",
-    "甲胄": "CardSkillJiazhou",
-    "百科全书": "CardAbilityBaikequanshu",
-    "目录": "CardSkillMulu",
-    "真理之眼": "CardAttackZhenlizhiyan",
-    "知识渊博": "CardAbilityZhishiyuanbo",
-    "石肤": "CardSkillShifu",
-    "破甲斩": "CardAttackPojiazhan",
-    "破绽分析": "CardAttackPozhanfenxi",
     "笔记": "CardAttackBiji",
-    "笔记本格挡": "CardSkillBijibengedang",
-    "精准打击": "CardAttackJingzhundaji",
-    "索引": "CardSkillSuoyin",
-    "绝响": "CardAttackJuexiang",
-    "绷带": "CardSkillBengdai",
     "考据": "CardAttackKaoju",
     "腐化种子": "CardCurseFuhuazhongzi",
-    "致残击": "CardAttackZhicanji",
     "虚空裂痕": "CardCurseXukongliehen",
-    "融会贯通": "CardSkillRonghuiguantong",
     "记忆尘埃": "CardCurseJiyichenai",
-    "论文": "CardAttackLunwen",
-    "误解": "CardCurseWujie",
     "读书笔记": "CardAttackDushubiji",
-    "过目不忘": "CardAbilityGuomubuwang",
-    "连锁雷": "CardAttackLiansuolei",
-    "速记": "CardSkillSuji",
-    "速读": "CardSkillSudu",
-    "遗忘": "CardCurseYiwang",
-    "铁壁": "CardSkillTiebi",
-    "风眼": "CardAbilityFengyan",
-    "魔力共鸣": "CardSkillMoligongming",
-    "静观": "CardSkillSudu",
-    "拈页": "CardAttackYinjingjudian",
-    "笔谏": "CardAttackPozhanfenxi",
-    "一览": "CardAttackKaoju",
-    "留白": "CardSkillShuqian",
-    "回锋": "CardAttackPangzhengboyin",
-    "顿悟": "CardAttackJingzhundaji",
-    "掷地有声": "CardAttackZhenlizhiyan",
-    "书海翻澜": "CardAttackLiansuolei",
-    "走笔疾书": "CardSkillWenxi",
-    "澄心静虑": "CardSkillTushuguan",
-    "哥林布": "EnemyGoblin",
-    "混乱史莱姆": "EnemyChaosSlime",
-    "蛮族战士": "EnemyBarbarian",
-    "腐化花蕾": "EnemyCorruptedBud",
-    "幻影": "EnemyPhantom",
-    "双刃执行者": "EnemyTwinbladeExecutor",
-    "记忆窃贼": "EnemyMemoryThief",
-    "记忆吞噬者": "EnemyMemoryDevourer",
-    "burn": "IconStatusBurn",
-    "freeze": "IconStatusFreeze",
-    "poison": "IconStatusPoison",
-    "armor": "IconStatusArmor",
-    "vulnerable": "IconStatusVulnerable",
-    "weak": "IconStatusWeak"
+    "速读": "CardSkillSudu"
   },
   "relicsV2": [
     {
       "id": 100,
       "name": "木盾",
       "rarity": "Common",
-      "generation": "V2",
-      "available": true,
       "effectRule": "从第 2 个玩家回合起，每个玩家回合开始时获得 2 格挡；第 1 个玩家回合不触发"
     },
     {
       "id": 101,
       "name": "旅行药箱",
       "rarity": "Common",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场首次玩家生命降至最大生命 50% 及以下时，恢复 4 生命（一次/场）"
     },
     {
       "id": 102,
       "name": "共鸣石",
       "rarity": "Common",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个玩家回合首次成功配对时，向敌人造成一包基础 1 的独立附加伤害（受力量与易伤，不视作直接命中）"
     },
     {
       "id": 103,
       "name": "双生骰",
       "rarity": "Common",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场首次真实手动翻开两种不同身份的牌后，获得 4 格挡。每场一次。"
     },
     {
       "id": 104,
       "name": "笔记本",
       "rarity": "Common",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个玩家回合首次手动翻开一张本场曾真正翻回的玩家牌时，获得 3 格挡；入场预览与详情不算，翻回后被移动仍成立"
     },
     {
       "id": 105,
       "name": "磨刃石",
       "rarity": "Common",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场首次成功攻击牌配对时，使本对两张攻击牌各自第一段直接攻击基础伤害 +1"
-    },
-    {
-      "id": 106,
-      "name": "火绒盒",
-      "rarity": "Common",
-      "generation": "V2",
-      "available": false,
-      "effectRule": "每场首次由玩家卡牌向敌人施加灼烧时，追加 1 层灼烧；此追加不再次触发自身"
     },
     {
       "id": 107,
       "name": "苦液瓶",
       "rarity": "Common",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场首次由玩家卡牌向敌人施加中毒时，追加 1 层中毒；此追加不再次触发自身"
     },
     {
       "id": 108,
       "name": "血纹夹",
       "rarity": "Common",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场首次由玩家卡牌向敌人施加流血时，追加 1 层流血；此追加不再次触发自身"
     },
     {
       "id": 109,
       "name": "旧扣环",
       "rarity": "Common",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个玩家回合首次成功完成技能牌配对后，获得 2 格挡。"
     },
     {
       "id": 110,
       "name": "封口绷带",
       "rarity": "Common",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场首次成功完成带[消耗]牌的配对后，获得 4 格挡"
     },
     {
       "id": 111,
       "name": "厚皮背带",
       "rarity": "Common",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场战斗开始时若当前生命不高于最大生命的一半，获得 1 护甲与 4 格挡"
     },
     {
       "id": 112,
       "name": "连锁核心",
       "rarity": "Rare",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个玩家回合首次成功攻击牌配对时，双方攻击牌各追加 1 段基础 1 伤的直接攻击；无攻击牌不触发"
     },
     {
       "id": 113,
       "name": "蓄能水晶",
       "rarity": "Rare",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场首次在同一玩家回合完成至少 2 种不同牌名的同名配对时，获得 1 力量"
     },
     {
       "id": 114,
       "name": "吸血鬼之牙",
       "rarity": "Rare",
-      "generation": "V2",
-      "available": true,
       "effectRule": "本场每完成 3 次成功配对，恢复 1 生命；每场最多触发 3 次"
     },
     {
       "id": 115,
       "name": "能量护盾",
       "rarity": "Rare",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个敌人回合结束清除格挡时，先结算全部回合末效果，再保留至多 3 点原有格挡进入下一玩家回合；不额外生成格挡"
     },
     {
       "id": 116,
       "name": "减速印记",
       "rarity": "Rare",
-      "generation": "V2",
-      "available": true,
       "effectRule": "敌人有效行动条阈值 +1；既有进度保持不变；中毒仍在行动条真正满时按一次行动后状态伤害结算，不额外触发灼烧/冰冻机制"
     },
     {
       "id": 117,
       "name": "思维导图",
       "rarity": "Rare",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个敌人回合首次敌方位置效果实际移动了至少 1 张玩家背面牌时，记录 4 格挡，在紧接的玩家回合开始时获得；死亡中断不补发，不揭示身份或记录牌名"
     },
     {
       "id": 118,
       "name": "锯刃戒",
       "rarity": "Rare",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个玩家回合第 3 次有效玩家直接攻击段命中敌人后施加 1 流血；每玩家回合至多一次，附伤与状态包不计数"
-    },
-    {
-      "id": 119,
-      "name": "冷焰石",
-      "rarity": "Rare",
-      "generation": "V2",
-      "available": false,
-      "effectRule": "每个玩家回合首次冰冻确实抵消敌方行动条正增长时，向敌人施加 1 灼烧；不额外制造行动条变化"
     },
     {
       "id": 120,
       "name": "酸蚀漏斗",
       "rarity": "Rare",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个敌人回合首次敌方实际受到中毒定时伤害（结算前中毒至少 3 层、双方存活）时，记录 4 格挡，在紧接的玩家回合开始时获得；不消耗中毒层数"
     },
     {
       "id": 121,
       "name": "撕裂指环",
       "rarity": "Rare",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个玩家回合首次直接攻击段成功触发流血附伤时，该次流血不减少层数；其它结算正常"
     },
     {
       "id": 122,
       "name": "折返齿轮",
       "rarity": "Rare",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场首次成功配对且本对任一实例本场曾真实翻回时，获得 1 层力量。"
     },
     {
       "id": 123,
       "name": "旧页徽章",
       "rarity": "Rare",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个玩家回合首次真实手动翻开本场曾真正翻回的牌时，造成 1 包基础 1 点独立附伤。"
     },
     {
       "id": 124,
       "name": "稳定锚",
       "rarity": "Epic",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场首次完整敌人回合结束且双方存活后，在下一玩家回合开始、护甲产盾前获得 2 护甲。"
     },
     {
       "id": 125,
       "name": "双生符",
       "rarity": "Epic",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个玩家回合首次成功攻击牌配对时，两张攻击牌各追加 1 段基础 1 伤的直接攻击；若另有连锁核心，双方各自再多 1 段"
     },
     {
       "id": 126,
       "name": "镜像回声",
       "rarity": "Epic",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场首次完成带[消耗]牌的成功配对后，本对两张实例均进入弃牌堆而不进入消耗堆；每场仅一次，当次仍算一次消耗配对"
     },
     {
       "id": 127,
       "name": "沿迹罗盘",
       "rarity": "Epic",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个玩家回合首次成功配对且本对任一实例本场曾真实翻回时，获得 4 格挡并造成 1 包基础 2 点独立附伤。"
     },
     {
       "id": 128,
       "name": "血潮棱镜",
       "rarity": "Epic",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个玩家回合第 3 次流血附伤对敌人完成结算时，额外造成一包基础 3 的独立附伤；该附伤不再次产生流血触发"
     },
     {
       "id": 129,
       "name": "毒蚀心脏",
       "rarity": "Epic",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每次敌人行动后，若本次中毒伤害实际发生且敌人仍存活，并且结算前中毒≥3，则额外施加1流血；每敌方行动最多一次"
-    },
-    {
-      "id": 130,
-      "name": "熔芯",
-      "rarity": "Epic",
-      "generation": "V2",
-      "available": false,
-      "effectRule": "每场首次由玩家效果一次消耗至少3层灼烧时，获得1力量；每场一次"
     },
     {
       "id": 131,
       "name": "叠页行军旗",
       "rarity": "Epic",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场实际消耗的前 2 个整对后，各获得 1 层力量；镜像返还/顽固留场不计。"
     },
     {
       "id": 132,
       "name": "全知之眼",
       "rarity": "Boss",
-      "generation": "V2",
-      "available": true,
       "effectRule": "正面牌上限+1；但每个玩家回合首次手动翻开后未成功配对的有效翻牌额外令敌人行动条+1"
     },
     {
       "id": 133,
       "name": "混沌核心",
       "rarity": "Boss",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每个敌人回合行动结束后，合法随机交换一对相邻背面牌并显示轨迹；本场前 2 次实际交换后，各获得 1 层力量。无合法对时跳过。"
     },
     {
       "id": 134,
       "name": "记忆王冠",
       "rarity": "Boss",
-      "generation": "V2",
-      "available": true,
       "effectRule": "每场前2次成功完成带[消耗]牌的配对，每对获得1力量和3格挡；每对只触发一次"
     },
     {
       "id": 135,
       "name": "血契剑鞘",
       "rarity": "Boss",
-      "generation": "V2",
-      "available": true,
       "effectRule": "获取后最大生命永久降低12（当前生命上限同步裁切，至少保留1最大生命）；此后玩家直接攻击每段基础伤害+1、每包卡牌或遗物来源的独立附伤基础伤害+1；不放大流血、中毒、灼烧等状态来源伤害"
     }
   ]
